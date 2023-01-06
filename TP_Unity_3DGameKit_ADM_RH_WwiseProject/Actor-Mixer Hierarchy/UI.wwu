@@ -157,6 +157,28 @@
 						<ActiveSource Name="93 Fart #5 1" ID="{0FF848E5-6CA9-44D7-B48B-55D2EAB41400}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="UI_Game_Resume" ID="{6F6339AD-813B-492D-8D85-1DDD23533BEF}" ShortID="633147707">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="ui_SoundPack04 - Scroll Version04" ID="{0570288B-668E-41C6-8852-4231182F16E1}">
+							<Language>SFX</Language>
+							<AudioFile>ui_SoundPack04 - Scroll Version04.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="914061996"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="ui_SoundPack04 - Scroll Version04" ID="{0570288B-668E-41C6-8852-4231182F16E1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

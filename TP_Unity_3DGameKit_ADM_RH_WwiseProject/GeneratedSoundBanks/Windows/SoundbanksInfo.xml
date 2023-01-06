@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{44D69E29-88E1-2026-05DF-14DFE0CE468B}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{60CC1380-DCC2-C77D-18E8-0A49E0325ED4}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -37,6 +37,10 @@
 					<ShortName>UI_Match_Resume.wav</ShortName>
 					<CachePath>SFX/UI_Match_Resume_10C4C929.wem</CachePath>
 				</File>
+				<File Id="914061996" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>ui_SoundPack04 - Scroll Version04.wav</ShortName>
+					<CachePath>SFX/ui_SoundPack04 - Scroll Version04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="976061305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Navigation.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Navigation_10C4C929.wem</CachePath>
@@ -51,6 +55,11 @@
 				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.451625" DurationMax="0.451625">
 					<MediaRefs>
 						<MediaRef Id="281218545"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1899199409" Name="Play_UI_Game_Resume" DurationType="OneShot" DurationMin="0.36047918" DurationMax="0.36047918">
+					<MediaRefs>
+						<MediaRef Id="914061996"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="0.2413125" DurationMax="0.2413125">
@@ -94,5 +103,5 @@
 			</Busses>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C6EAE9E0-F8BC-D4D4-D520-40D2EF36286E}</FileHash>
+	<FileHash>{798BF48C-42AB-6725-7375-D4FDDDF97B7C}</FileHash>
 </SoundBanksInfo>

@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
         static const AkUniqueID PLAY_UI_GAME_QUIT = 3336058037U;
+        static const AkUniqueID PLAY_UI_GAME_RESUME = 1899199409U;
         static const AkUniqueID PLAY_UI_GAME_START = 1580643620U;
         static const AkUniqueID PLAY_UI_MENU_CANCEL = 1739779019U;
         static const AkUniqueID PLAY_UI_MENU_MOUSE_OVER = 1926492655U;

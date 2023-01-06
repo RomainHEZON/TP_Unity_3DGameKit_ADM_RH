@@ -48,6 +48,9 @@ namespace Gamekit3D
         public void ExitPause()
         {
             m_InPause = true;
+
+            AkSoundEngine.PostEvent("Play_UI_Game_Resume", this.gameObject);
+
             SwitchPauseState();
         }
 
@@ -57,19 +60,24 @@ namespace Gamekit3D
             SwitchPauseState();
             SceneController.RestartZone();
         }
-
+        
         void Update()
         {
             if (PlayerInput.Instance != null && PlayerInput.Instance.Pause)
             {
+                AkSoundEngine.PostEvent("Play_UI_Game_Pause", this.gameObject);
+
                 SwitchPauseState();
+
             }
         }
 
         protected void SwitchPauseState()
         {
+
             if (m_InPause && Time.timeScale > 0 || !m_InPause && ScreenFader.IsFading)
                 return;
+
 
             if (!alwaysDisplayMouse)
             {
@@ -93,14 +101,19 @@ namespace Gamekit3D
                 CameraShake.Stop ();
 
             if (m_InPause)
+            {
                 PlayerInput.Instance.GainControl();
+            }
             else
                 PlayerInput.Instance.ReleaseControl();
 
             Time.timeScale = m_InPause ? 1 : 0;
 
             if (pauseCanvas)
+            {
                 pauseCanvas.SetActive(!m_InPause);
+                
+            }
 
             if (optionsCanvas)
                 optionsCanvas.SetActive(false);
