@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{44D69E29-88E1-2026-05DF-14DFE0CE468B}">
+			<ShortName>UI_SNBK</ShortName>
+			<Path>UI_SNBK.bnk</Path>
+			<Media>
+				<File Id="60129979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Selection.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Selection_10C4C929.wem</CachePath>
+				</File>
+				<File Id="145965730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Games, Video, Shooting Game, GUI, Hover Over, Complex, With Click SND62879.wav</ShortName>
+					<CachePath>SFX/Games, Video, Shooting Game, GUI, Hover Over, Complex, With Click SND62879_10C4C929.wem</CachePath>
+				</File>
+				<File Id="281218545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Match_Pause.wav</ShortName>
+					<CachePath>SFX/UI_Match_Pause_10C4C929.wem</CachePath>
+				</File>
+				<File Id="340499708" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>93 Fart #5 1.wav</ShortName>
+					<CachePath>SFX/93 Fart #5 1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="536482775" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Cancel.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Cancel_10C4C929.wem</CachePath>
+				</File>
+				<File Id="834923045" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Match_Resume.wav</ShortName>
+					<CachePath>SFX/UI_Match_Resume_10C4C929.wem</CachePath>
+				</File>
+				<File Id="976061305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Navigation.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Navigation_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="0.30666667" DurationMax="0.30666667">
+					<MediaRefs>
+						<MediaRef Id="340499708"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.451625" DurationMax="0.451625">
+					<MediaRefs>
+						<MediaRef Id="281218545"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="0.2413125" DurationMax="0.2413125">
+					<MediaRefs>
+						<MediaRef Id="834923045"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1739779019" Name="Play_UI_Menu_Cancel" DurationType="OneShot" DurationMin="0.36266667" DurationMax="0.36266667">
+					<MediaRefs>
+						<MediaRef Id="536482775"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1926492655" Name="Play_UI_Menu_Mouse_Over" DurationType="OneShot" DurationMin="0.1035625" DurationMax="0.1035625">
+					<MediaRefs>
+						<MediaRef Id="145965730"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1771101267" Name="Play_UI_Menu_Navigation" DurationType="OneShot" DurationMin="0.15054166" DurationMax="0.15054166">
+					<MediaRefs>
+						<MediaRef Id="976061305"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2157261217" Name="Play_UI_Menu_Selection" DurationType="OneShot" DurationMin="0.48264584" DurationMax="0.48264584">
+					<MediaRefs>
+						<MediaRef Id="60129979"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3885AF53-12BB-D1DB-E050-A62903DEDD87}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{BFC02485-4185-4E85-E6F1-57C744D0FC1F}</FileHash>
+</SoundBanksInfo>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="UI Events" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_UI_Menu_Cancel" ID="{F99C09AD-2550-4665-BBD0-43D8C34CF9FC}">
+					<ChildrenList>
+						<Action Name="" ID="{C60C6880-D663-4387-A1A1-E4AC3A7B37D6}" ShortID="156592138">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Cancel" ID="{623C3DF1-B5A3-47B0-841D-D97D4FE6600D}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Menu_Mouse_Over" ID="{64CBD919-A3B3-46E9-9102-F8080C74A6B6}">
+					<ChildrenList>
+						<Action Name="" ID="{E0C44A9E-0127-4109-A8F5-D9AA74BD76BA}" ShortID="373712711">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Mouse_Over" ID="{D39D0879-00E7-4524-9B23-66CE66142CD8}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Menu_Navigation" ID="{0C5D46F3-9D44-45D4-ADCB-34DE4DD43B47}">
+					<ChildrenList>
+						<Action Name="" ID="{D12D5DB6-04AE-4E98-96FF-FDCF5730CF91}" ShortID="426389822">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Navigation" ID="{747552E7-7A5F-4E30-9523-252A98E9BE84}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Menu_Selection" ID="{45C4E963-86D9-4DCC-92BA-935B8D9089E4}">
+					<ChildrenList>
+						<Action Name="" ID="{527EDEA5-11BC-4647-849B-A3C509B0F8AB}" ShortID="749288712">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Selection" ID="{15D65F14-5474-486C-BB35-D39918925205}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Game_Quit" ID="{03C83FB3-A8DF-496A-98BC-F8FC393E037B}">
+					<ChildrenList>
+						<Action Name="" ID="{389FC3DA-19CD-4A27-BA2C-BB4EFC227FCD}" ShortID="27774987">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Game_Quit" ID="{71972913-5753-49E3-A18C-846993E0067E}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Game_Start" ID="{CD2BE29C-0CC6-43F3-95EF-65AC8B3DA865}">
+					<ChildrenList>
+						<Action Name="" ID="{C09EEF87-34E5-4215-99A1-8F811F4783DD}" ShortID="39549890">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Game_Start" ID="{7FAAD85E-EBA3-4B94-B732-E4E92FF57CD3}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_UI_Game_Pause" ID="{5C795738-A868-45FC-A1C9-E91588CAC3BD}">
+					<ChildrenList>
+						<Action Name="" ID="{481665A9-0C7A-4198-BDB1-77747CDBD9C4}" ShortID="855717201">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Game_Pause" ID="{A1D655D1-9399-4E95-A5BF-5780772136BB}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

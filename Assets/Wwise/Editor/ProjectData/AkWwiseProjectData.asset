@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 25e549de173d524ba44cfda5d1b5aaab
     GuidInternal: 
-    m_lastTime: -8585285710469372495
-    List: []
+    m_lastTime: -8585285652631633680
+    List:
+    - name: UI_SNBK
+      guid: 23d7c86e95de5c4fa479a1e784da7056
+      id: 776533456
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
+      - ElementName: UI_SNBK
+        ObjectType: 7
+        guid: 23d7c86e95de5c4fa479a1e784da7056
+      Path: SoundBanks\Default Work Unit\UI_SNBK
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,164 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585285710469414487
+    m_lastTime: -8585285652631653681
     List: []
+  - PhysicalPath: Events\UI Events.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: f0818cccf808e44d8244c79550da8cee
+    - ElementName: UI Events
+      ObjectType: 12
+      guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+    ParentPath: Events\Default Work Unit\UI Events
+    guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+    GuidInternal: 
+    m_lastTime: -8585285652631262039
+    List:
+    - name: Play_UI_Game_Pause
+      guid: 3857795c68a8fc45a1c9e91588cac3bd
+      id: 4059508246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Game_Pause
+        ObjectType: 3
+        guid: 3857795c68a8fc45a1c9e91588cac3bd
+      Path: Events\Default Work Unit\UI Events\Play_UI_Game_Pause
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Game_Quit
+      guid: b33fc803dfa86a4998bcf8fc393e037b
+      id: 3336058037
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Game_Quit
+        ObjectType: 3
+        guid: b33fc803dfa86a4998bcf8fc393e037b
+      Path: Events\Default Work Unit\UI Events\Play_UI_Game_Quit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Game_Start
+      guid: 9ce22bcdc60cf34395ef65ac8b3da865
+      id: 1580643620
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Game_Start
+        ObjectType: 3
+        guid: 9ce22bcdc60cf34395ef65ac8b3da865
+      Path: Events\Default Work Unit\UI Events\Play_UI_Game_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Menu_Cancel
+      guid: ad099cf950256546bbd043d8c34cf9fc
+      id: 1739779019
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Menu_Cancel
+        ObjectType: 3
+        guid: ad099cf950256546bbd043d8c34cf9fc
+      Path: Events\Default Work Unit\UI Events\Play_UI_Menu_Cancel
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Menu_Mouse_Over
+      guid: 19d9cb64b3a3e9469102f8080c74a6b6
+      id: 1926492655
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Menu_Mouse_Over
+        ObjectType: 3
+        guid: 19d9cb64b3a3e9469102f8080c74a6b6
+      Path: Events\Default Work Unit\UI Events\Play_UI_Menu_Mouse_Over
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Menu_Navigation
+      guid: f3465d0c449dd445adcb34de4dd43b47
+      id: 1771101267
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Menu_Navigation
+        ObjectType: 3
+        guid: f3465d0c449dd445adcb34de4dd43b47
+      Path: Events\Default Work Unit\UI Events\Play_UI_Menu_Navigation
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_UI_Menu_Selection
+      guid: 63e9c445d986cc4d92ba935b8d9089e4
+      id: 2157261217
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: UI Events
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Play_UI_Menu_Selection
+        ObjectType: 3
+        guid: 63e9c445d986cc4d92ba935b8d9089e4
+      Path: Events\Default Work Unit\UI Events\Play_UI_Menu_Selection
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -139,7 +309,7 @@ MonoBehaviour:
     m_lastTime: -8585285710469347330
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 0a0000000b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

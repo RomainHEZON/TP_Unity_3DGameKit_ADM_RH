@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo>
+	<Project Name="TP_Unity_3DGameKit_ADM_RH_WwiseProject" GUID="{022AA656-2015-48DB-A73E-EB499AE6D586}" Generator="2022.1.0.8070"/>
+	<CacheRoot>../../../../TP_Unity_3DGameKit_ADM_RH_WwiseProject/.cache</CacheRoot>
+	<Platforms>
+		<Platform Name="Mac" GUID="{65A4F145-B839-449B-BE48-821D2B1398DE}" BasePlatform="Mac" BasePlatformGUID="{9C6217D5-DD11-4795-87C1-6CE02853C540}" Path="../../../../TP_Unity_3DGameKit_ADM_RH_WwiseProject/GeneratedSoundBanks/Mac"/>
+		<Platform Name="Windows" GUID="{0E97C390-6A0D-4902-A470-5E5C35C01DC3}" BasePlatform="Windows" BasePlatformGUID="{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}" Path="../../../../TP_Unity_3DGameKit_ADM_RH_WwiseProject/GeneratedSoundBanks/Windows"/>
+	</Platforms>
+	<Languages>
+		<Language Name="English(US)" Id="684519430" GUID="{F8F1E427-751B-4A09-8AA4-5E93AF3D4AF9}" Default="true" UseAsStandIn="true"/>
+	</Languages>
+	<FileHash>{9A52F3E1-90D8-28EE-776B-C7D63B090729}</FileHash>
+</ProjectInfo>
