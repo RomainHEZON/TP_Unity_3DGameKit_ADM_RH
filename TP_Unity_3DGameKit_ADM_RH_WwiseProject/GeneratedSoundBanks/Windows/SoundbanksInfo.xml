@@ -101,7 +101,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{D0202FD9-1DFE-B077-4426-0A1AF791A252}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{9F8892B3-EACF-5342-21EE-BEA08D9C5C2E}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -248,7 +248,7 @@
 						<MediaRef Id="1038708921"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2476186902" Name="Play_SFX_Alien_Staff_Idle_Loop" MaxAttenuation="10" DurationType="Infinite">
+				<Event Id="2116431113" Name="Play_SFX_Alien_Staff_Idle" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="165830993"/>
 					</MediaRefs>
@@ -316,6 +316,7 @@
 						<MediaRef Id="222860603"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
 		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{4D7AC7B9-7CDC-525E-6AA2-9D61F257FE38}">
@@ -801,5 +802,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{6FBAE8F3-E790-88BA-5BF3-7F71F0DD67B7}</FileHash>
+	<FileHash>{7EA4C515-815C-D374-AD98-5B91CF7AE6C9}</FileHash>
 </SoundBanksInfo>

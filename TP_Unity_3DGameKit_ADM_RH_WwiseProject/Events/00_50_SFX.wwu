@@ -20,7 +20,7 @@
 				</Event>
 				<Folder Name="Alien_Staff" ID="{134C18E4-7B99-4AC7-9474-229D76E33FCA}" ShortID="149292614">
 					<ChildrenList>
-						<Event Name="Play_SFX_Alien_Staff_Idle_Loop" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}">
+						<Event Name="Play_SFX_Alien_Staff_Idle" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}">
 							<ChildrenList>
 								<Action Name="" ID="{934EB09F-6269-46B2-BD50-CE4BD2B9583D}" ShortID="73057527">
 									<ReferenceList>
@@ -36,7 +36,8 @@
 								<Action Name="" ID="{CBCA6E08-CAB5-4A07-A3A4-4387F036844B}" ShortID="806310915">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -48,6 +49,20 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Alien_Staff_Pickup_RC" ID="{B995357D-E86C-4E5F-B4C6-4F18DDBF6836}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_SFX_Alien_Staff_Idle" ID="{4E2F9B7F-E1C4-4713-A0E2-7F29FA859118}">
+							<ChildrenList>
+								<Action Name="" ID="{597CBBC8-CEEE-4E2E-942E-A1BE0E8A92B1}" ShortID="142852575">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -149,12 +164,13 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SFX_HealthBox_Open_01" ID="{D181D247-BBF2-42BA-A674-8FB4E1EE9278}">
+						<Event Name="Play_SFX_HealthBox_Open_01" ID="{9589B207-7C7D-4551-8950-CE2B1159808A}">
 							<ChildrenList>
-								<Action Name="" ID="{EB7D4597-C964-4AD0-A2F5-5ED0A5F6C756}" ShortID="272686209">
+								<Action Name="" ID="{F23270E6-239C-4ACA-977E-D857FDCD4D49}" ShortID="394258510">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -162,7 +178,7 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{AAF338D4-5727-47F0-BA00-E7050C75830C}" ShortID="887418397">
+								<Action Name="" ID="{2EB8DCCB-1A97-41C1-88E0-FC05EDF609EA}" ShortID="803555199">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_HealthBox_Open_01" ID="{F18A71F5-D55E-47EE-BCD4-F6AF61797E07}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>

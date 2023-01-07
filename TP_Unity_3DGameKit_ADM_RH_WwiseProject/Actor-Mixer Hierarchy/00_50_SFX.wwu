@@ -548,7 +548,6 @@
 								</RandomSequenceContainer>
 								<Sound Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" ShortID="893420048">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>

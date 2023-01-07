@@ -14,12 +14,16 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_HealthBox_Open_01" ID="{D181D247-BBF2-42BA-A674-8FB4E1EE9278}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_SFX_HealthBox_Open_02" ID="{CA5BEA8D-CF3B-4860-833C-4BBFC7A8C484}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Alien_Staff_Idle" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_Alien_Staff_Pickup" ID="{21D8E7BB-714A-4BF3-AF4E-B6977C263BD9}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
