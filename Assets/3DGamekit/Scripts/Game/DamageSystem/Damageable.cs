@@ -49,7 +49,7 @@ namespace Gamekit3D
 
         void Update()
         {
-            AkSoundEngine.SetRTPCValue(HealthRTPC.Name, maxHitPoints);
+            // AkSoundEngine.SetRTPCValue(HealthRTPC.Name, maxHitPoints);
 
 
             if (isInvulnerable)
