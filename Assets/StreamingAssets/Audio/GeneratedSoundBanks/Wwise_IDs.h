@@ -13,7 +13,22 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ALIEN_STAFF_ATTACK = 2329713267U;
+        static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
+        static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE_LOOP = 2476186902U;
+        static const AkUniqueID PLAY_SFX_ALIEN_STAFF_PICKUP = 1472032783U;
+        static const AkUniqueID PLAY_SFX_CRSYTAL_SWITCHES_BEFORE_ACTIVATION = 1141199166U;
+        static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCH_ACTIVATED = 3532940987U;
+        static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCHES_AFERT_ACTIVATION = 411583353U;
+        static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
+        static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_02 = 1068397625U;
+        static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_01 = 4120424468U;
+        static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_02 = 4120424471U;
+        static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
+        static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
+        static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
+        static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
         static const AkUniqueID PLAY_UI_GAME_QUIT = 3336058037U;
         static const AkUniqueID PLAY_UI_GAME_RESUME = 1899199409U;

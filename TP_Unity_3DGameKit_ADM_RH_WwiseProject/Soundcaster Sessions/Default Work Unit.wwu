@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{DAD71652-BB69-4AAB-92BE-1ABF7D5BDEAA}" SchemaVersion="110">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{DAD71652-BB69-4AAB-92BE-1ABF7D5BDEAA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{DAD71652-BB69-4AAB-92BE-1ABF7D5BDEAA}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Test SFX" ID="{15755862-98E4-4B82-A916-BCD9B364D901}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_SFX_HealthBox_Idle_01" ID="{77EA1CC5-FEB9-4423-8088-C838DF2238F3}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_HealthBox_Idle_02" ID="{E923CE09-59DE-4442-BD71-5D7EB52B7946}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_HealthBox_Open_01" ID="{D181D247-BBF2-42BA-A674-8FB4E1EE9278}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_SFX_HealthBox_Open_02" ID="{CA5BEA8D-CF3B-4860-833C-4BBFC7A8C484}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{F152AB58-7E74-40AF-A3B3-559C6FDF3B53}"/>
+						<CurrentStateRef Name="None" ID="{8DEB659C-7F8A-4ABE-8A44-33D3312BA6F8}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

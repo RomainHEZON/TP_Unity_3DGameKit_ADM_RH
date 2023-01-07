@@ -105,34 +105,67 @@
 				</Folder>
 				<Folder Name="HealthBox" ID="{2E93954D-821C-4B40-AAE6-B6818DCF3514}" ShortID="413446055">
 					<ChildrenList>
-						<Event Name="Play_SFX_HealthBox_Idle" ID="{77EA1CC5-FEB9-4423-8088-C838DF2238F3}">
+						<Event Name="Play_SFX_HealthBox_Idle_01" ID="{77EA1CC5-FEB9-4423-8088-C838DF2238F3}">
 							<ChildrenList>
 								<Action Name="" ID="{D835377F-502A-45E9-AD35-36514E31A70A}" ShortID="330545234">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HealthBox_Idle_Loop" ID="{E5C6F9C0-494B-4DC0-A915-F89DECC85EFF}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+											<ObjectRef Name="SFX_HealthBox_Idle_Loop_01" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_SFX_HealthBox_Open" ID="{CA5BEA8D-CF3B-4860-833C-4BBFC7A8C484}">
+						<Event Name="Play_SFX_HealthBox_Open_02" ID="{CA5BEA8D-CF3B-4860-833C-4BBFC7A8C484}">
 							<ChildrenList>
 								<Action Name="" ID="{1EAB6150-5B9E-4703-A285-A6945B9567AA}" ShortID="993945847">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HealthBox_Idle_Loop" ID="{E5C6F9C0-494B-4DC0-A915-F89DECC85EFF}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+											<ObjectRef Name="SFX_HealthBox_Idle_Loop_02" ID="{E5C6F9C0-494B-4DC0-A915-F89DECC85EFF}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
 								<Action Name="" ID="{85A692A6-E865-437E-A015-C6A464FD3A53}" ShortID="808463575">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_HealthBox_Open" ID="{BD54665D-3DA7-44E9-9F43-04F723DEBC9D}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+											<ObjectRef Name="SFX_HealthBox_Open_02" ID="{BD54665D-3DA7-44E9-9F43-04F723DEBC9D}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_HealthBox_Idle_02" ID="{E923CE09-59DE-4442-BD71-5D7EB52B7946}">
+							<ChildrenList>
+								<Action Name="" ID="{08FFA64A-475E-4B80-9185-BFC2F541C9BA}" ShortID="706981949">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HealthBox_Idle_Loop_02" ID="{E5C6F9C0-494B-4DC0-A915-F89DECC85EFF}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_HealthBox_Open_01" ID="{D181D247-BBF2-42BA-A674-8FB4E1EE9278}">
+							<ChildrenList>
+								<Action Name="" ID="{EB7D4597-C964-4AD0-A2F5-5ED0A5F6C756}" ShortID="272686209">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HealthBox_Idle_Loop_01" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{AAF338D4-5727-47F0-BA00-E7050C75830C}" ShortID="887418397">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_HealthBox_Open_01" ID="{F18A71F5-D55E-47EE-BCD4-F6AF61797E07}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
