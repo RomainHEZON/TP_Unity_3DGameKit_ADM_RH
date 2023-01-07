@@ -1,20 +1,23 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1580643620	Play_UI_Game_Start			\Default Work Unit\UI Events\Play_UI_Game_Start	
-	1739779019	Play_UI_Menu_Cancel			\Default Work Unit\UI Events\Play_UI_Menu_Cancel	
-	1771101267	Play_UI_Menu_Navigation			\Default Work Unit\UI Events\Play_UI_Menu_Navigation	
-	1899199409	Play_UI_Game_Resume			\Default Work Unit\UI Events\Play_UI_Game_Resume	
-	1926492655	Play_UI_Menu_Mouse_Over			\Default Work Unit\UI Events\Play_UI_Menu_Mouse_Over	
-	2157261217	Play_UI_Menu_Selection			\Default Work Unit\UI Events\Play_UI_Menu_Selection	
-	3336058037	Play_UI_Game_Quit			\Default Work Unit\UI Events\Play_UI_Game_Quit	
-	4059508246	Play_UI_Game_Pause			\Default Work Unit\UI Events\Play_UI_Game_Pause	
+	1580643620	Play_UI_Game_Start			\Default Work Unit\00_90_UI\Play_UI_Game_Start	
+	1739779019	Play_UI_Menu_Cancel			\Default Work Unit\00_90_UI\Play_UI_Menu_Cancel	
+	1771101267	Play_UI_Menu_Navigation			\Default Work Unit\00_90_UI\Play_UI_Menu_Navigation	
+	1899199409	Play_UI_Game_Resume			\Default Work Unit\00_90_UI\Play_UI_Game_Resume	
+	1926492655	Play_UI_Menu_Mouse_Over			\Default Work Unit\00_90_UI\Play_UI_Menu_Mouse_Over	
+	2157261217	Play_UI_Menu_Selection			\Default Work Unit\00_90_UI\Play_UI_Menu_Selection	
+	3336058037	Play_UI_Game_Quit			\Default Work Unit\00_90_UI\Play_UI_Game_Quit	
+	4059508246	Play_UI_Game_Pause			\Default Work Unit\00_90_UI\Play_UI_Game_Pause	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4179668880	Master_Volume			\Default Work Unit\Bus_Volume\Master_Volume	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	60129979	UI_Menu_Selection	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Selection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Menu_Selection		92764
-	145965730	UI_Menu_Mouse_Over	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Games, Video, Shooting Game, GUI, Hover Over, Complex, With Click SND62879_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Menu_Mouse_Over		10038
-	281218545	UI_Game_Quit	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Match_Pause_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Game_Quit		86808
-	340499708	UI_Game_Pause	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\93 Fart #5 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Game_Pause		29536
-	536482775	UI_Menu_Cancel	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Cancel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Menu_Cancel		69728
-	834923045	UI_Game_Start	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Match_Resume_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Game_Start		46428
-	914061996	UI_Game_Resume	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\ui_SoundPack04 - Scroll Version04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Game_Resume		34702
-	976061305	UI_Menu_Navigation	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Navigation_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Menu_Navigation		29000
+	60129979	UI_Menu_Selection	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Selection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Selection		92764
+	145965730	UI_Menu_Mouse_Over	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Games, Video, Shooting Game, GUI, Hover Over, Complex, With Click SND62879_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Mouse_Over		10038
+	281218545	UI_Game_Quit	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Match_Pause_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Quit		86808
+	340499708	UI_Game_Pause	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\93 Fart #5 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Pause		29536
+	536482775	UI_Menu_Cancel	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Cancel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Cancel		69728
+	834923045	UI_Game_Start	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Match_Resume_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Start		46428
+	914061996	UI_Game_Resume	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\ui_SoundPack04 - Scroll Version04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Resume		34702
+	976061305	UI_Menu_Navigation	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Navigation_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Navigation		29000
 

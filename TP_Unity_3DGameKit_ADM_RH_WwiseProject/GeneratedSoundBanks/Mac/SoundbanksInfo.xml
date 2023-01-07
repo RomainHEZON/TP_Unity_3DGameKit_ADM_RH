@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{60CC1380-DCC2-C77D-18E8-0A49E0325ED4}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{D92D1F82-9099-AA02-5500-2C8F73E38121}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -88,8 +88,19 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="4179668880" Name="Master_Volume"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3885AF53-12BB-D1DB-E050-A62903DEDD87}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{6CE6E311-288F-8F1C-E43E-562FDD4A30BB}">
+			<ShortName>SFX_SNBK</ShortName>
+			<Path>SFX_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{4D7AC7B9-7CDC-525E-6AA2-9D61F257FE38}">
+			<ShortName>AMB_RFX_SNBK</ShortName>
+			<Path>AMB_RFX_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{468ADFED-EAFC-3405-A5D1-B1A087A0BCC6}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -99,9 +110,59 @@
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="17439960" Name="Bus_AMB"/>
+				<Bus Id="1116497749" Name="Bus_PreMaster"/>
+				<Bus Id="1162281553" Name="Bus_Music"/>
+				<Bus Id="1592365332" Name="Bus_Ennemies"/>
+				<Bus Id="1746463750" Name="Bus_UI"/>
+				<Bus Id="2766202208" Name="Bus_Ellen"/>
+				<Bus Id="3056742518" Name="Bus_Pads"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
+				<Bus Id="3895923845" Name="Bus_SFX"/>
+				<Bus Id="4130663432" Name="Bus_RFX"/>
 			</Busses>
+			<GameParameters>
+				<GameParameter Id="1006694123" Name="Music_Volume"/>
+				<GameParameter Id="2037612127" Name="PreMaster_Volume"/>
+				<GameParameter Id="4179668880" Name="Master_Volume"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3537680115" Name="Pause_ON">
+					<States>
+						<State Id="748895195" Name="None"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3967028551" Name="Pause_OFF">
+					<States>
+						<State Id="748895195" Name="None"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{D2A17FF5-7FC1-8E21-8DB1-082F9258E374}">
+			<ShortName>Grenadier_SNBK</ShortName>
+			<Path>Grenadier_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{85C491E2-507B-0F29-1EC5-5CAD7DE253BC}">
+			<ShortName>AMB_Pads_SNBK</ShortName>
+			<Path>AMB_Pads_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{34CF5A7B-8780-956A-9784-43A11E5679A6}">
+			<ShortName>Ellen_SFX_SNBK</ShortName>
+			<Path>Ellen_SFX_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{82357035-0597-D7FC-EBE9-8E2B33519470}">
+			<ShortName>Chomper_SNBK</ShortName>
+			<Path>Chomper_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{786D79E7-8A8B-2CF6-C830-914ADA5A2170}">
+			<ShortName>Ellen_Loco_SNBK</ShortName>
+			<Path>Ellen_Loco_SNBK.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{F8910FEF-7D0C-E31C-8E1E-56CAD9F243AD}">
+			<ShortName>Spitter_SNBK</ShortName>
+			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{628BE27A-8ED3-0D53-564A-4B2DFFFB21E0}</FileHash>
+	<FileHash>{75A97903-2841-B648-E351-67C0E8AECE45}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
+	<States>
+		<WorkUnit Name="Menu_Pause" ID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="12"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Pause_ON" ID="{240074CC-7961-40E2-ACDF-2D00D57156C4}">
+					<ChildrenList>
+						<State Name="None" ID="{F152AB58-7E74-40AF-A3B3-559C6FDF3B53}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Pause_OFF" ID="{D5DEE4EE-3E77-4EE6-9E8A-759182014762}">
+					<ChildrenList>
+						<State Name="None" ID="{8DEB659C-7F8A-4ABE-8A44-33D3312BA6F8}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
