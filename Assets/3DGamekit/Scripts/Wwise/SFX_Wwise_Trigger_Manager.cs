@@ -17,5 +17,18 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
     public void StaffPickUp()
     {
         AkSoundEngine.PostEvent("Play_SFX_Alien_Staff_Pickup", this.gameObject);
+        AkSoundEngine.PostEvent("Play_SFX_After_Activation", this.gameObject);
+    }
+
+    public void SwitchActivated()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Crystal_Switch_Activated", this.gameObject);
+        AkSoundEngine.PostEvent("Play_SFX_After_Activation", this.gameObject);
+    }
+
+    public void PressurePad()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Pressure_Pad_Activated", this.gameObject);
+        AkSoundEngine.PostEvent("Play_SFX_After_Activation", this.gameObject);
     }
 }

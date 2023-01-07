@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{C3BE903B-D905-3477-CEEB-531812551565}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{F4BA94F8-1A5B-223E-BE2F-8CD7CDEAAC19}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -67,7 +67,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="0.877516" DurationMax="1.0231478">
+				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="1.877516" DurationMax="2.0231478">
 					<MediaRefs>
 						<MediaRef Id="534503124"/>
 						<MediaRef Id="728260902"/>
@@ -129,7 +129,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{9F8892B3-EACF-5342-21EE-BEA08D9C5C2E}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{58CFD281-04BA-892C-416B-0F9424429599}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -170,6 +170,10 @@
 					<ShortName>SFX_Teleporter_Rift_Loop.wav</ShortName>
 					<Path>Media/252594530.wem</Path>
 					<CachePath>SFX/SFX_Teleporter_Rift_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="255810046" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Heartbeat_Loop.wav</ShortName>
+					<CachePath>SFX/SFX_Heartbeat_Loop_10C4C929.wem</CachePath>
 				</File>
 				<File Id="310575942" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_A_01.wav</ShortName>
@@ -276,7 +280,17 @@
 						<MediaRef Id="1038708921"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2116431113" Name="Play_SFX_Alien_Staff_Idle" MaxAttenuation="10" DurationType="Infinite">
+				<Event Id="3765695918" Name="Play_Heartbeat" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="255810046"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1380322271" Name="Play_SFX_After_Activation" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="995374565"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2116431113" Name="Play_SFX_Alien_Staff_Idle" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="165830993"/>
 					</MediaRefs>
@@ -287,21 +301,16 @@
 						<MediaRef Id="792181325"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1141199166" Name="Play_SFX_Crsytal_Switches_Before_Activation" MaxAttenuation="20" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="449291716"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="3532940987" Name="Play_SFX_Crystal_Switch_Activated" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
+				<Event Id="3532940987" Name="Play_SFX_Crystal_Switch_Activated" MaxAttenuation="5" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
 					<MediaRefs>
 						<MediaRef Id="320843627"/>
 						<MediaRef Id="566688590"/>
 						<MediaRef Id="972870010"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="411583353" Name="Play_SFX_Crystal_Switches_Afert_Activation" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="3731817354" Name="Play_SFX_Crystal_Switches_Before_Activation" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="995374565"/>
+						<MediaRef Id="449291716"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1068397626" Name="Play_SFX_HealthBox_Idle_01" MaxAttenuation="10" DurationType="Infinite">
@@ -324,12 +333,12 @@
 						<MediaRef Id="1049985844"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" MaxAttenuation="5" DurationType="OneShot" DurationMin="2.9070058" DurationMax="3.3586168">
+				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" DurationType="OneShot" DurationMin="2.9070058" DurationMax="3.3586168">
 					<MediaRefs>
 						<MediaRef Id="186637930"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2961794190" Name="Play_SFX_Pressure_Pad_Idle" MaxAttenuation="10" DurationType="Infinite">
+				<Event Id="2961794190" Name="Play_SFX_Pressure_Pad_Idle" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="327699342"/>
 					</MediaRefs>
@@ -344,10 +353,14 @@
 						<MediaRef Id="222860603"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3789712745" Name="Stop_AllSounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="971296124" Name="Ellen_Health"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{6B6689AF-8BF7-DE05-DF2F-2922168DB0BE}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{80D41732-A1D6-E63F-6C81-5D1DFB991EF6}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -365,7 +378,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6EBAF266-E5B4-4F4C-D5BD-56F6243CC805}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{38EBC14C-6140-6A80-2E2E-96295B10938D}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -387,8 +400,10 @@
 				<Bus Id="4130663432" Name="Bus_RFX"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
 				<GameParameter Id="2037612127" Name="PreMaster_Volume"/>
+				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 			<StateGroups>
@@ -429,7 +444,7 @@
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{B7EF604A-E4F5-F1E0-A0FB-B4D8845B7707}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{4F048B2B-1562-231D-CB2C-AFCDBA435273}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -466,6 +481,11 @@
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_04_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="941828739" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.6430143" DurationMax="0.8216358">
 					<MediaRefs>
@@ -478,8 +498,16 @@
 						<MediaRef Id="590952037"/>
 						<MediaRef Id="788523815"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="941828739"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{82357035-0597-D7FC-EBE9-8E2B33519470}">
 			<ShortName>Chomper_SNBK</ShortName>
@@ -844,5 +872,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{E9B1C9E0-17F3-423D-ACB6-92274A41BF4B}</FileHash>
+	<FileHash>{0638C1FF-F581-1ED0-BB75-745DF0E3471C}</FileHash>
 </SoundBanksInfo>

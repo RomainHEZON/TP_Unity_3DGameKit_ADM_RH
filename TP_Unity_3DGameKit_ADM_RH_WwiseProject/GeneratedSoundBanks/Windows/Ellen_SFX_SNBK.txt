@@ -1,6 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2329713267	Play_Alien_Staff_Attack			\Default Work Unit\00_40_Ellen_SFX\Play_Alien_Staff_Attack	
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3828256600	Staff_Distorsion			\Default Work Unit\Bus_Volume\Staff_Distorsion	
+
+Effect plug-ins	ID	Name	Type				Notes
+	941828739	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	167487927	Ellen_Alien_Staff_Attack_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Ellen_Alien_Staff_Attack_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_40_Ellen_SFX\Ellen_SFX_Mixer\Alien_Staff_Attack_RC\Ellen_Alien_Staff_Attack_02		66846
 	174597733	Ellen_Alien_Staff_Attack_06	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Ellen_Alien_Staff_Attack_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_40_Ellen_SFX\Ellen_SFX_Mixer\Alien_Staff_Attack_RC\Ellen_Alien_Staff_Attack_06		74096

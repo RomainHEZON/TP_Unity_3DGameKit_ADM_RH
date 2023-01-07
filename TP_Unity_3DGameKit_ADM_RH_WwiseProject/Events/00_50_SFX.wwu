@@ -72,12 +72,12 @@
 				</Folder>
 				<Folder Name="Crystal" ID="{7AAAA07A-0CD4-4CD7-A0B9-1062CC916FE4}" ShortID="25343052">
 					<ChildrenList>
-						<Event Name="Play_SFX_Crsytal_Switches_Before_Activation" ID="{5D4648CA-F3F9-48B8-814D-87A49F5C8C4D}">
+						<Event Name="Play_SFX_Crystal_Switches_Before_Activation" ID="{5D4648CA-F3F9-48B8-814D-87A49F5C8C4D}">
 							<ChildrenList>
 								<Action Name="" ID="{AFBD26A9-8F3C-4CEB-B4E2-07C1BD1F846B}" ShortID="16689098">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Crsytal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+											<ObjectRef Name="SFX_Crystal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -92,7 +92,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Crsytal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+											<ObjectRef Name="SFX_Crystal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -100,17 +100,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Crystal_Switch_Activated_RC" ID="{A28E7E96-C0EA-4BB8-B608-4B88268CF68F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Crystal_Switches_Afert_Activation" ID="{AF37FCEB-AF87-4F15-A651-2817DFF73138}">
-							<ChildrenList>
-								<Action Name="" ID="{B96A3CDD-ABF4-42E5-AB72-0DEDEB58FE08}" ShortID="264022342">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Crystal_Switches_Afert_Activation_Loop" ID="{C05CEAF1-5426-4234-A64A-41EA23E13F70}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -278,6 +267,76 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_SFX_After_Activation" ID="{AF37FCEB-AF87-4F15-A651-2817DFF73138}">
+					<ChildrenList>
+						<Action Name="" ID="{B96A3CDD-ABF4-42E5-AB72-0DEDEB58FE08}" ShortID="264022342">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_After_Activation_Loop" ID="{C05CEAF1-5426-4234-A64A-41EA23E13F70}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_AllSounds" ID="{AC867609-07FD-4D8B-8FE8-7542BF54FA2B}">
+					<ChildrenList>
+						<Action Name="" ID="{AF7E0692-AD39-432F-B417-0060860D5D2B}" ShortID="399184258">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_After_Activation_Loop" ID="{C05CEAF1-5426-4234-A64A-41EA23E13F70}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C3B27F91-0D58-4A12-B73A-B960BD7D9925}" ShortID="719603994">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7854691E-30F8-4A96-BC57-BCEC42BDF5E9}" ShortID="415388747">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_HealthBox_Idle_Loop_01" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2B80A56D-8771-4625-88C2-14890DD72CBC}" ShortID="162072997">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Teleporter_Rift_Loop" ID="{AFA980EB-A678-4ACD-ADF1-CDF7822CBFAC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{8BF29A33-C149-48B8-95BB-7D71E4074FC6}" ShortID="675824529">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
