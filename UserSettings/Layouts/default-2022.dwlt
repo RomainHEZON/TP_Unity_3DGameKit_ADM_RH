@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 90
+  controlID: 22
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 329
     height: 570
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -647,22 +647,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/3DGamekit
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets
+  - Assets/3DGamekit
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3e7e0000
-    m_LastClickedID: 32318
-    m_ExpandedIDs: 000000000e7e0000107e0000127e0000147e0000167e0000187e00001a7e00001c7e00001e7e0000dc58010000ca9a3b
+    m_SelectedIDs: 58430100
+    m_LastClickedID: 82776
+    m_ExpandedIDs: 00000000584301005a4301005c4301005e43010060430100624301006443010066430100684301006a4301004245010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -690,7 +690,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e7e0000107e0000127e0000147e0000167e0000187e00001a7e00001c7e00001e7e0000
+    m_ExpandedIDs: 00000000584301005a4301005c4301005e43010060430100624301006443010066430100684301006a430100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -717,22 +717,22 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000165101006c5001006a5101002851010020510100a852010086510100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: FT_Material_Switch
-      m_OriginalName: FT_Material_Switch
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 519834
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
@@ -819,10 +819,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 640}
-      m_SelectedIDs: 5ec20100
-      m_LastClickedID: 115294
-      m_ExpandedIDs: f649fcffc41ffdfff42ffdff949afdff72b1fdffcaf1ffffa45b01001a620100ac6601006c6d01005c7d01005680010046830100ec8f0100429a0100e0b60100e6bd010080d70100
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 8a450100
+      m_LastClickedID: 0
+      m_ExpandedIDs: fcfaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1000,7 +1000,7 @@ MonoBehaviour:
       containerId: overlay-container--right
       floating: 0
       collapsed: 0
-      displayed: 1
+      displayed: 0
       snapOffset: {x: 0, y: 0}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.28618088, y: -0.5782691, z: 0.22683375, w: 0.7295942}
     speed: 2
-    m_Value: {x: 0.28583232, y: -0.5793467, z: 0.22725643, w: 0.72870564}
+    m_Value: {x: 0.2861729, y: -0.578253, z: 0.22682741, w: 0.72957385}
   m_Size:
     m_Target: 37.03693
     speed: 2
