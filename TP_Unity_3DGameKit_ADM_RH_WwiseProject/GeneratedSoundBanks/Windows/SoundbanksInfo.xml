@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{4128FEA0-9E0A-3D7B-7E81-820ADD674F42}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{6D3310ED-7616-7B1F-0FB9-71437921D725}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -51,7 +51,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="0.30666667" DurationMax="0.30666667">
+				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="1.2266667" DurationMax="1.2266667">
 					<MediaRefs>
 						<MediaRef Id="340499708"/>
 					</MediaRefs>
@@ -181,7 +181,7 @@
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{6F828ACE-DEFF-D3D2-AEE5-03ADE88F958C}">
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{443E83D6-33C2-EF49-6DD3-A19D8BB09C91}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
 			<Media>
@@ -540,5 +540,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{263EA8EE-4208-20ED-B0E1-60087DB0ECF0}</FileHash>
+	<FileHash>{379CC0A1-D371-7F1F-E122-5218D962948C}</FileHash>
 </SoundBanksInfo>

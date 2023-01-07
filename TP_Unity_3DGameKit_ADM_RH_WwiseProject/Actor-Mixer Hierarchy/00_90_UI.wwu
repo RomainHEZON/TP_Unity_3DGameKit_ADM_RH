@@ -18,6 +18,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="UI_Game_Pause" ID="{A1D655D1-9399-4E95-A5BF-5780772136BB}" ShortID="668235532">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-2400</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
