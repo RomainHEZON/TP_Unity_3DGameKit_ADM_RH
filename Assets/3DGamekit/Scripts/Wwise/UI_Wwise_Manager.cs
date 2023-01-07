@@ -1,3 +1,4 @@
+using Gamekit3D;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -11,12 +12,14 @@ public class UI_Wwise_Manager : MonoBehaviour
 
     [SerializeField] private AK.Wwise.RTPC VolumeRTPC;
 
+    [SerializeField] private AK.Wwise.RTPC HealthRTPC;
+
+
+    // Pointer UI 
     public void PointerHover()
     {
         AkSoundEngine.PostEvent("Play_UI_Menu_Mouse_Over", this.gameObject);
     }
-
-   
     public void PointerConfirm()
     {
         AkSoundEngine.PostEvent("Play_UI_Menu_Selection", this.gameObject);
@@ -47,6 +50,12 @@ public class UI_Wwise_Manager : MonoBehaviour
         AkSoundEngine.SetRTPCValue(VolumeRTPC.Name, VolumeSlider.value);
 
         AkSoundEngine.PostEvent("Play_UI_Menu_Volume_Slider", this.gameObject);
+    }
+
+    // Dialogue UI 
+    public void DialogueStart()
+    {
+        AkSoundEngine.PostEvent("Play_UI_Dialogue_Start", this.gameObject);
     }
 
 }

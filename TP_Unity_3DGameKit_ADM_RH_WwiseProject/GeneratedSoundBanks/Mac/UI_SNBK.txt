@@ -5,7 +5,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1899199409	Play_UI_Game_Resume			\Default Work Unit\00_90_UI\Play_UI_Game_Resume	
 	1926492655	Play_UI_Menu_Mouse_Over			\Default Work Unit\00_90_UI\Play_UI_Menu_Mouse_Over	
 	2157261217	Play_UI_Menu_Selection			\Default Work Unit\00_90_UI\Play_UI_Menu_Selection	
+	2414798867	Play_UI_HP_Loss			\Default Work Unit\00_90_UI\Play_UI_HP_Loss	
 	2556697005	Play_UI_Menu_Volume_Slider			\Default Work Unit\00_90_UI\Play_UI_Menu_Volume_Slider	
+	2863055552	Play_UI_Dialogue_Start			\Default Work Unit\00_90_UI\Play_UI_Dialogue_Start	
 	3336058037	Play_UI_Game_Quit			\Default Work Unit\00_90_UI\Play_UI_Game_Quit	
 	4059508246	Play_UI_Game_Pause			\Default Work Unit\00_90_UI\Play_UI_Game_Pause	
 
@@ -16,9 +18,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	60129979	UI_Menu_Selection	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Selection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Selection		69728
 	216524460	UI_Game_Resume	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Game_Resume_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Resume		110196
 	375457453	UI_Game_Quit	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Game_Quit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Quit		57904
+	534503124	UI_Dialogue_Start_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Dialogue_Start_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Dialogue_Start_RC\UI_Dialogue_Start_02		173516
 	536482775	UI_Menu_Cancel	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Cancel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Cancel		52388
 	609601031	UI_Game_Pause	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Game_Pause_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Pause		75332
+	713060305	UI_HP_Loss_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_HP_Loss_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_HP_Loss_RC\UI_HP_Loss_01		81292
+	728260902	UI_Dialogue_Start_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Dialogue_Start_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Dialogue_Start_RC\UI_Dialogue_Start_01		190948
 	976061305	UI_Menu_Navigation	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Navigation_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Navigation		8852
+	1001349253	UI_HP_Loss_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_HP_Loss_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_HP_Loss_RC\UI_HP_Loss_02		69728
 	1005657862	UI_Game_Start	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Game_Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Start		254268
 	1022264341	UI_Menu_Mouse_Over	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Mouse_Over_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Mouse_Over		6052
 	1069794990	UI_Menu_Volume_Slider	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Volume_Slider_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Volume_Slider		7952

@@ -10,9 +10,13 @@ namespace Gamekit3D
     public partial class Damageable : MonoBehaviour
     {
 
-        public int maxHitPoints;
+        private int maxHitPoints = 5;
         [Tooltip("Time that this gameObject is invulnerable for, after receiving damage.")]
         public float invulnerabiltyTime;
+
+
+        [SerializeField] private AK.Wwise.RTPC HealthRTPC;
+
 
 
         [Tooltip("The angle from the which that damageable is hitable. Always in the world XZ plane, with the forward being rotate by hitForwardRoation")]
@@ -45,6 +49,9 @@ namespace Gamekit3D
 
         void Update()
         {
+            AkSoundEngine.SetRTPCValue(HealthRTPC.Name, maxHitPoints);
+
+
             if (isInvulnerable)
             {
                 m_timeSinceLastHit += Time.deltaTime;

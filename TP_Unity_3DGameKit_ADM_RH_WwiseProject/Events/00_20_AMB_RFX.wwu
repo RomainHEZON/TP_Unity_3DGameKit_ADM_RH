@@ -6,6 +6,19 @@
 				<Property Name="Color" Type="int16" Value="23"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_AMB_RFX_Morse_Code_Loop" ID="{CF7E75C5-CC13-4D12-BA15-98E650D5779E}">
+					<ChildrenList>
+						<Action Name="" ID="{CCDFB07B-0508-4589-B449-220A9CD4A532}" ShortID="250536718">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_RFX_Morse_Code_Loop" ID="{08B31DE9-91FB-42FC-B72A-B4D746211A01}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{34683D43-C630-CF15-7B47-63FE97E97641}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{C3BE903B-D905-3477-CEEB-531812551565}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -25,6 +25,10 @@
 					<ShortName>UI_Game_Quit.wav</ShortName>
 					<CachePath>SFX/UI_Game_Quit_10C4C929.wem</CachePath>
 				</File>
+				<File Id="534503124" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Dialogue_Start_02.wav</ShortName>
+					<CachePath>SFX/UI_Dialogue_Start_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="536482775" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Cancel.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Cancel_10C4C929.wem</CachePath>
@@ -33,9 +37,21 @@
 					<ShortName>UI_Game_Pause.wav</ShortName>
 					<CachePath>SFX/UI_Game_Pause_10C4C929.wem</CachePath>
 				</File>
+				<File Id="713060305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_HP_Loss_01.wav</ShortName>
+					<CachePath>SFX/UI_HP_Loss_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="728260902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Dialogue_Start_01.wav</ShortName>
+					<CachePath>SFX/UI_Dialogue_Start_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="976061305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Navigation.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Navigation_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1001349253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_HP_Loss_02.wav</ShortName>
+					<CachePath>SFX/UI_HP_Loss_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1005657862" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Game_Start.wav</ShortName>
@@ -51,47 +67,59 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="0.39185417" DurationMax="0.39185417">
+				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="0.877516" DurationMax="1.0231478">
+					<MediaRefs>
+						<MediaRef Id="534503124"/>
+						<MediaRef Id="728260902"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="0.38069883" DurationMax="0.40333638">
 					<MediaRefs>
 						<MediaRef Id="609601031"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.30108333" DurationMax="0.30108333">
+				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.29251206" DurationMax="0.30990574">
 					<MediaRefs>
 						<MediaRef Id="375457453"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1899199409" Name="Play_UI_Game_Resume" DurationType="OneShot" DurationMin="0.5734375" DurationMax="0.5734375">
+				<Event Id="1899199409" Name="Play_UI_Game_Resume" DurationType="OneShot" DurationMin="0.5571129" DurationMax="0.59024054">
 					<MediaRefs>
 						<MediaRef Id="216524460"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="1.3238125" DurationMax="1.3238125">
+				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="1.2861261" DurationMax="1.3626032">
 					<MediaRefs>
 						<MediaRef Id="1005657862"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1739779019" Name="Play_UI_Menu_Cancel" DurationType="OneShot" DurationMin="0.27235416" DurationMax="0.27235416">
+				<Event Id="2414798867" Name="Play_UI_HP_Loss" DurationType="OneShot" DurationMin="0.35234225" DurationMax="0.43528762">
+					<MediaRefs>
+						<MediaRef Id="713060305"/>
+						<MediaRef Id="1001349253"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1739779019" Name="Play_UI_Menu_Cancel" DurationType="OneShot" DurationMin="0.26460075" DurationMax="0.28033474">
 					<MediaRefs>
 						<MediaRef Id="536482775"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1926492655" Name="Play_UI_Menu_Mouse_Over" DurationType="OneShot" DurationMin="0.031020833" DurationMax="0.031020833">
+				<Event Id="1926492655" Name="Play_UI_Menu_Mouse_Over" DurationType="OneShot" DurationMin="0.03013773" DurationMax="0.031929813">
 					<MediaRefs>
 						<MediaRef Id="1022264341"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1771101267" Name="Play_UI_Menu_Navigation" DurationType="OneShot" DurationMin="0.045604166" DurationMax="0.045604166">
+				<Event Id="1771101267" Name="Play_UI_Menu_Navigation" DurationType="OneShot" DurationMin="0.044305902" DurationMax="0.04694047">
 					<MediaRefs>
 						<MediaRef Id="976061305"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2157261217" Name="Play_UI_Menu_Selection" DurationType="OneShot" DurationMin="0.36266667" DurationMax="0.36266667">
+				<Event Id="2157261217" Name="Play_UI_Menu_Selection" DurationType="OneShot" DurationMin="0.35234225" DurationMax="0.3732936">
 					<MediaRefs>
 						<MediaRef Id="60129979"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2556697005" Name="Play_UI_Menu_Volume_Slider" DurationType="OneShot" DurationMin="0.040916666" DurationMax="0.040916666">
+				<Event Id="2556697005" Name="Play_UI_Menu_Volume_Slider" DurationType="OneShot" DurationMin="0.039751846" DurationMax="0.042115618">
 					<MediaRefs>
 						<MediaRef Id="1069794990"/>
 					</MediaRefs>
@@ -319,9 +347,23 @@
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{4D7AC7B9-7CDC-525E-6AA2-9D61F257FE38}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{6B6689AF-8BF7-DE05-DF2F-2922168DB0BE}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
+			<Media>
+				<File Id="249634031" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_RFX_Morse_Code_Loop.wav</ShortName>
+					<Path>Media/249634031.wem</Path>
+					<CachePath>SFX/AMB_RFX_Morse_Code_Loop_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="4236454905" Name="Play_AMB_RFX_Morse_Code_Loop" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="249634031"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E91E3175-2E99-B98C-F048-3B1DF77ADEA1}">
 			<ShortName>Init</ShortName>
@@ -802,5 +844,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7EA4C515-815C-D374-AD98-5B91CF7AE6C9}</FileHash>
+	<FileHash>{A2FAABE4-BEEB-3BE9-2BF3-BC64A6F0D4BA}</FileHash>
 </SoundBanksInfo>

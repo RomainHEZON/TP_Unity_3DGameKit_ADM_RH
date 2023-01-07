@@ -14,9 +14,10 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ALIEN_STAFF_ATTACK = 2329713267U;
+        static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE_LOOP = 4236454905U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
-        static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE_LOOP = 2476186902U;
+        static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_PICKUP = 1472032783U;
         static const AkUniqueID PLAY_SFX_CRSYTAL_SWITCHES_BEFORE_ACTIVATION = 1141199166U;
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCH_ACTIVATED = 3532940987U;
@@ -29,15 +30,18 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
+        static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
         static const AkUniqueID PLAY_UI_GAME_QUIT = 3336058037U;
         static const AkUniqueID PLAY_UI_GAME_RESUME = 1899199409U;
         static const AkUniqueID PLAY_UI_GAME_START = 1580643620U;
+        static const AkUniqueID PLAY_UI_HP_LOSS = 2414798867U;
         static const AkUniqueID PLAY_UI_MENU_CANCEL = 1739779019U;
         static const AkUniqueID PLAY_UI_MENU_MOUSE_OVER = 1926492655U;
         static const AkUniqueID PLAY_UI_MENU_NAVIGATION = 1771101267U;
         static const AkUniqueID PLAY_UI_MENU_SELECTION = 2157261217U;
         static const AkUniqueID PLAY_UI_MENU_VOLUME_SLIDER = 2556697005U;
+        static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
     } // namespace EVENTS
 
     namespace STATES
