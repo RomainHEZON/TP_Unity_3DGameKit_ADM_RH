@@ -6,6 +6,19 @@
 				<Property Name="Color" Type="int16" Value="24"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Alien_Staff_Attack" ID="{0CA31F93-2DCB-4EAC-9D3A-F0788E4FBCD2}">
+					<ChildrenList>
+						<Action Name="" ID="{690D50B7-46A2-4EE6-9720-D9CCCA4412DD}" ShortID="981078324">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alien_Staff_Attack_RC" ID="{8EA6D9DA-7BB1-464C-9582-A170C60F7CCF}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
