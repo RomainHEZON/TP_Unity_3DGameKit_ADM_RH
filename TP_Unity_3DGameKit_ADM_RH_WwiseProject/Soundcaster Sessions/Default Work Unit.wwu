@@ -33,7 +33,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
-							<Value>0</Value>
+							<Value>2.20302375809935</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

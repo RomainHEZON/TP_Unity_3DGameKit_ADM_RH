@@ -28,6 +28,7 @@
 				<GameParameter Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}">
