@@ -3,7 +3,15 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{9EF015E5-6663-4DBB-B164-080BE078F480}" PersistMode="Standalone">
 			<ChildrenList>
-				<WorkUnit Name="UI" ID="{66076EBD-ECBE-4587-8472-443FD6D56D02}" PersistMode="Reference"/>
+				<WorkUnit Name="00_90_UI" ID="{66076EBD-ECBE-4587-8472-443FD6D56D02}" PersistMode="Reference"/>
+				<WorkUnit Name="00_10_AMB_Pads" ID="{67A2053F-6693-43F6-9F35-02414E4A70AB}" PersistMode="Reference"/>
+				<WorkUnit Name="00_20_AMB_RFX" ID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}" PersistMode="Reference"/>
+				<WorkUnit Name="00_30_Ellen_Loco" ID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}" PersistMode="Reference"/>
+				<WorkUnit Name="00_40_Ellen_SFX" ID="{0718BB27-281F-432D-8939-DC3E36BB2F26}" PersistMode="Reference"/>
+				<WorkUnit Name="00_50_SFX" ID="{26D4530A-176F-45B4-B26F-79B5D088E60B}" PersistMode="Reference"/>
+				<WorkUnit Name="00_60_Chomper" ID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}" PersistMode="Reference"/>
+				<WorkUnit Name="00_70_Grenadier" ID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}" PersistMode="Reference"/>
+				<WorkUnit Name="00_80_Spitter" ID="{A61D2BDD-C513-413C-BD01-33465AFE868A}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

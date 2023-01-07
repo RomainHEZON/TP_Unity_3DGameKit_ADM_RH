@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{67A2053F-6693-43F6-9F35-02414E4A70AB}" SchemaVersion="110" RootDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}" ParentDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}">
+	<AudioObjects>
+		<WorkUnit Name="00_10_AMB_Pads" ID="{67A2053F-6693-43F6-9F35-02414E4A70AB}" OwnerID="{9EF015E5-6663-4DBB-B164-080BE078F480}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Pads_Mixer" ID="{B392822F-B58D-42AB-8198-C109BB2FB0BA}" ShortID="966179398">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

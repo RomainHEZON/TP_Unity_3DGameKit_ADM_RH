@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}" SchemaVersion="110" RootDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}" ParentDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}">
+	<AudioObjects>
+		<WorkUnit Name="00_30_Ellen_Loco" ID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}" OwnerID="{9EF015E5-6663-4DBB-B164-080BE078F480}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="11"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Ellen_Loco_Mixer" ID="{2E06DF50-9113-4B52-9F00-C5BEADA80BC8}" ShortID="543366343">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

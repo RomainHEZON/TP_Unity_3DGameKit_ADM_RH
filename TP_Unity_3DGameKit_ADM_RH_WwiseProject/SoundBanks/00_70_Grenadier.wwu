@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B41FF8BC-07DB-4098-B1D5-11CB95263BE3}" SchemaVersion="110" RootDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" ParentDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}">
+	<SoundBanks>
+		<WorkUnit Name="00_70_Grenadier" ID="{B41FF8BC-07DB-4098-B1D5-11CB95263BE3}" OwnerID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="Grenadier_SNBK" ID="{43140098-378A-4DE2-81D5-ED8493BAE722}">
+					<ObjectInclusionList>
+						<ObjectRef Name="00_70_Grenadier" ID="{EA2F5871-F3E7-4E4C-9135-72AF42280BDA}" WorkUnitID="{EA2F5871-F3E7-4E4C-9135-72AF42280BDA}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

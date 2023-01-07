@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DD8D4F24-77D5-4C52-805F-C23BE4469BDE}" SchemaVersion="110" RootDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" ParentDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}">
+	<SoundBanks>
+		<WorkUnit Name="00_90_UI" ID="{DD8D4F24-77D5-4C52-805F-C23BE4469BDE}" OwnerID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="UI_SNBK" ID="{6EC8D723-DE95-4F5C-A479-A1E784DA7056}">
+					<ObjectInclusionList>
+						<ObjectRef Name="00_90_UI" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" WorkUnitID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

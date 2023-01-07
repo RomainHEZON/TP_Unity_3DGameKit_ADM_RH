@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{30BACAAC-CB00-4C62-9820-EC9A92C48111}" SchemaVersion="110">
 	<Attenuations>
-		<WorkUnit Name="Default Work Unit" ID="{30BACAAC-CB00-4C62-9820-EC9A92C48111}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{30BACAAC-CB00-4C62-9820-EC9A92C48111}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="ATN_10m" ID="{460CB990-94F0-4D03-9E31-ED83591B2D9B}" PersistMode="Reference"/>
+				<WorkUnit Name="ATN_20m" ID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}" PersistMode="Reference"/>
+				<WorkUnit Name="ATN_30m" ID="{5956A9BF-8B5E-4B3F-A5A7-1B583EACDA5B}" PersistMode="Reference"/>
+				<WorkUnit Name="ATN_50m" ID="{9213C2F7-49B0-42CD-98D6-D22126F1331E}" PersistMode="Reference"/>
+				<WorkUnit Name="ATN_100m" ID="{8A0334BD-082B-43C7-B610-ECEDE7A55AA9}" PersistMode="Reference"/>
+				<WorkUnit Name="ATN_5m" ID="{4296FBC0-3405-4568-A033-B592D8B4D28D}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Attenuations>
 </WwiseDocument>

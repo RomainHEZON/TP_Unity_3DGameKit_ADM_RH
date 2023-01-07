@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
 	<Events>
-		<WorkUnit Name="UI Events" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+		<WorkUnit Name="00_90_UI" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="13"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Event Name="Play_UI_Menu_Cancel" ID="{F99C09AD-2550-4665-BBD0-43D8C34CF9FC}">
 					<ChildrenList>

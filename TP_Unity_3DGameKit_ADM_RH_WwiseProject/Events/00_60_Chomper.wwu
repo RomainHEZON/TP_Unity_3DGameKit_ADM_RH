@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{26DC4F63-5FD6-406C-80EC-1DADFC7ED8EB}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="00_60_Chomper" ID="{26DC4F63-5FD6-406C-80EC-1DADFC7ED8EB}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

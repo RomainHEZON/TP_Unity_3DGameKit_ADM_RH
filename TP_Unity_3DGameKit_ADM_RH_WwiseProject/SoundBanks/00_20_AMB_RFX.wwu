@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{97981634-EB1C-409B-863E-917FA1B06C1C}" SchemaVersion="110" RootDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" ParentDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}">
+	<SoundBanks>
+		<WorkUnit Name="00_20_AMB_RFX" ID="{97981634-EB1C-409B-863E-917FA1B06C1C}" OwnerID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="AMB_RFX_SNBK" ID="{AD4E00A0-FEB7-4828-B75B-C9A47BF963C9}">
+					<ObjectInclusionList>
+						<ObjectRef Name="00_20_AMB_RFX" ID="{D268E68B-D0CB-4EC8-96B3-975CC823F1B6}" WorkUnitID="{D268E68B-D0CB-4EC8-96B3-975CC823F1B6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

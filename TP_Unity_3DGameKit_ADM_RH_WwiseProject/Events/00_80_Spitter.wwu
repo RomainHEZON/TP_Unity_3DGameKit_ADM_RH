@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="00_80_Spitter" ID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="3"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
