@@ -9,17 +9,20 @@
 			<ChildrenList>
 				<GameParameter Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="PreMaster_Volume" ID="{486C57A7-DA67-47B9-8068-0D58007C42B2}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Music_Volume" ID="{068C4936-1B06-4A9D-B46F-18D090D4CA5E}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class UI_Wwise_Manager : MonoBehaviour
 {
+    public Slider VolumeSlider;
+
+    [SerializeField] private AK.Wwise.RTPC VolumeRTPC;
+
     public void PointerHover()
     {
         AkSoundEngine.PostEvent("Play_UI_Menu_Mouse_Over", this.gameObject);
@@ -34,6 +40,13 @@ public class UI_Wwise_Manager : MonoBehaviour
     public void PointerUIClose()
     {
         AkSoundEngine.PostEvent("Play_UI_Game_Resume", this.gameObject);
+    }
+
+    public void PointerVolumeSlider()
+    {
+        AkSoundEngine.SetRTPCValue(VolumeRTPC.Name, VolumeSlider.value);
+
+        AkSoundEngine.PostEvent("Play_UI_Menu_Volume_Slider", this.gameObject);
     }
 
 }

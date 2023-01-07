@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class BusVolume_Wwise_Manager : MonoBehaviour
 {
     public Slider thisSlider;
-    public float masterVolume;
-    public float musicVolume;
-    public float preMasterVolume;
+    public float masterVolume = 1;
+    public float musicVolume = 1;
+    public float preMasterVolume = 1;
 
     public void SetSpecificVolume(string whatValue)
     {

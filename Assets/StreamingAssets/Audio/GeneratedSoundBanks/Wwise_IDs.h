@@ -21,6 +21,7 @@ namespace AK
         static const AkUniqueID PLAY_UI_MENU_MOUSE_OVER = 1926492655U;
         static const AkUniqueID PLAY_UI_MENU_NAVIGATION = 1771101267U;
         static const AkUniqueID PLAY_UI_MENU_SELECTION = 2157261217U;
+        static const AkUniqueID PLAY_UI_MENU_VOLUME_SLIDER = 2556697005U;
     } // namespace EVENTS
 
     namespace STATES

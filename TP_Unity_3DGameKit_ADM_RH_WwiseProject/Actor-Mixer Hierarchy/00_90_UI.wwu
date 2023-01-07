@@ -193,6 +193,102 @@
 								<ActiveSource Name="UI_Menu_Selection" ID="{60CA809A-33CD-490D-8B4A-8D82189F8E33}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="UI_Menu_Volume_Slider" ID="{CB6418FF-D3AF-4AD2-9512-0F157B013E26}" ShortID="265070891">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="UI_SoundPack11_Select_v14" ID="{09AAB72A-92A6-432B-A57D-ACFA6D2137D7}">
+									<Language>SFX</Language>
+									<AudioFile>UI_SoundPack11_Select_v14.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="667469296"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{8B7F06CC-B172-4D33-94CD-0D879E1D752C}" ShortID="673132238">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{C6B460FD-0330-4AAC-B1E1-72B77721B5BC}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-18</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{D8559F7C-0FB5-4C91-A7C7-A6AA3DA30858}" ShortID="278925394">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Pitch"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{26E2E5ED-4E93-4855-BAFF-195ED7C44C82}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-3692</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>4707</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="UI_SoundPack11_Select_v14" ID="{09AAB72A-92A6-432B-A57D-ACFA6D2137D7}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

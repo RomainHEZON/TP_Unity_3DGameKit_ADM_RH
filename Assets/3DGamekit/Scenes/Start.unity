@@ -353,19 +353,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1842219364}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayOneShot
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: dd4831d7f16404eef93a553329551c28,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 30343067}
         m_TargetAssemblyTypeName: UI_Wwise_Manager, Assembly-CSharp
         m_MethodName: PointerConfirm
@@ -457,6 +444,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &46387564
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +805,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1842219364}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: PlayOneShot
           m_Mode: 2
@@ -850,6 +842,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &104108098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1835,7 +1832,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1842219364}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: PlayOneShot
           m_Mode: 2
@@ -1872,6 +1869,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &206563674
 GameObject:
   m_ObjectHideFlags: 0
@@ -5021,7 +5023,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1842219364}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: PlayOneShot
           m_Mode: 2
@@ -5134,7 +5136,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1842219364}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -5209,6 +5211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1001 &542443987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6589,7 +6596,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1842219364}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: 
           m_MethodName: PlayOneShot
           m_Mode: 2
@@ -6702,7 +6709,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1842219364}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -6777,6 +6784,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &766580131 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4804005196842948, guid: cdfb686de96ee57479ec834151e92dc1,
@@ -8787,7 +8799,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1842219364}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -8862,6 +8874,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &1061760212 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4800483435198574, guid: e96082293505ffd458b7aa414b5a6da4,
@@ -9497,6 +9514,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &1198192266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4245146653929190, guid: cf4cc12d2fec2c14c8dda8420db93530,
@@ -9734,12 +9756,12 @@ PrefabInstance:
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
@@ -9755,7 +9777,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1842219364}
+      objectReference: {fileID: 1196810938}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -9774,12 +9796,17 @@ PrefabInstance:
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: PlayOneShot
+      value: PointerStartGame
       objectReference: {fileID: 0}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: PointerStartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UI_Wwise_Manager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
@@ -9795,11 +9822,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 8300000, guid: 141587bd8c30549d18910065667d12c3, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 114108761709197862, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
@@ -9835,7 +9862,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1842219364}
+      objectReference: {fileID: 0}
     - target: {fileID: 114219926330395178, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
@@ -9920,7 +9947,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1842219364}
+      objectReference: {fileID: 0}
     - target: {fileID: 114707957625037018, guid: eb72f36523dcf684f9ca37da45adfa76,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -10456,7 +10483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
   mixerParameter: SFXVolume
-  maxAttenuation: 8
+  maxAttenuation: 0
   minAttenuation: -60
 --- !u!114 &1355817757
 MonoBehaviour:
@@ -10503,16 +10530,16 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1941896228}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1355817758}
-        m_TargetAssemblyTypeName: BusVolume_Wwise_Manager, Assembly-CSharp
-        m_MethodName: SetSpecificVolume
-        m_Mode: 5
+        m_TargetAssemblyTypeName: UI_Wwise_Manager, Assembly-CSharp
+        m_MethodName: PointerVolumeSlider
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10530,13 +10557,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1355817754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e0e51192ebe3242bbee7c9b0d313ac, type: 3}
+  m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisSlider: {fileID: 1355817757}
-  masterVolume: 100
-  musicVolume: 100
-  preMasterVolume: 100
+  VolumeSlider: {fileID: 1355817757}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9c6206bb54dd90e41bd34829034ad4c0,
+      type: 2}
 --- !u!1 &1365416787
 GameObject:
   m_ObjectHideFlags: 0
@@ -11698,6 +11727,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1509888828
 GameObject:
   m_ObjectHideFlags: 0
@@ -12697,7 +12731,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 1842219364}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -12801,6 +12835,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &1647602764
 GameObject:
   m_ObjectHideFlags: 0
@@ -18317,7 +18356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: 248799cb4acba48f7b3ee842a80f788c, type: 2}
   mixerParameter: MusicVolume
-  maxAttenuation: 2
+  maxAttenuation: 0
   minAttenuation: -60
 --- !u!114 &1707485453
 MonoBehaviour:
@@ -18364,16 +18403,16 @@ MonoBehaviour:
   m_HandleRect: {fileID: 616697227}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1707485454}
-        m_TargetAssemblyTypeName: BusVolume_Wwise_Manager, Assembly-CSharp
-        m_MethodName: SetSpecificVolume
-        m_Mode: 5
+        m_TargetAssemblyTypeName: UI_Wwise_Manager, Assembly-CSharp
+        m_MethodName: PointerVolumeSlider
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18391,13 +18430,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1707485450}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e0e51192ebe3242bbee7c9b0d313ac, type: 3}
+  m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisSlider: {fileID: 1707485453}
-  masterVolume: 100
-  musicVolume: 100
-  preMasterVolume: 100
+  VolumeSlider: {fileID: 1707485453}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 41a52a15816fb264bb2e9ca902d2cc8f,
+      type: 2}
 --- !u!1 &1712882104
 GameObject:
   m_ObjectHideFlags: 0
@@ -19566,102 +19607,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visible: 1
   lockMode: 0
---- !u!82 &1842219364
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1842219356}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &1845282897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21850,16 +21795,16 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2038926900}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2037411742}
-        m_TargetAssemblyTypeName: BusVolume_Wwise_Manager, Assembly-CSharp
-        m_MethodName: SetSpecificVolume
-        m_Mode: 5
+        m_TargetAssemblyTypeName: UI_Wwise_Manager, Assembly-CSharp
+        m_MethodName: PointerVolumeSlider
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -21877,13 +21822,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2037411738}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3e0e51192ebe3242bbee7c9b0d313ac, type: 3}
+  m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisSlider: {fileID: 2037411741}
-  masterVolume: 100
-  musicVolume: 100
-  preMasterVolume: 100
+  VolumeSlider: {fileID: 2037411741}
+  VolumeRTPC:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 71eca75dcf50f6342bcde15fb83c3e15,
+      type: 2}
 --- !u!1 &2038926899
 GameObject:
   m_ObjectHideFlags: 0

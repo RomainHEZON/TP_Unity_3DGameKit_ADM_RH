@@ -95,6 +95,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_UI_Menu_Volume_Slider" ID="{1A16D354-AA06-4988-90A2-74B9BFAFB390}">
+					<ChildrenList>
+						<Action Name="" ID="{26575975-61F0-42D0-8D2A-D64A145DBD16}" ShortID="30727821">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Menu_Volume_Slider" ID="{CB6418FF-D3AF-4AD2-9512-0F157B013E26}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

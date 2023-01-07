@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{D92D1F82-9099-AA02-5500-2C8F73E38121}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{68296E04-C71F-49A8-FE03-C4A22D312A76}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -32,6 +32,10 @@
 				<File Id="536482775" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Cancel.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Cancel_10C4C929.wem</CachePath>
+				</File>
+				<File Id="667469296" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_SoundPack11_Select_v14.wav</ShortName>
+					<CachePath>SFX/UI_SoundPack11_Select_v14_10C4C929.wem</CachePath>
 				</File>
 				<File Id="834923045" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Match_Resume.wav</ShortName>
@@ -87,10 +91,12 @@
 						<MediaRef Id="60129979"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2556697005" Name="Play_UI_Menu_Volume_Slider" DurationType="OneShot" DurationMin="0.178875" DurationMax="0.178875">
+					<MediaRefs>
+						<MediaRef Id="667469296"/>
+					</MediaRefs>
+				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="4179668880" Name="Master_Volume"/>
-			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{6CE6E311-288F-8F1C-E43E-562FDD4A30BB}">
 			<ShortName>SFX_SNBK</ShortName>
@@ -100,7 +106,7 @@
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{468ADFED-EAFC-3405-A5D1-B1A087A0BCC6}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{6EBAF266-E5B4-4F4C-D5BD-56F6243CC805}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -164,5 +170,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{75A97903-2841-B648-E351-67C0E8AECE45}</FileHash>
+	<FileHash>{4DEFF795-01F8-2747-4C98-A3F790D7D607}</FileHash>
 </SoundBanksInfo>
