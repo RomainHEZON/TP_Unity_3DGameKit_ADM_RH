@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{68296E04-C71F-49A8-FE03-C4A22D312A76}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{4128FEA0-9E0A-3D7B-7E81-820ADD674F42}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -97,6 +97,9 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="4179668880" Name="Master_Volume"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{6CE6E311-288F-8F1C-E43E-562FDD4A30BB}">
 			<ShortName>SFX_SNBK</ShortName>
@@ -144,6 +147,23 @@
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="496641439" Name="Loco_Switch">
+					<Switches>
+						<Switch Id="712161704" Name="Run"/>
+						<Switch Id="1164125444" Name="Forward"/>
+						<Switch Id="1874288895" Name="Idle"/>
+						<Switch Id="2026920480" Name="Roll"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3194777289" Name="Material_Switch">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2003927601" Name="Puddle"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{D2A17FF5-7FC1-8E21-8DB1-082F9258E374}">
 			<ShortName>Grenadier_SNBK</ShortName>
@@ -161,14 +181,364 @@
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{786D79E7-8A8B-2CF6-C830-914ADA5A2170}">
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{6F828ACE-DEFF-D3D2-AEE5-03ADE88F958C}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
+			<Media>
+				<File Id="1213435" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_012.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_012_10C4C929.wem</CachePath>
+				</File>
+				<File Id="20928875" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_012.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_012_10C4C929.wem</CachePath>
+				</File>
+				<File Id="35785912" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_010.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_010_10C4C929.wem</CachePath>
+				</File>
+				<File Id="96426650" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_03.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="96450636" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Land_Forward_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Land_Forward_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="176378397" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Land_Forward_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Land_Forward_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="190560794" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Land_Forward_Roll_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Land_Forward_Roll_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="195051403" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_08.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_08_10C4C929.wem</CachePath>
+				</File>
+				<File Id="217241906" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_010.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_010_10C4C929.wem</CachePath>
+				</File>
+				<File Id="271598257" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_04.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="273948573" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_05.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="274183344" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Land_Forward_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Land_Forward_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="283508269" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_04.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="311493152" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Land_Idle.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Land_Idle_10C4C929.wem</CachePath>
+				</File>
+				<File Id="406738010" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_04.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="415169281" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Land_Forward_Roll_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Land_Forward_Roll_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="416239339" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="431935738" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_09.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_09_10C4C929.wem</CachePath>
+				</File>
+				<File Id="439076919" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="447530150" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Land_Forward_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Land_Forward_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="494015756" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_05.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="495874364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_06.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="496052829" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_011.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_011_10C4C929.wem</CachePath>
+				</File>
+				<File Id="513670959" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="536315680" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_06.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="552151822" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_08.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_08_10C4C929.wem</CachePath>
+				</File>
+				<File Id="552298077" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Land_Forward_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Land_Forward_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="569725719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_03.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="572601953" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_011.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_011_10C4C929.wem</CachePath>
+				</File>
+				<File Id="579277409" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_07.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="597132943" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="602762227" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="619308480" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_011.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_011_10C4C929.wem</CachePath>
+				</File>
+				<File Id="627917324" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Land_Forward_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Land_Forward_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="652444740" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_012.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_012_10C4C929.wem</CachePath>
+				</File>
+				<File Id="693724008" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Land_Forward_Roll_01.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Land_Forward_Roll_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="708721171" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Land_Forward_Roll.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Land_Forward_Roll_10C4C929.wem</CachePath>
+				</File>
+				<File Id="762602234" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_07.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="790125669" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_03.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="843674309" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Land_Idle.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Land_Idle_10C4C929.wem</CachePath>
+				</File>
+				<File Id="861844500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_06.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="878091183" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_09.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_09_10C4C929.wem</CachePath>
+				</File>
+				<File Id="880477338" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_07.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="881200720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_09.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_09_10C4C929.wem</CachePath>
+				</File>
+				<File Id="891240592" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Land_Idle.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Land_Idle_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982164098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Land_Forward_Roll_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Land_Forward_Roll_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="999716499" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_05.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1040313042" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Puddle_Run_010.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Puddle_Run_010_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1052179392" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Grass_Run_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Grass_Run_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1059167910" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Stone_Run_08.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Stone_Run_08_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2458421299" Name="Play_Ellen_Footstep" DurationType="OneShot" DurationMin="0.19510682" DurationMax="1.2265236">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3194777289" Id="1216965916"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="1874288895"/>
+									<MediaRefs>
+										<MediaRef Id="311493152"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="712161704" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="1213435"/>
+										<MediaRef Id="35785912"/>
+										<MediaRef Id="96426650"/>
+										<MediaRef Id="406738010"/>
+										<MediaRef Id="416239339"/>
+										<MediaRef Id="536315680"/>
+										<MediaRef Id="579277409"/>
+										<MediaRef Id="597132943"/>
+										<MediaRef Id="619308480"/>
+										<MediaRef Id="881200720"/>
+										<MediaRef Id="999716499"/>
+										<MediaRef Id="1059167910"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="2026920480"/>
+									<MediaRefs>
+										<MediaRef Id="693724008"/>
+										<MediaRef Id="982164098"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="1164125444"/>
+									<MediaRefs>
+										<MediaRef Id="96450636"/>
+										<MediaRef Id="552298077"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3194777289" Id="2003927601"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="1874288895"/>
+									<MediaRefs>
+										<MediaRef Id="843674309"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="712161704" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="195051403"/>
+										<MediaRef Id="273948573"/>
+										<MediaRef Id="283508269"/>
+										<MediaRef Id="431935738"/>
+										<MediaRef Id="439076919"/>
+										<MediaRef Id="495874364"/>
+										<MediaRef Id="572601953"/>
+										<MediaRef Id="602762227"/>
+										<MediaRef Id="652444740"/>
+										<MediaRef Id="790125669"/>
+										<MediaRef Id="880477338"/>
+										<MediaRef Id="1040313042"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="2026920480"/>
+									<MediaRefs>
+										<MediaRef Id="708721171"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="1164125444"/>
+									<MediaRefs>
+										<MediaRef Id="274183344"/>
+										<MediaRef Id="627917324"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="Switch" GroupId="3194777289" Id="4248645337" Default="true"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="1874288895"/>
+									<MediaRefs>
+										<MediaRef Id="891240592"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="712161704" Default="true"/>
+									<MediaRefs>
+										<MediaRef Id="20928875"/>
+										<MediaRef Id="217241906"/>
+										<MediaRef Id="271598257"/>
+										<MediaRef Id="494015756"/>
+										<MediaRef Id="496052829"/>
+										<MediaRef Id="513670959"/>
+										<MediaRef Id="552151822"/>
+										<MediaRef Id="569725719"/>
+										<MediaRef Id="762602234"/>
+										<MediaRef Id="861844500"/>
+										<MediaRef Id="878091183"/>
+										<MediaRef Id="1052179392"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="2026920480"/>
+									<MediaRefs>
+										<MediaRef Id="190560794"/>
+										<MediaRef Id="415169281"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="Switch" GroupId="496641439" Id="1164125444"/>
+									<MediaRefs>
+										<MediaRef Id="176378397"/>
+										<MediaRef Id="447530150"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="496641439" Name="Loco_Switch">
+					<Switches>
+						<Switch Id="712161704" Name="Run"/>
+						<Switch Id="1164125444" Name="Forward"/>
+						<Switch Id="1874288895" Name="Idle"/>
+						<Switch Id="2026920480" Name="Roll"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="3194777289" Name="Material_Switch">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2003927601" Name="Puddle"/>
+						<Switch Id="4248645337" Name="Grass"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{F8910FEF-7D0C-E31C-8E1E-56CAD9F243AD}">
 			<ShortName>Spitter_SNBK</ShortName>
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4DEFF795-01F8-2747-4C98-A3F790D7D607}</FileHash>
+	<FileHash>{E007D0AE-EA4E-ED7E-825F-971115D3E7E2}</FileHash>
 </SoundBanksInfo>

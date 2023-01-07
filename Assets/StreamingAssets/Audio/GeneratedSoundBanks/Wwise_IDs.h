@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
         static const AkUniqueID PLAY_UI_GAME_QUIT = 3336058037U;
         static const AkUniqueID PLAY_UI_GAME_RESUME = 1899199409U;
@@ -47,6 +48,35 @@ namespace AK
         } // namespace PAUSE_ON
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace LOCO_SWITCH
+        {
+            static const AkUniqueID GROUP = 496641439U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID FORWARD = 1164125444U;
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID ROLL = 2026920480U;
+                static const AkUniqueID RUN = 712161704U;
+            } // namespace SWITCH
+        } // namespace LOCO_SWITCH
+
+        namespace MATERIAL_SWITCH
+        {
+            static const AkUniqueID GROUP = 3194777289U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID PUDDLE = 2003927601U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace MATERIAL_SWITCH
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
