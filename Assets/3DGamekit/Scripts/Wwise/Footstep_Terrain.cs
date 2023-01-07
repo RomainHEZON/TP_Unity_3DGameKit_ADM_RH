@@ -48,7 +48,7 @@ public class Footstep_Terrain : MonoBehaviour
 
                 if (currentLayer != terrainCheck.GetLayerName(transform.position, t))
                 {
-                    Debug.Log("je compare le terrain");
+                    Debug.Log("je touche le terrain :" + currentLayer);
 
                     currentLayer = terrainCheck.GetLayerName(transform.position, t);
                     currentCollection = null;
@@ -56,7 +56,7 @@ public class Footstep_Terrain : MonoBehaviour
                     {
                         if (currentLayer == fc.textureName)
                         {
-                            Debug.Log("je switch le terrain");
+                            Debug.Log("le terrain" + currentLayer +"trouve le switch" + fc);
 
                             fc.footstepCollection.SetValue(gameObject);
 
