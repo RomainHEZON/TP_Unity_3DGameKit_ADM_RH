@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{A6DA331F-1682-F036-C344-0680C322021B}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{F6E35B37-A7D9-A941-6650-821238B182CA}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -77,6 +77,9 @@
 					<MediaRefs>
 						<MediaRef Id="609601031"/>
 					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3092587493" Id="3537680115" Name="Pause_ON"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.29251206" DurationMax="0.30990574">
 					<MediaRefs>
@@ -87,6 +90,9 @@
 					<MediaRefs>
 						<MediaRef Id="216524460"/>
 					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3092587493" Id="3967028551" Name="Pause_OFF"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="1.2861261" DurationMax="1.3626032">
 					<MediaRefs>
@@ -128,14 +134,39 @@
 			<GameParameters>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3092587493" Name="Pause">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3537680115" Name="Pause_ON"/>
+						<State Id="3967028551" Name="Pause_OFF"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{63E93DD4-0CA9-93A1-835F-DB853383ED4A}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{6ABDE2C3-DD55-C800-5DD6-47DDD3EBF444}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
+				<File Id="836629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="25822972" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_B_02.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="39798111" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="67787120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="106893478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="134084940" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Enemy_Vanish_01.wav</ShortName>
@@ -162,6 +193,10 @@
 					<ShortName>SFX_Boxes_Break_Layer_C_03.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="209161940" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="216927490" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_A_02.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_A_02_10C4C929.wem</CachePath>
@@ -173,6 +208,10 @@
 				<File Id="224626741" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_05.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="232782513" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_06_10C4C929.wem</CachePath>
 				</File>
 				<File Id="241239500" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Enemy_Vanish_03.wav</ShortName>
@@ -187,9 +226,21 @@
 					<ShortName>SFX_Heartbeat_Loop.wav</ShortName>
 					<CachePath>SFX/SFX_Heartbeat_Loop_10C4C929.wem</CachePath>
 				</File>
+				<File Id="269257400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="278865724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="310575942" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_A_01.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_A_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="314897719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_08.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_08_10C4C929.wem</CachePath>
 				</File>
 				<File Id="320843627" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Crystal_Switch_Activated_02.wav</ShortName>
@@ -204,9 +255,21 @@
 					<ShortName>SFX_Boxes_Break_Layer_B_01.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="350364250" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="351963291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_07.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_07_10C4C929.wem</CachePath>
+				</File>
 				<File Id="352335037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Alien_Staff_Pickup_02.wav</ShortName>
 					<CachePath>SFX/SFX_Alien_Staff_Pickup_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="394890035" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="449291716" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>SFX_Crsytal_Switches_Before_Activation.wav</ShortName>
@@ -246,6 +309,14 @@
 					<ShortName>SFX_Boxes_Break_Layer_C_01.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="883864014" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="939367748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="968325701" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_02.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_02_10C4C929.wem</CachePath>
@@ -253,6 +324,10 @@
 				<File Id="972870010" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Crystal_Switch_Activated_01.wav</ShortName>
 					<CachePath>SFX/SFX_Crystal_Switch_Activated_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982612248" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="987143570" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_A_04.wav</ShortName>
@@ -277,6 +352,33 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="530524938" Name="Play_Alien_Staff_Hit_Metal" DurationType="OneShot" DurationMin="0.48326364" DurationMax="0.68551683">
+					<MediaRefs>
+						<MediaRef Id="836629"/>
+						<MediaRef Id="278865724"/>
+						<MediaRef Id="939367748"/>
+						<MediaRef Id="982612248"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2050638422" Name="Play_Alien_Staff_Hit_Rock" DurationType="OneShot" DurationMin="0.34941044" DurationMax="0.5420037">
+					<MediaRefs>
+						<MediaRef Id="39798111"/>
+						<MediaRef Id="106893478"/>
+						<MediaRef Id="269257400"/>
+						<MediaRef Id="350364250"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="708322193" Name="Play_Alien_Staff_Hit_Vegetation" DurationType="OneShot" DurationMin="0.24066827" DurationMax="0.6708388">
+					<MediaRefs>
+						<MediaRef Id="67787120"/>
+						<MediaRef Id="209161940"/>
+						<MediaRef Id="232782513"/>
+						<MediaRef Id="314897719"/>
+						<MediaRef Id="351963291"/>
+						<MediaRef Id="394890035"/>
+						<MediaRef Id="883864014"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1880847345" Name="Play_Boxes_Break" DurationType="OneShot" DurationMin="2.0877485" DurationMax="2.7947798">
 					<MediaRefs>
 						<MediaRef Id="25822972"/>
@@ -630,7 +732,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B0A189D8-7536-A6E7-BE5D-0053C319A77A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BE43197B-F2FA-0674-CB85-05582C2B62A5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -641,10 +743,11 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="17439960" Name="Bus_AMB"/>
-				<Bus Id="1116497749" Name="Bus_PreMaster"/>
 				<Bus Id="1162281553" Name="Bus_Music"/>
 				<Bus Id="1592365332" Name="Bus_Ennemies"/>
 				<Bus Id="1746463750" Name="Bus_UI"/>
+				<Bus Id="2367965617" Name="Bus_PreMaster_01"/>
+				<Bus Id="2367965618" Name="Bus_PreMaster_02"/>
 				<Bus Id="2766202208" Name="Bus_Ellen"/>
 				<Bus Id="3056742518" Name="Bus_Pads"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
@@ -654,21 +757,18 @@
 			<GameParameters>
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
-				<GameParameter Id="2037612127" Name="PreMaster_Volume"/>
+				<GameParameter Id="1564184899" Name="SFX_Volume"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 			<StateGroups>
-				<StateGroup Id="3537680115" Name="Pause_ON">
+				<StateGroup Id="3092587493" Name="Pause">
 					<States>
 						<State Id="748895195" Name="None"/>
-					</States>
-				</StateGroup>
-				<StateGroup Id="3967028551" Name="Pause_OFF">
-					<States>
-						<State Id="748895195" Name="None"/>
+						<State Id="3537680115" Name="Pause_ON"/>
+						<State Id="3967028551" Name="Pause_OFF"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -969,7 +1069,7 @@
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{DE4CF39F-B9F1-76AA-1371-6764B43C92D3}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{8121AB86-4C25-CF04-5F0C-B641157365FF}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -985,9 +1085,25 @@
 					<ShortName>Ellen_SFX_VO_Pain_02.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Pain_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="52748730" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Attack_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Attack_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="100880891" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Jump_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Jump_06_10C4C929.wem</CachePath>
+				</File>
 				<File Id="114506270" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Pain_06.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Pain_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="116163342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Jump_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Jump_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="150224307" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Run_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Run_04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="167487927" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_02.wav</ShortName>
@@ -997,9 +1113,17 @@
 					<ShortName>Ellen_Alien_Staff_Attack_06.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_06_10C4C929.wem</CachePath>
 				</File>
+				<File Id="182342010" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Jump_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Jump_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="223353399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_05.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="231503081" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Effort_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Effort_04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="233825437" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Death_02.wav</ShortName>
@@ -1009,9 +1133,25 @@
 					<ShortName>Ellen_Alien_Staff_Attack_07.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_07_10C4C929.wem</CachePath>
 				</File>
+				<File Id="314158649" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Attack_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Attack_05_10C4C929.wem</CachePath>
+				</File>
 				<File Id="324914276" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Pain_03.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Pain_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="364027642" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Effort_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Effort_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="384555383" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Attack_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Attack_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="398982317" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Run_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Run_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="402004189" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_03.wav</ShortName>
@@ -1021,6 +1161,38 @@
 					<ShortName>Ellen_Alien_Staff_Attack_01.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="413783638" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Jump_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Jump_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="418328423" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Jump_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Jump_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="425814252" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Effort_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Effort_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="461758700" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Run_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Run_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="535331808" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Jump_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Jump_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="551170320" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Effort_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Effort_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="564213551" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Roll_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Roll_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="583262733" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Roll_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Roll_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="590952037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_08.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_08_10C4C929.wem</CachePath>
@@ -1029,41 +1201,117 @@
 					<ShortName>Ellen_SFX_VO_Death_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Death_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="753481255" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Attack_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Attack_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="776873682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Run_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Run_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="788523815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_04.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="788579125" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Attack_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Attack_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="810965302" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Attack_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Attack_06_10C4C929.wem</CachePath>
 				</File>
 				<File Id="836954198" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Pain_05.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Pain_05_10C4C929.wem</CachePath>
 				</File>
+				<File Id="872668287" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Run_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Run_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="904159772" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Effort_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Effort_05_10C4C929.wem</CachePath>
+				</File>
 				<File Id="974062211" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Shield_Activate_02.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_Shield_Activate_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="983004342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Bodyfall.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Bodyfall_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1048076034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Effort_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Effort_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1068441037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Run_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Run_06_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="150768685" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="857060532" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="941828739" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.6430143" DurationMax="0.8216358">
+				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.6430143" DurationMax="1">
 					<MediaRefs>
+						<MediaRef Id="52748730"/>
 						<MediaRef Id="167487927"/>
 						<MediaRef Id="174597733"/>
 						<MediaRef Id="223353399"/>
 						<MediaRef Id="241975051"/>
+						<MediaRef Id="314158649"/>
+						<MediaRef Id="384555383"/>
 						<MediaRef Id="402004189"/>
 						<MediaRef Id="412738326"/>
 						<MediaRef Id="590952037"/>
+						<MediaRef Id="753481255"/>
 						<MediaRef Id="788523815"/>
+						<MediaRef Id="788579125"/>
+						<MediaRef Id="810965302"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
+							<PluginRef Id="857060532"/>
 							<PluginRef Id="941828739"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="2382465142" Name="Play_Ellen_SFX_Bodyfall" DurationType="OneShot" DurationMin="0.54239583" DurationMax="0.54239583">
+					<MediaRefs>
+						<MediaRef Id="983004342"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3623063248" Name="Play_FOL_Jump" DurationType="OneShot" DurationMin="0.33210418" DurationMax="0.48264584">
+					<MediaRefs>
+						<MediaRef Id="100880891"/>
+						<MediaRef Id="116163342"/>
+						<MediaRef Id="182342010"/>
+						<MediaRef Id="413783638"/>
+						<MediaRef Id="418328423"/>
+						<MediaRef Id="535331808"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1668355981" Name="Play_FOL_Roll" DurationType="OneShot" DurationMin="0.60214585" DurationMax="0.62789583">
+					<MediaRefs>
+						<MediaRef Id="564213551"/>
+						<MediaRef Id="583262733"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1810712955" Name="Play_FOL_Run" DurationType="OneShot" DurationMin="0.30108333" DurationMax="0.50366664">
+					<MediaRefs>
+						<MediaRef Id="150224307"/>
+						<MediaRef Id="398982317"/>
+						<MediaRef Id="461758700"/>
+						<MediaRef Id="776873682"/>
+						<MediaRef Id="872668287"/>
+						<MediaRef Id="1068441037"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="2396795519" Name="Play_Shield_Activate" DurationType="OneShot" DurationMin="4.686788" DurationMax="5.260742">
 					<MediaRefs>
@@ -1075,6 +1323,21 @@
 						<MediaRef Id="233825437"/>
 						<MediaRef Id="657548567"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="3926096204" Name="Play_VO_Effort" DurationType="OneShot" DurationMin="0.1379375" DurationMax="1">
+					<MediaRefs>
+						<MediaRef Id="231503081"/>
+						<MediaRef Id="364027642"/>
+						<MediaRef Id="425814252"/>
+						<MediaRef Id="551170320"/>
+						<MediaRef Id="904159772"/>
+						<MediaRef Id="1048076034"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="150768685"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="72136190" Name="Play_VO_Pain" DurationType="OneShot" DurationMin="0.28705215" DurationMax="0.3772109">
 					<MediaRefs>
@@ -1091,7 +1354,7 @@
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{6B2A7367-F2D2-DD89-5424-B32B96BA4DF5}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{62782044-4BE6-6D38-1B87-5CB5FED72544}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1107,6 +1370,10 @@
 					<ShortName>SFX_Chomper Attack_02.wav</ShortName>
 					<CachePath>SFX/SFX_Chomper Attack_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="212153440" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Chomper_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Chomper_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="220889790" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Chomper Attack_03.wav</ShortName>
 					<CachePath>SFX/SFX_Chomper Attack_03_10C4C929.wem</CachePath>
@@ -1119,9 +1386,25 @@
 					<ShortName>SFX_Chomper_Death_03.wav</ShortName>
 					<CachePath>SFX/SFX_Chomper_Death_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="557649918" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Chomper_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Chomper_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="574972127" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Chomper_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Chomper_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="621567118" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Chomper_Idle_Loop_02.wav</ShortName>
 					<CachePath>SFX/SFX_Chomper_Idle_Loop_02_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="694788226" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Chomper_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Chomper_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="791122087" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Chomper_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Chomper_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="851571609" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Chomper Attack_01.wav</ShortName>
@@ -1140,10 +1423,15 @@
 						<MediaRef Id="851571609"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="83535699" Name="Play_SFX_Chomper_Death" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.65499735" DurationMax="0.7652159">
+				<Event Id="83535699" Name="Play_SFX_Chomper_Death" DurationType="OneShot" DurationMin="0.65499735" DurationMax="0.7652159">
 					<MediaRefs>
 						<MediaRef Id="55164663"/>
+						<MediaRef Id="212153440"/>
 						<MediaRef Id="455693668"/>
+						<MediaRef Id="557649918"/>
+						<MediaRef Id="574972127"/>
+						<MediaRef Id="694788226"/>
+						<MediaRef Id="791122087"/>
 						<MediaRef Id="963346313"/>
 					</MediaRefs>
 				</Event>
@@ -1601,5 +1889,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{DB8B51F7-B8C0-2673-6F9F-D4297242866C}</FileHash>
+	<FileHash>{4288C932-C11E-17C0-97E6-295A8DBEED48}</FileHash>
 </SoundBanksInfo>

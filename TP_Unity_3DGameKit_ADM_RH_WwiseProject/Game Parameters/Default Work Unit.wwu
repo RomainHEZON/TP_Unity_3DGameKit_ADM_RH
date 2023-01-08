@@ -5,6 +5,7 @@
 			<ChildrenList>
 				<WorkUnit Name="Bus_Volume" ID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}" PersistMode="Reference"/>
 				<WorkUnit Name="Distance" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" PersistMode="Reference"/>
+				<WorkUnit Name="Health" ID="{78A052F1-9A00-4EA0-85F9-CC8399387A1F}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

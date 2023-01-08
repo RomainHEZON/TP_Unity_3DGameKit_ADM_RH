@@ -10,6 +10,8 @@ public class Ellen_FT_Manager : MonoBehaviour
     {
         AkSoundEngine.SetSwitch("Loco_Switch", "Run", this.gameObject);
         AkSoundEngine.PostEvent("Play_Ellen_Footstep", this.gameObject);
+        AkSoundEngine.PostEvent("Play_FOL_Run", this.gameObject);
+
     }
 
     private void PlayLandForward()
@@ -22,6 +24,8 @@ public class Ellen_FT_Manager : MonoBehaviour
     {
         AkSoundEngine.SetSwitch("Loco_Switch", "Roll", this.gameObject);
         AkSoundEngine.PostEvent("Play_Ellen_Footstep", this.gameObject);
+        AkSoundEngine.PostEvent("Play_FOL_Roll", this.gameObject);
+
     }
     private void PlayLandIdle()
     {
@@ -33,5 +37,12 @@ public class Ellen_FT_Manager : MonoBehaviour
     {
         AkSoundEngine.SetSwitch("Loco_Switch", "Jump", this.gameObject);
         AkSoundEngine.PostEvent("Play_Ellen_Footstep", this.gameObject);
+        AkSoundEngine.PostEvent("Play_VO_Effort", this.gameObject);
+        AkSoundEngine.PostEvent("Play_FOL_Jump", this.gameObject);
+    }
+
+    private void PlayBodyfall()
+    {
+        AkSoundEngine.PostEvent("Play_Ellen_SFX_Bodyfall", this.gameObject);
     }
 }

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585285171314147295
+    m_lastTime: -8585283913094578103
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -53,13 +53,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
       - ElementName: Bus_AMB
         ObjectType: 2
         guid: caa637f79f16d64cb2816990970126ea
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_AMB
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB
     - name: Bus_Ellen
       guid: c5346648256a214bbc89527ee24d29ab
       id: 2766202208
@@ -73,13 +76,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
       - ElementName: Bus_Ellen
         ObjectType: 2
         guid: c5346648256a214bbc89527ee24d29ab
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_Ellen
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ellen
     - name: Bus_Ennemies
       guid: 68e45d0af7aef447b330a86fb4686ab6
       id: 1592365332
@@ -93,13 +99,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
       - ElementName: Bus_Ennemies
         ObjectType: 2
         guid: 68e45d0af7aef447b330a86fb4686ab6
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_Ennemies
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies
     - name: Bus_Music
       guid: 2b21c4bae6665c4e908a3c6643b122bc
       id: 1162281553
@@ -130,7 +139,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
       - ElementName: Bus_AMB
@@ -139,10 +151,10 @@ MonoBehaviour:
       - ElementName: Bus_Pads
         ObjectType: 2
         guid: 12ef6cebe44faf48ab4dbb4312d6f217
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_AMB\Bus_Pads
-    - name: Bus_PreMaster
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_Pads
+    - name: Bus_PreMaster_01
       guid: de2e00a3e4b69740b700acb5e6c5d521
-      id: 1116497749
+      id: 2367965617
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -153,10 +165,30 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01
+    - name: Bus_PreMaster_02
+      guid: 52c9cfee0206f7419e402578baab1e4a
+      id: 2367965618
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02
     - name: Bus_RFX
       guid: c8041c8e44d7424bb6f5b7c867ece0b6
       id: 4130663432
@@ -170,7 +202,10 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
       - ElementName: Bus_AMB
@@ -179,7 +214,7 @@ MonoBehaviour:
       - ElementName: Bus_RFX
         ObjectType: 2
         guid: c8041c8e44d7424bb6f5b7c867ece0b6
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_AMB\Bus_RFX
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX
     - name: Bus_SFX
       guid: 489a3308fa83004e92d4bb72bbba5561
       id: 3895923845
@@ -193,13 +228,16 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_PreMaster_01
         ObjectType: 2
         guid: de2e00a3e4b69740b700acb5e6c5d521
       - ElementName: Bus_SFX
         ObjectType: 2
         guid: 489a3308fa83004e92d4bb72bbba5561
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_SFX
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_SFX
     - name: Bus_UI
       guid: d2f7fbb49351554d94e6acedfbac14c4
       id: 1746463750
@@ -213,13 +251,13 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster
+      - ElementName: Bus_PreMaster_02
         ObjectType: 2
-        guid: de2e00a3e4b69740b700acb5e6c5d521
+        guid: 52c9cfee0206f7419e402578baab1e4a
       - ElementName: Bus_UI
         ObjectType: 2
         guid: d2f7fbb49351554d94e6acedfbac14c4
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_UI
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_UI
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -868,8 +906,28 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_40_Ellen_SFX
     guid: 7adb8f172921f048b75a7073488c6255
     GuidInternal: 
-    m_lastTime: -8585284070866459005
+    m_lastTime: -8585283929402418509
     List:
+    - name: FOL
+      guid: 98a28f401f004f4680052500cd0a1b78
+      id: 1083137552
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: FOL
+        ObjectType: 4
+        guid: 98a28f401f004f4680052500cd0a1b78
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\FOL
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Alien_Staff_Attack
       guid: 931fa30ccb2dac4e9d3af0788e4fbcd2
       id: 2329713267
@@ -887,6 +945,95 @@ MonoBehaviour:
         ObjectType: 3
         guid: 931fa30ccb2dac4e9d3af0788e4fbcd2
       Path: Events\Default Work Unit\00_40_Ellen_SFX\Play_Alien_Staff_Attack
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Ellen_SFX_Bodyfall
+      guid: 49d6c6cf6e50944da0cae88566c56f9f
+      id: 2382465142
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: Play_Ellen_SFX_Bodyfall
+        ObjectType: 3
+        guid: 49d6c6cf6e50944da0cae88566c56f9f
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\Play_Ellen_SFX_Bodyfall
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FOL_Jump
+      guid: 9bff0608c8564444bf530cf288d75ad5
+      id: 3623063248
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: FOL
+        ObjectType: 4
+        guid: 98a28f401f004f4680052500cd0a1b78
+      - ElementName: Play_FOL_Jump
+        ObjectType: 3
+        guid: 9bff0608c8564444bf530cf288d75ad5
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\FOL\Play_FOL_Jump
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FOL_Roll
+      guid: 90fd84ffc2508b499824180bd9768c32
+      id: 1668355981
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: FOL
+        ObjectType: 4
+        guid: 98a28f401f004f4680052500cd0a1b78
+      - ElementName: Play_FOL_Roll
+        ObjectType: 3
+        guid: 90fd84ffc2508b499824180bd9768c32
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\FOL\Play_FOL_Roll
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FOL_Run
+      guid: 62daca569835c94b9649b39b386af329
+      id: 1810712955
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: FOL
+        ObjectType: 4
+        guid: 98a28f401f004f4680052500cd0a1b78
+      - ElementName: Play_FOL_Run
+        ObjectType: 3
+        guid: 62daca569835c94b9649b39b386af329
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\FOL\Play_FOL_Run
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -930,6 +1077,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 47ab00a253b30f4886f76eb134c3e5fc
       Path: Events\Default Work Unit\00_40_Ellen_SFX\VO\Play_VO_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_VO_Effort
+      guid: c39875ee7c35bc42b8a70aaa15a20500
+      id: 3926096204
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: VO
+        ObjectType: 4
+        guid: ae1bb83641b9014ca706724867df57ae
+      - ElementName: Play_VO_Effort
+        ObjectType: 3
+        guid: c39875ee7c35bc42b8a70aaa15a20500
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\VO\Play_VO_Effort
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -990,7 +1160,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585284070866433328
+    m_lastTime: -8585283944511924744
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -1069,6 +1239,75 @@ MonoBehaviour:
         ObjectType: 4
         guid: 06f1dffcf1796b44bf7519f293009fc8
       Path: Events\Default Work Unit\00_50_SFX\Heartbeat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Alien_Staff_Hit_Metal
+      guid: b422e328a0201b42970966dbee03729f
+      id: 530524938
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Alien_Staff
+        ObjectType: 4
+        guid: e4184c13997bc74a9474229d76e33fca
+      - ElementName: Play_Alien_Staff_Hit_Metal
+        ObjectType: 3
+        guid: b422e328a0201b42970966dbee03729f
+      Path: Events\Default Work Unit\00_50_SFX\Alien_Staff\Play_Alien_Staff_Hit_Metal
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Alien_Staff_Hit_Rock
+      guid: 5db729b1597a2446abd446acb708af28
+      id: 2050638422
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Alien_Staff
+        ObjectType: 4
+        guid: e4184c13997bc74a9474229d76e33fca
+      - ElementName: Play_Alien_Staff_Hit_Rock
+        ObjectType: 3
+        guid: 5db729b1597a2446abd446acb708af28
+      Path: Events\Default Work Unit\00_50_SFX\Alien_Staff\Play_Alien_Staff_Hit_Rock
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Alien_Staff_Hit_Vegetation
+      guid: 48fbd5b99f2f924384e5edb08cec758a
+      id: 708322193
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Alien_Staff
+        ObjectType: 4
+        guid: e4184c13997bc74a9474229d76e33fca
+      - ElementName: Play_Alien_Staff_Hit_Vegetation
+        ObjectType: 3
+        guid: 48fbd5b99f2f924384e5edb08cec758a
+      Path: Events\Default Work Unit\00_50_SFX\Alien_Staff\Play_Alien_Staff_Hit_Vegetation
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1548,7 +1787,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_60_Chomper
     guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
     GuidInternal: 
-    m_lastTime: -8585284158894057605
+    m_lastTime: -8585283944511944751
     List:
     - name: Play_SFX_Chomper_Attack
       guid: 0cee9b2e07d5664da4bb23c627ae518e
@@ -1816,7 +2055,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585284916991601938
+    m_lastTime: -8585283922013193452
     List:
     - name: Play_UI_Dialogue_Start
       guid: 99df3951143d9844923c5e836fa6a387
@@ -2049,7 +2288,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585284070866469012
+    m_lastTime: -8585283929402525384
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -2057,28 +2296,17 @@ MonoBehaviour:
     - ElementName: Game Parameters
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1f4eeda840fefb40a287c327cb2b7aca
     - ElementName: Bus_Volume
       ObjectType: 12
       guid: e7c7ccb7710915419e464565c21837c0
-    ParentPath: Game Parameters\Bus_Volume
+    ParentPath: Game Parameters\Default Work Unit\Bus_Volume
     guid: e7c7ccb7710915419e464565c21837c0
     GuidInternal: 
-    m_lastTime: -8585284235918131572
+    m_lastTime: -8585283913094606781
     List:
-    - name: Ellen_Health
-      guid: e75a86bb9f2c5a4781ebb9f103e12328
-      id: 971296124
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Bus_Volume
-        ObjectType: 12
-        guid: e7c7ccb7710915419e464565c21837c0
-      - ElementName: Ellen_Health
-        ObjectType: 13
-        guid: e75a86bb9f2c5a4781ebb9f103e12328
-      Path: Game Parameters\Bus_Volume\Ellen_Health
     - name: Master_Volume
       guid: 6d022af933dc3745864e6a11f434789e
       id: 4179668880
@@ -2086,13 +2314,16 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Master_Volume
         ObjectType: 13
         guid: 6d022af933dc3745864e6a11f434789e
-      Path: Game Parameters\Bus_Volume\Master_Volume
+      Path: Game Parameters\Default Work Unit\Bus_Volume\Master_Volume
     - name: Music_Volume
       guid: 36498c06061b9d4ab46f18d090d4ca5e
       id: 1006694123
@@ -2100,27 +2331,33 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Music_Volume
         ObjectType: 13
         guid: 36498c06061b9d4ab46f18d090d4ca5e
-      Path: Game Parameters\Bus_Volume\Music_Volume
-    - name: PreMaster_Volume
-      guid: a7576c4867dab94780680d58007c42b2
-      id: 2037612127
+      Path: Game Parameters\Default Work Unit\Bus_Volume\Music_Volume
+    - name: SFX_Volume
+      guid: afa3670f5d2c5c47be8c2db36778c70b
+      id: 1564184899
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
-      - ElementName: PreMaster_Volume
+      - ElementName: SFX_Volume
         ObjectType: 13
-        guid: a7576c4867dab94780680d58007c42b2
-      Path: Game Parameters\Bus_Volume\PreMaster_Volume
+        guid: afa3670f5d2c5c47be8c2db36778c70b
+      Path: Game Parameters\Default Work Unit\Bus_Volume\SFX_Volume
     - name: Staff_Distorsion
       guid: a7b91e5ffc62804e95daab369d9ca120
       id: 3828256600
@@ -2128,13 +2365,16 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Staff_Distorsion
         ObjectType: 13
         guid: a7b91e5ffc62804e95daab369d9ca120
-      Path: Game Parameters\Bus_Volume\Staff_Distorsion
+      Path: Game Parameters\Default Work Unit\Bus_Volume\Staff_Distorsion
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -2146,7 +2386,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f4eeda840fefb40a287c327cb2b7aca
     GuidInternal: 
-    m_lastTime: -8585284235918117198
+    m_lastTime: -8585283913094616788
     List: []
   - PhysicalPath: Game Parameters\Distance.wwu
     PathAndIcons:
@@ -2198,6 +2438,39 @@ MonoBehaviour:
         ObjectType: 13
         guid: eb1583d6a2b9094884e12678f21d63bb
       Path: Game Parameters\Default Work Unit\Distance\Spaceship_AMB
+  - PhysicalPath: Game Parameters\Health.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1f4eeda840fefb40a287c327cb2b7aca
+    - ElementName: Health
+      ObjectType: 12
+      guid: f152a078009aa04e85f9cc8399387a1f
+    ParentPath: Game Parameters\Default Work Unit\Health
+    guid: f152a078009aa04e85f9cc8399387a1f
+    GuidInternal: 
+    m_lastTime: -8585283913094638179
+    List:
+    - name: Ellen_Health
+      guid: e75a86bb9f2c5a4781ebb9f103e12328
+      id: 971296124
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Health
+        ObjectType: 12
+        guid: f152a078009aa04e85f9cc8399387a1f
+      - ElementName: Ellen_Health
+        ObjectType: 13
+        guid: e75a86bb9f2c5a4781ebb9f103e12328
+      Path: Game Parameters\Default Work Unit\Health\Ellen_Health
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -2226,11 +2499,11 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Menu_Pause
     guid: bfcd8dd48efb114a90e1d0a9d095ca32
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585283904945984550
     List:
-    - name: Pause_OFF
-      guid: eee4ded5773ee64e9e8a759182014762
-      id: 3967028551
+    - name: Health
+      guid: 04f76e267e5ab74e8484d170d9672c09
+      id: 3677180323
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -2241,13 +2514,51 @@ MonoBehaviour:
       - ElementName: Menu_Pause
         ObjectType: 12
         guid: bfcd8dd48efb114a90e1d0a9d095ca32
-      - ElementName: Pause_OFF
+      - ElementName: Health
         ObjectType: 9
-        guid: eee4ded5773ee64e9e8a759182014762
-      Path: States\Default Work Unit\Menu_Pause\Pause_OFF
+        guid: 04f76e267e5ab74e8484d170d9672c09
+      Path: States\Default Work Unit\Menu_Pause\Health
       values:
+      - name: Fine_Health
+        guid: 68e31f9c8522054f8d78cf8181a1d06f
+        id: 3157118042
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Menu_Pause
+          ObjectType: 12
+          guid: bfcd8dd48efb114a90e1d0a9d095ca32
+        - ElementName: Health
+          ObjectType: 9
+          guid: 04f76e267e5ab74e8484d170d9672c09
+        - ElementName: Fine_Health
+          ObjectType: 8
+          guid: 68e31f9c8522054f8d78cf8181a1d06f
+      - name: Low_Health
+        guid: d981cdf3a5f73040852ac326b794aaa4
+        id: 72790338
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Menu_Pause
+          ObjectType: 12
+          guid: bfcd8dd48efb114a90e1d0a9d095ca32
+        - ElementName: Health
+          ObjectType: 9
+          guid: 04f76e267e5ab74e8484d170d9672c09
+        - ElementName: Low_Health
+          ObjectType: 8
+          guid: d981cdf3a5f73040852ac326b794aaa4
       - name: None
-        guid: 9c65eb8d8a7fbe4a8a4433d3312ba6f8
+        guid: d9e0ae3e09e6174d875367d8bb2dea30
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -2259,18 +2570,18 @@ MonoBehaviour:
         - ElementName: Menu_Pause
           ObjectType: 12
           guid: bfcd8dd48efb114a90e1d0a9d095ca32
-        - ElementName: Pause_OFF
+        - ElementName: Health
           ObjectType: 9
-          guid: eee4ded5773ee64e9e8a759182014762
+          guid: 04f76e267e5ab74e8484d170d9672c09
         - ElementName: None
           ObjectType: 8
-          guid: 9c65eb8d8a7fbe4a8a4433d3312ba6f8
+          guid: d9e0ae3e09e6174d875367d8bb2dea30
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: Pause_ON
-      guid: cc7400246179e240acdf2d00d57156c4
-      id: 3537680115
+    - name: Pause
+      guid: 11a7a98d1a6b72498d876877a23bfa7b
+      id: 3092587493
       PathAndIcons:
       - ElementName: States
         ObjectType: 5
@@ -2281,13 +2592,13 @@ MonoBehaviour:
       - ElementName: Menu_Pause
         ObjectType: 12
         guid: bfcd8dd48efb114a90e1d0a9d095ca32
-      - ElementName: Pause_ON
+      - ElementName: Pause
         ObjectType: 9
-        guid: cc7400246179e240acdf2d00d57156c4
-      Path: States\Default Work Unit\Menu_Pause\Pause_ON
+        guid: 11a7a98d1a6b72498d876877a23bfa7b
+      Path: States\Default Work Unit\Menu_Pause\Pause
       values:
       - name: None
-        guid: 58ab52f1747eaf40a3b3559c6fdf3b53
+        guid: 7002aed8ac866046bb1098276f47a5cb
         id: 748895195
         PathAndIcons:
         - ElementName: States
@@ -2299,12 +2610,50 @@ MonoBehaviour:
         - ElementName: Menu_Pause
           ObjectType: 12
           guid: bfcd8dd48efb114a90e1d0a9d095ca32
-        - ElementName: Pause_ON
+        - ElementName: Pause
           ObjectType: 9
-          guid: cc7400246179e240acdf2d00d57156c4
+          guid: 11a7a98d1a6b72498d876877a23bfa7b
         - ElementName: None
           ObjectType: 8
-          guid: 58ab52f1747eaf40a3b3559c6fdf3b53
+          guid: 7002aed8ac866046bb1098276f47a5cb
+      - name: Pause_OFF
+        guid: 15aedee91ec3b746a0dc498c282048e3
+        id: 3967028551
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Menu_Pause
+          ObjectType: 12
+          guid: bfcd8dd48efb114a90e1d0a9d095ca32
+        - ElementName: Pause
+          ObjectType: 9
+          guid: 11a7a98d1a6b72498d876877a23bfa7b
+        - ElementName: Pause_OFF
+          ObjectType: 8
+          guid: 15aedee91ec3b746a0dc498c282048e3
+      - name: Pause_ON
+        guid: 0a5c360f969e234194d14a24ead874ef
+        id: 3537680115
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Menu_Pause
+          ObjectType: 12
+          guid: bfcd8dd48efb114a90e1d0a9d095ca32
+        - ElementName: Pause
+          ObjectType: 9
+          guid: 11a7a98d1a6b72498d876877a23bfa7b
+        - ElementName: Pause_ON
+          ObjectType: 8
+          guid: 0a5c360f969e234194d14a24ead874ef
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2582,7 +2931,7 @@ MonoBehaviour:
     m_lastTime: -8585285710469347330
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000000b0000000c000000
+  ExpandedWaapiItemIds: 05000000060000000a0000000b0000000c0000000f00000037000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

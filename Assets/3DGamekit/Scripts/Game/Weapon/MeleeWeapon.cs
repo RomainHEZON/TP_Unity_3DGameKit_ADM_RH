@@ -29,10 +29,10 @@ namespace Gamekit3D
         public AttackPoint[] attackPoints = new AttackPoint[0];
 
         public TimeEffect[] effects;
-
+        
         [Header("Audio")] public RandomAudioPlayer hitAudio;
         public RandomAudioPlayer attackAudio;
-
+        
         public bool throwingHit
         {
             get { return m_IsThrowingHit; }
@@ -79,7 +79,29 @@ namespace Gamekit3D
 
         public void BeginAttack(bool thowingAttack)
         {
-            if (attackAudio != null)
+            // RAYCAST POUR ALIEN STAFF
+
+            RaycastHit[] hit;
+
+            hit = Physics.RaycastAll(transform.position, Vector3.forward, 1f);
+
+            foreach (RaycastHit rayhit in hit)
+            {
+                if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Vegetation")) // VEGETATION
+                {
+                    AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Vegetation", this.gameObject);
+                }
+                else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Environment")) // ENVIRONMENT (ROCK)
+                {
+                    AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Rock", this.gameObject);
+                }
+                else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Grenadier")) // GRENADIER
+                {
+                    AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Metal", this.gameObject);
+                }
+            }
+
+                if (attackAudio != null)
                 attackAudio.PlayRandomClip();
             throwingHit = thowingAttack;
 

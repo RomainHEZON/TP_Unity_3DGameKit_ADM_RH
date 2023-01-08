@@ -28,8 +28,16 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}"/>
+							<Value>0.66</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
-							<Value>0.643776824034335</Value>
+							<Value>0.556227327690447</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}"/>
@@ -45,8 +53,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{F152AB58-7E74-40AF-A3B3-559C6FDF3B53}"/>
-						<CurrentStateRef Name="None" ID="{8DEB659C-7F8A-4ABE-8A44-33D3312BA6F8}"/>
+						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{88AD2688-5420-466D-9821-5B8CA0A3B066}"/>

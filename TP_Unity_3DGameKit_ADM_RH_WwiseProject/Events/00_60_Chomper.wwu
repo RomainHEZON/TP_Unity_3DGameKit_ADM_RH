@@ -65,6 +65,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{2869A511-21CB-4679-8458-B3AB10F0FE36}" ShortID="179624455">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Chomper_Attack" ID="{2E9BEE0C-D507-4D66-A4BB-23C627AE518E}">

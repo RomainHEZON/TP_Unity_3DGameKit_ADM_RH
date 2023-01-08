@@ -4,66 +4,21 @@
 		<WorkUnit Name="Default Work Unit" ID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="11"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{569D0571-C86D-4B07-86DC-F7D468693F65}" WorkUnitID="{7BF5C2C7-1402-4E36-8305-52CC505E7EFD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="Bus_PreMaster" ID="{A3002EDE-B6E4-4097-B700-ACB5E6C5D521}">
-							<ChildrenList>
-								<Bus Name="Bus_AMB" ID="{F737A6CA-169F-4CD6-B281-6990970126EA}">
-									<ChildrenList>
-										<Bus Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}"/>
-										<Bus Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}"/>
-									</ChildrenList>
-								</Bus>
-								<Bus Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}"/>
-								<Bus Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}"/>
-								<Bus Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}"/>
-								<Bus Name="Bus_UI" ID="{B4FBF7D2-5193-4D55-94E6-ACEDFBAC14C4}"/>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{487BC7DA-6F98-4051-A093-AD60BBD0ACC6}" ShortID="176575329">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Volume"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="PreMaster_Volume" ID="{486C57A7-DA67-47B9-8068-0D58007C42B2}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{732A6A72-E978-42C6-BCF7-50D964782C58}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="3"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>0</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-						</Bus>
 						<Bus Name="Bus_Music" ID="{BAC4212B-66E6-4E5C-908A-3C6643B122BC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="15"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>
@@ -104,7 +59,130 @@
 								</ObjectList>
 							</ObjectLists>
 						</Bus>
+						<Bus Name="Bus_PreMaster_02" ID="{EECFC952-0602-41F7-9E40-2578BAAB1E4A}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Bus_PreMaster_01" ID="{A3002EDE-B6E4-4097-B700-ACB5E6C5D521}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="16"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Bus Name="Bus_AMB" ID="{F737A6CA-169F-4CD6-B281-6990970126EA}">
+											<ChildrenList>
+												<Bus Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}"/>
+												<Bus Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}"/>
+											</ChildrenList>
+										</Bus>
+										<Bus Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}"/>
+										<Bus Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}"/>
+										<Bus Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}"/>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Pause" ID="{8DA9A711-6B1A-4972-8D87-6877A23BFA7B}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+												<CustomState Name="" ID="{C5048DF2-AC25-4243-9CAF-C8AFA48DC714}" ShortID="100964826">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="75"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+												<CustomState Name="" ID="{96517959-5BF4-41DC-BF7F-EA94A0891CF4}" ShortID="587562190"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{487BC7DA-6F98-4051-A093-AD60BBD0ACC6}" ShortID="176575329">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{732A6A72-E978-42C6-BCF7-50D964782C58}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="Bus_UI" ID="{B4FBF7D2-5193-4D55-94E6-ACEDFBAC14C4}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="13"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Pause" ID="{8DA9A711-6B1A-4972-8D87-6877A23BFA7B}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="Health" ID="{266EF704-5A7E-4EB7-8484-D170D9672C09}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Low_Health" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+								<CustomState Name="" ID="{2B21836D-145E-4E64-A785-79E7FF29BC87}" ShortID="360498495">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="75"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+								<CustomState Name="" ID="{E77741A5-4D29-4BBA-95D3-F2EE54A3DAB3}" ShortID="863321646"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+								<CustomState Name="" ID="{101421BB-F6FB-412F-88DC-9898A5CE951D}" ShortID="344782733"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fine_Health" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
+								<CustomState Name="" ID="{4DEDF801-5FE4-49C8-98AB-A347D0DE8D14}" ShortID="44591952"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="RTPC">
 							<Reference>

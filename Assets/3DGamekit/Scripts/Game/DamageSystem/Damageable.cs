@@ -51,6 +51,7 @@ namespace Gamekit3D
         {
             // AkSoundEngine.SetRTPCValue(HealthRTPC.Name, maxHitPoints);
 
+            
 
             if (isInvulnerable)
             {
@@ -70,6 +71,12 @@ namespace Gamekit3D
             isInvulnerable = false;
             m_timeSinceLastHit = 0.0f;
             OnResetDamage.Invoke();
+
+            if (currentHitPoints == 1)
+            {
+                AkSoundEngine.SetState("Health", "Low Health");
+                AkSoundEngine.PostEvent("Play_Heartbeat", this.gameObject);
+            }
         }
 
         public void SetColliderState(bool enabled)

@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db03d49bdd5f5ed498619726a11a2a61, type: 3}
-  m_Name: 486C57A7-DA67-47B9-8068-0D58007C42B2
+  m_Script: {fileID: 11500000, guid: a1805a2320fb9e044a3672338af02901, type: 3}
+  m_Name: 767F2B60-84FC-4D5D-BF1B-E4AD96545674
   m_EditorClassIdentifier: 
-  objectName: PreMaster_Volume
-  id: 2037612127
-  guid: 486C57A7-DA67-47B9-8068-0D58007C42B2
+  objectName: Play_VO_Pain
+  id: 72136190
+  guid: 767F2B60-84FC-4D5D-BF1B-E4AD96545674

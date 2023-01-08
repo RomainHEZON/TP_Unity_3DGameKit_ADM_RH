@@ -608,6 +608,576 @@
 										<ActiveSource Name="SFX_Alien_Staff_Idle" ID="{7BEEF930-3129-454D-A469-3C033039A254}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" ShortID="1036061245">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{49F5DB4C-F01B-465A-8387-C451724928F7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_Staff_Hit_Chomper_01" ID="{E6DAD782-0279-496C-80B3-6EEE2BFFE0A5}" ShortID="694704032">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Chomper_01" ID="{2F51F428-D9F7-4A27-80A5-44DEA028AEBC}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Chomper_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="574972127"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Chomper_01" ID="{2F51F428-D9F7-4A27-80A5-44DEA028AEBC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Chomper_02" ID="{1603CCD6-984C-4E64-B61B-C6A5DBB92551}" ShortID="719295342">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Chomper_02" ID="{F633F3B0-9AD3-4C11-B6CA-AC54CBF7E8F7}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Chomper_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="212153440"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Chomper_02" ID="{F633F3B0-9AD3-4C11-B6CA-AC54CBF7E8F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Chomper_03" ID="{A271A09B-10FF-4910-A7A4-70322CB06E97}" ShortID="921272224">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Chomper_03" ID="{216E12CE-4205-4085-B058-13028DB4D896}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Chomper_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="791122087"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Chomper_03" ID="{216E12CE-4205-4085-B058-13028DB4D896}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Chomper_04" ID="{7AE49CBA-0032-4E80-A68A-1595BDF688DE}" ShortID="138621486">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Chomper_04" ID="{BAB71479-CE02-45F8-80C8-BB32C30FD5B7}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Chomper_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="694788226"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Chomper_04" ID="{BAB71479-CE02-45F8-80C8-BB32C30FD5B7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Chomper_05" ID="{4F358164-B6EC-477A-873F-6DD715F783FB}" ShortID="343554637">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Chomper_05" ID="{E6E66235-0B24-403E-A99C-632D0FD555D1}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Chomper_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="557649918"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Chomper_05" ID="{E6E66235-0B24-403E-A99C-632D0FD555D1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Alien_Staff_Hit_Metal_RC" ID="{51F9EBF7-42E2-4C72-B3DE-F096A5D05C7F}" ShortID="171311625">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A81B3858-7BB9-42B0-892D-604E24008AD8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_Staff_Hit_Metal_01" ID="{BF889705-766D-4E6B-BF2D-009D7D72AB43}" ShortID="702948077">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Metal_01" ID="{F2885659-F5CA-482E-824B-A164816B2881}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Metal_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="278865724"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Metal_01" ID="{F2885659-F5CA-482E-824B-A164816B2881}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Metal_02" ID="{D2FB5FEA-D891-4B24-B3FE-543E78F01CFE}" ShortID="119081413">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Metal_02" ID="{8420C725-F3BE-4E07-BFAF-1649724819D9}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Metal_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="836629"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Metal_02" ID="{8420C725-F3BE-4E07-BFAF-1649724819D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Metal_03" ID="{4AF738C4-756F-4189-8327-EAB7F021A08C}" ShortID="673241388">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Metal_03" ID="{8A2DB6DC-07CA-4803-9884-E73731355324}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Metal_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="982612248"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Metal_03" ID="{8A2DB6DC-07CA-4803-9884-E73731355324}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Metal_04" ID="{CE5A9F43-75A7-4159-8734-17E870DA6342}" ShortID="1038471674">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Metal_04" ID="{EA047DFF-D4A1-49B4-BCAD-3BFA1AC516C1}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Metal_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="939367748"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Metal_04" ID="{EA047DFF-D4A1-49B4-BCAD-3BFA1AC516C1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Alien_Staff_Hit_Rock_RC" ID="{2C0BAF5D-B8BD-4297-8BE4-9A9ED2D951F5}" ShortID="215202112">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FD0E23C0-1599-471D-8ACA-27BDABFD7C7B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_Staff_Hit_Rock_01" ID="{DC00D0FE-D8E5-41B0-9539-B18664FD207A}" ShortID="71023908">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Rock_01" ID="{6ADE2C03-B985-4CA8-81C6-7361AA2D98F7}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Rock_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="39798111"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Rock_01" ID="{6ADE2C03-B985-4CA8-81C6-7361AA2D98F7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Rock_02" ID="{42B57BE2-00DF-47FA-9AAD-A8FE3866ECBB}" ShortID="626665324">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Rock_02" ID="{8A75452A-988C-4DA6-8011-C11BE93B91A6}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Rock_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="106893478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Rock_02" ID="{8A75452A-988C-4DA6-8011-C11BE93B91A6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Rock_03" ID="{F9BA38E6-10DC-49D6-83D2-F338148793F1}" ShortID="240398447">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Rock_03" ID="{E98DB38D-E6F2-443B-9787-2ED49D233D23}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Rock_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="350364250"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Rock_03" ID="{E98DB38D-E6F2-443B-9787-2ED49D233D23}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Rock_04" ID="{A696631B-B2BD-4139-884D-8DFB025F1621}" ShortID="648162276">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Rock_04" ID="{CCF19BD3-482F-4557-849F-8DB346F1D09E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Rock_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="269257400"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Rock_04" ID="{CCF19BD3-482F-4557-849F-8DB346F1D09E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Alien_Staff_Hit_Vegetation_RC" ID="{868287AA-B20B-452A-B816-CFC95FDA7D8C}" ShortID="240569917">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{70239CFF-DF44-4F2A-BC26-DBA3B08C9140}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_01" ID="{DCB67EE1-3360-4727-ABB8-25B2FF8A4208}" ShortID="750100690">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_01" ID="{8B8B7AF5-0079-4B23-BEA2-797F61ACEB4C}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="394890035"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_01" ID="{8B8B7AF5-0079-4B23-BEA2-797F61ACEB4C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_02" ID="{57CCBBE7-EA1F-4D10-9D2F-286CCFD1C4E3}" ShortID="534527614">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_02" ID="{A5D8BE2C-A3EF-4CAA-A40F-9CD70868112A}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="209161940"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_02" ID="{A5D8BE2C-A3EF-4CAA-A40F-9CD70868112A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_04" ID="{98DD21B2-9123-48D7-AF46-596B69B90BF6}" ShortID="1015136087">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_04" ID="{3E93EBE6-7DAC-4A59-9D6E-726117FA3AE4}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="67787120"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_04" ID="{3E93EBE6-7DAC-4A59-9D6E-726117FA3AE4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_05" ID="{CC5489EF-CD51-4432-8201-10A50D9A5FAF}" ShortID="92718211">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_05" ID="{8E7265AB-9970-4C05-BE4C-31FE83B2FE9C}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="883864014"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_05" ID="{8E7265AB-9970-4C05-BE4C-31FE83B2FE9C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_06" ID="{03FA4F87-CF58-4787-BF42-64808BCC1951}" ShortID="346997183">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_06" ID="{2E8FB451-BDA2-49C1-94B8-99AC4F70812C}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="232782513"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_06" ID="{2E8FB451-BDA2-49C1-94B8-99AC4F70812C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_07" ID="{1799F9D2-EF69-4790-9427-5998B85FB76C}" ShortID="285929703">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_07" ID="{96FB082E-A128-4599-B30E-CA3B25CFBA2B}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="351963291"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_07" ID="{96FB082E-A128-4599-B30E-CA3B25CFBA2B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Staff_Hit_Vegetation_08" ID="{B38C6F71-A832-40BE-A60A-1A6821DE0F11}" ShortID="852469921">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Staff_Hit_Vegetation_08" ID="{16796364-180C-49A3-8357-AD00228DBDAC}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Staff_Hit_Vegetation_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="314897719"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Staff_Hit_Vegetation_08" ID="{16796364-180C-49A3-8357-AD00228DBDAC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Crystal_Switch_Mixer" ID="{D8D3EC0D-87CC-4E1D-9C0C-C35681D2E0FC}" ShortID="1027846570">
@@ -1218,11 +1788,6 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="Heartbeat_RC" ID="{A67F31C3-8EB6-4675-BC12-CF2FFD62A876}" ShortID="202900104">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>50</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1249,17 +1814,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="SFX_Heartbeat_Loop" ID="{D4839BE7-3CDD-4F8B-A951-ACA3E5A6363C}" ShortID="235642330">
+										<Sound Name="SFX_Heartbeat_Loop" ID="{15BDD93E-E599-40E8-9769-DE0B9E937165}" ShortID="957035151">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="SFX_Heartbeat_Loop" ID="{A240EB72-BE2E-48A8-A25F-5016E62863E9}">
+												<AudioFileSource Name="SFX_Heartbeat_Loop" ID="{6BC7D806-D70C-498E-A2F4-FD7249DA25C1}">
 													<Language>SFX</Language>
 													<AudioFile>SFX_Heartbeat_Loop.wav</AudioFile>
 													<MediaIDList>
@@ -1267,60 +1835,32 @@
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Health" ID="{266EF704-5A7E-4EB7-8484-D170D9672C09}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Low_Health" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+														<CustomState Name="" ID="{5277A36A-F2EA-4126-9EED-D43BE7807B41}" ShortID="93403425"/>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Fine_Health" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
+														<CustomState Name="" ID="{40EB3289-038F-428F-BF06-4E62D93BFE76}" ShortID="895874059">
+															<PropertyList>
+																<Property Name="Volume" Type="Real64" Value="-108"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 											<ActiveSourceList>
-												<ActiveSource Name="SFX_Heartbeat_Loop" ID="{A240EB72-BE2E-48A8-A25F-5016E62863E9}" Platform="Linked"/>
+												<ActiveSource Name="SFX_Heartbeat_Loop" ID="{6BC7D806-D70C-498E-A2F4-FD7249DA25C1}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{BD52CF13-CF4B-4870-A9FB-C2624247B41E}" ShortID="794877362">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{CF93C45F-5EC7-4F5D-B414-DBF938CC9B7C}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>0.853</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>5</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
@@ -1536,13 +2076,13 @@
 																		</Point>
 																		<Point>
 																			<XPos>15</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
 																			<XPos>20</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>

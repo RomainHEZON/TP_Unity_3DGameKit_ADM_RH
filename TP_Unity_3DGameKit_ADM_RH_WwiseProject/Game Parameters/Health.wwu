@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{78A052F1-9A00-4EA0-85F9-CC8399387A1F}" SchemaVersion="110" RootDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" ParentDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}">
+	<GameParameters>
+		<WorkUnit Name="Health" ID="{78A052F1-9A00-4EA0-85F9-CC8399387A1F}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="5"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="5"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

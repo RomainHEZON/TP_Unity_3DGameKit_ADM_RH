@@ -68,6 +68,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Alien_Staff_Hit_Metal" ID="{28E322B4-20A0-421B-9709-66DBEE03729F}">
+							<ChildrenList>
+								<Action Name="" ID="{AE26D198-D18D-4638-81AA-96E27579C7D0}" ShortID="752679932">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alien_Staff_Hit_Metal_RC" ID="{51F9EBF7-42E2-4C72-B3DE-F096A5D05C7F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Alien_Staff_Hit_Rock" ID="{B129B75D-7A59-4624-ABD4-46ACB708AF28}">
+							<ChildrenList>
+								<Action Name="" ID="{48E87F67-31C4-40C0-A198-187226C57B7D}" ShortID="21191536">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alien_Staff_Hit_Rock_RC" ID="{2C0BAF5D-B8BD-4297-8BE4-9A9ED2D951F5}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Alien_Staff_Hit_Vegetation" ID="{B9D5FB48-2F9F-4392-84E5-EDB08CEC758A}">
+							<ChildrenList>
+								<Action Name="" ID="{89B9D774-E8B0-4FB1-ABCD-5484D736F1C7}" ShortID="732666789">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Alien_Staff_Hit_Vegetation_RC" ID="{868287AA-B20B-452A-B816-CFC95FDA7D8C}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Crystal" ID="{7AAAA07A-0CD4-4CD7-A0B9-1062CC916FE4}" ShortID="25343052">

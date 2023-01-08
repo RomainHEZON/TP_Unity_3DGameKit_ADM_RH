@@ -1,27 +1,31 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	3537680115	Pause_ON			\Default Work Unit\Menu_Pause\Pause_ON	
-	3967028551	Pause_OFF			\Default Work Unit\Menu_Pause\Pause_OFF	
+	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
 
 State	ID	Name	State Group			Notes
-	748895195	None	Pause_ON			
-	748895195	None	Pause_OFF			
+	748895195	None	Pause			
+	3537680115	Pause_ON	Pause			
+	3967028551	Pause_OFF	Pause			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	100964826	Pause_ON	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	
-	2037612127	PreMaster_Volume			\Default Work Unit\Bus_Volume\PreMaster_Volume	
+	1564184899	SFX_Volume			\Default Work Unit\Bus_Volume\SFX_Volume	
 	4179668880	Master_Volume			\Default Work Unit\Bus_Volume\Master_Volume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	17439960	Bus_AMB			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_AMB	
-	1116497749	Bus_PreMaster			\Default Work Unit\Master Audio Bus\Bus_PreMaster	
+	17439960	Bus_AMB			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB	
 	1162281553	Bus_Music			\Default Work Unit\Master Audio Bus\Bus_Music	
-	1592365332	Bus_Ennemies			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_Ennemies	
-	1746463750	Bus_UI			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_UI	
-	2766202208	Bus_Ellen			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_Ellen	
-	3056742518	Bus_Pads			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_AMB\Bus_Pads	
+	1592365332	Bus_Ennemies			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies	
+	1746463750	Bus_UI			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_UI	
+	2367965617	Bus_PreMaster_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01	
+	2367965618	Bus_PreMaster_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02	
+	2766202208	Bus_Ellen			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ellen	
+	3056742518	Bus_Pads			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_Pads	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
-	3895923845	Bus_SFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_SFX	
-	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster\Bus_AMB\Bus_RFX	
+	3895923845	Bus_SFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_SFX	
+	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX	
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

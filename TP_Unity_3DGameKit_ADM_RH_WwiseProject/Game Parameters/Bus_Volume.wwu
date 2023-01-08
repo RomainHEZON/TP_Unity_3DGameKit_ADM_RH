@@ -13,12 +13,6 @@
 						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="PreMaster_Volume" ID="{486C57A7-DA67-47B9-8068-0D58007C42B2}">
-					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="1"/>
-						<Property Name="Max" Type="Real64" Value="1"/>
-					</PropertyList>
-				</GameParameter>
 				<GameParameter Name="Music_Volume" ID="{068C4936-1B06-4A9D-B46F-18D090D4CA5E}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="1"/>
@@ -31,10 +25,10 @@
 						<Property Name="Max" Type="Real64" Value="5"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}">
+				<GameParameter Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="5"/>
-						<Property Name="Max" Type="Real64" Value="5"/>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

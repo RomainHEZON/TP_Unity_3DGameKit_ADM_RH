@@ -82,6 +82,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D6EBCB05-DD28-45B4-9084-EE96D2EB12AF}" ShortID="688520710">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_UI_Game_Resume" ID="{A8C542D3-3B65-4203-9903-6553A2E4326C}">
@@ -90,6 +100,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI_Game_Resume" ID="{6F6339AD-813B-492D-8D85-1DDD23533BEF}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1F981D28-8B48-452D-B478-B2D34D3A8A54}" ShortID="492448994">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

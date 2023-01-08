@@ -7,14 +7,35 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<StateGroup Name="Pause_ON" ID="{240074CC-7961-40E2-ACDF-2D00D57156C4}">
+				<StateGroup Name="Pause" ID="{8DA9A711-6B1A-4972-8D87-6877A23BFA7B}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
 					<ChildrenList>
-						<State Name="None" ID="{F152AB58-7E74-40AF-A3B3-559C6FDF3B53}"/>
+						<State Name="None" ID="{D8AE0270-86AC-4660-BB10-98276F47A5CB}"/>
+						<State Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+						<State Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{D8AE0270-86AC-4660-BB10-98276F47A5CB}"/>
+							<EndState Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+							<Time>0.25</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{D8AE0270-86AC-4660-BB10-98276F47A5CB}"/>
+							<EndState Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+							<Time>0.25</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
-				<StateGroup Name="Pause_OFF" ID="{D5DEE4EE-3E77-4EE6-9E8A-759182014762}">
+				<StateGroup Name="Health" ID="{266EF704-5A7E-4EB7-8484-D170D9672C09}">
 					<ChildrenList>
-						<State Name="None" ID="{8DEB659C-7F8A-4ABE-8A44-33D3312BA6F8}"/>
+						<State Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
+						<State Name="Low_Health" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+						<State Name="Fine_Health" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
