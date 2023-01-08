@@ -6,6 +6,23 @@
 				<Property Name="Color" Type="int16" Value="10"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Spaceship" ID="{08D49A24-67C6-4CFF-B715-521F97EADE5C}" ShortID="582876016">
+					<ChildrenList>
+						<Event Name="Play_Spaceship_BC" ID="{1AA53E2C-7479-41FA-8B07-5676672444D9}">
+							<ChildrenList>
+								<Action Name="" ID="{30B713C1-677C-41F6-9C34-B6399C95D5DE}" ShortID="773127774">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spaceship_BC" ID="{0EA56E67-DBFA-4C2B-9882-5361EC4B8EB5}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

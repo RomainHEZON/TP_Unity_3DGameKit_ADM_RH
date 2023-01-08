@@ -348,6 +348,7 @@
 						</Sound>
 						<RandomSequenceContainer Name="UI_Dialogue_Start_RC" ID="{1BE3CEF5-A82C-42FF-BC55-50F34F9A9127}" ShortID="829799064">
 							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -360,9 +361,7 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-5</Value>

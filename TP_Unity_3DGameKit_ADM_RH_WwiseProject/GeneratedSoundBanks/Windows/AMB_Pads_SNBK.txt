@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3873597236	Play_Spaceship_BC			\Default Work Unit\00_10_AMB_Pads\Spaceship\Play_Spaceship_BC	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3545834150	Spaceship_AMB			\Default Work Unit\Bus_Volume\Spaceship_AMB	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	77744621	AMB_Spaceship_Out_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_Spaceship_Out_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Spaceship_BC\AMB_Spaceship_Out_Loop		792952
+	465306571	AMB_Spaceship_In_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_Spaceship_In_Loop_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Spaceship_BC\AMB_Spaceship_In_Loop		2864096
+

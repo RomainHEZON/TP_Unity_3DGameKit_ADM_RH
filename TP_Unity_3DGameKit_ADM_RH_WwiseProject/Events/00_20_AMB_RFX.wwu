@@ -7,12 +7,23 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Play_AMB_RFX_Morse_Code_Loop" ID="{CF7E75C5-CC13-4D12-BA15-98E650D5779E}">
+				<Event Name="Play_AMB_RFX_Morse_Code" ID="{CF7E75C5-CC13-4D12-BA15-98E650D5779E}">
 					<ChildrenList>
 						<Action Name="" ID="{CCDFB07B-0508-4589-B449-220A9CD4A532}" ShortID="250536718">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="AMB_RFX_Morse_Code_Loop" ID="{08B31DE9-91FB-42FC-B72A-B4D746211A01}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Radio_RFX" ID="{16B10062-878D-47E3-9E54-CA4A9020CF93}">
+					<ChildrenList>
+						<Action Name="" ID="{4B787D9E-8494-465E-BAE4-CE3544443D27}" ShortID="932243978">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Radio_RFX_Looper" ID="{40875FA2-C345-48B2-97D0-ACCE16A92C91}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

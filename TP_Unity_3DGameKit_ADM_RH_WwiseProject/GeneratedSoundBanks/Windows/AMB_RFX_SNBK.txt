@@ -1,6 +1,16 @@
 Event	ID	Name			Wwise Object Path	Notes
-	4236454905	Play_AMB_RFX_Morse_Code_Loop			\Default Work Unit\00_20_AMB_RFX\Play_AMB_RFX_Morse_Code_Loop	
+	2070617240	Play_AMB_RFX_Morse_Code			\Default Work Unit\00_20_AMB_RFX\Play_AMB_RFX_Morse_Code	
+	2368356374	Play_Radio_RFX			\Default Work Unit\00_20_AMB_RFX\Play_Radio_RFX	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	263689023	AMB_RFX_Spaceship_Radio_06	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Fin\AMB_RFX_Spaceship_Radio_06		491456
+	333726041	AMB_RFX_Spaceship_Radio_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Milieu\AMB_RFX_Spaceship_Radio_05		791520
+	360406144	AMB_RFX_Spaceship_Radio_04	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Debut\AMB_RFX_Spaceship_Radio_04		462552
+	365716477	AMB_RFX_Spaceship_Radio_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Milieu\AMB_RFX_Spaceship_Radio_02		866756
+	906360689	AMB_RFX_Spaceship_Radio_07	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Fin\AMB_RFX_Spaceship_Radio_07		433648
+	987360822	AMB_RFX_Spaceship_Radio_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Milieu\AMB_RFX_Spaceship_Radio_03		1074596
+	990828257	AMB_RFX_Spaceship_Radio_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Radio_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\Radio_RFX_Looper\Spaceship_Radio_SC\Phrase_Debut\AMB_RFX_Spaceship_Radio_01		647264
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	249634031	AMB_RFX_Morse_Code_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Morse_Code_Loop_D79FB2B7.wem	249634031.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\AMB_RFX_Morse_Code_Loop	
+	249634031	AMB_RFX_Morse_Code_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Morse_Code_Loop_D79FB2B7.wem	249634031.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship\AMB_RFX_Morse_Code_Loop	
 

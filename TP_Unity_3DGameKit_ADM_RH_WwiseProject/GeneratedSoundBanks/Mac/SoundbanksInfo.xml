@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{F4BA94F8-1A5B-223E-BE2F-8CD7CDEAAC19}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{A6DA331F-1682-F036-C344-0680C322021B}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -67,7 +67,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="1.877516" DurationMax="2.0231478">
+				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="0.877516" DurationMax="1.0231478">
 					<MediaRefs>
 						<MediaRef Id="534503124"/>
 						<MediaRef Id="728260902"/>
@@ -378,7 +378,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{38EBC14C-6140-6A80-2E2E-96295B10938D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4A428319-D276-704F-225D-1F1607CC0E9C}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -403,6 +403,7 @@
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
 				<GameParameter Id="2037612127" Name="PreMaster_Volume"/>
+				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
@@ -440,9 +441,30 @@
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{85C491E2-507B-0F29-1EC5-5CAD7DE253BC}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{D758168C-B4EB-70BC-A586-E07CD1CEE900}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
+			<Media>
+				<File Id="77744621" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Spaceship_Out_Loop.wav</ShortName>
+					<CachePath>SFX/AMB_Spaceship_Out_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="465306571" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Spaceship_In_Loop.wav</ShortName>
+					<CachePath>SFX/AMB_Spaceship_In_Loop_C5579977.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3873597236" Name="Play_Spaceship_BC" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="77744621"/>
+						<MediaRef Id="465306571"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{4F048B2B-1562-231D-CB2C-AFCDBA435273}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
@@ -872,5 +894,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{0638C1FF-F581-1ED0-BB75-745DF0E3471C}</FileHash>
+	<FileHash>{E5F3AF97-85AC-1F7D-653B-6EED025CCE18}</FileHash>
 </SoundBanksInfo>
