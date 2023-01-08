@@ -73,6 +73,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Vine" ID="{824F2ACE-5897-46D5-AFDD-E98CB66F726D}">
+					<ChildrenList>
+						<Action Name="" ID="{C22F62CF-3939-4124-B0FF-9FB1B9475B76}" ShortID="744224086">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Vine_RC" ID="{ACBA5D82-4998-41F6-B4CA-69EC805B9FB9}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

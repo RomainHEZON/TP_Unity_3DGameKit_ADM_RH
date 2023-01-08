@@ -31,4 +31,9 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_SFX_Pressure_Pad_Activated", this.gameObject);
         AkSoundEngine.PostEvent("Play_SFX_After_Activation", this.gameObject);
     }
+
+    public void BoxBreak()
+    {
+        AkSoundEngine.PostEvent("Play_Boxes_Break", this.gameObject);
+    }
 }

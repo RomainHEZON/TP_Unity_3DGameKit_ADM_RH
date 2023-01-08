@@ -1,0 +1,17 @@
+Event	ID	Name			Wwise Object Path	Notes
+	83535699	Play_SFX_Chomper_Death			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Death	
+	578550610	Play_SFX_Chomper_Spotted			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Spotted	
+	3417318653	Play_SFX_Chomper_Idle			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Idle	
+	3614470547	Play_SFX_Chomper_Attack			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Attack	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	55164663	SFX_Chomper_Death_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper_Death_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Death_RC\SFX_Chomper_Death_01		122508
+	65552202	SFX_Chomper_Idle_Loop_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper_Idle_Loop_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Idle_RC\SFX_Chomper_Idle_Loop_01		3354924
+	112473778	SFX_Chomper Attack_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper Attack_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Attack_RC\SFX_Chomper Attack_02		233600
+	220889790	SFX_Chomper Attack_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper Attack_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Attack_RC\SFX_Chomper Attack_03		233600
+	433018291	SFX_Chomper_Spotted	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper_Spotted_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Spotted		110628
+	455693668	SFX_Chomper_Death_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper_Death_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Death_RC\SFX_Chomper_Death_03		122508
+	621567118	SFX_Chomper_Idle_Loop_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper_Idle_Loop_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Idle_RC\SFX_Chomper_Idle_Loop_02		3354924
+	851571609	SFX_Chomper Attack_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper Attack_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Attack_RC\SFX_Chomper Attack_01		233600
+	963346313	SFX_Chomper_Death_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Chomper_Death_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_60_Chomper\Chomper_Mixer\SFX_Chomper_Death_RC\SFX_Chomper_Death_02		127504
+

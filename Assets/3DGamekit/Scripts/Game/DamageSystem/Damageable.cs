@@ -14,7 +14,7 @@ namespace Gamekit3D
         [Tooltip("Time that this gameObject is invulnerable for, after receiving damage.")]
         public float invulnerabiltyTime;
 
-
+        // récupérer la valeur des HP pour driver la RTPC
         [SerializeField] private AK.Wwise.RTPC HealthRTPC;
 
 

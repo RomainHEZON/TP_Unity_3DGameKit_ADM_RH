@@ -129,7 +129,7 @@
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{F6CC2A4E-9899-15B6-9B6B-33C740BAAE90}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{91E33833-9CF2-92FE-A96D-166214BC1AB9}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -261,7 +261,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="1880847345" Name="Play_Boxes_Break" DurationType="OneShot" DurationMin="1.9817975" DurationMax="2.9490733">
+				<Event Id="1880847345" Name="Play_Boxes_Break" DurationType="OneShot" DurationMin="2.0877485" DurationMax="2.7947798">
 					<MediaRefs>
 						<MediaRef Id="25822972"/>
 						<MediaRef Id="176822686"/>
@@ -360,7 +360,7 @@
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{4E7AE523-2DD5-DEA9-EF50-2BFE8E44B56E}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{5FE40150-39FF-9170-9F24-98DDD13DD9A5}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -400,6 +400,10 @@
 					<ShortName>AMB_RFX_Morse_Code_Loop.wav</ShortName>
 					<Path>Media/249634031.wem</Path>
 					<CachePath>SFX/AMB_RFX_Morse_Code_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="251245521" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Vine_02.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Vine_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="263689023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_06.wav</ShortName>
@@ -488,6 +492,10 @@
 				<File Id="854435344" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blackbird\AMB_RFX_Blackbird_05.wav</ShortName>
 					<CachePath>SFX/Blackbird/AMB_RFX_Blackbird_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="903885790" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Vine_01.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Vine_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="906360689" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_07.wav</ShortName>
@@ -584,6 +592,12 @@
 						<MediaRef Id="906360689"/>
 						<MediaRef Id="987360822"/>
 						<MediaRef Id="990828257"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3521962842" Name="Play_Vine" DurationType="OneShot" DurationMin="0.7615841" DurationMax="0.8677648">
+					<MediaRefs>
+						<MediaRef Id="251245521"/>
+						<MediaRef Id="903885790"/>
 					</MediaRefs>
 				</Event>
 			</Events>
@@ -927,7 +941,7 @@
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{4F048B2B-1562-231D-CB2C-AFCDBA435273}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{BEC38D43-CF58-19DB-27EB-EFF07AD51457}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -992,9 +1006,74 @@
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{82357035-0597-D7FC-EBE9-8E2B33519470}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{98F843FE-E804-A88B-730F-E292A58FF9FA}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
+			<Media>
+				<File Id="55164663" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper_Death_01.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper_Death_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="65552202" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper_Idle_Loop_01.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper_Idle_Loop_01_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="112473778" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper Attack_02.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper Attack_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="220889790" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper Attack_03.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper Attack_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="433018291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper_Spotted.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper_Spotted_10C4C929.wem</CachePath>
+				</File>
+				<File Id="455693668" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper_Death_03.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper_Death_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="621567118" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper_Idle_Loop_02.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper_Idle_Loop_02_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="851571609" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper Attack_01.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper Attack_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="963346313" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Chomper_Death_02.wav</ShortName>
+					<CachePath>SFX/SFX_Chomper_Death_02_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3614470547" Name="Play_SFX_Chomper_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2494241" DurationMax="1.4024312">
+					<MediaRefs>
+						<MediaRef Id="112473778"/>
+						<MediaRef Id="220889790"/>
+						<MediaRef Id="851571609"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="83535699" Name="Play_SFX_Chomper_Death" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.65499735" DurationMax="0.7652159">
+					<MediaRefs>
+						<MediaRef Id="55164663"/>
+						<MediaRef Id="455693668"/>
+						<MediaRef Id="963346313"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3417318653" Name="Play_SFX_Chomper_Idle" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="65552202"/>
+						<MediaRef Id="621567118"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="578550610" Name="Play_SFX_Chomper_Spotted" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.54234403" DurationMax="0.7033332">
+					<MediaRefs>
+						<MediaRef Id="433018291"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{5F1EB56F-6F81-0022-D43A-C1AB90D96184}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
@@ -1437,5 +1516,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{B3956D86-C110-3A41-0E79-2CE0632F57EC}</FileHash>
+	<FileHash>{F725E2DB-1418-CBF7-693D-66036BDB6DFF}</FileHash>
 </SoundBanksInfo>

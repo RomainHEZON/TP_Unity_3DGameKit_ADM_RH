@@ -7,6 +7,7 @@ namespace Gamekit3D
 {
     public class ChomperSMBIdle : SceneLinkedSMB<ChomperBehavior>
     {
+
         public float minimumIdleGruntTime = 2.0f;
         public float maximumIdleGruntTime = 5.0f;
 
@@ -22,6 +23,8 @@ namespace Gamekit3D
 
         public override void OnSLStateNoTransitionUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
         {
+
+
             base.OnSLStateNoTransitionUpdate(animator, stateInfo, layerIndex);
 
             remainingToNextGrunt -= Time.deltaTime;

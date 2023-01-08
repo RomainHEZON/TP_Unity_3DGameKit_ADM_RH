@@ -34,6 +34,10 @@ namespace AK
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_PICKUP = 1472032783U;
+        static const AkUniqueID PLAY_SFX_CHOMPER_ATTACK = 3614470547U;
+        static const AkUniqueID PLAY_SFX_CHOMPER_DEATH = 83535699U;
+        static const AkUniqueID PLAY_SFX_CHOMPER_IDLE = 3417318653U;
+        static const AkUniqueID PLAY_SFX_CHOMPER_SPOTTED = 578550610U;
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCH_ACTIVATED = 3532940987U;
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCHES_BEFORE_ACTIVATION = 3731817354U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
@@ -57,6 +61,7 @@ namespace AK
         static const AkUniqueID PLAY_UI_MENU_NAVIGATION = 1771101267U;
         static const AkUniqueID PLAY_UI_MENU_SELECTION = 2157261217U;
         static const AkUniqueID PLAY_UI_MENU_VOLUME_SLIDER = 2556697005U;
+        static const AkUniqueID PLAY_VINE = 3521962842U;
         static const AkUniqueID STOP_ALLSOUNDS = 3789712745U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
     } // namespace EVENTS

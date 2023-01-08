@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class FT_Material_Switch : MonoBehaviour
 {
-    private enum CURRENT_TERRAIN { STONE, PUDDLE, GRASS, METAL };
+    private enum CURRENT_TERRAIN { STONE, PUDDLE, GRASS, METAL, VEGETATION };
 
     [SerializeField]
     private CURRENT_TERRAIN currentTerrain;
 
-    [SerializeField]
-    private AK.Wwise.Event footstepsEvent;
+    /*[SerializeField]
+    private AK.Wwise.Event footstepsEvent;*/
 
     [SerializeField]
     private AK.Wwise.Switch[] terrainSwitch;
@@ -19,7 +19,7 @@ public class FT_Material_Switch : MonoBehaviour
     {
         RaycastHit[] hit;
 
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 10.0f);
+        hit = Physics.RaycastAll(transform.position, Vector3.down, 0.5f);
 
         foreach (RaycastHit rayhit in hit)
         {
@@ -45,8 +45,22 @@ public class FT_Material_Switch : MonoBehaviour
                 currentTerrain = CURRENT_TERRAIN.METAL;
                 AkSoundEngine.SetSwitch("Material_Switch", "Metal", this.gameObject);
             }
+            
         }
+
+        /*hit = Physics.RaycastAll(transform.position, Vector3.up, 2f);
+
+        foreach (RaycastHit rayhit in hit)
+        {
+            if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Vegetation"))
+            {
+                currentTerrain = CURRENT_TERRAIN.VEGETATION;
+                AkSoundEngine.PostEvent("Play_Vine", this.gameObject);
+            }
+        }*/
     }
+
+
 
     private void Update()
     {

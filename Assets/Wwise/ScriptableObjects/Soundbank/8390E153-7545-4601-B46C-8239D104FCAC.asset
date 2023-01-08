@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e0837a98acc49448bdf7cf0f41d74b, type: 3}
+  m_Name: 8390E153-7545-4601-B46C-8239D104FCAC
+  m_EditorClassIdentifier: 
+  objectName: Chomper_SNBK
+  id: 3037172698
+  guid: 8390E153-7545-4601-B46C-8239D104FCAC

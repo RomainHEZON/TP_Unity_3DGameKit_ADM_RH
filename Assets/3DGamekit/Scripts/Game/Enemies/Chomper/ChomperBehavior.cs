@@ -85,7 +85,8 @@ namespace Gamekit3D
         public void Spotted()
         {
             if (spottedAudio != null)
-                spottedAudio.PlayRandomClip();
+            
+            AkSoundEngine.PostEvent("Play_SFX_Chomper_Spotted", this.gameObject);
         }
 
         protected void OnDisable()

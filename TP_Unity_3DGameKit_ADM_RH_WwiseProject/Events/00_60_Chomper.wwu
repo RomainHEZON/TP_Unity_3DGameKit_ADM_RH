@@ -6,6 +6,90 @@
 				<Property Name="Color" Type="int16" Value="1"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_SFX_Chomper_Spotted" ID="{CBA42403-1067-4834-ABDB-114D822CC061}">
+					<ChildrenList>
+						<Action Name="" ID="{962C5374-E2FC-4A47-9276-7ABE456293D6}" ShortID="958912715">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{14FABF2C-A3EA-4F34-939A-127D167F484F}" ShortID="720979866">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Spotted" ID="{C37D5960-C901-4A7D-BF72-890D050B65E0}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Chomper_Death" ID="{EEA445CA-6041-4F6A-BF07-14939BE6B534}">
+					<ChildrenList>
+						<Action Name="" ID="{73778C86-E7A2-4C67-B458-F438FBA5A536}" ShortID="793226251">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{FD06FB30-7DA5-490C-A25B-C9A889F7782E}" ShortID="442002223">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Attack_RC" ID="{67FC45C5-D6BD-4E36-8A57-C44C3A5A810A}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3B1A4CE4-B2E6-48EF-A192-CC5C0CA2DB87}" ShortID="889690458">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Death_RC" ID="{3C8FD396-3970-40EE-A9D1-280750C5B2CC}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Chomper_Attack" ID="{2E9BEE0C-D507-4D66-A4BB-23C627AE518E}">
+					<ChildrenList>
+						<Action Name="" ID="{205D6BA1-E9DF-4B70-A988-7A3A0D8DEBF4}" ShortID="666360632">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Attack_RC" ID="{67FC45C5-D6BD-4E36-8A57-C44C3A5A810A}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Chomper_Idle" ID="{E029F346-63DF-47CB-9779-81FE1AAD4A11}">
+					<ChildrenList>
+						<Action Name="" ID="{F8881216-3BE7-4D7A-9A6E-72F6B0B96D84}" ShortID="73472486">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

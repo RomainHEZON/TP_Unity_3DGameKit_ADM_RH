@@ -19,7 +19,7 @@
 					<ChildrenList>
 						<BlendContainer Name="Boxes_Break_BLD" ID="{A59953A5-7438-4097-A8CB-006937692EFD}" ShortID="1058136338">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="CenterPercentage" Type="int32">
 									<ValueList>
 										<Value>100</Value>
@@ -32,8 +32,8 @@
 											<Modifier Name="" ID="{7FCC0E4A-4419-4904-A663-64ACC0B5F746}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="200"/>
-													<Property Name="Min" Type="Real64" Value="-200"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
