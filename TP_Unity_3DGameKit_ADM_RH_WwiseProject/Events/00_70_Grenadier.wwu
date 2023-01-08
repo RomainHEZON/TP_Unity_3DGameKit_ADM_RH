@@ -29,17 +29,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Grenadier_Footsteps" ID="{D288F091-0789-41DA-896D-73277D1E0324}">
-					<ChildrenList>
-						<Action Name="" ID="{4F0E04E8-B37F-490D-991A-5F483A6CB0A8}" ShortID="954731665">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grenadier_Footsteps" ID="{2B6D963C-8F4F-4C02-967C-7773831C3B3B}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Attack_Range_Explosion" ID="{883FE840-D676-4EBB-A9DC-7DB0D9141625}">
 					<ChildrenList>
 						<Action Name="" ID="{049D158F-3EF3-4EC0-919C-07A709681C02}" ShortID="961071512">
@@ -79,6 +68,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Shield_RC" ID="{A4FA6217-F73A-4FD1-98CD-82C7D9A7B30B}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Grenadier_Footsteps" ID="{111938FA-784F-4CE6-82AD-D8840E78399B}">
+					<ChildrenList>
+						<Action Name="" ID="{3422B9E5-5DA7-4E0C-82AC-ACA4D01CE8E1}" ShortID="324022146">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenadier_Footsteps" ID="{2B6D963C-8F4F-4C02-967C-7773831C3B3B}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

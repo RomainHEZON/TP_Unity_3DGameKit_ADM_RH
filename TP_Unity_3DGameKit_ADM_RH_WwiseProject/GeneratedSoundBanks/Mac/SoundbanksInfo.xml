@@ -664,7 +664,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{6B3F7874-1226-1DEE-48C7-F9309378C9C7}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{A7B99CB2-8EA2-4F1D-BE1E-9A4668F28B02}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -770,7 +770,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="79389039" Name="Play_Attack_Close" MaxAttenuation="10" DurationType="OneShot" DurationMin="2.175521" DurationMax="2.2567708">
+				<Event Id="79389039" Name="Play_Attack_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.175521" DurationMax="2.2567708">
 					<MediaRefs>
 						<MediaRef Id="345715520"/>
 						<MediaRef Id="823718818"/>
@@ -1006,7 +1006,7 @@
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{98F843FE-E804-A88B-730F-E292A58FF9FA}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{6B2A7367-F2D2-DD89-5424-B32B96BA4DF5}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1516,5 +1516,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F725E2DB-1418-CBF7-693D-66036BDB6DFF}</FileHash>
+	<FileHash>{F5E289A9-A2E1-A256-56B7-7D87D3977931}</FileHash>
 </SoundBanksInfo>
