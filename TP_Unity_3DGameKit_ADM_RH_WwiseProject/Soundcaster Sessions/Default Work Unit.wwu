@@ -10,14 +10,6 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_SFX_HealthBox_Idle_02" ID="{E923CE09-59DE-4442-BD71-5D7EB52B7946}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Play_SFX_HealthBox_Open_02" ID="{CA5BEA8D-CF3B-4860-833C-4BBFC7A8C484}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_SFX_Alien_Staff_Idle" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -30,6 +22,10 @@
 						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}"/>
 							<Value>0.66</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}"/>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
