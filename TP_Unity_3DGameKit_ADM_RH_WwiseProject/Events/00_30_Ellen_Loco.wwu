@@ -9,7 +9,7 @@
 			<ChildrenList>
 				<Event Name="Play_Ellen_Footstep" ID="{D149277E-4C36-48AC-8199-CEE9EA1ED1E3}">
 					<ChildrenList>
-						<Action Name="" ID="{7B6F2950-1140-4C56-AD08-AAC556F666C1}" ShortID="647204900">
+						<Action Name="" ID="{DD82CE65-DDCE-4466-A5A9-CDABF8B37C54}" ShortID="95263473">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Ellen_Footstep" ID="{37D227C1-B2DC-42F9-ACB5-1E23433E35D7}" WorkUnitID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}"/>

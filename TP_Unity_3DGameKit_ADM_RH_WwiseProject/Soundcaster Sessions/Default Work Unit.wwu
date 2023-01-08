@@ -49,8 +49,8 @@
 						<CurrentStateRef Name="None" ID="{8DEB659C-7F8A-4ABE-8A44-33D3312BA6F8}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
-						<CurrentSwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
+						<CurrentSwitchRef Name="Stone" ID="{80678943-4F3B-489D-B9D7-AD48D3F35346}"/>
+						<CurrentSwitchRef Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

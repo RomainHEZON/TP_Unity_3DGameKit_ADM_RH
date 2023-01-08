@@ -14,9 +14,21 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ALIEN_STAFF_ATTACK = 2329713267U;
+        static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
+        static const AkUniqueID PLAY_AMB_PAD_RIVER = 4220606807U;
         static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE = 2070617240U;
+        static const AkUniqueID PLAY_ATTACK_CLOSE = 79389039U;
+        static const AkUniqueID PLAY_ATTACK_RANGE_BOUNCE = 2579342955U;
+        static const AkUniqueID PLAY_ATTACK_RANGE_EXPLOSION = 3013215836U;
+        static const AkUniqueID PLAY_ATTACK_RANGE_FIRE = 3818987871U;
+        static const AkUniqueID PLAY_BIG_CREATURE = 175529640U;
+        static const AkUniqueID PLAY_BIRDS = 3025897706U;
+        static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
+        static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
+        static const AkUniqueID PLAY_GET_HIT_BEHIND = 2314174147U;
+        static const AkUniqueID PLAY_GRENADIER_FOOTSTEPS = 2094447813U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
@@ -32,6 +44,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
+        static const AkUniqueID PLAY_SHIELD = 1988178265U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
         static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
@@ -82,6 +95,7 @@ namespace AK
             {
                 static const AkUniqueID FORWARD = 1164125444U;
                 static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID JUMP = 3833651337U;
                 static const AkUniqueID ROLL = 2026920480U;
                 static const AkUniqueID RUN = 712161704U;
             } // namespace SWITCH
@@ -94,6 +108,7 @@ namespace AK
             namespace SWITCH
             {
                 static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID METAL = 2473969246U;
                 static const AkUniqueID PUDDLE = 2003927601U;
                 static const AkUniqueID STONE = 1216965916U;
             } // namespace SWITCH
@@ -104,6 +119,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID ELLEN_HEALTH = 971296124U;
+        static const AkUniqueID LAKE_AMB = 3174026549U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID PREMASTER_VOLUME = 2037612127U;

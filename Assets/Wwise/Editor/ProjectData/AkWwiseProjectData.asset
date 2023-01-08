@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d48c76d72f06e442b3361184b378ae57
     GuidInternal: 
-    m_lastTime: -8585285710469347330
+    m_lastTime: -8585285715523763658
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585285171314147295
+    m_lastTime: -8585285160327944305
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -249,7 +249,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_10_AMB_Pads
     guid: 6a7d3506fdb54b4db032684db8518f3d
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274507190871
     List:
     - name: AMB_Pads_SNBK
       guid: 6bfd33b3951c5c4eb7c77bb9db6ec85c
@@ -282,7 +282,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_20_AMB_RFX
     guid: 341698971ceb9b40863e917fa1b06c1c
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274506890804
     List:
     - name: AMB_RFX_SNBK
       guid: a0004eadb7fe2848b75bc9a47bf963c9
@@ -315,7 +315,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_30_Ellen_Loco
     guid: 26061ab505ada24ca2e44c4bd45413ed
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274507010826
     List:
     - name: Ellen_Loco_SNBK
       guid: e88a11accd917246889f4f9fb7cd6c41
@@ -348,7 +348,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_40_Ellen_SFX
     guid: 0e25c86fbed45f4a9b279d30ac067997
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274507100846
     List:
     - name: Ellen_SFX_SNBK
       guid: b5843048fe77cf49bc65ddb882d8c3e5
@@ -381,7 +381,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_50_SFX
     guid: b3d72cc0db2f9a46a6bc99972457d705
     GuidInternal: 
-    m_lastTime: -8585284957548302398
+    m_lastTime: -8585285002765514439
     List:
     - name: SFX_SNBK
       guid: 098f38f3ddac2b498cc3f4bf97eeecd2
@@ -414,7 +414,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_60_Chomper
     guid: 07d41c9ef69d7f40a86a823b73bba439
     GuidInternal: 
-    m_lastTime: -8585285224652481913
+    m_lastTime: -8585285274506930811
     List:
     - name: Chomper_SNBK
       guid: 53e1908345750146b46c8239d104fcac
@@ -447,7 +447,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_70_Grenadier
     guid: bcf81fb4db079840b1d511cb95263be3
     GuidInternal: 
-    m_lastTime: -8585285224652481913
+    m_lastTime: -8585285274507060849
     List:
     - name: Grenadier_SNBK
       guid: 980014438a37e24d81d5ed8493bae722
@@ -480,7 +480,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_80_Spitter
     guid: 939abaa8315e644bb446935fbcc0ea91
     GuidInternal: 
-    m_lastTime: -8585285224652481913
+    m_lastTime: -8585285274507140854
     List:
     - name: Spitter_SNBK
       guid: 6bdccf3e763b3042a1349ae735873bb6
@@ -513,7 +513,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_90_UI
     guid: 244f8dddd577524c805fc23be4469bde
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585285274506840785
     List:
     - name: UI_SNBK
       guid: 23d7c86e95de5c4fa479a1e784da7056
@@ -543,7 +543,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 25e549de173d524ba44cfda5d1b5aaab
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585285274507250880
     List: []
   EventWwu:
   - PhysicalPath: Events\00_10_AMB_Pads.wwu
@@ -560,8 +560,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585284310973926673
+    m_lastTime: -8585284263008614490
     List:
+    - name: Play_AMB_PAD_Lake
+      guid: da010ef4025dd24cab57213e6c5a964d
+      id: 1340469326
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_10_AMB_Pads
+        ObjectType: 12
+        guid: 17f071bb4f794046a0ac6cb855b1de9d
+      - ElementName: Play_AMB_PAD_Lake
+        ObjectType: 3
+        guid: da010ef4025dd24cab57213e6c5a964d
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Lake
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_AMB_PAD_River
+      guid: c810e7ec422f9840a8578fed16e08889
+      id: 4220606807
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_10_AMB_Pads
+        ObjectType: 12
+        guid: 17f071bb4f794046a0ac6cb855b1de9d
+      - ElementName: Play_AMB_PAD_River
+        ObjectType: 3
+        guid: c810e7ec422f9840a8578fed16e08889
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_River
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Spaceship_BC
       guid: 2c3ea51a7974fa418b075676672444d9
       id: 3873597236
@@ -619,7 +659,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585284302689675782
+    m_lastTime: -8585284263008454458
     List:
     - name: Play_AMB_RFX_Morse_Code
       guid: c5757ecf13cc124dba1598e650d5779e
@@ -638,6 +678,86 @@ MonoBehaviour:
         ObjectType: 3
         guid: c5757ecf13cc124dba1598e650d5779e
       Path: Events\Default Work Unit\00_20_AMB_RFX\Play_AMB_RFX_Morse_Code
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Big_Creature
+      guid: f875d2877f8530438ced50ed0e7f28e3
+      id: 175529640
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Play_Big_Creature
+        ObjectType: 3
+        guid: f875d2877f8530438ced50ed0e7f28e3
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Big_Creature
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Birds
+      guid: 1b4b67347aa4554a8143762295e5658a
+      id: 3025897706
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Play_Birds
+        ObjectType: 3
+        guid: 1b4b67347aa4554a8143762295e5658a
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Birds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Blackbird
+      guid: 98f74b340e92d3429562cc5ecb8b37ca
+      id: 576298738
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Play_Blackbird
+        ObjectType: 3
+        guid: 98f74b340e92d3429562cc5ecb8b37ca
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Blackbird
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_ExoticAnimal
+      guid: 9f4ef8fa036aa74185470510eb3fc28a
+      id: 1108366744
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Play_ExoticAnimal
+        ObjectType: 3
+        guid: 9f4ef8fa036aa74185470510eb3fc28a
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_ExoticAnimal
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -675,7 +795,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_30_Ellen_Loco
     guid: a51919b6568d074c8e3bc50aabf2c270
     GuidInternal: 
-    m_lastTime: -8585285148847386795
+    m_lastTime: -8585284237851030740
     List:
     - name: Play_Ellen_Footstep
       guid: 7e2749d1364cac488199cee9ea1ed1e3
@@ -711,7 +831,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_40_Ellen_SFX
     guid: 7adb8f172921f048b75a7073488c6255
     GuidInternal: 
-    m_lastTime: -8585285040913346082
+    m_lastTime: -8585285054131411612
     List:
     - name: Play_Alien_Staff_Attack
       guid: 931fa30ccb2dac4e9d3af0788e4fbcd2
@@ -747,7 +867,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585284383103841415
+    m_lastTime: -8585284794986930456
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -1265,7 +1385,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_60_Chomper
     guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
     GuidInternal: 
-    m_lastTime: -8585285224652672169
+    m_lastTime: -8585285281656878514
     List: []
   - PhysicalPath: Events\00_70_Grenadier.wwu
     PathAndIcons:
@@ -1281,8 +1401,148 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_70_Grenadier
     guid: 71582feae7f34c4e913572af42280bda
     GuidInternal: 
-    m_lastTime: -8585285224652672169
-    List: []
+    m_lastTime: -8585284263008524482
+    List:
+    - name: Play_Attack_Close
+      guid: 44ca3a95974d9b41a4d7989e2861b4e1
+      id: 79389039
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Attack_Close
+        ObjectType: 3
+        guid: 44ca3a95974d9b41a4d7989e2861b4e1
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Attack_Close
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Attack_Range_Bounce
+      guid: d2923dbecbb20543878e92e4f1e7ff24
+      id: 2579342955
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Attack_Range_Bounce
+        ObjectType: 3
+        guid: d2923dbecbb20543878e92e4f1e7ff24
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Attack_Range_Bounce
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Attack_Range_Explosion
+      guid: 40e83f8876d6bb4ea9dc7db0d9141625
+      id: 3013215836
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Attack_Range_Explosion
+        ObjectType: 3
+        guid: 40e83f8876d6bb4ea9dc7db0d9141625
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Attack_Range_Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Attack_Range_Fire
+      guid: b0e384b1afb19946a0f1e4f431f94d54
+      id: 3818987871
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Attack_Range_Fire
+        ObjectType: 3
+        guid: b0e384b1afb19946a0f1e4f431f94d54
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Attack_Range_Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Get_Hit_Behind
+      guid: 7f8cd714b126bc44946157b6ea0406fc
+      id: 2314174147
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Get_Hit_Behind
+        ObjectType: 3
+        guid: 7f8cd714b126bc44946157b6ea0406fc
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Get_Hit_Behind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Grenadier_Footsteps
+      guid: 91f088d28907da41896d73277d1e0324
+      id: 2094447813
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Grenadier_Footsteps
+        ObjectType: 3
+        guid: 91f088d28907da41896d73277d1e0324
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Grenadier_Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Shield
+      guid: 2597c5021913a44086f171519199ee10
+      id: 1988178265
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_70_Grenadier
+        ObjectType: 12
+        guid: 71582feae7f34c4e913572af42280bda
+      - ElementName: Play_Shield
+        ObjectType: 3
+        guid: 2597c5021913a44086f171519199ee10
+      Path: Events\Default Work Unit\00_70_Grenadier\Play_Shield
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\00_80_Spitter.wwu
     PathAndIcons:
     - ElementName: Events
@@ -1297,7 +1557,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_80_Spitter
     guid: 7000ddcfcb4e0442bdc8256a0975e9dc
     GuidInternal: 
-    m_lastTime: -8585285224652672169
+    m_lastTime: -8585285281657018566
     List: []
   - PhysicalPath: Events\00_90_UI.wwu
     PathAndIcons:
@@ -1313,7 +1573,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585284916991601938
+    m_lastTime: -8585284878437298708
     List:
     - name: Play_UI_Dialogue_Start
       guid: 99df3951143d9844923c5e836fa6a387
@@ -1546,7 +1806,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585284302689653384
+    m_lastTime: -8585284263008394439
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -1554,16 +1814,13 @@ MonoBehaviour:
     - ElementName: Game Parameters
       ObjectType: 5
       guid: 00000000000000000000000000000000
-    - ElementName: Default Work Unit
-      ObjectType: 12
-      guid: 1f4eeda840fefb40a287c327cb2b7aca
     - ElementName: Bus_Volume
       ObjectType: 12
       guid: e7c7ccb7710915419e464565c21837c0
-    ParentPath: Game Parameters\Default Work Unit\Bus_Volume
+    ParentPath: Game Parameters\Bus_Volume
     guid: e7c7ccb7710915419e464565c21837c0
     GuidInternal: 
-    m_lastTime: -8585284335218073312
+    m_lastTime: -8585284269432330548
     List:
     - name: Ellen_Health
       guid: e75a86bb9f2c5a4781ebb9f103e12328
@@ -1572,16 +1829,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Ellen_Health
         ObjectType: 13
         guid: e75a86bb9f2c5a4781ebb9f103e12328
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Ellen_Health
+      Path: Game Parameters\Bus_Volume\Ellen_Health
     - name: Master_Volume
       guid: 6d022af933dc3745864e6a11f434789e
       id: 4179668880
@@ -1589,16 +1843,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Master_Volume
         ObjectType: 13
         guid: 6d022af933dc3745864e6a11f434789e
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Master_Volume
+      Path: Game Parameters\Bus_Volume\Master_Volume
     - name: Music_Volume
       guid: 36498c06061b9d4ab46f18d090d4ca5e
       id: 1006694123
@@ -1606,16 +1857,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Music_Volume
         ObjectType: 13
         guid: 36498c06061b9d4ab46f18d090d4ca5e
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Music_Volume
+      Path: Game Parameters\Bus_Volume\Music_Volume
     - name: PreMaster_Volume
       guid: a7576c4867dab94780680d58007c42b2
       id: 2037612127
@@ -1623,33 +1871,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: PreMaster_Volume
         ObjectType: 13
         guid: a7576c4867dab94780680d58007c42b2
-      Path: Game Parameters\Default Work Unit\Bus_Volume\PreMaster_Volume
-    - name: Spaceship_AMB
-      guid: eb1583d6a2b9094884e12678f21d63bb
-      id: 3545834150
-      PathAndIcons:
-      - ElementName: Game Parameters
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
-      - ElementName: Bus_Volume
-        ObjectType: 12
-        guid: e7c7ccb7710915419e464565c21837c0
-      - ElementName: Spaceship_AMB
-        ObjectType: 13
-        guid: eb1583d6a2b9094884e12678f21d63bb
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Spaceship_AMB
+      Path: Game Parameters\Bus_Volume\PreMaster_Volume
     - name: Staff_Distorsion
       guid: a7b91e5ffc62804e95daab369d9ca120
       id: 3828256600
@@ -1657,16 +1885,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Staff_Distorsion
         ObjectType: 13
         guid: a7b91e5ffc62804e95daab369d9ca120
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Staff_Distorsion
+      Path: Game Parameters\Bus_Volume\Staff_Distorsion
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -1678,8 +1903,58 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f4eeda840fefb40a287c327cb2b7aca
     GuidInternal: 
-    m_lastTime: -8585285224652662135
+    m_lastTime: -8585284269432280541
     List: []
+  - PhysicalPath: Game Parameters\Distance.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1f4eeda840fefb40a287c327cb2b7aca
+    - ElementName: Distance
+      ObjectType: 12
+      guid: e53b1effa1d101419e07a517144c19cf
+    ParentPath: Game Parameters\Default Work Unit\Distance
+    guid: e53b1effa1d101419e07a517144c19cf
+    GuidInternal: 
+    m_lastTime: -8585284269432040481
+    List:
+    - name: Lake_AMB
+      guid: a3011e1aafc20d4bbd17d65938ee4e06
+      id: 3174026549
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Distance
+        ObjectType: 12
+        guid: e53b1effa1d101419e07a517144c19cf
+      - ElementName: Lake_AMB
+        ObjectType: 13
+        guid: a3011e1aafc20d4bbd17d65938ee4e06
+      Path: Game Parameters\Default Work Unit\Distance\Lake_AMB
+    - name: Spaceship_AMB
+      guid: eb1583d6a2b9094884e12678f21d63bb
+      id: 3545834150
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Distance
+        ObjectType: 12
+        guid: e53b1effa1d101419e07a517144c19cf
+      - ElementName: Spaceship_AMB
+        ObjectType: 13
+        guid: eb1583d6a2b9094884e12678f21d63bb
+      Path: Game Parameters\Default Work Unit\Distance\Spaceship_AMB
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -1692,7 +1967,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dafb7d237f34794c8b43ba469bf3287e
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585285240369497155
     List: []
   - PhysicalPath: States\Menu_Pause.wwu
     PathAndIcons:
@@ -1708,7 +1983,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Menu_Pause
     guid: bfcd8dd48efb114a90e1d0a9d095ca32
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585285240369537165
     List:
     - name: Pause_OFF
       guid: eee4ded5773ee64e9e8a759182014762
@@ -1802,7 +2077,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 3d4ee4a025b46a449e0e218aa2e1c150
     GuidInternal: 
-    m_lastTime: -8585285148846465803
+    m_lastTime: -8585285150432083791
     List: []
   - PhysicalPath: Switches\Loco_Switch.wwu
     PathAndIcons:
@@ -1818,7 +2093,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit\Loco_Switch
     guid: bffad21dbb79e8428ef26a6c2268a2b7
     GuidInternal: 
-    m_lastTime: -8585285148846465803
+    m_lastTime: -8585284269432180514
     List:
     - name: Loco_Switch
       guid: 6eeafcfadfdbfc4fbf3d503ec327d366
@@ -1876,6 +2151,25 @@ MonoBehaviour:
         - ElementName: Idle
           ObjectType: 10
           guid: 30142169800ee74cb14e3dc99bfd569b
+      - name: Jump
+        guid: 7cd7b404d710d34a8209efe2d1039f03
+        id: 3833651337
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3d4ee4a025b46a449e0e218aa2e1c150
+        - ElementName: Loco_Switch
+          ObjectType: 12
+          guid: bffad21dbb79e8428ef26a6c2268a2b7
+        - ElementName: Loco_Switch
+          ObjectType: 11
+          guid: 6eeafcfadfdbfc4fbf3d503ec327d366
+        - ElementName: Jump
+          ObjectType: 10
+          guid: 7cd7b404d710d34a8209efe2d1039f03
       - name: Roll
         guid: a7a7563b870537439d3fa875bb2b82d6
         id: 2026920480
@@ -1931,7 +2225,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit\Material
     guid: fb93524a86aa8745b6510d3927f99997
     GuidInternal: 
-    m_lastTime: -8585285148846455801
+    m_lastTime: -8585284269432130500
     List:
     - name: Material_Switch
       guid: aefd40686128a6438f12a6d4df85884e
@@ -1970,6 +2264,25 @@ MonoBehaviour:
         - ElementName: Grass
           ObjectType: 10
           guid: c4380b649c3af0479b5dbfeac556c8d2
+      - name: Metal
+        guid: 8826ad8820546d4698215b8ca0a3b066
+        id: 2473969246
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 3d4ee4a025b46a449e0e218aa2e1c150
+        - ElementName: Material
+          ObjectType: 12
+          guid: fb93524a86aa8745b6510d3927f99997
+        - ElementName: Material_Switch
+          ObjectType: 11
+          guid: aefd40686128a6438f12a6d4df85884e
+        - ElementName: Metal
+          ObjectType: 10
+          guid: 8826ad8820546d4698215b8ca0a3b066
       - name: Puddle
         guid: 528f441f9507f24891fa252382c68e31
         id: 2003927601
@@ -2023,10 +2336,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bc9d1094795632459ac1ba5e99b9201b
     GuidInternal: 
-    m_lastTime: -8585285710469347330
+    m_lastTime: -8585285715523473592
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 7400000075000000760000008f00000090000000920000009700000098000000990000009a0000009b0000009c0000003c0100003d0100003e0100001e020000850c000018450000
+  ExpandedWaapiItemIds: 010000001f00000020000000220000002b00000031000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

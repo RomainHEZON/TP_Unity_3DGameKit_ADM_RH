@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FT_Material_Switch : MonoBehaviour
 {
-    private enum CURRENT_TERRAIN { STONE, PUDDLE, GRASS };
+    private enum CURRENT_TERRAIN { STONE, PUDDLE, GRASS, METAL };
 
     [SerializeField]
     private CURRENT_TERRAIN currentTerrain;
@@ -39,6 +39,11 @@ public class FT_Material_Switch : MonoBehaviour
             {
                 currentTerrain = CURRENT_TERRAIN.PUDDLE;
                 AkSoundEngine.SetSwitch("Material_Switch", "Puddle", this.gameObject);
+            }
+            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Metal"))
+            {
+                currentTerrain = CURRENT_TERRAIN.METAL;
+                AkSoundEngine.SetSwitch("Material_Switch", "Metal", this.gameObject);
             }
         }
     }

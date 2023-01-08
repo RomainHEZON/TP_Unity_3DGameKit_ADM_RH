@@ -570,6 +570,12 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Jump" ID="{04B4D77C-10D7-4AD3-8209-EFE2D1039F03}"/>
+												<ItemList>
+													<ItemRef Name="Grass_Jump_RC" ID="{5170D5C4-CEC1-4596-BA52-978AD9C4B412}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Roll" ID="{3B56A7A7-0587-4337-9D3F-A875BB2B82D6}"/>
 												<ItemList>
 													<ItemRef Name="Grass_Land_Forward_Roll_RC" ID="{0E958BD5-29F4-4BC4-B04A-06BFD17FAF35}"/>
@@ -1062,6 +1068,12 @@
 												<SwitchRef Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}"/>
 												<ItemList>
 													<ItemRef Name="Puddle_Run_RC" ID="{BCF4A7B2-85FE-48AC-A522-CC212BBE7676}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Jump" ID="{04B4D77C-10D7-4AD3-8209-EFE2D1039F03}"/>
+												<ItemList>
+													<ItemRef Name="Puddle_Jump_RC" ID="{4FA15BAB-7038-4DAB-8AA1-474B70603B74}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -1594,6 +1606,12 @@
 												</ItemList>
 											</Grouping>
 											<Grouping>
+												<SwitchRef Name="Jump" ID="{04B4D77C-10D7-4AD3-8209-EFE2D1039F03}"/>
+												<ItemList>
+													<ItemRef Name="Stone_Jump_RC" ID="{9CB7A338-5C62-4109-841A-B53B217EE987}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
 												<SwitchRef Name="Roll" ID="{3B56A7A7-0587-4337-9D3F-A875BB2B82D6}"/>
 												<ItemList>
 													<ItemRef Name="Stone_Land_Forward_Roll_RC" ID="{4D604650-E77E-41DC-8E74-5D71C0788136}"/>
@@ -1722,6 +1740,18 @@
 													<ItemRef Name="Metal_Run_RC" ID="{4A80004F-EA42-41DC-ADC4-CE44D390C340}"/>
 												</ItemList>
 											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Jump" ID="{04B4D77C-10D7-4AD3-8209-EFE2D1039F03}"/>
+												<ItemList>
+													<ItemRef Name="Ellen_FT_Metal_Jump" ID="{F4AD3A53-0698-4DF4-B8D8-F1F42A3C5BC8}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
+												<ItemList>
+													<ItemRef Name="Ellen_FT_Metal_Land_Forward" ID="{EE62C95B-0553-4BA6-A6E6-604F6A5C2C5B}"/>
+												</ItemList>
+											</Grouping>
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
@@ -1752,6 +1782,12 @@
 										<SwitchRef Name="Puddle" ID="{1F448F52-0795-48F2-91FA-252382C68E31}"/>
 										<ItemList>
 											<ItemRef Name="Puddle_Switch" ID="{8E927C36-12D2-4870-9028-A0F7E24A9DE9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Metal" ID="{88AD2688-5420-466D-9821-5B8CA0A3B066}"/>
+										<ItemList>
+											<ItemRef Name="Metal_Switch" ID="{FD88711E-F268-44F6-B338-05A7D5E0C469}"/>
 										</ItemList>
 									</Grouping>
 									<Grouping>

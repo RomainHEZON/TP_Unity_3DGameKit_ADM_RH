@@ -31,7 +31,7 @@ public class Ellen_FT_Manager : MonoBehaviour
 
     private void PlayJump()
     {
-        AkSoundEngine.SetSwitch("Loco_Switch", "Run", this.gameObject);
+        AkSoundEngine.SetSwitch("Loco_Switch", "Jump", this.gameObject);
         AkSoundEngine.PostEvent("Play_Ellen_Footstep", this.gameObject);
     }
 }
