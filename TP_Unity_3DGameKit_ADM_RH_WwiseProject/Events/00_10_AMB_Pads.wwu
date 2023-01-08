@@ -22,6 +22,28 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_AMB_PAD_Lake" ID="{F40E01DA-5D02-4CD2-AB57-213E6C5A964D}">
+					<ChildrenList>
+						<Action Name="" ID="{E64B0241-C75E-4D25-907B-8C2288A98122}" ShortID="581133983">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lake_SC" ID="{18AB161E-53BB-40FD-ABEB-8DFC781F7088}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_River" ID="{ECE710C8-2F42-4098-A857-8FED16E08889}">
+					<ChildrenList>
+						<Action Name="" ID="{4016E550-2323-473A-A055-2CB6D5F7445B}" ShortID="1034914937">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_River" ID="{95079BD4-C054-4E79-BE7A-B99CBF95B948}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

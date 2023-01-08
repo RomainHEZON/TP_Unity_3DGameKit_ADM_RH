@@ -29,6 +29,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_ExoticAnimal" ID="{FAF84E9F-6A03-41A7-8547-0510EB3FC28A}">
+					<ChildrenList>
+						<Action Name="" ID="{5BD04955-2E3A-4FE8-9BFE-2CDC49845941}" ShortID="171516742">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ExoticAnimal_RC" ID="{6A88DE9A-2A89-4242-9B57-AB55DE948BD2}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Big_Creature" ID="{87D275F8-857F-4330-8CED-50ED0E7F28E3}">
+					<ChildrenList>
+						<Action Name="" ID="{6E027A92-A59D-449F-9E37-403C00FC8BE8}" ShortID="466090232">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Big_Creature_RC" ID="{90A3BF5A-1C67-4517-B96E-0D778ECE18EF}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Birds" ID="{34674B1B-A47A-4A55-8143-762295E5658A}">
+					<ChildrenList>
+						<Action Name="" ID="{AB92CED4-7E1B-42A1-B6C1-E307CC6C4FB2}" ShortID="805792212">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Birds_SC" ID="{E8324EED-A580-42AD-86A8-CA545CD4B27E}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Blackbird" ID="{344BF798-920E-42D3-9562-CC5ECB8B37CA}">
+					<ChildrenList>
+						<Action Name="" ID="{94ED44A4-577E-4975-99E6-4761779CCE3F}" ShortID="938248957">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Blackbird_RC" ID="{E830DF89-05D3-48ED-82EE-D87D0890F213}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" SchemaVersion="110" RootDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" ParentDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}">
+	<GameParameters>
+		<WorkUnit Name="Distance" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

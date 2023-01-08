@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Bus_Volume" ID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}" PersistMode="Reference"/>
+				<WorkUnit Name="Distance" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

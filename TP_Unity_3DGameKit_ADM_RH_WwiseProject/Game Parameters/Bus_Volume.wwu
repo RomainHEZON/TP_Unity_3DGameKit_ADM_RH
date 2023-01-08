@@ -37,13 +37,6 @@
 						<Property Name="Max" Type="Real64" Value="5"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}">
-					<PropertyList>
-						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="30"/>
-					</PropertyList>
-				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

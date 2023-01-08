@@ -36,6 +36,10 @@
 							<Value>2.04018547140649</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
 							<Value>2.20302375809935</Value>
 						</RTPCValue>
@@ -44,7 +48,10 @@
 						<CurrentStateRef Name="None" ID="{F152AB58-7E74-40AF-A3B3-559C6FDF3B53}"/>
 						<CurrentStateRef Name="None" ID="{8DEB659C-7F8A-4ABE-8A44-33D3312BA6F8}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
+						<CurrentSwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

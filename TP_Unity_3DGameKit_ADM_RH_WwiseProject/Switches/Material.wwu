@@ -12,6 +12,7 @@
 						<Switch Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
 						<Switch Name="Puddle" ID="{1F448F52-0795-48F2-91FA-252382C68E31}"/>
 						<Switch Name="Stone" ID="{80678943-4F3B-489D-B9D7-AD48D3F35346}"/>
+						<Switch Name="Metal" ID="{88AD2688-5420-466D-9821-5B8CA0A3B066}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

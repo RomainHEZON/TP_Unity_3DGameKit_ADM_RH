@@ -13,6 +13,7 @@
 						<Switch Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
 						<Switch Name="Roll" ID="{3B56A7A7-0587-4337-9D3F-A875BB2B82D6}"/>
 						<Switch Name="Idle" ID="{69211430-0E80-4CE7-B14E-3DC99BFD569B}"/>
+						<Switch Name="Jump" ID="{04B4D77C-10D7-4AD3-8209-EFE2D1039F03}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

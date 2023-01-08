@@ -481,11 +481,70 @@
 												<ActiveSource Name="Ellen_FT_Grass_Land_Idle" ID="{87CBCA67-EA27-4919-88DE-CFF7DDE02696}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="Grass_Jump_RC" ID="{5170D5C4-CEC1-4596-BA52-978AD9C4B412}" ShortID="597801896">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Ellen_FT_Grass_Jump_01" ID="{CF4CD78C-5632-4BB5-82B4-95A98EB4FB87}" ShortID="795937931">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Grass_Jump_01" ID="{72E76491-B283-474D-828F-7AC164EEE4D8}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Grass_Jump_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="854670655"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Grass_Jump_01" ID="{72E76491-B283-474D-828F-7AC164EEE4D8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ellen_FT_Grass_Jump_02" ID="{0BB76BC1-C5EC-4CEF-BB2D-DE9F71C2E422}" ShortID="124246530">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Grass_Jump_02" ID="{81015464-D10E-4838-BB89-42C112AB2E9D}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Grass_Jump_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="538981270"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Grass_Jump_02" ID="{81015464-D10E-4838-BB89-42C112AB2E9D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Ellen_FT_Grass_Land_Idle" ID="{4A1F480E-3877-4242-BD9F-E0F06B69F0D6}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Grass_Jump_RC" ID="{5170D5C4-CEC1-4596-BA52-978AD9C4B412}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Grass_Run_RC" ID="{D09060CB-B9FF-4458-8389-3F590F4EC115}"/>
@@ -917,6 +976,62 @@
 												<ActiveSource Name="Ellen_FT_Puddle_Land_Idle" ID="{279B300C-F872-470A-B73A-87DC9838F035}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="Puddle_Jump_RC" ID="{4FA15BAB-7038-4DAB-8AA1-474B70603B74}" ShortID="13528453">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Ellen_FT_Puddle_Jump_01" ID="{978FB6DC-F5EB-4757-BDFC-975F559B0AFD}" ShortID="87612183">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Puddle_Jump_01" ID="{48D88A27-40CB-4AC2-AAD6-189989AC16C3}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Puddle_Jump_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1916022"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Puddle_Jump_01" ID="{48D88A27-40CB-4AC2-AAD6-189989AC16C3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ellen_FT_Puddle_Jump_02" ID="{092E4F2B-6BD1-4122-9F5A-F41DD5E41240}" ShortID="770431681">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Puddle_Jump_02" ID="{FAFE0426-4E29-473E-85D6-09780D0FD189}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Puddle_Jump_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="45694812"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Puddle_Jump_02" ID="{FAFE0426-4E29-473E-85D6-09780D0FD189}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
@@ -925,6 +1040,9 @@
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Puddle_Land_Forward_RC" ID="{F1E919A6-6B0F-4C62-86F7-039688F5A15B}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Puddle_Jump_RC" ID="{4FA15BAB-7038-4DAB-8AA1-474B70603B74}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Puddle_Run_RC" ID="{BCF4A7B2-85FE-48AC-A522-CC212BBE7676}"/>
@@ -1387,11 +1505,70 @@
 												<ActiveSource Name="Ellen_FT_Stone_Land_Idle" ID="{9EF84753-89AA-45B9-A94D-85AB9EF50CCB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
+										<RandomSequenceContainer Name="Stone_Jump_RC" ID="{9CB7A338-5C62-4109-841A-B53B217EE987}" ShortID="812302603">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Ellen_FT_Stone_Jump_01" ID="{44806B78-FF55-4E29-9B2E-938B7E865463}" ShortID="68341222">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Stone_Jump_01" ID="{413E3304-62D4-488F-A81D-D460E02461F5}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Stone_Jump_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="836876221"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Stone_Jump_01" ID="{413E3304-62D4-488F-A81D-D460E02461F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Ellen_FT_Stone_Jump_02" ID="{3ED2475F-3BF2-4D91-8B5D-F5B5A5C35108}" ShortID="686199131">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Stone_Jump_02" ID="{4001FC67-CAD0-40F0-B372-8DDF5ECFBC91}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Stone_Jump_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="405165139"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Stone_Jump_02" ID="{4001FC67-CAD0-40F0-B372-8DDF5ECFBC91}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="Stone_Land_Forward_RC" ID="{BD68902D-607D-4369-ACE1-0E4A5A1CBE3C}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Stone_Jump_RC" ID="{9CB7A338-5C62-4109-841A-B53B217EE987}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="Stone_Land_Forward_Roll_RC" ID="{4D604650-E77E-41DC-8E74-5D71C0788136}"/>
@@ -1431,9 +1608,129 @@
 										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
+								<SwitchContainer Name="Metal_Switch" ID="{FD88711E-F268-44F6-B338-05A7D5E0C469}" ShortID="466110259">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}" WorkUnitID="{1DD2FABF-79BB-42E8-8EF2-6A6C2268A2B7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Loco_Switch" ID="{FAFCEA6E-DBDF-4FFC-BF3D-503EC327D366}" WorkUnitID="{1DD2FABF-79BB-42E8-8EF2-6A6C2268A2B7}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Metal_Run_RC" ID="{4A80004F-EA42-41DC-ADC4-CE44D390C340}" ShortID="506630495">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Ellen_FT_Metal_Run_01" ID="{B34014EA-6501-4887-9DF4-5F94C3D91344}" ShortID="108470360">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Ellen_FT_Metal_Run_01" ID="{3FC60A60-1C81-444D-A7F3-B682C03968FB}">
+															<Language>SFX</Language>
+															<AudioFile>Ellen_FT_Metal_Run_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1002530163"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Ellen_FT_Metal_Run_01" ID="{3FC60A60-1C81-444D-A7F3-B682C03968FB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="Ellen_FT_Metal_Jump" ID="{F4AD3A53-0698-4DF4-B8D8-F1F42A3C5BC8}" ShortID="126364349">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_FT_Metal_Jump" ID="{ABD21C23-E76D-48CD-B61E-3BF2EAE5C2AD}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_FT_Metal_Jump.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="26860005"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_FT_Metal_Jump" ID="{ABD21C23-E76D-48CD-B61E-3BF2EAE5C2AD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_FT_Metal_Land_Forward" ID="{EE62C95B-0553-4BA6-A6E6-604F6A5C2C5B}" ShortID="473245840">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_FT_Metal_Land_Forward" ID="{D89480D2-254B-486E-A3C7-6DBC68E0895E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_FT_Metal_Land_Forward.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="640113244"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_FT_Metal_Land_Forward" ID="{D89480D2-254B-486E-A3C7-6DBC68E0895E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Metal_Run_RC" ID="{4A80004F-EA42-41DC-ADC4-CE44D390C340}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ellen_FT_Metal_Jump" ID="{F4AD3A53-0698-4DF4-B8D8-F1F42A3C5BC8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Ellen_FT_Metal_Land_Forward" ID="{EE62C95B-0553-4BA6-A6E6-604F6A5C2C5B}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}"/>
+												<ItemList>
+													<ItemRef Name="Metal_Run_RC" ID="{4A80004F-EA42-41DC-ADC4-CE44D390C340}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
 							<GroupingInfo>
 								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Metal_Switch" ID="{FD88711E-F268-44F6-B338-05A7D5E0C469}"/>
+									</GroupingBehavior>
 									<GroupingBehavior>
 										<ItemRef Name="Puddle_Switch" ID="{8E927C36-12D2-4870-9028-A0F7E24A9DE9}"/>
 									</GroupingBehavior>
