@@ -4,8 +4,8 @@ namespace Gamekit3D
 {
     public class Dissolve : MonoBehaviour
     {
-        public float minStartTime = 2f;
-        public float maxStartTime = 6f;
+        public float minStartTime = 5f;
+        public float maxStartTime = 5f;
         public float dissolveTime = 3f;
         public AnimationCurve curve;
 
@@ -38,10 +38,12 @@ namespace Gamekit3D
 
             m_StartTime = Time.time + Random.Range(minStartTime, maxStartTime);
             m_EndTime = m_StartTime + dissolveTime + m_ParticleSystem.main.startLifetime.constant;
+
         }
 
         void Update()
         {
+
             if (Time.time >= m_StartTime)
             {
                 float cutoff = 0;
@@ -59,6 +61,9 @@ namespace Gamekit3D
 
 
                 m_Timer += Time.deltaTime;
+
+               // AkSoundEngine.PostEvent("Play_SFX_Enemy_Vanish", this.gameObject);
+
             }
 
             if (Time.time >= m_EndTime)

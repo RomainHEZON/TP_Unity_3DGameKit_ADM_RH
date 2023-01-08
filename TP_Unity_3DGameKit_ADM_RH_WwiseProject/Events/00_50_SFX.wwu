@@ -337,6 +337,32 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SFX_Enemy_Vanish" ID="{7B4FDCAB-C009-4983-B9EF-58F4BD2DAA4D}">
+					<ChildrenList>
+						<Action Name="" ID="{CA9714E6-B1E7-4FE7-8756-7FBA6D862F0D}" ShortID="682759056">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.001"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Enemy_Vanish_RC" ID="{C03C53C4-E7DC-4C40-94BA-5CB8CF799DD9}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Death_Stinger" ID="{1F3C7B79-DAAA-4697-9A23-B241E499AB19}">
+					<ChildrenList>
+						<Action Name="" ID="{9BF76DC0-1B45-4DBA-9C68-388FA65C6EC7}" ShortID="828357700">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Death_Stinger" ID="{7D4938C5-0719-4976-9439-EDEDDD051327}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

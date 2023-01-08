@@ -18,6 +18,43 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="VO" ID="{36B81BAE-B941-4C01-A706-724867DF57AE}" ShortID="360726041">
+					<ChildrenList>
+						<Event Name="Play_VO_Death" ID="{A200AB47-B353-480F-86F7-6EB134C3E5FC}">
+							<ChildrenList>
+								<Action Name="" ID="{4EF96DE4-A369-47EC-822D-210B3818F500}" ShortID="801125434">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Death_RC" ID="{2EF2C734-2896-41A5-A3BA-2CBDA24FAD9E}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_VO_Pain" ID="{767F2B60-84FC-4D5D-BF1B-E4AD96545674}">
+							<ChildrenList>
+								<Action Name="" ID="{AAAA2B9B-217C-4D03-A272-D7F457C198EC}" ShortID="967904429">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Pain_RC" ID="{FCB948B1-CDF8-4283-AA46-3B0628358A93}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_Shield_Activate" ID="{4E57F42A-3CED-4AB6-BA08-A3E9360228D7}">
+					<ChildrenList>
+						<Action Name="" ID="{82192089-0F1C-449F-B30B-F26BF68D1FA8}" ShortID="969148559">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Shield_Activate_RC" ID="{74994595-5DED-41D5-BE21-43CC65795886}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

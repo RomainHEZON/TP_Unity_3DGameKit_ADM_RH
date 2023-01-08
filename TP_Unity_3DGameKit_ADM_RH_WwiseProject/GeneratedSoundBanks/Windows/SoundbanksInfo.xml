@@ -129,13 +129,21 @@
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{91E33833-9CF2-92FE-A96D-166214BC1AB9}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{63E93DD4-0CA9-93A1-835F-DB853383ED4A}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
 				<File Id="25822972" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_B_02.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="134084940" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Enemy_Vanish_01.wav</ShortName>
+					<CachePath>SFX/SFX_Enemy_Vanish_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="145840147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Enemy_Vanish_02.wav</ShortName>
+					<CachePath>SFX/SFX_Enemy_Vanish_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="165830993" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>SFX_Alien_Staff_Idle.wav</ShortName>
@@ -165,6 +173,10 @@
 				<File Id="224626741" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_05.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="241239500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Enemy_Vanish_03.wav</ShortName>
+					<CachePath>SFX/SFX_Enemy_Vanish_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="252594530" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>SFX_Teleporter_Rift_Loop.wav</ShortName>
@@ -208,6 +220,10 @@
 				<File Id="503915526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_B_04.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="520324830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Death_Stinger.wav</ShortName>
+					<CachePath>SFX/SFX_Death_Stinger_10C4C929.wem</CachePath>
 				</File>
 				<File Id="535200743" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>SFX_HealthBox_Loop.wav</ShortName>
@@ -311,6 +327,18 @@
 				<Event Id="3731817354" Name="Play_SFX_Crystal_Switches_Before_Activation" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="449291716"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="367538363" Name="Play_SFX_Death_Stinger" DurationType="OneShot" DurationMin="3.579348" DurationMax="4.017683">
+					<MediaRefs>
+						<MediaRef Id="520324830"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4102656700" Name="Play_SFX_Enemy_Vanish" MaxAttenuation="20" DurationType="OneShot" DurationMin="7.710093" DurationMax="7.710093">
+					<MediaRefs>
+						<MediaRef Id="134084940"/>
+						<MediaRef Id="145840147"/>
+						<MediaRef Id="241239500"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1068397626" Name="Play_SFX_HealthBox_Idle_01" MaxAttenuation="10" DurationType="Infinite">
@@ -941,10 +969,26 @@
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{BEC38D43-CF58-19DB-27EB-EFF07AD51457}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{DE4CF39F-B9F1-76AA-1371-6764B43C92D3}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
+				<File Id="17155344" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Pain_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Pain_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="18505171" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Pain_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Pain_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="49990726" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Pain_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Pain_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="114506270" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Pain_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Pain_06_10C4C929.wem</CachePath>
+				</File>
 				<File Id="167487927" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_02.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_02_10C4C929.wem</CachePath>
@@ -957,9 +1001,17 @@
 					<ShortName>Ellen_Alien_Staff_Attack_05.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_05_10C4C929.wem</CachePath>
 				</File>
+				<File Id="233825437" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Death_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Death_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="241975051" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_07.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="324914276" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Pain_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Pain_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="402004189" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_03.wav</ShortName>
@@ -973,9 +1025,21 @@
 					<ShortName>Ellen_Alien_Staff_Attack_08.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_08_10C4C929.wem</CachePath>
 				</File>
+				<File Id="657548567" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Death_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Death_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="788523815" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_04.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="836954198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Pain_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Pain_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="974062211" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Shield_Activate_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Shield_Activate_02_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -1000,6 +1064,27 @@
 							<PluginRef Id="941828739"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="2396795519" Name="Play_Shield_Activate" DurationType="OneShot" DurationMin="4.686788" DurationMax="5.260742">
+					<MediaRefs>
+						<MediaRef Id="974062211"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2043034684" Name="Play_VO_Death" DurationType="OneShot" DurationMin="0.74387753" DurationMax="0.9946712">
+					<MediaRefs>
+						<MediaRef Id="233825437"/>
+						<MediaRef Id="657548567"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="72136190" Name="Play_VO_Pain" DurationType="OneShot" DurationMin="0.28705215" DurationMax="0.3772109">
+					<MediaRefs>
+						<MediaRef Id="17155344"/>
+						<MediaRef Id="18505171"/>
+						<MediaRef Id="49990726"/>
+						<MediaRef Id="114506270"/>
+						<MediaRef Id="324914276"/>
+						<MediaRef Id="836954198"/>
+					</MediaRefs>
 				</Event>
 			</Events>
 			<GameParameters>
@@ -1516,5 +1601,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FAA8F546-AF2D-939D-C709-38D7362E781B}</FileHash>
+	<FileHash>{1531BE3C-65A1-6D24-6887-12A8989F86C4}</FileHash>
 </SoundBanksInfo>

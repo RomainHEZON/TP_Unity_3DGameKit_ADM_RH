@@ -40,6 +40,8 @@ namespace AK
         static const AkUniqueID PLAY_SFX_CHOMPER_SPOTTED = 578550610U;
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCH_ACTIVATED = 3532940987U;
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCHES_BEFORE_ACTIVATION = 3731817354U;
+        static const AkUniqueID PLAY_SFX_DEATH_STINGER = 367538363U;
+        static const AkUniqueID PLAY_SFX_ENEMY_VANISH = 4102656700U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_02 = 1068397625U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_01 = 4120424468U;
@@ -49,6 +51,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
         static const AkUniqueID PLAY_SHIELD = 1988178265U;
+        static const AkUniqueID PLAY_SHIELD_ACTIVATE = 2396795519U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
         static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
@@ -62,6 +65,8 @@ namespace AK
         static const AkUniqueID PLAY_UI_MENU_SELECTION = 2157261217U;
         static const AkUniqueID PLAY_UI_MENU_VOLUME_SLIDER = 2556697005U;
         static const AkUniqueID PLAY_VINE = 3521962842U;
+        static const AkUniqueID PLAY_VO_DEATH = 2043034684U;
+        static const AkUniqueID PLAY_VO_PAIN = 72136190U;
         static const AkUniqueID STOP_ALLSOUNDS = 3789712745U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
     } // namespace EVENTS
