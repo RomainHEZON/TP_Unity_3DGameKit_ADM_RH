@@ -23,9 +23,10 @@
 				</GameParameter>
 				<GameParameter Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}">
 					<PropertyList>
-						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="3"/>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="50"/>
+						<Property Name="Max" Type="Real64" Value="90"/>
+						<Property Name="Min" Type="Real64" Value="-90"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

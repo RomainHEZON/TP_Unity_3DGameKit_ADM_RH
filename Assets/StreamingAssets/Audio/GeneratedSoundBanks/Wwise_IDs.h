@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
         static const AkUniqueID PLAY_AMB_PAD_RIVER = 4220606807U;
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
+        static const AkUniqueID PLAY_AMB_PAD_WIND = 1205748041U;
+        static const AkUniqueID PLAY_AMB_PAD_WIND_ELEVATION = 2205333009U;
         static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE = 2070617240U;
         static const AkUniqueID PLAY_ATTACK_CLOSE = 79389039U;
         static const AkUniqueID PLAY_ATTACK_RANGE_BOUNCE = 2579342955U;
@@ -41,7 +43,6 @@ namespace AK
         static const AkUniqueID PLAY_GET_HIT_BEHIND = 2314174147U;
         static const AkUniqueID PLAY_GRENADIER_FOOTSTEPS = 2094447813U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
-        static const AkUniqueID PLAY_PAD_WIND = 3784968466U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
@@ -107,6 +108,19 @@ namespace AK
                 static const AkUniqueID PAUSE_ON = 3537680115U;
             } // namespace STATE
         } // namespace PAUSE
+
+        namespace WIND_STATE
+        {
+            static const AkUniqueID GROUP = 2369171421U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MEDIUM = 2849147824U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID STRONG = 3522403288U;
+            } // namespace STATE
+        } // namespace WIND_STATE
 
     } // namespace STATES
 

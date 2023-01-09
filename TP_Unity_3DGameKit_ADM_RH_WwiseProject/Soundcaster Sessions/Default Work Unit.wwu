@@ -25,7 +25,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}"/>
-							<Value>0</Value>
+							<Value>17.738</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
@@ -41,7 +41,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}"/>
-							<Value>0</Value>
+							<Value>6.784</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
@@ -49,6 +49,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
 						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>

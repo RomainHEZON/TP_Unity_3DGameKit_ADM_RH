@@ -1,8 +1,13 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
 	3677180323	Health			\Default Work Unit\Menu_Pause\Health	
 
 State	ID	Name	State Group			Notes
+	748895195	None	Wind_State			
+	930712164	OFF	Wind_State			
+	2849147824	Medium	Wind_State			
+	3522403288	Strong	Wind_State			
 	748895195	None	Pause			
 	3537680115	Pause_ON	Pause			
 	3967028551	Pause_OFF	Pause			

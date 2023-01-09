@@ -181,7 +181,171 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+									<Custom CreatedFrom="{C69EAE44-3627-434D-9780-73CF2E5BE125}">
+										<Attenuation Name="ATN_30m (Custom)" ID="{2EDCA778-4C9A-46A8-BD24-21CA1A0FB576}" ShortID="253435741">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="30"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{D47CF76F-9382-4631-B22C-BA7E3281D714}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>7.45413</XPos>
+																	<YPos>0</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>30</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{5693B761-71BD-4C71-A74E-4E08640EC0F4}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>20</XPos>
+																	<YPos>25</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Exp1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>30</XPos>
+																	<YPos>60</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="HighPassFilter" ID="{78E544BB-CE79-48F7-94FE-8EE5A83FCB79}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Log1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>20</XPos>
+																	<YPos>25</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Exp1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>30</XPos>
+																	<YPos>50</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="Spread" ID="{928853EE-D203-47A5-9F11-F76216277A7B}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>45</YPos>
+																	<Flags>5</Flags>
+																	<SegmentShape>Exp1</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>10</XPos>
+																	<YPos>30</YPos>
+																	<Flags>0</Flags>
+																	<SegmentShape>Log2</SegmentShape>
+																</Point>
+																<Point>
+																	<XPos>30</XPos>
+																	<YPos>10</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+												<ObstructionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionVolumeUsage>
+												<ObstructionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionLPFUsage>
+												<ObstructionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</ObstructionHPFUsage>
+												<OcclusionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionVolumeUsage>
+												<OcclusionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionLPFUsage>
+												<OcclusionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</OcclusionHPFUsage>
+												<DiffractionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionVolumeUsage>
+												<DiffractionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionLPFUsage>
+												<DiffractionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</DiffractionHPFUsage>
+												<TransmissionVolumeUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionVolumeUsage>
+												<TransmissionLPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionLPFUsage>
+												<TransmissionHPFUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+												</TransmissionHPFUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -212,7 +376,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -591,17 +755,27 @@
 												<Value>100</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsStreamingEnabled" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
 										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>6</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -668,9 +842,10 @@
 																				<XPos>6.5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>0</Flags>
+																				<SegmentShape>Exp1</SegmentShape>
 																			</Point>
 																			<Point>
-																				<XPos>7.55981</XPos>
+																				<XPos>11.49581</XPos>
 																				<YPos>-200</YPos>
 																				<Flags>0</Flags>
 																			</Point>
@@ -695,7 +870,7 @@
 											<CrossfadingInfo>
 												<LeftEdgePos>0</LeftEdgePos>
 												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>7.5</RightEdgePos>
+												<RightEdgePos>11.5</RightEdgePos>
 												<RightFadingMode>Automatic</RightFadingMode>
 											</CrossfadingInfo>
 										</BlendTrackAssoc>
@@ -754,212 +929,6 @@
 								<ActiveSource Name="AMB_PAD_Wetland_Loop" ID="{C67793BD-7BCC-42CB-A5B2-6CF17E96FD81}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<BlendContainer Name="Wind_BC" ID="{B6162C1F-9F4D-4BA2-9A1F-54A6B6E2C479}" ShortID="958358743">
-							<PropertyList>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-9</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_50m" ID="{7406EF83-D1B5-43A5-81D9-31832BB3509F}" WorkUnitID="{9213C2F7-49B0-42CD-98D6-D22126F1331E}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{64A2BE9C-48FD-4451-859C-6164719D97B1}" ShortID="799597350">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{A46C9DFE-F75F-4D95-87EA-AA5A8BD803CE}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="169208860"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{A46C9DFE-F75F-4D95-87EA-AA5A8BD803CE}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{D50C568E-CB6F-424E-84EA-2316BFB417A7}" ShortID="114931051">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{740D4A80-7E8E-4CD0-BE0E-5EB768F8C856}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="744883682"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{740D4A80-7E8E-4CD0-BE0E-5EB768F8C856}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="Wind" ID="{65207E0B-F8C9-4BD0-8F1C-5D876160D731}" ShortID="461415063">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{962BE185-069A-4AB3-80A8-ABD5A8496623}" ShortID="596263789">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{F9F25A3D-55D7-441F-8636-2516DD56A2B5}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>10</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>15</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>50</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{17450ADD-91FA-4DAA-B0CF-D5E132198D55}" ShortID="53230361">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Pitch"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{E30801EF-3FCA-4CB9-96C2-392E6D7A7EC5}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="65537"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>24.72</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>50</XPos>
-																				<YPos>300</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{64A2BE9C-48FD-4451-859C-6164719D97B1}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>9.76</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>35</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-												<RightFadingSegmentShape>Exp1</RightFadingSegmentShape>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{D50C568E-CB6F-424E-84EA-2316BFB417A7}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>25</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<LeftFadingSegmentShape>Log1</LeftFadingSegmentShape>
-												<RightEdgePos>50</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
-						</BlendContainer>
 						<BlendContainer Name="Cave_BC" ID="{9B0AA628-0555-4B94-A5E9-9EF85A8DA03D}" ShortID="145098657">
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1233,6 +1202,478 @@
 									</PositioningInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
+						</BlendContainer>
+						<SwitchContainer Name="Wind_State" ID="{E2D34B61-CEB7-454F-9547-978F706FBD35}" ShortID="395582341">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{9E52E1E4-07A0-4D13-BE40-9184434C5F55}" WorkUnitID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Wind_State" ID="{2B5B3F57-A200-4711-A678-3D5F36520991}" WorkUnitID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}" ShortID="434133304">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{76AA44ED-B862-4C13-AE2E-2E11D25DDD8C}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="169208860"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{76AA44ED-B862-4C13-AE2E-2E11D25DDD8C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}" ShortID="813127011">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{43C64F23-C0C6-49E2-A5E1-912633F804AB}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="744883682"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{43C64F23-C0C6-49E2-A5E1-912633F804AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2.5</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2.5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}"/>
+										<PropertyList>
+											<Property Name="ContinuePlay" Type="bool" Value="True"/>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2.5</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2.5</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
+										<ItemList>
+											<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="Strong" ID="{98CDB3E9-21AA-470F-8176-D4A1259443ED}"/>
+										<ItemList>
+											<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
+						<BlendContainer Name="Wind_BC" ID="{1D2867CC-2013-4BF5-86D2-28AF87567928}" ShortID="405246895">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{64A2BE9C-48FD-4451-859C-6164719D97B1}" ShortID="799597350">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{A46C9DFE-F75F-4D95-87EA-AA5A8BD803CE}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="169208860"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{A46C9DFE-F75F-4D95-87EA-AA5A8BD803CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{D50C568E-CB6F-424E-84EA-2316BFB417A7}" ShortID="114931051">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{740D4A80-7E8E-4CD0-BE0E-5EB768F8C856}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="744883682"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{740D4A80-7E8E-4CD0-BE0E-5EB768F8C856}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="Wind" ID="{C758D712-6717-40AC-8741-E15ADCC07642}" ShortID="958058433">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{66360233-C91C-417F-88DF-167DEEE82A45}" ShortID="589789974">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{ABA3BEA8-A37F-48EE-BA7F-B29C0DFF5111}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-90</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>20</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>23</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>90</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{64A2BE9C-48FD-4451-859C-6164719D97B1}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>20</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>35</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+												<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{D50C568E-CB6F-424E-84EA-2316BFB417A7}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>30</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+												<RightEdgePos>90</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
+						</BlendContainer>
+						<BlendContainer Name="CAMESOUALE" ID="{3B2B47DE-F1B7-4188-88FA-B33F60958A53}" ShortID="637537720">
+							<PropertyList>
+								<Property Name="BlendBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{6F57BEE7-BF67-4A8D-9B5A-60B332E7C8B5}" ShortID="514654837">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{0CE745FC-B99F-4A11-9637-D253FB0C035B}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="169208860"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{0CE745FC-B99F-4A11-9637-D253FB0C035B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{05496611-46BA-4503-B61C-02F7BC7023CF}" ShortID="730918495">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{CD981E43-E87D-4D8A-B84E-046EA1758072}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="744883682"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{CD981E43-E87D-4D8A-B84E-046EA1758072}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<BlendTrackList>
+								<BlendTrack Name="Wind" ID="{7993060A-93CF-4E7A-8E3B-641F9E6F2CD8}" ShortID="977186578">
+									<PropertyList>
+										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="LayerCrossFadeControlInput">
+											<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+										</Reference>
+									</ReferenceList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{CFC01D19-82A8-4DC1-9DAD-709A23A1E182}" ShortID="195679202">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{987BC64A-D33C-4E0E-80E2-95706450B6B7}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-90</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>20</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>22.5</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>90</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<BlendTrackAssocList>
+										<BlendTrackAssoc>
+											<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{6F57BEE7-BF67-4A8D-9B5A-60B332E7C8B5}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>20</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<RightEdgePos>35</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+												<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+										<BlendTrackAssoc>
+											<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{05496611-46BA-4503-B61C-02F7BC7023CF}"/>
+											<CrossfadingInfo>
+												<LeftEdgePos>30</LeftEdgePos>
+												<LeftFadingMode>Automatic</LeftFadingMode>
+												<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+												<RightEdgePos>90</RightEdgePos>
+												<RightFadingMode>Automatic</RightFadingMode>
+											</CrossfadingInfo>
+										</BlendTrackAssoc>
+									</BlendTrackAssocList>
+								</BlendTrack>
+							</BlendTrackList>
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>

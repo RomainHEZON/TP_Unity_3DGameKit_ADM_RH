@@ -1420,6 +1420,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Blackbird_RC" ID="{E830DF89-05D3-48ED-82EE-D87D0890F213}" ShortID="536951213">
 							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="2"/>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="CenterPercentage" Type="int32">
 									<ValueList>
@@ -1583,6 +1584,60 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{7AA8C0AD-2E72-4B46-8229-BDBBFE3F41E4}">
+									<PropertyList>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Blackbird_RC_Path" ID="{21EC93BE-2AC6-463D-B5D3-0D2538A312EF}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="50"/>
+												<Property Name="RandomY" Type="Real64" Value="50"/>
+												<Property Name="RandomZ" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Blackbird_RC_Path_01" ID="{4B811EBA-F442-45D3-83BA-E1844F2CDFBA}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="25"/>
+												<Property Name="RandomY" Type="Real64" Value="75"/>
+												<Property Name="RandomZ" Type="Real64" Value="50"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Blackbird_RC_Path_02" ID="{3E59C366-5B7F-41B3-A492-402B69A96E8D}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="75"/>
+												<Property Name="RandomY" Type="Real64" Value="50"/>
+												<Property Name="RandomZ" Type="Real64" Value="25"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>50</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="ExoticAnimal_RC" ID="{6A88DE9A-2A89-4242-9B57-AB55DE948BD2}" ShortID="419591521">
 							<PropertyList>

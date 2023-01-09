@@ -485,7 +485,7 @@
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{5FE40150-39FF-9170-9F24-98DDD13DD9A5}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{16096E64-64E2-843C-2B0A-73DE8EF6B891}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -727,7 +727,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BC60391D-33E3-D0AC-15B2-E68C563561FB}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F3F7881B-8466-BED2-6EFD-5EE569BC73B5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -760,6 +760,14 @@
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="2369171421" Name="Wind_State">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="930712164" Name="OFF"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3522403288" Name="Strong"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3092587493" Name="Pause">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -956,7 +964,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{8BDF6B33-7D9C-7C43-A346-E333DF781E00}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{9992A295-B8EA-155C-4E48-BA6E928BA72E}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1073,11 +1081,6 @@
 					<ShortName>AMB_RFX_Magic_Cave_01.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Magic_Cave_01_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1069776302" Language="SFX" Streaming="true" Location="Loose">
-					<ShortName>AMB_PAD_Lake.wav</ShortName>
-					<Path>Media/1069776302.wem</Path>
-					<CachePath>SFX/AMB_PAD_Lake_D79FB2B7.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
 				<Event Id="2915382764" Name="Play_AMB_PAD_Cave" DurationType="Infinite">
@@ -1091,7 +1094,7 @@
 						<MediaRef Id="1068444701"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1340469326" Name="Play_AMB_PAD_Lake" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="1340469326" Name="Play_AMB_PAD_Lake" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="921443"/>
 						<MediaRef Id="57871559"/>
@@ -1107,7 +1110,6 @@
 						<MediaRef Id="905057815"/>
 						<MediaRef Id="950958287"/>
 						<MediaRef Id="981383364"/>
-						<MediaRef Id="1069776302"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4220606807" Name="Play_AMB_PAD_River" MaxAttenuation="20" DurationType="Infinite">
@@ -1120,7 +1122,23 @@
 						<MediaRef Id="1048301795"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3784968466" Name="Play_PAD_Wind" MaxAttenuation="50" DurationType="Infinite">
+				<Event Id="1205748041" Name="Play_AMB_PAD_Wind" DurationType="Infinite">
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2369171421" Id="2849147824"/>
+							<MediaRefs>
+								<MediaRef Id="169208860"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="2369171421" Id="3522403288"/>
+							<MediaRefs>
+								<MediaRef Id="744883682"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2205333009" Name="Play_AMB_PAD_Wind_Elevation" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="169208860"/>
 						<MediaRef Id="744883682"/>
@@ -1138,6 +1156,16 @@
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="2369171421" Name="Wind_State">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="930712164" Name="OFF"/>
+						<State Id="2849147824" Name="Medium"/>
+						<State Id="3522403288" Name="Strong"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{8121AB86-4C25-CF04-5F0C-B641157365FF}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
@@ -2023,5 +2051,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{165BD40E-3132-AC17-FF17-B902CDDF46EF}</FileHash>
+	<FileHash>{8956283A-65BF-85F3-A41C-AE756E4AB9D6}</FileHash>
 </SoundBanksInfo>

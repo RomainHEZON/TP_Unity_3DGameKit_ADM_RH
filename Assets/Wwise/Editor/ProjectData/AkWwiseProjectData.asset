@@ -598,7 +598,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585283877872888088
+    m_lastTime: -8585283375274261412
     List:
     - name: Play_AMB_PAD_Cave
       guid: b9e30a872730d548bf91b3f5d103f900
@@ -680,9 +680,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_PAD_Wind
+    - name: Play_AMB_PAD_Wind
       guid: a81e088aca53e048914d20a84e8880e3
-      id: 3784968466
+      id: 1205748041
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -693,10 +693,30 @@ MonoBehaviour:
       - ElementName: 00_10_AMB_Pads
         ObjectType: 12
         guid: 17f071bb4f794046a0ac6cb855b1de9d
-      - ElementName: Play_PAD_Wind
+      - ElementName: Play_AMB_PAD_Wind
         ObjectType: 3
         guid: a81e088aca53e048914d20a84e8880e3
-      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_PAD_Wind
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Wind
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_AMB_PAD_Wind_Elevation
+      guid: deacb4f87240f543ad5516002326d5d5
+      id: 2205333009
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_10_AMB_Pads
+        ObjectType: 12
+        guid: 17f071bb4f794046a0ac6cb855b1de9d
+      - ElementName: Play_AMB_PAD_Wind_Elevation
+        ObjectType: 3
+        guid: deacb4f87240f543ad5516002326d5d5
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Wind_Elevation
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2450,7 +2470,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Distance
     guid: e53b1effa1d101419e07a517144c19cf
     GuidInternal: 
-    m_lastTime: -8585283884117107906
+    m_lastTime: -8585283396252522812
     List:
     - name: Lake_AMB
       guid: a3011e1aafc20d4bbd17d65938ee4e06
@@ -2548,7 +2568,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dafb7d237f34794c8b43ba469bf3287e
     GuidInternal: 
-    m_lastTime: -8585285240369497155
+    m_lastTime: -8585283435458035066
     List: []
   - PhysicalPath: States\Menu_Pause.wwu
     PathAndIcons:
@@ -2719,6 +2739,119 @@ MonoBehaviour:
         - ElementName: Pause_ON
           ObjectType: 8
           guid: 0a5c360f969e234194d14a24ead874ef
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Wind.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: dafb7d237f34794c8b43ba469bf3287e
+    - ElementName: Wind
+      ObjectType: 12
+      guid: bd9f85ce4a9e5542bb8a4689753cbc50
+    ParentPath: States\Default Work Unit\Wind
+    guid: bd9f85ce4a9e5542bb8a4689753cbc50
+    GuidInternal: 
+    m_lastTime: -8585283428467711411
+    List:
+    - name: Wind_State
+      guid: 573f5b2b00a21147a6783d5f36520991
+      id: 2369171421
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dafb7d237f34794c8b43ba469bf3287e
+      - ElementName: Wind
+        ObjectType: 12
+        guid: bd9f85ce4a9e5542bb8a4689753cbc50
+      - ElementName: Wind_State
+        ObjectType: 9
+        guid: 573f5b2b00a21147a6783d5f36520991
+      Path: States\Default Work Unit\Wind\Wind_State
+      values:
+      - name: Medium
+        guid: b879ae67a31f1c40adfa0f3f57422733
+        id: 2849147824
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Wind
+          ObjectType: 12
+          guid: bd9f85ce4a9e5542bb8a4689753cbc50
+        - ElementName: Wind_State
+          ObjectType: 9
+          guid: 573f5b2b00a21147a6783d5f36520991
+        - ElementName: Medium
+          ObjectType: 8
+          guid: b879ae67a31f1c40adfa0f3f57422733
+      - name: None
+        guid: e4e1529ea007134dbe409184434c5f55
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Wind
+          ObjectType: 12
+          guid: bd9f85ce4a9e5542bb8a4689753cbc50
+        - ElementName: Wind_State
+          ObjectType: 9
+          guid: 573f5b2b00a21147a6783d5f36520991
+        - ElementName: None
+          ObjectType: 8
+          guid: e4e1529ea007134dbe409184434c5f55
+      - name: OFF
+        guid: 5ee4fbcbaf1d4841a10623bc8e007e41
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Wind
+          ObjectType: 12
+          guid: bd9f85ce4a9e5542bb8a4689753cbc50
+        - ElementName: Wind_State
+          ObjectType: 9
+          guid: 573f5b2b00a21147a6783d5f36520991
+        - ElementName: OFF
+          ObjectType: 8
+          guid: 5ee4fbcbaf1d4841a10623bc8e007e41
+      - name: Strong
+        guid: e9b3cd98aa210f478176d4a1259443ed
+        id: 3522403288
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Wind
+          ObjectType: 12
+          guid: bd9f85ce4a9e5542bb8a4689753cbc50
+        - ElementName: Wind_State
+          ObjectType: 9
+          guid: 573f5b2b00a21147a6783d5f36520991
+        - ElementName: Strong
+          ObjectType: 8
+          guid: e9b3cd98aa210f478176d4a1259443ed
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -2996,7 +3129,7 @@ MonoBehaviour:
     m_lastTime: -8585285715523473592
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000800000009000000260000002700000029000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

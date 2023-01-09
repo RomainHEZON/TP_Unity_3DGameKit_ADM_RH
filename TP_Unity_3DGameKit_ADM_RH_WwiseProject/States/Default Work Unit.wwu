@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="Menu_Pause" ID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}" PersistMode="Reference"/>
+				<WorkUnit Name="Wind" ID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
