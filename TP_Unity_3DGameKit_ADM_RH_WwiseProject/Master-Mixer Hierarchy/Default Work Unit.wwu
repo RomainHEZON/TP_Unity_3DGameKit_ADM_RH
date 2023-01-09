@@ -73,7 +73,13 @@
 									<ChildrenList>
 										<Bus Name="Bus_AMB" ID="{F737A6CA-169F-4CD6-B281-6990970126EA}">
 											<ChildrenList>
-												<Bus Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}"/>
+												<Bus Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}">
+													<PropertyList>
+														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+														<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+												</Bus>
 												<Bus Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}"/>
 											</ChildrenList>
 										</Bus>
@@ -147,6 +153,17 @@
 										<Property Name="Color" Type="int16" Value="13"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
+								</Bus>
+								<Bus Name="Bus_Reverb" ID="{6743FC1A-F829-4FB8-A4D0-0C87DA94DEA3}">
+									<ChildrenList>
+										<AuxBus Name="Rvb_Test" ID="{965A7491-F14B-499A-9F65-3382E280DC9B}">
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+									</ChildrenList>
 								</Bus>
 							</ChildrenList>
 						</Bus>

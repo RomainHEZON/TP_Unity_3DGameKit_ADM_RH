@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
+	2605611591	Room_In_Out			\Room_In_Out\Room_In_Out	
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
 	3677180323	Health			\Default Work Unit\Menu_Pause\Health	
 
@@ -8,6 +9,9 @@ State	ID	Name	State Group			Notes
 	930712164	OFF	Wind_State			
 	2849147824	Medium	Wind_State			
 	3522403288	Strong	Wind_State			
+	645492555	Out	Room_In_Out			
+	748895195	None	Room_In_Out			
+	1752637612	In	Room_In_Out			
 	748895195	None	Pause			
 	3537680115	Pause_ON	Pause			
 	3967028551	Pause_OFF	Pause			
@@ -29,6 +33,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	1162281553	Bus_Music			\Default Work Unit\Master Audio Bus\Bus_Music	
 	1592365332	Bus_Ennemies			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies	
 	1746463750	Bus_UI			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_UI	
+	2038678300	Bus_Reverb			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb	
 	2367965617	Bus_PreMaster_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01	
 	2367965618	Bus_PreMaster_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02	
 	2766202208	Bus_Ellen			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ellen	
@@ -36,6 +41,12 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3895923845	Bus_SFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_SFX	
 	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	687573680	Rvb_Test			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Test	
+
+Effect plug-ins	ID	Name	Type				Notes
+	484890516	Church_Small_Wood	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

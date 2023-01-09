@@ -21,6 +21,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	4102656700	Play_SFX_Enemy_Vanish			\Default Work Unit\00_50_SFX\Play_SFX_Enemy_Vanish	
 	4120424468	Play_SFX_HealthBox_Open_01			\Default Work Unit\00_50_SFX\HealthBox\Play_SFX_HealthBox_Open_01	
 
+Effect plug-ins	ID	Name	Type				Notes
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	836629	Ellen_SFX_Staff_Hit_Metal_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Ellen_SFX_Staff_Hit_Metal_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Alien_Staff_Mixer\Alien_Staff_Hit_Metal_RC\Ellen_SFX_Staff_Hit_Metal_02		98400
 	25822972	SFX_Boxes_Break_Layer_B_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_B_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_B\SFX_Boxes_Break_Layer_B_02		235214
@@ -63,7 +66,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	987143570	SFX_Boxes_Break_Layer_A_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_A_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_A\SFX_Boxes_Break_Layer_A_04		192096
 	1031520808	SFX_Boxes_Break_Layer_A_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_A_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_A\SFX_Boxes_Break_Layer_A_03		192096
 	1038708921	SFX_Boxes_Break_Layer_B_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_B_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_B\SFX_Boxes_Break_Layer_B_03		193246
-	1049985844	SFX_HealthBox_Open_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_HealthBox_Open_B204456F.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\HealthBox_Mixer\SFX_HealthBox_Open_01		216096
+	1049985844	SFX_HealthBox_Open	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_HealthBox_Open_B204456F.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\HealthBox_Mixer\SFX_HealthBox_Open		216096
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	165830993	SFX_Alien_Staff_Idle_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Alien_Staff_Idle_D79FB2B7.wem	165830993.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Alien_Staff_Mixer\SFX_Alien_Staff_Idle_Loop	
@@ -72,6 +75,6 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	373608305	SFX_Boxes_Idle_01_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Idle_01_Loop_D79FB2B7.wem	373608305.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Idle_RC\SFX_Boxes_Idle_01_Loop	
 	449291716	SFX_Crystal_Switches_Before_Activation_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Crsytal_Switches_Before_Activation_D79FB2B7.wem	449291716.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Crystal_Switch_Mixer\SFX_Crystal_Switches_Before_Activation_Loop	
 	471316824	SFX_Boxes_Idle_02_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Idle_02_Loop_D79FB2B7.wem	471316824.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Idle_RC\SFX_Boxes_Idle_02_Loop	
-	535200743	SFX_HealthBox_Idle_Loop_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_HealthBox_Loop_D79FB2B7.wem	535200743.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\HealthBox_Mixer\SFX_HealthBox_Idle_Loop_01	
+	535200743	SFX_HealthBox_Idle_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_HealthBox_Loop_D79FB2B7.wem	535200743.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\HealthBox_Mixer\SFX_HealthBox_Idle_Loop	
 	995374565	SFX_After_Activation_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Crystal_Switches_Afert_Activation_Loop_D79FB2B7.wem	995374565.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Pad_After_Activation_Mixer\SFX_After_Activation_Loop	
 

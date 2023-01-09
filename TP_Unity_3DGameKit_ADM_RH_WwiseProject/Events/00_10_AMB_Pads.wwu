@@ -75,7 +75,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Cave_BC" ID="{9B0AA628-0555-4B94-A5E9-9EF85A8DA03D}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+									<ObjectRef Name="AMB_PAD_Cave_Loop" ID="{4872A60D-3DE0-4ECB-8136-5AE90110D75E}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -103,7 +103,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CAMESOUALE" ID="{3B2B47DE-F1B7-4188-88FA-B33F60958A53}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+									<ObjectRef Name="Wind_Elevation_BC" ID="{3B2B47DE-F1B7-4188-88FA-B33F60958A53}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

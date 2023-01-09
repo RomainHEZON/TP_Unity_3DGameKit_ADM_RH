@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{73C00C98-1EBF-4D4F-A18C-7B6C43BD0449}" SchemaVersion="110">
+	<States>
+		<WorkUnit Name="Room_In_Out" ID="{73C00C98-1EBF-4D4F-A18C-7B6C43BD0449}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}">
+					<ChildrenList>
+						<State Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
+						<State Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
+						<State Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -28,7 +28,7 @@ namespace AK
         static const AkUniqueID PLAY_ATTACK_RANGE_BOUNCE = 2579342955U;
         static const AkUniqueID PLAY_ATTACK_RANGE_EXPLOSION = 3013215836U;
         static const AkUniqueID PLAY_ATTACK_RANGE_FIRE = 3818987871U;
-        static const AkUniqueID PLAY_BIG_CREATURE = 175529640U;
+        static const AkUniqueID PLAY_BIG_CREATURE_A = 267936516U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
@@ -108,6 +108,18 @@ namespace AK
                 static const AkUniqueID PAUSE_ON = 3537680115U;
             } // namespace STATE
         } // namespace PAUSE
+
+        namespace ROOM_IN_OUT
+        {
+            static const AkUniqueID GROUP = 2605611591U;
+
+            namespace STATE
+            {
+                static const AkUniqueID IN = 1752637612U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUT = 645492555U;
+            } // namespace STATE
+        } // namespace ROOM_IN_OUT
 
         namespace WIND_STATE
         {
@@ -190,11 +202,17 @@ namespace AK
         static const AkUniqueID BUS_PADS = 3056742518U;
         static const AkUniqueID BUS_PREMASTER_01 = 2367965617U;
         static const AkUniqueID BUS_PREMASTER_02 = 2367965618U;
+        static const AkUniqueID BUS_REVERB = 2038678300U;
         static const AkUniqueID BUS_RFX = 4130663432U;
         static const AkUniqueID BUS_SFX = 3895923845U;
         static const AkUniqueID BUS_UI = 1746463750U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID RVB_TEST = 687573680U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

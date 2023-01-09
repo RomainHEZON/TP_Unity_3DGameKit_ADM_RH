@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{1EA53B56-A56E-F243-5C82-65737738749A}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{8C8F046B-5DFF-DBCA-2CFA-6823BDC2610C}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -357,6 +357,11 @@
 					<CachePath>SFX/SFX_HealthBox_Open_B204456F.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
 			<Events>
 				<Event Id="530524938" Name="Play_Alien_Staff_Hit_Metal" DurationType="OneShot" DurationMin="0.48326364" DurationMax="0.68551683">
 					<MediaRefs>
@@ -420,6 +425,11 @@
 					<MediaRefs>
 						<MediaRef Id="165830993"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1472032783" Name="Play_SFX_Alien_Staff_Pickup" DurationType="OneShot" DurationMin="0.80192024" DurationMax="1.0125543">
 					<MediaRefs>
@@ -427,7 +437,7 @@
 						<MediaRef Id="792181325"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3532940987" Name="Play_SFX_Crystal_Switch_Activated" MaxAttenuation="5" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
+				<Event Id="3532940987" Name="Play_SFX_Crystal_Switch_Activated" MaxAttenuation="10" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
 					<MediaRefs>
 						<MediaRef Id="320843627"/>
 						<MediaRef Id="566688590"/>
@@ -485,7 +495,7 @@
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{16096E64-64E2-843C-2B0A-73DE8EF6B891}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{532E6D30-9AC1-41AD-1301-C0A8B283C10E}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -562,10 +572,6 @@
 					<ShortName>AMB_RFX_Spaceship_Radio_04.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Spaceship_Radio_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="361536630" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Big Creature\AMB_RFX_Big_Creature_B_02.wav</ShortName>
-					<CachePath>SFX/Big Creature/AMB_RFX_Big_Creature_B_02_10C4C929.wem</CachePath>
-				</File>
 				<File Id="365716477" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_02.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Spaceship_Radio_02_10C4C929.wem</CachePath>
@@ -577,10 +583,6 @@
 				<File Id="491137694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_A_01.wav</ShortName>
 					<CachePath>SFX/Birds/AMB_RFX_Bird_A_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="512340152" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Big Creature\AMB_RFX_Big_Creature_B_01.wav</ShortName>
-					<CachePath>SFX/Big Creature/AMB_RFX_Big_Creature_B_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="516643238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_B_07.wav</ShortName>
@@ -661,15 +663,13 @@
 						<MediaRef Id="249634031"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="175529640" Name="Play_Big_Creature" MaxAttenuation="50" DurationType="OneShot" DurationMin="2.4710746" DurationMax="3.7728288">
+				<Event Id="267936516" Name="Play_Big_Creature_A" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="361536630"/>
-						<MediaRef Id="512340152"/>
 						<MediaRef Id="520937577"/>
 						<MediaRef Id="825515633"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3025897706" Name="Play_Birds" DurationType="Infinite">
+				<Event Id="3025897706" Name="Play_Birds" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="45181008"/>
 						<MediaRef Id="58892106"/>
@@ -688,7 +688,7 @@
 						<MediaRef Id="1032318676"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="576298738" Name="Play_Blackbird" MaxAttenuation="50" DurationType="Infinite">
+				<Event Id="576298738" Name="Play_Blackbird" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="145439816"/>
 						<MediaRef Id="246529130"/>
@@ -697,7 +697,7 @@
 						<MediaRef Id="992948447"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1108366744" Name="Play_ExoticAnimal" MaxAttenuation="30" DurationType="Infinite">
+				<Event Id="1108366744" Name="Play_ExoticAnimal" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="58659275"/>
 						<MediaRef Id="166295835"/>
@@ -727,10 +727,13 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F3F7881B-8466-BED2-6EFD-5EE569BC73B5}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C5EB3611-45D1-73B3-D317-6B3F8FF85F22}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<ShareSets>
+					<Plugin Id="484890516" Name="Church_Small_Wood" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
@@ -741,6 +744,7 @@
 				<Bus Id="1162281553" Name="Bus_Music"/>
 				<Bus Id="1592365332" Name="Bus_Ennemies"/>
 				<Bus Id="1746463750" Name="Bus_UI"/>
+				<Bus Id="2038678300" Name="Bus_Reverb"/>
 				<Bus Id="2367965617" Name="Bus_PreMaster_01"/>
 				<Bus Id="2367965618" Name="Bus_PreMaster_02"/>
 				<Bus Id="2766202208" Name="Bus_Ellen"/>
@@ -749,6 +753,15 @@
 				<Bus Id="3895923845" Name="Bus_SFX"/>
 				<Bus Id="4130663432" Name="Bus_RFX"/>
 			</Busses>
+			<AuxBusses>
+				<AuxBus Id="687573680" Name="Rvb_Test">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="484890516"/>
+						</ShareSets>
+					</PluginRefs>
+				</AuxBus>
+			</AuxBusses>
 			<GameParameters>
 				<GameParameter Id="692140126" Name="Wind_AMB"/>
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
@@ -766,6 +779,13 @@
 						<State Id="930712164" Name="OFF"/>
 						<State Id="2849147824" Name="Medium"/>
 						<State Id="3522403288" Name="Strong"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2605611591" Name="Room_In_Out">
+					<States>
+						<State Id="645492555" Name="Out"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1752637612" Name="In"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="3092587493" Name="Pause">
@@ -803,7 +823,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{A7B99CB2-8EA2-4F1D-BE1E-9A4668F28B02}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{772CC89B-B652-B99A-134B-53903E29021B}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -964,7 +984,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{9992A295-B8EA-155C-4E48-BA6E928BA72E}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{001A4AFB-4EF3-7F99-A84B-A51DC1CA7899}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1138,12 +1158,7 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2205333009" Name="Play_AMB_PAD_Wind_Elevation" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="169208860"/>
-						<MediaRef Id="744883682"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="2205333009" Name="Play_AMB_PAD_Wind_Elevation" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3873597236" Name="Play_Spaceship_BC" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="77744621"/>
@@ -1152,7 +1167,6 @@
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="692140126" Name="Wind_AMB"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
@@ -2051,5 +2065,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8956283A-65BF-85F3-A41C-AE756E4AB9D6}</FileHash>
+	<FileHash>{9F1BC0AC-84C2-E7E1-E2DD-25EFBA30D2F2}</FileHash>
 </SoundBanksInfo>

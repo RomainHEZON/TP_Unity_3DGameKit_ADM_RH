@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d48c76d72f06e442b3361184b378ae57
     GuidInternal: 
-    m_lastTime: -8585285715523763658
+    m_lastTime: -8585283334522647812
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585283890942033524
+    m_lastTime: -8585283304859590118
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -189,6 +189,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: 52c9cfee0206f7419e402578baab1e4a
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02
+    - name: Bus_Reverb
+      guid: 1afc436729f8b84fa4d00c87da94dea3
+      id: 2038678300
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb
     - name: Bus_RFX
       guid: c8041c8e44d7424bb6f5b7c867ece0b6
       id: 4130663432
@@ -272,6 +292,29 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+    - name: Rvb_Test
+      guid: 91745a964bf19a499f653382e280dc9b
+      id: 687573680
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_Test
+        ObjectType: 1
+        guid: 91745a964bf19a499f653382e280dc9b
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Test
   BankWwu:
   - PhysicalPath: SoundBanks\00_10_AMB_Pads.wwu
     PathAndIcons:
@@ -598,7 +641,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585283375274261412
+    m_lastTime: -8585283279266067043
     List:
     - name: Play_AMB_PAD_Cave
       guid: b9e30a872730d548bf91b3f5d103f900
@@ -777,7 +820,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585284156239023978
+    m_lastTime: -8585283290791813596
     List:
     - name: Play_AMB_RFX_Morse_Code
       guid: c5757ecf13cc124dba1598e650d5779e
@@ -799,9 +842,9 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Big_Creature
+    - name: Play_Big_Creature_A
       guid: f875d2877f8530438ced50ed0e7f28e3
-      id: 175529640
+      id: 267936516
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -812,10 +855,10 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
-      - ElementName: Play_Big_Creature
+      - ElementName: Play_Big_Creature_A
         ObjectType: 3
         guid: f875d2877f8530438ced50ed0e7f28e3
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Big_Creature
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Big_Creature_A
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1223,7 +1266,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585283877872838081
+    m_lastTime: -8585283292415366824
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -2371,8 +2414,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585283528399193728
-    List: []
+    m_lastTime: -8585283275259990294
+    List:
+    - name: Play_Magic_Cave
+      guid: 66603a815d65d04d8b1fb4c94a05dfcb
+      id: 608979577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: Play_Magic_Cave
+        ObjectType: 3
+        guid: 66603a815d65d04d8b1fb4c94a05dfcb
+      Path: Events\Default Work Unit\Play_Magic_Cave
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
     PathAndIcons:
@@ -2739,6 +2799,85 @@ MonoBehaviour:
         - ElementName: Pause_ON
           ObjectType: 8
           guid: 0a5c360f969e234194d14a24ead874ef
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Room_In_Out.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Room_In_Out
+      ObjectType: 12
+      guid: 980cc073bf1e4f4da18c7b6c43bd0449
+    ParentPath: States\Room_In_Out
+    guid: 980cc073bf1e4f4da18c7b6c43bd0449
+    GuidInternal: 
+    m_lastTime: -8585283290791763354
+    List:
+    - name: Room_In_Out
+      guid: 7f8a8733482e7f44aa56daa4b5352585
+      id: 2605611591
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Room_In_Out
+        ObjectType: 12
+        guid: 980cc073bf1e4f4da18c7b6c43bd0449
+      - ElementName: Room_In_Out
+        ObjectType: 9
+        guid: 7f8a8733482e7f44aa56daa4b5352585
+      Path: States\Room_In_Out\Room_In_Out
+      values:
+      - name: In
+        guid: b0ec87c04c06a94889360b0083d20a3d
+        id: 1752637612
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room_In_Out
+          ObjectType: 12
+          guid: 980cc073bf1e4f4da18c7b6c43bd0449
+        - ElementName: Room_In_Out
+          ObjectType: 9
+          guid: 7f8a8733482e7f44aa56daa4b5352585
+        - ElementName: In
+          ObjectType: 8
+          guid: b0ec87c04c06a94889360b0083d20a3d
+      - name: None
+        guid: ad02f788b51ce8429f2c98ccd4386866
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room_In_Out
+          ObjectType: 12
+          guid: 980cc073bf1e4f4da18c7b6c43bd0449
+        - ElementName: Room_In_Out
+          ObjectType: 9
+          guid: 7f8a8733482e7f44aa56daa4b5352585
+        - ElementName: None
+          ObjectType: 8
+          guid: ad02f788b51ce8429f2c98ccd4386866
+      - name: Out
+        guid: 069b9071614fd0498ec4782dbc352fa7
+        id: 645492555
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Room_In_Out
+          ObjectType: 12
+          guid: 980cc073bf1e4f4da18c7b6c43bd0449
+        - ElementName: Room_In_Out
+          ObjectType: 9
+          guid: 7f8a8733482e7f44aa56daa4b5352585
+        - ElementName: Out
+          ObjectType: 8
+          guid: 069b9071614fd0498ec4782dbc352fa7
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -3129,7 +3268,7 @@ MonoBehaviour:
     m_lastTime: -8585285715523473592
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000800000009000000260000002700000029000000
+  ExpandedWaapiItemIds: 010000000500000006000000070000000800000009000000110000001500000016000000240000002500000026000000270000002900000058000000590000005a000000240500002c050000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -9,15 +9,22 @@ Event	ID	Name			Wwise Object Path	Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
+	2605611591	Room_In_Out			\Room_In_Out\Room_In_Out	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Wind_State			
 	930712164	OFF	Wind_State			
 	2849147824	Medium	Wind_State			
 	3522403288	Strong	Wind_State			
+	645492555	Out	Room_In_Out			
+	748895195	None	Room_In_Out			
+	1752637612	In	Room_In_Out			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	97283777	In	Room_In_Out	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Wind_State		
+	776516645	In	Room_In_Out	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\AMB_PAD_Wetland_Loop		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
-	692140126	Wind_AMB			\Default Work Unit\Distance\Wind_AMB	
 	3174026549	Lake_AMB			\Default Work Unit\Distance\Lake_AMB	
 	3545834150	Spaceship_AMB			\Default Work Unit\Distance\Spaceship_AMB	
 
