@@ -41,8 +41,12 @@ namespace AK
         static const AkUniqueID PLAY_FOL_ROLL = 1668355981U;
         static const AkUniqueID PLAY_FOL_RUN = 1810712955U;
         static const AkUniqueID PLAY_GET_HIT_BEHIND = 2314174147U;
+        static const AkUniqueID PLAY_GRENADIER_DEATH = 3337034902U;
         static const AkUniqueID PLAY_GRENADIER_FOOTSTEPS = 2094447813U;
+        static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
+        static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
+        static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;

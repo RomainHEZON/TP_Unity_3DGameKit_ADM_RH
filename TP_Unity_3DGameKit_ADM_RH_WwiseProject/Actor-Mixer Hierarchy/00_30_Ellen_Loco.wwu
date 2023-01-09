@@ -591,6 +591,20 @@
 									</GroupingInfo>
 								</SwitchContainer>
 								<SwitchContainer Name="Puddle_Switch" ID="{8E927C36-12D2-4870-9028-A0F7E24A9DE9}" ShortID="475550716">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8AE51E55-6F65-46CD-B383-AB4159B6FC42}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>

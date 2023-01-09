@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{79AD9747-7F10-D187-C577-B47A800B5D04}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{0E02A40D-01CD-DBE0-47A6-040BA91EB417}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -187,7 +187,7 @@
 				</File>
 				<File Id="186637930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Pressure_Pad_Activated.wav</ShortName>
-					<CachePath>SFX/SFX_Pressure_Pad_Activated_D40D6F26.wem</CachePath>
+					<CachePath>SFX/SFX_Pressure_Pad_Activated_BE169731.wem</CachePath>
 				</File>
 				<File Id="198616805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_03.wav</ShortName>
@@ -366,7 +366,7 @@
 				</File>
 				<File Id="1063829308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Huge_Door_Open_01.wav</ShortName>
-					<CachePath>SFX/SFX_Huge_Door_Open_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/SFX_Huge_Door_Open_01_30BCAA7E.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -508,7 +508,7 @@
 						<MediaRef Id="327699342"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2644163508" Name="Play_SFX_Teleporter_Rift" MaxAttenuation="30" DurationType="Infinite">
+				<Event Id="2644163508" Name="Play_SFX_Teleporter_Rift" MaxAttenuation="60" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="252594530"/>
 					</MediaRefs>
@@ -542,7 +542,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{532E6D30-9AC1-41AD-1301-C0A8B283C10E}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{FAAFCCD9-FA7E-50CD-B68A-3623BDCB07DF}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -562,9 +562,17 @@
 					<ShortName>Birds\AMB_RFX_Bird_A_04.wav</ShortName>
 					<CachePath>SFX/Birds/AMB_RFX_Bird_A_04_10C4C929.wem</CachePath>
 				</File>
+				<File Id="72707725" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Magic_Cave_02.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Magic_Cave_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="145439816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blackbird\AMB_RFX_Blackbird_03.wav</ShortName>
 					<CachePath>SFX/Blackbird/AMB_RFX_Blackbird_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="151901516" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Magic_Cave_05.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Magic_Cave_05_10C4C929.wem</CachePath>
 				</File>
 				<File Id="166295835" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exotic Animal\AMB_RFX_Exotic_Animal_03.wav</ShortName>
@@ -590,6 +598,10 @@
 				<File Id="263689023" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_06.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Spaceship_Radio_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="267964445" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Magic_Cave_03.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Magic_Cave_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="313874439" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exotic Animal\AMB_RFX_Exotic_Animal_07.wav</ShortName>
@@ -630,6 +642,10 @@
 				<File Id="491137694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_A_01.wav</ShortName>
 					<CachePath>SFX/Birds/AMB_RFX_Bird_A_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="509722401" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Magic_Cave_04.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Magic_Cave_04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="516643238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_B_07.wav</ShortName>
@@ -683,6 +699,10 @@
 					<ShortName>Exotic Animal\AMB_RFX_Exotic_Animal_01.wav</ShortName>
 					<CachePath>SFX/Exotic Animal/AMB_RFX_Exotic_Animal_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="956312767" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Magic_Cave_06.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Magic_Cave_06_10C4C929.wem</CachePath>
+				</File>
 				<File Id="987360822" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_03.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Spaceship_Radio_03_10C4C929.wem</CachePath>
@@ -703,6 +723,10 @@
 					<ShortName>Exotic Animal\AMB_RFX_Exotic_Animal_02.wav</ShortName>
 					<CachePath>SFX/Exotic Animal/AMB_RFX_Exotic_Animal_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="1068444701" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_RFX_Magic_Cave_01.wav</ShortName>
+					<CachePath>SFX/AMB_RFX_Magic_Cave_01_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="2070617240" Name="Play_AMB_RFX_Morse_Code" MaxAttenuation="10" DurationType="Infinite">
@@ -710,7 +734,7 @@
 						<MediaRef Id="249634031"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="267936516" Name="Play_Big_Creature_A" MaxAttenuation="30" DurationType="Infinite">
+				<Event Id="267936516" Name="Play_Big_Creature_A" MaxAttenuation="40" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="520937577"/>
 						<MediaRef Id="825515633"/>
@@ -753,6 +777,16 @@
 						<MediaRef Id="330553214"/>
 						<MediaRef Id="923803042"/>
 						<MediaRef Id="1037212918"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="608979577" Name="Play_Magic_Cave" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="72707725"/>
+						<MediaRef Id="151901516"/>
+						<MediaRef Id="267964445"/>
+						<MediaRef Id="509722401"/>
+						<MediaRef Id="956312767"/>
+						<MediaRef Id="1068444701"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2368356374" Name="Play_Radio_RFX" MaxAttenuation="5" DurationType="Infinite">
@@ -878,10 +912,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{772CC89B-B652-B99A-134B-53903E29021B}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{94EAAB2E-825E-E5D1-D6EE-B5107D8BD300}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
+				<File Id="69857268" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grenadier_Death.wav</ShortName>
+					<CachePath>SFX/Grenadier_Death_10C4C929.wem</CachePath>
+				</File>
 				<File Id="219315323" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Get_Hit_Behind_01.wav</ShortName>
 					<CachePath>SFX/Grenadier_Get_Hit_Behind_01_10C4C929.wem</CachePath>
@@ -914,6 +952,10 @@
 					<ShortName>Grenadier_Get_Hit_Behind_02.wav</ShortName>
 					<CachePath>SFX/Grenadier_Get_Hit_Behind_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="381948013" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grenadier_Vox_GetHit_01.wav</ShortName>
+					<CachePath>SFX/Grenadier_Vox_GetHit_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="412787111" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_FT_Walk_08.wav</ShortName>
 					<CachePath>SFX/Grenadier_FT_Walk_08_10C4C929.wem</CachePath>
@@ -933,6 +975,14 @@
 				<File Id="609087632" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Attack_Range_Fire_01.wav</ShortName>
 					<CachePath>SFX/Grenadier_Attack_Range_Fire_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="639603022" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grenadier_Vox_Attack_03.wav</ShortName>
+					<CachePath>SFX/Grenadier_Vox_Attack_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="706922979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grenadier_Vox_Attack_01.wav</ShortName>
+					<CachePath>SFX/Grenadier_Vox_Attack_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="787630289" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Attack_Range_Fire_03.wav</ShortName>
@@ -965,6 +1015,14 @@
 				<File Id="951400336" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Attack_Range_Explosion_01.wav</ShortName>
 					<CachePath>SFX/Grenadier_Attack_Range_Explosion_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="953794628" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grenadier_Vox_Attack_02.wav</ShortName>
+					<CachePath>SFX/Grenadier_Vox_Attack_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="976343665" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Grenadier_Vox_GetHit_02.wav</ShortName>
+					<CachePath>SFX/Grenadier_Vox_GetHit_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="982471566" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Attack_Range_Bounce_04.wav</ShortName>
@@ -1011,12 +1069,19 @@
 						<MediaRef Id="787630289"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2314174147" Name="Play_Get_Hit_Behind" MaxAttenuation="10" DurationType="OneShot" DurationMin="0.7625" DurationMax="0.94166666">
+				<Event Id="2314174147" Name="Play_Get_Hit_Behind" DurationType="OneShot" DurationMin="2.0511458" DurationMax="2.5713413">
 					<MediaRefs>
 						<MediaRef Id="219315323"/>
 						<MediaRef Id="352007991"/>
+						<MediaRef Id="381948013"/>
 						<MediaRef Id="900695930"/>
 						<MediaRef Id="925444655"/>
+						<MediaRef Id="976343665"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3337034902" Name="Play_Grenadier_Death" DurationType="OneShot" DurationMin="4.760076" DurationMax="5.343005">
+					<MediaRefs>
+						<MediaRef Id="69857268"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.44951558" DurationMax="0.86703175">
@@ -1030,6 +1095,22 @@
 						<MediaRef Id="1013728032"/>
 						<MediaRef Id="1072987620"/>
 					</MediaRefs>
+				</Event>
+				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" DurationType="OneShot" DurationMin="1.2990788" DurationMax="1.8117005">
+					<MediaRefs>
+						<MediaRef Id="639603022"/>
+						<MediaRef Id="706922979"/>
+						<MediaRef Id="953794628"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" DurationType="OneShot" DurationMin="1.8511459" DurationMax="2.3713412">
+					<MediaRefs>
+						<MediaRef Id="381948013"/>
+						<MediaRef Id="976343665"/>
+					</MediaRefs>
+					<ActionPostEvent>
+						<ActionPostEventEntry Id="3891969030" Name="Play_Grenadier_Vox_Attack"/>
+					</ActionPostEvent>
 				</Event>
 				<Event Id="1988178265" Name="Play_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="5.125" DurationMax="5.1401043">
 					<MediaRefs>
@@ -1668,7 +1749,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{5F1EB56F-6F81-0022-D43A-C1AB90D96184}">
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{EFF3BEF9-81BF-8A22-5FB4-F30D1A22FFE4}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
 			<Media>
@@ -2109,5 +2190,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D7F7ADF7-198F-F8C5-76B9-C88EC95BF0C6}</FileHash>
+	<FileHash>{3C00D4A2-1947-1802-D243-E3455732AB36}</FileHash>
 </SoundBanksInfo>

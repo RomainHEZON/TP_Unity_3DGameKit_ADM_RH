@@ -363,11 +363,19 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.12090806
+        functionName: GrenadierGetHit
+        data: Play_Get_Hit_Behind
+        objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Grenadier_Hit3
       takeName: Take 001
@@ -392,11 +400,19 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.24277185
+        functionName: GrenadierGetHit
+        data: Play_Get_Hit_Behind
+        objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     - serializedVersion: 16
       name: Grenadier_Hit4
       takeName: Take 001
@@ -421,11 +437,19 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.097252086
+        functionName: GrenadierGetHit
+        data: Play_Get_Hit_Behind
+        objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+      additiveReferencePoseFrame: 1
     isReadable: 1
   meshes:
     lODScreenPercentages: []

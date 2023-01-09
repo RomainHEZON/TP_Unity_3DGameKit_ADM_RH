@@ -16,6 +16,11 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -142,6 +147,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -298,6 +308,11 @@
 									</ModifierList>
 								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -1031,6 +1046,260 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="Grenadier_Shield_Activated_02" ID="{73AFEDDC-A24A-45DA-B825-9F8797DFB77C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="Grenadier_Death" ID="{AC20193C-EA78-4334-8C35-A8495DF5533E}" ShortID="551861447">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{380FDAE4-6C93-4A4A-B273-4C56EB6B88C8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="100"/>
+													<Property Name="Min" Type="Real64" Value="-100"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATN_30m" ID="{C69EAE44-3627-434D-9780-73CF2E5BE125}" WorkUnitID="{5956A9BF-8B5E-4B3F-A5A7-1B583EACDA5B}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Grenadier_Death" ID="{7053AFB6-9450-47E6-A8EC-D51AA6D0D495}">
+									<Language>SFX</Language>
+									<AudioFile>Grenadier_Death.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="69857268"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Grenadier_Death" ID="{7053AFB6-9450-47E6-A8EC-D51AA6D0D495}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<RandomSequenceContainer Name="Grenadier_Vox_Attack" ID="{1343DBA7-787D-4354-AF22-DBAED74F4460}" ShortID="813813856">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{13E62730-3351-485B-AE49-50266711881D}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+													<Property Name="Min" Type="Real64" Value="-200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grenadier_Vox_Attack_01" ID="{6F69A887-D221-4E94-BC75-59EF2F010CCC}" ShortID="248687023">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grenadier_Vox_Attack_01" ID="{5CF98C35-6279-4FB2-A252-7DBE03750A4A}">
+											<Language>SFX</Language>
+											<AudioFile>Grenadier_Vox_Attack_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="706922979"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grenadier_Vox_Attack_01" ID="{5CF98C35-6279-4FB2-A252-7DBE03750A4A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grenadier_Vox_Attack_02" ID="{03F7E543-C061-45AC-983B-5AA7EBE30D20}" ShortID="696032657">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grenadier_Vox_Attack_02" ID="{603BA6C1-E8D3-4B42-A374-39E1F033EB11}">
+											<Language>SFX</Language>
+											<AudioFile>Grenadier_Vox_Attack_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="953794628"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grenadier_Vox_Attack_02" ID="{603BA6C1-E8D3-4B42-A374-39E1F033EB11}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grenadier_Vox_Attack_03" ID="{A17B2459-8422-4002-BDED-B26371305754}" ShortID="935701996">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grenadier_Vox_Attack_03" ID="{6E8911CA-B43E-4633-9BF0-03C51907A4CB}">
+											<Language>SFX</Language>
+											<AudioFile>Grenadier_Vox_Attack_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="639603022"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grenadier_Vox_Attack_03" ID="{6E8911CA-B43E-4633-9BF0-03C51907A4CB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Grenadier_Vox_GetHit" ID="{B8ABA798-58F8-4CE6-AD19-125F259A5616}" ShortID="992898747">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="CenterPercentage" Type="int32">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-200</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{93D04361-08A4-49E4-8A1D-974CE6494422}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Grenadier_Vox_GetHit_01" ID="{EA875042-D8E9-4DE3-88C1-D882D6BC684B}" ShortID="436804361">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D8A18CEB-4700-41D3-B08B-F65F60806827}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grenadier_Vox_GetHit_01" ID="{D961D7D2-B0BE-4D72-BBCE-F9E0ED984D05}">
+											<Language>SFX</Language>
+											<AudioFile>Grenadier_Vox_GetHit_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="381948013"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grenadier_Vox_GetHit_01" ID="{D961D7D2-B0BE-4D72-BBCE-F9E0ED984D05}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grenadier_Vox_GetHit_02" ID="{184E4914-5418-4D76-9AA4-410463643791}" ShortID="345907313">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6E0E1A59-2A51-4A4F-A7A8-654E141D8222}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grenadier_Vox_GetHit_02" ID="{FFDADC6D-5AE8-4916-8F6E-30B39AC8587D}">
+											<Language>SFX</Language>
+											<AudioFile>Grenadier_Vox_GetHit_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="976343665"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grenadier_Vox_GetHit_02" ID="{FFDADC6D-5AE8-4916-8F6E-30B39AC8587D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

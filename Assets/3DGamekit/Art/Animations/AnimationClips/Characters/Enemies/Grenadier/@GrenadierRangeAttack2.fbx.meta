@@ -326,6 +326,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.1460055
+        functionName: GrenadierFT
+        data: Play_Grenadier_Footsteps
+        objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.35436893
         functionName: GrenadierFT
         data: Play_Grenadier_Footsteps
@@ -341,9 +349,17 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.74022985
+      - time: 0.74184537
         functionName: GrenadierFT
         data: Play_Grenadier_Footsteps
+        objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.22471467
+        functionName: GrenadierVOAttack
+        data: Play_Grenadier_Vox_Attack
         objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
           type: 3}
         floatParameter: 0

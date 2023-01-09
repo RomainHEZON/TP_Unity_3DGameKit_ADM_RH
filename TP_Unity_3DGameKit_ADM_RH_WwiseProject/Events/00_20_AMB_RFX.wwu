@@ -96,6 +96,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Magic_Cave" ID="{813A6066-655D-4DD0-8B1F-B4C94A05DFCB}">
+					<ChildrenList>
+						<Action Name="" ID="{6F30DC88-02D7-4CC6-9409-A56686393F4B}" ShortID="225791189">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Magic_Cave_RC" ID="{C2DEC894-E833-4584-B841-668F8857B075}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

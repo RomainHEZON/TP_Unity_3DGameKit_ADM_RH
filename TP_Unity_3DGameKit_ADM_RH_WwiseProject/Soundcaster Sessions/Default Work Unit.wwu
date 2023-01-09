@@ -56,7 +56,7 @@
 						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{88AD2688-5420-466D-9821-5B8CA0A3B066}"/>
+						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
 						<CurrentSwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

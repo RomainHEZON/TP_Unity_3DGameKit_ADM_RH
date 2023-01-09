@@ -604,6 +604,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.48839042
+        functionName: GrenadierVOAttack
+        data: Play_Grenadier_Vox_Attack
+        objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

@@ -1044,6 +1044,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="HealthBox_Mixer" ID="{C4290CE9-367B-4958-8DE0-96F557FBC5A3}" ShortID="519223794">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{08CAEA74-A8B3-4B1C-86F6-CF95251F1254}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1333,6 +1342,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Pad_Pressure_Mixer" ID="{A60662A0-F576-4DD3-B3E5-2BCA80B0A1D9}" ShortID="243328660">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A1E5D488-18D0-46CA-A79D-3418D672AA45}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1500,7 +1518,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_30m" ID="{C69EAE44-3627-434D-9780-73CF2E5BE125}" WorkUnitID="{5956A9BF-8B5E-4B3F-A5A7-1B583EACDA5B}"/>
+											<ObjectRef Name="ATN_50m" ID="{7406EF83-D1B5-43A5-81D9-31832BB3509F}" WorkUnitID="{9213C2F7-49B0-42CD-98D6-D22126F1331E}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1656,6 +1674,13 @@
 									<ValueList>
 										<Value>5</Value>
 									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{82E29FB8-4413-4CD5-99BE-1C9F605697F1}"/>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
@@ -1984,6 +2009,15 @@
 							</ActiveSourceList>
 						</Sound>
 						<ActorMixer Name="Pad_After_Activation_Mixer" ID="{F67DE1C9-4E3D-45A6-BD70-B45E69B36490}" ShortID="1056684376">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{10D16957-29B9-4CA3-B79E-158A2635EBE5}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -2054,6 +2088,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Boxes_Mixer" ID="{F4C1597A-27A5-4F47-8F86-41AFD432E618}" ShortID="449401559">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A22CCCF5-A0F7-4301-8A75-6AD1EC92938F}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -2073,7 +2116,7 @@
 										</Property>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>3</Value>
+												<Value>1</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2091,11 +2134,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -2108,6 +2146,7 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Boxes_Break_Layer_A" ID="{B14FC072-5C47-49E0-925A-8C0D035E36C8}" ShortID="287241670">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>0.15</Value>
@@ -2124,6 +2163,11 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -2132,6 +2176,11 @@
 													</ModifierList>
 												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -2256,12 +2305,30 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Boxes_Break_Layer_B" ID="{5DBD943B-3693-4917-9438-3651741C348D}" ShortID="805345902">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>0.2</Value>
 													</ValueList>
 												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3B2DFAE4-10D9-4F2E-9D88-C48E8CA3A9F8}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-3</Value>
@@ -2391,7 +2458,25 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Boxes_Break_Layer_C" ID="{87658CC0-0DBC-4BEA-A4F3-960060426E8A}" ShortID="352118829">
 											<PropertyList>
+												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{43E7C3A3-5697-4EBE-AAFA-C00CA896DDAA}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>3</Value>
@@ -2530,6 +2615,13 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2990012E-0AE4-41D9-A074-2386F3811A4E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 									</PropertyList>
 									<ReferenceList>
@@ -2614,6 +2706,15 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Huge_Door_Mixer" ID="{0751DFBE-BA6E-4FF8-B5FF-CE2338F2B119}" ShortID="606907568">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F478463D-3687-4760-A427-605BD61DD82D}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -2625,6 +2726,13 @@
 							<ChildrenList>
 								<Sound Name="SFX_Huge_Door_Open_01" ID="{C8C93509-23A6-4C6E-8464-0CBE07124FEC}" ShortID="1054892532">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{CE0F0903-04C1-444A-B613-1D93ADB912DC}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-3</Value>
@@ -2641,6 +2749,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Huge_Door_Open_01" ID="{A4B52A56-5BE5-4AE7-A48F-0A1C0B70BAA3}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0659557664756445"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Huge_Door_Open_01.wav</AudioFile>
 											<MediaIDList>
@@ -2658,6 +2771,11 @@
 											<ValueList>
 												<Value>-50</Value>
 											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F7725161-87B1-4084-BBC4-34BCEAE4F51C}"/>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
@@ -2692,6 +2810,13 @@
 								</Sound>
 								<Sound Name="SFX_Huge_Door_Open_03" ID="{1F2FB711-8150-4A4A-9D29-0716CC534657}" ShortID="696567584">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5D9756F4-555D-4680-8CD6-53D357ED9A83}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-5</Value>

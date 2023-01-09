@@ -46,5 +46,16 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Play_Get_Hit_Behind", this.gameObject);
     }
+
+    public void GrenadierDeath()
+    {
+        AkSoundEngine.PostEvent("Play_Grenadier_Death", this.gameObject);
+    }
+
+
+    public void GrenadierVOAttack()
+    {
+        AkSoundEngine.PostEvent("Play_Grenadier_Vox_Attack", this.gameObject);
+    }
 }
 
