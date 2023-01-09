@@ -96,6 +96,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Chomper_FT_Walk" ID="{11B7F511-6A05-4B58-A5C6-9A8B2EE9FCD6}">
+					<ChildrenList>
+						<Action Name="" ID="{A1E55FFE-5FAB-407F-A8B3-E9CBE126CA8B}" ShortID="370720633">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chomper_FT_Walk_RC" ID="{C25EC163-3C8E-445E-AAD4-ECE912ABC42E}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

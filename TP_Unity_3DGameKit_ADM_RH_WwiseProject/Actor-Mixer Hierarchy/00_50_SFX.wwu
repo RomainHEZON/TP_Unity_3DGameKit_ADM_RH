@@ -1329,6 +1329,13 @@
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="SFX_Heartbeat_Mixer" ID="{91B7EDE1-0FB1-4E4D-8B8C-F6D1761C5E9F}" ShortID="593528662">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>

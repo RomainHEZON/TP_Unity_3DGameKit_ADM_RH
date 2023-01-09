@@ -16,6 +16,11 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_SFX_Chomper_Attack", this.gameObject);
     }
 
+    public void ChomperFT()
+    {
+        AkSoundEngine.PostEvent("Play_Chomper_FT_Walk", this.gameObject);
+    }
+
     // Grenadier
     public void GrenadierFT()
     {

@@ -1,13 +1,18 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
+	3677180323	Health			\Default Work Unit\Menu_Pause\Health	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Pause			
 	3537680115	Pause_ON	Pause			
 	3967028551	Pause_OFF	Pause			
+	72790338	Low_Health	Health			
+	748895195	None	Health			
+	3157118042	Fine_Health	Health			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	100964826	Pause_ON	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01		
+	360498495	Low_Health	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	

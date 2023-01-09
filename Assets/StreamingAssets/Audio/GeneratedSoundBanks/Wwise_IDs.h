@@ -17,8 +17,10 @@ namespace AK
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_METAL = 530524938U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_ROCK = 2050638422U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_VEGETATION = 708322193U;
+        static const AkUniqueID PLAY_AMB_PAD_CAVE = 2915382764U;
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
         static const AkUniqueID PLAY_AMB_PAD_RIVER = 4220606807U;
+        static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
         static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE = 2070617240U;
         static const AkUniqueID PLAY_ATTACK_CLOSE = 79389039U;
         static const AkUniqueID PLAY_ATTACK_RANGE_BOUNCE = 2579342955U;
@@ -28,6 +30,8 @@ namespace AK
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
+        static const AkUniqueID PLAY_BOXES_IDLE = 2191381978U;
+        static const AkUniqueID PLAY_CHOMPER_FT_WALK = 3482670435U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
         static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
@@ -37,6 +41,7 @@ namespace AK
         static const AkUniqueID PLAY_GET_HIT_BEHIND = 2314174147U;
         static const AkUniqueID PLAY_GRENADIER_FOOTSTEPS = 2094447813U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
+        static const AkUniqueID PLAY_PAD_WIND = 3784968466U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
@@ -50,9 +55,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_DEATH_STINGER = 367538363U;
         static const AkUniqueID PLAY_SFX_ENEMY_VANISH = 4102656700U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
-        static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_02 = 1068397625U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_01 = 4120424468U;
-        static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_02 = 4120424471U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
@@ -81,6 +84,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace HEALTH
+        {
+            static const AkUniqueID GROUP = 3677180323U;
+
+            namespace STATE
+            {
+                static const AkUniqueID FINE_HEALTH = 3157118042U;
+                static const AkUniqueID LOW_HEALTH = 72790338U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace HEALTH
+
         namespace PAUSE
         {
             static const AkUniqueID GROUP = 3092587493U;
@@ -135,6 +150,7 @@ namespace AK
         static const AkUniqueID SFX_VOLUME = 1564184899U;
         static const AkUniqueID SPACESHIP_AMB = 3545834150U;
         static const AkUniqueID STAFF_DISTORSION = 3828256600U;
+        static const AkUniqueID WIND_AMB = 692140126U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS

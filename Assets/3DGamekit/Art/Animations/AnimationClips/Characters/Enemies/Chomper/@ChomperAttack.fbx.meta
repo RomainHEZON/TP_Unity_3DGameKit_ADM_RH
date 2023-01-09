@@ -697,6 +697,14 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.8436781
+        functionName: ChomperFT
+        data: Play_Chomper_FT_Walk
+        objectReferenceParameter: {fileID: 1722084123150156, guid: e9569c7e13e51264082910415a120d38,
+          type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
