@@ -31,4 +31,23 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Play_Boxes_Break", this.gameObject);
     }
+
+    public void HugeDoorOpen01()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Huge_Door_Open_01", this.gameObject);
+
+    }
+
+    public void HugeDoorOpen02()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Huge_Door_Open_02", this.gameObject);
+
+    }
+    public void HugeDoorOpen03()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Huge_Door_Open_03", this.gameObject);
+
+    }
+
+    
 }

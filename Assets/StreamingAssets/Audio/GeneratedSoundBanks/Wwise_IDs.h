@@ -57,6 +57,9 @@ namespace AK
         static const AkUniqueID PLAY_SFX_ENEMY_VANISH = 4102656700U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_01 = 4120424468U;
+        static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_01 = 1148651653U;
+        static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_02 = 1148651654U;
+        static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_03 = 1148651655U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
@@ -78,7 +81,9 @@ namespace AK
         static const AkUniqueID PLAY_VINE = 3521962842U;
         static const AkUniqueID PLAY_VO_DEATH = 2043034684U;
         static const AkUniqueID PLAY_VO_EFFORT = 3926096204U;
+        static const AkUniqueID PLAY_VO_INHALE = 3751336843U;
         static const AkUniqueID PLAY_VO_PAIN = 72136190U;
+        static const AkUniqueID SET_STATE_DEAD = 3796261246U;
         static const AkUniqueID STOP_ALLSOUNDS = 3789712745U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
     } // namespace EVENTS
@@ -91,11 +96,24 @@ namespace AK
 
             namespace STATE
             {
-                static const AkUniqueID FINE_HEALTH = 3157118042U;
-                static const AkUniqueID LOW_HEALTH = 72790338U;
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace HEALTH
+
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID END = 529726532U;
+                static const AkUniqueID EXPLO = 3814499265U;
+                static const AkUniqueID FIGHT = 514064485U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
 
         namespace PAUSE
         {
@@ -190,6 +208,7 @@ namespace AK
         static const AkUniqueID GRENADIER_SNBK = 1568914985U;
         static const AkUniqueID SFX_SNBK = 833899935U;
         static const AkUniqueID SPITTER_SNBK = 4080968021U;
+        static const AkUniqueID STATES = 1208172739U;
         static const AkUniqueID UI_SNBK = 776533456U;
     } // namespace BANKS
 

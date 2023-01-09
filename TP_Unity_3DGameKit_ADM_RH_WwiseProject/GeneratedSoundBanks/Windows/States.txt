@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3796261246	Set_State_Dead			\Default Work Unit\01_00_States\Set_State_Dead	
+

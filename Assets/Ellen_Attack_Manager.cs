@@ -27,6 +27,7 @@ public class Ellen_Attack_Manager : MonoBehaviour
     public void VODeath()
     {
         AkSoundEngine.PostEvent("Play_VO_Death", this.gameObject);
+        
 
     }
 
@@ -43,4 +44,6 @@ public class Ellen_Attack_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_Shield_Activate", this.gameObject);
 
     }
+
+    
 }

@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585283273912514650
+    m_lastTime: -8585283065366664358
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -613,6 +613,39 @@ MonoBehaviour:
         ObjectType: 7
         guid: 23d7c86e95de5c4fa479a1e784da7056
       Path: SoundBanks\Default Work Unit\00_90_UI\UI_SNBK
+  - PhysicalPath: SoundBanks\01_00_States.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
+    - ElementName: 01_00_States
+      ObjectType: 12
+      guid: 0837887548858b48b855556ebec98432
+    ParentPath: SoundBanks\Default Work Unit\01_00_States
+    guid: 0837887548858b48b855556ebec98432
+    GuidInternal: 
+    m_lastTime: -8585283061922593488
+    List:
+    - name: States
+      guid: 3ddbbe053cb5bc42bae46684f8b23633
+      id: 1208172739
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
+      - ElementName: 01_00_States
+        ObjectType: 12
+        guid: 0837887548858b48b855556ebec98432
+      - ElementName: States
+        ObjectType: 7
+        guid: 3ddbbe053cb5bc42bae46684f8b23633
+      Path: SoundBanks\Default Work Unit\01_00_States\States
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -624,7 +657,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 25e549de173d524ba44cfda5d1b5aaab
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585283061922625729
     List: []
   EventWwu:
   - PhysicalPath: Events\00_10_AMB_Pads.wwu
@@ -1029,7 +1062,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_40_Ellen_SFX
     guid: 7adb8f172921f048b75a7073488c6255
     GuidInternal: 
-    m_lastTime: -8585283929402418509
+    m_lastTime: -8585283065365877685
     List:
     - name: FOL
       guid: 98a28f401f004f4680052500cd0a1b78
@@ -1226,6 +1259,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_VO_Inhale
+      guid: 5dd4f27b06992c43b58fc42d14140e8c
+      id: 3751336843
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: VO
+        ObjectType: 4
+        guid: ae1bb83641b9014ca706724867df57ae
+      - ElementName: Play_VO_Inhale
+        ObjectType: 3
+        guid: 5dd4f27b06992c43b58fc42d14140e8c
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\VO\Play_VO_Inhale
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_VO_Pain
       guid: 602b7f76fc845d4dbf1be4ad96545674
       id: 72136190
@@ -1283,7 +1339,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585283273918111344
+    m_lastTime: -8585283065365915456
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -1382,6 +1438,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 06f1dffcf1796b44bf7519f293009fc8
       Path: Events\Default Work Unit\00_50_SFX\Heartbeat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Huge_Door_Open
+      guid: 9ebc4c5029f0034c86f704c4dcedea3c
+      id: 1628668006
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Huge_Door_Open
+        ObjectType: 4
+        guid: 9ebc4c5029f0034c86f704c4dcedea3c
+      Path: Events\Default Work Unit\00_50_SFX\Huge_Door_Open
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1718,6 +1794,75 @@ MonoBehaviour:
         ObjectType: 3
         guid: 07b289957d7c51458950ce2b1159808a
       Path: Events\Default Work Unit\00_50_SFX\HealthBox\Play_SFX_HealthBox_Open_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Huge_Door_Open_01
+      guid: 7f840e6885b13347ae5d8f6d40fd6eb5
+      id: 1148651653
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Huge_Door_Open
+        ObjectType: 4
+        guid: 9ebc4c5029f0034c86f704c4dcedea3c
+      - ElementName: Play_SFX_Huge_Door_Open_01
+        ObjectType: 3
+        guid: 7f840e6885b13347ae5d8f6d40fd6eb5
+      Path: Events\Default Work Unit\00_50_SFX\Huge_Door_Open\Play_SFX_Huge_Door_Open_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Huge_Door_Open_02
+      guid: c4977f85e64be14488af5a4ca2b6e744
+      id: 1148651654
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Huge_Door_Open
+        ObjectType: 4
+        guid: 9ebc4c5029f0034c86f704c4dcedea3c
+      - ElementName: Play_SFX_Huge_Door_Open_02
+        ObjectType: 3
+        guid: c4977f85e64be14488af5a4ca2b6e744
+      Path: Events\Default Work Unit\00_50_SFX\Huge_Door_Open\Play_SFX_Huge_Door_Open_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_SFX_Huge_Door_Open_03
+      guid: e2b3fe8475b0ad4681ebdcc4bb0a25bc
+      id: 1148651655
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Huge_Door_Open
+        ObjectType: 4
+        guid: 9ebc4c5029f0034c86f704c4dcedea3c
+      - ElementName: Play_SFX_Huge_Door_Open_03
+        ObjectType: 3
+        guid: e2b3fe8475b0ad4681ebdcc4bb0a25bc
+      Path: Events\Default Work Unit\00_50_SFX\Huge_Door_Open\Play_SFX_Huge_Door_Open_03
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2420,6 +2565,42 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\01_00_States.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: f0818cccf808e44d8244c79550da8cee
+    - ElementName: 01_00_States
+      ObjectType: 12
+      guid: d836ddceef571a4ca898f4eef1cf4790
+    ParentPath: Events\Default Work Unit\01_00_States
+    guid: d836ddceef571a4ca898f4eef1cf4790
+    GuidInternal: 
+    m_lastTime: -8585283061922615728
+    List:
+    - name: Set_State_Dead
+      guid: d9f4e63271cd284f87cc36ad3567bd6b
+      id: 3796261246
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 01_00_States
+        ObjectType: 12
+        guid: d836ddceef571a4ca898f4eef1cf4790
+      - ElementName: Set_State_Dead
+        ObjectType: 3
+        guid: d9f4e63271cd284f87cc36ad3567bd6b
+      Path: Events\Default Work Unit\01_00_States\Set_State_Dead
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -2431,8 +2612,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585283273918101342
-    List: []
+    m_lastTime: -8585283062733181683
+    List:
+    - name: Play_Magic_Cave
+      guid: 66603a815d65d04d8b1fb4c94a05dfcb
+      id: 608979577
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: Play_Magic_Cave
+        ObjectType: 3
+        guid: 66603a815d65d04d8b1fb4c94a05dfcb
+      Path: Events\Default Work Unit\Play_Magic_Cave
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
     PathAndIcons:
@@ -2644,7 +2842,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Menu_Pause
     guid: bfcd8dd48efb114a90e1d0a9d095ca32
     GuidInternal: 
-    m_lastTime: -8585283904945984550
+    m_lastTime: -8585283060627000044
     List:
     - name: Health
       guid: 04f76e267e5ab74e8484d170d9672c09
@@ -2664,28 +2862,9 @@ MonoBehaviour:
         guid: 04f76e267e5ab74e8484d170d9672c09
       Path: States\Default Work Unit\Menu_Pause\Health
       values:
-      - name: Fine_Health
-        guid: 68e31f9c8522054f8d78cf8181a1d06f
-        id: 3157118042
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Menu_Pause
-          ObjectType: 12
-          guid: bfcd8dd48efb114a90e1d0a9d095ca32
-        - ElementName: Health
-          ObjectType: 9
-          guid: 04f76e267e5ab74e8484d170d9672c09
-        - ElementName: Fine_Health
-          ObjectType: 8
-          guid: 68e31f9c8522054f8d78cf8181a1d06f
-      - name: Low_Health
+      - name: Alive
         guid: d981cdf3a5f73040852ac326b794aaa4
-        id: 72790338
+        id: 655265632
         PathAndIcons:
         - ElementName: States
           ObjectType: 5
@@ -2699,9 +2878,28 @@ MonoBehaviour:
         - ElementName: Health
           ObjectType: 9
           guid: 04f76e267e5ab74e8484d170d9672c09
-        - ElementName: Low_Health
+        - ElementName: Alive
           ObjectType: 8
           guid: d981cdf3a5f73040852ac326b794aaa4
+      - name: Dead
+        guid: 68e31f9c8522054f8d78cf8181a1d06f
+        id: 2044049779
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Menu_Pause
+          ObjectType: 12
+          guid: bfcd8dd48efb114a90e1d0a9d095ca32
+        - ElementName: Health
+          ObjectType: 9
+          guid: 04f76e267e5ab74e8484d170d9672c09
+        - ElementName: Dead
+          ObjectType: 8
+          guid: 68e31f9c8522054f8d78cf8181a1d06f
       - name: None
         guid: d9e0ae3e09e6174d875367d8bb2dea30
         id: 748895195
@@ -3381,7 +3579,7 @@ MonoBehaviour:
     m_lastTime: -8585285710469347330
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 06000000070000000c000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

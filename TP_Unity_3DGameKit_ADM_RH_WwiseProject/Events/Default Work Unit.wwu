@@ -23,6 +23,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<WorkUnit Name="01_00_States" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

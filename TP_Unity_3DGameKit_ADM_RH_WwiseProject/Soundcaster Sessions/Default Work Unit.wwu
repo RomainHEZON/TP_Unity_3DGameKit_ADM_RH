@@ -53,7 +53,7 @@
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
 						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
-						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
+						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Metal" ID="{88AD2688-5420-466D-9821-5B8CA0A3B066}"/>

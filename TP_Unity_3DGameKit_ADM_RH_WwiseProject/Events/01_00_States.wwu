@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="01_00_States" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Set_State_Dead" ID="{32E6F4D9-CD71-4F28-87CC-36AD3567BD6B}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="24"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{B9D165DC-2F26-4AE2-B7D9-0D00F51EC065}" ShortID="428091208">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

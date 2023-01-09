@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{8C8F046B-5DFF-DBCA-2CFA-6823BDC2610C}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{79AD9747-7F10-D187-C577-B47A800B5D04}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -187,7 +187,7 @@
 				</File>
 				<File Id="186637930" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Pressure_Pad_Activated.wav</ShortName>
-					<CachePath>SFX/SFX_Pressure_Pad_Activated_968AC1CF.wem</CachePath>
+					<CachePath>SFX/SFX_Pressure_Pad_Activated_D40D6F26.wem</CachePath>
 				</File>
 				<File Id="198616805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_03.wav</ShortName>
@@ -307,6 +307,10 @@
 					<ShortName>SFX_Boxes_Break_Layer_B_05.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_05_10C4C929.wem</CachePath>
 				</File>
+				<File Id="772602464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Huge_Door_Open_02.wav</ShortName>
+					<CachePath>SFX/SFX_Huge_Door_Open_02_404A503F.wem</CachePath>
+				</File>
 				<File Id="792181325" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Alien_Staff_Pickup_01.wav</ShortName>
 					<CachePath>SFX/SFX_Alien_Staff_Pickup_01_10C4C929.wem</CachePath>
@@ -314,6 +318,10 @@
 				<File Id="839604223" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_01.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="874212920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Huge_Door_Open_03.wav</ShortName>
+					<CachePath>SFX/SFX_Huge_Door_Open_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="883864014" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_05.wav</ShortName>
@@ -355,6 +363,10 @@
 				<File Id="1049985844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_HealthBox_Open.wav</ShortName>
 					<CachePath>SFX/SFX_HealthBox_Open_B204456F.wem</CachePath>
+				</File>
+				<File Id="1063829308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Huge_Door_Open_01.wav</ShortName>
+					<CachePath>SFX/SFX_Huge_Door_Open_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Plugins>
@@ -471,7 +483,22 @@
 						<MediaRef Id="1049985844"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" DurationType="OneShot" DurationMin="2.9070058" DurationMax="3.3586168">
+				<Event Id="1148651653" Name="Play_SFX_Huge_Door_Open_01" DurationType="OneShot" DurationMin="7.672854" DurationMax="7.672854">
+					<MediaRefs>
+						<MediaRef Id="1063829308"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1148651654" Name="Play_SFX_Huge_Door_Open_02" DurationType="OneShot" DurationMin="4.3042846" DurationMax="4.3042846">
+					<MediaRefs>
+						<MediaRef Id="772602464"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1148651655" Name="Play_SFX_Huge_Door_Open_03" DurationType="OneShot" DurationMin="6.1871457" DurationMax="6.1871457">
+					<MediaRefs>
+						<MediaRef Id="874212920"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" DurationType="OneShot" DurationMin="1.2441505" DurationMax="1.4374328">
 					<MediaRefs>
 						<MediaRef Id="186637930"/>
 					</MediaRefs>
@@ -494,6 +521,26 @@
 				<Event Id="3789712745" Name="Stop_AllSounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+		</SoundBank>
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{2C1CB65F-50C9-B461-0991-2B263EF26DCC}">
+			<ShortName>States</ShortName>
+			<Path>States.bnk</Path>
+			<Events>
+				<Event Id="3796261246" Name="Set_State_Dead" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3677180323" Id="2044049779" Name="Dead"/>
+					</ActionSetState>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3677180323" Name="Health">
+					<States>
+						<State Id="655265632" Name="Alive"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{532E6D30-9AC1-41AD-1301-C0A8B283C10E}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
@@ -727,7 +774,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D4CA7ECF-BF8A-78F9-D945-6AE5D71561FE}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E4C74C3B-8F42-68D5-A934-14354EAEBBAD}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -797,9 +844,17 @@
 				</StateGroup>
 				<StateGroup Id="3677180323" Name="Health">
 					<States>
-						<State Id="72790338" Name="Low_Health"/>
+						<State Id="655265632" Name="Alive"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="3157118042" Name="Fine_Health"/>
+						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="514064485" Name="Fight"/>
+						<State Id="529726532" Name="End"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="3814499265" Name="Explo"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -984,7 +1039,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{001A4AFB-4EF3-7F99-A84B-A51DC1CA7899}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{E3ED0FC5-FF90-81EB-1661-CCF2F75E4C57}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -995,10 +1050,6 @@
 				<File Id="57871559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_07.wav</ShortName>
 					<CachePath>SFX/Frogs/AMB_RFX_Frog_A_07_10C4C929.wem</CachePath>
-				</File>
-				<File Id="72707725" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_RFX_Magic_Cave_02.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Magic_Cave_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="77744621" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Spaceship_Out_Loop.wav</ShortName>
@@ -1017,18 +1068,10 @@
 					<ShortName>Frogs\AMB_RFX_Frog_A_06.wav</ShortName>
 					<CachePath>SFX/Frogs/AMB_RFX_Frog_A_06_10C4C929.wem</CachePath>
 				</File>
-				<File Id="151901516" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_RFX_Magic_Cave_05.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Magic_Cave_05_10C4C929.wem</CachePath>
-				</File>
 				<File Id="169208860" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>AMB_PAD_Wind_Medium_Loop.wav</ShortName>
 					<Path>Media/169208860.wem</Path>
 					<CachePath>SFX/AMB_PAD_Wind_Medium_Loop_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="267964445" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_RFX_Magic_Cave_03.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Magic_Cave_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="342142041" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_03.wav</ShortName>
@@ -1037,10 +1080,6 @@
 				<File Id="465306571" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Spaceship_In_Loop.wav</ShortName>
 					<CachePath>SFX/AMB_Spaceship_In_Loop_C5579977.wem</CachePath>
-				</File>
-				<File Id="509722401" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_RFX_Magic_Cave_04.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Magic_Cave_04_10C4C929.wem</CachePath>
 				</File>
 				<File Id="645216713" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_05.wav</ShortName>
@@ -1079,10 +1118,6 @@
 					<ShortName>Frogs\AMB_RFX_Frog_B_04.wav</ShortName>
 					<CachePath>SFX/Frogs/AMB_RFX_Frog_B_04_10C4C929.wem</CachePath>
 				</File>
-				<File Id="956312767" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_RFX_Magic_Cave_06.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Magic_Cave_06_10C4C929.wem</CachePath>
-				</File>
 				<File Id="981383364" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_02.wav</ShortName>
 					<CachePath>SFX/Frogs/AMB_RFX_Frog_A_02_10C4C929.wem</CachePath>
@@ -1097,21 +1132,11 @@
 					<Path>Media/1048301795.wem</Path>
 					<CachePath>SFX/AMB_PAD_Wetland_Loop_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="1068444701" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>AMB_RFX_Magic_Cave_01.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Magic_Cave_01_10C4C929.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
-				<Event Id="2915382764" Name="Play_AMB_PAD_Cave" DurationType="Infinite">
+				<Event Id="2915382764" Name="Play_AMB_PAD_Cave" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
-						<MediaRef Id="72707725"/>
 						<MediaRef Id="109505191"/>
-						<MediaRef Id="151901516"/>
-						<MediaRef Id="267964445"/>
-						<MediaRef Id="509722401"/>
-						<MediaRef Id="956312767"/>
-						<MediaRef Id="1068444701"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1340469326" Name="Play_AMB_PAD_Lake" MaxAttenuation="30" DurationType="Infinite">
@@ -1181,7 +1206,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{8121AB86-4C25-CF04-5F0C-B641157365FF}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{897D1B7A-4915-4A0D-15C7-338635B640E0}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -1289,6 +1314,10 @@
 					<ShortName>Ellen_SFX_FOL_Run_05.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_FOL_Run_05_10C4C929.wem</CachePath>
 				</File>
+				<File Id="469374635" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Inhale_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Inhale_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="535331808" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_FOL_Jump_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_FOL_Jump_01_10C4C929.wem</CachePath>
@@ -1312,6 +1341,10 @@
 				<File Id="657548567" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Death_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Death_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="706531040" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Inhale_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Inhale_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="753481255" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Attack_04.wav</ShortName>
@@ -1352,6 +1385,10 @@
 				<File Id="983004342" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Bodyfall.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_Bodyfall_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1009972051" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_VO_Inhale_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_VO_Inhale_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1048076034" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Effort_06.wav</ShortName>
@@ -1450,6 +1487,13 @@
 							<PluginRef Id="150768685"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="3751336843" Name="Play_VO_Inhale" DurationType="OneShot" DurationMin="0.54239583" DurationMax="0.6619167">
+					<MediaRefs>
+						<MediaRef Id="469374635"/>
+						<MediaRef Id="706531040"/>
+						<MediaRef Id="1009972051"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="72136190" Name="Play_VO_Pain" DurationType="OneShot" DurationMin="0.28705215" DurationMax="0.3772109">
 					<MediaRefs>
@@ -2065,5 +2109,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D5F75C25-EC75-AB4F-1D26-B22619E09E3B}</FileHash>
+	<FileHash>{D7F7ADF7-198F-F8C5-76B9-C88EC95BF0C6}</FileHash>
 </SoundBanksInfo>

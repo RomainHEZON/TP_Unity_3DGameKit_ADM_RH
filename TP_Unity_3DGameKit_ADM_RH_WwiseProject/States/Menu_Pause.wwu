@@ -34,9 +34,23 @@
 				<StateGroup Name="Health" ID="{266EF704-5A7E-4EB7-8484-D170D9672C09}">
 					<ChildrenList>
 						<State Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
-						<State Name="Low_Health" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
-						<State Name="Fine_Health" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
+						<State Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+						<State Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
+							<EndState Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
+							<EndState Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>

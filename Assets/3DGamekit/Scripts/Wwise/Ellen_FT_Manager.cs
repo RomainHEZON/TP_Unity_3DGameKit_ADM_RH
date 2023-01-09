@@ -45,4 +45,16 @@ public class Ellen_FT_Manager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Play_Ellen_SFX_Bodyfall", this.gameObject);
     }
+
+    private void Inhale()
+    {
+        AkSoundEngine.PostEvent("Play_VO_Inhale", this.gameObject);
+
+    }
+
+    private void StateDead()
+    {
+        AkSoundEngine.PostEvent("Set_State_Dead", this.gameObject);
+
+    }
 }

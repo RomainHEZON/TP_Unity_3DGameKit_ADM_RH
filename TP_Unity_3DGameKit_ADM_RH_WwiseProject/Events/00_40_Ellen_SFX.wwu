@@ -60,6 +60,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_VO_Inhale" ID="{7BF2D45D-9906-432C-B58F-C42D14140E8C}">
+							<ChildrenList>
+								<Action Name="" ID="{89C24D14-BE58-480C-B8C1-1427E0C24EED}" ShortID="242176923">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Inhale_RC" ID="{E900D877-69B4-46EF-A355-5B63CF834762}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Play_Shield_Activate" ID="{4E57F42A-3CED-4AB6-BA08-A3E9360228D7}">

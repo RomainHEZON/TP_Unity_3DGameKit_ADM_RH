@@ -774,7 +774,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>6.96636</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
@@ -1380,10 +1380,12 @@
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Pressure_Pad_Activated" ID="{8272FAF0-9312-4338-ABD4-60FEC5F14FAB}">
 											<PropertyList>
-												<Property Name="FadeInDuration" Type="Real64" Value="0.193189283033033"/>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.82667042042042"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.10261274005487"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.2371213806399"/>
 												<Property Name="FadeOutShape" Type="int16" Value="2"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.10821759259259"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.38882458847737"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Pressure_Pad_Activated.wav</AudioFile>
@@ -1627,11 +1629,11 @@
 												</StateGroupList>
 												<CustomStateList>
 													<CustomState>
-														<StateRef Name="Low_Health" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+														<StateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
 														<CustomState Name="" ID="{5277A36A-F2EA-4126-9EED-D43BE7807B41}" ShortID="93403425"/>
 													</CustomState>
 													<CustomState>
-														<StateRef Name="Fine_Health" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
+														<StateRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
 														<CustomState Name="" ID="{40EB3289-038F-428F-BF06-4E62D93BFE76}" ShortID="895874059">
 															<PropertyList>
 																<Property Name="Volume" Type="Real64" Value="-108"/>
@@ -2071,7 +2073,7 @@
 										</Property>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>1</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -2609,6 +2611,114 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Huge_Door_Mixer" ID="{0751DFBE-BA6E-4FF8-B5FF-CE2338F2B119}" ShortID="606907568">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="SFX_Huge_Door_Open_01" ID="{C8C93509-23A6-4C6E-8464-0CBE07124FEC}" ShortID="1054892532">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Huge_Door_Open_01" ID="{A4B52A56-5BE5-4AE7-A48F-0A1C0B70BAA3}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Huge_Door_Open_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1063829308"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Huge_Door_Open_01" ID="{A4B52A56-5BE5-4AE7-A48F-0A1C0B70BAA3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Huge_Door_Open_02" ID="{7054FAD9-DBCD-4310-9D6C-D0D1916E17CF}" ShortID="727531513">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-50</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Huge_Door_Open_02" ID="{D977795D-5F0E-47EE-8212-0056D088FB6D}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.367122085048011"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>SFX_Huge_Door_Open_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="772602464"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Huge_Door_Open_02" ID="{D977795D-5F0E-47EE-8212-0056D088FB6D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="SFX_Huge_Door_Open_03" ID="{1F2FB711-8150-4A4A-9D29-0716CC534657}" ShortID="696567584">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Huge_Door_Open_03" ID="{0C030112-8B39-4579-B619-04DA87DD8990}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Huge_Door_Open_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="874212920"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Huge_Door_Open_03" ID="{0C030112-8B39-4579-B619-04DA87DD8990}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>

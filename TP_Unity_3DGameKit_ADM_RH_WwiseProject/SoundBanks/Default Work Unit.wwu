@@ -12,6 +12,7 @@
 				<WorkUnit Name="00_70_Grenadier" ID="{B41FF8BC-07DB-4098-B1D5-11CB95263BE3}" PersistMode="Reference"/>
 				<WorkUnit Name="00_80_Spitter" ID="{A8BA9A93-5E31-4B64-B446-935FBCC0EA91}" PersistMode="Reference"/>
 				<WorkUnit Name="00_90_UI" ID="{DD8D4F24-77D5-4C52-805F-C23BE4469BDE}" PersistMode="Reference"/>
+				<WorkUnit Name="01_00_States" ID="{75883708-8548-488B-B855-556EBEC98432}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

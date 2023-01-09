@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2605611591	Room_In_Out			\Room_In_Out\Room_In_Out	
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
 	3677180323	Health			\Default Work Unit\Menu_Pause\Health	
+	3826569560	Music_State			\Default Work Unit\Music_State\Music_State	
 
 State	ID	Name	State Group			Notes
 	748895195	None	Wind_State			
@@ -15,13 +16,17 @@ State	ID	Name	State Group			Notes
 	748895195	None	Pause			
 	3537680115	Pause_ON	Pause			
 	3967028551	Pause_OFF	Pause			
-	72790338	Low_Health	Health			
+	655265632	Alive	Health			
 	748895195	None	Health			
-	3157118042	Fine_Health	Health			
+	2044049779	Dead	Health			
+	514064485	Fight	Music_State			
+	529726532	End	Music_State			
+	748895195	None	Music_State			
+	3814499265	Explo	Music_State			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	44591952	Dead	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
 	100964826	Pause_ON	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01		
-	360498495	Low_Health	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	

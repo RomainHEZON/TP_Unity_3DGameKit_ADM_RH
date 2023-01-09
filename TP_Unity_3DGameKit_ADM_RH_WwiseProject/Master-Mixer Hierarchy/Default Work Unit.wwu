@@ -179,12 +179,8 @@
 						</StateGroupList>
 						<CustomStateList>
 							<CustomState>
-								<StateRef Name="Low_Health" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
-								<CustomState Name="" ID="{2B21836D-145E-4E64-A785-79E7FF29BC87}" ShortID="360498495">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="75"/>
-									</PropertyList>
-								</CustomState>
+								<StateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+								<CustomState Name="" ID="{2B21836D-145E-4E64-A785-79E7FF29BC87}" ShortID="360498495"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
@@ -195,8 +191,12 @@
 								<CustomState Name="" ID="{101421BB-F6FB-412F-88DC-9898A5CE951D}" ShortID="344782733"/>
 							</CustomState>
 							<CustomState>
-								<StateRef Name="Fine_Health" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
-								<CustomState Name="" ID="{4DEDF801-5FE4-49C8-98AB-A347D0DE8D14}" ShortID="44591952"/>
+								<StateRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
+								<CustomState Name="" ID="{4DEDF801-5FE4-49C8-98AB-A347D0DE8D14}" ShortID="44591952">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="75"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
