@@ -1876,7 +1876,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{D994DB24-4DD8-34C4-F733-70F98B6CECC7}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{9A56147F-9C59-A443-5B8D-82418BD5E5B3}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2536,5 +2536,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D9F54AD1-8366-331F-2399-7A953A3AE84C}</FileHash>
+	<FileHash>{EAB8D9A9-2D5B-5B71-0DE2-EAB30D39FC05}</FileHash>
 </SoundBanksInfo>

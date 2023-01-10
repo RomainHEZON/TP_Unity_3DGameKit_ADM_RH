@@ -33,13 +33,6 @@
 				</Event>
 				<Event Name="Play_Music_Theme_Grenadier_End" ID="{4B422814-865E-42DF-84BF-8F993487C36C}">
 					<ChildrenList>
-						<Action Name="" ID="{EC751999-923C-4C7A-94A2-89D0C4EF1AC5}" ShortID="649944996">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{E4845C53-0C28-4C2B-ACB4-D47870995D46}" ShortID="786475837">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -50,10 +43,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{EC751999-923C-4C7A-94A2-89D0C4EF1AC5}" ShortID="649944996">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{E85DB5FF-E0D6-468A-B21A-CF90229D9FBB}" ShortID="638182785">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="2.85"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.01"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
