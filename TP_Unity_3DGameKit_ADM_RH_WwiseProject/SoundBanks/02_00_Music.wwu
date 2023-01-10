@@ -7,7 +7,7 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<SoundBank Name="Music_SNBK" ID="{C8C0015F-E4A4-4F54-82FB-6CF76A30E462}">
+				<SoundBank Name="Music_SNBK" ID="{1849F63F-A320-4D07-BFC8-7EA36EF5E2BB}">
 					<ObjectInclusionList>
 						<ObjectRef Name="02_00_Music" ID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}" WorkUnitID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

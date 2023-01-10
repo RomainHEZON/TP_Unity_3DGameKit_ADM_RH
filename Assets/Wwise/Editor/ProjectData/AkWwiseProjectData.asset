@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d48c76d72f06e442b3361184b378ae57
     GuidInternal: 
-    m_lastTime: -8585283334522647812
+    m_lastTime: -8585285710469347330
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585282653399909728
+    m_lastTime: -8585282655757510241
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -321,13 +321,16 @@ MonoBehaviour:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_10_AMB_Pads
       ObjectType: 12
       guid: 6a7d3506fdb54b4db032684db8518f3d
-    ParentPath: SoundBanks\00_10_AMB_Pads
+    ParentPath: SoundBanks\Default Work Unit\00_10_AMB_Pads
     guid: 6a7d3506fdb54b4db032684db8518f3d
     GuidInternal: 
-    m_lastTime: -8585285274507190871
+    m_lastTime: -8585285224652491920
     List:
     - name: AMB_Pads_SNBK
       guid: 6bfd33b3951c5c4eb7c77bb9db6ec85c
@@ -336,25 +339,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_10_AMB_Pads
         ObjectType: 12
         guid: 6a7d3506fdb54b4db032684db8518f3d
       - ElementName: AMB_Pads_SNBK
         ObjectType: 7
         guid: 6bfd33b3951c5c4eb7c77bb9db6ec85c
-      Path: SoundBanks\00_10_AMB_Pads\AMB_Pads_SNBK
+      Path: SoundBanks\Default Work Unit\00_10_AMB_Pads\AMB_Pads_SNBK
   - PhysicalPath: SoundBanks\00_20_AMB_RFX.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_20_AMB_RFX
       ObjectType: 12
       guid: 341698971ceb9b40863e917fa1b06c1c
-    ParentPath: SoundBanks\00_20_AMB_RFX
+    ParentPath: SoundBanks\Default Work Unit\00_20_AMB_RFX
     guid: 341698971ceb9b40863e917fa1b06c1c
     GuidInternal: 
-    m_lastTime: -8585285274506890804
+    m_lastTime: -8585285224652491920
     List:
     - name: AMB_RFX_SNBK
       guid: a0004eadb7fe2848b75bc9a47bf963c9
@@ -363,25 +372,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 341698971ceb9b40863e917fa1b06c1c
       - ElementName: AMB_RFX_SNBK
         ObjectType: 7
         guid: a0004eadb7fe2848b75bc9a47bf963c9
-      Path: SoundBanks\00_20_AMB_RFX\AMB_RFX_SNBK
+      Path: SoundBanks\Default Work Unit\00_20_AMB_RFX\AMB_RFX_SNBK
   - PhysicalPath: SoundBanks\00_30_Ellen_Loco.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_30_Ellen_Loco
       ObjectType: 12
       guid: 26061ab505ada24ca2e44c4bd45413ed
-    ParentPath: SoundBanks\00_30_Ellen_Loco
+    ParentPath: SoundBanks\Default Work Unit\00_30_Ellen_Loco
     guid: 26061ab505ada24ca2e44c4bd45413ed
     GuidInternal: 
-    m_lastTime: -8585285274507010826
+    m_lastTime: -8585285224652491920
     List:
     - name: Ellen_Loco_SNBK
       guid: e88a11accd917246889f4f9fb7cd6c41
@@ -390,25 +405,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_30_Ellen_Loco
         ObjectType: 12
         guid: 26061ab505ada24ca2e44c4bd45413ed
       - ElementName: Ellen_Loco_SNBK
         ObjectType: 7
         guid: e88a11accd917246889f4f9fb7cd6c41
-      Path: SoundBanks\00_30_Ellen_Loco\Ellen_Loco_SNBK
+      Path: SoundBanks\Default Work Unit\00_30_Ellen_Loco\Ellen_Loco_SNBK
   - PhysicalPath: SoundBanks\00_40_Ellen_SFX.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_40_Ellen_SFX
       ObjectType: 12
       guid: 0e25c86fbed45f4a9b279d30ac067997
-    ParentPath: SoundBanks\00_40_Ellen_SFX
+    ParentPath: SoundBanks\Default Work Unit\00_40_Ellen_SFX
     guid: 0e25c86fbed45f4a9b279d30ac067997
     GuidInternal: 
-    m_lastTime: -8585285274507100846
+    m_lastTime: -8585285224652491920
     List:
     - name: Ellen_SFX_SNBK
       guid: b5843048fe77cf49bc65ddb882d8c3e5
@@ -417,25 +438,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_40_Ellen_SFX
         ObjectType: 12
         guid: 0e25c86fbed45f4a9b279d30ac067997
       - ElementName: Ellen_SFX_SNBK
         ObjectType: 7
         guid: b5843048fe77cf49bc65ddb882d8c3e5
-      Path: SoundBanks\00_40_Ellen_SFX\Ellen_SFX_SNBK
+      Path: SoundBanks\Default Work Unit\00_40_Ellen_SFX\Ellen_SFX_SNBK
   - PhysicalPath: SoundBanks\00_50_SFX.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_50_SFX
       ObjectType: 12
       guid: b3d72cc0db2f9a46a6bc99972457d705
-    ParentPath: SoundBanks\00_50_SFX
+    ParentPath: SoundBanks\Default Work Unit\00_50_SFX
     guid: b3d72cc0db2f9a46a6bc99972457d705
     GuidInternal: 
-    m_lastTime: -8585285002765514439
+    m_lastTime: -8585284957548302398
     List:
     - name: SFX_SNBK
       guid: 098f38f3ddac2b498cc3f4bf97eeecd2
@@ -444,25 +471,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_50_SFX
         ObjectType: 12
         guid: b3d72cc0db2f9a46a6bc99972457d705
       - ElementName: SFX_SNBK
         ObjectType: 7
         guid: 098f38f3ddac2b498cc3f4bf97eeecd2
-      Path: SoundBanks\00_50_SFX\SFX_SNBK
+      Path: SoundBanks\Default Work Unit\00_50_SFX\SFX_SNBK
   - PhysicalPath: SoundBanks\00_60_Chomper.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_60_Chomper
       ObjectType: 12
       guid: 07d41c9ef69d7f40a86a823b73bba439
-    ParentPath: SoundBanks\00_60_Chomper
+    ParentPath: SoundBanks\Default Work Unit\00_60_Chomper
     guid: 07d41c9ef69d7f40a86a823b73bba439
     GuidInternal: 
-    m_lastTime: -8585285274506930811
+    m_lastTime: -8585285224652481913
     List:
     - name: Chomper_SNBK
       guid: 53e1908345750146b46c8239d104fcac
@@ -471,25 +504,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_60_Chomper
         ObjectType: 12
         guid: 07d41c9ef69d7f40a86a823b73bba439
       - ElementName: Chomper_SNBK
         ObjectType: 7
         guid: 53e1908345750146b46c8239d104fcac
-      Path: SoundBanks\00_60_Chomper\Chomper_SNBK
+      Path: SoundBanks\Default Work Unit\00_60_Chomper\Chomper_SNBK
   - PhysicalPath: SoundBanks\00_70_Grenadier.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_70_Grenadier
       ObjectType: 12
       guid: bcf81fb4db079840b1d511cb95263be3
-    ParentPath: SoundBanks\00_70_Grenadier
+    ParentPath: SoundBanks\Default Work Unit\00_70_Grenadier
     guid: bcf81fb4db079840b1d511cb95263be3
     GuidInternal: 
-    m_lastTime: -8585285274507060849
+    m_lastTime: -8585285224652481913
     List:
     - name: Grenadier_SNBK
       guid: 980014438a37e24d81d5ed8493bae722
@@ -498,25 +537,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_70_Grenadier
         ObjectType: 12
         guid: bcf81fb4db079840b1d511cb95263be3
       - ElementName: Grenadier_SNBK
         ObjectType: 7
         guid: 980014438a37e24d81d5ed8493bae722
-      Path: SoundBanks\00_70_Grenadier\Grenadier_SNBK
+      Path: SoundBanks\Default Work Unit\00_70_Grenadier\Grenadier_SNBK
   - PhysicalPath: SoundBanks\00_80_Spitter.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_80_Spitter
       ObjectType: 12
       guid: 939abaa8315e644bb446935fbcc0ea91
-    ParentPath: SoundBanks\00_80_Spitter
+    ParentPath: SoundBanks\Default Work Unit\00_80_Spitter
     guid: 939abaa8315e644bb446935fbcc0ea91
     GuidInternal: 
-    m_lastTime: -8585285274507140854
+    m_lastTime: -8585285224652481913
     List:
     - name: Spitter_SNBK
       guid: 6bdccf3e763b3042a1349ae735873bb6
@@ -525,25 +570,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_80_Spitter
         ObjectType: 12
         guid: 939abaa8315e644bb446935fbcc0ea91
       - ElementName: Spitter_SNBK
         ObjectType: 7
         guid: 6bdccf3e763b3042a1349ae735873bb6
-      Path: SoundBanks\00_80_Spitter\Spitter_SNBK
+      Path: SoundBanks\Default Work Unit\00_80_Spitter\Spitter_SNBK
   - PhysicalPath: SoundBanks\00_90_UI.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 00_90_UI
       ObjectType: 12
       guid: 244f8dddd577524c805fc23be4469bde
-    ParentPath: SoundBanks\00_90_UI
+    ParentPath: SoundBanks\Default Work Unit\00_90_UI
     guid: 244f8dddd577524c805fc23be4469bde
     GuidInternal: 
-    m_lastTime: -8585285274506840785
+    m_lastTime: -8585285224652471913
     List:
     - name: UI_SNBK
       guid: 23d7c86e95de5c4fa479a1e784da7056
@@ -552,25 +603,31 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 244f8dddd577524c805fc23be4469bde
       - ElementName: UI_SNBK
         ObjectType: 7
         guid: 23d7c86e95de5c4fa479a1e784da7056
-      Path: SoundBanks\00_90_UI\UI_SNBK
+      Path: SoundBanks\Default Work Unit\00_90_UI\UI_SNBK
   - PhysicalPath: SoundBanks\01_00_States.wwu
     PathAndIcons:
     - ElementName: SoundBanks
       ObjectType: 5
       guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 25e549de173d524ba44cfda5d1b5aaab
     - ElementName: 01_00_States
       ObjectType: 12
       guid: 0837887548858b48b855556ebec98432
-    ParentPath: SoundBanks\01_00_States
+    ParentPath: SoundBanks\Default Work Unit\01_00_States
     guid: 0837887548858b48b855556ebec98432
     GuidInternal: 
-    m_lastTime: -8585283059480346970
+    m_lastTime: -8585282526817896505
     List:
     - name: States
       guid: 3ddbbe053cb5bc42bae46684f8b23633
@@ -579,13 +636,16 @@ MonoBehaviour:
       - ElementName: SoundBanks
         ObjectType: 5
         guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 25e549de173d524ba44cfda5d1b5aaab
       - ElementName: 01_00_States
         ObjectType: 12
         guid: 0837887548858b48b855556ebec98432
       - ElementName: States
         ObjectType: 7
         guid: 3ddbbe053cb5bc42bae46684f8b23633
-      Path: SoundBanks\01_00_States\States
+      Path: SoundBanks\Default Work Unit\01_00_States\States
   - PhysicalPath: SoundBanks\02_00_Music.wwu
     PathAndIcons:
     - ElementName: SoundBanks
@@ -600,10 +660,10 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\02_00_Music
     guid: 572ad749968c2446bb05a0f9d0f33394
     GuidInternal: 
-    m_lastTime: -8585282627080060827
+    m_lastTime: -8585282610337102483
     List:
     - name: Music_SNBK
-      guid: 5f01c0c8a4e4544f82fb6cf76a30e462
+      guid: 3ff6491820a3074dbfc87ea36ef5e2bb
       id: 3144867095
       PathAndIcons:
       - ElementName: SoundBanks
@@ -617,7 +677,7 @@ MonoBehaviour:
         guid: 572ad749968c2446bb05a0f9d0f33394
       - ElementName: Music_SNBK
         ObjectType: 7
-        guid: 5f01c0c8a4e4544f82fb6cf76a30e462
+        guid: 3ff6491820a3074dbfc87ea36ef5e2bb
       Path: SoundBanks\Default Work Unit\02_00_Music\Music_SNBK
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -630,7 +690,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 25e549de173d524ba44cfda5d1b5aaab
     GuidInternal: 
-    m_lastTime: -8585282627080360896
+    m_lastTime: -8585282621906842338
     List: []
   EventWwu:
   - PhysicalPath: Events\00_10_AMB_Pads.wwu
@@ -647,7 +707,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585283279266067043
+    m_lastTime: -8585283273918242062
     List:
     - name: Play_AMB_PAD_Cave
       guid: b9e30a872730d548bf91b3f5d103f900
@@ -792,23 +852,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Theme_Switch
-      guid: 49ad58abf5c1b7428c83bfb98b87d392
-      id: 1513319732
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: Play_Theme_Switch
-        ObjectType: 3
-        guid: 49ad58abf5c1b7428c83bfb98b87d392
-      Path: Events\Default Work Unit\Play_Theme_Switch
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Spaceship
       guid: 249ad408c667ff4cb715521f97eade5c
       id: 554650843
@@ -843,7 +886,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585282649827994479
+    m_lastTime: -8585282668492821944
     List:
     - name: Play_AMB_RFX_Morse_Code
       guid: c5757ecf13cc124dba1598e650d5779e
@@ -1059,7 +1102,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_30_Ellen_Loco
     guid: a51919b6568d074c8e3bc50aabf2c270
     GuidInternal: 
-    m_lastTime: -8585284237851030740
+    m_lastTime: -8585284235918131572
     List:
     - name: Play_Ellen_Footstep
       guid: 7e2749d1364cac488199cee9ea1ed1e3
@@ -1095,7 +1138,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_40_Ellen_SFX
     guid: 7adb8f172921f048b75a7073488c6255
     GuidInternal: 
-    m_lastTime: -8585282653404610795
+    m_lastTime: -8585282685292428642
     List:
     - name: Bodyfall
       guid: ba979c444c0ae040802863d4fba5caf4
@@ -1418,7 +1461,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585282653404610795
+    m_lastTime: -8585282610337057337
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -1497,26 +1540,6 @@ MonoBehaviour:
         ObjectType: 4
         guid: 4d95932e1c82404baae6b6818dcf3514
       Path: Events\Default Work Unit\00_50_SFX\HealthBox
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Heartbeat
-      guid: 06f1dffcf1796b44bf7519f293009fc8
-      id: 2179486487
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 00_50_SFX
-        ObjectType: 12
-        guid: 3cb178568a63ab4ab00222cac1a60494
-      - ElementName: Heartbeat
-        ObjectType: 4
-        guid: 06f1dffcf1796b44bf7519f293009fc8
-      Path: Events\Default Work Unit\00_50_SFX\Heartbeat
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1652,29 +1675,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: c929541492e1af4da6baccf35ea66a58
       Path: Events\Default Work Unit\00_50_SFX\Boxes\Play_Boxes_Idle
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_Heartbeat
-      guid: 91bda44b8a6a964cbe5935cb38f04b85
-      id: 3765695918
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 00_50_SFX
-        ObjectType: 12
-        guid: 3cb178568a63ab4ab00222cac1a60494
-      - ElementName: Heartbeat
-        ObjectType: 4
-        guid: 06f1dffcf1796b44bf7519f293009fc8
-      - ElementName: Play_Heartbeat
-        ObjectType: 3
-        guid: 91bda44b8a6a964cbe5935cb38f04b85
-      Path: Events\Default Work Unit\00_50_SFX\Heartbeat\Play_Heartbeat
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2134,7 +2134,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_60_Chomper
     guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
     GuidInternal: 
-    m_lastTime: -8585283528399258799
+    m_lastTime: -8585282575374092809
     List:
     - name: Play_Chomper_FT_Walk
       guid: 11f5b711056a584ba5c69a8b2ee9fcd6
@@ -2250,7 +2250,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_70_Grenadier
     guid: 71582feae7f34c4e913572af42280bda
     GuidInternal: 
-    m_lastTime: -8585283049529733007
+    m_lastTime: -8585282998588618005
     List:
     - name: Play_Attack_Close
       guid: 44ca3a95974d9b41a4d7989e2861b4e1
@@ -2466,7 +2466,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_80_Spitter
     guid: 7000ddcfcb4e0442bdc8256a0975e9dc
     GuidInternal: 
-    m_lastTime: -8585285281657018566
+    m_lastTime: -8585285224652672169
     List: []
   - PhysicalPath: Events\00_90_UI.wwu
     PathAndIcons:
@@ -2482,7 +2482,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585283890944651555
+    m_lastTime: -8585283922013193452
     List:
     - name: Play_UI_Dialogue_Start
       guid: 99df3951143d9844923c5e836fa6a387
@@ -2704,7 +2704,7 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-  - PhysicalPath: Events\01_00_States.wwu
+  - PhysicalPath: Events\01_00_State.wwu
     PathAndIcons:
     - ElementName: Events
       ObjectType: 5
@@ -2712,13 +2712,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: f0818cccf808e44d8244c79550da8cee
-    - ElementName: 01_00_States
+    - ElementName: 01_00_State
       ObjectType: 12
       guid: d836ddceef571a4ca898f4eef1cf4790
-    ParentPath: Events\Default Work Unit\01_00_States
+    ParentPath: Events\Default Work Unit\01_00_State
     guid: d836ddceef571a4ca898f4eef1cf4790
     GuidInternal: 
-    m_lastTime: -8585282627080290874
+    m_lastTime: -8585282521174446625
     List:
     - name: Set_State_Dead
       guid: d9f4e63271cd284f87cc36ad3567bd6b
@@ -2730,13 +2730,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 01_00_States
+      - ElementName: 01_00_State
         ObjectType: 12
         guid: d836ddceef571a4ca898f4eef1cf4790
       - ElementName: Set_State_Dead
         ObjectType: 3
         guid: d9f4e63271cd284f87cc36ad3567bd6b
-      Path: Events\Default Work Unit\01_00_States\Set_State_Dead
+      Path: Events\Default Work Unit\01_00_State\Set_State_Dead
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2750,13 +2750,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 01_00_States
+      - ElementName: 01_00_State
         ObjectType: 12
         guid: d836ddceef571a4ca898f4eef1cf4790
       - ElementName: Set_State_End
         ObjectType: 3
         guid: 3e2558574699d5459090e769f5cb587a
-      Path: Events\Default Work Unit\01_00_States\Set_State_End
+      Path: Events\Default Work Unit\01_00_State\Set_State_End
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2770,13 +2770,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 01_00_States
+      - ElementName: 01_00_State
         ObjectType: 12
         guid: d836ddceef571a4ca898f4eef1cf4790
       - ElementName: Set_State_Explo
         ObjectType: 3
         guid: 55c0c1ad9ad607499ae68fdbddf3ef6a
-      Path: Events\Default Work Unit\01_00_States\Set_State_Explo
+      Path: Events\Default Work Unit\01_00_State\Set_State_Explo
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2790,13 +2790,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 01_00_States
+      - ElementName: 01_00_State
         ObjectType: 12
         guid: d836ddceef571a4ca898f4eef1cf4790
       - ElementName: Set_State_Fight_Chomper
         ObjectType: 3
         guid: d35db5b6e8ed4940b28d3c02ccd690a1
-      Path: Events\Default Work Unit\01_00_States\Set_State_Fight_Chomper
+      Path: Events\Default Work Unit\01_00_State\Set_State_Fight_Chomper
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2810,13 +2810,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 01_00_States
+      - ElementName: 01_00_State
         ObjectType: 12
         guid: d836ddceef571a4ca898f4eef1cf4790
       - ElementName: Set_State_Fight_Grenadier
         ObjectType: 3
         guid: 69ab385cc29c7e4094b382c7f450066a
-      Path: Events\Default Work Unit\01_00_States\Set_State_Fight_Grenadier
+      Path: Events\Default Work Unit\01_00_State\Set_State_Fight_Grenadier
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2834,7 +2834,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\02_00_Music
     guid: 75e10a1d7dab424abc25cd85b9f1e2a9
     GuidInternal: 
-    m_lastTime: -8585282623374149390
+    m_lastTime: -8585282610337047332
     List:
     - name: Play_Music_Theme_Switch
       guid: 49ad58abf5c1b7428c83bfb98b87d392
@@ -2867,7 +2867,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585282627080220866
+    m_lastTime: -8585282526817670026
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -2875,16 +2875,13 @@ MonoBehaviour:
     - ElementName: Game Parameters
       ObjectType: 5
       guid: 00000000000000000000000000000000
-    - ElementName: Default Work Unit
-      ObjectType: 12
-      guid: 1f4eeda840fefb40a287c327cb2b7aca
     - ElementName: Bus_Volume
       ObjectType: 12
       guid: e7c7ccb7710915419e464565c21837c0
-    ParentPath: Game Parameters\Default Work Unit\Bus_Volume
+    ParentPath: Game Parameters\Bus_Volume
     guid: e7c7ccb7710915419e464565c21837c0
     GuidInternal: 
-    m_lastTime: -8585283890944641559
+    m_lastTime: -8585283913094606781
     List:
     - name: Master_Volume
       guid: 6d022af933dc3745864e6a11f434789e
@@ -2893,16 +2890,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Master_Volume
         ObjectType: 13
         guid: 6d022af933dc3745864e6a11f434789e
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Master_Volume
+      Path: Game Parameters\Bus_Volume\Master_Volume
     - name: Music_Volume
       guid: 36498c06061b9d4ab46f18d090d4ca5e
       id: 1006694123
@@ -2910,16 +2904,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Music_Volume
         ObjectType: 13
         guid: 36498c06061b9d4ab46f18d090d4ca5e
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Music_Volume
+      Path: Game Parameters\Bus_Volume\Music_Volume
     - name: SFX_Volume
       guid: afa3670f5d2c5c47be8c2db36778c70b
       id: 1564184899
@@ -2927,16 +2918,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: SFX_Volume
         ObjectType: 13
         guid: afa3670f5d2c5c47be8c2db36778c70b
-      Path: Game Parameters\Default Work Unit\Bus_Volume\SFX_Volume
+      Path: Game Parameters\Bus_Volume\SFX_Volume
     - name: Staff_Distorsion
       guid: a7b91e5ffc62804e95daab369d9ca120
       id: 3828256600
@@ -2944,16 +2932,13 @@ MonoBehaviour:
       - ElementName: Game Parameters
         ObjectType: 5
         guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1f4eeda840fefb40a287c327cb2b7aca
       - ElementName: Bus_Volume
         ObjectType: 12
         guid: e7c7ccb7710915419e464565c21837c0
       - ElementName: Staff_Distorsion
         ObjectType: 13
         guid: a7b91e5ffc62804e95daab369d9ca120
-      Path: Game Parameters\Default Work Unit\Bus_Volume\Staff_Distorsion
+      Path: Game Parameters\Bus_Volume\Staff_Distorsion
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -2965,7 +2950,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f4eeda840fefb40a287c327cb2b7aca
     GuidInternal: 
-    m_lastTime: -8585283890944641559
+    m_lastTime: -8585283913094616788
     List: []
   - PhysicalPath: Game Parameters\Distance.wwu
     PathAndIcons:
@@ -2981,7 +2966,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Distance
     guid: e53b1effa1d101419e07a517144c19cf
     GuidInternal: 
-    m_lastTime: -8585283396252522812
+    m_lastTime: -8585283360029985201
     List:
     - name: Lake_AMB
       guid: a3011e1aafc20d4bbd17d65938ee4e06
@@ -3048,7 +3033,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Health
     guid: f152a078009aa04e85f9cc8399387a1f
     GuidInternal: 
-    m_lastTime: -8585283890944631558
+    m_lastTime: -8585283913094638179
     List:
     - name: Ellen_Health
       guid: e75a86bb9f2c5a4781ebb9f103e12328
@@ -3079,7 +3064,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dafb7d237f34794c8b43ba469bf3287e
     GuidInternal: 
-    m_lastTime: -8585283225740787620
+    m_lastTime: -8585283247727201878
     List: []
   - PhysicalPath: States\Menu_Pause.wwu
     PathAndIcons:
@@ -3095,7 +3080,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Menu_Pause
     guid: bfcd8dd48efb114a90e1d0a9d095ca32
     GuidInternal: 
-    m_lastTime: -8585282653399669660
+    m_lastTime: -8585282680343087019
     List:
     - name: Health
       guid: 04f76e267e5ab74e8484d170d9672c09
@@ -3267,7 +3252,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Music_State
     guid: 32f48460de2f714b9834ec30e3b6efb1
     GuidInternal: 
-    m_lastTime: -8585283011186882614
+    m_lastTime: -8585282600853667402
     List:
     - name: Music_State
       guid: dc12b15aa2daf9479c8a3bfdf9704b56
@@ -3396,7 +3381,7 @@ MonoBehaviour:
     ParentPath: States\Room_In_Out
     guid: 980cc073bf1e4f4da18c7b6c43bd0449
     GuidInternal: 
-    m_lastTime: -8585283290791763354
+    m_lastTime: -8585283273912504647
     List:
     - name: Room_In_Out
       guid: 7f8a8733482e7f44aa56daa4b5352585
@@ -3478,7 +3463,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Wind
     guid: bd9f85ce4a9e5542bb8a4689753cbc50
     GuidInternal: 
-    m_lastTime: -8585283428467711411
+    m_lastTime: -8585283360025207141
     List:
     - name: Wind_State
       guid: 573f5b2b00a21147a6783d5f36520991
@@ -3589,7 +3574,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 3d4ee4a025b46a449e0e218aa2e1c150
     GuidInternal: 
-    m_lastTime: -8585285150432083791
+    m_lastTime: -8585285148846465803
     List: []
   - PhysicalPath: Switches\Loco_Switch.wwu
     PathAndIcons:
@@ -3605,7 +3590,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit\Loco_Switch
     guid: bffad21dbb79e8428ef26a6c2268a2b7
     GuidInternal: 
-    m_lastTime: -8585284269432180514
+    m_lastTime: -8585284235907618381
     List:
     - name: Loco_Switch
       guid: 6eeafcfadfdbfc4fbf3d503ec327d366
@@ -3737,7 +3722,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit\Material
     guid: fb93524a86aa8745b6510d3927f99997
     GuidInternal: 
-    m_lastTime: -8585284269432130500
+    m_lastTime: -8585284235907618381
     List:
     - name: Material_Switch
       guid: aefd40686128a6438f12a6d4df85884e
@@ -3848,10 +3833,10 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bc9d1094795632459ac1ba5e99b9201b
     GuidInternal: 
-    m_lastTime: -8585285715523473592
+    m_lastTime: -8585285710469347330
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0600000007000000120000003b0000003c00000047000000
+  ExpandedWaapiItemIds: 0500000006000000070000001000000011000000120000001a0000001b0000002500000026000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

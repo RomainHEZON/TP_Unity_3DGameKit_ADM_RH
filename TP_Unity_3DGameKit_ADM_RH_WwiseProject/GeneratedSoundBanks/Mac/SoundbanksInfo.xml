@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{5C9323FF-CD31-1B33-E9AB-AFADCA667463}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{45097B8F-72C9-B1D2-48A8-47FF5659FEC0}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -427,7 +427,6 @@
 						<MediaRef Id="471316824"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3765695918" Name="Play_Heartbeat" DurationType="Infinite"/>
 				<Event Id="1380322271" Name="Play_SFX_After_Activation" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="995374565"/>
@@ -534,7 +533,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{B41C7BCF-188D-4E61-D80F-C942FD1A6896}">
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{0F2FAC23-3ACA-F536-0869-1B2E1AD1F2E4}">
 			<ShortName>States</ShortName>
 			<Path>States.bnk</Path>
 			<Events>
@@ -1683,7 +1682,7 @@
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{71ADDEDB-2EE2-22DD-ADF4-7443B0A6EC3E}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{49943898-A4CD-2E89-1B51-FE17E8E6A3D4}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1841,7 +1840,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{08CB1555-62B5-AFC1-6F05-ABF6634F47FC}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{C915BCB5-6C20-F3A2-350B-F08FC402AFD7}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2468,5 +2467,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4995F302-2143-FFA9-D68C-43EAB8845AB5}</FileHash>
+	<FileHash>{4A22863C-A2E7-85C8-682A-2FBDF1156C7F}</FileHash>
 </SoundBanksInfo>

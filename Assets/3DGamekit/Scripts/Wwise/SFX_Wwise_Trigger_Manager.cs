@@ -23,6 +23,7 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
 
     public void PressurePad()
     {
+        AkSoundEngine.PostEvent("Set_State_Explo", this.gameObject);
         AkSoundEngine.PostEvent("Play_SFX_Pressure_Pad_Activated", this.gameObject);
         AkSoundEngine.PostEvent("Play_SFX_After_Activation", this.gameObject);
     }

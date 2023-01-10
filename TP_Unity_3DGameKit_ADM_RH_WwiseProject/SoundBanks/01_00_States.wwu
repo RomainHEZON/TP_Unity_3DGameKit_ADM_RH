@@ -9,7 +9,7 @@
 			<ChildrenList>
 				<SoundBank Name="States" ID="{05BEDB3D-B53C-42BC-BAE4-6684F8B23633}">
 					<ObjectInclusionList>
-						<ObjectRef Name="01_00_States" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="01_00_State" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

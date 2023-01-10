@@ -85,8 +85,11 @@ namespace Gamekit3D
         public void Spotted()
         {
             if (spottedAudio != null)
+
             
             AkSoundEngine.PostEvent("Play_SFX_Chomper_Spotted", this.gameObject);
+
+            AkSoundEngine.PostEvent("Set_State_Fight_Chomper", this.gameObject);
         }
 
         protected void OnDisable()
@@ -120,6 +123,8 @@ namespace Gamekit3D
                     TargetDistributor distributor = target.GetComponentInChildren<TargetDistributor>();
                     if (distributor != null)
                         m_FollowerInstance = distributor.RegisterNewFollower();
+
+                   // AkSoundEngine.PostEvent("Set_State_Fight_Chomper", this.gameObject);
                 }
             }
             else
@@ -132,6 +137,9 @@ namespace Gamekit3D
 
                     if (m_TimerSinceLostTarget >= timeToStopPursuit)
                     {
+                        //AkSoundEngine.PostEvent("Set_State_Explo", this.gameObject);
+
+
                         Vector3 toTarget = m_Target.transform.position - transform.position;
 
                         if (toTarget.sqrMagnitude > playerScanner.detectionRadius * playerScanner.detectionRadius)
@@ -141,6 +149,7 @@ namespace Gamekit3D
 
                             //the target move out of range, reset the target
                             m_Target = null;
+
                         }
                     }
                 }
@@ -172,6 +181,9 @@ namespace Gamekit3D
             }
 
             m_Controller.animator.SetBool(hashInPursuit, true);
+
+            //AkSoundEngine.PostEvent("Set_State_Fight_Chomper", this.gameObject);
+
         }
 
         public void StopPursuit()
@@ -182,6 +194,9 @@ namespace Gamekit3D
             }
 
             m_Controller.animator.SetBool(hashInPursuit, false);
+
+            //AkSoundEngine.PostEvent("Set_State_Explo", this.gameObject);
+
         }
 
         public void RequestTargetPosition()
@@ -247,6 +262,9 @@ namespace Gamekit3D
             //We unparent the hit source, as it would destroy it with the gameobject when it get replaced by the ragdol otherwise
             deathAudio.transform.SetParent(null, true);
             deathAudio.PlayRandomClip();
+
+            //AkSoundEngine.PostEvent("Set_State_Explo", this.gameObject);
+
             GameObject.Destroy(deathAudio, deathAudio.clip == null ? 0.0f : deathAudio.clip.length + 0.5f);
         }
 

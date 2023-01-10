@@ -2484,7 +2484,7 @@
 																						<Property Name="EndTrimOffset" Type="Real64" Value="8839.84126984127"/>
 																						<Property Name="FadeInDuration" Type="Real64" Value="1064.49761066399"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																						<Property Name="PlayAt" Type="Real64" Value="-1185.45020120727"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-1091.70020120727"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Transition" ID="{CAB0CB8C-ACE8-4850-A075-FB8BF21F82AD}"/>
 																					<PropertyCurveList>
@@ -3221,6 +3221,14 @@
 							</Playlist>
 						</MusicPlaylistContainer>
 						<MusicPlaylistContainer Name="Theme_Fight_Grenadier" ID="{7393F164-18A8-4844-86BA-589BC1FE3FA4}" ShortID="787288253">
+							<PropertyList>
+								<Property Name="OverridePriority" Type="bool" Value="True"/>
+								<Property Name="Priority" Type="int16">
+									<ValueList>
+										<Value>90</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -4262,38 +4270,6 @@
 										<TransitionObjectRef Name="Theme_3D_GAME_KIT_Transition" ID="{116DF4CB-D353-4A53-A684-60355DA88D13}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
 										<SourceFadeOut>
 											<MusicFade Name="Source Fade-out" ID="{68749673-03E8-4032-9BA1-148697AC6837}">
-												<PropertyList>
-													<Property Name="FadeCurve" Type="int16" Value="2"/>
-													<Property Name="FadeOffset" Type="Real64" Value="2.5"/>
-													<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-													<Property Name="FadeType" Type="int16" Value="1"/>
-												</PropertyList>
-											</MusicFade>
-										</SourceFadeOut>
-									</TransitionInfo>
-								</MusicTransition>
-								<MusicTransition Name="Transition" ID="{0FE316C1-184F-46D3-898A-392AA2D1807B}">
-									<PropertyList>
-										<Property Name="DestinationContextType" Type="int16" Value="2"/>
-										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="4"/>
-										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
-										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
-										<Property Name="SourceContextType" Type="int16" Value="2"/>
-										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="DestinationContextObject">
-											<ObjectRef Name="Theme_Fight_Chomper" ID="{DE73B924-ABC4-4D6C-94DB-2417738D3134}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
-										</Reference>
-										<Reference Name="SourceContextObject">
-											<ObjectRef Name="Theme_Fight_Grenadier" ID="{7393F164-18A8-4844-86BA-589BC1FE3FA4}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
-										</Reference>
-									</ReferenceList>
-									<TransitionInfo>
-										<TransitionObjectRef Name="Theme_3D_GAME_KIT_Transition" ID="{116DF4CB-D353-4A53-A684-60355DA88D13}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
-										<SourceFadeOut>
-											<MusicFade Name="Source Fade-out" ID="{23E64E10-EA29-4295-9EF4-82076D2ED374}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="2"/>
 													<Property Name="FadeOffset" Type="Real64" Value="2.5"/>

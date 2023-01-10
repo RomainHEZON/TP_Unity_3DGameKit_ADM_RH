@@ -57,5 +57,15 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Play_Grenadier_Vox_Attack", this.gameObject);
     }
+
+    public void SetStateExplo()
+    {
+        AkSoundEngine.PostEvent("Set_State_Explo", this.gameObject);
+    }
+
+    public void SetStateEnd()
+    {
+        AkSoundEngine.PostEvent("Set_State_End", this.gameObject);
+    }
 }
 

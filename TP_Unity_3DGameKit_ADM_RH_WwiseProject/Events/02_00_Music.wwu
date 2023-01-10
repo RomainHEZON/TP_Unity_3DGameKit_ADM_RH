@@ -10,6 +10,9 @@
 				<Event Name="Play_Music_Theme_Switch" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}">
 					<ChildrenList>
 						<Action Name="" ID="{558313B4-560E-4C55-BE97-670154FD2F2A}" ShortID="282531217">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Theme_Switch" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>

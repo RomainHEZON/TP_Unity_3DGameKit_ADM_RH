@@ -48,7 +48,6 @@ namespace AK
         static const AkUniqueID PLAY_GRENADIER_FOOTSTEPS = 2094447813U;
         static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
         static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
-        static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
         static const AkUniqueID PLAY_MUSIC_THEME_SWITCH = 2932096340U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;

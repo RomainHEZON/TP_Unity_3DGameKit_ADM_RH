@@ -257,21 +257,6 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Heartbeat" ID="{FCDFF106-79F1-446B-BF75-19F293009FC8}" ShortID="1001376725">
-					<ChildrenList>
-						<Event Name="Play_Heartbeat" ID="{4BA4BD91-6A8A-4C96-BE59-35CB38F04B85}">
-							<ChildrenList>
-								<Action Name="" ID="{42563034-DCD0-41A3-868A-3CA04B02924F}" ShortID="366458363">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Heartbeat_RC" ID="{A67F31C3-8EB6-4675-BC12-CF2FFD62A876}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
 				<Event Name="Play_SFX_After_Activation" ID="{AF37FCEB-AF87-4F15-A651-2817DFF73138}">
 					<ChildrenList>
 						<Action Name="" ID="{B96A3CDD-ABF4-42E5-AB72-0DEDEB58FE08}" ShortID="264022342">
