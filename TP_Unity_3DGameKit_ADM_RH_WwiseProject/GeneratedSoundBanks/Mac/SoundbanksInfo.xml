@@ -981,7 +981,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{6D159A13-D895-1F48-18E7-0A8855812BC9}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{750404B8-B948-F338-F7B1-5B3E4572839C}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1111,13 +1111,13 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="79389039" Name="Play_Attack_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.175521" DurationMax="2.2567708">
+				<Event Id="79389039" Name="Play_Attack_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.0534182" DurationMax="2.3909655">
 					<MediaRefs>
 						<MediaRef Id="345715520"/>
 						<MediaRef Id="823718818"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2579342955" Name="Play_Attack_Range_Bounce" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.80627084" DurationMax="0.95210415">
+				<Event Id="2579342955" Name="Play_Attack_Range_Bounce" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.7610183" DurationMax="1.0087192">
 					<MediaRefs>
 						<MediaRef Id="462539298"/>
 						<MediaRef Id="799026636"/>
@@ -1125,20 +1125,20 @@
 						<MediaRef Id="982471566"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3013215836" Name="Play_Attack_Range_Explosion" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.7171875" DurationMax="1.7291666">
+				<Event Id="3013215836" Name="Play_Attack_Range_Explosion" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.6208091" DurationMax="1.8319883">
 					<MediaRefs>
 						<MediaRef Id="497105021"/>
 						<MediaRef Id="951400336"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3818987871" Name="Play_Attack_Range_Fire" MaxAttenuation="30" DurationType="OneShot" DurationMin="3.2005208" DurationMax="4.5760417">
+				<Event Id="3818987871" Name="Play_Attack_Range_Fire" MaxAttenuation="30" DurationType="OneShot" DurationMin="3.020889" DurationMax="4.8481474">
 					<MediaRefs>
 						<MediaRef Id="524292837"/>
 						<MediaRef Id="609087632"/>
 						<MediaRef Id="787630289"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2314174147" Name="Play_Get_Hit_Behind" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.0511458" DurationMax="2.5713413">
+				<Event Id="2314174147" Name="Play_Get_Hit_Behind" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.9472489" DurationMax="2.7123485">
 					<MediaRefs>
 						<MediaRef Id="219315323"/>
 						<MediaRef Id="352007991"/>
@@ -1148,12 +1148,12 @@
 						<MediaRef Id="976343665"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3337034902" Name="Play_Grenadier_Death" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.760076" DurationMax="5.343005">
+				<Event Id="3337034902" Name="Play_Grenadier_Death" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.4929137" DurationMax="5.6607165">
 					<MediaRefs>
 						<MediaRef Id="69857268"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.44951558" DurationMax="0.86703175">
+				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.42428622" DurationMax="0.91858816">
 					<MediaRefs>
 						<MediaRef Id="259148681"/>
 						<MediaRef Id="260297540"/>
@@ -1165,14 +1165,14 @@
 						<MediaRef Id="1072987620"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2990788" DurationMax="1.8117005">
+				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2261672" DurationMax="1.9194298">
 					<MediaRefs>
 						<MediaRef Id="639603022"/>
 						<MediaRef Id="706922979"/>
 						<MediaRef Id="953794628"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.8511459" DurationMax="2.3713412">
+				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.7472489" DurationMax="2.5123484">
 					<MediaRefs>
 						<MediaRef Id="381948013"/>
 						<MediaRef Id="976343665"/>
@@ -1181,7 +1181,7 @@
 						<ActionPostEventEntry Id="3891969030" Name="Play_Grenadier_Vox_Attack"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="1988178265" Name="Play_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="5.125" DurationMax="5.1401043">
+				<Event Id="1988178265" Name="Play_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.8373556" DurationMax="5.445751">
 					<MediaRefs>
 						<MediaRef Id="305209183"/>
 						<MediaRef Id="1058987220"/>
@@ -1682,7 +1682,7 @@
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{49943898-A4CD-2E89-1B51-FE17E8E6A3D4}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{1B21C073-E8BA-250C-D3DE-13EC3A8EFBDF}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1840,7 +1840,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{C915BCB5-6C20-F3A2-350B-F08FC402AFD7}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{255A0F71-A67A-DCC8-BDE6-81BB751F99CB}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2467,5 +2467,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{4A22863C-A2E7-85C8-682A-2FBDF1156C7F}</FileHash>
+	<FileHash>{A51E5AE6-C483-4530-B728-FD84C1AB6A30}</FileHash>
 </SoundBanksInfo>

@@ -58,6 +58,7 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_Grenadier_Vox_Attack", this.gameObject);
     }
 
+    // Set State Music
     public void SetStateExplo()
     {
         AkSoundEngine.PostEvent("Set_State_Explo", this.gameObject);
@@ -67,5 +68,11 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Set_State_End", this.gameObject);
     }
+
+    public void SetStateFightChomper()
+    {
+        AkSoundEngine.PostEvent("Set_State_End", this.gameObject);
+    }
+
 }
 
