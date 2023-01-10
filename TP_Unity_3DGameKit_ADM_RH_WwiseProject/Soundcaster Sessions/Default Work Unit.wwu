@@ -86,7 +86,7 @@
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
-						<CurrentStateRef Name="Fight_Grenadier" ID="{0CAAE32D-C69A-41A0-8627-A0ADB8416B74}"/>
+						<CurrentStateRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}"/>
 						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
 						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
 					</CurrentStateList>

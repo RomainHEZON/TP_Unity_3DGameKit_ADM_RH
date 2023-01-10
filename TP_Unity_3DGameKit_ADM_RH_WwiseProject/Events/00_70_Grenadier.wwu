@@ -125,6 +125,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{61B4F931-8FCF-4DE1-BF89-495505A884DC}" ShortID="367832546">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="End" ID="{AA17C5A9-B07E-477B-BC94-64CB7EA18A46}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Grenadier_Vox_Attack" ID="{1394F8B4-357C-4670-82DC-6C05C964CF72}">

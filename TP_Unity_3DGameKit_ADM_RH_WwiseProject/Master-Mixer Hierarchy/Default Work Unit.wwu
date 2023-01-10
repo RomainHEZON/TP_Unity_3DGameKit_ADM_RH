@@ -215,7 +215,7 @@
 								<StateRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
 								<CustomState Name="" ID="{4DEDF801-5FE4-49C8-98AB-A347D0DE8D14}" ShortID="44591952">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16" Value="75"/>
+										<Property Name="Lowpass" Type="int16" Value="60"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
