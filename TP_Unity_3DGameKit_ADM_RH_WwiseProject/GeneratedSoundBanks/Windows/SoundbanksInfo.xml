@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{5F25D609-92F7-D087-98D5-CBF405501848}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{5C9323FF-CD31-1B33-E9AB-AFADCA667463}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -534,13 +534,33 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{2C1CB65F-50C9-B461-0991-2B263EF26DCC}">
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{B41C7BCF-188D-4E61-D80F-C942FD1A6896}">
 			<ShortName>States</ShortName>
 			<Path>States.bnk</Path>
 			<Events>
 				<Event Id="3796261246" Name="Set_State_Dead" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3677180323" Id="2044049779" Name="Dead"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2300403011" Name="Set_State_End" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3826569560" Id="529726532" Name="End"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3742218146" Name="Set_State_Explo" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3826569560" Id="3814499265" Name="Explo"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="846679953" Name="Set_State_Fight_Chomper" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3826569560" Id="626462014" Name="Fight_Chomper"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="407065776" Name="Set_State_Fight_Grenadier" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3826569560" Id="1783027799" Name="Fight_Grenadier"/>
 					</ActionSetState>
 				</Event>
 			</Events>
@@ -552,9 +572,18 @@
 						<State Id="2044049779" Name="Dead"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="529726532" Name="End"/>
+						<State Id="626462014" Name="Fight_Chomper"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1783027799" Name="Fight_Grenadier"/>
+						<State Id="3814499265" Name="Explo"/>
+					</States>
+				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{AAF8D63D-C4AC-BB31-D50D-49D87F782133}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{1EB5940A-CC60-F14C-28F5-57FBB2CB2D22}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -796,13 +825,13 @@
 						<MediaRef Id="992948447"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1977240871" Name="Play_Eeldog_Dive" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.7239583" DurationMax="0.7239583">
+				<Event Id="1977240871" Name="Play_Eeldog_Dive" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.6449735" DurationMax="0.8126157">
 					<MediaRefs>
 						<MediaRef Id="419452041"/>
 						<MediaRef Id="800417670"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1667970722" Name="Play_Eeldog_Emerge" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.0529584" DurationMax="1.3090416">
+				<Event Id="1667970722" Name="Play_Eeldog_Emerge" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.93807924" DurationMax="1.4693495">
 					<MediaRefs>
 						<MediaRef Id="95557772"/>
 						<MediaRef Id="230036814"/>
@@ -848,7 +877,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C7938D7E-9D47-8219-CB0A-2B2582CAD131}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0E368EFD-6148-77F7-5971-C4EFD0C607AF}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -1161,7 +1190,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{E3ED0FC5-FF90-81EB-1661-CCF2F75E4C57}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{92746C13-C099-D260-F8D0-83B04366D967}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1254,6 +1283,11 @@
 					<Path>Media/1048301795.wem</Path>
 					<CachePath>SFX/AMB_PAD_Wetland_Loop_D79FB2B7.wem</CachePath>
 				</File>
+				<File Id="1069776302" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_PAD_Lake.wav</ShortName>
+					<Path>Media/1069776302.wem</Path>
+					<CachePath>SFX/AMB_PAD_Lake_D79FB2B7.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
 				<Event Id="2915382764" Name="Play_AMB_PAD_Cave" MaxAttenuation="20" DurationType="Infinite">
@@ -1277,6 +1311,7 @@
 						<MediaRef Id="905057815"/>
 						<MediaRef Id="950958287"/>
 						<MediaRef Id="981383364"/>
+						<MediaRef Id="1069776302"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="4220606807" Name="Play_AMB_PAD_River" MaxAttenuation="20" DurationType="Infinite">
@@ -1806,6 +1841,189 @@
 				</Event>
 			</Events>
 		</SoundBank>
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{0CDA4890-D94A-CBC6-330F-C2DD40A6D48C}">
+			<ShortName>Music_SNBK</ShortName>
+			<Path>Music_SNBK.bnk</Path>
+			<Media>
+				<File Id="10335529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Brass_Staccato_Big.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Brass_Staccato_Big_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="30381200" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Pad_Reverse.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Pad_Reverse_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="40036590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Ensemble_Staccato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Ensemble_Staccato_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="92775259" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Cello_Staccato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Cello_Staccato_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="96405704" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Percs.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Percs_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="117296435" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Pattern_06.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Pattern_06_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="153011830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Violin_Staccato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Violin_Staccato_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="195277539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition_Brass_Staccato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_Brass_Staccato_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="223116021" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Harp.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Harp_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="237116305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Percs_Explo.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Percs_Explo_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="283479670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition_Trill.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_Trill_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="449424071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Oud.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Oud_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="490249142" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition_Trill_Low.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_Trill_Low_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="512203222" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Horns.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Horns_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="522251506" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Glockenspiel.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Glockenspiel_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="522762439" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Pad.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Pad_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="714256941" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Brass_Staccato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Brass_Staccato_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="740812545" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Taiko.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Taiko_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="751781103" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition_Tremolo.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_Tremolo_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="794485525" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="825955342" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Harp_Low.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Harp_Low_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="936509688" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Pad_Duduk.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Pad_Duduk_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="950409262" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Ensemble_Legato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Ensemble_Legato_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1046827334" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition_Smooth.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_Smooth_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1061964510" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Violin_Legato_High.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Violin_Legato_High_D79FB2B7.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="658055879" Name="Bass_Remover_1 (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="843039148" Name="Bass_Remover_1 (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
+			</Plugins>
+			<Events>
+				<Event Id="2932096340" Name="Play_Music_Theme_Switch" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="195277539"/>
+						<MediaRef Id="283479670"/>
+						<MediaRef Id="490249142"/>
+						<MediaRef Id="751781103"/>
+						<MediaRef Id="794485525"/>
+						<MediaRef Id="1046827334"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="658055879"/>
+							<PluginRef Id="843039148"/>
+						</Custom>
+					</PluginRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="3814499265"/>
+							<MediaRefs>
+								<MediaRef Id="30381200"/>
+								<MediaRef Id="153011830"/>
+								<MediaRef Id="223116021"/>
+								<MediaRef Id="237116305"/>
+								<MediaRef Id="449424071"/>
+								<MediaRef Id="522251506"/>
+								<MediaRef Id="522762439"/>
+								<MediaRef Id="825955342"/>
+								<MediaRef Id="936509688"/>
+								<MediaRef Id="1061964510"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="626462014"/>
+							<MediaRefs>
+								<MediaRef Id="40036590"/>
+								<MediaRef Id="92775259"/>
+								<MediaRef Id="96405704"/>
+								<MediaRef Id="714256941"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="529726532"/>
+							<MediaRefs>
+								<MediaRef Id="117296435"/>
+							</MediaRefs>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="3826569560" Id="1783027799"/>
+							<MediaRefs>
+								<MediaRef Id="10335529"/>
+								<MediaRef Id="40036590"/>
+								<MediaRef Id="512203222"/>
+								<MediaRef Id="740812545"/>
+								<MediaRef Id="950409262"/>
+							</MediaRefs>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="529726532" Name="End"/>
+						<State Id="626462014" Name="Fight_Chomper"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1783027799" Name="Fight_Grenadier"/>
+						<State Id="3814499265" Name="Explo"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
 		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{EFF3BEF9-81BF-8A22-5FB4-F30D1A22FFE4}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
@@ -2247,5 +2465,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{36C857ED-FB88-0A47-080F-F56ECF22AA50}</FileHash>
+	<FileHash>{E9B72540-14B5-B116-1512-6BFEBCF1C3C5}</FileHash>
 </SoundBanksInfo>

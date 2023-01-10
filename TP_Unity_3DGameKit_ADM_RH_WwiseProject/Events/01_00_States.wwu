@@ -25,6 +25,62 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Set_State_Fight_Grenadier" ID="{5C38AB69-9CC2-407E-94B3-82C7F450066A}">
+					<ChildrenList>
+						<Action Name="" ID="{E106A010-19ED-4B4A-8193-FB64CFC946D9}" ShortID="903097105">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight_Grenadier" ID="{0CAAE32D-C69A-41A0-8627-A0ADB8416B74}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Explo" ID="{ADC1C055-D69A-4907-9AE6-8FDBDDF3EF6A}">
+					<ChildrenList>
+						<Action Name="" ID="{83946017-F1DE-46EA-B42D-EBDA68E6E111}" ShortID="238180007">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Fight_Chomper" ID="{B6B55DD3-EDE8-4049-B28D-3C02CCD690A1}">
+					<ChildrenList>
+						<Action Name="" ID="{26380FB3-1C44-4D4F-9A87-78CFAED87284}" ShortID="135644524">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_End" ID="{5758253E-9946-45D5-9090-E769F5CB587A}">
+					<ChildrenList>
+						<Action Name="" ID="{0DD91CB8-1A5B-4AE7-922D-98331B656083}" ShortID="933296463">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="End" ID="{AA17C5A9-B07E-477B-BC94-64CB7EA18A46}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

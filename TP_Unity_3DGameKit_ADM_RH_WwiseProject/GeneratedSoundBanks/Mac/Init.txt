@@ -28,6 +28,7 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	44591952	Dead	Health	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
 	100964826	Pause_ON	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01		
+	562245268	Pause_ON	Pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Music		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	

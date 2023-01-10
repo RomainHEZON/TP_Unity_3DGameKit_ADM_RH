@@ -13,6 +13,7 @@
 				<WorkUnit Name="00_80_Spitter" ID="{A8BA9A93-5E31-4B64-B446-935FBCC0EA91}" PersistMode="Reference"/>
 				<WorkUnit Name="00_90_UI" ID="{DD8D4F24-77D5-4C52-805F-C23BE4469BDE}" PersistMode="Reference"/>
 				<WorkUnit Name="01_00_States" ID="{75883708-8548-488B-B855-556EBEC98432}" PersistMode="Reference"/>
+				<WorkUnit Name="02_00_Music" ID="{49D72A57-8C96-4624-BB05-A0F9D0F33394}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

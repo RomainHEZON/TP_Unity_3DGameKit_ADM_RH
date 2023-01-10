@@ -41,7 +41,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}"/>
-							<Value>6.784</Value>
+							<Value>19.3481481481481</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
@@ -51,14 +51,45 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
-						<CurrentStateRef Name="None" ID="{18A9D443-CF38-4919-9778-63E7B86B26E5}"/>
-						<CurrentStateRef Name="None" ID="{D8AE0270-86AC-4660-BB10-98276F47A5CB}"/>
-						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
+						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
+						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
 						<CurrentSwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
 					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Test Music" ID="{AA0C24E9-AD87-4E99-904D-C4B2432150F6}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music_Theme_Switch" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}" WorkUnitID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Explo" ID="{ADC1C055-D69A-4907-9AE6-8FDBDDF3EF6A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Fight_Chomper" ID="{B6B55DD3-EDE8-4049-B28D-3C02CCD690A1}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Fight_Grenadier" ID="{5C38AB69-9CC2-407E-94B3-82C7F450066A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_End" ID="{5758253E-9946-45D5-9090-E769F5CB587A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
+						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

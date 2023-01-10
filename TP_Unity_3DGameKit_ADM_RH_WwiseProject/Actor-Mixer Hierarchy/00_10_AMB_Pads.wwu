@@ -137,6 +137,13 @@
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{86152B41-B2D2-4C76-9EE7-4EF3E9D9ADBA}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -177,6 +184,13 @@
 									</ValueList>
 								</Property>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{4C1F4F58-BA69-44DF-8DAA-6507B57C6E05}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 							</PropertyList>
 							<ReferenceList>
@@ -359,6 +373,13 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{C31BC269-F3F1-4643-8904-0D8DAC69EA30}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
@@ -756,27 +777,24 @@
 												<Value>100</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="IsStreamingEnabled" Type="bool">
 											<ValueList>
 												<Value>True</Value>
 											</ValueList>
 										</Property>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DEC01579-13C6-4D7F-8A6A-CBAD0B80894B}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

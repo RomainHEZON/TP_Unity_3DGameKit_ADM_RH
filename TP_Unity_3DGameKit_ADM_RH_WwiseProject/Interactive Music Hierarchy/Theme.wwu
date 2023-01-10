@@ -8,7 +8,7 @@
 						<Property Name="Tempo" Type="Real64" Value="160"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-6</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -36,7 +36,7 @@
 							<ChildrenList>
 								<MusicSegment Name="Theme_3D_GAME_KIT_Explo_02" ID="{35104CFD-71B9-4779-B3DF-65DAE4C4607D}" ShortID="381759600">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="18132.8117913832"/>
+										<Property Name="EndPosition" Type="Real64" Value="22511.7233560091"/>
 										<Property Name="Tempo" Type="Real64" Value="160"/>
 									</PropertyList>
 									<ReferenceList>
@@ -154,6 +154,121 @@
 													<Reference>
 														<Local>
 															<MusicTrackSequence Name="" ID="{85A5FF5D-11DB-4550-BBAA-AB57087A9C94}"/>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Theme_3D_GAME_KIT_Pad_Duduk" ID="{B5DE00FF-C887-4294-87FA-70F94F175FD2}" ShortID="621621716">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Theme_3D_GAME_KIT_Pad_Duduk" ID="{6FF9F991-3F3F-45BD-8BA4-9E13F8E3C6EE}">
+													<Language>SFX</Language>
+													<AudioFile>Theme_3D_GAME_KIT_Pad_Duduk.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="936509688"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{B65F11B7-0DEE-44B7-AB87-733C8EA9EAB6}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{95908FF9-4DFB-4753-8B2C-E73507D16BF7}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Theme_3D_GAME_KIT_Pad_Duduk" ID="{CC90B7B6-EF4C-46BB-A691-CF7313F5BFF0}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="17714.8526077098"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Pad_Duduk" ID="{6FF9F991-3F3F-45BD-8BA4-9E13F8E3C6EE}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{E95D1184-CE0D-408C-87ED-ABC20F7C4EB1}"/>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Theme_3D_GAME_KIT_Pad_Reverse" ID="{DE183608-53A5-4BA0-A6DD-F5E2B13D560B}" ShortID="888522557">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Theme_3D_GAME_KIT_Pad_Reverse" ID="{A0FC139B-0054-4E4E-BA67-62259FD962D4}">
+													<Language>SFX</Language>
+													<AudioFile>Theme_3D_GAME_KIT_Pad_Reverse.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="30381200"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{67277B08-447C-4E2C-AA2D-F52DC9856E4A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5AA9011D-239A-40C7-8DD3-3F2D238B1EE0}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Theme_3D_GAME_KIT_Pad_Reverse" ID="{C13F94F7-2B9D-41AC-805D-4A62109BFE52}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="22511.7233560091"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Pad_Reverse" ID="{A0FC139B-0054-4E4E-BA67-62259FD962D4}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
 														</Local>
 													</Reference>
 												</ObjectList>
@@ -2299,29 +2414,10 @@
 										<Property Name="EndPosition" Type="Real64" Value="12214.8412698413"/>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="160"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="Effect0">
-											<Custom CreatedFrom="{D313DB05-6B33-4C1F-8C2F-F989052E8120}">
-												<Effect Name="Bass_Remover_1 (Custom)" ID="{E9F8B33B-BB95-4A40-B444-ACE51C57365E}" ShortID="958335744" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-													<PropertyList>
-														<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
-														<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
-														<Property Name="FrequencyBand1" Type="Real32" Value="56"/>
-														<Property Name="FrequencyBand2" Type="Real32" Value="100"/>
-														<Property Name="GainBand2" Type="Real32" Value="-4.5"/>
-														<Property Name="OnOffBand3" Type="bool" Value="False"/>
-													</PropertyList>
-												</Effect>
-											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
@@ -2329,7 +2425,29 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="Theme_3D_GAME_KIT_Transition" ID="{7E8383C9-9EAE-4F84-8713-008B0C9468F0}" ShortID="619476381">
+											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{D313DB05-6B33-4C1F-8C2F-F989052E8120}">
+														<Effect Name="Bass_Remover_1 (Custom)" ID="{11A4C029-AC46-417C-9C14-DB0024B72FBE}" ShortID="843039148" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+																<Property Name="FilterTypeBand2" Type="int32" Value="4"/>
+																<Property Name="FrequencyBand1" Type="Real32" Value="56"/>
+																<Property Name="FrequencyBand2" Type="Real32" Value="100"/>
+																<Property Name="GainBand2" Type="Real32" Value="-4.5"/>
+																<Property Name="OnOffBand3" Type="bool" Value="False"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 												</Reference>
@@ -2362,10 +2480,11 @@
 																			<Local>
 																				<MusicClip Name="Theme_3D_GAME_KIT_Transition" ID="{B23417DA-82ED-4645-A122-AFB6ECC86B63}">
 																					<PropertyList>
-																						<Property Name="BeginTrimOffset" Type="Real64" Value="1983.1002281152"/>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="2950.82532871885"/>
 																						<Property Name="EndTrimOffset" Type="Real64" Value="8839.84126984127"/>
-																						<Property Name="FadeInDuration" Type="Real64" Value="1752.65768220434"/>
+																						<Property Name="FadeInDuration" Type="Real64" Value="1064.49761066399"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-1185.45020120727"/>
 																					</PropertyList>
 																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Transition" ID="{CAB0CB8C-ACE8-4850-A075-FB8BF21F82AD}"/>
 																					<PropertyCurveList>
@@ -2376,7 +2495,7 @@
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>1.9831</XPos>
+																										<XPos>2.95083</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
@@ -2395,7 +2514,7 @@
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>1.9831</XPos>
+																										<XPos>2.95083</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
@@ -2414,13 +2533,189 @@
 																								</PropertyList>
 																								<PointList>
 																									<Point>
-																										<XPos>1.9831</XPos>
+																										<XPos>2.95083</XPos>
 																										<YPos>0</YPos>
 																										<Flags>5</Flags>
 																									</Point>
 																									<Point>
 																										<XPos>8.83984126984127</XPos>
 																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Theme_3D_GAME_KIT_Transition_Trill" ID="{9ED1D295-C4F4-4B81-B000-FE33DC92452D}" ShortID="252228122">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Theme_3D_GAME_KIT_Transition_Trill" ID="{D1A4CB14-5393-47B9-A08D-ECDBC51B7F08}">
+													<Language>SFX</Language>
+													<AudioFile>Theme_3D_GAME_KIT_Transition_Trill.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="283479670"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Theme_3D_GAME_KIT_Transition_Trill_Low" ID="{45F7D2E9-ABF3-43C7-836D-90299421D0CE}">
+													<Language>SFX</Language>
+													<AudioFile>Theme_3D_GAME_KIT_Transition_Trill_Low.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="490249142"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Theme_3D_GAME_KIT_Transition_Tremolo" ID="{6384073B-2A75-45CE-97E2-D0DB7680ADD1}">
+													<Language>SFX</Language>
+													<AudioFile>Theme_3D_GAME_KIT_Transition_Tremolo.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="751781103"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{2209E69E-C71F-4C12-BF75-BF46C50217F6}">
+													<Language>SFX</Language>
+													<AudioFile>Theme_3D_GAME_KIT_Transition_Brass_Staccato.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="195277539"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<TransitionList>
+												<MusicTransition Name="Root" ID="{CB37B09A-69CB-4207-A048-FD4E575B27F4}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</TransitionList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{0C0C722E-AB53-46BD-8C58-7098B1842A2F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Theme_3D_GAME_KIT_Transition_Trill" ID="{82DB6D36-E456-4FC6-9F96-D24643578CDD}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="6617.18820861678"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Transition_Trill" ID="{D1A4CB14-5393-47B9-A08D-ECDBC51B7F08}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{0FC64C37-010D-4113-A4F5-C64BE4CCAF4B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Theme_3D_GAME_KIT_Transition_Trill_Low" ID="{56EB4298-DDBE-49A6-B0CB-5AFC1F865F1D}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="7000"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Transition_Trill_Low" ID="{45F7D2E9-ABF3-43C7-836D-90299421D0CE}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{BB9E6D05-F144-4854-BB78-4F0E83DAC57A}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Theme_3D_GAME_KIT_Transition_Tremolo" ID="{055E7C54-D3C7-45AA-9BE8-2F31A2111471}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="6824.21768707483"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Transition_Tremolo" ID="{6384073B-2A75-45CE-97E2-D0DB7680ADD1}"/>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{59983719-2842-4731-8CC7-A823370664E7}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{496E4357-3A54-486E-8318-AAE233FF032B}">
+																					<PropertyList>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="6003.90022675737"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{2209E69E-C71F-4C12-BF75-BF46C50217F6}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{4869DA49-67F5-48F4-B197-A659235ECDC1}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0</XPos>
+																										<YPos>-5.27151</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>1.67739</XPos>
+																										<YPos>-5.27152</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>2.98919</XPos>
+																										<YPos>-10.45602</YPos>
+																										<Flags>0</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>6.00390022675737</XPos>
+																										<YPos>-10.71305</YPos>
 																										<Flags>37</Flags>
 																									</Point>
 																								</PointList>
@@ -2445,7 +2740,7 @@
 												<Local>
 													<MusicCue Name="Entry Cue" ID="{4CCE4406-CF95-4483-9F0F-6A8A901ED21D}">
 														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="1983.1002281152"/>
+															<Property Name="TimeMs" Type="Real64" Value="1015.37512751158"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -2455,7 +2750,7 @@
 													<MusicCue Name="Exit Cue" ID="{1E315130-8A50-47A3-A16D-166EFE4523A3}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="4139.3502281152"/>
+															<Property Name="TimeMs" Type="Real64" Value="3010.33761074431"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -3803,6 +4098,7 @@
 								<MusicTransition Name="Transition" ID="{0B98120F-437F-4E9F-8E2B-D363A5865173}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
@@ -3842,6 +4138,7 @@
 								<MusicTransition Name="Transition" ID="{08709A39-6D4E-4EEA-8316-F10A8FF54523}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
@@ -3872,6 +4169,9 @@
 								<MusicTransition Name="Transition" ID="{A0FBCE39-5116-48AB-9AE3-655F61E8B7E7}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="4"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
+										<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
@@ -3891,17 +4191,27 @@
 											<MusicFade Name="Source Fade-out" ID="{559FE5E7-2CE0-4BC9-8005-4B77605D508B}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="2"/>
-													<Property Name="FadeOffset" Type="Real64" Value="3"/>
+													<Property Name="FadeOffset" Type="Real64" Value="2"/>
 													<Property Name="FadeTime" Type="Real64" Value="2.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
 											</MusicFade>
 										</SourceFadeOut>
+										<DestinationFadeIn>
+											<MusicFade Name="Destination Fade-in" ID="{8D02B723-A1D4-441A-8102-42F65D325D8C}">
+												<PropertyList>
+													<Property Name="FadeCurve" Type="int16" Value="1"/>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+												</PropertyList>
+											</MusicFade>
+										</DestinationFadeIn>
 									</TransitionInfo>
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{2589B346-C285-4FCE-B454-C129E32E39B8}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="4"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
@@ -3921,7 +4231,7 @@
 											<MusicFade Name="Source Fade-out" ID="{0BE82162-0E4C-4A47-873F-04828E5B3902}">
 												<PropertyList>
 													<Property Name="FadeCurve" Type="int16" Value="2"/>
-													<Property Name="FadeOffset" Type="Real64" Value="3"/>
+													<Property Name="FadeOffset" Type="Real64" Value="1"/>
 													<Property Name="FadeTime" Type="Real64" Value="2.5"/>
 													<Property Name="FadeType" Type="int16" Value="1"/>
 												</PropertyList>
@@ -3932,6 +4242,8 @@
 								<MusicTransition Name="Transition" ID="{3E8F1BA2-7AA0-4C49-8A16-E22E06AE797B}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="4"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="JumpToCustomCueMatchName" Type="string" Value="Half"/>
@@ -3963,6 +4275,8 @@
 								<MusicTransition Name="Transition" ID="{0FE316C1-184F-46D3-898A-392AA2D1807B}">
 									<PropertyList>
 										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="4"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>
@@ -3992,6 +4306,8 @@
 								</MusicTransition>
 								<MusicTransition Name="Transition" ID="{863F0360-1E47-484B-85B1-650EC005366A}">
 									<PropertyList>
+										<Property Name="DestinationJumpPositionPreset" Type="int16" Value="4"/>
+										<Property Name="DestinationPlaylistJumpTo" Type="int16" Value="2"/>
 										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 										<Property Name="ExitSourceAt" Type="int16" Value="5"/>
 										<Property Name="SourceContextType" Type="int16" Value="2"/>

@@ -50,6 +50,7 @@ namespace AK
         static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
         static const AkUniqueID PLAY_HEARTBEAT = 3765695918U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
+        static const AkUniqueID PLAY_MUSIC_THEME_SWITCH = 2932096340U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
@@ -91,6 +92,10 @@ namespace AK
         static const AkUniqueID PLAY_VO_INHALE = 3751336843U;
         static const AkUniqueID PLAY_VO_PAIN = 72136190U;
         static const AkUniqueID SET_STATE_DEAD = 3796261246U;
+        static const AkUniqueID SET_STATE_END = 2300403011U;
+        static const AkUniqueID SET_STATE_EXPLO = 3742218146U;
+        static const AkUniqueID SET_STATE_FIGHT_CHOMPER = 846679953U;
+        static const AkUniqueID SET_STATE_FIGHT_GRENADIER = 407065776U;
         static const AkUniqueID STOP_ALLSOUNDS = 3789712745U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
     } // namespace EVENTS
@@ -214,6 +219,7 @@ namespace AK
         static const AkUniqueID ELLEN_LOCO_SNBK = 3228081768U;
         static const AkUniqueID ELLEN_SFX_SNBK = 2516908676U;
         static const AkUniqueID GRENADIER_SNBK = 1568914985U;
+        static const AkUniqueID MUSIC_SNBK = 3144867095U;
         static const AkUniqueID SFX_SNBK = 833899935U;
         static const AkUniqueID SPITTER_SNBK = 4080968021U;
         static const AkUniqueID STATES = 1208172739U;

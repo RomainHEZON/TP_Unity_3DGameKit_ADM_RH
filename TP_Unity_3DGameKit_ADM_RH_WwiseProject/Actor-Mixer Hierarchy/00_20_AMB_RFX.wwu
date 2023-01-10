@@ -17,695 +17,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="Spaceship" ID="{2CCD11F2-9614-483C-801B-E13B1FBE8A81}" ShortID="820298919">
-							<ChildrenList>
-								<Sound Name="AMB_RFX_Morse_Code_Loop" ID="{08B31DE9-91FB-42FC-B72A-B4D746211A01}" ShortID="143638263">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
-										<Property Name="CenterPercentage" Type="int32">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>71</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{AD71AF61-988C-40D5-BF76-25636E5D192B}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<Custom CreatedFrom="{0B27E7AE-D886-47C9-A7D0-22F4FE5905C8}">
-												<Attenuation Name="ATN_10m (Custom)" ID="{FC4907D3-49CB-4C51-9DB2-4D7A9A167DF6}" ShortID="771284946">
-													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="10"/>
-													</PropertyList>
-													<CurveUsageInfoList>
-														<VolumeDryUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{9247A4F7-2F1B-4AED-A374-9DEA429B7678}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="3"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																		</Point>
-																		<Point>
-																			<XPos>0.30264</XPos>
-																			<YPos>0</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Log1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>10</XPos>
-																			<YPos>-200</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</VolumeDryUsage>
-														<VolumeWetGameUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetGameUsage>
-														<VolumeWetUserUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetUserUsage>
-														<LowPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="LowPassFilter" ID="{EF8DAE68-8B5E-4E04-A1C0-4539B2E562E7}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="65537"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																			<SegmentShape>Log1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>6.55086</XPos>
-																			<YPos>9</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Exp1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>10</XPos>
-																			<YPos>33</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</LowPassFilterUsage>
-														<HighPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="HighPassFilter" ID="{7E9C6B8A-11B5-4E75-8E47-7EFA393308A0}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="65537"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																		</Point>
-																		<Point>
-																			<XPos>6.5</XPos>
-																			<YPos>20</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Exp1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>10</XPos>
-																			<YPos>50</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</HighPassFilterUsage>
-														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="Spread" ID="{02BF4DCA-F600-4618-9C15-139AEA9D2A2F}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="1"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>5.34391</YPos>
-																			<Flags>5</Flags>
-																			<SegmentShape>Exp1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>4.22381</XPos>
-																			<YPos>2.75132</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Log1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>10</XPos>
-																			<YPos>0</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</SpreadUsage>
-														<FocusUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</FocusUsage>
-														<ObstructionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</ObstructionVolumeUsage>
-														<ObstructionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</ObstructionLPFUsage>
-														<ObstructionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</ObstructionHPFUsage>
-														<OcclusionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</OcclusionVolumeUsage>
-														<OcclusionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</OcclusionLPFUsage>
-														<OcclusionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</OcclusionHPFUsage>
-														<DiffractionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</DiffractionVolumeUsage>
-														<DiffractionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</DiffractionLPFUsage>
-														<DiffractionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</DiffractionHPFUsage>
-														<TransmissionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</TransmissionVolumeUsage>
-														<TransmissionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</TransmissionLPFUsage>
-														<TransmissionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</TransmissionHPFUsage>
-													</CurveUsageInfoList>
-												</Attenuation>
-											</Custom>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_RFX_Morse_Code_Loop" ID="{F922F52D-62C9-4861-B289-AE6A866D0EA1}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_RFX_Morse_Code_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="249634031"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_RFX_Morse_Code_Loop" ID="{F922F52D-62C9-4861-B289-AE6A866D0EA1}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<RandomSequenceContainer Name="Radio_RFX_Looper" ID="{40875FA2-C345-48B2-97D0-ACCE16A92C91}" ShortID="993831904">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="CenterPercentage" Type="int32">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{57E21090-2A58-45E1-9B31-13C5AE9178D2}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="50"/>
-															<Property Name="Min" Type="Real64" Value="-50"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{DBAF82B3-BFFE-4B50-8A4B-C6E7D18B2829}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="1"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<Custom CreatedFrom="{32C5B6B1-D933-4E94-B73B-8FC1743BA371}">
-												<Attenuation Name="ATN_5m (Custom)" ID="{CDA130E6-C3CD-41B9-AC4C-4223D806B9B2}" ShortID="554694269">
-													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="5"/>
-													</PropertyList>
-													<CurveUsageInfoList>
-														<VolumeDryUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="VolumeDry" ID="{32CEF65F-76E5-41F9-9B10-480DEDA0398E}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="3"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																		</Point>
-																		<Point>
-																			<XPos>0.58087</XPos>
-																			<YPos>0</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Log1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>5</XPos>
-																			<YPos>-200</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</VolumeDryUsage>
-														<VolumeWetGameUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetGameUsage>
-														<VolumeWetUserUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-														</VolumeWetUserUsage>
-														<LowPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="LowPassFilter" ID="{C9472ABD-163E-49E9-BE4E-6A0413937C91}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="65537"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																			<SegmentShape>Log1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>3</XPos>
-																			<YPos>15</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Exp1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>5</XPos>
-																			<YPos>60</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</LowPassFilterUsage>
-														<HighPassFilterUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="HighPassFilter" ID="{555F1C11-27B3-47D8-95DA-4B133038C3EA}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="65537"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>0</YPos>
-																			<Flags>5</Flags>
-																		</Point>
-																		<Point>
-																			<XPos>3</XPos>
-																			<YPos>15</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Exp1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>5</XPos>
-																			<YPos>40</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</HighPassFilterUsage>
-														<SpreadUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																<Curve Name="Spread" ID="{A6481AEC-C152-4297-BFA3-7FBB778DF719}">
-																	<PropertyList>
-																		<Property Name="Flags" Type="int32" Value="1"/>
-																	</PropertyList>
-																	<PointList>
-																		<Point>
-																			<XPos>0</XPos>
-																			<YPos>40</YPos>
-																			<Flags>5</Flags>
-																			<SegmentShape>Exp1</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>2</XPos>
-																			<YPos>27.91985</YPos>
-																			<Flags>0</Flags>
-																			<SegmentShape>Log2</SegmentShape>
-																		</Point>
-																		<Point>
-																			<XPos>5</XPos>
-																			<YPos>10</YPos>
-																			<Flags>37</Flags>
-																		</Point>
-																	</PointList>
-																</Curve>
-															</CurveUsageInfo>
-														</SpreadUsage>
-														<FocusUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-														</FocusUsage>
-														<ObstructionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</ObstructionVolumeUsage>
-														<ObstructionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</ObstructionLPFUsage>
-														<ObstructionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</ObstructionHPFUsage>
-														<OcclusionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</OcclusionVolumeUsage>
-														<OcclusionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</OcclusionLPFUsage>
-														<OcclusionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</OcclusionHPFUsage>
-														<DiffractionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</DiffractionVolumeUsage>
-														<DiffractionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</DiffractionLPFUsage>
-														<DiffractionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</DiffractionHPFUsage>
-														<TransmissionVolumeUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</TransmissionVolumeUsage>
-														<TransmissionLPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</TransmissionLPFUsage>
-														<TransmissionHPFUsage>
-															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-														</TransmissionHPFUsage>
-													</CurveUsageInfoList>
-												</Attenuation>
-											</Custom>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Spaceship_Radio_SC" ID="{B932D8B2-243B-4101-9527-BACD804BEDB2}" ShortID="617753461">
-											<PropertyList>
-												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{7DEFA282-D8DF-4654-B2C0-E8B497228B50}">
-																<PropertyList>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-1"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>12</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<RandomSequenceContainer Name="Phrase_Debut" ID="{A7E9F054-455D-4980-B716-2DE97A210CD6}" ShortID="961404096">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="AMB_RFX_Spaceship_Radio_01" ID="{3E233546-4F57-4CE9-B06E-7472FE52FF71}" ShortID="676137126">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_01" ID="{8D5C0BC6-D403-4DCE-A680-82D854E234A7}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_01.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="990828257"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_01" ID="{8D5C0BC6-D403-4DCE-A680-82D854E234A7}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_RFX_Spaceship_Radio_04" ID="{DE14A5CF-4C9A-46D3-9408-8295FE8DFCDA}" ShortID="720045829">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_04" ID="{532CE083-5001-41A3-9841-F90A20005DD9}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_04.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="360406144"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_04" ID="{532CE083-5001-41A3-9841-F90A20005DD9}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Phrase_Milieu" ID="{46416D5B-9E09-40BB-BCF9-26E74C5515AF}" ShortID="884184871">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="AMB_RFX_Spaceship_Radio_02" ID="{9E0657B2-7A38-4CD8-A75D-1CB21956E6FE}" ShortID="802076357">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_02" ID="{669A2111-FF87-42A9-BB50-6938165DF3A8}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_02.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="365716477"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_02" ID="{669A2111-FF87-42A9-BB50-6938165DF3A8}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_RFX_Spaceship_Radio_03" ID="{E3333515-DAF0-481E-8D6C-228A9A6036AF}" ShortID="14615792">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_03" ID="{758AB5CA-D7A4-4566-BE29-AF9D9866E452}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_03.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="987360822"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_03" ID="{758AB5CA-D7A4-4566-BE29-AF9D9866E452}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_RFX_Spaceship_Radio_05" ID="{DB854E0C-BC90-495A-9961-1E9BDC4C9703}" ShortID="90931887">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_05" ID="{98B0186C-07D9-41B3-B378-93F2C2CB1B9F}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_05.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="333726041"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_05" ID="{98B0186C-07D9-41B3-B378-93F2C2CB1B9F}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-												<RandomSequenceContainer Name="Phrase_Fin" ID="{B2551E58-CB4E-4574-A6CA-D03F9172C0EC}" ShortID="52676529">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<Sound Name="AMB_RFX_Spaceship_Radio_06" ID="{25013842-FAD3-4E47-944A-DB85AA42D00F}" ShortID="673289253">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_06" ID="{F7BB3988-AB43-49ED-BBAE-954546018F20}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_06.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="263689023"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_06" ID="{F7BB3988-AB43-49ED-BBAE-954546018F20}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="AMB_RFX_Spaceship_Radio_07" ID="{75199E08-3B73-40B7-BB6E-AFA7CFA12718}" ShortID="127074324">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_07" ID="{0BCD77A2-4B05-437A-B8F0-9322ED02ED20}">
-																	<Language>SFX</Language>
-																	<AudioFile>AMB_RFX_Spaceship_Radio_07.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="906360689"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="AMB_RFX_Spaceship_Radio_07" ID="{0BCD77A2-4B05-437A-B8F0-9322ED02ED20}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-													</ChildrenList>
-												</RandomSequenceContainer>
-											</ChildrenList>
-											<Playlist>
-												<ItemRef Name="Phrase_Debut" ID="{A7E9F054-455D-4980-B716-2DE97A210CD6}"/>
-												<ItemRef Name="Phrase_Milieu" ID="{46416D5B-9E09-40BB-BCF9-26E74C5515AF}"/>
-												<ItemRef Name="Phrase_Fin" ID="{B2551E58-CB4E-4574-A6CA-D03F9172C0EC}"/>
-											</Playlist>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<Playlist>
-										<ItemRef Name="Spaceship_Radio_SC" ID="{B932D8B2-243B-4101-9527-BACD804BEDB2}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</Folder>
 						<RandomSequenceContainer Name="Vine_RC" ID="{ACBA5D82-4998-41F6-B4CA-69EC805B9FB9}" ShortID="374494915">
 							<PropertyList>
 								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
@@ -1022,7 +333,24 @@
 								</Position>
 							</PositioningInfo>
 						</RandomSequenceContainer>
-						<Folder Name="Animals" ID="{EEBF66F2-BA6C-4BEF-8387-6B23FE36BE5A}" ShortID="32734021">
+						<ActorMixer Name="Animals_Mixer" ID="{05076193-5092-4EF7-8030-684D1572701E}" ShortID="891957138">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{229B4F0F-9EB1-451B-9B64-DE7914F2E35E}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<RandomSequenceContainer Name="Big_Creature_A_RC" ID="{4D83EE54-4C19-4A3F-A124-F8A50107185C}" ShortID="304453275">
 									<PropertyList>
@@ -2159,6 +1487,511 @@
 										</Position>
 									</PositioningInfo>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Eeldog_Dive_RC" ID="{CBD40832-5494-4451-B63C-9E6F895E3CC0}" ShortID="212792750">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AAAAA65D-7D0D-4782-9B93-4C83E78CD313}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}">
+												<Attenuation Name="ATN_20m (Custom)" ID="{C3DE4A9A-5768-4CC1-BDBD-8850E205261B}" ShortID="866551527">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{C335E2A5-0288-40A9-B556-E5AC162A3281}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>4</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>15</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{68655C3F-15DD-4903-B42A-A9894ABC4165}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{1EE745E7-2ADC-4E72-BDB6-6DCA7948D35C}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12</XPos>
+																			<YPos>20</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{CB903DAB-1947-4A31-AF35-4A5F5DB6DD77}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>45</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>7.5</XPos>
+																			<YPos>30</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>10</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Eeldog_Dive_01" ID="{A84BEA0F-9D28-45A4-A827-3ACE280A2F53}" ShortID="480944199">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Eeldog_Dive_01" ID="{9F208FCC-52AB-43BC-B25F-1B818CDCFAE0}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Eeldog_Dive_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="800417670"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Eeldog_Dive_01" ID="{9F208FCC-52AB-43BC-B25F-1B818CDCFAE0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Eeldog_Dive_02" ID="{2A42DE96-D976-48F3-8CAF-2817DE2DA23F}" ShortID="660128513">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Eeldog_Dive_02" ID="{2FB3AC02-96B8-482F-9B1B-9DD597E4A363}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Eeldog_Dive_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="419452041"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Eeldog_Dive_02" ID="{2FB3AC02-96B8-482F-9B1B-9DD597E4A363}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Eeldog_Emerge_RC" ID="{B97CA097-187A-4A79-88FC-FC1BEF22F9A4}" ShortID="327693394">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4848EC1E-9F7F-4818-8DB2-8C7C9408161B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}">
+												<Attenuation Name="ATN_20m (Custom)" ID="{9E4D084E-CF6D-419C-AA77-BEFB079F7F2C}" ShortID="83540122">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{3D1AD62B-A070-4284-BE75-5B0252FFB53C}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>4</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>15</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{5E2D019C-AD2F-49DE-8182-88597EBCDF36}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{C44D499D-8134-498B-BC7B-4D3D2AA3D244}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12</XPos>
+																			<YPos>20</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{6E0F1E23-22A5-45AD-AC9F-8AD0A8740963}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>45</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>7.5</XPos>
+																			<YPos>30</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>10</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="SFX_Eeldog_Emerge_01" ID="{BF62BDD6-68EF-4BB8-AAE8-88D5CBCCBDE8}" ShortID="472584231">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Eeldog_Emerge_01" ID="{E5925E7D-1C81-4046-BAB9-6215D4365119}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Eeldog_Emerge_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="95557772"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Eeldog_Emerge_01" ID="{E5925E7D-1C81-4046-BAB9-6215D4365119}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Eeldog_Emerge_02" ID="{5D0A352A-DA4F-4206-9709-024F87D9010F}" ShortID="909844065">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Eeldog_Emerge_02" ID="{2AFB4EED-636A-44EE-8707-06A59A275506}">
+													<Language>SFX</Language>
+													<AudioFile>SFX_Eeldog_Emerge_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="230036814"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Eeldog_Emerge_02" ID="{2AFB4EED-636A-44EE-8707-06A59A275506}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="ExoticAnimal_RC" ID="{6A88DE9A-2A89-4242-9B57-AB55DE948BD2}" ShortID="419591521">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -2368,491 +2201,714 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<Folder Name="Eeldog" ID="{DEA232C4-A9F3-462E-BC16-E2770B5E0FCD}" ShortID="1009558702">
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Spaceship_Mixer" ID="{7FA47412-4BD4-4D2A-9EED-3AC51BD638EF}" ShortID="905068331">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BED516EE-F1C9-43DA-9B6A-39D1B47B4E11}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Radio_RFX_Looper" ID="{40875FA2-C345-48B2-97D0-ACCE16A92C91}" ShortID="993831904">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{57E21090-2A58-45E1-9B31-13C5AE9178D2}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DBAF82B3-BFFE-4B50-8A4B-C6E7D18B2829}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{32C5B6B1-D933-4E94-B73B-8FC1743BA371}">
+												<Attenuation Name="ATN_5m (Custom)" ID="{CDA130E6-C3CD-41B9-AC4C-4223D806B9B2}" ShortID="554694269">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="5"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{32CEF65F-76E5-41F9-9B10-480DEDA0398E}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>0.58087</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{C9472ABD-163E-49E9-BE4E-6A0413937C91}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>3</XPos>
+																			<YPos>15</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{555F1C11-27B3-47D8-95DA-4B133038C3EA}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>3</XPos>
+																			<YPos>15</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>40</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{A6481AEC-C152-4297-BFA3-7FBB778DF719}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>40</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>2</XPos>
+																			<YPos>27.91985</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>5</XPos>
+																			<YPos>10</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Eeldog_Dive_RC" ID="{CBD40832-5494-4451-B63C-9E6F895E3CC0}" ShortID="212792750">
+										<RandomSequenceContainer Name="Spaceship_Radio_SC" ID="{B932D8B2-243B-4101-9527-BACD804BEDB2}" ShortID="617753461">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="CenterPercentage" Type="int32">
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7DEFA282-D8DF-4654-B2C0-E8B497228B50}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>100</Value>
+														<Value>12</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom CreatedFrom="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}">
-														<Attenuation Name="ATN_20m (Custom)" ID="{C3DE4A9A-5768-4CC1-BDBD-8850E205261B}" ShortID="866551527">
-															<PropertyList>
-																<Property Name="RadiusMax" Type="Real64" Value="20"/>
-															</PropertyList>
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{C335E2A5-0288-40A9-B556-E5AC162A3281}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>4</XPos>
-																					<YPos>0</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>15</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="LowPassFilter" ID="{68655C3F-15DD-4903-B42A-A9894ABC4165}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="65537"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>12</XPos>
-																					<YPos>25</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>60</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="HighPassFilter" ID="{1EE745E7-2ADC-4E72-BDB6-6DCA7948D35C}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="65537"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>12</XPos>
-																					<YPos>20</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>50</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="Spread" ID="{CB903DAB-1947-4A31-AF35-4A5F5DB6DD77}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="1"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>45</YPos>
-																					<Flags>5</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>7.5</XPos>
-																					<YPos>30</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>10</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-																<ObstructionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</ObstructionVolumeUsage>
-																<ObstructionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</ObstructionLPFUsage>
-																<ObstructionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</ObstructionHPFUsage>
-																<OcclusionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</OcclusionVolumeUsage>
-																<OcclusionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</OcclusionLPFUsage>
-																<OcclusionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</OcclusionHPFUsage>
-																<DiffractionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</DiffractionVolumeUsage>
-																<DiffractionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</DiffractionLPFUsage>
-																<DiffractionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</DiffractionHPFUsage>
-																<TransmissionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</TransmissionVolumeUsage>
-																<TransmissionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</TransmissionLPFUsage>
-																<TransmissionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</TransmissionHPFUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="SFX_Eeldog_Dive_01" ID="{A84BEA0F-9D28-45A4-A827-3ACE280A2F53}" ShortID="480944199">
+												<RandomSequenceContainer Name="Phrase_Debut" ID="{A7E9F054-455D-4980-B716-2DE97A210CD6}" ShortID="961404096">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_Eeldog_Dive_01" ID="{9F208FCC-52AB-43BC-B25F-1B818CDCFAE0}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_Eeldog_Dive_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="800417670"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="AMB_RFX_Spaceship_Radio_01" ID="{3E233546-4F57-4CE9-B06E-7472FE52FF71}" ShortID="676137126">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_01" ID="{8D5C0BC6-D403-4DCE-A680-82D854E234A7}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="990828257"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_01" ID="{8D5C0BC6-D403-4DCE-A680-82D854E234A7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Spaceship_Radio_04" ID="{DE14A5CF-4C9A-46D3-9408-8295FE8DFCDA}" ShortID="720045829">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_04" ID="{532CE083-5001-41A3-9841-F90A20005DD9}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="360406144"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_04" ID="{532CE083-5001-41A3-9841-F90A20005DD9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_Eeldog_Dive_01" ID="{9F208FCC-52AB-43BC-B25F-1B818CDCFAE0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_Eeldog_Dive_02" ID="{2A42DE96-D976-48F3-8CAF-2817DE2DA23F}" ShortID="660128513">
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Phrase_Milieu" ID="{46416D5B-9E09-40BB-BCF9-26E74C5515AF}" ShortID="884184871">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="SFX_Eeldog_Dive_02" ID="{2FB3AC02-96B8-482F-9B1B-9DD597E4A363}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_Eeldog_Dive_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="419452041"/>
-															</MediaIDList>
-														</AudioFileSource>
+														<Sound Name="AMB_RFX_Spaceship_Radio_02" ID="{9E0657B2-7A38-4CD8-A75D-1CB21956E6FE}" ShortID="802076357">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_02" ID="{669A2111-FF87-42A9-BB50-6938165DF3A8}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="365716477"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_02" ID="{669A2111-FF87-42A9-BB50-6938165DF3A8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Spaceship_Radio_03" ID="{E3333515-DAF0-481E-8D6C-228A9A6036AF}" ShortID="14615792">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_03" ID="{758AB5CA-D7A4-4566-BE29-AF9D9866E452}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="987360822"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_03" ID="{758AB5CA-D7A4-4566-BE29-AF9D9866E452}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Spaceship_Radio_05" ID="{DB854E0C-BC90-495A-9961-1E9BDC4C9703}" ShortID="90931887">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_05" ID="{98B0186C-07D9-41B3-B378-93F2C2CB1B9F}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="333726041"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_05" ID="{98B0186C-07D9-41B3-B378-93F2C2CB1B9F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
 													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_Eeldog_Dive_02" ID="{2FB3AC02-96B8-482F-9B1B-9DD597E4A363}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Phrase_Fin" ID="{B2551E58-CB4E-4574-A6CA-D03F9172C0EC}" ShortID="52676529">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="AMB_RFX_Spaceship_Radio_06" ID="{25013842-FAD3-4E47-944A-DB85AA42D00F}" ShortID="673289253">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_06" ID="{F7BB3988-AB43-49ED-BBAE-954546018F20}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="263689023"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_06" ID="{F7BB3988-AB43-49ED-BBAE-954546018F20}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Spaceship_Radio_07" ID="{75199E08-3B73-40B7-BB6E-AFA7CFA12718}" ShortID="127074324">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_07" ID="{0BCD77A2-4B05-437A-B8F0-9322ED02ED20}">
+																	<Language>SFX</Language>
+																	<AudioFile>AMB_RFX_Spaceship_Radio_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="906360689"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Spaceship_Radio_07" ID="{0BCD77A2-4B05-437A-B8F0-9322ED02ED20}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Eeldog_Emerge_RC" ID="{B97CA097-187A-4A79-88FC-FC1BEF22F9A4}" ShortID="327693394">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="CenterPercentage" Type="int32">
-													<ValueList>
-														<Value>100</Value>
-													</ValueList>
-												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<Custom CreatedFrom="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}">
-														<Attenuation Name="ATN_20m (Custom)" ID="{9E4D084E-CF6D-419C-AA77-BEFB079F7F2C}" ShortID="83540122">
-															<PropertyList>
-																<Property Name="RadiusMax" Type="Real64" Value="20"/>
-															</PropertyList>
-															<CurveUsageInfoList>
-																<VolumeDryUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="VolumeDry" ID="{3D1AD62B-A070-4284-BE75-5B0252FFB53C}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="3"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																				</Point>
-																				<Point>
-																					<XPos>4</XPos>
-																					<YPos>0</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>15</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>-200</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</VolumeDryUsage>
-																<VolumeWetGameUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetGameUsage>
-																<VolumeWetUserUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-																</VolumeWetUserUsage>
-																<LowPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="LowPassFilter" ID="{5E2D019C-AD2F-49DE-8182-88597EBCDF36}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="65537"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>12</XPos>
-																					<YPos>25</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>60</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</LowPassFilterUsage>
-																<HighPassFilterUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="HighPassFilter" ID="{C44D499D-8134-498B-BC7B-4D3D2AA3D244}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="65537"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>0</YPos>
-																					<Flags>5</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>12</XPos>
-																					<YPos>20</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>50</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</HighPassFilterUsage>
-																<SpreadUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-																		<Curve Name="Spread" ID="{6E0F1E23-22A5-45AD-AC9F-8AD0A8740963}">
-																			<PropertyList>
-																				<Property Name="Flags" Type="int32" Value="1"/>
-																			</PropertyList>
-																			<PointList>
-																				<Point>
-																					<XPos>0</XPos>
-																					<YPos>45</YPos>
-																					<Flags>5</Flags>
-																					<SegmentShape>Exp1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>7.5</XPos>
-																					<YPos>30</YPos>
-																					<Flags>0</Flags>
-																					<SegmentShape>Log1</SegmentShape>
-																				</Point>
-																				<Point>
-																					<XPos>20</XPos>
-																					<YPos>10</YPos>
-																					<Flags>37</Flags>
-																				</Point>
-																			</PointList>
-																		</Curve>
-																	</CurveUsageInfo>
-																</SpreadUsage>
-																<FocusUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-																</FocusUsage>
-																<ObstructionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</ObstructionVolumeUsage>
-																<ObstructionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</ObstructionLPFUsage>
-																<ObstructionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</ObstructionHPFUsage>
-																<OcclusionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</OcclusionVolumeUsage>
-																<OcclusionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</OcclusionLPFUsage>
-																<OcclusionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</OcclusionHPFUsage>
-																<DiffractionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</DiffractionVolumeUsage>
-																<DiffractionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</DiffractionLPFUsage>
-																<DiffractionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</DiffractionHPFUsage>
-																<TransmissionVolumeUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</TransmissionVolumeUsage>
-																<TransmissionLPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</TransmissionLPFUsage>
-																<TransmissionHPFUsage>
-																	<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-																</TransmissionHPFUsage>
-															</CurveUsageInfoList>
-														</Attenuation>
-													</Custom>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="SFX_Eeldog_Emerge_01" ID="{BF62BDD6-68EF-4BB8-AAE8-88D5CBCCBDE8}" ShortID="472584231">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_Eeldog_Emerge_01" ID="{E5925E7D-1C81-4046-BAB9-6215D4365119}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_Eeldog_Emerge_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="95557772"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_Eeldog_Emerge_01" ID="{E5925E7D-1C81-4046-BAB9-6215D4365119}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="SFX_Eeldog_Emerge_02" ID="{5D0A352A-DA4F-4206-9709-024F87D9010F}" ShortID="909844065">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="SFX_Eeldog_Emerge_02" ID="{2AFB4EED-636A-44EE-8707-06A59A275506}">
-															<Language>SFX</Language>
-															<AudioFile>SFX_Eeldog_Emerge_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="230036814"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="SFX_Eeldog_Emerge_02" ID="{2AFB4EED-636A-44EE-8707-06A59A275506}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Phrase_Debut" ID="{A7E9F054-455D-4980-B716-2DE97A210CD6}"/>
+												<ItemRef Name="Phrase_Milieu" ID="{46416D5B-9E09-40BB-BCF9-26E74C5515AF}"/>
+												<ItemRef Name="Phrase_Fin" ID="{B2551E58-CB4E-4574-A6CA-D03F9172C0EC}"/>
+											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
-								</Folder>
+									<Playlist>
+										<ItemRef Name="Spaceship_Radio_SC" ID="{B932D8B2-243B-4101-9527-BACD804BEDB2}"/>
+									</Playlist>
+								</RandomSequenceContainer>
+								<Sound Name="AMB_RFX_Morse_Code_Loop" ID="{08B31DE9-91FB-42FC-B72A-B4D746211A01}" ShortID="143638263">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>71</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AD71AF61-988C-40D5-BF76-25636E5D192B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{0B27E7AE-D886-47C9-A7D0-22F4FE5905C8}">
+												<Attenuation Name="ATN_10m (Custom)" ID="{FC4907D3-49CB-4C51-9DB2-4D7A9A167DF6}" ShortID="771284946">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="10"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{9247A4F7-2F1B-4AED-A374-9DEA429B7678}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>0.30264</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{EF8DAE68-8B5E-4E04-A1C0-4539B2E562E7}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>6.55086</XPos>
+																			<YPos>9</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>33</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{7E9C6B8A-11B5-4E75-8E47-7EFA393308A0}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>6.5</XPos>
+																			<YPos>20</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{02BF4DCA-F600-4618-9C15-139AEA9D2A2F}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>5.34391</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>4.22381</XPos>
+																			<YPos>2.75132</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>0</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_RFX_Morse_Code_Loop" ID="{F922F52D-62C9-4861-B289-AE6A866D0EA1}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_RFX_Morse_Code_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="249634031"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_RFX_Morse_Code_Loop" ID="{F922F52D-62C9-4861-B289-AE6A866D0EA1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-						</Folder>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

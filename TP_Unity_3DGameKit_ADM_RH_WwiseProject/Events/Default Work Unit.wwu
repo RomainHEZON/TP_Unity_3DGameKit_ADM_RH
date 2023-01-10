@@ -13,6 +13,7 @@
 				<WorkUnit Name="00_70_Grenadier" ID="{EA2F5871-F3E7-4E4C-9135-72AF42280BDA}" PersistMode="Reference"/>
 				<WorkUnit Name="00_80_Spitter" ID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}" PersistMode="Reference"/>
 				<WorkUnit Name="01_00_States" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" PersistMode="Reference"/>
+				<WorkUnit Name="02_00_Music" ID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

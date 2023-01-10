@@ -1,3 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
+	407065776	Set_State_Fight_Grenadier			\Default Work Unit\01_00_States\Set_State_Fight_Grenadier	
+	846679953	Set_State_Fight_Chomper			\Default Work Unit\01_00_States\Set_State_Fight_Chomper	
+	2300403011	Set_State_End			\Default Work Unit\01_00_States\Set_State_End	
+	3742218146	Set_State_Explo			\Default Work Unit\01_00_States\Set_State_Explo	
 	3796261246	Set_State_Dead			\Default Work Unit\01_00_States\Set_State_Dead	
 
