@@ -707,7 +707,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585283273918242062
+    m_lastTime: -8585282335415116918
     List:
     - name: Play_AMB_PAD_Cave
       guid: b9e30a872730d548bf91b3f5d103f900
@@ -726,6 +726,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: b9e30a872730d548bf91b3f5d103f900
       Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Cave
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_AMB_PAD_Huge_Door_Crystal
+      guid: b1203633920a63489f906c0d88cd19d3
+      id: 26858146
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_10_AMB_Pads
+        ObjectType: 12
+        guid: 17f071bb4f794046a0ac6cb855b1de9d
+      - ElementName: Play_AMB_PAD_Huge_Door_Crystal
+        ObjectType: 3
+        guid: b1203633920a63489f906c0d88cd19d3
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Huge_Door_Crystal
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2887,7 +2907,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585282526817670026
+    m_lastTime: -8585282335414927772
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -2970,7 +2990,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f4eeda840fefb40a287c327cb2b7aca
     GuidInternal: 
-    m_lastTime: -8585283913094616788
+    m_lastTime: -8585282336533481224
     List: []
   - PhysicalPath: Game Parameters\Distance.wwu
     PathAndIcons:
@@ -3072,6 +3092,39 @@ MonoBehaviour:
         ObjectType: 13
         guid: e75a86bb9f2c5a4781ebb9f103e12328
       Path: Game Parameters\Default Work Unit\Health\Ellen_Health
+  - PhysicalPath: Game Parameters\Progression.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1f4eeda840fefb40a287c327cb2b7aca
+    - ElementName: Progression
+      ObjectType: 12
+      guid: 6fee35f73888a744b2766bc9bb2729bd
+    ParentPath: Game Parameters\Default Work Unit\Progression
+    guid: 6fee35f73888a744b2766bc9bb2729bd
+    GuidInternal: 
+    m_lastTime: -8585282331057339653
+    List:
+    - name: Switch_Collect_Progression
+      guid: 544f1e8c45acd7438d67248d14d2f763
+      id: 2006680970
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Progression
+        ObjectType: 12
+        guid: 6fee35f73888a744b2766bc9bb2729bd
+      - ElementName: Switch_Collect_Progression
+        ObjectType: 13
+        guid: 544f1e8c45acd7438d67248d14d2f763
+      Path: Game Parameters\Default Work Unit\Progression\Switch_Collect_Progression
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -4004,7 +4057,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000006000000070000001100000012000000
+  ExpandedWaapiItemIds: 0100000006000000070000000800000011000000120000002d0000002e00000032000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_ROCK = 2050638422U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_VEGETATION = 708322193U;
         static const AkUniqueID PLAY_AMB_PAD_CAVE = 2915382764U;
+        static const AkUniqueID PLAY_AMB_PAD_HUGE_DOOR_CRYSTAL = 26858146U;
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
         static const AkUniqueID PLAY_AMB_PAD_RIVER = 4220606807U;
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
@@ -229,6 +230,7 @@ namespace AK
         static const AkUniqueID SFX_VOLUME = 1564184899U;
         static const AkUniqueID SPACESHIP_AMB = 3545834150U;
         static const AkUniqueID STAFF_DISTORSION = 3828256600U;
+        static const AkUniqueID SWITCH_COLLECT_PROGRESSION = 2006680970U;
         static const AkUniqueID WIND_AMB = 692140126U;
     } // namespace GAME_PARAMETERS
 

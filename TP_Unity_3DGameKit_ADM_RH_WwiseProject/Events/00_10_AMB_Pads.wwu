@@ -109,6 +109,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AMB_PAD_Huge_Door_Crystal" ID="{333620B1-0A92-4863-9F90-6C0D88CD19D3}">
+					<ChildrenList>
+						<Action Name="" ID="{11A37DC0-EADA-4C74-9CD2-7877A2D87589}" ShortID="467913299">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Huge_Door_Crystal_Loop" ID="{A50DE105-DE48-45C9-9262-EC3FCE689E22}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

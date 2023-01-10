@@ -888,7 +888,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0B12F378-862D-730D-67BC-96607AC5C4EB}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3923B2B0-9D3D-A18A-5326-BBF3234080E7}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -928,6 +928,7 @@
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
 				<GameParameter Id="1564184899" Name="SFX_Volume"/>
+				<GameParameter Id="2006680970" Name="Switch_Collect_Progression"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
@@ -1225,7 +1226,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{92746C13-C099-D260-F8D0-83B04366D967}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{3B2B6B3A-B766-07B0-C5CF-457F54751CCF}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1249,6 +1250,11 @@
 					<ShortName>AMB_PAD_Cave_Loop.wav</ShortName>
 					<Path>Media/109505191.wem</Path>
 					<CachePath>SFX/AMB_PAD_Cave_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="116825441" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_Huge_Door_Crystal_Loop.wav</ShortName>
+					<Path>Media/116825441.wem</Path>
+					<CachePath>SFX/AMB_Huge_Door_Crystal_Loop_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="138781816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_06.wav</ShortName>
@@ -1330,6 +1336,11 @@
 						<MediaRef Id="109505191"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="26858146" Name="Play_AMB_PAD_Huge_Door_Crystal" MaxAttenuation="25" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="116825441"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1340469326" Name="Play_AMB_PAD_Lake" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="921443"/>
@@ -1384,6 +1395,7 @@
 				</Event>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="2006680970" Name="Switch_Collect_Progression"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
@@ -1876,7 +1888,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{9A56147F-9C59-A443-5B8D-82418BD5E5B3}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{62266445-6D4D-31F7-534D-477401EEE611}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2536,5 +2548,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{154F1868-B46A-818B-CEA0-C9512DB380BC}</FileHash>
+	<FileHash>{D7B04DB2-663A-F820-C91C-147531A91243}</FileHash>
 </SoundBanksInfo>

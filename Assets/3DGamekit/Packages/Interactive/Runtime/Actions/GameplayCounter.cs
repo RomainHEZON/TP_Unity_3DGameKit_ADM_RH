@@ -8,6 +8,8 @@ namespace Gamekit3D.GameCommands
         public int currentCount = 0;
         public int targetCount = 3;
 
+        [SerializeField] private AK.Wwise.RTPC ProgressionRTPC;
+
         [Space]
         [Tooltip("Send a command when increment is performed. (optional)")]
         public SendGameCommand onIncrementSendCommand;
@@ -34,6 +36,19 @@ namespace Gamekit3D.GameCommands
                 if (onIncrementPerformAction != null) onIncrementPerformAction.PerformInteraction();
                 if (onIncrementSendCommand != null) onIncrementSendCommand.Send();
                 isTriggered = false;
+            }
+
+            if (currentCount == 1)
+            {
+                AkSoundEngine.SetRTPCValue(ProgressionRTPC.Name, 1);
+            }
+            else if (currentCount == 2)
+            {
+                AkSoundEngine.SetRTPCValue(ProgressionRTPC.Name, 2);
+            }
+            else if (currentCount == 3)
+            {
+                AkSoundEngine.SetRTPCValue(ProgressionRTPC.Name, 3);
             }
         }
 
