@@ -369,6 +369,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{F7DB837A-BA6B-4D35-B7DE-DB3F8627153D}" ShortID="963530645">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="Boxes" ID="{7153EAB6-9F4E-4817-A658-C6CAF3BEEAA0}" ShortID="994528299">

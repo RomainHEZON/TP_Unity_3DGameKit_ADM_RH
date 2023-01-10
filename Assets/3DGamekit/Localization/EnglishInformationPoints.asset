@@ -19,7 +19,7 @@ MonoBehaviour:
   - key: INFO2
     value: This place looks hostile. I should be careful.
   - key: INFO3
-    value: 'I can feel the power of this staff ! Let''s do this ! '
+    value: I can feel the power of this staff ! I should give it a try !
   - key: INFO4
     value: 'Oooh what a weird stepping stone... I want to tread on it and see what
       it does. '

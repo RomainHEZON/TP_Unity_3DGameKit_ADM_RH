@@ -57,4 +57,6 @@ public class Ellen_FT_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Set_State_Dead", this.gameObject);
 
     }
+
+   
 }

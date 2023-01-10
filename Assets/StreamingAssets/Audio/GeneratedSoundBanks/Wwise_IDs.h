@@ -31,9 +31,12 @@ namespace AK
         static const AkUniqueID PLAY_BIG_CREATURE_A = 267936516U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
+        static const AkUniqueID PLAY_BODYFALL_WATER = 3379918037U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
         static const AkUniqueID PLAY_BOXES_IDLE = 2191381978U;
         static const AkUniqueID PLAY_CHOMPER_FT_WALK = 3482670435U;
+        static const AkUniqueID PLAY_EELDOG_DIVE = 1977240871U;
+        static const AkUniqueID PLAY_EELDOG_EMERGE = 1667970722U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
         static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
@@ -114,7 +117,8 @@ namespace AK
             {
                 static const AkUniqueID END = 529726532U;
                 static const AkUniqueID EXPLO = 3814499265U;
-                static const AkUniqueID FIGHT = 514064485U;
+                static const AkUniqueID FIGHT_CHOMPER = 626462014U;
+                static const AkUniqueID FIGHT_GRENADIER = 1783027799U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace MUSIC_STATE

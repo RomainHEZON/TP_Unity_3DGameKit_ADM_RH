@@ -84,17 +84,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Ellen_SFX_Bodyfall" ID="{CFC6D649-506E-4D94-A0CA-E88566C56F9F}">
-					<ChildrenList>
-						<Action Name="" ID="{FB50CBE2-752F-4381-9D09-8CB118A821C4}" ShortID="113174718">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Ellen_SFX_Bodyfall" ID="{1F9B59F5-5521-46C2-A3D5-0313E09DF3C9}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="FOL" ID="{408FA298-001F-464F-8005-2500CD0A1B78}" ShortID="701740360">
 					<ChildrenList>
 						<Event Name="Play_FOL_Jump" ID="{0806FF9B-56C8-4444-BF53-0CF288D75AD5}">
@@ -125,6 +114,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FOL_Roll_RC" ID="{03FCB243-8309-419A-A592-A7CDB2989208}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Bodyfall" ID="{449C97BA-0A4C-40E0-8028-63D4FBA5CAF4}" ShortID="1027935896">
+					<ChildrenList>
+						<Event Name="Play_Bodyfall_Water" ID="{77C3C13E-81F2-4417-855D-BD1514A3C783}">
+							<ChildrenList>
+								<Action Name="" ID="{D4205AA6-2D65-4525-A69D-4881023C271B}" ShortID="980412874">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Bodyfall_Water_RC" ID="{3FF7332E-3A93-49D8-A7D5-1E79F4FE7C04}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{42F0AF4B-F84D-462B-AA58-FB3FBACA4B22}" ShortID="779382361">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VO_Death_RC" ID="{2EF2C734-2896-41A5-A3BA-2CBDA24FAD9E}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Ellen_SFX_Bodyfall" ID="{CFC6D649-506E-4D94-A0CA-E88566C56F9F}">
+							<ChildrenList>
+								<Action Name="" ID="{FB50CBE2-752F-4381-9D09-8CB118A821C4}" ShortID="113174718">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Ellen_SFX_Bodyfall" ID="{1F9B59F5-5521-46C2-A3D5-0313E09DF3C9}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

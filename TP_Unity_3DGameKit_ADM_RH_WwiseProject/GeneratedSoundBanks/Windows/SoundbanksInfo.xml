@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{0E02A40D-01CD-DBE0-47A6-040BA91EB417}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{5F25D609-92F7-D087-98D5-CBF405501848}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -465,6 +465,9 @@
 					<MediaRefs>
 						<MediaRef Id="520324830"/>
 					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3677180323" Id="2044049779" Name="Dead"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="4102656700" Name="Play_SFX_Enemy_Vanish" MaxAttenuation="20" DurationType="OneShot" DurationMin="7.710093" DurationMax="7.710093">
 					<MediaRefs>
@@ -508,7 +511,7 @@
 						<MediaRef Id="327699342"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2644163508" Name="Play_SFX_Teleporter_Rift" MaxAttenuation="60" DurationType="Infinite">
+				<Event Id="2644163508" Name="Play_SFX_Teleporter_Rift" MaxAttenuation="50" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="252594530"/>
 					</MediaRefs>
@@ -521,6 +524,15 @@
 				<Event Id="3789712745" Name="Stop_AllSounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<StateGroups>
+				<StateGroup Id="3677180323" Name="Health">
+					<States>
+						<State Id="655265632" Name="Alive"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{2C1CB65F-50C9-B461-0991-2B263EF26DCC}">
 			<ShortName>States</ShortName>
@@ -542,7 +554,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{FAAFCCD9-FA7E-50CD-B68A-3623BDCB07DF}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{AAF8D63D-C4AC-BB31-D50D-49D87F782133}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -566,6 +578,10 @@
 					<ShortName>AMB_RFX_Magic_Cave_02.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Magic_Cave_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="95557772" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Eeldog_Emerge_01.wav</ShortName>
+					<CachePath>SFX/SFX_Eeldog_Emerge_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="145439816" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blackbird\AMB_RFX_Blackbird_03.wav</ShortName>
 					<CachePath>SFX/Blackbird/AMB_RFX_Blackbird_03_10C4C929.wem</CachePath>
@@ -581,6 +597,10 @@
 				<File Id="188617622" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exotic Animal\AMB_RFX_Exotic_Animal_05.wav</ShortName>
 					<CachePath>SFX/Exotic Animal/AMB_RFX_Exotic_Animal_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="230036814" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Eeldog_Emerge_02.wav</ShortName>
+					<CachePath>SFX/SFX_Eeldog_Emerge_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="246529130" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blackbird\AMB_RFX_Blackbird_01.wav</ShortName>
@@ -639,6 +659,10 @@
 					<ShortName>Birds\AMB_RFX_Bird_A_02.wav</ShortName>
 					<CachePath>SFX/Birds/AMB_RFX_Bird_A_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="419452041" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Eeldog_Dive_02.wav</ShortName>
+					<CachePath>SFX/SFX_Eeldog_Dive_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="491137694" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_A_01.wav</ShortName>
 					<CachePath>SFX/Birds/AMB_RFX_Bird_A_01_10C4C929.wem</CachePath>
@@ -674,6 +698,10 @@
 				<File Id="798641773" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_B_06.wav</ShortName>
 					<CachePath>SFX/Birds/AMB_RFX_Bird_B_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="800417670" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Eeldog_Dive_01.wav</ShortName>
+					<CachePath>SFX/SFX_Eeldog_Dive_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="825515633" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Big Creature\AMB_RFX_Big_Creature_A_02.wav</ShortName>
@@ -768,6 +796,18 @@
 						<MediaRef Id="992948447"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1977240871" Name="Play_Eeldog_Dive" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.7239583" DurationMax="0.7239583">
+					<MediaRefs>
+						<MediaRef Id="419452041"/>
+						<MediaRef Id="800417670"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1667970722" Name="Play_Eeldog_Emerge" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.0529584" DurationMax="1.3090416">
+					<MediaRefs>
+						<MediaRef Id="95557772"/>
+						<MediaRef Id="230036814"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1108366744" Name="Play_ExoticAnimal" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="58659275"/>
@@ -808,7 +848,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E4C74C3B-8F42-68D5-A934-14354EAEBBAD}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{C7938D7E-9D47-8219-CB0A-2B2582CAD131}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -885,9 +925,10 @@
 				</StateGroup>
 				<StateGroup Id="3826569560" Name="Music_State">
 					<States>
-						<State Id="514064485" Name="Fight"/>
 						<State Id="529726532" Name="End"/>
+						<State Id="626462014" Name="Fight_Chomper"/>
 						<State Id="748895195" Name="None"/>
+						<State Id="1783027799" Name="Fight_Grenadier"/>
 						<State Id="3814499265" Name="Explo"/>
 					</States>
 				</StateGroup>
@@ -912,7 +953,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{94EAAB2E-825E-E5D1-D6EE-B5107D8BD300}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{6D159A13-D895-1F48-18E7-0A8855812BC9}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1069,7 +1110,7 @@
 						<MediaRef Id="787630289"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2314174147" Name="Play_Get_Hit_Behind" DurationType="OneShot" DurationMin="2.0511458" DurationMax="2.5713413">
+				<Event Id="2314174147" Name="Play_Get_Hit_Behind" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.0511458" DurationMax="2.5713413">
 					<MediaRefs>
 						<MediaRef Id="219315323"/>
 						<MediaRef Id="352007991"/>
@@ -1079,7 +1120,7 @@
 						<MediaRef Id="976343665"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3337034902" Name="Play_Grenadier_Death" DurationType="OneShot" DurationMin="4.760076" DurationMax="5.343005">
+				<Event Id="3337034902" Name="Play_Grenadier_Death" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.760076" DurationMax="5.343005">
 					<MediaRefs>
 						<MediaRef Id="69857268"/>
 					</MediaRefs>
@@ -1096,14 +1137,14 @@
 						<MediaRef Id="1072987620"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" DurationType="OneShot" DurationMin="1.2990788" DurationMax="1.8117005">
+				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2990788" DurationMax="1.8117005">
 					<MediaRefs>
 						<MediaRef Id="639603022"/>
 						<MediaRef Id="706922979"/>
 						<MediaRef Id="953794628"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" DurationType="OneShot" DurationMin="1.8511459" DurationMax="2.3713412">
+				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.8511459" DurationMax="2.3713412">
 					<MediaRefs>
 						<MediaRef Id="381948013"/>
 						<MediaRef Id="976343665"/>
@@ -1287,7 +1328,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{897D1B7A-4915-4A0D-15C7-338635B640E0}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{2891ED7A-4093-1E41-59BE-AC61F1C65750}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -1407,6 +1448,10 @@
 					<ShortName>Ellen_SFX_VO_Effort_03.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Effort_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="555327716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Bodyfall_Water_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Bodyfall_Water_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="564213551" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_FOL_Roll_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_FOL_Roll_01_10C4C929.wem</CachePath>
@@ -1418,6 +1463,10 @@
 				<File Id="590952037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_08.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_08_10C4C929.wem</CachePath>
+				</File>
+				<File Id="643456098" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Bodyfall_Water_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Bodyfall_Water_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="657548567" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Death_01.wav</ShortName>
@@ -1511,6 +1560,14 @@
 							<PluginRef Id="941828739"/>
 						</Custom>
 					</PluginRefs>
+				</Event>
+				<Event Id="3379918037" Name="Play_Bodyfall_Water" DurationType="OneShot" DurationMin="2.08975" DurationMax="2.5142708">
+					<MediaRefs>
+						<MediaRef Id="233825437"/>
+						<MediaRef Id="555327716"/>
+						<MediaRef Id="643456098"/>
+						<MediaRef Id="657548567"/>
+					</MediaRefs>
 				</Event>
 				<Event Id="2382465142" Name="Play_Ellen_SFX_Bodyfall" DurationType="OneShot" DurationMin="0.54239583" DurationMax="0.54239583">
 					<MediaRefs>
@@ -2190,5 +2247,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{3C00D4A2-1947-1802-D243-E3455732AB36}</FileHash>
+	<FileHash>{36C857ED-FB88-0A47-080F-F56ECF22AA50}</FileHash>
 </SoundBanksInfo>

@@ -751,7 +751,7 @@ ModelImporter:
         messageOptions: 0
       - time: 0.08602151
         functionName: StateDead
-        data: Set_State_Dead
+        data: 
         objectReferenceParameter: {fileID: 1991219941496362, guid: 9d620787554a948e3876fe7dbdba24e8,
           type: 3}
         floatParameter: 0

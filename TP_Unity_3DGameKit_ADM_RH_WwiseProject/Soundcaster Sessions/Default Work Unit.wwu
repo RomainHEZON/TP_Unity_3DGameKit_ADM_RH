@@ -51,9 +51,9 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
-						<CurrentStateRef Name="Fight_Grenadier" ID="{0CAAE32D-C69A-41A0-8627-A0ADB8416B74}"/>
-						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
-						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
+						<CurrentStateRef Name="None" ID="{18A9D443-CF38-4919-9778-63E7B86B26E5}"/>
+						<CurrentStateRef Name="None" ID="{D8AE0270-86AC-4660-BB10-98276F47A5CB}"/>
+						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>

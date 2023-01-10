@@ -107,6 +107,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Eeldog_Dive" ID="{FFAA9FD3-BE94-412B-A7D3-660301927423}">
+					<ChildrenList>
+						<Action Name="" ID="{F03A9B29-FA58-46AF-8046-F2AAC8202150}" ShortID="289324256">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eeldog_Dive_RC" ID="{CBD40832-5494-4451-B63C-9E6F895E3CC0}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Eeldog_Emerge" ID="{88060A8D-CF04-41FC-A0FD-9016EA710662}">
+					<ChildrenList>
+						<Action Name="" ID="{BCED9FE7-9A8B-43E4-9137-42389E48098B}" ShortID="472480523">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Eeldog_Emerge_RC" ID="{B97CA097-187A-4A79-88FC-FC1BEF22F9A4}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

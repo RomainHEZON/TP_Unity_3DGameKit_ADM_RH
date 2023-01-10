@@ -19,6 +19,27 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Pause" ID="{8DA9A711-6B1A-4972-8D87-6877A23BFA7B}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+										<CustomState Name="" ID="{8374550E-3769-44E5-B26D-56B72B03D6D0}" ShortID="562245268">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="60"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+										<CustomState Name="" ID="{E2C482EC-1CB1-40D6-AB28-2B54E70A2C5E}" ShortID="987432237"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<Reference>

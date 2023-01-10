@@ -41,7 +41,7 @@
 						<Transition>
 							<StartState Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 							<EndState Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}"/>
-							<Time>1</Time>
+							<Time>1.5</Time>
 							<IsShared>false</IsShared>
 						</Transition>
 						<Transition>
