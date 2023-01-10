@@ -95,7 +95,7 @@ namespace Gamekit3D
                 {
                     AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Rock", this.gameObject);
                 }
-                else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Grenadier")) // GRENADIER
+                else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Enemy")) // GRENADIER
                 {
                     AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Metal", this.gameObject);
                 }
