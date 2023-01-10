@@ -2,10 +2,15 @@
 <WwiseDocument Type="WorkUnit" ID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" SchemaVersion="110">
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="6"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<WorkUnit Name="Menu_Pause" ID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}" PersistMode="Reference"/>
 				<WorkUnit Name="Wind" ID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}" PersistMode="Reference"/>
 				<WorkUnit Name="Music_State" ID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}" PersistMode="Reference"/>
+				<WorkUnit Name="Music_On_OFF" ID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

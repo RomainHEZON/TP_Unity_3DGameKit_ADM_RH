@@ -49,7 +49,8 @@ namespace AK
         static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
         static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
-        static const AkUniqueID PLAY_MUSIC_THEME_SWITCH = 2932096340U;
+        static const AkUniqueID PLAY_MUSIC_THEME_EXPLO_CHOMP = 3783934524U;
+        static const AkUniqueID PLAY_MUSIC_THEME_GRENADIER_END = 2441234825U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
@@ -113,16 +114,38 @@ namespace AK
             } // namespace STATE
         } // namespace HEALTH
 
+        namespace MUSIC_GRENADIER_STATE
+        {
+            static const AkUniqueID GROUP = 2999213434U;
+
+            namespace STATE
+            {
+                static const AkUniqueID END = 529726532U;
+                static const AkUniqueID FIGHT_GRENADIER = 1783027799U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_GRENADIER_STATE
+
+        namespace MUSIC_OFF
+        {
+            static const AkUniqueID GROUP = 2899509660U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace MUSIC_OFF
+
         namespace MUSIC_STATE
         {
             static const AkUniqueID GROUP = 3826569560U;
 
             namespace STATE
             {
-                static const AkUniqueID END = 529726532U;
                 static const AkUniqueID EXPLO = 3814499265U;
                 static const AkUniqueID FIGHT_CHOMPER = 626462014U;
-                static const AkUniqueID FIGHT_GRENADIER = 1783027799U;
                 static const AkUniqueID NONE = 748895195U;
             } // namespace STATE
         } // namespace MUSIC_STATE
@@ -208,6 +231,11 @@ namespace AK
         static const AkUniqueID STAFF_DISTORSION = 3828256600U;
         static const AkUniqueID WIND_AMB = 692140126U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID TRANSITION = 1865857008U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

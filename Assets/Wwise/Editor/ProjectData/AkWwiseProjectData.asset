@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics\Default Work Unit
     guid: d48c76d72f06e442b3361184b378ae57
     GuidInternal: 
-    m_lastTime: -8585285710469347330
+    m_lastTime: -8585283334522647812
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585282426084170266
+    m_lastTime: -8585282417886741711
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -330,7 +330,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_10_AMB_Pads
     guid: 6a7d3506fdb54b4db032684db8518f3d
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274507190871
     List:
     - name: AMB_Pads_SNBK
       guid: 6bfd33b3951c5c4eb7c77bb9db6ec85c
@@ -363,7 +363,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_20_AMB_RFX
     guid: 341698971ceb9b40863e917fa1b06c1c
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274506890804
     List:
     - name: AMB_RFX_SNBK
       guid: a0004eadb7fe2848b75bc9a47bf963c9
@@ -396,7 +396,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_30_Ellen_Loco
     guid: 26061ab505ada24ca2e44c4bd45413ed
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274507010826
     List:
     - name: Ellen_Loco_SNBK
       guid: e88a11accd917246889f4f9fb7cd6c41
@@ -429,7 +429,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_40_Ellen_SFX
     guid: 0e25c86fbed45f4a9b279d30ac067997
     GuidInternal: 
-    m_lastTime: -8585285224652491920
+    m_lastTime: -8585285274507100846
     List:
     - name: Ellen_SFX_SNBK
       guid: b5843048fe77cf49bc65ddb882d8c3e5
@@ -462,7 +462,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_50_SFX
     guid: b3d72cc0db2f9a46a6bc99972457d705
     GuidInternal: 
-    m_lastTime: -8585284957548302398
+    m_lastTime: -8585285002765514439
     List:
     - name: SFX_SNBK
       guid: 098f38f3ddac2b498cc3f4bf97eeecd2
@@ -495,7 +495,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_60_Chomper
     guid: 07d41c9ef69d7f40a86a823b73bba439
     GuidInternal: 
-    m_lastTime: -8585285224652481913
+    m_lastTime: -8585285274506930811
     List:
     - name: Chomper_SNBK
       guid: 53e1908345750146b46c8239d104fcac
@@ -528,7 +528,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_70_Grenadier
     guid: bcf81fb4db079840b1d511cb95263be3
     GuidInternal: 
-    m_lastTime: -8585285224652481913
+    m_lastTime: -8585285274507060849
     List:
     - name: Grenadier_SNBK
       guid: 980014438a37e24d81d5ed8493bae722
@@ -561,7 +561,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_80_Spitter
     guid: 939abaa8315e644bb446935fbcc0ea91
     GuidInternal: 
-    m_lastTime: -8585285224652481913
+    m_lastTime: -8585285274507140854
     List:
     - name: Spitter_SNBK
       guid: 6bdccf3e763b3042a1349ae735873bb6
@@ -594,7 +594,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_90_UI
     guid: 244f8dddd577524c805fc23be4469bde
     GuidInternal: 
-    m_lastTime: -8585285224652471913
+    m_lastTime: -8585285274506840785
     List:
     - name: UI_SNBK
       guid: 23d7c86e95de5c4fa479a1e784da7056
@@ -627,7 +627,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\01_00_States
     guid: 0837887548858b48b855556ebec98432
     GuidInternal: 
-    m_lastTime: -8585282526817896505
+    m_lastTime: -8585282475447637582
     List:
     - name: States
       guid: 3ddbbe053cb5bc42bae46684f8b23633
@@ -660,7 +660,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\02_00_Music
     guid: 572ad749968c2446bb05a0f9d0f33394
     GuidInternal: 
-    m_lastTime: -8585282610337102483
+    m_lastTime: -8585282475447607575
     List:
     - name: Music_SNBK
       guid: 3ff6491820a3074dbfc87ea36ef5e2bb
@@ -690,7 +690,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 25e549de173d524ba44cfda5d1b5aaab
     GuidInternal: 
-    m_lastTime: -8585282621906842338
+    m_lastTime: -8585282627080360896
     List: []
   EventWwu:
   - PhysicalPath: Events\00_10_AMB_Pads.wwu
@@ -707,7 +707,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585283273918242062
+    m_lastTime: -8585283279266067043
     List:
     - name: Play_AMB_PAD_Cave
       guid: b9e30a872730d548bf91b3f5d103f900
@@ -886,7 +886,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585282668492821944
+    m_lastTime: -8585282649827994479
     List:
     - name: Play_AMB_RFX_Morse_Code
       guid: c5757ecf13cc124dba1598e650d5779e
@@ -1102,7 +1102,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_30_Ellen_Loco
     guid: a51919b6568d074c8e3bc50aabf2c270
     GuidInternal: 
-    m_lastTime: -8585284235918131572
+    m_lastTime: -8585284237851030740
     List:
     - name: Play_Ellen_Footstep
       guid: 7e2749d1364cac488199cee9ea1ed1e3
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_40_Ellen_SFX
     guid: 7adb8f172921f048b75a7073488c6255
     GuidInternal: 
-    m_lastTime: -8585282685292428642
+    m_lastTime: -8585282653404610795
     List:
     - name: Bodyfall
       guid: ba979c444c0ae040802863d4fba5caf4
@@ -1461,7 +1461,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585282610337057337
+    m_lastTime: -8585282475465331576
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -2134,7 +2134,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_60_Chomper
     guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
     GuidInternal: 
-    m_lastTime: -8585282575374092809
+    m_lastTime: -8585283528399258799
     List:
     - name: Play_Chomper_FT_Walk
       guid: 11f5b711056a584ba5c69a8b2ee9fcd6
@@ -2250,7 +2250,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_70_Grenadier
     guid: 71582feae7f34c4e913572af42280bda
     GuidInternal: 
-    m_lastTime: -8585282426084150167
+    m_lastTime: -8585282397174189013
     List:
     - name: Play_Attack_Close
       guid: 44ca3a95974d9b41a4d7989e2861b4e1
@@ -2466,7 +2466,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_80_Spitter
     guid: 7000ddcfcb4e0442bdc8256a0975e9dc
     GuidInternal: 
-    m_lastTime: -8585285224652672169
+    m_lastTime: -8585285281657018566
     List: []
   - PhysicalPath: Events\00_90_UI.wwu
     PathAndIcons:
@@ -2482,7 +2482,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585283922013193452
+    m_lastTime: -8585283890944651555
     List:
     - name: Play_UI_Dialogue_Start
       guid: 99df3951143d9844923c5e836fa6a387
@@ -2718,7 +2718,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\01_00_State
     guid: d836ddceef571a4ca898f4eef1cf4790
     GuidInternal: 
-    m_lastTime: -8585282521174446625
+    m_lastTime: -8585282389380470952
     List:
     - name: Set_State_Dead
       guid: d9f4e63271cd284f87cc36ad3567bd6b
@@ -2834,11 +2834,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\02_00_Music
     guid: 75e10a1d7dab424abc25cd85b9f1e2a9
     GuidInternal: 
-    m_lastTime: -8585282610337047332
+    m_lastTime: -8585282397962990035
     List:
-    - name: Play_Music_Theme_Switch
+    - name: Play_Music_Theme_Explo_Chomp
       guid: 49ad58abf5c1b7428c83bfb98b87d392
-      id: 2932096340
+      id: 3783934524
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -2849,10 +2849,30 @@ MonoBehaviour:
       - ElementName: 02_00_Music
         ObjectType: 12
         guid: 75e10a1d7dab424abc25cd85b9f1e2a9
-      - ElementName: Play_Music_Theme_Switch
+      - ElementName: Play_Music_Theme_Explo_Chomp
         ObjectType: 3
         guid: 49ad58abf5c1b7428c83bfb98b87d392
-      Path: Events\Default Work Unit\02_00_Music\Play_Music_Theme_Switch
+      Path: Events\Default Work Unit\02_00_Music\Play_Music_Theme_Explo_Chomp
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Theme_Grenadier_End
+      guid: 1428424b5e86df4284bf8f993487c36c
+      id: 2441234825
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 02_00_Music
+        ObjectType: 12
+        guid: 75e10a1d7dab424abc25cd85b9f1e2a9
+      - ElementName: Play_Music_Theme_Grenadier_End
+        ObjectType: 3
+        guid: 1428424b5e86df4284bf8f993487c36c
+      Path: Events\Default Work Unit\02_00_Music\Play_Music_Theme_Grenadier_End
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2867,7 +2887,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585282526817670026
+    m_lastTime: -8585282475465241555
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -2881,7 +2901,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Bus_Volume
     guid: e7c7ccb7710915419e464565c21837c0
     GuidInternal: 
-    m_lastTime: -8585283913094606781
+    m_lastTime: -8585283890944641559
     List:
     - name: Master_Volume
       guid: 6d022af933dc3745864e6a11f434789e
@@ -2950,7 +2970,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f4eeda840fefb40a287c327cb2b7aca
     GuidInternal: 
-    m_lastTime: -8585283913094616788
+    m_lastTime: -8585283890944641559
     List: []
   - PhysicalPath: Game Parameters\Distance.wwu
     PathAndIcons:
@@ -2966,7 +2986,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Distance
     guid: e53b1effa1d101419e07a517144c19cf
     GuidInternal: 
-    m_lastTime: -8585283360029985201
+    m_lastTime: -8585283396252522812
     List:
     - name: Lake_AMB
       guid: a3011e1aafc20d4bbd17d65938ee4e06
@@ -3033,7 +3053,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Health
     guid: f152a078009aa04e85f9cc8399387a1f
     GuidInternal: 
-    m_lastTime: -8585283913094638179
+    m_lastTime: -8585283890944631558
     List:
     - name: Ellen_Health
       guid: e75a86bb9f2c5a4781ebb9f103e12328
@@ -3064,7 +3084,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dafb7d237f34794c8b43ba469bf3287e
     GuidInternal: 
-    m_lastTime: -8585283247727201878
+    m_lastTime: -8585282412277301505
     List: []
   - PhysicalPath: States\Menu_Pause.wwu
     PathAndIcons:
@@ -3080,7 +3100,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Menu_Pause
     guid: bfcd8dd48efb114a90e1d0a9d095ca32
     GuidInternal: 
-    m_lastTime: -8585282680343087019
+    m_lastTime: -8585282653399669660
     List:
     - name: Health
       guid: 04f76e267e5ab74e8484d170d9672c09
@@ -3238,6 +3258,100 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+  - PhysicalPath: States\Music_On_OFF.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: dafb7d237f34794c8b43ba469bf3287e
+    - ElementName: Music_On_OFF
+      ObjectType: 12
+      guid: 404b7a557d2b564cbce264eaa2c4ee3c
+    ParentPath: States\Default Work Unit\Music_On_OFF
+    guid: 404b7a557d2b564cbce264eaa2c4ee3c
+    GuidInternal: 
+    m_lastTime: -8585282397962910030
+    List:
+    - name: Music_OFF
+      guid: a5abb111217fd04b9a4d599f24771798
+      id: 2899509660
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dafb7d237f34794c8b43ba469bf3287e
+      - ElementName: Music_On_OFF
+        ObjectType: 12
+        guid: 404b7a557d2b564cbce264eaa2c4ee3c
+      - ElementName: Music_OFF
+        ObjectType: 9
+        guid: a5abb111217fd04b9a4d599f24771798
+      Path: States\Default Work Unit\Music_On_OFF\Music_OFF
+      values:
+      - name: None
+        guid: 6a7cd61595bc2f41814fcfd9d24ffe1b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Music_On_OFF
+          ObjectType: 12
+          guid: 404b7a557d2b564cbce264eaa2c4ee3c
+        - ElementName: Music_OFF
+          ObjectType: 9
+          guid: a5abb111217fd04b9a4d599f24771798
+        - ElementName: None
+          ObjectType: 8
+          guid: 6a7cd61595bc2f41814fcfd9d24ffe1b
+      - name: OFF
+        guid: 33db6ec07c6342448f5be9749a617eef
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Music_On_OFF
+          ObjectType: 12
+          guid: 404b7a557d2b564cbce264eaa2c4ee3c
+        - ElementName: Music_OFF
+          ObjectType: 9
+          guid: a5abb111217fd04b9a4d599f24771798
+        - ElementName: OFF
+          ObjectType: 8
+          guid: 33db6ec07c6342448f5be9749a617eef
+      - name: On
+        guid: 0603c9dd6b9203409d0391d2ae72ad41
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Music_On_OFF
+          ObjectType: 12
+          guid: 404b7a557d2b564cbce264eaa2c4ee3c
+        - ElementName: Music_OFF
+          ObjectType: 9
+          guid: a5abb111217fd04b9a4d599f24771798
+        - ElementName: On
+          ObjectType: 8
+          guid: 0603c9dd6b9203409d0391d2ae72ad41
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   - PhysicalPath: States\Music_State.wwu
     PathAndIcons:
     - ElementName: States
@@ -3252,8 +3366,86 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Music_State
     guid: 32f48460de2f714b9834ec30e3b6efb1
     GuidInternal: 
-    m_lastTime: -8585282600853667402
+    m_lastTime: -8585282414138049928
     List:
+    - name: Music_Grenadier_State
+      guid: e145d427101aae43971e6858cb42db19
+      id: 2999213434
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dafb7d237f34794c8b43ba469bf3287e
+      - ElementName: Music_State
+        ObjectType: 12
+        guid: 32f48460de2f714b9834ec30e3b6efb1
+      - ElementName: Music_Grenadier_State
+        ObjectType: 9
+        guid: e145d427101aae43971e6858cb42db19
+      Path: States\Default Work Unit\Music_State\Music_Grenadier_State
+      values:
+      - name: End
+        guid: 1101c71ad39e08419345961dc2d38d97
+        id: 529726532
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Music_State
+          ObjectType: 12
+          guid: 32f48460de2f714b9834ec30e3b6efb1
+        - ElementName: Music_Grenadier_State
+          ObjectType: 9
+          guid: e145d427101aae43971e6858cb42db19
+        - ElementName: End
+          ObjectType: 8
+          guid: 1101c71ad39e08419345961dc2d38d97
+      - name: Fight_Grenadier
+        guid: f4e1b8fb5f310c419cdab1a762d3186e
+        id: 1783027799
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Music_State
+          ObjectType: 12
+          guid: 32f48460de2f714b9834ec30e3b6efb1
+        - ElementName: Music_Grenadier_State
+          ObjectType: 9
+          guid: e145d427101aae43971e6858cb42db19
+        - ElementName: Fight_Grenadier
+          ObjectType: 8
+          guid: f4e1b8fb5f310c419cdab1a762d3186e
+      - name: None
+        guid: ad4b4ffa61a14d43a9091983a6bb5109
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Music_State
+          ObjectType: 12
+          guid: 32f48460de2f714b9834ec30e3b6efb1
+        - ElementName: Music_Grenadier_State
+          ObjectType: 9
+          guid: e145d427101aae43971e6858cb42db19
+        - ElementName: None
+          ObjectType: 8
+          guid: ad4b4ffa61a14d43a9091983a6bb5109
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Music_State
       guid: dc12b15aa2daf9479c8a3bfdf9704b56
       id: 3826569560
@@ -3272,25 +3464,6 @@ MonoBehaviour:
         guid: dc12b15aa2daf9479c8a3bfdf9704b56
       Path: States\Default Work Unit\Music_State\Music_State
       values:
-      - name: End
-        guid: a9c517aa7eb07b47bc9464cb7ea18a46
-        id: 529726532
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
-          ObjectType: 12
-          guid: 32f48460de2f714b9834ec30e3b6efb1
-        - ElementName: Music_State
-          ObjectType: 9
-          guid: dc12b15aa2daf9479c8a3bfdf9704b56
-        - ElementName: End
-          ObjectType: 8
-          guid: a9c517aa7eb07b47bc9464cb7ea18a46
       - name: Explo
         guid: 18f9dda43be96d4e969dade36a68e6cd
         id: 3814499265
@@ -3329,25 +3502,6 @@ MonoBehaviour:
         - ElementName: Fight_Chomper
           ObjectType: 8
           guid: af08272d69774b45855c9029fc14d8aa
-      - name: Fight_Grenadier
-        guid: 2de3aa0c9ac6a0418627a0adb8416b74
-        id: 1783027799
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
-          ObjectType: 12
-          guid: 32f48460de2f714b9834ec30e3b6efb1
-        - ElementName: Music_State
-          ObjectType: 9
-          guid: dc12b15aa2daf9479c8a3bfdf9704b56
-        - ElementName: Fight_Grenadier
-          ObjectType: 8
-          guid: 2de3aa0c9ac6a0418627a0adb8416b74
       - name: None
         guid: 43d4a91838cf1949977863e7b86b26e5
         id: 748895195
@@ -3381,7 +3535,7 @@ MonoBehaviour:
     ParentPath: States\Room_In_Out
     guid: 980cc073bf1e4f4da18c7b6c43bd0449
     GuidInternal: 
-    m_lastTime: -8585283273912504647
+    m_lastTime: -8585283290791763354
     List:
     - name: Room_In_Out
       guid: 7f8a8733482e7f44aa56daa4b5352585
@@ -3463,7 +3617,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit\Wind
     guid: bd9f85ce4a9e5542bb8a4689753cbc50
     GuidInternal: 
-    m_lastTime: -8585283360025207141
+    m_lastTime: -8585283428467711411
     List:
     - name: Wind_State
       guid: 573f5b2b00a21147a6783d5f36520991
@@ -3574,7 +3728,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 3d4ee4a025b46a449e0e218aa2e1c150
     GuidInternal: 
-    m_lastTime: -8585285148846465803
+    m_lastTime: -8585285150432083791
     List: []
   - PhysicalPath: Switches\Loco_Switch.wwu
     PathAndIcons:
@@ -3590,7 +3744,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit\Loco_Switch
     guid: bffad21dbb79e8428ef26a6c2268a2b7
     GuidInternal: 
-    m_lastTime: -8585284235907618381
+    m_lastTime: -8585284269432180514
     List:
     - name: Loco_Switch
       guid: 6eeafcfadfdbfc4fbf3d503ec327d366
@@ -3722,7 +3876,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit\Material
     guid: fb93524a86aa8745b6510d3927f99997
     GuidInternal: 
-    m_lastTime: -8585284235907618381
+    m_lastTime: -8585284269432130500
     List:
     - name: Material_Switch
       guid: aefd40686128a6438f12a6d4df85884e
@@ -3833,10 +3987,24 @@ MonoBehaviour:
     ParentPath: Triggers\Default Work Unit
     guid: bc9d1094795632459ac1ba5e99b9201b
     GuidInternal: 
-    m_lastTime: -8585285710469347330
-    List: []
+    m_lastTime: -8585282397962794565
+    List:
+    - name: Transition
+      guid: 7d97b9ed5e62294ebf071d20f94859e0
+      id: 1865857008
+      PathAndIcons:
+      - ElementName: Triggers
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc9d1094795632459ac1ba5e99b9201b
+      - ElementName: Transition
+        ObjectType: 14
+        guid: 7d97b9ed5e62294ebf071d20f94859e0
+      Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 060000000700000011000000
+  ExpandedWaapiItemIds: 060000000700000012000000c6000000c7000000d2000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

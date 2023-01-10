@@ -63,7 +63,7 @@
 				<SoundcasterSession Name="Test Music" ID="{AA0C24E9-AD87-4E99-904D-C4B2432150F6}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Music_Theme_Switch" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}" WorkUnitID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}"/>
+							<ObjectRef Name="Play_Music_Theme_Explo_Chomp" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}" WorkUnitID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
@@ -71,12 +71,16 @@
 							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Set_State_Fight_Chomper" ID="{B6B55DD3-EDE8-4049-B28D-3C02CCD690A1}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
-							<Position X="1" Y="2"/>
+							<ObjectRef Name="Play_Music_Theme_Grenadier_End" ID="{4B422814-865E-42DF-84BF-8F993487C36C}" WorkUnitID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}"/>
+							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_State_Fight_Grenadier" ID="{5C38AB69-9CC2-407E-94B3-82C7F450066A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
-							<Position X="2" Y="2"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Set_State_Fight_Chomper" ID="{B6B55DD3-EDE8-4049-B28D-3C02CCD690A1}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Set_State_End" ID="{5758253E-9946-45D5-9090-E769F5CB587A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
@@ -85,9 +89,12 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
-						<CurrentStateRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}"/>
-						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+						<CurrentStateRef Name="Fight_Grenadier" ID="{FBB8E1F4-315F-410C-9CDA-B1A762D3186E}"/>
+						<CurrentStateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+						<CurrentStateRef Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
+						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
+						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
 						<CurrentStateRef Name="Alive" ID="{F3CD81D9-F7A5-4030-852A-C326B794AAA4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

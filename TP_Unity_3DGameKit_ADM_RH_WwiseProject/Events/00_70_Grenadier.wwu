@@ -118,20 +118,20 @@
 				</Event>
 				<Event Name="Play_Grenadier_Death" ID="{E3DBEDA1-0A51-42C1-A3C7-AEE6AF549E42}">
 					<ChildrenList>
-						<Action Name="" ID="{D3E825CA-8267-46A4-83CE-874F35F99A29}" ShortID="5175582">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grenadier_Death" ID="{AC20193C-EA78-4334-8C35-A8495DF5533E}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{61B4F931-8FCF-4DE1-BF89-495505A884DC}" ShortID="367832546">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="End" ID="{AA17C5A9-B07E-477B-BC94-64CB7EA18A46}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+									<ObjectRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D3E825CA-8267-46A4-83CE-874F35F99A29}" ShortID="5175582">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenadier_Death" ID="{AC20193C-EA78-4334-8C35-A8495DF5533E}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -533,7 +533,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{0F2FAC23-3ACA-F536-0869-1B2E1AD1F2E4}">
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{066A5196-6D7F-AC64-DD00-9993097724FE}">
 			<ShortName>States</ShortName>
 			<Path>States.bnk</Path>
 			<Events>
@@ -544,7 +544,7 @@
 				</Event>
 				<Event Id="2300403011" Name="Set_State_End" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="3826569560" Id="529726532" Name="End"/>
+						<ActionSetStateEntry GroupId="2999213434" Id="529726532" Name="End"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3742218146" Name="Set_State_Explo" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
@@ -559,11 +559,25 @@
 				</Event>
 				<Event Id="407065776" Name="Set_State_Fight_Grenadier" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="3826569560" Id="1783027799" Name="Fight_Grenadier"/>
+						<ActionSetStateEntry GroupId="2899509660" Id="1651971902" Name="On"/>
 					</ActionSetState>
 				</Event>
 			</Events>
 			<StateGroups>
+				<StateGroup Id="2899509660" Name="Music_OFF">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="930712164" Name="OFF"/>
+						<State Id="1651971902" Name="On"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
+					<States>
+						<State Id="529726532" Name="End"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1783027799" Name="Fight_Grenadier"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3677180323" Name="Health">
 					<States>
 						<State Id="655265632" Name="Alive"/>
@@ -573,10 +587,8 @@
 				</StateGroup>
 				<StateGroup Id="3826569560" Name="Music_State">
 					<States>
-						<State Id="529726532" Name="End"/>
 						<State Id="626462014" Name="Fight_Chomper"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="1783027799" Name="Fight_Grenadier"/>
 						<State Id="3814499265" Name="Explo"/>
 					</States>
 				</StateGroup>
@@ -876,7 +888,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{76BA85FF-750F-3CA8-5313-90230D0CB78C}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D19ACD79-BD29-3B24-E854-85F5067C4236}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -937,6 +949,20 @@
 						<State Id="1752637612" Name="In"/>
 					</States>
 				</StateGroup>
+				<StateGroup Id="2899509660" Name="Music_OFF">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="930712164" Name="OFF"/>
+						<State Id="1651971902" Name="On"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
+					<States>
+						<State Id="529726532" Name="End"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1783027799" Name="Fight_Grenadier"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3092587493" Name="Pause">
 					<States>
 						<State Id="748895195" Name="None"/>
@@ -953,10 +979,8 @@
 				</StateGroup>
 				<StateGroup Id="3826569560" Name="Music_State">
 					<States>
-						<State Id="529726532" Name="End"/>
 						<State Id="626462014" Name="Fight_Chomper"/>
 						<State Id="748895195" Name="None"/>
-						<State Id="1783027799" Name="Fight_Grenadier"/>
 						<State Id="3814499265" Name="Explo"/>
 					</States>
 				</StateGroup>
@@ -981,7 +1005,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{7867CA99-EABE-143C-5430-38E81A147AA2}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{6BC78748-0245-4724-ED4D-46BE8C4662CB}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1153,7 +1177,7 @@
 						<MediaRef Id="69857268"/>
 					</MediaRefs>
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="3826569560" Id="529726532" Name="End"/>
+						<ActionSetStateEntry GroupId="2999213434" Id="529726532" Name="End"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.44951558" DurationMax="0.86703175">
@@ -1192,13 +1216,11 @@
 				</Event>
 			</Events>
 			<StateGroups>
-				<StateGroup Id="3826569560" Name="Music_State">
+				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
 					<States>
 						<State Id="529726532" Name="End"/>
-						<State Id="626462014" Name="Fight_Chomper"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="1783027799" Name="Fight_Grenadier"/>
-						<State Id="3814499265" Name="Explo"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -1854,7 +1876,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{255A0F71-A67A-DCC8-BDE6-81BB751F99CB}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{D994DB24-4DD8-34C4-F733-70F98B6CECC7}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -1897,6 +1919,10 @@
 				<File Id="237116305" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Theme_3D_GAME_KIT_Percs_Explo.wav</ShortName>
 					<CachePath>SFX/Theme_3D_GAME_KIT_Percs_Explo_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="280400961" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Theme_3D_GAME_KIT_Transition_Brass_Staccato.wav</ShortName>
+					<CachePath>SFX/Theme_3D_GAME_KIT_Transition_Brass_Staccato_10C4C929.wem</CachePath>
 				</File>
 				<File Id="283479670" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Theme_3D_GAME_KIT_Transition_Trill.wav</ShortName>
@@ -1961,12 +1987,13 @@
 			</Media>
 			<Plugins>
 				<Custom>
+					<Plugin Id="398898728" Name="Bass_Remover_1 (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="658055879" Name="Bass_Remover_1 (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="843039148" Name="Bass_Remover_1 (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</Custom>
 			</Plugins>
 			<Events>
-				<Event Id="2932096340" Name="Play_Music_Theme_Switch" DurationType="Infinite">
+				<Event Id="3783934524" Name="Play_Music_Theme_Explo_Chomp" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="195277539"/>
 						<MediaRef Id="283479670"/>
@@ -2006,14 +2033,34 @@
 								<MediaRef Id="714256941"/>
 							</MediaRefs>
 						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3826569560" Id="3814499265" Name="Explo"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2441234825" Name="Play_Music_Theme_Grenadier_End" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="195277539"/>
+						<MediaRef Id="280400961"/>
+						<MediaRef Id="283479670"/>
+						<MediaRef Id="490249142"/>
+						<MediaRef Id="751781103"/>
+						<MediaRef Id="794485525"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="398898728"/>
+						</Custom>
+					</PluginRefs>
+					<SwitchContainers>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3826569560" Id="529726532"/>
+							<SwitchValue GroupType="State" GroupId="2999213434" Id="529726532"/>
 							<MediaRefs>
 								<MediaRef Id="117296435"/>
 							</MediaRefs>
 						</SwitchContainer>
 						<SwitchContainer>
-							<SwitchValue GroupType="State" GroupId="3826569560" Id="1783027799"/>
+							<SwitchValue GroupType="State" GroupId="2999213434" Id="1783027799"/>
 							<MediaRefs>
 								<MediaRef Id="10335529"/>
 								<MediaRef Id="40036590"/>
@@ -2024,21 +2071,29 @@
 						</SwitchContainer>
 					</SwitchContainers>
 					<ActionSetState>
-						<ActionSetStateEntry GroupId="3826569560" Id="3814499265" Name="Explo"/>
+						<ActionSetStateEntry GroupId="2999213434" Id="1783027799" Name="Fight_Grenadier"/>
 					</ActionSetState>
 				</Event>
 			</Events>
 			<StateGroups>
-				<StateGroup Id="3826569560" Name="Music_State">
+				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
 					<States>
 						<State Id="529726532" Name="End"/>
-						<State Id="626462014" Name="Fight_Chomper"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="1783027799" Name="Fight_Grenadier"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3826569560" Name="Music_State">
+					<States>
+						<State Id="626462014" Name="Fight_Chomper"/>
+						<State Id="748895195" Name="None"/>
 						<State Id="3814499265" Name="Explo"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
+			<Triggers>
+				<Trigger Id="1865857008" Name="Transition"/>
+			</Triggers>
 		</SoundBank>
 		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{EFF3BEF9-81BF-8A22-5FB4-F30D1A22FFE4}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
@@ -2481,5 +2536,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F59B2308-4EB8-8ABA-A49C-805F4976F167}</FileHash>
+	<FileHash>{D9F54AD1-8366-331F-2399-7A953A3AE84C}</FileHash>
 </SoundBanksInfo>

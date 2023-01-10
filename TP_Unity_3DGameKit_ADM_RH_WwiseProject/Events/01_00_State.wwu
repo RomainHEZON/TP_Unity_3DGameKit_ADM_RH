@@ -27,34 +27,13 @@
 				</Event>
 				<Event Name="Set_State_Fight_Grenadier" ID="{5C38AB69-9CC2-407E-94B3-82C7F450066A}">
 					<ChildrenList>
-						<Action Name="" ID="{E106A010-19ED-4B4A-8193-FB64CFC946D9}" ShortID="903097105">
+						<Action Name="" ID="{F4B111CA-EEDF-48DB-A254-9DF081484D42}" ShortID="623143827">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Fight_Grenadier" ID="{0CAAE32D-C69A-41A0-8627-A0ADB8416B74}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{DFE75C0C-9EDA-405E-A407-CDF9125EDFC9}" ShortID="417378147">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="21"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Theme_Fight_Chomper" ID="{DE73B924-ABC4-4D6C-94DB-2417738D3134}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{B7DA55E7-73A8-4FFF-9305-F908A5654257}" ShortID="893701698">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="34"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Theme_Fight_Chomper" ID="{DE73B924-ABC4-4D6C-94DB-2417738D3134}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+									<ObjectRef Name="On" ID="{DDC90306-926B-4003-9D03-91D2AE72AD41}" WorkUnitID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -96,7 +75,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="End" ID="{AA17C5A9-B07E-477B-BC94-64CB7EA18A46}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+									<ObjectRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

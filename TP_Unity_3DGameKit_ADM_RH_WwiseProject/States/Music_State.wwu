@@ -12,8 +12,13 @@
 						<State Name="None" ID="{18A9D443-CF38-4919-9778-63E7B86B26E5}"/>
 						<State Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
 						<State Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}"/>
-						<State Name="End" ID="{AA17C5A9-B07E-477B-BC94-64CB7EA18A46}"/>
-						<State Name="Fight_Grenadier" ID="{0CAAE32D-C69A-41A0-8627-A0ADB8416B74}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music_Grenadier_State" ID="{27D445E1-1A10-43AE-971E-6858CB42DB19}">
+					<ChildrenList>
+						<State Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
+						<State Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}"/>
+						<State Name="Fight_Grenadier" ID="{FBB8E1F4-315F-410C-9CDA-B1A762D3186E}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

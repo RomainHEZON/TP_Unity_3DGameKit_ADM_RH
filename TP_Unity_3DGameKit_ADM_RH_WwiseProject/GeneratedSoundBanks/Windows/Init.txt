@@ -1,6 +1,8 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
 	2605611591	Room_In_Out			\Room_In_Out\Room_In_Out	
+	2899509660	Music_OFF			\Default Work Unit\Music_On_OFF\Music_OFF	
+	2999213434	Music_Grenadier_State			\Default Work Unit\Music_State\Music_Grenadier_State	
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
 	3677180323	Health			\Default Work Unit\Menu_Pause\Health	
 	3826569560	Music_State			\Default Work Unit\Music_State\Music_State	
@@ -13,16 +15,20 @@ State	ID	Name	State Group			Notes
 	645492555	Out	Room_In_Out			
 	748895195	None	Room_In_Out			
 	1752637612	In	Room_In_Out			
+	748895195	None	Music_OFF			
+	930712164	OFF	Music_OFF			
+	1651971902	On	Music_OFF			
+	529726532	End	Music_Grenadier_State			
+	748895195	None	Music_Grenadier_State			
+	1783027799	Fight_Grenadier	Music_Grenadier_State			
 	748895195	None	Pause			
 	3537680115	Pause_ON	Pause			
 	3967028551	Pause_OFF	Pause			
 	655265632	Alive	Health			
 	748895195	None	Health			
 	2044049779	Dead	Health			
-	529726532	End	Music_State			
 	626462014	Fight_Chomper	Music_State			
 	748895195	None	Music_State			
-	1783027799	Fight_Grenadier	Music_State			
 	3814499265	Explo	Music_State			
 
 Custom State	ID	Name	State Group	Owner		Notes

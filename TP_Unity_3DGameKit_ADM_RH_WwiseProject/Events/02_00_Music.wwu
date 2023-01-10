@@ -7,18 +7,8 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Play_Music_Theme_Switch" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}">
+				<Event Name="Play_Music_Theme_Explo_Chomp" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}">
 					<ChildrenList>
-						<Action Name="" ID="{558313B4-560E-4C55-BE97-670154FD2F2A}" ShortID="282531217">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Theme_Switch" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{0DE24511-AEA4-4138-B559-586076112A05}" ShortID="386519979">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -26,6 +16,48 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{558313B4-560E-4C55-BE97-670154FD2F2A}" ShortID="282531217">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Explo_Chomp" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Theme_Grenadier_End" ID="{4B422814-865E-42DF-84BF-8F993487C36C}">
+					<ChildrenList>
+						<Action Name="" ID="{EC751999-923C-4C7A-94A2-89D0C4EF1AC5}" ShortID="649944996">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E4845C53-0C28-4C2B-ACB4-D47870995D46}" ShortID="786475837">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight_Grenadier" ID="{FBB8E1F4-315F-410C-9CDA-B1A762D3186E}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E85DB5FF-E0D6-468A-B21A-CF90229D9FBB}" ShortID="638182785">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Grenadier_End" ID="{3E19E3D0-ECB0-47AD-B44A-AF7F51385E63}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
