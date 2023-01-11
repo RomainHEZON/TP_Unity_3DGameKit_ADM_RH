@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{F6E35B37-A7D9-A941-6650-821238B182CA}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{DDEB85A0-6CDE-70E7-D9D1-3BB91C75AC6A}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{45097B8F-72C9-B1D2-48A8-47FF5659FEC0}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{32579EC0-4706-029E-D106-A6984C5A425F}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -185,10 +185,6 @@
 					<ShortName>SFX_Boxes_Break_Layer_A_05.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_A_05_10C4C929.wem</CachePath>
 				</File>
-				<File Id="186637930" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Pressure_Pad_Activated.wav</ShortName>
-					<CachePath>SFX/SFX_Pressure_Pad_Activated_BE169731.wem</CachePath>
-				</File>
 				<File Id="198616805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_03.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_03_10C4C929.wem</CachePath>
@@ -203,7 +199,7 @@
 				</File>
 				<File Id="222860603" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Teleporter_Walkthrough.wav</ShortName>
-					<CachePath>SFX/SFX_Teleporter_Walkthrough_10C4C929.wem</CachePath>
+					<CachePath>SFX/SFX_Teleporter_Walkthrough_69AE1BD3.wem</CachePath>
 				</File>
 				<File Id="224626741" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_05.wav</ShortName>
@@ -263,11 +259,6 @@
 					<ShortName>SFX_Alien_Staff_Pickup_02.wav</ShortName>
 					<CachePath>SFX/SFX_Alien_Staff_Pickup_02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="373608305" Language="SFX" Streaming="true" Location="Loose">
-					<ShortName>SFX_Boxes_Idle_01_Loop.wav</ShortName>
-					<Path>Media/373608305.wem</Path>
-					<CachePath>SFX/SFX_Boxes_Idle_01_Loop_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="394890035" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_01_10C4C929.wem</CachePath>
@@ -276,11 +267,6 @@
 					<ShortName>SFX_Crsytal_Switches_Before_Activation.wav</ShortName>
 					<Path>Media/449291716.wem</Path>
 					<CachePath>SFX/SFX_Crsytal_Switches_Before_Activation_D79FB2B7.wem</CachePath>
-				</File>
-				<File Id="471316824" Language="SFX" Streaming="true" Location="Loose">
-					<ShortName>SFX_Boxes_Idle_02_Loop.wav</ShortName>
-					<Path>Media/471316824.wem</Path>
-					<CachePath>SFX/SFX_Boxes_Idle_02_Loop_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="472927923" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_04.wav</ShortName>
@@ -421,12 +407,6 @@
 						<MediaRef Id="1038708921"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2191381978" Name="Play_Boxes_Idle" MaxAttenuation="10" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="373608305"/>
-						<MediaRef Id="471316824"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="1380322271" Name="Play_SFX_After_Activation" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="995374565"/>
@@ -500,11 +480,7 @@
 						<MediaRef Id="874212920"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" DurationType="OneShot" DurationMin="1.2441505" DurationMax="1.4374328">
-					<MediaRefs>
-						<MediaRef Id="186637930"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2961794190" Name="Play_SFX_Pressure_Pad_Idle" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="327699342"/>
@@ -515,14 +491,18 @@
 						<MediaRef Id="252594530"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2370542445" Name="Play_SFX_Teleporter_Walkthrough" DurationType="OneShot" DurationMin="10.685145" DurationMax="10.685145">
+				<Event Id="2370542445" Name="Play_SFX_Teleporter_Walkthrough" DurationType="OneShot" DurationMin="10.454229" DurationMax="10.454229">
 					<MediaRefs>
 						<MediaRef Id="222860603"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3789712745" Name="Stop_AllSounds" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="171421511" Name="Stop_All_Events" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="1334832914" Name="Staff_Idle_SFX"/>
+				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3677180323" Name="Health">
 					<States>
@@ -533,10 +513,14 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{066A5196-6D7F-AC64-DD00-9993097724FE}">
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{4207B99E-4A2B-4783-CD85-8A7376A55F4B}">
 			<ShortName>States</ShortName>
 			<Path>States.bnk</Path>
 			<Events>
+				<Event Id="2738096543" Name="Set_Game_Parameter_Staff_RTPC_01" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2738096540" Name="Set_Game_Parameter_Staff_RTPC_02" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2738096541" Name="Set_Game_Parameter_Staff_RTPC_03" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2738096538" Name="Set_Game_Parameter_Staff_RTPC_04" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3796261246" Name="Set_State_Dead" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0">
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="3677180323" Id="2044049779" Name="Dead"/>
@@ -594,7 +578,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{1EB5940A-CC60-F14C-28F5-57FBB2CB2D22}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{7D3232D7-E6CB-DD35-1592-DB2EB300F109}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -681,7 +665,7 @@
 				</File>
 				<File Id="333726041" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_05.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Spaceship_Radio_05_10C4C929.wem</CachePath>
+					<CachePath>SFX/AMB_RFX_Spaceship_Radio_05_1B6A97C0.wem</CachePath>
 				</File>
 				<File Id="337663516" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_A_06.wav</ShortName>
@@ -693,7 +677,7 @@
 				</File>
 				<File Id="365716477" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_02.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Spaceship_Radio_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/AMB_RFX_Spaceship_Radio_02_5385F288.wem</CachePath>
 				</File>
 				<File Id="384426639" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Birds\AMB_RFX_Bird_A_02.wav</ShortName>
@@ -757,7 +741,7 @@
 				</File>
 				<File Id="906360689" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_07.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Spaceship_Radio_07_10C4C929.wem</CachePath>
+					<CachePath>SFX/AMB_RFX_Spaceship_Radio_07_03348642.wem</CachePath>
 				</File>
 				<File Id="914240333" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blackbird\AMB_RFX_Blackbird_02.wav</ShortName>
@@ -773,11 +757,11 @@
 				</File>
 				<File Id="987360822" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_03.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Spaceship_Radio_03_10C4C929.wem</CachePath>
+					<CachePath>SFX/AMB_RFX_Spaceship_Radio_03_7F4D6E30.wem</CachePath>
 				</File>
 				<File Id="990828257" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Spaceship_Radio_01.wav</ShortName>
-					<CachePath>SFX/AMB_RFX_Spaceship_Radio_01_10C4C929.wem</CachePath>
+					<CachePath>SFX/AMB_RFX_Spaceship_Radio_01_BFCF25D6.wem</CachePath>
 				</File>
 				<File Id="992948447" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Blackbird\AMB_RFX_Blackbird_04.wav</ShortName>
@@ -796,6 +780,12 @@
 					<CachePath>SFX/AMB_RFX_Magic_Cave_01_10C4C929.wem</CachePath>
 				</File>
 			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="47042995" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+					<Plugin Id="1024065430" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
+				</Custom>
+			</Plugins>
 			<Events>
 				<Event Id="2070617240" Name="Play_AMB_RFX_Morse_Code" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
@@ -826,6 +816,12 @@
 						<MediaRef Id="798641773"/>
 						<MediaRef Id="1032318676"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="47042995"/>
+							<PluginRef Id="1024065430"/>
+						</Custom>
+					</PluginRefs>
 				</Event>
 				<Event Id="576298738" Name="Play_Blackbird" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
@@ -888,7 +884,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{3923B2B0-9D3D-A18A-5326-BBF3234080E7}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{50AADC88-DE0D-2985-582D-01D4350C4E33}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -924,14 +920,16 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="488659181" Name="Staff_RTPC"/>
 				<GameParameter Id="692140126" Name="Wind_AMB"/>
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
+				<GameParameter Id="1334832914" Name="Staff_Idle_SFX"/>
 				<GameParameter Id="1564184899" Name="SFX_Volume"/>
 				<GameParameter Id="2006680970" Name="Switch_Collect_Progression"/>
+				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
-				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 			<StateGroups>
@@ -1006,7 +1004,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{6BC78748-0245-4724-ED4D-46BE8C4662CB}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{F75BF8A5-536B-FE6C-0CAE-3263BD948315}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1136,13 +1134,13 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="79389039" Name="Play_Attack_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.175521" DurationMax="2.2567708">
+				<Event Id="79389039" Name="Play_Attack_Close" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.0534182" DurationMax="2.3909655">
 					<MediaRefs>
 						<MediaRef Id="345715520"/>
 						<MediaRef Id="823718818"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2579342955" Name="Play_Attack_Range_Bounce" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.80627084" DurationMax="0.95210415">
+				<Event Id="2579342955" Name="Play_Attack_Range_Bounce" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.7610183" DurationMax="1.0087192">
 					<MediaRefs>
 						<MediaRef Id="462539298"/>
 						<MediaRef Id="799026636"/>
@@ -1150,20 +1148,20 @@
 						<MediaRef Id="982471566"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3013215836" Name="Play_Attack_Range_Explosion" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.7171875" DurationMax="1.7291666">
+				<Event Id="3013215836" Name="Play_Attack_Range_Explosion" MaxAttenuation="30" DurationType="OneShot" DurationMin="1.6208091" DurationMax="1.8319883">
 					<MediaRefs>
 						<MediaRef Id="497105021"/>
 						<MediaRef Id="951400336"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3818987871" Name="Play_Attack_Range_Fire" MaxAttenuation="30" DurationType="OneShot" DurationMin="3.2005208" DurationMax="4.5760417">
+				<Event Id="3818987871" Name="Play_Attack_Range_Fire" MaxAttenuation="30" DurationType="OneShot" DurationMin="3.020889" DurationMax="4.8481474">
 					<MediaRefs>
 						<MediaRef Id="524292837"/>
 						<MediaRef Id="609087632"/>
 						<MediaRef Id="787630289"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2314174147" Name="Play_Get_Hit_Behind" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.0511458" DurationMax="2.5713413">
+				<Event Id="2314174147" Name="Play_Get_Hit_Behind" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.9472489" DurationMax="2.7123485">
 					<MediaRefs>
 						<MediaRef Id="219315323"/>
 						<MediaRef Id="352007991"/>
@@ -1173,7 +1171,7 @@
 						<MediaRef Id="976343665"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3337034902" Name="Play_Grenadier_Death" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.760076" DurationMax="5.343005">
+				<Event Id="3337034902" Name="Play_Grenadier_Death" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.4929137" DurationMax="5.6607165">
 					<MediaRefs>
 						<MediaRef Id="69857268"/>
 					</MediaRefs>
@@ -1181,7 +1179,7 @@
 						<ActionSetStateEntry GroupId="2999213434" Id="529726532" Name="End"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.44951558" DurationMax="0.86703175">
+				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.42428622" DurationMax="0.91858816">
 					<MediaRefs>
 						<MediaRef Id="259148681"/>
 						<MediaRef Id="260297540"/>
@@ -1193,14 +1191,14 @@
 						<MediaRef Id="1072987620"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2990788" DurationMax="1.8117005">
+				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2261672" DurationMax="1.9194298">
 					<MediaRefs>
 						<MediaRef Id="639603022"/>
 						<MediaRef Id="706922979"/>
 						<MediaRef Id="953794628"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.8511459" DurationMax="2.3713412">
+				<Event Id="2993140481" Name="Play_Grenadier_Vox_GetHit" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.7472489" DurationMax="2.5123484">
 					<MediaRefs>
 						<MediaRef Id="381948013"/>
 						<MediaRef Id="976343665"/>
@@ -1209,7 +1207,7 @@
 						<ActionPostEventEntry Id="3891969030" Name="Play_Grenadier_Vox_Attack"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="1988178265" Name="Play_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="5.125" DurationMax="5.1401043">
+				<Event Id="1988178265" Name="Play_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.8373556" DurationMax="5.445751">
 					<MediaRefs>
 						<MediaRef Id="305209183"/>
 						<MediaRef Id="1058987220"/>
@@ -1226,7 +1224,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{0DE2B356-AACD-5AEA-FE08-AABE31B22C87}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{9093944B-FD5A-F53D-0F73-AB1601CE04E2}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1314,11 +1312,6 @@
 					<ShortName>Frogs\AMB_RFX_Frog_A_02.wav</ShortName>
 					<CachePath>SFX/Frogs/AMB_RFX_Frog_A_02_10C4C929.wem</CachePath>
 				</File>
-				<File Id="1005958032" Language="SFX" Streaming="true" Location="Loose">
-					<ShortName>AMB_PAD_River.wav</ShortName>
-					<Path>Media/1005958032.wem</Path>
-					<CachePath>SFX/AMB_PAD_River_D79FB2B7.wem</CachePath>
-				</File>
 				<File Id="1048301795" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>AMB_PAD_Wetland_Loop.wav</ShortName>
 					<Path>Media/1048301795.wem</Path>
@@ -1360,11 +1353,6 @@
 						<MediaRef Id="1069776302"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4220606807" Name="Play_AMB_PAD_River" MaxAttenuation="20" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="1005958032"/>
-					</MediaRefs>
-				</Event>
 				<Event Id="3800059594" Name="Play_AMB_PAD_Wetland" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="1048301795"/>
@@ -1387,7 +1375,7 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="2205333009" Name="Play_AMB_PAD_Wind_Elevation" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
-				<Event Id="3873597236" Name="Play_Spaceship_BC" MaxAttenuation="30" DurationType="Infinite">
+				<Event Id="3873597236" Name="Play_Spaceship_BC" MaxAttenuation="40" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="77744621"/>
 						<MediaRef Id="465306571"/>
@@ -1410,7 +1398,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{2891ED7A-4093-1E41-59BE-AC61F1C65750}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{AB2CF8D0-26DE-0D1A-9D7C-16D89C51DEDB}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -1617,9 +1605,14 @@
 					<Plugin Id="857060532" Name="Silence" LibName="Wwise Silence" LibId="6619138"/>
 					<Plugin Id="941828739" Name="Guitar Distortion (Custom)" LibName="Wwise Guitar Distortion" LibId="8257539"/>
 				</Custom>
+				<ShareSets>
+					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="2547645744" Name="Boost_3dB_100Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="2998002419" Name="Boost_3dB_10KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.6430143" DurationMax="1">
+				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.6430143" DurationMax="1.0293022">
 					<MediaRefs>
 						<MediaRef Id="52748730"/>
 						<MediaRef Id="167487927"/>
@@ -1641,9 +1634,12 @@
 							<PluginRef Id="857060532"/>
 							<PluginRef Id="941828739"/>
 						</Custom>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3379918037" Name="Play_Bodyfall_Water" DurationType="OneShot" DurationMin="2.08975" DurationMax="2.5142708">
+				<Event Id="3379918037" Name="Play_Bodyfall_Water" DurationType="OneShot" DurationMin="2.030259" DurationMax="2.663777">
 					<MediaRefs>
 						<MediaRef Id="233825437"/>
 						<MediaRef Id="555327716"/>
@@ -1651,12 +1647,12 @@
 						<MediaRef Id="657548567"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2382465142" Name="Play_Ellen_SFX_Bodyfall" DurationType="OneShot" DurationMin="0.54239583" DurationMax="0.54239583">
+				<Event Id="2382465142" Name="Play_Ellen_SFX_Bodyfall" DurationType="OneShot" DurationMin="0.5269549" DurationMax="0.6088187">
 					<MediaRefs>
 						<MediaRef Id="983004342"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3623063248" Name="Play_FOL_Jump" DurationType="OneShot" DurationMin="0.33210418" DurationMax="0.48264584">
+				<Event Id="3623063248" Name="Play_FOL_Jump" DurationType="OneShot" DurationMin="0.31346458" DurationMax="0.5113455">
 					<MediaRefs>
 						<MediaRef Id="100880891"/>
 						<MediaRef Id="116163342"/>
@@ -1666,13 +1662,13 @@
 						<MediaRef Id="535331808"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1668355981" Name="Play_FOL_Roll" DurationType="OneShot" DurationMin="0.60214585" DurationMax="0.62789583">
+				<Event Id="1668355981" Name="Play_FOL_Roll" DurationType="OneShot" DurationMin="0.56834996" DurationMax="0.6652325">
 					<MediaRefs>
 						<MediaRef Id="564213551"/>
 						<MediaRef Id="583262733"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1810712955" Name="Play_FOL_Run" DurationType="OneShot" DurationMin="0.30108333" DurationMax="0.50366664">
+				<Event Id="1810712955" Name="Play_FOL_Run" DurationType="OneShot" DurationMin="0.29251206" DurationMax="0.5184252">
 					<MediaRefs>
 						<MediaRef Id="150224307"/>
 						<MediaRef Id="398982317"/>
@@ -1686,14 +1682,19 @@
 					<MediaRefs>
 						<MediaRef Id="974062211"/>
 					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2998002419"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
-				<Event Id="2043034684" Name="Play_VO_Death" DurationType="OneShot" DurationMin="0.74387753" DurationMax="0.9946712">
+				<Event Id="2043034684" Name="Play_VO_Death" DurationType="OneShot" DurationMin="0.7227008" DurationMax="1.0238173">
 					<MediaRefs>
 						<MediaRef Id="233825437"/>
 						<MediaRef Id="657548567"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3926096204" Name="Play_VO_Effort" DurationType="OneShot" DurationMin="0.1379375" DurationMax="1">
+				<Event Id="3926096204" Name="Play_VO_Effort" DurationType="OneShot" DurationMin="0.13401069" DurationMax="1.0293022">
 					<MediaRefs>
 						<MediaRef Id="231503081"/>
 						<MediaRef Id="364027642"/>
@@ -1708,14 +1709,14 @@
 						</Custom>
 					</PluginRefs>
 				</Event>
-				<Event Id="3751336843" Name="Play_VO_Inhale" DurationType="OneShot" DurationMin="0.54239583" DurationMax="0.6619167">
+				<Event Id="3751336843" Name="Play_VO_Inhale" DurationType="OneShot" DurationMin="0.5269549" DurationMax="0.6813123">
 					<MediaRefs>
 						<MediaRef Id="469374635"/>
 						<MediaRef Id="706531040"/>
 						<MediaRef Id="1009972051"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="72136190" Name="Play_VO_Pain" DurationType="OneShot" DurationMin="0.28705215" DurationMax="0.3772109">
+				<Event Id="72136190" Name="Play_VO_Pain" DurationType="OneShot" DurationMin="0.27888033" DurationMax="0.388264">
 					<MediaRefs>
 						<MediaRef Id="17155344"/>
 						<MediaRef Id="18505171"/>
@@ -1727,10 +1728,10 @@
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="3828256600" Name="Staff_Distorsion"/>
+				<GameParameter Id="488659181" Name="Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{1B21C073-E8BA-250C-D3DE-13EC3A8EFBDF}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{733407A7-9E50-0FBA-AF0C-E417A671F106}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1840,7 +1841,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3482670435" Name="Play_Chomper_FT_Walk" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.17697641" DurationMax="0.25349864">
+				<Event Id="3482670435" Name="Play_Chomper_FT_Walk" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.17193826" DurationMax="0.2609267">
 					<MediaRefs>
 						<MediaRef Id="34797999"/>
 						<MediaRef Id="50668460"/>
@@ -1888,7 +1889,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{62266445-6D4D-31F7-534D-477401EEE611}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{235FE2F4-E195-CEF8-4FA9-EBA80F35812D}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2107,7 +2108,7 @@
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{EFF3BEF9-81BF-8A22-5FB4-F30D1A22FFE4}">
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{36F31871-21C9-CAD8-8666-3B76EC4DF85B}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
 			<Media>
@@ -2548,5 +2549,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{09E74B10-C9A3-3D4D-19F7-DD841D618D68}</FileHash>
+	<FileHash>{7955B3AD-FED0-B2B7-5D61-8C9A8A7B5F54}</FileHash>
 </SoundBanksInfo>

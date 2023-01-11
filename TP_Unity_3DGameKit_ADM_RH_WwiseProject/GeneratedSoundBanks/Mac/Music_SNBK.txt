@@ -3,23 +3,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	3783934524	Play_Music_Theme_Explo_Chomp			\Default Work Unit\02_00_Music\Play_Music_Theme_Explo_Chomp	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	2899509660	Music_OFF			\Default Work Unit\Music_On_OFF\Music_OFF	
 	2999213434	Music_Grenadier_State			\Default Work Unit\Music_State\Music_Grenadier_State	
 	3826569560	Music_State			\Default Work Unit\Music_State\Music_State	
 
 State	ID	Name	State Group			Notes
-	748895195	None	Music_OFF			
-	930712164	OFF	Music_OFF			
-	1651971902	On	Music_OFF			
 	529726532	End	Music_Grenadier_State			
 	748895195	None	Music_Grenadier_State			
 	1783027799	Fight_Grenadier	Music_Grenadier_State			
 	626462014	Fight_Chomper	Music_State			
 	748895195	None	Music_State			
 	3814499265	Explo	Music_State			
-
-Custom State	ID	Name	State Group	Owner		Notes
-	772744017	On	Music_OFF	\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp		
 
 Trigger	ID	Name			Wwise Object Path	Notes
 	1865857008	Transition			\Default Work Unit\Transition	
@@ -40,7 +33,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	195277539	Theme_3D_GAME_KIT_Transition_Trill	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Transition_Brass_Staccato_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp\Theme_Transition_to_Fight\Theme_3D_GAME_KIT_Transition\Theme_3D_GAME_KIT_Transition_Trill		1059232
 	223116021	Theme_3D_GAME_KIT_Harp	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Harp_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp\Theme_Explo_Container\Theme_3D_GAME_KIT_Explo_01\Theme_3D_GAME_KIT_Harp		3093344
 	237116305	Theme_3D_GAME_KIT_Percs_Explo	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Percs_Explo_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp\Theme_Explo_Container\Theme_3D_GAME_KIT_Explo_Percs\Theme_3D_GAME_KIT_Percs_Explo		2458720
-	280400961	Theme_3D_GAME_KIT_Transition_Brass_Staccato	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Transition_Brass_Staccato_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_70_Grenadier\Grenadier_Mixer\Theme_3D_GAME_KIT_Transition_Brass_Staccato		1059232
+	280400961	Theme_3D_GAME_KIT_Transition_Brass_Staccato	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Transition_Brass_Staccato_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\02_00_Music\Music_Mixer\Theme_3D_GAME_KIT_Transition_Brass_Staccato		1059232
 	283479670	Theme_3D_GAME_KIT_Transition_Trill	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Transition_Trill_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp\Theme_Transition_to_Fight\Theme_3D_GAME_KIT_Transition\Theme_3D_GAME_KIT_Transition_Trill		1167416
 	449424071	Theme_3D_GAME_KIT_Oud	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Oud_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp\Theme_Explo_Container\Theme_3D_GAME_KIT_Explo_01\Theme_3D_GAME_KIT_Oud		3688696
 	490249142	Theme_3D_GAME_KIT_Transition_Trill	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Theme_3D_GAME_KIT_Transition_Trill_Low_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Theme\Theme_Switch_Explo_Chomp\Theme_Transition_to_Fight\Theme_3D_GAME_KIT_Transition\Theme_3D_GAME_KIT_Transition_Trill		1234944

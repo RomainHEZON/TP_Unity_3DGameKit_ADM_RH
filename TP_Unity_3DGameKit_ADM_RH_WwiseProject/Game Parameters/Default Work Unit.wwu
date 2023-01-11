@@ -7,6 +7,7 @@
 				<WorkUnit Name="Distance" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" PersistMode="Reference"/>
 				<WorkUnit Name="Health" ID="{78A052F1-9A00-4EA0-85F9-CC8399387A1F}" PersistMode="Reference"/>
 				<WorkUnit Name="Progression" ID="{F735EE6F-8838-44A7-B276-6BC9BB2729BD}" PersistMode="Reference"/>
+				<WorkUnit Name="Staff" ID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

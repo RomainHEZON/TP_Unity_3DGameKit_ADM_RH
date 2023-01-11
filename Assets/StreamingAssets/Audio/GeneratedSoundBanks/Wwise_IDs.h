@@ -20,7 +20,6 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_CAVE = 2915382764U;
         static const AkUniqueID PLAY_AMB_PAD_HUGE_DOOR_CRYSTAL = 26858146U;
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
-        static const AkUniqueID PLAY_AMB_PAD_RIVER = 4220606807U;
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
         static const AkUniqueID PLAY_AMB_PAD_WIND = 1205748041U;
         static const AkUniqueID PLAY_AMB_PAD_WIND_ELEVATION = 2205333009U;
@@ -34,7 +33,6 @@ namespace AK
         static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
         static const AkUniqueID PLAY_BODYFALL_WATER = 3379918037U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
-        static const AkUniqueID PLAY_BOXES_IDLE = 2191381978U;
         static const AkUniqueID PLAY_CHOMPER_FT_WALK = 3482670435U;
         static const AkUniqueID PLAY_EELDOG_DIVE = 1977240871U;
         static const AkUniqueID PLAY_EELDOG_EMERGE = 1667970722U;
@@ -92,12 +90,16 @@ namespace AK
         static const AkUniqueID PLAY_VO_EFFORT = 3926096204U;
         static const AkUniqueID PLAY_VO_INHALE = 3751336843U;
         static const AkUniqueID PLAY_VO_PAIN = 72136190U;
+        static const AkUniqueID SET_GAME_PARAMETER_STAFF_RTPC_01 = 2738096543U;
+        static const AkUniqueID SET_GAME_PARAMETER_STAFF_RTPC_02 = 2738096540U;
+        static const AkUniqueID SET_GAME_PARAMETER_STAFF_RTPC_03 = 2738096541U;
+        static const AkUniqueID SET_GAME_PARAMETER_STAFF_RTPC_04 = 2738096538U;
         static const AkUniqueID SET_STATE_DEAD = 3796261246U;
         static const AkUniqueID SET_STATE_END = 2300403011U;
         static const AkUniqueID SET_STATE_EXPLO = 3742218146U;
         static const AkUniqueID SET_STATE_FIGHT_CHOMPER = 846679953U;
         static const AkUniqueID SET_STATE_FIGHT_GRENADIER = 407065776U;
-        static const AkUniqueID STOP_ALLSOUNDS = 3789712745U;
+        static const AkUniqueID STOP_ALL_EVENTS = 171421511U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
     } // namespace EVENTS
 
@@ -229,8 +231,10 @@ namespace AK
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;
         static const AkUniqueID SPACESHIP_AMB = 3545834150U;
-        static const AkUniqueID STAFF_DISTORSION = 3828256600U;
+        static const AkUniqueID STAFF_IDLE_SFX = 1334832914U;
+        static const AkUniqueID STAFF_RTPC = 488659181U;
         static const AkUniqueID SWITCH_COLLECT_PROGRESSION = 2006680970U;
+        static const AkUniqueID TELEPORTER_SFX = 2740591189U;
         static const AkUniqueID WIND_AMB = 692140126U;
     } // namespace GAME_PARAMETERS
 

@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	171421511	Stop_All_Events			\Default Work Unit\00_50_SFX\Stop_All_Events	
 	367538363	Play_SFX_Death_Stinger			\Default Work Unit\00_50_SFX\Play_SFX_Death_Stinger	
 	530524938	Play_Alien_Staff_Hit_Metal			\Default Work Unit\00_50_SFX\Alien_Staff\Play_Alien_Staff_Hit_Metal	
 	708322193	Play_Alien_Staff_Hit_Vegetation			\Default Work Unit\00_50_SFX\Alien_Staff\Play_Alien_Staff_Hit_Vegetation	
@@ -12,16 +13,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	1880847345	Play_Boxes_Break			\Default Work Unit\00_50_SFX\Boxes\Play_Boxes_Break	
 	2050638422	Play_Alien_Staff_Hit_Rock			\Default Work Unit\00_50_SFX\Alien_Staff\Play_Alien_Staff_Hit_Rock	
 	2116431113	Play_SFX_Alien_Staff_Idle			\Default Work Unit\00_50_SFX\Alien_Staff\Play_SFX_Alien_Staff_Idle	
-	2191381978	Play_Boxes_Idle			\Default Work Unit\00_50_SFX\Boxes\Play_Boxes_Idle	
 	2370542445	Play_SFX_Teleporter_Walkthrough			\Default Work Unit\00_50_SFX\Teleporter\Play_SFX_Teleporter_Walkthrough	
 	2644163508	Play_SFX_Teleporter_Rift			\Default Work Unit\00_50_SFX\Teleporter\Play_SFX_Teleporter_Rift	
 	2961794190	Play_SFX_Pressure_Pad_Idle			\Default Work Unit\00_50_SFX\Pressure_Pad\Play_SFX_Pressure_Pad_Idle	
 	3532940987	Play_SFX_Crystal_Switch_Activated			\Default Work Unit\00_50_SFX\Crystal\Play_SFX_Crystal_Switch_Activated	
 	3673773357	Play_SFX_Pressure_Pad_Activated			\Default Work Unit\00_50_SFX\Pressure_Pad\Play_SFX_Pressure_Pad_Activated	
 	3731817354	Play_SFX_Crystal_Switches_Before_Activation			\Default Work Unit\00_50_SFX\Crystal\Play_SFX_Crystal_Switches_Before_Activation	
-	3789712745	Stop_AllSounds			\Default Work Unit\00_50_SFX\Stop_AllSounds	
 	4102656700	Play_SFX_Enemy_Vanish			\Default Work Unit\00_50_SFX\Play_SFX_Enemy_Vanish	
 	4120424468	Play_SFX_HealthBox_Open_01			\Default Work Unit\00_50_SFX\HealthBox\Play_SFX_HealthBox_Open_01	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1334832914	Staff_Idle_SFX			\Default Work Unit\Distance\Staff_Idle_SFX	
+	2740591189	Teleporter_SFX			\Default Work Unit\Distance\Teleporter_SFX	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
@@ -35,11 +38,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	134084940	SFX_Enemy_Vanish_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Enemy_Vanish_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Enemy_Vanish_Mixer\SFX_Enemy_Vanish_RC\SFX_Enemy_Vanish_01		477980
 	145840147	SFX_Enemy_Vanish_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Enemy_Vanish_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Enemy_Vanish_Mixer\SFX_Enemy_Vanish_RC\SFX_Enemy_Vanish_02		477980
 	176822686	SFX_Boxes_Break_Layer_A_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_A_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_A\SFX_Boxes_Break_Layer_A_05		192096
-	186637930	SFX_Pressure_Pad_Activated	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Pressure_Pad_Activated_BE169731.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Pad_Pressure_Mixer\SFX_Pressure_Pad_Activated		123036
 	198616805	SFX_Boxes_Break_Layer_C_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_C_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_C\SFX_Boxes_Break_Layer_C_03		199664
 	209161940	Ellen_SFX_Staff_Hit_Vegetation_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Ellen_SFX_Staff_Hit_Vegetation_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Alien_Staff_Mixer\Alien_Staff_Hit_Vegetation_RC\Ellen_SFX_Staff_Hit_Vegetation_02		92764
 	216927490	SFX_Boxes_Break_Layer_A_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_A_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_A\SFX_Boxes_Break_Layer_A_02		192096
-	222860603	SFX_Teleporter_Walkthrough	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Teleporter_Walkthrough_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Teleporter_Mixer\SFX_Teleporter_Walkthrough		2051644
+	222860603	SFX_Teleporter_Walkthrough	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Teleporter_Walkthrough_69AE1BD3.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Teleporter_Mixer\SFX_Teleporter_Walkthrough		2007308
 	224626741	SFX_Boxes_Break_Layer_C_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Break_Layer_C_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Break_BLD\Boxes_Break_Layer_C\SFX_Boxes_Break_Layer_C_05		199434
 	232782513	Ellen_SFX_Staff_Hit_Vegetation_06	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Ellen_SFX_Staff_Hit_Vegetation_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Alien_Staff_Mixer\Alien_Staff_Hit_Vegetation_RC\Ellen_SFX_Staff_Hit_Vegetation_06		104336
 	241239500	SFX_Enemy_Vanish_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Enemy_Vanish_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Enemy_Vanish_Mixer\SFX_Enemy_Vanish_RC\SFX_Enemy_Vanish_03		477980
@@ -77,9 +79,7 @@ Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	
 	165830993	SFX_Alien_Staff_Idle_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Alien_Staff_Idle_D79FB2B7.wem	165830993.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Alien_Staff_Mixer\SFX_Alien_Staff_Idle_Loop	
 	252594530	SFX_Teleporter_Rift_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Teleporter_Rift_Loop_D79FB2B7.wem	252594530.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Teleporter_Mixer\SFX_Teleporter_Rift_Loop	
 	327699342	SFX_Pressure_Pad_Idle_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Pressure_Pad_Idle_Loop_D79FB2B7.wem	327699342.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Pad_Pressure_Mixer\SFX_Pressure_Pad_Idle_Loop	
-	373608305	SFX_Boxes_Idle_01_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Idle_01_Loop_D79FB2B7.wem	373608305.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Idle_RC\SFX_Boxes_Idle_01_Loop	
 	449291716	SFX_Crystal_Switches_Before_Activation_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Crsytal_Switches_Before_Activation_D79FB2B7.wem	449291716.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Crystal_Switch_Mixer\SFX_Crystal_Switches_Before_Activation_Loop	
-	471316824	SFX_Boxes_Idle_02_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Boxes_Idle_02_Loop_D79FB2B7.wem	471316824.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Boxes_Mixer\Boxes_Idle_RC\SFX_Boxes_Idle_02_Loop	
 	535200743	SFX_HealthBox_Idle_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_HealthBox_Loop_D79FB2B7.wem	535200743.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\HealthBox_Mixer\SFX_HealthBox_Idle_Loop	
 	995374565	SFX_After_Activation_Loop	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Crystal_Switches_Afert_Activation_Loop_D79FB2B7.wem	995374565.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Pad_After_Activation_Mixer\SFX_After_Activation_Loop	
 

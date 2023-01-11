@@ -33,7 +33,19 @@
 				</Event>
 				<Event Name="Play_Music_Theme_Grenadier_End" ID="{4B422814-865E-42DF-84BF-8F993487C36C}">
 					<ChildrenList>
-						<Action Name="" ID="{E4845C53-0C28-4C2B-ACB4-D47870995D46}" ShortID="786475837">
+						<Action Name="" ID="{F79AE604-FA88-48B4-A868-FD9E979FD411}" ShortID="794574450">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Explo_Chomp" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D4D6B60D-0467-4167-9E49-485102F62438}" ShortID="988686684">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
 							</PropertyList>

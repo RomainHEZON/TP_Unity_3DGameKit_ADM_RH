@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Ellen_Attack_Manager : MonoBehaviour
 {
+
+    [SerializeField] private AK.Wwise.RTPC _StaffRTPC;
     // Melee Attack
     private void MeleeAttack()
     {
@@ -45,5 +47,24 @@ public class Ellen_Attack_Manager : MonoBehaviour
 
     }
 
-    
+    // RTPC Staff 
+    public void StaffCombo01()
+    {
+        AkSoundEngine.PostEvent("Set_Game_Parameter_Staff_RTPC_01", this.gameObject);
+        
+    }
+    public void StaffCombo02()
+    {
+        AkSoundEngine.PostEvent("Set_Game_Parameter_Staff_RTPC_02", this.gameObject);
+    }
+
+    public void StaffCombo03()
+    {
+        AkSoundEngine.PostEvent("Set_Game_Parameter_Staff_RTPC_03", this.gameObject);
+    }
+
+    public void StaffCombo04()
+    {
+        AkSoundEngine.PostEvent("Set_Game_Parameter_Staff_RTPC_04", this.gameObject);
+    }
 }

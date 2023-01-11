@@ -1,6 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
-	2605611591	Room_In_Out			\Room_In_Out\Room_In_Out	
+	2605611591	Room_In_Out			\Default Work Unit\Room_Interior\Room_In_Out	
 	2899509660	Music_OFF			\Default Work Unit\Music_On_OFF\Music_OFF	
 	2999213434	Music_Grenadier_State			\Default Work Unit\Music_State\Music_Grenadier_State	
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	

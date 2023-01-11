@@ -134,7 +134,7 @@
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="0.1"/>
 								<Property Name="Feedback" Type="Real32" Value="0"/>
-								<Property Name="WetDryMix" Type="Real32" Value="10"/>
+								<Property Name="WetDryMix" Type="Real32" Value="20"/>
 							</PropertyList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
@@ -146,7 +146,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
+														<ObjectRef Name="Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -301,7 +301,7 @@
 										<Effect Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
 												<Property Name="FrequencyBand3" Type="Real32" Value="10000"/>
-												<Property Name="GainBand3" Type="Real32" Value="3"/>
+												<Property Name="GainBand3" Type="Real32" Value="8"/>
 												<Property Name="OnOffBand1" Type="bool" Value="False"/>
 												<Property Name="OnOffBand2" Type="bool" Value="False"/>
 											</PropertyList>
@@ -1577,7 +1577,7 @@
 										<Property Name="HFDamping" Type="Real32" Value="3.7"/>
 										<Property Name="PreDelay" Type="Real32" Value="18"/>
 										<Property Name="Quality" Type="int32" Value="12"/>
-										<Property Name="ReverbLevel" Type="Real32" Value="-96"/>
+										<Property Name="ReverbLevel" Type="Real32" Value="-5"/>
 										<Property Name="RoomSize" Type="Real32" Value="20"/>
 									</PropertyList>
 								</Effect>
