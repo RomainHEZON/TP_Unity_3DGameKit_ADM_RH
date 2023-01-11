@@ -679,13 +679,23 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{C4DC1339-57AB-48C1-A580-1245E05E78D7}"/>
+													<Modifier Name="" ID="{C4DC1339-57AB-48C1-A580-1245E05E78D7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -781,501 +791,6 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="Birds_SC" ID="{E8324EED-A580-42AD-86A8-CA545CD4B27E}" ShortID="807346142">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="CenterPercentage" Type="int32">
-											<ValueList>
-												<Value>100</Value>
-											</ValueList>
-										</Property>
-										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{409D3B63-4AE1-4420-A0C0-A341642F7EC4}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="50"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{96B06D39-1C07-44D7-9052-6DDB92E5BE77}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="3"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-12</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<RandomSequenceContainer Name="Bird_A_RC" ID="{60C83C5A-10C0-41AB-9C89-F45E6A165E3A}" ShortID="372314394">
-											<PropertyList>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{BDA380A8-B9D9-4ADC-8F00-846BAE0FF5EB}"/>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="AMB_RFX_Bird_A_01" ID="{F9E758C3-2787-4A7D-AB28-120963381B10}" ShortID="813339857">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_01" ID="{5F4F6E46-9CEA-49E9-ADE1-F0A6AA66A331}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="491137694"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_01" ID="{5F4F6E46-9CEA-49E9-ADE1-F0A6AA66A331}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_02" ID="{AE28A865-FAFD-4EA0-BB40-A0A476E02F21}" ShortID="524577764">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_02" ID="{03CC8D14-E6E6-4DB6-83D4-BD7EDFFECB6B}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="384426639"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_02" ID="{03CC8D14-E6E6-4DB6-83D4-BD7EDFFECB6B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_03" ID="{E8FAB55C-1BDB-465F-BC8B-C7D4DAB73BBF}" ShortID="306749538">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_03" ID="{5CEB3186-49B7-4769-9B9C-79B7D064C4AD}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="58892106"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_03" ID="{5CEB3186-49B7-4769-9B9C-79B7D064C4AD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_04" ID="{35B0CA12-2E26-4CED-A912-CBADE42B5DB6}" ShortID="765675559">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_04" ID="{38871880-D524-41DF-A39A-D5562EE0F3C6}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="67564834"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_04" ID="{38871880-D524-41DF-A39A-D5562EE0F3C6}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_05" ID="{C4102E05-D8ED-4E2B-A4B8-EC62A68F595E}" ShortID="797658034">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_05" ID="{EF0EE25D-00BF-4FFA-B976-96A8BC448638}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="675356668"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_05" ID="{EF0EE25D-00BF-4FFA-B976-96A8BC448638}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_06" ID="{445ACD2A-C426-4954-832F-95DA16781811}" ShortID="870973363">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_06" ID="{836B22C3-00D1-4567-8754-FE4372219AB8}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="337663516"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_06" ID="{836B22C3-00D1-4567-8754-FE4372219AB8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_07" ID="{54919757-69AD-46A2-B047-A9CB938C021D}" ShortID="606840616">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_07" ID="{4D9CF3F2-D3C7-408A-BB8C-5A64553AAFF0}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_07.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="769471437"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_07" ID="{4D9CF3F2-D3C7-408A-BB8C-5A64553AAFF0}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_A_08" ID="{01819C26-F209-457C-8DB8-712E8C9100CB}" ShortID="203921204">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_A_08" ID="{37985AA0-7FCE-47D2-AC84-23F2F9842674}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_A_08.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="603274176"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_A_08" ID="{37985AA0-7FCE-47D2-AC84-23F2F9842674}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Bird_B_RC" ID="{B0D2C913-5A54-46B8-A02C-657A441B2D9A}" ShortID="649158881">
-											<PropertyList>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{ADE31034-3381-4491-A5B9-5766EA4D196F}"/>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="AMB_RFX_Bird_B_01" ID="{BEDBD179-B5B8-43D2-B85F-3BF416A8E87E}" ShortID="82670908">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_01" ID="{7D5EFDD8-63FF-4CDA-800F-94E645A00BE5}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="45181008"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_01" ID="{7D5EFDD8-63FF-4CDA-800F-94E645A00BE5}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_B_02" ID="{DC4A609E-AF76-4FDC-8ED2-4D494EBF230F}" ShortID="401728929">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_02" ID="{E312A496-F30E-4902-9BBD-B395BCC95342}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="325347002"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_02" ID="{E312A496-F30E-4902-9BBD-B395BCC95342}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_B_03" ID="{2BC4022F-8257-4586-93C1-DEF350B439C2}" ShortID="895744830">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_03" ID="{125E5A94-35A3-4487-A6E4-469F275A6F9C}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="323534305"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_03" ID="{125E5A94-35A3-4487-A6E4-469F275A6F9C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_B_04" ID="{073C73D3-A473-4225-B56F-47D6969AAF82}" ShortID="104783678">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_04" ID="{2E73DC8B-FA42-4553-AC9F-B96340CA4A97}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1032318676"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_04" ID="{2E73DC8B-FA42-4553-AC9F-B96340CA4A97}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_B_05" ID="{6F41B42D-176C-43B1-9A7F-9B376DC95F1B}" ShortID="777422018">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_05" ID="{290DD852-A5E7-478C-AE6A-CA53215E364E}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="713597815"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_05" ID="{290DD852-A5E7-478C-AE6A-CA53215E364E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_B_06" ID="{738064EE-7A24-4277-BD13-51F3B3B951A1}" ShortID="746534897">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_06" ID="{860540D4-143F-42CE-A2A4-81A8DD28AE4A}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="798641773"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_06" ID="{860540D4-143F-42CE-A2A4-81A8DD28AE4A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Bird_B_07" ID="{D221C5F0-0AE2-41CA-9641-ACB020F7F44C}" ShortID="539072064">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Bird_B_07" ID="{0EB880C7-2412-44F8-8210-4BDB21B51BED}">
-															<Language>SFX</Language>
-															<AudioFile>Birds\AMB_RFX_Bird_B_07.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="516643238"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Bird_B_07" ID="{0EB880C7-2412-44F8-8210-4BDB21B51BED}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-									</ChildrenList>
-									<PositioningInfo>
-										<Panner Name="" ID="{D47BF561-E025-4320-AD06-706CB81C4017}"/>
-										<Position Name="" ID="{D72A5EEF-EA4E-46E1-AC9A-82BA92E273B6}">
-											<PropertyList>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="Birds_SC_Path" ID="{EBBA2401-4191-4AA5-AEC6-4DDB656118BB}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="50"/>
-														<Property Name="RandomY" Type="Real64" Value="50"/>
-														<Property Name="RandomZ" Type="Real64" Value="50"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="Birds_SC_Path_01" ID="{1B14E6FD-A8B5-4655-9B64-5480E8106333}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="25"/>
-														<Property Name="RandomY" Type="Real64" Value="75"/>
-														<Property Name="RandomZ" Type="Real64" Value="50"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="Birds_SC_Path_02" ID="{B2E2B1E0-A8EB-4F62-B897-D0F3020CB1F8}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="75"/>
-														<Property Name="RandomY" Type="Real64" Value="50"/>
-														<Property Name="RandomZ" Type="Real64" Value="25"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>0</XPos>
-															<YPos>50</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-									<Playlist>
-										<ItemRef Name="Bird_A_RC" ID="{60C83C5A-10C0-41AB-9C89-F45E6A165E3A}"/>
-										<ItemRef Name="Bird_B_RC" ID="{B0D2C913-5A54-46B8-A02C-657A441B2D9A}"/>
-									</Playlist>
-								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Blackbird_RC" ID="{E830DF89-05D3-48ED-82EE-D87D0890F213}" ShortID="536951213">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
@@ -1301,7 +816,7 @@
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3.5">
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{91997A69-8840-456E-97AC-F8ACD224A23B}">
@@ -1762,6 +1277,11 @@
 												<Value>100</Value>
 											</ValueList>
 										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -2039,11 +1559,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2214,6 +1734,538 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Birds_SC" ID="{E8324EED-A580-42AD-86A8-CA545CD4B27E}" ShortID="807346142">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{409D3B63-4AE1-4420-A0C0-A341642F7EC4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{96B06D39-1C07-44D7-9052-6DDB92E5BE77}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Bird_A_RC" ID="{60C83C5A-10C0-41AB-9C89-F45E6A165E3A}" ShortID="372314394">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BDA380A8-B9D9-4ADC-8F00-846BAE0FF5EB}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_RFX_Bird_A_01" ID="{F9E758C3-2787-4A7D-AB28-120963381B10}" ShortID="813339857">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_01" ID="{5F4F6E46-9CEA-49E9-ADE1-F0A6AA66A331}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="491137694"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_01" ID="{5F4F6E46-9CEA-49E9-ADE1-F0A6AA66A331}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_02" ID="{AE28A865-FAFD-4EA0-BB40-A0A476E02F21}" ShortID="524577764">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_02" ID="{03CC8D14-E6E6-4DB6-83D4-BD7EDFFECB6B}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="384426639"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_02" ID="{03CC8D14-E6E6-4DB6-83D4-BD7EDFFECB6B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_03" ID="{E8FAB55C-1BDB-465F-BC8B-C7D4DAB73BBF}" ShortID="306749538">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_03" ID="{5CEB3186-49B7-4769-9B9C-79B7D064C4AD}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="58892106"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_03" ID="{5CEB3186-49B7-4769-9B9C-79B7D064C4AD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_04" ID="{35B0CA12-2E26-4CED-A912-CBADE42B5DB6}" ShortID="765675559">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_04" ID="{38871880-D524-41DF-A39A-D5562EE0F3C6}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="67564834"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_04" ID="{38871880-D524-41DF-A39A-D5562EE0F3C6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_05" ID="{C4102E05-D8ED-4E2B-A4B8-EC62A68F595E}" ShortID="797658034">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_05" ID="{EF0EE25D-00BF-4FFA-B976-96A8BC448638}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="675356668"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_05" ID="{EF0EE25D-00BF-4FFA-B976-96A8BC448638}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_06" ID="{445ACD2A-C426-4954-832F-95DA16781811}" ShortID="870973363">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_06" ID="{836B22C3-00D1-4567-8754-FE4372219AB8}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="337663516"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_06" ID="{836B22C3-00D1-4567-8754-FE4372219AB8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_07" ID="{54919757-69AD-46A2-B047-A9CB938C021D}" ShortID="606840616">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_07" ID="{4D9CF3F2-D3C7-408A-BB8C-5A64553AAFF0}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="769471437"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_07" ID="{4D9CF3F2-D3C7-408A-BB8C-5A64553AAFF0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_A_08" ID="{01819C26-F209-457C-8DB8-712E8C9100CB}" ShortID="203921204">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_A_08" ID="{37985AA0-7FCE-47D2-AC84-23F2F9842674}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_A_08.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="603274176"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_A_08" ID="{37985AA0-7FCE-47D2-AC84-23F2F9842674}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{98C5637E-8961-44AE-A27C-B2AC90ABA3E5}" ShortID="908590315">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{7DD6A1FA-9F7E-4280-B2E5-E0D55A110A5A}" ShortID="47042995" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{7DD6A1FA-9F7E-4280-B2E5-E0D55A110A5A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Bird_B_RC" ID="{B0D2C913-5A54-46B8-A02C-657A441B2D9A}" ShortID="649158881">
+											<PropertyList>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{ADE31034-3381-4491-A5B9-5766EA4D196F}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_RFX_Bird_B_01" ID="{BEDBD179-B5B8-43D2-B85F-3BF416A8E87E}" ShortID="82670908">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_01" ID="{7D5EFDD8-63FF-4CDA-800F-94E645A00BE5}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="45181008"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_01" ID="{7D5EFDD8-63FF-4CDA-800F-94E645A00BE5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_B_02" ID="{DC4A609E-AF76-4FDC-8ED2-4D494EBF230F}" ShortID="401728929">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_02" ID="{E312A496-F30E-4902-9BBD-B395BCC95342}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="325347002"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_02" ID="{E312A496-F30E-4902-9BBD-B395BCC95342}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_B_03" ID="{2BC4022F-8257-4586-93C1-DEF350B439C2}" ShortID="895744830">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_03" ID="{125E5A94-35A3-4487-A6E4-469F275A6F9C}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="323534305"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_03" ID="{125E5A94-35A3-4487-A6E4-469F275A6F9C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_B_04" ID="{073C73D3-A473-4225-B56F-47D6969AAF82}" ShortID="104783678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_04" ID="{2E73DC8B-FA42-4553-AC9F-B96340CA4A97}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_04.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1032318676"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_04" ID="{2E73DC8B-FA42-4553-AC9F-B96340CA4A97}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_B_05" ID="{6F41B42D-176C-43B1-9A7F-9B376DC95F1B}" ShortID="777422018">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_05" ID="{290DD852-A5E7-478C-AE6A-CA53215E364E}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_05.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="713597815"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_05" ID="{290DD852-A5E7-478C-AE6A-CA53215E364E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_B_06" ID="{738064EE-7A24-4277-BD13-51F3B3B951A1}" ShortID="746534897">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_06" ID="{860540D4-143F-42CE-A2A4-81A8DD28AE4A}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_06.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="798641773"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_06" ID="{860540D4-143F-42CE-A2A4-81A8DD28AE4A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_RFX_Bird_B_07" ID="{D221C5F0-0AE2-41CA-9641-ACB020F7F44C}" ShortID="539072064">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_RFX_Bird_B_07" ID="{0EB880C7-2412-44F8-8210-4BDB21B51BED}">
+															<Language>SFX</Language>
+															<AudioFile>Birds\AMB_RFX_Bird_B_07.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="516643238"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_RFX_Bird_B_07" ID="{0EB880C7-2412-44F8-8210-4BDB21B51BED}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="Silence" ID="{3868CC91-6435-4470-BDE4-0DC77F1D5217}" ShortID="797199947">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Silence" ID="{6811C2AB-63C9-41DD-82C7-2B00F609882F}" ShortID="1024065430" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Silence" ID="{6811C2AB-63C9-41DD-82C7-2B00F609882F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{D47BF561-E025-4320-AD06-706CB81C4017}"/>
+										<Position Name="" ID="{D72A5EEF-EA4E-46E1-AC9A-82BA92E273B6}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="Birds_SC_Path" ID="{EBBA2401-4191-4AA5-AEC6-4DDB656118BB}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="50"/>
+														<Property Name="RandomY" Type="Real64" Value="50"/>
+														<Property Name="RandomZ" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Birds_SC_Path_01" ID="{1B14E6FD-A8B5-4655-9B64-5480E8106333}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="25"/>
+														<Property Name="RandomY" Type="Real64" Value="75"/>
+														<Property Name="RandomZ" Type="Real64" Value="50"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="Birds_SC_Path_02" ID="{B2E2B1E0-A8EB-4F62-B897-D0F3020CB1F8}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="75"/>
+														<Property Name="RandomY" Type="Real64" Value="50"/>
+														<Property Name="RandomZ" Type="Real64" Value="25"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>0</XPos>
+															<YPos>50</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+									<Playlist>
+										<ItemRef Name="Bird_A_RC" ID="{60C83C5A-10C0-41AB-9C89-F45E6A165E3A}"/>
+										<ItemRef Name="Bird_B_RC" ID="{B0D2C913-5A54-46B8-A02C-657A441B2D9A}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
@@ -2513,6 +2565,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_01" ID="{8D5C0BC6-D403-4DCE-A680-82D854E234A7}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0275719154737559"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AMB_RFX_Spaceship_Radio_01.wav</AudioFile>
 																	<MediaIDList>
@@ -2569,6 +2626,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_02" ID="{669A2111-FF87-42A9-BB50-6938165DF3A8}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0686691810344833"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AMB_RFX_Spaceship_Radio_02.wav</AudioFile>
 																	<MediaIDList>
@@ -2591,6 +2653,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_03" ID="{758AB5CA-D7A4-4566-BE29-AF9D9866E452}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0624339714334017"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AMB_RFX_Spaceship_Radio_03.wav</AudioFile>
 																	<MediaIDList>
@@ -2613,6 +2680,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_05" ID="{98B0186C-07D9-41B3-B378-93F2C2CB1B9F}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.158860040567951"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AMB_RFX_Spaceship_Radio_05.wav</AudioFile>
 																	<MediaIDList>
@@ -2669,6 +2741,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="AMB_RFX_Spaceship_Radio_07" ID="{0BCD77A2-4B05-437A-B8F0-9322ED02ED20}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0161621506475798"/>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>AMB_RFX_Spaceship_Radio_07.wav</AudioFile>
 																	<MediaIDList>

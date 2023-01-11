@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
 	<States>
 		<WorkUnit Name="Music_On_OFF" ID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<StateGroup Name="Music_OFF" ID="{11B1ABA5-7F21-4BD0-9A4D-599F24771798}">
 					<PropertyList>

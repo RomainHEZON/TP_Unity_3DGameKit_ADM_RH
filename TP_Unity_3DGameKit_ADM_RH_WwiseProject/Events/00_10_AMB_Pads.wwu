@@ -39,20 +39,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_AMB_PAD_River" ID="{ECE710C8-2F42-4098-A857-8FED16E08889}">
-					<ChildrenList>
-						<Action Name="" ID="{4016E550-2323-473A-A055-2CB6D5F7445B}" ShortID="1034914937">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="AMB_PAD_River" ID="{95079BD4-C054-4E79-BE7A-B99CBF95B948}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_AMB_PAD_Wetland" ID="{44A3EB96-E126-42EA-B86A-8EC8E7918906}">
 					<ChildrenList>
 						<Action Name="" ID="{5B1EDA00-3406-4D29-8462-AC56BD6F8884}" ShortID="978933492">

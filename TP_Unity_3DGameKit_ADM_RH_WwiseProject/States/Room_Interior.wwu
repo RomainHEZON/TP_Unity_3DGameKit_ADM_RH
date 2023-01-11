@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{73C00C98-1EBF-4D4F-A18C-7B6C43BD0449}" SchemaVersion="110">
+<WwiseDocument Type="WorkUnit" ID="{7584F6AD-8BDA-49EF-BF5A-4A6956FFEB18}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
 	<States>
-		<WorkUnit Name="Room_In_Out" ID="{73C00C98-1EBF-4D4F-A18C-7B6C43BD0449}" PersistMode="Standalone">
+		<WorkUnit Name="Room_Interior" ID="{7584F6AD-8BDA-49EF-BF5A-4A6956FFEB18}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="Color" Type="int16" Value="20"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>

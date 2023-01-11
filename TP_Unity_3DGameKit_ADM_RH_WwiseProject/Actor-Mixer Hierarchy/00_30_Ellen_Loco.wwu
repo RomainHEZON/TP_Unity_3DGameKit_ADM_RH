@@ -67,6 +67,15 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="Grass_Switch" ID="{43303B86-E0C4-47CD-B684-D6767087CFF5}" ShortID="275101789">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5F648533-0992-4CF8-91E7-090946CA6F72}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -83,6 +92,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Grass_Land_Forward_RC" ID="{A5151FD4-086C-4F14-B7FF-A08238CA74DA}" ShortID="689472453">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E2A29297-A002-4A9F-8DFE-AD9EBF2F116C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -139,6 +157,16 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Grass_Run_RC" ID="{D09060CB-B9FF-4458-8389-3F590F4EC115}" ShortID="582333196">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4D4B8D68-0E51-4FCF-9D20-3C65B8EB6182}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -415,6 +443,15 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Grass_Land_Forward_Roll_RC" ID="{0E958BD5-29F4-4BC4-B04A-06BFD17FAF35}" ShortID="418925998">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{74DD4305-56B5-45B2-8A9A-BA6A3C977D7D}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -471,6 +508,15 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<Sound Name="Ellen_FT_Grass_Land_Idle" ID="{4A1F480E-3877-4242-BD9F-E0F06B69F0D6}" ShortID="138948">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4261B003-4656-42EE-96A8-BEE656C450F7}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -493,6 +539,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<RandomSequenceContainer Name="Grass_Jump_RC" ID="{5170D5C4-CEC1-4596-BA52-978AD9C4B412}" ShortID="597801896">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E8ACB5D4-60B3-4CA8-8369-1887AB697495}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -632,6 +687,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Puddle_Land_Forward_RC" ID="{F1E919A6-6B0F-4C62-86F7-039688F5A15B}" ShortID="935443239">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{276CB9F4-8D74-4E23-B212-17C8F6D23DE3}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -688,6 +752,16 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Puddle_Run_RC" ID="{BCF4A7B2-85FE-48AC-A522-CC212BBE7676}" ShortID="83881052">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FC86D80C-90F3-4728-B36E-A8A3681138BC}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -964,6 +1038,15 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<Sound Name="Ellen_FT_Puddle_Land_Forward_Roll" ID="{6F1F03F4-8A87-47AC-BFEE-F0D97F73386B}" ShortID="867782186">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C4C0CD2B-BE05-449C-8D39-0F2FB484742C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -986,6 +1069,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Ellen_FT_Puddle_Land_Idle" ID="{097BAD56-1F7D-46C9-994C-DCB181B984E2}" ShortID="208834661">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E71D92E3-D9CC-47D3-9DF5-F2B7EF82BD64}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1008,6 +1100,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<RandomSequenceContainer Name="Puddle_Jump_RC" ID="{4FA15BAB-7038-4DAB-8AA1-474B70603B74}" ShortID="13528453">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8989B21F-00F0-4E14-8976-2032F350B4EF}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1133,6 +1234,15 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Stone_Land_Forward_RC" ID="{BD68902D-607D-4369-ACE1-0E4A5A1CBE3C}" ShortID="589501441">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0DFC0DD7-81E7-460E-B027-43338A7811C4}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1189,6 +1299,16 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Stone_Run_RC" ID="{88A2AD89-5853-4CC9-8271-2E969BC89F34}" ShortID="438844508">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6D680162-8C71-426E-A4C6-1D5061CD956E}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="6"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1465,6 +1585,15 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="Stone_Land_Forward_Roll_RC" ID="{4D604650-E77E-41DC-8E74-5D71C0788136}" ShortID="348448964">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{72ED274A-395F-464E-9D9A-4B4B220300BD}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1521,6 +1650,15 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<Sound Name="Ellen_FT_Stone_Land_Idle" ID="{C54E0482-829D-4432-8EB6-42CF637E33EE}" ShortID="675408728">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{815EAB2F-D1F6-4B75-89B4-814D722757AA}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1543,6 +1681,15 @@
 											</ActiveSourceList>
 										</Sound>
 										<RandomSequenceContainer Name="Stone_Jump_RC" ID="{9CB7A338-5C62-4109-841A-B53B217EE987}" ShortID="812302603">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{54DE66DC-D881-48F3-9F29-20228AB22D2D}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -1668,6 +1815,16 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="Metal_Run_RC" ID="{4A80004F-EA42-41DC-ADC4-CE44D390C340}" ShortID="506630495">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{61A0378D-C51D-4AA1-A794-14BAB2F4F954}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>

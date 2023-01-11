@@ -89,7 +89,19 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Staff_Idle_SFX" ID="{A8C25192-7909-4199-A320-021CAA0C5D1B}"/>
+							<Value>20</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Switch_Collect_Progression" ID="{8C1E4F54-AC45-43D7-8D67-248D14D2F763}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Teleporter_SFX" ID="{9713901D-AAF8-4A33-A13F-5C2F05F09DDF}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
 							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>

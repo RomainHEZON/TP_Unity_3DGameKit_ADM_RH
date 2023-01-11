@@ -132,8 +132,89 @@
 						<Effect Name="One_Tap_Half_Second" ID="{B8FE0D3B-7AAB-4344-89FE-177602B7BF19}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3"/>
 						<Effect Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
-								<Property Name="DelayTime" Type="Real32" Value="0.25"/>
+								<Property Name="DelayTime" Type="Real32" Value="0.1"/>
+								<Property Name="Feedback" Type="Real32" Value="0"/>
+								<Property Name="WetDryMix" Type="Real32" Value="10"/>
 							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{AAB812FD-0CD8-4D1D-8142-B97768E3B6E6}" ShortID="598331810">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Feedback"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Staff_Distorsion" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{53287EBA-F93A-428D-AF4C-560B4DAFB56B}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="1"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0.99</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.00047</XPos>
+																		<YPos>15</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1.99</XPos>
+																		<YPos>15</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2</XPos>
+																		<YPos>30</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.99</XPos>
+																		<YPos>30</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3</XPos>
+																		<YPos>50</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>3.99</XPos>
+																		<YPos>50</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4</XPos>
+																		<YPos>65</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5</XPos>
+																		<YPos>65</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</Effect>
 						<Effect Name="Nearly_Forever" ID="{38550FDA-9236-4FC5-8AE0-68DB08164B25}" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 							<PropertyList>
@@ -587,9 +668,119 @@
 									<PropertyList>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 										<Property Name="FrequencyBand1" Type="Real32" Value="162"/>
-										<Property Name="OnOffBand2" Type="bool" Value="False"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="993"/>
 										<Property Name="OnOffBand3" Type="bool" Value="False"/>
 									</PropertyList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{D5364FCE-E813-4ABD-A26A-4E2BA88A9CE4}" ShortID="420709201">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="FrequencyBand1"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Staff_Idle_SFX" ID="{A8C25192-7909-4199-A320-021CAA0C5D1B}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{4194C1DA-57C3-45A5-8167-77D1C387CB03}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>77.56814</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>20</XPos>
+																				<YPos>201.08088</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{95809DE4-2594-4084-8884-21860DFC66D0}" ShortID="229264608">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="FrequencyBand2"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Staff_Idle_SFX" ID="{A8C25192-7909-4199-A320-021CAA0C5D1B}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{52C82BE8-D613-41D8-A7FB-B83B7811CBBB}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="5"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>4996.57159</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>SCurve</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>20</XPos>
+																				<YPos>1000</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{F21B7CC8-0175-4DCC-8D3E-649CAC566614}" ShortID="948481866">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="GainBand2"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Staff_Idle_SFX" ID="{A8C25192-7909-4199-A320-021CAA0C5D1B}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{D9374B1D-EF3F-47BC-923E-97BCC3029D75}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>6</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>20</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Effect>
 							</ChildrenList>
 						</Folder>
@@ -1599,10 +1790,10 @@
 						<Effect Name="Vibrato" ID="{D9586A30-FF0D-4DCC-89C5-04CDC4716ED6}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
 							<PropertyList>
 								<Property Name="DelayTime" Type="Real32" Value="8.5"/>
-								<Property Name="DryLevel" Type="Real32" Value="0.3"/>
+								<Property Name="DryLevel" Type="Real32" Value="0.83"/>
 								<Property Name="FeedBackLevel" Type="Real32" Value="0.9"/>
-								<Property Name="ModDepth" Type="Real32" Value="10"/>
-								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
+								<Property Name="ModDepth" Type="Real32" Value="18.9"/>
+								<Property Name="ModFrequency" Type="Real32" Value="0.6"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
 							</PropertyList>
 						</Effect>
@@ -1727,6 +1918,8 @@
 								<Property Name="Voice1Pitch" Type="Real32" Value="-100"/>
 								<Property Name="Voice2Enable" Type="bool" Value="True"/>
 								<Property Name="Voice2Pitch" Type="Real32" Value="100"/>
+								<Property Name="WetLevel" Type="Real32" Value="-6"/>
+								<Property Name="WindowSize" Type="int32" Value="4096"/>
 							</PropertyList>
 						</Effect>
 					</ChildrenList>
@@ -1950,8 +2143,11 @@
 							<ChildrenList>
 								<Effect Name="Octave_Up" ID="{A98F423C-EC97-49D8-8698-445CE91F24B7}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
 									<PropertyList>
+										<Property Name="DelayTime" Type="Real32" Value="100"/>
 										<Property Name="DryLevel" Type="Real32" Value="0"/>
-										<Property Name="Pitch" Type="Real32" Value="1200"/>
+										<Property Name="FilterType" Type="int32" Value="1"/>
+										<Property Name="Pitch" Type="Real32" Value="700"/>
+										<Property Name="WetLevel" Type="Real32" Value="4"/>
 									</PropertyList>
 								</Effect>
 								<Effect Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
