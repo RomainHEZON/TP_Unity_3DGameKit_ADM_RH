@@ -12,6 +12,7 @@
 				<WorkUnit Name="00_60_Chomper" ID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}" PersistMode="Reference"/>
 				<WorkUnit Name="00_70_Grenadier" ID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}" PersistMode="Reference"/>
 				<WorkUnit Name="00_80_Spitter" ID="{A61D2BDD-C513-413C-BD01-33465AFE868A}" PersistMode="Reference"/>
+				<WorkUnit Name="02_00_Music" ID="{F432772B-B79A-4560-844B-D6BCB1006023}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

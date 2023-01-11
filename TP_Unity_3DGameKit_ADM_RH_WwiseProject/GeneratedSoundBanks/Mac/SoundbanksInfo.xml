@@ -1226,7 +1226,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{3B2B6B3A-B766-07B0-C5CF-457F54751CCF}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{0DE2B356-AACD-5AEA-FE08-AABE31B22C87}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1336,7 +1336,7 @@
 						<MediaRef Id="109505191"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="26858146" Name="Play_AMB_PAD_Huge_Door_Crystal" MaxAttenuation="25" DurationType="Infinite">
+				<Event Id="26858146" Name="Play_AMB_PAD_Huge_Door_Crystal" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="116825441"/>
 					</MediaRefs>
@@ -2548,5 +2548,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{C0A567A0-16E2-3E67-5B75-D1243A1F8181}</FileHash>
+	<FileHash>{011B8A5C-6E4C-95B2-DDEC-5A4BD1092381}</FileHash>
 </SoundBanksInfo>

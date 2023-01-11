@@ -46,7 +46,7 @@
 						<Action Name="" ID="{EC751999-923C-4C7A-94A2-89D0C4EF1AC5}" ShortID="649944996">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+									<ObjectRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" WorkUnitID="{F432772B-B79A-4560-844B-D6BCB1006023}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

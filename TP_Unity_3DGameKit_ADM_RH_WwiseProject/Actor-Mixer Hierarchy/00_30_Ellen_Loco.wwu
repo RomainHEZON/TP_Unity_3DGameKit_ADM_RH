@@ -9,6 +9,17 @@
 			<ChildrenList>
 				<ActorMixer Name="Ellen_Loco_Mixer" ID="{2E06DF50-9113-4B52-9F00-C5BEADA80BC8}" ShortID="543366343">
 					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-12</Value>

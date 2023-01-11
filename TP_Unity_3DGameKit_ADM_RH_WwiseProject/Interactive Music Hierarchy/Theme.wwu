@@ -5,6 +5,8 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="Theme_Switch_Explo_Chomp" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" ShortID="69872416">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="5"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="160"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -2835,6 +2837,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<MusicTrack Name="Theme_3D_GAME_KIT_Transition_Smooth" ID="{30305063-840E-499D-B269-FB07A536A88D}" ShortID="683125462">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
@@ -2939,6 +2944,11 @@
 																	</ObjectList>
 																</ObjectLists>
 															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{F4AF5E37-9030-492D-AEB2-52179F6BEAAC}"/>
 														</Local>
 													</Reference>
 												</ObjectList>
@@ -3127,6 +3137,8 @@
 				</MusicSwitchContainer>
 				<MusicSwitchContainer Name="Theme_Switch_Grenadier_End" ID="{3E19E3D0-ECB0-47AD-B44A-AF7F51385E63}" ShortID="326428606">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="3"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Tempo" Type="Real64" Value="160"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>

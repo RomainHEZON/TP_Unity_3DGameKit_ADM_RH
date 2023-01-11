@@ -8,6 +8,20 @@
 			</PropertyList>
 			<ChildrenList>
 				<ActorMixer Name="Pads_Mixer" ID="{B392822F-B58D-42AB-8198-C109BB2FB0BA}" ShortID="966179398">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>6</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -17,14 +31,8 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="Spaceship_BC" ID="{0EA56E67-DBFA-4C2B-9882-5361EC4B8EB5}" ShortID="465670112">
-							<PropertyList>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-							</PropertyList>
+						<ActorMixer Name="Level_1_Mixer" ID="{CE851DE7-0587-48C8-B811-12A1AD0262DF}" ShortID="877393461">
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_30m" ID="{C69EAE44-3627-434D-9780-73CF2E5BE125}" WorkUnitID="{5956A9BF-8B5E-4B3F-A5A7-1B583EACDA5B}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 								</Reference>
@@ -33,372 +41,757 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="AMB_Spaceship_In_Loop" ID="{5A6C9188-8F8D-4820-9F80-80E97036CD7F}" ShortID="279458531">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_Spaceship_In_Loop" ID="{C6185295-F022-4D8F-811B-F442CA7F7187}">
-											<PropertyList>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>AMB_Spaceship_In_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="465306571"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_Spaceship_In_Loop" ID="{C6185295-F022-4D8F-811B-F442CA7F7187}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="AMB_Spaceship_Out_Loop" ID="{7CBFA213-3953-4AEB-A602-C3E6234DBBA1}" ShortID="737035490">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_Spaceship_Out_Loop" ID="{8E2D8F36-CC60-42D7-9AC9-9A8E1BF9A686}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_Spaceship_Out_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="77744621"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_Spaceship_Out_Loop" ID="{8E2D8F36-CC60-42D7-9AC9-9A8E1BF9A686}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="Spaceship" ID="{1ECF50AB-DFC7-4053-B63C-9203BF21F4E2}" ShortID="572424510">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_Spaceship_In_Loop" ID="{5A6C9188-8F8D-4820-9F80-80E97036CD7F}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>5.5564142194745</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-												<RightFadingSegmentShape>Linear</RightFadingSegmentShape>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_Spaceship_Out_Loop" ID="{7CBFA213-3953-4AEB-A602-C3E6234DBBA1}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0.000499999999998835</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<LeftFadingSegmentShape>Exp1</LeftFadingSegmentShape>
-												<RightEdgePos>30</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
-						</BlendContainer>
-						<Sound Name="AMB_PAD_River" ID="{95079BD4-C054-4E79-BE7A-B99CBF95B948}" ShortID="595175859">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{86152B41-B2D2-4C76-9EE7-4EF3E9D9ADBA}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_PAD_River" ID="{BE3A2B43-1522-4C53-BCFA-B08553CB1E95}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_PAD_River.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1005958032"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_PAD_River" ID="{BE3A2B43-1522-4C53-BCFA-B08553CB1E95}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<BlendContainer Name="Lake_SC" ID="{18AB161E-53BB-40FD-ABEB-8DFC781F7088}" ShortID="342869883">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{4C1F4F58-BA69-44DF-8DAA-6507B57C6E05}"/>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<Custom CreatedFrom="{C69EAE44-3627-434D-9780-73CF2E5BE125}">
-										<Attenuation Name="ATN_30m (Custom)" ID="{2EDCA778-4C9A-46A8-BD24-21CA1A0FB576}" ShortID="253435741">
-											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="30"/>
-											</PropertyList>
-											<CurveUsageInfoList>
-												<VolumeDryUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{D47CF76F-9382-4631-B22C-BA7E3281D714}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="3"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																</Point>
-																<Point>
-																	<XPos>7.45413</XPos>
-																	<YPos>0</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>-200</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</VolumeDryUsage>
-												<VolumeWetGameUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetGameUsage>
-												<VolumeWetUserUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetUserUsage>
-												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="LowPassFilter" ID="{5693B761-71BD-4C71-A74E-4E08640EC0F4}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>20</XPos>
-																	<YPos>25</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>60</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</LowPassFilterUsage>
-												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="HighPassFilter" ID="{78E544BB-CE79-48F7-94FE-8EE5A83FCB79}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>20</XPos>
-																	<YPos>25</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>50</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</HighPassFilterUsage>
-												<SpreadUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="Spread" ID="{928853EE-D203-47A5-9F11-F76216277A7B}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="1"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>45</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>10</XPos>
-																	<YPos>30</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log2</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>10</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</SpreadUsage>
-												<FocusUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</FocusUsage>
-												<ObstructionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</ObstructionVolumeUsage>
-												<ObstructionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</ObstructionLPFUsage>
-												<ObstructionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</ObstructionHPFUsage>
-												<OcclusionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</OcclusionVolumeUsage>
-												<OcclusionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</OcclusionLPFUsage>
-												<OcclusionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</OcclusionHPFUsage>
-												<DiffractionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</DiffractionVolumeUsage>
-												<DiffractionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</DiffractionLPFUsage>
-												<DiffractionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</DiffractionHPFUsage>
-												<TransmissionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</TransmissionVolumeUsage>
-												<TransmissionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</TransmissionLPFUsage>
-												<TransmissionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</TransmissionHPFUsage>
-											</CurveUsageInfoList>
-										</Attenuation>
-									</Custom>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="Frogs_SC" ID="{E649140E-827D-4301-85C3-7BB43580FACD}" ShortID="471080528">
+								<BlendContainer Name="Lake_SC" ID="{18AB161E-53BB-40FD-ABEB-8DFC781F7088}" ShortID="342869883">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
-													<Modifier Name="" ID="{C31BC269-F3F1-4643-8904-0D8DAC69EA30}"/>
+													<Modifier Name="" ID="{4C1F4F58-BA69-44DF-8DAA-6507B57C6E05}"/>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{9027AB1A-C6DE-4136-A0D7-35E95EFBF7ED}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{C69EAE44-3627-434D-9780-73CF2E5BE125}">
+												<Attenuation Name="ATN_30m (Custom)" ID="{2EDCA778-4C9A-46A8-BD24-21CA1A0FB576}" ShortID="253435741">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="30"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{D47CF76F-9382-4631-B22C-BA7E3281D714}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>7.45413</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{5693B761-71BD-4C71-A74E-4E08640EC0F4}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{78E544BB-CE79-48F7-94FE-8EE5A83FCB79}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{928853EE-D203-47A5-9F11-F76216277A7B}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>45</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>10</XPos>
+																			<YPos>30</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>10</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Frogs_SC" ID="{E649140E-827D-4301-85C3-7BB43580FACD}" ShortID="471080528">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C31BC269-F3F1-4643-8904-0D8DAC69EA30}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9027AB1A-C6DE-4136-A0D7-35E95EFBF7ED}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-12</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Frog_A_RC" ID="{47264712-DA07-459F-91C3-A6D5DEA98D5B}" ShortID="977988306">
+													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{1C9D8500-25A2-42B2-BC19-7257982FE441}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="AMB_RFX_Frog_A_01" ID="{857A09B2-37B1-4A8D-9FC6-32AFE1124779}" ShortID="883946829">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_01" ID="{D1457808-136F-41B0-B4A2-46EBF7B06099}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="864697297"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_01" ID="{D1457808-136F-41B0-B4A2-46EBF7B06099}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_A_02" ID="{EB2C6BC5-87E2-44E4-B4B9-201C8AFFA6F6}" ShortID="331903835">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_02" ID="{3A3A256E-0003-4932-A5FD-35534F7934CD}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="981383364"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_02" ID="{3A3A256E-0003-4932-A5FD-35534F7934CD}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_A_03" ID="{99BA1605-8D87-47FF-B258-9140872ECF4A}" ShortID="448104607">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_03" ID="{D7397CAF-6BEC-448A-A4AB-9D3BF8F6BE91}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="342142041"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_03" ID="{D7397CAF-6BEC-448A-A4AB-9D3BF8F6BE91}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_A_04" ID="{2F3A348F-D558-41A9-B160-BB3681F1B113}" ShortID="871794797">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_04" ID="{AD262450-7E8D-4DE1-95BD-FE5D533B55E7}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="745236099"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_04" ID="{AD262450-7E8D-4DE1-95BD-FE5D533B55E7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_A_05" ID="{D7EB974B-AB76-4A5E-9938-FCDDBFB68E64}" ShortID="1014589953">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_05" ID="{F11FF328-C1D1-403B-B7F6-831EB007887C}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="645216713"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_05" ID="{F11FF328-C1D1-403B-B7F6-831EB007887C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_A_06" ID="{1B2C840E-3D3A-4590-B5F6-073D279D0F3A}" ShortID="347597547">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_06" ID="{5B99ECD9-E0DF-4692-9ADC-8EAD6B48EB8A}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="138781816"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_06" ID="{5B99ECD9-E0DF-4692-9ADC-8EAD6B48EB8A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_A_07" ID="{FE0A894F-4A8B-4BDC-A86C-63752074A6B1}" ShortID="470427922">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_A_07" ID="{C12F4266-5090-42CC-A4EE-37ABBC12BAA7}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_A_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="57871559"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_A_07" ID="{C12F4266-5090-42CC-A4EE-37ABBC12BAA7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Frog_B_RC" ID="{9496BA65-0C86-4F1F-93AC-A08453B93FFE}" ShortID="974436417">
+													<PropertyList>
+														<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B9272F96-2D57-4955-AE09-228A39DB59E1}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="AMB_RFX_Frog_B_01" ID="{6C4E8AEE-DC78-4A8A-8930-80DAFD897C68}" ShortID="693512440">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_01" ID="{E50A429F-F08E-4FF3-AECD-FB920DC6010C}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_01.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="871828377"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_01" ID="{E50A429F-F08E-4FF3-AECD-FB920DC6010C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_B_02" ID="{CC1EF33F-DBD2-43E2-B93F-F1AC44F27ECF}" ShortID="681779182">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_02" ID="{3145E6E5-3A5F-4D61-A9D7-7D5476B302C7}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_02.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="905057815"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_02" ID="{3145E6E5-3A5F-4D61-A9D7-7D5476B302C7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_B_03" ID="{C23E6830-E2CE-4B97-9EF1-A49C6B0BA46D}" ShortID="824515652">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_03" ID="{80A4CAF4-3961-4AAA-8E88-83AA37D233DF}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_03.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="744965425"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_03" ID="{80A4CAF4-3961-4AAA-8E88-83AA37D233DF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_B_04" ID="{FD286058-5DF2-4AD5-9AB5-ED3895EEB7DD}" ShortID="708900663">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_04" ID="{88051452-9106-429A-9ECB-8981D8BE2E5D}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_04.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="950958287"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_04" ID="{88051452-9106-429A-9ECB-8981D8BE2E5D}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_B_05" ID="{3B9EA077-754E-4070-B09E-3A6D3F09EF0F}" ShortID="407946683">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_05" ID="{01E892D9-154F-4C60-BBE9-34D5C52E1152}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_05.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="653502592"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_05" ID="{01E892D9-154F-4C60-BBE9-34D5C52E1152}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_B_06" ID="{5942B368-448D-402E-9D93-EC0867A5759D}" ShortID="622614140">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_06" ID="{970D3944-4158-4F12-B8C0-242575120B04}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_06.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="921443"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_06" ID="{970D3944-4158-4F12-B8C0-242575120B04}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="AMB_RFX_Frog_B_07" ID="{01DDC698-093E-4068-90F0-0B127D0D5152}" ShortID="743972857">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="AMB_RFX_Frog_B_07" ID="{EA724B07-D813-4D18-88AE-1084601E5073}">
+																	<Language>SFX</Language>
+																	<AudioFile>Frogs\AMB_RFX_Frog_B_07.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="79626071"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="AMB_RFX_Frog_B_07" ID="{EA724B07-D813-4D18-88AE-1084601E5073}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Frog_A_RC" ID="{47264712-DA07-459F-91C3-A6D5DEA98D5B}"/>
+												<ItemRef Name="Frog_B_RC" ID="{9496BA65-0C86-4F1F-93AC-A08453B93FFE}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="AMB_PAD_Lake" ID="{2C4DF746-DDAF-4B34-BC59-7B099F4504DE}" ShortID="537366584">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="CenterPercentage" Type="int32">
+													<ValueList>
+														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DEC01579-13C6-4D7F-8A6A-CBAD0B80894B}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_PAD_Lake" ID="{2ED247EE-7FB3-4BB8-9DC7-9C7C6116A505}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_PAD_Lake.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1069776302"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_PAD_Lake" ID="{2ED247EE-7FB3-4BB8-9DC7-9C7C6116A505}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Frogs" ID="{D6DF6480-1FEB-403C-9D2E-B4AE4F715036}" ShortID="889726931">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{FD9C3671-9CD1-474C-A865-254F8429304C}" ShortID="695661304">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{BC1BE0B0-2F11-47F5-95CA-3DE240CFE9A8}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>6.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>11.49581</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>20</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Frogs_SC" ID="{E649140E-827D-4301-85C3-7BB43580FACD}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>11.5</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Lake" ID="{931EC60A-DD60-478C-95BA-5DA14B4AC2FE}" ShortID="289326814">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_PAD_Lake" ID="{2C4DF746-DDAF-4B34-BC59-7B099F4504DE}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>20</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Wind_Elevation_BC" ID="{3B2B47DE-F1B7-4188-88FA-B33F60958A53}" ShortID="637537720">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Inclusion" Type="bool">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>False</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -411,367 +804,266 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<RandomSequenceContainer Name="Frog_A_RC" ID="{47264712-DA07-459F-91C3-A6D5DEA98D5B}" ShortID="977988306">
+										<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{6F57BEE7-BF67-4A8D-9B5A-60B332E7C8B5}" ShortID="514654837">
 											<PropertyList>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{1C9D8500-25A2-42B2-BC19-7257982FE441}"/>
-														</ModifierInfo>
-													</ModifierList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
 												</Property>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="AMB_RFX_Frog_A_01" ID="{857A09B2-37B1-4A8D-9FC6-32AFE1124779}" ShortID="883946829">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_01" ID="{D1457808-136F-41B0-B4A2-46EBF7B06099}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="864697297"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_01" ID="{D1457808-136F-41B0-B4A2-46EBF7B06099}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_A_02" ID="{EB2C6BC5-87E2-44E4-B4B9-201C8AFFA6F6}" ShortID="331903835">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_02" ID="{3A3A256E-0003-4932-A5FD-35534F7934CD}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="981383364"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_02" ID="{3A3A256E-0003-4932-A5FD-35534F7934CD}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_A_03" ID="{99BA1605-8D87-47FF-B258-9140872ECF4A}" ShortID="448104607">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_03" ID="{D7397CAF-6BEC-448A-A4AB-9D3BF8F6BE91}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="342142041"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_03" ID="{D7397CAF-6BEC-448A-A4AB-9D3BF8F6BE91}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_A_04" ID="{2F3A348F-D558-41A9-B160-BB3681F1B113}" ShortID="871794797">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_04" ID="{AD262450-7E8D-4DE1-95BD-FE5D533B55E7}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="745236099"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_04" ID="{AD262450-7E8D-4DE1-95BD-FE5D533B55E7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_A_05" ID="{D7EB974B-AB76-4A5E-9938-FCDDBFB68E64}" ShortID="1014589953">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_05" ID="{F11FF328-C1D1-403B-B7F6-831EB007887C}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="645216713"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_05" ID="{F11FF328-C1D1-403B-B7F6-831EB007887C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_A_06" ID="{1B2C840E-3D3A-4590-B5F6-073D279D0F3A}" ShortID="347597547">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_06" ID="{5B99ECD9-E0DF-4692-9ADC-8EAD6B48EB8A}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="138781816"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_06" ID="{5B99ECD9-E0DF-4692-9ADC-8EAD6B48EB8A}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_A_07" ID="{FE0A894F-4A8B-4BDC-A86C-63752074A6B1}" ShortID="470427922">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_A_07" ID="{C12F4266-5090-42CC-A4EE-37ABBC12BAA7}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_A_07.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="57871559"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_A_07" ID="{C12F4266-5090-42CC-A4EE-37ABBC12BAA7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{0CE745FC-B99F-4A11-9637-D253FB0C035B}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169208860"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Frog_B_RC" ID="{9496BA65-0C86-4F1F-93AC-A08453B93FFE}" ShortID="974436417">
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{0CE745FC-B99F-4A11-9637-D253FB0C035B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{05496611-46BA-4503-B61C-02F7BC7023CF}" ShortID="730918495">
 											<PropertyList>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{B9272F96-2D57-4955-AE09-228A39DB59E1}"/>
-														</ModifierInfo>
-													</ModifierList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
 												</Property>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="AMB_RFX_Frog_B_01" ID="{6C4E8AEE-DC78-4A8A-8930-80DAFD897C68}" ShortID="693512440">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_01" ID="{E50A429F-F08E-4FF3-AECD-FB920DC6010C}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_01.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="871828377"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_01" ID="{E50A429F-F08E-4FF3-AECD-FB920DC6010C}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_B_02" ID="{CC1EF33F-DBD2-43E2-B93F-F1AC44F27ECF}" ShortID="681779182">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_02" ID="{3145E6E5-3A5F-4D61-A9D7-7D5476B302C7}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_02.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="905057815"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_02" ID="{3145E6E5-3A5F-4D61-A9D7-7D5476B302C7}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_B_03" ID="{C23E6830-E2CE-4B97-9EF1-A49C6B0BA46D}" ShortID="824515652">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_03" ID="{80A4CAF4-3961-4AAA-8E88-83AA37D233DF}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_03.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="744965425"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_03" ID="{80A4CAF4-3961-4AAA-8E88-83AA37D233DF}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_B_04" ID="{FD286058-5DF2-4AD5-9AB5-ED3895EEB7DD}" ShortID="708900663">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_04" ID="{88051452-9106-429A-9ECB-8981D8BE2E5D}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_04.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="950958287"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_04" ID="{88051452-9106-429A-9ECB-8981D8BE2E5D}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_B_05" ID="{3B9EA077-754E-4070-B09E-3A6D3F09EF0F}" ShortID="407946683">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_05" ID="{01E892D9-154F-4C60-BBE9-34D5C52E1152}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_05.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="653502592"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_05" ID="{01E892D9-154F-4C60-BBE9-34D5C52E1152}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_B_06" ID="{5942B368-448D-402E-9D93-EC0867A5759D}" ShortID="622614140">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_06" ID="{970D3944-4158-4F12-B8C0-242575120B04}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_06.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="921443"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_06" ID="{970D3944-4158-4F12-B8C0-242575120B04}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="AMB_RFX_Frog_B_07" ID="{01DDC698-093E-4068-90F0-0B127D0D5152}" ShortID="743972857">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Frog_B_07" ID="{EA724B07-D813-4D18-88AE-1084601E5073}">
-															<Language>SFX</Language>
-															<AudioFile>Frogs\AMB_RFX_Frog_B_07.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="79626071"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Frog_B_07" ID="{EA724B07-D813-4D18-88AE-1084601E5073}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
+												<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{CD981E43-E87D-4D8A-B84E-046EA1758072}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="744883682"/>
+													</MediaIDList>
+												</AudioFileSource>
 											</ChildrenList>
-										</RandomSequenceContainer>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{CD981E43-E87D-4D8A-B84E-046EA1758072}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<Playlist>
-										<ItemRef Name="Frog_A_RC" ID="{47264712-DA07-459F-91C3-A6D5DEA98D5B}"/>
-										<ItemRef Name="Frog_B_RC" ID="{9496BA65-0C86-4F1F-93AC-A08453B93FFE}"/>
-									</Playlist>
-								</RandomSequenceContainer>
-								<Sound Name="AMB_PAD_Lake" ID="{2C4DF746-DDAF-4B34-BC59-7B099F4504DE}" ShortID="537366584">
+									<BlendTrackList>
+										<BlendTrack Name="Wind" ID="{7993060A-93CF-4E7A-8E3B-641F9E6F2CD8}" ShortID="977186578">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{CFC01D19-82A8-4DC1-9DAD-709A23A1E182}" ShortID="195679202">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{987BC64A-D33C-4E0E-80E2-95706450B6B7}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>-90</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>20</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>22.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>90</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{6F57BEE7-BF67-4A8D-9B5A-60B332E7C8B5}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>20</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>35</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{05496611-46BA-4503-B61C-02F7BC7023CF}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>30</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
+														<RightEdgePos>90</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<BlendContainer Name="Spaceship_BC" ID="{0EA56E67-DBFA-4C2B-9882-5361EC4B8EB5}" ShortID="465670112">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATN_30m" ID="{C69EAE44-3627-434D-9780-73CF2E5BE125}" WorkUnitID="{5956A9BF-8B5E-4B3F-A5A7-1B583EACDA5B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_Spaceship_In_Loop" ID="{5A6C9188-8F8D-4820-9F80-80E97036CD7F}" ShortID="279458531">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Spaceship_In_Loop" ID="{C6185295-F022-4D8F-811B-F442CA7F7187}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Spaceship_In_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="465306571"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Spaceship_In_Loop" ID="{C6185295-F022-4D8F-811B-F442CA7F7187}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Spaceship_Out_Loop" ID="{7CBFA213-3953-4AEB-A602-C3E6234DBBA1}" ShortID="737035490">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Spaceship_Out_Loop" ID="{8E2D8F36-CC60-42D7-9AC9-9A8E1BF9A686}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Spaceship_Out_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="77744621"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Spaceship_Out_Loop" ID="{8E2D8F36-CC60-42D7-9AC9-9A8E1BF9A686}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Spaceship" ID="{1ECF50AB-DFC7-4053-B63C-9203BF21F4E2}" ShortID="572424510">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Spaceship_In_Loop" ID="{5A6C9188-8F8D-4820-9F80-80E97036CD7F}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>5.5564142194745</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Linear</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Spaceship_Out_Loop" ID="{7CBFA213-3953-4AEB-A602-C3E6234DBBA1}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0.000499999999998835</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Exp1</LeftFadingSegmentShape>
+														<RightEdgePos>30</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+								<Sound Name="AMB_PAD_Huge_Door_Crystal_Loop" ID="{A50DE105-DE48-45C9-9262-EC3FCE689E22}" ShortID="771547941">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
@@ -784,17 +1076,515 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{DEC01579-13C6-4D7F-8A6A-CBAD0B80894B}"/>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{C69EAE44-3627-434D-9780-73CF2E5BE125}">
+												<Attenuation Name="ATN_30m (Custom)" ID="{BAC19EFF-C492-4492-80EC-577825297334}" ShortID="934191842">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="30"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{50509A27-1EB6-4239-9A52-6C785201F0C7}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>0.84944</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{A35E5597-2BB3-447A-AD90-AC64896227D1}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>14.71008</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>26.47</XPos>
+																			<YPos>60</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{9841F05B-B3D3-4214-9D0D-A189D5772B66}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{5E256134-5FF0-489B-B2C2-33561E42D975}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>45</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>9.145476</XPos>
+																			<YPos>18.23529</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>30</XPos>
+																			<YPos>0.19608</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_Huge_Door_Crystal_Loop" ID="{BD79F5FA-2B7E-4F89-86F1-4D1E6657018C}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_Huge_Door_Crystal_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="116825441"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{810D1256-1ED5-41D1-AEE8-5538F7C2826B}" ShortID="81892935">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Switch_Collect_Progression" ID="{8C1E4F54-AC45-43D7-8D67-248D14D2F763}" WorkUnitID="{F735EE6F-8838-44A7-B276-6BC9BB2729BD}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{4E370FD2-16B1-4335-A437-076137140CCA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>150</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.9</XPos>
+																				<YPos>150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>300</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1.9</XPos>
+																				<YPos>300</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>450</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.9</XPos>
+																				<YPos>450</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>600</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>4</XPos>
+																				<YPos>600</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_Huge_Door_Crystal_Loop" ID="{BD79F5FA-2B7E-4F89-86F1-4D1E6657018C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_PAD_Wetland_Loop" ID="{FBF224B4-E0E3-4F2B-8CDE-7187F16AE478}" ShortID="618021833">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_PAD_Wetland_Loop" ID="{C67793BD-7BCC-42CB-A5B2-6CF17E96FD81}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_PAD_Wetland_Loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1048301795"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
+												<CustomState Name="" ID="{25DE5EA0-7288-42A0-9B7C-78EC97592F8D}" ShortID="776516645">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="40"/>
+														<Property Name="Volume" Type="Real64" Value="-12"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+												<CustomState Name="" ID="{96DE8E15-7804-499A-B2A1-85022D138002}" ShortID="884977105"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_PAD_Wetland_Loop" ID="{C67793BD-7BCC-42CB-A5B2-6CF17E96FD81}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<SwitchContainer Name="Wind_State" ID="{E2D34B61-CEB7-454F-9547-978F706FBD35}" ShortID="395582341">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{9E52E1E4-07A0-4D13-BE40-9184434C5F55}" WorkUnitID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Wind_State" ID="{2B5B3F57-A200-4711-A678-3D5F36520991}" WorkUnitID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}" ShortID="434133304">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{76AA44ED-B862-4C13-AE2E-2E11D25DDD8C}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="169208860"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{76AA44ED-B862-4C13-AE2E-2E11D25DDD8C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}" ShortID="813127011">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{43C64F23-C0C6-49E2-A5E1-912633F804AB}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="744883682"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{43C64F23-C0C6-49E2-A5E1-912633F804AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
+												<CustomState Name="" ID="{386AE948-1318-410A-901E-8129366CC7B4}" ShortID="97283777">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="35"/>
+														<Property Name="Volume" Type="Real64" Value="-12"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+												<CustomState Name="" ID="{9BDC8713-A7B7-48B2-9A37-F7560E3FD82D}" ShortID="66352208"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}"/>
+												<PropertyList>
+													<Property Name="ContinuePlay" Type="bool" Value="True"/>
+													<Property Name="FadeInTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+													<Property Name="FadeOutTime" Type="Real64">
+														<ValueList>
+															<Value>2.5</Value>
+														</ValueList>
+													</Property>
+												</PropertyList>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
+												<ItemList>
+													<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Strong" ID="{98CDB3E9-21AA-470F-8176-D4A1259443ED}"/>
+												<ItemList>
+													<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<Sound Name="AMB_PAD_Cave_Loop" ID="{4872A60D-3DE0-4ECB-8136-5AE90110D75E}" ShortID="858602801">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="IsStreamingEnabled" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -810,123 +1600,21 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Lake" ID="{2ED247EE-7FB3-4BB8-9DC7-9C7C6116A505}">
+										<AudioFileSource Name="AMB_PAD_Cave_Loop" ID="{3094D7D1-982F-46F7-87D1-CF3D479B0FE1}">
 											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Lake.wav</AudioFile>
+											<AudioFile>AMB_PAD_Cave_Loop.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="1069776302"/>
+												<MediaID ID="109505191"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Lake" ID="{2ED247EE-7FB3-4BB8-9DC7-9C7C6116A505}" Platform="Linked"/>
+										<ActiveSource Name="AMB_PAD_Cave_Loop" ID="{3094D7D1-982F-46F7-87D1-CF3D479B0FE1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="Frogs" ID="{D6DF6480-1FEB-403C-9D2E-B4AE4F715036}" ShortID="889726931">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{FD9C3671-9CD1-474C-A865-254F8429304C}" ShortID="695661304">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{BC1BE0B0-2F11-47F5-95CA-3DE240CFE9A8}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>0</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>6.5</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																				<SegmentShape>Exp1</SegmentShape>
-																			</Point>
-																			<Point>
-																				<XPos>11.49581</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>20</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="Frogs_SC" ID="{E649140E-827D-4301-85C3-7BB43580FACD}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>11.5</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-								<BlendTrack Name="Lake" ID="{931EC60A-DD60-478C-95BA-5DA14B4AC2FE}" ShortID="289326814">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-										</Reference>
-									</ReferenceList>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_PAD_Lake" ID="{2C4DF746-DDAF-4B34-BC59-7B099F4504DE}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>0</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>20</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
-						</BlendContainer>
-						<Sound Name="AMB_PAD_Wetland_Loop" ID="{FBF224B4-E0E3-4F2B-8CDE-7187F16AE478}" ShortID="618021833">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						</ActorMixer>
+						<ActorMixer Name="Level_2_Mixer" ID="{39147E77-091D-4045-854C-C085962AED36}" ShortID="509970676">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -935,705 +1623,7 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 								</Reference>
 							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_PAD_Wetland_Loop" ID="{C67793BD-7BCC-42CB-A5B2-6CF17E96FD81}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_PAD_Wetland_Loop.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1048301795"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
-										<CustomState Name="" ID="{25DE5EA0-7288-42A0-9B7C-78EC97592F8D}" ShortID="776516645">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="31"/>
-												<Property Name="Volume" Type="Real64" Value="-12"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
-										<CustomState Name="" ID="{96DE8E15-7804-499A-B2A1-85022D138002}" ShortID="884977105"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_PAD_Wetland_Loop" ID="{C67793BD-7BCC-42CB-A5B2-6CF17E96FD81}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<SwitchContainer Name="Wind_State" ID="{E2D34B61-CEB7-454F-9547-978F706FBD35}" ShortID="395582341">
-							<PropertyList>
-								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="DefaultSwitchOrState">
-									<ObjectRef Name="None" ID="{9E52E1E4-07A0-4D13-BE40-9184434C5F55}" WorkUnitID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-								<Reference Name="SwitchGroupOrStateGroup">
-									<ObjectRef Name="Wind_State" ID="{2B5B3F57-A200-4711-A678-3D5F36520991}" WorkUnitID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}" ShortID="434133304">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{76AA44ED-B862-4C13-AE2E-2E11D25DDD8C}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="169208860"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{76AA44ED-B862-4C13-AE2E-2E11D25DDD8C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}" ShortID="813127011">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{43C64F23-C0C6-49E2-A5E1-912633F804AB}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="744883682"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{43C64F23-C0C6-49E2-A5E1-912633F804AB}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<StateInfo>
-								<StateGroupList>
-									<StateGroupInfo>
-										<StateGroupRef Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}"/>
-									</StateGroupInfo>
-								</StateGroupList>
-								<CustomStateList>
-									<CustomState>
-										<StateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
-										<CustomState Name="" ID="{386AE948-1318-410A-901E-8129366CC7B4}" ShortID="97283777">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="35"/>
-												<Property Name="Volume" Type="Real64" Value="-12"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
-										<CustomState Name="" ID="{9BDC8713-A7B7-48B2-9A37-F7560E3FD82D}" ShortID="66352208"/>
-									</CustomState>
-								</CustomStateList>
-							</StateInfo>
-							<GroupingInfo>
-								<GroupingBehaviorList>
-									<GroupingBehavior>
-										<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-											<Property Name="FadeInTime" Type="Real64">
-												<ValueList>
-													<Value>2.5</Value>
-												</ValueList>
-											</Property>
-											<Property Name="FadeOutTime" Type="Real64">
-												<ValueList>
-													<Value>2.5</Value>
-												</ValueList>
-											</Property>
-										</PropertyList>
-									</GroupingBehavior>
-									<GroupingBehavior>
-										<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}"/>
-										<PropertyList>
-											<Property Name="ContinuePlay" Type="bool" Value="True"/>
-											<Property Name="FadeInTime" Type="Real64">
-												<ValueList>
-													<Value>2.5</Value>
-												</ValueList>
-											</Property>
-											<Property Name="FadeOutTime" Type="Real64">
-												<ValueList>
-													<Value>2.5</Value>
-												</ValueList>
-											</Property>
-										</PropertyList>
-									</GroupingBehavior>
-								</GroupingBehaviorList>
-								<GroupingList>
-									<Grouping>
-										<SwitchRef Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
-										<ItemList>
-											<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{EFF413CC-3E95-4B8D-83B5-CE30C3E4E658}"/>
-										</ItemList>
-									</Grouping>
-									<Grouping>
-										<SwitchRef Name="Strong" ID="{98CDB3E9-21AA-470F-8176-D4A1259443ED}"/>
-										<ItemList>
-											<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{0F7CE484-2165-415F-B4D6-AA8009C39B6E}"/>
-										</ItemList>
-									</Grouping>
-								</GroupingList>
-							</GroupingInfo>
-						</SwitchContainer>
-						<BlendContainer Name="Wind_Elevation_BC" ID="{3B2B47DE-F1B7-4188-88FA-B33F60958A53}" ShortID="637537720">
-							<PropertyList>
-								<Property Name="BlendBehavior" Type="int16" Value="1"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="AMB_PAD_Wind_Medium_Loop" ID="{6F57BEE7-BF67-4A8D-9B5A-60B332E7C8B5}" ShortID="514654837">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Wind_Medium_Loop" ID="{0CE745FC-B99F-4A11-9637-D253FB0C035B}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Wind_Medium_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="169208860"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Wind_Medium_Loop" ID="{0CE745FC-B99F-4A11-9637-D253FB0C035B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="AMB_PAD_Wind_Strong_Loop" ID="{05496611-46BA-4503-B61C-02F7BC7023CF}" ShortID="730918495">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsStreamingEnabled" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="AMB_PAD_Wind_Strong_Loop" ID="{CD981E43-E87D-4D8A-B84E-046EA1758072}">
-											<Language>SFX</Language>
-											<AudioFile>AMB_PAD_Wind_Strong_Loop.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="744883682"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="AMB_PAD_Wind_Strong_Loop" ID="{CD981E43-E87D-4D8A-B84E-046EA1758072}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-							<BlendTrackList>
-								<BlendTrack Name="Wind" ID="{7993060A-93CF-4E7A-8E3B-641F9E6F2CD8}" ShortID="977186578">
-									<PropertyList>
-										<Property Name="EnableCrossFading" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="LayerCrossFadeControlInput">
-											<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-										</Reference>
-									</ReferenceList>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{CFC01D19-82A8-4DC1-9DAD-709A23A1E182}" ShortID="195679202">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}" WorkUnitID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{987BC64A-D33C-4E0E-80E2-95706450B6B7}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>-90</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>20</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>22.5</XPos>
-																				<YPos>0</YPos>
-																				<Flags>0</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>90</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-									<BlendTrackAssocList>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_PAD_Wind_Medium_Loop" ID="{6F57BEE7-BF67-4A8D-9B5A-60B332E7C8B5}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>20</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<RightEdgePos>35</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-												<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-										<BlendTrackAssoc>
-											<ItemRef Name="AMB_PAD_Wind_Strong_Loop" ID="{05496611-46BA-4503-B61C-02F7BC7023CF}"/>
-											<CrossfadingInfo>
-												<LeftEdgePos>30</LeftEdgePos>
-												<LeftFadingMode>Automatic</LeftFadingMode>
-												<LeftFadingSegmentShape>Log2</LeftFadingSegmentShape>
-												<RightEdgePos>90</RightEdgePos>
-												<RightFadingMode>Automatic</RightFadingMode>
-											</CrossfadingInfo>
-										</BlendTrackAssoc>
-									</BlendTrackAssocList>
-								</BlendTrack>
-							</BlendTrackList>
-						</BlendContainer>
-						<Sound Name="AMB_PAD_Cave_Loop" ID="{4872A60D-3DE0-4ECB-8136-5AE90110D75E}" ShortID="858602801">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_PAD_Cave_Loop" ID="{3094D7D1-982F-46F7-87D1-CF3D479B0FE1}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_PAD_Cave_Loop.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="109505191"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_PAD_Cave_Loop" ID="{3094D7D1-982F-46F7-87D1-CF3D479B0FE1}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_PAD_Huge_Door_Crystal_Loop" ID="{A50DE105-DE48-45C9-9262-EC3FCE689E22}" ShortID="771547941">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="CenterPercentage" Type="int32">
-									<ValueList>
-										<Value>100</Value>
-									</ValueList>
-								</Property>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="IsStreamingEnabled" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="75"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Attenuation">
-									<Custom CreatedFrom="{C69EAE44-3627-434D-9780-73CF2E5BE125}">
-										<Attenuation Name="ATN_30m (Custom)" ID="{BAC19EFF-C492-4492-80EC-577825297334}" ShortID="934191842">
-											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="30"/>
-											</PropertyList>
-											<CurveUsageInfoList>
-												<VolumeDryUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="VolumeDry" ID="{50509A27-1EB6-4239-9A52-6C785201F0C7}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="3"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																</Point>
-																<Point>
-																	<XPos>0.84944</XPos>
-																	<YPos>0</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>-200</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</VolumeDryUsage>
-												<VolumeWetGameUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetGameUsage>
-												<VolumeWetUserUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
-												</VolumeWetUserUsage>
-												<LowPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="LowPassFilter" ID="{A35E5597-2BB3-447A-AD90-AC64896227D1}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>14.71008</XPos>
-																	<YPos>0</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>26.47</XPos>
-																	<YPos>60</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>60</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</LowPassFilterUsage>
-												<HighPassFilterUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="HighPassFilter" ID="{9841F05B-B3D3-4214-9D0D-A189D5772B66}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="65537"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>0</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Log1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>20</XPos>
-																	<YPos>25</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>50</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</HighPassFilterUsage>
-												<SpreadUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-														<Curve Name="Spread" ID="{5E256134-5FF0-489B-B2C2-33561E42D975}">
-															<PropertyList>
-																<Property Name="Flags" Type="int32" Value="1"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>0</XPos>
-																	<YPos>45</YPos>
-																	<Flags>5</Flags>
-																	<SegmentShape>Exp1</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>9.145476</XPos>
-																	<YPos>18.23529</YPos>
-																	<Flags>0</Flags>
-																	<SegmentShape>Log2</SegmentShape>
-																</Point>
-																<Point>
-																	<XPos>30</XPos>
-																	<YPos>0.19608</YPos>
-																	<Flags>37</Flags>
-																</Point>
-															</PointList>
-														</Curve>
-													</CurveUsageInfo>
-												</SpreadUsage>
-												<FocusUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
-												</FocusUsage>
-												<ObstructionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</ObstructionVolumeUsage>
-												<ObstructionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</ObstructionLPFUsage>
-												<ObstructionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</ObstructionHPFUsage>
-												<OcclusionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</OcclusionVolumeUsage>
-												<OcclusionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</OcclusionLPFUsage>
-												<OcclusionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</OcclusionHPFUsage>
-												<DiffractionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</DiffractionVolumeUsage>
-												<DiffractionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</DiffractionLPFUsage>
-												<DiffractionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</DiffractionHPFUsage>
-												<TransmissionVolumeUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</TransmissionVolumeUsage>
-												<TransmissionLPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</TransmissionLPFUsage>
-												<TransmissionHPFUsage>
-													<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
-												</TransmissionHPFUsage>
-											</CurveUsageInfoList>
-										</Attenuation>
-									</Custom>
-								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_Huge_Door_Crystal_Loop" ID="{BD79F5FA-2B7E-4F89-86F1-4D1E6657018C}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_Huge_Door_Crystal_Loop.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="116825441"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ObjectLists>
-								<ObjectList Name="RTPC">
-									<Reference>
-										<Local>
-											<RTPC Name="" ID="{810D1256-1ED5-41D1-AEE8-5538F7C2826B}" ShortID="81892935">
-												<PropertyList>
-													<Property Name="PropertyName" Type="string" Value="Pitch"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="ControlInput">
-														<ObjectRef Name="Switch_Collect_Progression" ID="{8C1E4F54-AC45-43D7-8D67-248D14D2F763}" WorkUnitID="{F735EE6F-8838-44A7-B276-6BC9BB2729BD}"/>
-													</Reference>
-													<Reference Name="Curve">
-														<Custom>
-															<Curve Name="" ID="{4E370FD2-16B1-4335-A437-076137140CCA}">
-																<PropertyList>
-																	<Property Name="Flags" Type="int32" Value="65537"/>
-																</PropertyList>
-																<PointList>
-																	<Point>
-																		<XPos>0</XPos>
-																		<YPos>150</YPos>
-																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>0.9</XPos>
-																		<YPos>150</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1</XPos>
-																		<YPos>300</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>1.9</XPos>
-																		<YPos>300</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>2</XPos>
-																		<YPos>450</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>2.9</XPos>
-																		<YPos>450</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>3</XPos>
-																		<YPos>600</YPos>
-																		<Flags>0</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>4</XPos>
-																		<YPos>600</YPos>
-																		<Flags>37</Flags>
-																	</Point>
-																</PointList>
-															</Curve>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</RTPC>
-										</Local>
-									</Reference>
-								</ObjectList>
-							</ObjectLists>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_Huge_Door_Crystal_Loop" ID="{BD79F5FA-2B7E-4F89-86F1-4D1E6657018C}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
