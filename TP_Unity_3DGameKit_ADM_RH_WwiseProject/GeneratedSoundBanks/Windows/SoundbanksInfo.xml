@@ -897,7 +897,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F17E40E0-C6D4-40F9-21F2-FA6F95B9E702}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DBA711A4-BFFD-2B7D-ECE8-BEA18FB3FADA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -924,7 +924,7 @@
 				<Bus Id="4130663432" Name="Bus_RFX"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="687573680" Name="Rvb_Test">
+				<AuxBus Id="2294598260" Name="Rvb_Cave_Level_1">
 					<PluginRefs>
 						<ShareSets>
 							<PluginRef Id="484890516"/>
@@ -1412,7 +1412,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{E9867680-D2FC-F44F-4A54-7F7A0039936A}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{37A3F4CF-5F69-0E07-5078-A6379AE6A42C}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -1715,7 +1715,7 @@
 						<MediaRef Id="983004342"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="1819119386" Name="Play_FOL_Idle" DurationType="OneShot" DurationMin="0.6619167" DurationMax="0.797375">
+				<Event Id="1819119386" Name="Play_FOL_Idle" DurationType="OneShot" DurationMin="0.6247661" DurationMax="0.84478945">
 					<MediaRefs>
 						<MediaRef Id="248218025"/>
 						<MediaRef Id="680625840"/>
@@ -2622,5 +2622,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A764459C-96DB-FC35-2B39-65AF304D8AFD}</FileHash>
+	<FileHash>{98B6E9F4-82D9-1263-AF15-0A4B9A5F1050}</FileHash>
 </SoundBanksInfo>

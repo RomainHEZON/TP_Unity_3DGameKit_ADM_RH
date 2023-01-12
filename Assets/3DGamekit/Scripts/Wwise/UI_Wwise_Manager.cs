@@ -8,11 +8,11 @@ using UnityEngine.UI;
 
 public class UI_Wwise_Manager : MonoBehaviour
 {
-    public Slider VolumeSlider;
+   /* public Slider VolumeSlider;
 
     [SerializeField] private AK.Wwise.RTPC VolumeRTPC;
 
-    [SerializeField] private AK.Wwise.RTPC HealthRTPC;
+    [SerializeField] private AK.Wwise.RTPC HealthRTPC;*/
 
 
     // Pointer UI 
@@ -45,12 +45,12 @@ public class UI_Wwise_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_UI_Game_Resume", this.gameObject);
     }
 
-    public void PointerVolumeSlider()
+   /* public void PointerVolumeSlider()
     {
         AkSoundEngine.SetRTPCValue(VolumeRTPC.Name, VolumeSlider.value);
 
         AkSoundEngine.PostEvent("Play_UI_Menu_Volume_Slider", this.gameObject);
-    }
+    }*/
 
     // Dialogue UI 
     public void DialogueStart()

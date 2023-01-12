@@ -9,8 +9,11 @@ namespace Gamekit3D
     [RequireComponent(typeof(Slider))]
     public class MixerSliderLink : MonoBehaviour
     {
+
         public AudioMixer mixer;
         public string mixerParameter;
+
+
 
         public float maxAttenuation = 0.0f;
         public float minAttenuation = -80.0f;

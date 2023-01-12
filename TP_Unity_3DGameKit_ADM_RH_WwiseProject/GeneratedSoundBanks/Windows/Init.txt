@@ -56,7 +56,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	687573680	Rvb_Test			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Test	
+	2294598260	Rvb_Cave_Level_1			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cave_Level_1	
 
 Effect plug-ins	ID	Name	Type				Notes
 	484890516	Church_Small_Wood	Wwise RoomVerb			

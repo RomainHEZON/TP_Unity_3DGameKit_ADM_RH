@@ -97,6 +97,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}"/>
 							<Value>4.40145102781137</Value>
 						</RTPCValue>
@@ -105,8 +109,16 @@
 							<Value>3.32611827956989</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Teleporter_SFX" ID="{9713901D-AAF8-4A33-A13F-5C2F05F09DDF}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Volume" ID="{068C4936-1B06-4A9D-B46F-18D090D4CA5E}"/>
+							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>

@@ -161,45 +161,6 @@
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
-									<ObjectLists>
-										<ObjectList Name="RTPC">
-											<Reference>
-												<Local>
-													<RTPC Name="" ID="{487BC7DA-6F98-4051-A093-AD60BBD0ACC6}" ShortID="176575329">
-														<PropertyList>
-															<Property Name="PropertyName" Type="string" Value="Volume"/>
-														</PropertyList>
-														<ReferenceList>
-															<Reference Name="ControlInput">
-																<ObjectRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
-															</Reference>
-															<Reference Name="Curve">
-																<Custom>
-																	<Curve Name="" ID="{732A6A72-E978-42C6-BCF7-50D964782C58}">
-																		<PropertyList>
-																			<Property Name="Flags" Type="int32" Value="3"/>
-																		</PropertyList>
-																		<PointList>
-																			<Point>
-																				<XPos>0</XPos>
-																				<YPos>-200</YPos>
-																				<Flags>5</Flags>
-																			</Point>
-																			<Point>
-																				<XPos>1</XPos>
-																				<YPos>0</YPos>
-																				<Flags>37</Flags>
-																			</Point>
-																		</PointList>
-																	</Curve>
-																</Custom>
-															</Reference>
-														</ReferenceList>
-													</RTPC>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
 								</Bus>
 								<Bus Name="Bus_UI" ID="{B4FBF7D2-5193-4D55-94E6-ACEDFBAC14C4}">
 									<PropertyList>
@@ -214,7 +175,7 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 									</PropertyList>
 									<ChildrenList>
-										<AuxBus Name="Rvb_Test" ID="{965A7491-F14B-499A-9F65-3382E280DC9B}">
+										<AuxBus Name="Rvb_Cave_Level_1" ID="{965A7491-F14B-499A-9F65-3382E280DC9B}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
@@ -232,6 +193,45 @@
 							<PositioningInfo>
 								<Position Name="" ID="{6769A188-675B-4B7B-91D0-B57A4C213F32}"/>
 							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{DB0D44A2-987B-400B-AC5C-0C7B6A6C7AE5}" ShortID="306710579">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}" WorkUnitID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{3F2E947F-0869-4AC2-9DC9-5E183F6CC481}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 						</Bus>
 					</ChildrenList>
 					<StateInfo>

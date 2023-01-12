@@ -6,30 +6,36 @@ using UnityEngine.UI;
 public class BusVolume_Wwise_Manager : MonoBehaviour
 {
     public Slider thisSlider;
-    public float masterVolume = 1;
-    public float musicVolume = 1;
-    public float preMasterVolume = 1;
+    public float master_Volume = 1;
+    public float music_Volume = 1;
+    public float SFX_Volume = 1;
+
+    // Volume RTPCs 
+
+    [SerializeField] AK.Wwise.RTPC MasterVolumeRTPC;
+    [SerializeField] AK.Wwise.RTPC MusicVolumeRTPC;
+    [SerializeField] AK.Wwise.RTPC SFXVolumeRTPC;
 
     public void SetSpecificVolume(string whatValue)
     {
         float sliderValue = thisSlider.value;
 
-        if (whatValue == "Master")
+        if (whatValue == "Master_Volume")
         {
-            masterVolume = thisSlider.value;
-            AkSoundEngine.SetRTPCValue("Master_Volume", masterVolume);
+            master_Volume = thisSlider.value;
+            AkSoundEngine.SetRTPCValue(MasterVolumeRTPC.Name, master_Volume);
         }
 
-        if (whatValue == "Music")
+        if (whatValue == "Music_Volume")
         {
-            masterVolume = thisSlider.value;
-            AkSoundEngine.SetRTPCValue("Music_Volume", musicVolume);
+            music_Volume = thisSlider.value;
+            AkSoundEngine.SetRTPCValue(MusicVolumeRTPC.Name, music_Volume);
         }
 
-        if (whatValue == "PreMaster")
+        if (whatValue == "SFX_Volume")
         {
-            masterVolume = thisSlider.value;
-            AkSoundEngine.SetRTPCValue("PreMaster_Volume", preMasterVolume);
+            SFX_Volume = thisSlider.value;
+            AkSoundEngine.SetRTPCValue(SFXVolumeRTPC.Name, SFX_Volume);
         }
     }
 }
