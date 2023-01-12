@@ -1,10 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2441234825	Play_Music_Theme_Grenadier_End			\Default Work Unit\02_00_Music\Play_Music_Theme_Grenadier_End	
+	2987996311	Play_Theme_End			\Default Work Unit\02_00_Music\Play_Theme_End	
 	3783934524	Play_Music_Theme_Explo_Chomp			\Default Work Unit\02_00_Music\Play_Music_Theme_Explo_Chomp	
 
 State Group	ID	Name			Wwise Object Path	Notes
-	2999213434	Music_Grenadier_State			\Default Work Unit\Music_State\Music_Grenadier_State	
-	3826569560	Music_State			\Default Work Unit\Music_State\Music_State	
+	2999213434	Music_Grenadier_State			\Default Work Unit\Music_States\Music_Grenadier_State	
+	3826569560	Music_State			\Default Work Unit\Music_States\Music_State	
 
 State	ID	Name	State Group			Notes
 	529726532	End	Music_Grenadier_State			

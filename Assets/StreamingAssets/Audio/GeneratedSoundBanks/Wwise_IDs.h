@@ -75,6 +75,7 @@ namespace AK
         static const AkUniqueID PLAY_SHIELD = 1988178265U;
         static const AkUniqueID PLAY_SHIELD_ACTIVATE = 2396795519U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
+        static const AkUniqueID PLAY_THEME_END = 2987996311U;
         static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
         static const AkUniqueID PLAY_UI_GAME_QUIT = 3336058037U;
@@ -85,7 +86,6 @@ namespace AK
         static const AkUniqueID PLAY_UI_MENU_MOUSE_OVER = 1926492655U;
         static const AkUniqueID PLAY_UI_MENU_NAVIGATION = 1771101267U;
         static const AkUniqueID PLAY_UI_MENU_SELECTION = 2157261217U;
-        static const AkUniqueID PLAY_UI_MENU_VOLUME_SLIDER = 2556697005U;
         static const AkUniqueID PLAY_VINE = 3521962842U;
         static const AkUniqueID PLAY_VO_DEATH = 2043034684U;
         static const AkUniqueID PLAY_VO_EFFORT = 3926096204U;

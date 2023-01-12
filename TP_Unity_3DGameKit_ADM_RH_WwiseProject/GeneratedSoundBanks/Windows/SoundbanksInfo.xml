@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{DDEB85A0-6CDE-70E7-D9D1-3BB91C75AC6A}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{61CE990A-6685-2BFD-EAD0-C83ADC0BC137}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -60,10 +60,6 @@
 				<File Id="1022264341" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>UI_Menu_Mouse_Over.wav</ShortName>
 					<CachePath>SFX/UI_Menu_Mouse_Over_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1069794990" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Menu_Volume_Slider.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Volume_Slider_10C4C929.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
@@ -125,15 +121,7 @@
 						<MediaRef Id="60129979"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2556697005" Name="Play_UI_Menu_Volume_Slider" DurationType="OneShot" DurationMin="0.039751846" DurationMax="0.042115618">
-					<MediaRefs>
-						<MediaRef Id="1069794990"/>
-					</MediaRefs>
-				</Event>
 			</Events>
-			<GameParameters>
-				<GameParameter Id="4179668880" Name="Master_Volume"/>
-			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3092587493" Name="Pause">
 					<States>
@@ -144,7 +132,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{05B64158-998E-E613-2BC8-ACA86EEC7B64}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{B696D27B-3753-2F07-53B8-384E45584F3D}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -1804,7 +1792,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{733407A7-9E50-0FBA-AF0C-E417A671F106}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{16FD9230-ADC6-27C0-604C-345F08A45A7E}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1962,7 +1950,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{235FE2F4-E195-CEF8-4FA9-EBA80F35812D}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{3F399E4C-0979-CC35-5160-0BCC795A3D4A}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2159,6 +2147,11 @@
 					<ActionSetState>
 						<ActionSetStateEntry GroupId="2999213434" Id="1783027799" Name="Fight_Grenadier"/>
 					</ActionSetState>
+				</Event>
+				<Event Id="2987996311" Name="Play_Theme_End" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="117296435"/>
+					</MediaRefs>
 				</Event>
 			</Events>
 			<StateGroups>
@@ -2622,5 +2615,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{98B6E9F4-82D9-1263-AF15-0A4B9A5F1050}</FileHash>
+	<FileHash>{9050E762-BE69-77F5-3631-9570752D05C9}</FileHash>
 </SoundBanksInfo>

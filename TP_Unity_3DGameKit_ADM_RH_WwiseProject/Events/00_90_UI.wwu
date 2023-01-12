@@ -71,6 +71,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{6D2168B8-C0C2-4C03-A837-35FF773210C7}" ShortID="862296547">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Wetland_Loop" ID="{FBF224B4-E0E3-4F2B-8CDE-7187F16AE478}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_UI_Game_Pause" ID="{5C795738-A868-45FC-A1C9-E91588CAC3BD}">
@@ -110,17 +121,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_UI_Menu_Volume_Slider" ID="{1A16D354-AA06-4988-90A2-74B9BFAFB390}">
-					<ChildrenList>
-						<Action Name="" ID="{26575975-61F0-42D0-8D2A-D64A145DBD16}" ShortID="30727821">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UI_Menu_Volume_Slider" ID="{CB6418FF-D3AF-4AD2-9512-0F157B013E26}" WorkUnitID="{66076EBD-ECBE-4587-8472-443FD6D56D02}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

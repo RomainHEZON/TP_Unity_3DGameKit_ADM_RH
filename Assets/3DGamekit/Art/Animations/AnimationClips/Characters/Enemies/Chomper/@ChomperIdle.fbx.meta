@@ -678,14 +678,6 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.0021843913
-        functionName: 
-        data: 
-        objectReferenceParameter: {fileID: 1722084123150156, guid: e9569c7e13e51264082910415a120d38,
-          type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
       - time: 0.31155777
         functionName: ChomperFT
         data: Play_Chomper_FT_Walk

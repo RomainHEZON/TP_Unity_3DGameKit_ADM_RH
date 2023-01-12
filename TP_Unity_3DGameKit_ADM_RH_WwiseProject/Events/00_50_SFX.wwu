@@ -280,6 +280,16 @@
 							</PropertyList>
 							<ReferenceList/>
 						</Action>
+						<Action Name="" ID="{426F7A0D-164A-48FF-A0D8-96A1108F57FB}" ShortID="31604337">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Enemy_Vanish" ID="{7B4FDCAB-C009-4983-B9EF-58F4BD2DAA4D}">

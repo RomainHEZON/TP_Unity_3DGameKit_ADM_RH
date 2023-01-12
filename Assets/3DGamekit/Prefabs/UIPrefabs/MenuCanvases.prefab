@@ -909,7 +909,7 @@ RectTransform:
   - {fileID: 224657094159511944}
   - {fileID: 4283348643690968}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2306,6 +2306,7 @@ GameObject:
   - component: {fileID: 114727946903183750}
   - component: {fileID: 95174845254692634}
   - component: {fileID: 114476614445661708}
+  - component: {fileID: 3654205373327193747}
   m_Layer: 5
   m_Name: UICloseButton
   m_TagString: Untagged
@@ -2427,14 +2428,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 1
-      - m_Target: {fileID: 82853499343333026}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: PlayOneShot
-        m_Mode: 2
+      - m_Target: {fileID: 3654205373327193747}
+        m_TargetAssemblyTypeName: UI_Wwise_Manager, Assembly-CSharp
+        m_MethodName: PointerUIClose
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 8300000, guid: 0fcd692c64aaf4ac7aecc76ee212893c,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2477,19 +2477,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 82853499343333026}
-          m_TargetAssemblyTypeName: 
-          m_MethodName: PlayOneShot
-          m_Mode: 2
+        - m_Target: {fileID: 3654205373327193747}
+          m_TargetAssemblyTypeName: UI_Wwise_Manager, Assembly-CSharp
+          m_MethodName: PointerHover
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 8300000, guid: 6b299ed8d39414c719f79a90fef873c9,
-              type: 3}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &3654205373327193747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1312075569535104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1341132577047810
 GameObject:
   m_ObjectHideFlags: 0
@@ -8199,22 +8210,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'W - Move Forward
-
-    S - Move Backward
-
-    A - Move Left
-
-    D - Move
-    Right
-
-
-    Mouse - Look
-
-
-    Space - Jump
-
-    Left Mouse Button - Melee Attack'
+  m_text: "W - Move Forward\nS - Move Backward\nA - Move Left\nD - Move Right\n\nMouse
+    - Look\n\nSpace - Jump\nLeft Mouse Button - Melee Attack\n\n3D Game Kit - Re
+    Sound Design & Wwise Integration\nby Romain H\xE9zon / Alexandre De Mester"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4c1f115f2c9b80b4cabb22cae230db1c, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: c64de538f27a5b342a025d5db50d19cc, type: 2}

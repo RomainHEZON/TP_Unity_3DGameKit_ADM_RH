@@ -451,6 +451,7 @@
 						<RandomSequenceContainer Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" ShortID="248350764">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>

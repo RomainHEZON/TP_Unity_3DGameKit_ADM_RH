@@ -9,6 +9,16 @@
 			<ChildrenList>
 				<Event Name="Play_Music_Theme_Explo_Chomp" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}">
 					<ChildrenList>
+						<Action Name="" ID="{C0594AD1-0926-4C2F-B6E5-A80437D395C5}" ShortID="989208352">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{0DE24511-AEA4-4138-B559-586076112A05}" ShortID="386519979">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -70,6 +80,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Theme_Switch_Grenadier_End" ID="{3E19E3D0-ECB0-47AD-B44A-AF7F51385E63}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Theme_End" ID="{8C38A215-454F-4FDE-B4EC-F79A1125B728}">
+					<ChildrenList>
+						<Action Name="" ID="{A16A1BE8-5E3C-40FC-9758-78713D7EA239}" ShortID="112419810">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

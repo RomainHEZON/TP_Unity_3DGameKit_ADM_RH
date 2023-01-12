@@ -6,13 +6,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	1926492655	Play_UI_Menu_Mouse_Over			\Default Work Unit\00_90_UI\Play_UI_Menu_Mouse_Over	
 	2157261217	Play_UI_Menu_Selection			\Default Work Unit\00_90_UI\Play_UI_Menu_Selection	
 	2414798867	Play_UI_HP_Loss			\Default Work Unit\00_90_UI\Play_UI_HP_Loss	
-	2556697005	Play_UI_Menu_Volume_Slider			\Default Work Unit\00_90_UI\Play_UI_Menu_Volume_Slider	
 	2863055552	Play_UI_Dialogue_Start			\Default Work Unit\00_90_UI\Play_UI_Dialogue_Start	
 	3336058037	Play_UI_Game_Quit			\Default Work Unit\00_90_UI\Play_UI_Game_Quit	
 	4059508246	Play_UI_Game_Pause			\Default Work Unit\00_90_UI\Play_UI_Game_Pause	
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	4179668880	Master_Volume			\Default Work Unit\Bus_Volume\Master_Volume	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	60129979	UI_Menu_Selection	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\UI_Menu_Selection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Selection		69728
@@ -27,5 +23,4 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1001349253	UI_HP_Loss_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\UI_HP_Loss_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_HP_Loss_RC\UI_HP_Loss_02		69728
 	1005657862	UI_Game_Start	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\UI_Game_Start_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Game_Start		254268
 	1022264341	UI_Menu_Mouse_Over	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\UI_Menu_Mouse_Over_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Mouse_Over		6052
-	1069794990	UI_Menu_Volume_Slider	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\UI_Menu_Volume_Slider_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Volume_Slider		7952
 

@@ -1484,7 +1484,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585281343342591316
+    m_lastTime: -8585280585649425324
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -2482,7 +2482,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585283922013193452
+    m_lastTime: -8585280589844316542
     List:
     - name: Play_UI_Dialogue_Start
       guid: 99df3951143d9844923c5e836fa6a387
@@ -2681,26 +2681,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 63e9c445d986cc4d92ba935b8d9089e4
       Path: Events\Default Work Unit\00_90_UI\Play_UI_Menu_Selection
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Play_UI_Menu_Volume_Slider
-      guid: 54d3161a06aa884990a274b9bfafb390
-      id: 2556697005
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 00_90_UI
-        ObjectType: 12
-        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
-      - ElementName: Play_UI_Menu_Volume_Slider
-        ObjectType: 3
-        guid: 54d3161a06aa884990a274b9bfafb390
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Menu_Volume_Slider
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2981,7 +2961,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\02_00_Music
     guid: 75e10a1d7dab424abc25cd85b9f1e2a9
     GuidInternal: 
-    m_lastTime: -8585281346089562391
+    m_lastTime: -8585280581447465313
     List:
     - name: Play_Music_Theme_Explo_Chomp
       guid: 49ad58abf5c1b7428c83bfb98b87d392
@@ -3023,6 +3003,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_Theme_End
+      guid: 15a2388c4f45de4fb4ecf79a1125b728
+      id: 2987996311
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 02_00_Music
+        ObjectType: 12
+        guid: 75e10a1d7dab424abc25cd85b9f1e2a9
+      - ElementName: Play_Theme_End
+        ObjectType: 3
+        guid: 15a2388c4f45de4fb4ecf79a1125b728
+      Path: Events\Default Work Unit\02_00_Music\Play_Theme_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
     - ElementName: Events
@@ -3034,7 +3034,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585280670617675348
+    m_lastTime: -8585280595932032019
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -3346,7 +3346,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dafb7d237f34794c8b43ba469bf3287e
     GuidInternal: 
-    m_lastTime: -8585281395312976783
+    m_lastTime: -8585280581447422446
     List: []
   - PhysicalPath: States\Menu_Pause.wwu
     PathAndIcons:
@@ -3614,7 +3614,7 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-  - PhysicalPath: States\Music_State.wwu
+  - PhysicalPath: States\Music_States.wwu
     PathAndIcons:
     - ElementName: States
       ObjectType: 5
@@ -3622,13 +3622,13 @@ MonoBehaviour:
     - ElementName: Default Work Unit
       ObjectType: 12
       guid: dafb7d237f34794c8b43ba469bf3287e
-    - ElementName: Music_State
+    - ElementName: Music_States
       ObjectType: 12
       guid: 32f48460de2f714b9834ec30e3b6efb1
-    ParentPath: States\Default Work Unit\Music_State
+    ParentPath: States\Default Work Unit\Music_States
     guid: 32f48460de2f714b9834ec30e3b6efb1
     GuidInternal: 
-    m_lastTime: -8585282381727403402
+    m_lastTime: -8585280581447432470
     List:
     - name: Music_Grenadier_State
       guid: e145d427101aae43971e6858cb42db19
@@ -3640,13 +3640,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: dafb7d237f34794c8b43ba469bf3287e
-      - ElementName: Music_State
+      - ElementName: Music_States
         ObjectType: 12
         guid: 32f48460de2f714b9834ec30e3b6efb1
       - ElementName: Music_Grenadier_State
         ObjectType: 9
         guid: e145d427101aae43971e6858cb42db19
-      Path: States\Default Work Unit\Music_State\Music_Grenadier_State
+      Path: States\Default Work Unit\Music_States\Music_Grenadier_State
       values:
       - name: End
         guid: 1101c71ad39e08419345961dc2d38d97
@@ -3658,7 +3658,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
+        - ElementName: Music_States
           ObjectType: 12
           guid: 32f48460de2f714b9834ec30e3b6efb1
         - ElementName: Music_Grenadier_State
@@ -3677,7 +3677,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
+        - ElementName: Music_States
           ObjectType: 12
           guid: 32f48460de2f714b9834ec30e3b6efb1
         - ElementName: Music_Grenadier_State
@@ -3696,7 +3696,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
+        - ElementName: Music_States
           ObjectType: 12
           guid: 32f48460de2f714b9834ec30e3b6efb1
         - ElementName: Music_Grenadier_State
@@ -3718,13 +3718,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: dafb7d237f34794c8b43ba469bf3287e
-      - ElementName: Music_State
+      - ElementName: Music_States
         ObjectType: 12
         guid: 32f48460de2f714b9834ec30e3b6efb1
       - ElementName: Music_State
         ObjectType: 9
         guid: dc12b15aa2daf9479c8a3bfdf9704b56
-      Path: States\Default Work Unit\Music_State\Music_State
+      Path: States\Default Work Unit\Music_States\Music_State
       values:
       - name: Explo
         guid: 18f9dda43be96d4e969dade36a68e6cd
@@ -3736,7 +3736,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
+        - ElementName: Music_States
           ObjectType: 12
           guid: 32f48460de2f714b9834ec30e3b6efb1
         - ElementName: Music_State
@@ -3755,7 +3755,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
+        - ElementName: Music_States
           ObjectType: 12
           guid: 32f48460de2f714b9834ec30e3b6efb1
         - ElementName: Music_State
@@ -3774,7 +3774,7 @@ MonoBehaviour:
         - ElementName: Default Work Unit
           ObjectType: 12
           guid: dafb7d237f34794c8b43ba469bf3287e
-        - ElementName: Music_State
+        - ElementName: Music_States
           ObjectType: 12
           guid: 32f48460de2f714b9834ec30e3b6efb1
         - ElementName: Music_State
@@ -4281,7 +4281,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000300000004000000050000002c0000002d0000002e0000002f00000031000000320000004300000044000000450000004b000000
+  ExpandedWaapiItemIds: 0100000003000000040000000500000006000000070000000b0000000c0000000d00000012000000190000001a0000001b0000001f00000020000000250000002c0000002d0000002e0000002f0000003000000031000000320000004300000044000000450000004b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
