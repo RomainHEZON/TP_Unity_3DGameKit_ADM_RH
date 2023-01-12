@@ -44,7 +44,7 @@
 							<Value>19.3481481481481</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
+							<GameParameterRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
 							<Value>2.20302375809935</Value>
 						</RTPCValue>
 					</RTPCValueList>
@@ -97,20 +97,28 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}"/>
+							<Value>4.40145102781137</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
+							<Value>3.32611827956989</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Teleporter_SFX" ID="{9713901D-AAF8-4A33-A13F-5C2F05F09DDF}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
-							<Value>0</Value>
+							<GameParameterRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
+							<Value>2.42724850801721</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
-						<CurrentStateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
-						<CurrentStateRef Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
+						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
+						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
-						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>

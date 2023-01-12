@@ -39,6 +39,7 @@ namespace AK
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
         static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
+        static const AkUniqueID PLAY_FOL_IDLE = 1819119386U;
         static const AkUniqueID PLAY_FOL_JUMP = 3623063248U;
         static const AkUniqueID PLAY_FOL_ROLL = 1668355981U;
         static const AkUniqueID PLAY_FOL_RUN = 1810712955U;
@@ -225,14 +226,15 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DISTO_DELAY_STAFF_RTPC = 3778983191U;
         static const AkUniqueID ELLEN_HEALTH = 971296124U;
         static const AkUniqueID LAKE_AMB = 3174026549U;
+        static const AkUniqueID LAYER_STAFF_RTPC = 2885604103U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;
         static const AkUniqueID SPACESHIP_AMB = 3545834150U;
         static const AkUniqueID STAFF_IDLE_SFX = 1334832914U;
-        static const AkUniqueID STAFF_RTPC = 488659181U;
         static const AkUniqueID SWITCH_COLLECT_PROGRESSION = 2006680970U;
         static const AkUniqueID TELEPORTER_SFX = 2740591189U;
         static const AkUniqueID WIND_AMB = 692140126U;

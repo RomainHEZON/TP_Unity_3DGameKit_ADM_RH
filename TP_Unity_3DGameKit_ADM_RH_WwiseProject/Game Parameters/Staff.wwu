@@ -7,7 +7,13 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<GameParameter Name="Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}">
+				<GameParameter Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="5"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="5"/>

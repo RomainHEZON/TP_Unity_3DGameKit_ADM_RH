@@ -23,10 +23,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	4120424468	Play_SFX_HealthBox_Open_01			\Default Work Unit\00_50_SFX\HealthBox\Play_SFX_HealthBox_Open_01	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	971296124	Ellen_Health			\Default Work Unit\Health\Ellen_Health	
 	1334832914	Staff_Idle_SFX			\Default Work Unit\Distance\Staff_Idle_SFX	
 	2740591189	Teleporter_SFX			\Default Work Unit\Distance\Teleporter_SFX	
 
 Effect plug-ins	ID	Name	Type				Notes
+	422406877	Cut_3dB_100Hz (Custom)	Wwise Parametric EQ			
+	2180422931	One_Tap_Quarter_Second	Wwise Delay			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size

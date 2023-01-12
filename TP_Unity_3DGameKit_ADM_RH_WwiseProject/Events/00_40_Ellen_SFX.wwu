@@ -23,6 +23,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{152BC6F0-937B-46B7-B0AE-1ECA64221946}" ShortID="995266711">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ellen_Alien_Staff_Attack_Layer_RC" ID="{B9557DBA-9075-4E9A-A36D-23407640CCE8}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Folder Name="VO" ID="{36B81BAE-B941-4C01-A706-724867DF57AE}" ShortID="360726041">
@@ -114,6 +121,17 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="FOL_Roll_RC" ID="{03FCB243-8309-419A-A592-A7CDB2989208}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_FOL_Idle" ID="{8413EF8C-DE9D-4094-B261-4D9ED16236FF}">
+							<ChildrenList>
+								<Action Name="" ID="{EC125D21-C14A-4C4C-A629-97010537F781}" ShortID="1047972549">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FOL_Idle_RC" ID="{6E02A498-DA26-43F5-A2E2-44A83A5433E3}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

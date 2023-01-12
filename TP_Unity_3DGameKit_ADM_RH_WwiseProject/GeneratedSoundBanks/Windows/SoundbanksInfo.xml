@@ -144,7 +144,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{32579EC0-4706-029E-D106-A6984C5A425F}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{05B64158-998E-E613-2BC8-ACA86EEC7B64}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -356,7 +356,11 @@
 				</File>
 			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="422406877" Name="Cut_3dB_100Hz (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
 				<ShareSets>
+					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
@@ -464,6 +468,14 @@
 					<MediaRefs>
 						<MediaRef Id="1049985844"/>
 					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="422406877"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
 				</Event>
 				<Event Id="1148651653" Name="Play_SFX_Huge_Door_Open_01" DurationType="OneShot" DurationMin="7.672854" DurationMax="7.672854">
 					<MediaRefs>
@@ -500,6 +512,7 @@
 				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<GameParameters>
+				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1334832914" Name="Staff_Idle_SFX"/>
 				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
 			</GameParameters>
@@ -513,7 +526,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{4207B99E-4A2B-4783-CD85-8A7376A55F4B}">
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{E661A388-4F2C-986D-F33D-4BA514AC8532}">
 			<ShortName>States</ShortName>
 			<Path>States.bnk</Path>
 			<Events>
@@ -884,7 +897,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{50AADC88-DE0D-2985-582D-01D4350C4E33}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F17E40E0-C6D4-40F9-21F2-FA6F95B9E702}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -920,7 +933,6 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
-				<GameParameter Id="488659181" Name="Staff_RTPC"/>
 				<GameParameter Id="692140126" Name="Wind_AMB"/>
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
@@ -928,8 +940,10 @@
 				<GameParameter Id="1564184899" Name="SFX_Volume"/>
 				<GameParameter Id="2006680970" Name="Switch_Collect_Progression"/>
 				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
+				<GameParameter Id="2885604103" Name="Layer_Staff_RTPC"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
+				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
 			</GameParameters>
 			<StateGroups>
@@ -1398,7 +1412,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{AB2CF8D0-26DE-0D1A-9D7C-16D89C51DEDB}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{E9867680-D2FC-F44F-4A54-7F7A0039936A}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -1409,6 +1423,10 @@
 				<File Id="18505171" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Pain_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Pain_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="22262707" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_Alien_Staff_Attack_Layer_05.wav</ShortName>
+					<CachePath>SFX/Ellen_Alien_Staff_Attack_Layer_05_10C4C929.wem</CachePath>
 				</File>
 				<File Id="49990726" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Pain_02.wav</ShortName>
@@ -1421,6 +1439,10 @@
 				<File Id="100880891" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_FOL_Jump_06.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_FOL_Jump_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="109017655" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Shield_Activate_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Shield_Activate_02_FBF43565.wem</CachePath>
 				</File>
 				<File Id="114506270" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Pain_06.wav</ShortName>
@@ -1446,6 +1468,10 @@
 					<ShortName>Ellen_SFX_FOL_Jump_04.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_FOL_Jump_04_10C4C929.wem</CachePath>
 				</File>
+				<File Id="219796718" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_Alien_Staff_Attack_Layer_04.wav</ShortName>
+					<CachePath>SFX/Ellen_Alien_Staff_Attack_Layer_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="223353399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_05.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_05_10C4C929.wem</CachePath>
@@ -1461,6 +1487,10 @@
 				<File Id="241975051" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_07.wav</ShortName>
 					<CachePath>SFX/Ellen_Alien_Staff_Attack_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="248218025" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Idle_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Idle_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="314158649" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Attack_05.wav</ShortName>
@@ -1481,6 +1511,10 @@
 				<File Id="398982317" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_FOL_Run_02.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_FOL_Run_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="399032531" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_Alien_Staff_Attack_Layer_01.wav</ShortName>
+					<CachePath>SFX/Ellen_Alien_Staff_Attack_Layer_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="402004189" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_Alien_Staff_Attack_03.wav</ShortName>
@@ -1509,6 +1543,10 @@
 				<File Id="469374635" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Inhale_03.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Inhale_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="529948301" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_Alien_Staff_Attack_Layer_02.wav</ShortName>
+					<CachePath>SFX/Ellen_Alien_Staff_Attack_Layer_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="535331808" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_FOL_Jump_01.wav</ShortName>
@@ -1542,9 +1580,17 @@
 					<ShortName>Ellen_SFX_VO_Death_01.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Death_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="680625840" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Idle_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Idle_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="706531040" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Inhale_02.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Inhale_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="738678400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_FOL_Idle_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_FOL_Idle_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="753481255" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Attack_04.wav</ShortName>
@@ -1580,7 +1626,11 @@
 				</File>
 				<File Id="974062211" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Shield_Activate_02.wav</ShortName>
-					<CachePath>SFX/Ellen_SFX_Shield_Activate_02_10C4C929.wem</CachePath>
+					<CachePath>SFX/Ellen_SFX_Shield_Activate_02_9727376E.wem</CachePath>
+				</File>
+				<File Id="979015196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_Alien_Staff_Attack_Layer_06.wav</ShortName>
+					<CachePath>SFX/Ellen_Alien_Staff_Attack_Layer_06_10C4C929.wem</CachePath>
 				</File>
 				<File Id="983004342" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Bodyfall.wav</ShortName>
@@ -1593,6 +1643,10 @@
 				<File Id="1048076034" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_VO_Effort_06.wav</ShortName>
 					<CachePath>SFX/Ellen_SFX_VO_Effort_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1056748119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_Alien_Staff_Attack_Layer_03.wav</ShortName>
+					<CachePath>SFX/Ellen_Alien_Staff_Attack_Layer_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1068441037" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_FOL_Run_06.wav</ShortName>
@@ -1609,25 +1663,32 @@
 					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
 					<Plugin Id="2547645744" Name="Boost_3dB_100Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
 					<Plugin Id="2998002419" Name="Boost_3dB_10KHz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+					<Plugin Id="3013737263" Name="Bass_Remover_1" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 			</Plugins>
 			<Events>
-				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.6430143" DurationMax="1.0293022">
+				<Event Id="2329713267" Name="Play_Alien_Staff_Attack" DurationType="OneShot" DurationMin="0.84347916" DurationMax="1.0293022">
 					<MediaRefs>
+						<MediaRef Id="22262707"/>
 						<MediaRef Id="52748730"/>
 						<MediaRef Id="167487927"/>
 						<MediaRef Id="174597733"/>
+						<MediaRef Id="219796718"/>
 						<MediaRef Id="223353399"/>
 						<MediaRef Id="241975051"/>
 						<MediaRef Id="314158649"/>
 						<MediaRef Id="384555383"/>
+						<MediaRef Id="399032531"/>
 						<MediaRef Id="402004189"/>
 						<MediaRef Id="412738326"/>
+						<MediaRef Id="529948301"/>
 						<MediaRef Id="590952037"/>
 						<MediaRef Id="753481255"/>
 						<MediaRef Id="788523815"/>
 						<MediaRef Id="788579125"/>
 						<MediaRef Id="810965302"/>
+						<MediaRef Id="979015196"/>
+						<MediaRef Id="1056748119"/>
 					</MediaRefs>
 					<PluginRefs>
 						<Custom>
@@ -1636,6 +1697,8 @@
 						</Custom>
 						<ShareSets>
 							<PluginRef Id="2180422931"/>
+							<PluginRef Id="2547645744"/>
+							<PluginRef Id="3013737263"/>
 						</ShareSets>
 					</PluginRefs>
 				</Event>
@@ -1650,6 +1713,13 @@
 				<Event Id="2382465142" Name="Play_Ellen_SFX_Bodyfall" DurationType="OneShot" DurationMin="0.5269549" DurationMax="0.6088187">
 					<MediaRefs>
 						<MediaRef Id="983004342"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1819119386" Name="Play_FOL_Idle" DurationType="OneShot" DurationMin="0.6619167" DurationMax="0.797375">
+					<MediaRefs>
+						<MediaRef Id="248218025"/>
+						<MediaRef Id="680625840"/>
+						<MediaRef Id="738678400"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="3623063248" Name="Play_FOL_Jump" DurationType="OneShot" DurationMin="0.31346458" DurationMax="0.5113455">
@@ -1680,6 +1750,7 @@
 				</Event>
 				<Event Id="2396795519" Name="Play_Shield_Activate" DurationType="OneShot" DurationMin="4.686788" DurationMax="5.260742">
 					<MediaRefs>
+						<MediaRef Id="109017655"/>
 						<MediaRef Id="974062211"/>
 					</MediaRefs>
 					<PluginRefs>
@@ -1728,7 +1799,9 @@
 				</Event>
 			</Events>
 			<GameParameters>
-				<GameParameter Id="488659181" Name="Staff_RTPC"/>
+				<GameParameter Id="971296124" Name="Ellen_Health"/>
+				<GameParameter Id="2885604103" Name="Layer_Staff_RTPC"/>
+				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{733407A7-9E50-0FBA-AF0C-E417A671F106}">
@@ -2549,5 +2622,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{7955B3AD-FED0-B2B7-5D61-8C9A8A7B5F54}</FileHash>
+	<FileHash>{A764459C-96DB-FC35-2B39-65AF304D8AFD}</FileHash>
 </SoundBanksInfo>

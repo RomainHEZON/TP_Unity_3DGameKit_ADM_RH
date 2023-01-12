@@ -1138,7 +1138,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_40_Ellen_SFX
     guid: 7adb8f172921f048b75a7073488c6255
     GuidInternal: 
-    m_lastTime: -8585282685292428642
+    m_lastTime: -8585280670617600094
     List:
     - name: Bodyfall
       guid: ba979c444c0ae040802863d4fba5caf4
@@ -1243,6 +1243,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 49d6c6cf6e50944da0cae88566c56f9f
       Path: Events\Default Work Unit\00_40_Ellen_SFX\Bodyfall\Play_Ellen_SFX_Bodyfall
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_FOL_Idle
+      guid: 8cef13849dde9440b2614d9ed16236ff
+      id: 1819119386
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_40_Ellen_SFX
+        ObjectType: 12
+        guid: 7adb8f172921f048b75a7073488c6255
+      - ElementName: FOL
+        ObjectType: 4
+        guid: 98a28f401f004f4680052500cd0a1b78
+      - ElementName: Play_FOL_Idle
+        ObjectType: 3
+        guid: 8cef13849dde9440b2614d9ed16236ff
+      Path: Events\Default Work Unit\00_40_Ellen_SFX\FOL\Play_FOL_Idle
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2695,7 +2718,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\01_00_State
     guid: d836ddceef571a4ca898f4eef1cf4790
     GuidInternal: 
-    m_lastTime: -8585281371435734278
+    m_lastTime: -8585280700617657566
     List:
     - name: Set_Game_Parameter_Staff_RTPC_01
       guid: a3a8619ee10adb4684536c3853243e86
@@ -3011,7 +3034,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585281371435719238
+    m_lastTime: -8585280670617675348
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -3209,7 +3232,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Health
     guid: f152a078009aa04e85f9cc8399387a1f
     GuidInternal: 
-    m_lastTime: -8585283913094638179
+    m_lastTime: -8585280684410344133
     List:
     - name: Ellen_Health
       guid: e75a86bb9f2c5a4781ebb9f103e12328
@@ -3275,11 +3298,11 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Staff
     guid: 90e228e1314d6449b39db7cd4ce05dd0
     GuidInternal: 
-    m_lastTime: -8585281371435689039
+    m_lastTime: -8585280707745380941
     List:
-    - name: Staff_RTPC
+    - name: Disto_Delay_Staff_RTPC
       guid: a7b91e5ffc62804e95daab369d9ca120
-      id: 488659181
+      id: 3778983191
       PathAndIcons:
       - ElementName: Game Parameters
         ObjectType: 5
@@ -3290,10 +3313,27 @@ MonoBehaviour:
       - ElementName: Staff
         ObjectType: 12
         guid: 90e228e1314d6449b39db7cd4ce05dd0
-      - ElementName: Staff_RTPC
+      - ElementName: Disto_Delay_Staff_RTPC
         ObjectType: 13
         guid: a7b91e5ffc62804e95daab369d9ca120
-      Path: Game Parameters\Default Work Unit\Staff\Staff_RTPC
+      Path: Game Parameters\Default Work Unit\Staff\Disto_Delay_Staff_RTPC
+    - name: Layer_Staff_RTPC
+      guid: 761eb3533f0f93459bd4b885bb922a33
+      id: 2885604103
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Staff
+        ObjectType: 12
+        guid: 90e228e1314d6449b39db7cd4ce05dd0
+      - ElementName: Layer_Staff_RTPC
+        ObjectType: 13
+        guid: 761eb3533f0f93459bd4b885bb922a33
+      Path: Game Parameters\Default Work Unit\Staff\Layer_Staff_RTPC
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -4241,7 +4281,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000300000004000000050000002c0000002d000000320000004300000044000000450000004b000000
+  ExpandedWaapiItemIds: 010000000300000004000000050000002c0000002d0000002e00000031000000320000004300000044000000450000004b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

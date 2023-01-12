@@ -14,6 +14,12 @@ public class Ellen_FT_Manager : MonoBehaviour
 
     }
 
+    private void PlayFOLIdle()
+    {
+        AkSoundEngine.PostEvent("Play_FOL_Idle", this.gameObject);
+
+    }
+
     private void PlayLandForward()
     {
         AkSoundEngine.SetSwitch("Loco_Switch", "Forward", this.gameObject);

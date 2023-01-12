@@ -67,16 +67,33 @@ namespace Gamekit3D
 
         public void ResetDamage()
         {
+            if (currentHitPoints == 1)
+            {
+                AkSoundEngine.SetRTPCValue(HealthRTPC.Name, 1);
+
+            }
+            else if (currentHitPoints == 2)
+            {
+                AkSoundEngine.SetRTPCValue(HealthRTPC.Name, 2);
+
+            }
+            else if (currentHitPoints == 3)
+            {
+                AkSoundEngine.SetRTPCValue(HealthRTPC.Name, 3);
+
+            }
+            else if (currentHitPoints == 4)
+            {
+                AkSoundEngine.SetRTPCValue(HealthRTPC.Name, 4);
+
+            }
+
             currentHitPoints = maxHitPoints;
             isInvulnerable = false;
             m_timeSinceLastHit = 0.0f;
             OnResetDamage.Invoke();
 
-            if (currentHitPoints == 1)
-            {
-                AkSoundEngine.SetState("Health", "Low Health");
-                AkSoundEngine.PostEvent("Play_Heartbeat", this.gameObject);
-            }
+            
         }
 
         public void SetColliderState(bool enabled)
