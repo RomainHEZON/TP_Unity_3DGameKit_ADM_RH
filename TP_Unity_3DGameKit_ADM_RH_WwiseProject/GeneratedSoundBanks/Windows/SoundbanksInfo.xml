@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{61CE990A-6685-2BFD-EAD0-C83ADC0BC137}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{6C00960B-7DEF-13DB-B47E-36938C074D56}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -132,7 +132,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{B696D27B-3753-2F07-53B8-384E45584F3D}">
+		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{075BC605-B2A3-438D-6DFE-1302AB673636}">
 			<ShortName>SFX_SNBK</ShortName>
 			<Path>SFX_SNBK.bnk</Path>
 			<Media>
@@ -579,7 +579,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{7D3232D7-E6CB-DD35-1592-DB2EB300F109}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{A96BDED5-0AD2-9EC9-3E83-793948E32474}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -885,12 +885,14 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{DBA711A4-BFFD-2B7D-ECE8-BEA18FB3FADA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{576EF8FB-E4F8-00D5-DB87-64F93A764F29}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<ShareSets>
 					<Plugin Id="484890516" Name="Church_Small_Wood" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1618968822" Name="Ducking_Meter_Grenadier" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="2340012131" Name="Ducking_Meter_Chomper" LibName="Wwise Meter" LibId="8454147"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -899,16 +901,32 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="17439960" Name="Bus_AMB"/>
+				<Bus Id="112561660" Name="Bus_Grenadier_FT"/>
 				<Bus Id="1162281553" Name="Bus_Music"/>
 				<Bus Id="1592365332" Name="Bus_Ennemies"/>
 				<Bus Id="1746463750" Name="Bus_UI"/>
+				<Bus Id="1763209118" Name="Bus_Grenadier_Attack">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="1618968822"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="2038678300" Name="Bus_Reverb"/>
 				<Bus Id="2367965617" Name="Bus_PreMaster_01"/>
 				<Bus Id="2367965618" Name="Bus_PreMaster_02"/>
 				<Bus Id="2766202208" Name="Bus_Ellen"/>
 				<Bus Id="3056742518" Name="Bus_Pads"/>
+				<Bus Id="3378702191" Name="Bus_Chomper_FT"/>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 				<Bus Id="3895923845" Name="Bus_SFX"/>
+				<Bus Id="4109016909" Name="Bus_Chomper_Attack">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2340012131"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="4130663432" Name="Bus_RFX"/>
 			</Busses>
 			<AuxBusses>
@@ -926,7 +944,10 @@
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
 				<GameParameter Id="1334832914" Name="Staff_Idle_SFX"/>
 				<GameParameter Id="1564184899" Name="SFX_Volume"/>
+				<GameParameter Id="1875403703" Name="Chomper_Attack_Playing"/>
 				<GameParameter Id="2006680970" Name="Switch_Collect_Progression"/>
+				<GameParameter Id="2504666941" Name="Fireflies_AMB"/>
+				<GameParameter Id="2630360352" Name="Grenadier_Attack_Playing"/>
 				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
 				<GameParameter Id="2885604103" Name="Layer_Staff_RTPC"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
@@ -1006,13 +1027,17 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{F75BF8A5-536B-FE6C-0CAE-3263BD948315}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{E5D777FC-A808-6121-5AE6-7D1B5521CA2B}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
 				<File Id="69857268" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Death.wav</ShortName>
 					<CachePath>SFX/Grenadier_Death_10C4C929.wem</CachePath>
+				</File>
+				<File Id="197042933" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Grenadier_Idle_Loop.wav</ShortName>
+					<CachePath>SFX/SFX_Grenadier_Idle_Loop_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="219315323" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Get_Hit_Behind_01.wav</ShortName>
@@ -1193,6 +1218,17 @@
 						<MediaRef Id="1072987620"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1285304806" Name="Play_Grenadier_Idle" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="197042933"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="198525027" Name="Play_Grenadier_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.8373556" DurationMax="5.445751">
+					<MediaRefs>
+						<MediaRef Id="305209183"/>
+						<MediaRef Id="1058987220"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3891969030" Name="Play_Grenadier_Vox_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.2261672" DurationMax="1.9194298">
 					<MediaRefs>
 						<MediaRef Id="639603022"/>
@@ -1209,12 +1245,6 @@
 						<ActionPostEventEntry Id="3891969030" Name="Play_Grenadier_Vox_Attack"/>
 					</ActionPostEvent>
 				</Event>
-				<Event Id="1988178265" Name="Play_Shield" MaxAttenuation="30" DurationType="OneShot" DurationMin="4.8373556" DurationMax="5.445751">
-					<MediaRefs>
-						<MediaRef Id="305209183"/>
-						<MediaRef Id="1058987220"/>
-					</MediaRefs>
-				</Event>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
@@ -1226,7 +1256,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{9093944B-FD5A-F53D-0F73-AB1601CE04E2}">
+		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{D218E9F8-4BED-EDC2-73DB-F43E56785C15}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1400,7 +1430,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{37A3F4CF-5F69-0E07-5078-A6379AE6A42C}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{B0CE8712-F318-B415-068D-4F720FB28D46}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -1792,7 +1822,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{16FD9230-ADC6-27C0-604C-345F08A45A7E}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{5A1E26CD-E9E5-4C6D-5BCC-137CD6FC6358}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -1950,7 +1980,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{3F399E4C-0979-CC35-5160-0BCC795A3D4A}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{49691BEB-C9B3-1491-9C27-8867B41AF1F9}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2174,7 +2204,7 @@
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{36F31871-21C9-CAD8-8666-3B76EC4DF85B}">
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{4243AFA5-5F05-0B42-741D-CEA83D4009E3}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
 			<Media>
@@ -2222,6 +2252,14 @@
 					<ShortName>Ellen_FT_Puddle_Run_08.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Puddle_Run_08_10C4C929.wem</CachePath>
 				</File>
+				<File Id="195881607" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_04.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="202234196" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_03.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="217241906" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Grass_Run_010.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Grass_Run_010_10C4C929.wem</CachePath>
@@ -2238,6 +2276,10 @@
 					<ShortName>Ellen_FT_Puddle_Land_Forward_01.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Puddle_Land_Forward_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="281050331" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_08.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_08_10C4C929.wem</CachePath>
+				</File>
 				<File Id="283508269" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Puddle_Run_04.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Puddle_Run_04_10C4C929.wem</CachePath>
@@ -2245,6 +2287,10 @@
 				<File Id="311493152" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Stone_Land_Idle.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Stone_Land_Idle_10C4C929.wem</CachePath>
+				</File>
+				<File Id="361204990" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_02.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="405165139" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Stone_Jump_02.wav</ShortName>
@@ -2338,6 +2384,10 @@
 					<ShortName>Ellen_FT_Metal_Land_Forward.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Metal_Land_Forward_10C4C929.wem</CachePath>
 				</File>
+				<File Id="640370847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_06.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_06_10C4C929.wem</CachePath>
+				</File>
 				<File Id="652444740" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Puddle_Run_012.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Puddle_Run_012_10C4C929.wem</CachePath>
@@ -2361,6 +2411,10 @@
 				<File Id="836876221" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Stone_Jump_01.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Stone_Jump_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="843647209" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_07.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_07_10C4C929.wem</CachePath>
 				</File>
 				<File Id="843674309" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Puddle_Land_Idle.wav</ShortName>
@@ -2390,6 +2444,10 @@
 					<ShortName>Ellen_FT_Grass_Land_Idle.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Grass_Land_Idle_10C4C929.wem</CachePath>
 				</File>
+				<File Id="914906970" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_FT_Metal_Run_05.wav</ShortName>
+					<CachePath>SFX/Ellen_FT_Metal_Run_05_10C4C929.wem</CachePath>
+				</File>
 				<File Id="982164098" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_FT_Stone_Land_Forward_Roll_02.wav</ShortName>
 					<CachePath>SFX/Ellen_FT_Stone_Land_Forward_Roll_02_10C4C929.wem</CachePath>
@@ -2416,7 +2474,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2458421299" Name="Play_Ellen_Footstep" DurationType="OneShot" DurationMin="0.15080316" DurationMax="1.2265236">
+				<Event Id="2458421299" Name="Play_Ellen_Footstep" DurationType="OneShot" DurationMin="0.14024231" DurationMax="1.2265236">
 					<SwitchContainers>
 						<SwitchContainer>
 							<SwitchValue GroupType="Switch" GroupId="3194777289" Id="1216965916"/>
@@ -2521,6 +2579,13 @@
 								<SwitchContainer>
 									<SwitchValue GroupType="Switch" GroupId="496641439" Id="712161704" Default="true"/>
 									<MediaRefs>
+										<MediaRef Id="195881607"/>
+										<MediaRef Id="202234196"/>
+										<MediaRef Id="281050331"/>
+										<MediaRef Id="361204990"/>
+										<MediaRef Id="640370847"/>
+										<MediaRef Id="843647209"/>
+										<MediaRef Id="914906970"/>
 										<MediaRef Id="1002530163"/>
 									</MediaRefs>
 								</SwitchContainer>
@@ -2615,5 +2680,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9050E762-BE69-77F5-3631-9570752D05C9}</FileHash>
+	<FileHash>{4BC46930-E6A8-5751-BF33-283378648104}</FileHash>
 </SoundBanksInfo>

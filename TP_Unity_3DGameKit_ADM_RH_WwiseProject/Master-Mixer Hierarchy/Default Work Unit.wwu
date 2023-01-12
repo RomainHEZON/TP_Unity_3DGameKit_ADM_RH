@@ -135,6 +135,110 @@
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 											</PropertyList>
+											<ChildrenList>
+												<Bus Name="Bus_Chomper_Attack" ID="{B671A1B7-2BEB-4446-B53C-3C6690AED61D}">
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="Ducking_Meter_Chomper" ID="{FB4BC626-B2DA-4655-8107-E65FE392D693}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Bus>
+												<Bus Name="Bus_Chomper_FT" ID="{C6AD7670-C7B4-45AC-95AC-831FB98C1396}">
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{062BA7AA-3D79-47E3-A448-F7469F3C5F7E}" ShortID="902457804">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Chomper_Attack_Playing" ID="{5F4D3330-6516-4708-A01E-6168A60F12C2}" WorkUnitID="{9F1F3F42-E7A1-4BA4-9FA4-4F97D4E675CC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{EA35D75F-A78B-47BB-B823-43CE679D42E7}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-48</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>-25</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Log1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-12</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</Bus>
+												<Bus Name="Bus_Grenadier_FT" ID="{909F06FA-7C44-4668-AA25-5457CCCB6D97}">
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{30E25840-1050-48ED-BEB2-E59A114657BB}" ShortID="788052465">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Grenadier_Attack_Playing" ID="{19F4E710-BA4E-4E2A-9023-96F06A78AE03}" WorkUnitID="{9F1F3F42-E7A1-4BA4-9FA4-4F97D4E675CC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{E978C4F0-DF34-47BD-864B-111D25DA7F49}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-48</XPos>
+																								<YPos>-200</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</Bus>
+												<Bus Name="Bus_Grenadier_Attack" ID="{8BCD0753-FC25-42E6-A653-20D7FF6F9B1D}">
+													<ReferenceList>
+														<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+															<ObjectRef Name="Ducking_Meter_Grenadier" ID="{26F12DE4-6157-4E62-AB9B-BE5F0D15AA07}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+														</Reference>
+													</ReferenceList>
+												</Bus>
+											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{1F0EE9FC-3710-4E71-9CF9-13439D433AA9}"/>
 											</PositioningInfo>
@@ -164,6 +268,11 @@
 								</Bus>
 								<Bus Name="Bus_UI" ID="{B4FBF7D2-5193-4D55-94E6-ACEDFBAC14C4}">
 									<PropertyList>
+										<Property Name="BusVolume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Color" Type="int16" Value="13"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>

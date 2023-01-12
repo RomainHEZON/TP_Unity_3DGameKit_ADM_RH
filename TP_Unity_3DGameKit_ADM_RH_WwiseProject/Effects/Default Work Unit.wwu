@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}" SchemaVersion="110">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Ducking_Meter_Chomper" ID="{FB4BC626-B2DA-4655-8107-E65FE392D693}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Chomper_Attack_Playing" ID="{5F4D3330-6516-4708-A01E-6168A60F12C2}"/>
+</PluginData>
+				</Effect>
+				<Effect Name="Ducking_Meter_Grenadier" ID="{26F12DE4-6157-4E62-AB9B-BE5F0D15AA07}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Grenadier_Attack_Playing" ID="{19F4E710-BA4E-4E2A-9023-96F06A78AE03}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

@@ -10,9 +10,10 @@
 				<ActorMixer Name="UI_Mixer" ID="{6CD7C1F0-3553-4CC3-9FAF-77E73AC271B2}" ShortID="232375405">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>2</Value>
+								<Value>3</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Pitch" Type="int32">

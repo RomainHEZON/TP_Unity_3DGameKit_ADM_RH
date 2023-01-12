@@ -73,7 +73,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Shield" ID="{02C59725-1319-40A4-86F1-71519199EE10}">
+				<Event Name="Play_Grenadier_Shield" ID="{02C59725-1319-40A4-86F1-71519199EE10}">
 					<ChildrenList>
 						<Action Name="" ID="{28D750F4-771A-4BFD-B85B-8780EC6916D7}" ShortID="424928061">
 							<ReferenceList>
@@ -131,7 +131,7 @@
 						<Action Name="" ID="{D3E825CA-8267-46A4-83CE-874F35F99A29}" ShortID="5175582">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Grenadier_Death" ID="{AC20193C-EA78-4334-8C35-A8495DF5533E}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+									<ObjectRef Name="SFX_Grenadier_Death" ID="{AC20193C-EA78-4334-8C35-A8495DF5533E}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -155,6 +155,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Grenadier_Vox_Attack" ID="{1343DBA7-787D-4354-AF22-DBAED74F4460}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Grenadier_Idle" ID="{A578C346-64E7-4AB1-AE33-51E6109FED9B}">
+					<ChildrenList>
+						<Action Name="" ID="{81336200-5574-4B57-8D6B-977494C691E7}" ShortID="358166354">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Grenadier_Idle_Loop" ID="{036DDF7B-8D26-4DE4-BF07-6C52B0EA253C}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

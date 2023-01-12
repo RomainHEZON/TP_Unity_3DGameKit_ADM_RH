@@ -10,6 +10,7 @@
 				<ActorMixer Name="Pads_Mixer" ID="{B392822F-B58D-42AB-8198-C109BB2FB0BA}" ShortID="966179398">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>6</Value>
@@ -46,6 +47,7 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>

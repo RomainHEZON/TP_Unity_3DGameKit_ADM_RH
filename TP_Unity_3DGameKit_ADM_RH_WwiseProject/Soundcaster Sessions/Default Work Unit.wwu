@@ -93,6 +93,10 @@
 							<Value>20</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Fireflies_AMB" ID="{7AF14CED-5890-41FA-A359-B2B882249A75}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Switch_Collect_Progression" ID="{8C1E4F54-AC45-43D7-8D67-248D14D2F763}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -102,7 +106,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}"/>
-							<Value>4.40145102781137</Value>
+							<Value>0.517857142857143</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Chomper_Attack_Playing" ID="{5F4D3330-6516-4708-A01E-6168A60F12C2}"/>
+							<Value>-48</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
@@ -113,6 +121,10 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Teleporter_SFX" ID="{9713901D-AAF8-4A33-A13F-5C2F05F09DDF}"/>
 							<Value>0</Value>
 						</RTPCValue>
@@ -121,8 +133,16 @@
 							<Value>1</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}"/>
+							<Value>19.7334371148731</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Grenadier_Attack_Playing" ID="{19F4E710-BA4E-4E2A-9023-96F06A78AE03}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
-							<Value>2.42724850801721</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
@@ -130,13 +150,13 @@
 						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
-						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
-						<CurrentSwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
+						<CurrentSwitchRef Name="Stone" ID="{80678943-4F3B-489D-B9D7-AD48D3F35346}"/>
+						<CurrentSwitchRef Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -46,6 +46,8 @@ namespace AK
         static const AkUniqueID PLAY_GET_HIT_BEHIND = 2314174147U;
         static const AkUniqueID PLAY_GRENADIER_DEATH = 3337034902U;
         static const AkUniqueID PLAY_GRENADIER_FOOTSTEPS = 2094447813U;
+        static const AkUniqueID PLAY_GRENADIER_IDLE = 1285304806U;
+        static const AkUniqueID PLAY_GRENADIER_SHIELD = 198525027U;
         static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
         static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
@@ -72,7 +74,6 @@ namespace AK
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
-        static const AkUniqueID PLAY_SHIELD = 1988178265U;
         static const AkUniqueID PLAY_SHIELD_ACTIVATE = 2396795519U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
         static const AkUniqueID PLAY_THEME_END = 2987996311U;
@@ -226,8 +227,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID CHOMPER_ATTACK_PLAYING = 1875403703U;
         static const AkUniqueID DISTO_DELAY_STAFF_RTPC = 3778983191U;
         static const AkUniqueID ELLEN_HEALTH = 971296124U;
+        static const AkUniqueID FIREFLIES_AMB = 2504666941U;
+        static const AkUniqueID GRENADIER_ATTACK_PLAYING = 2630360352U;
         static const AkUniqueID LAKE_AMB = 3174026549U;
         static const AkUniqueID LAYER_STAFF_RTPC = 2885604103U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
@@ -264,8 +268,12 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID BUS_AMB = 17439960U;
+        static const AkUniqueID BUS_CHOMPER_ATTACK = 4109016909U;
+        static const AkUniqueID BUS_CHOMPER_FT = 3378702191U;
         static const AkUniqueID BUS_ELLEN = 2766202208U;
         static const AkUniqueID BUS_ENNEMIES = 1592365332U;
+        static const AkUniqueID BUS_GRENADIER_ATTACK = 1763209118U;
+        static const AkUniqueID BUS_GRENADIER_FT = 112561660U;
         static const AkUniqueID BUS_MUSIC = 1162281553U;
         static const AkUniqueID BUS_PADS = 3056742518U;
         static const AkUniqueID BUS_PREMASTER_01 = 2367965617U;

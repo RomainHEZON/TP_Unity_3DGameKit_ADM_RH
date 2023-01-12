@@ -10,9 +10,11 @@
 				<ActorMixer Name="Ellen_SFX_Mixer" ID="{9F33E9EB-D0AA-4ABF-B4D8-9EC805B89DF1}" ShortID="1038565128">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>4</Value>
+								<Value>5</Value>
 							</ValueList>
 						</Property>
 						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
@@ -1544,6 +1546,13 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{705B1996-7838-4F86-BC37-95932583AAB2}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 									</PropertyList>
 									<ReferenceList>
@@ -1911,6 +1920,13 @@
 								<RandomSequenceContainer Name="Ellen_Alien_Staff_Attack_Layer_RC" ID="{B9557DBA-9075-4E9A-A36D-23407640CCE8}" ShortID="348555890">
 									<PropertyList>
 										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0676C349-858E-45DC-8C02-D704F47D3082}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

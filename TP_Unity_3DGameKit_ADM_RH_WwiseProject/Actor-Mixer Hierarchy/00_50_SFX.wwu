@@ -10,6 +10,8 @@
 				<ActorMixer Name="SFX_Mixer" ID="{7C269E76-21DA-4D16-B665-2B62ED909893}" ShortID="564367348">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
 								<Value>5</Value>
