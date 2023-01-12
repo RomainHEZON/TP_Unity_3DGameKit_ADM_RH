@@ -885,7 +885,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F2CCD7A4-3E9F-06F5-E48D-0F880767FC74}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{F26488FD-D233-D5EE-C358-DA5C7DB59722}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -1027,7 +1027,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{E5D777FC-A808-6121-5AE6-7D1B5521CA2B}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{3F6099B7-0FF3-083B-8059-085E1B46B043}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1980,7 +1980,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{49691BEB-C9B3-1491-9C27-8867B41AF1F9}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{E1A46B73-CD4B-E62F-E872-F9D2B491F379}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2680,5 +2680,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8763A51E-95B8-C001-D4C3-D331F0A4FB28}</FileHash>
+	<FileHash>{2AA3B06A-0EC8-F502-A19C-E9D4373D7A2E}</FileHash>
 </SoundBanksInfo>

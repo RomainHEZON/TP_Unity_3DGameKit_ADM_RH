@@ -2587,7 +2587,11 @@
 												</Sound>
 											</ChildrenList>
 											<PositioningInfo>
-												<Panner Name="" ID="{16E22D67-D4E5-485B-8533-A52BC5D562BA}"/>
+												<Panner Name="" ID="{16E22D67-D4E5-485B-8533-A52BC5D562BA}">
+													<PropertyList>
+														<Property Name="PanY" Type="Real64" Value="5.55111512312578E-17"/>
+													</PropertyList>
+												</Panner>
 												<Position Name="" ID="{BFD11E7D-18DC-4527-956F-9223086B1FBF}">
 													<PropertyList>
 														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>

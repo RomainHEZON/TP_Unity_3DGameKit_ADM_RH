@@ -1725,11 +1725,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>

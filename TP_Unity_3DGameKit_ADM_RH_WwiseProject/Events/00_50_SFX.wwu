@@ -192,13 +192,6 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{EB18CB63-5584-49A9-BFD4-1F5C6197761D}" ShortID="544401095">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Pressure_Pad_Activated" ID="{DC902F22-A0E6-41CB-9B40-4F8179F7B1C8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_SFX_Pressure_Pad_Idle" ID="{D7DF3E4B-8B33-47A3-86E7-246526FF1681}">
@@ -210,6 +203,28 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Pressure_Pad_Activated_02" ID="{96C5A9E2-AF5B-4464-B889-50C6F31B577C}">
+							<ChildrenList>
+								<Action Name="" ID="{E20CBAC1-6D0F-4617-8712-5755BE12979B}" ShortID="18790119">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{52D62B44-93A4-4C40-BDDB-CCF59A905494}" ShortID="22119164">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Pressure_Pad_Activated" ID="{DC902F22-A0E6-41CB-9B40-4F8179F7B1C8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

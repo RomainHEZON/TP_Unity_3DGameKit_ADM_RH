@@ -1588,7 +1588,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585280570936025514
+    m_lastTime: -8585280486032558310
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -2072,6 +2072,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_SFX_Pressure_Pad_Activated_02
+      guid: e2a9c5965baf6444b88950c6f31b577c
+      id: 1061469642
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: Pressure_Pad
+        ObjectType: 4
+        guid: 4eeec37022910544a04ce61ea46bc2bc
+      - ElementName: Play_SFX_Pressure_Pad_Activated_02
+        ObjectType: 3
+        guid: e2a9c5965baf6444b88950c6f31b577c
+      Path: Events\Default Work Unit\00_50_SFX\Pressure_Pad\Play_SFX_Pressure_Pad_Activated_02
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_SFX_Pressure_Pad_Idle
       guid: 4b3edfd7338ba34786e7246526ff1681
       id: 2961794190
@@ -2354,7 +2377,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_70_Grenadier
     guid: 71582feae7f34c4e913572af42280bda
     GuidInternal: 
-    m_lastTime: -8585280549674980560
+    m_lastTime: -8585280523167025317
     List:
     - name: Play_Attack_Close
       guid: 44ca3a95974d9b41a4d7989e2861b4e1
@@ -4460,7 +4483,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000002d0000002e0000002f0000003000000031000000320000003300000034000000
+  ExpandedWaapiItemIds: 0100000005000000060000000d00000011000000190000001a0000001b0000001c0000001d0000001e0000001f000000200000002100000022000000230000002400000025000000260000002700000028000000290000002c0000002d0000002e0000002f00000030000000310000003200000033000000340000003b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
