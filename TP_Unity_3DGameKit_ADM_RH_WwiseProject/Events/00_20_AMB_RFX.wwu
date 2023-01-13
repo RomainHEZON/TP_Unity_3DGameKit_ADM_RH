@@ -173,6 +173,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Spaceship_Landing" ID="{BB881035-0266-48CB-9E7C-41EAAE251191}">
+					<ChildrenList>
+						<Action Name="" ID="{C57FD0BF-6595-46B4-A414-1EF33037DB4E}" ShortID="908092142">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spaceship_Landing" ID="{BC99C9DB-619E-496A-8A1F-A684D04D3F3F}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

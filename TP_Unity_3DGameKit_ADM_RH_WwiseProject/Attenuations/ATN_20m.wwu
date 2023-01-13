@@ -115,14 +115,14 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7.5</XPos>
-											<YPos>30</YPos>
+											<XPos>7.45931</XPos>
+											<YPos>28.85057</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>20</XPos>
-											<YPos>10</YPos>
+											<YPos>2.81609</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>

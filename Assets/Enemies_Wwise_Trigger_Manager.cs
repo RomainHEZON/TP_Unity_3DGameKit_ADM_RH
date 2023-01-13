@@ -11,12 +11,12 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
         AkSoundEngine.PostEvent("Play_SFX_Chomper_Death", this.gameObject);
     }
 
-    public void ChomperAttack()
+    private void ChomperAttack()
     {
         AkSoundEngine.PostEvent("Play_SFX_Chomper_Attack", this.gameObject);
     }
 
-    public void ChomperFT()
+    private void ChomperFT()
     {
         AkSoundEngine.PostEvent("Play_Chomper_FT_Walk", this.gameObject);
     }
@@ -79,6 +79,22 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
     {
         AkSoundEngine.PostEvent("Set_State_End", this.gameObject);
     }
+
+    // Spitter
+
+    public void SpitterDeath()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Spitter_Death", this.gameObject);
+
+    }
+
+    private void SpitterAttack()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Spitter_Attack", this.gameObject);
+
+    }
+
+
 
 }
 

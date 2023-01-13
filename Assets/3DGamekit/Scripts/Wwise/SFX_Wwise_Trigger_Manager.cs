@@ -82,6 +82,16 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
 
     }
 
+    public void SpaceshipLanding()
+    {
+        AkSoundEngine.PostEvent("Play_Spaceship_Landing", this.gameObject);
+    }
+
+    public void SpaceshipIdle()
+    {
+        AkSoundEngine.PostEvent("Play_Spaceship_BC", this.gameObject);
+
+    }
 
 
 }

@@ -147,7 +147,11 @@ namespace Gamekit3D
         public void Spotted()
         {
             if (spottedAudio != null)
-                spottedAudio.PlayRandomClip();
+
+            AkSoundEngine.PostEvent("Play_SFX_Spitter_Spotted", this.gameObject);
+
+            AkSoundEngine.PostEvent("Set_State_Fight_Chomper", this.gameObject);
+
         }
 
         public void CheckNeedFleeing()

@@ -4313,6 +4313,41 @@
 										<ActiveSource Name="AMB_RFX_Morse_Code_Loop" ID="{F922F52D-62C9-4861-B289-AE6A866D0EA1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<Sound Name="SFX_Spaceship_Landing" ID="{BC99C9DB-619E-496A-8A1F-A684D04D3F3F}" ShortID="497048994">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SFX_Spaceship_Landing" ID="{C4FBE1B0-4C1F-429C-862B-703A4A3D8904}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Spaceship_Landing.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="405218810"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="SFX_Spaceship_Landing" ID="{C4FBE1B0-4C1F-429C-862B-703A4A3D8904}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
