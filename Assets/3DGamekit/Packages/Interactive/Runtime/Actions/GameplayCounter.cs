@@ -50,6 +50,12 @@ namespace Gamekit3D.GameCommands
             {
                 AkSoundEngine.SetRTPCValue(ProgressionRTPC.Name, 3);
             }
+
+            if (currentCount == 2)
+            {
+                AkSoundEngine.PostEvent("Play_SFX_Door_Open_04", this.gameObject);
+
+            }
         }
 
     }

@@ -57,7 +57,31 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
 
 
     }
-  
+
+    public void Level2DoorOpen01()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Door_Open_01", this.gameObject);
+
+    }
+
+    public void Level2DoorOpen02()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Door_Open_02", this.gameObject);
+
+    }
+
+    public void Level2DoorOpen03()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Door_Open_01", this.gameObject);
+
+    }
+
+    public void Level2DoorOpen04()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Door_Open_01", this.gameObject);
+
+    }
+
 
 
 }

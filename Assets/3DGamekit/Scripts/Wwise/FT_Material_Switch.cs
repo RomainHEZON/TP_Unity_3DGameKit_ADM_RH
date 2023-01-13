@@ -19,7 +19,7 @@ public class FT_Material_Switch : MonoBehaviour
     {
         RaycastHit[] hit;
 
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 0.5f);
+        hit = Physics.RaycastAll(transform.position, Vector3.down, 0.1f);
 
         foreach (RaycastHit rayhit in hit)
         {

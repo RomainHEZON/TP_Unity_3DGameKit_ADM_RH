@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e0837a98acc49448bdf7cf0f41d74b, type: 3}
   m_Name: F3388F09-ACDD-492B-8CC3-F4BF97EEECD2
   m_EditorClassIdentifier: 
-  objectName: SFX_SNBK
-  id: 833899935
+  objectName: SFX_LEVEL_01_SNBK
+  id: 3216885010
   guid: F3388F09-ACDD-492B-8CC3-F4BF97EEECD2

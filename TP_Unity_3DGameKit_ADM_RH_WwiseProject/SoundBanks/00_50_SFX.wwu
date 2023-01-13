@@ -7,9 +7,17 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<SoundBank Name="SFX_SNBK" ID="{F3388F09-ACDD-492B-8CC3-F4BF97EEECD2}">
+				<SoundBank Name="SFX_LEVEL_01_SNBK" ID="{F3388F09-ACDD-492B-8CC3-F4BF97EEECD2}">
 					<ObjectInclusionList>
-						<ObjectRef Name="00_50_SFX" ID="{5678B13C-638A-4AAB-B002-22CAC1A60494}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LEVEL_01" ID="{90721E39-C7CA-45A3-836B-AB5039AABA89}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SFX_LEVEL_02_SNBK" ID="{274C4253-6D54-4789-8A89-CD1E1C582D83}">
+					<ObjectInclusionList>
+						<ObjectRef Name="LEVEL_02" ID="{8DB77945-202A-42EA-AB5D-7DE7516746D6}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="LEVEL_01" ID="{90721E39-C7CA-45A3-836B-AB5039AABA89}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

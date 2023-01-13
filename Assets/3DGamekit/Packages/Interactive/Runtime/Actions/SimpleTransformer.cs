@@ -21,6 +21,9 @@ namespace Gamekit3D.GameCommands
 
         public AudioSource onStartAudio, onEndAudio;
 
+        
+
+
         [Range(0, 1)]
         public float previewPosition;
         float time = 0f;
@@ -45,7 +48,12 @@ namespace Gamekit3D.GameCommands
         public override void PerformInteraction()
         {
             activate = true;
+
+
+
             if (OnStartCommand != null) OnStartCommand.Send();
+
+
             if (onStartAudio != null) onStartAudio.Play();
         }
 

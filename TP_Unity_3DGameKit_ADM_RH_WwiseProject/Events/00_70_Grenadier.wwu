@@ -18,6 +18,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Attack_Range_Explosion" ID="{883FE840-D676-4EBB-A9DC-7DB0D9141625}">
+					<ChildrenList>
+						<Action Name="" ID="{049D158F-3EF3-4EC0-919C-07A709681C02}" ShortID="961071512">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Attack_Range_Explosion_RC" ID="{B6BD6C56-B706-42D4-8FF6-B7E6B91B24F2}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Play_Get_Hit_Behind" ID="{14D78C7F-26B1-44BC-9461-57B6EA0406FC}">
 					<ChildrenList>
 						<Action Name="" ID="{23CD08B4-9A40-44DE-A251-95380EFC4261}" ShortID="799084169">
@@ -40,39 +51,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Attack_Range_Explosion" ID="{883FE840-D676-4EBB-A9DC-7DB0D9141625}">
-					<ChildrenList>
-						<Action Name="" ID="{049D158F-3EF3-4EC0-919C-07A709681C02}" ShortID="961071512">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Attack_Range_Explosion_RC" ID="{B6BD6C56-B706-42D4-8FF6-B7E6B91B24F2}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Attack_Range_Bounce" ID="{BE3D92D2-B2CB-4305-878E-92E4F1E7FF24}">
-					<ChildrenList>
-						<Action Name="" ID="{C34A78EA-2AA8-480D-91FC-F4FAFDFF14B3}" ShortID="1035035657">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Attack_Range_Bounce_RC" ID="{A613DFEC-8B08-4154-9D4E-F4F86B5B47BF}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Attack_Close" ID="{953ACA44-4D97-419B-A4D7-989E2861B4E1}">
-					<ChildrenList>
-						<Action Name="" ID="{D48A7282-0ED7-48BD-8E5E-C0460CFCF54C}" ShortID="607176928">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Attack_Close_RC" ID="{B8B0DD79-7108-4B79-A4A5-9EAD9B41CA42}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Grenadier_Shield" ID="{02C59725-1319-40A4-86F1-71519199EE10}">
 					<ChildrenList>
 						<Action Name="" ID="{28D750F4-771A-4BFD-B85B-8780EC6916D7}" ShortID="424928061">
@@ -84,33 +62,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Grenadier_Footsteps" ID="{111938FA-784F-4CE6-82AD-D8840E78399B}">
+				<Event Name="Play_Grenadier_Vox_Attack" ID="{1394F8B4-357C-4670-82DC-6C05C964CF72}">
 					<ChildrenList>
-						<Action Name="" ID="{3422B9E5-5DA7-4E0C-82AC-ACA4D01CE8E1}" ShortID="324022146">
+						<Action Name="" ID="{52615D44-A204-4C51-89FD-D160582B064F}" ShortID="130650434">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Grenadier_Footsteps" ID="{2B6D963C-8F4F-4C02-967C-7773831C3B3B}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_Grenadier_Vox_GetHit" ID="{8AB4C853-1BB9-449D-8D01-CBD52E729AC4}">
-					<ChildrenList>
-						<Action Name="" ID="{30E4DA63-E5B9-406D-BD89-92BFA996FAAF}" ShortID="52100804">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grenadier_Vox_GetHit" ID="{B8ABA798-58F8-4CE6-AD19-125F259A5616}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C6489243-1728-48D0-B919-640F92960BCA}" ShortID="977723554">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="41"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Play_Grenadier_Vox_Attack" ID="{1394F8B4-357C-4670-82DC-6C05C964CF72}" WorkUnitID="{EA2F5871-F3E7-4E4C-9135-72AF42280BDA}"/>
+									<ObjectRef Name="Grenadier_Vox_Attack" ID="{1343DBA7-787D-4354-AF22-DBAED74F4460}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -118,16 +75,6 @@
 				</Event>
 				<Event Name="Play_Grenadier_Death" ID="{E3DBEDA1-0A51-42C1-A3C7-AEE6AF549E42}">
 					<ChildrenList>
-						<Action Name="" ID="{61B4F931-8FCF-4DE1-BF89-495505A884DC}" ShortID="367832546">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{D3E825CA-8267-46A4-83CE-874F35F99A29}" ShortID="5175582">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -160,23 +107,66 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Grenadier_Vox_Attack" ID="{1394F8B4-357C-4670-82DC-6C05C964CF72}">
-					<ChildrenList>
-						<Action Name="" ID="{52615D44-A204-4C51-89FD-D160582B064F}" ShortID="130650434">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Grenadier_Vox_Attack" ID="{1343DBA7-787D-4354-AF22-DBAED74F4460}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Grenadier_Idle" ID="{A578C346-64E7-4AB1-AE33-51E6109FED9B}">
 					<ChildrenList>
 						<Action Name="" ID="{81336200-5574-4B57-8D6B-977494C691E7}" ShortID="358166354">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Grenadier_Idle_Loop" ID="{036DDF7B-8D26-4DE4-BF07-6C52B0EA253C}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Attack_Range_Bounce" ID="{BE3D92D2-B2CB-4305-878E-92E4F1E7FF24}">
+					<ChildrenList>
+						<Action Name="" ID="{C34A78EA-2AA8-480D-91FC-F4FAFDFF14B3}" ShortID="1035035657">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Attack_Range_Bounce_RC" ID="{A613DFEC-8B08-4154-9D4E-F4F86B5B47BF}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Grenadier_Vox_GetHit" ID="{8AB4C853-1BB9-449D-8D01-CBD52E729AC4}">
+					<ChildrenList>
+						<Action Name="" ID="{30E4DA63-E5B9-406D-BD89-92BFA996FAAF}" ShortID="52100804">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenadier_Vox_GetHit" ID="{B8ABA798-58F8-4CE6-AD19-125F259A5616}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C6489243-1728-48D0-B919-640F92960BCA}" ShortID="977723554">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_Grenadier_Vox_Attack" ID="{1394F8B4-357C-4670-82DC-6C05C964CF72}" WorkUnitID="{EA2F5871-F3E7-4E4C-9135-72AF42280BDA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Attack_Close" ID="{953ACA44-4D97-419B-A4D7-989E2861B4E1}">
+					<ChildrenList>
+						<Action Name="" ID="{D48A7282-0ED7-48BD-8E5E-C0460CFCF54C}" ShortID="607176928">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Attack_Close_RC" ID="{B8B0DD79-7108-4B79-A4A5-9EAD9B41CA42}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Grenadier_Footsteps" ID="{111938FA-784F-4CE6-82AD-D8840E78399B}">
+					<ChildrenList>
+						<Action Name="" ID="{3422B9E5-5DA7-4E0C-82AC-ACA4D01CE8E1}" ShortID="324022146">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenadier_Footsteps" ID="{2B6D963C-8F4F-4C02-967C-7773831C3B3B}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

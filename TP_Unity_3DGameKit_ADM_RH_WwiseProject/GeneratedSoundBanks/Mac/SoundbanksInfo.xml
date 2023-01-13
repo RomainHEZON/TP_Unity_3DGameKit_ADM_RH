@@ -9,132 +9,9 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{6C00960B-7DEF-13DB-B47E-36938C074D56}">
-			<ShortName>UI_SNBK</ShortName>
-			<Path>UI_SNBK.bnk</Path>
-			<Media>
-				<File Id="60129979" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Menu_Selection.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Selection_10C4C929.wem</CachePath>
-				</File>
-				<File Id="216524460" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Game_Resume.wav</ShortName>
-					<CachePath>SFX/UI_Game_Resume_10C4C929.wem</CachePath>
-				</File>
-				<File Id="375457453" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Game_Quit.wav</ShortName>
-					<CachePath>SFX/UI_Game_Quit_10C4C929.wem</CachePath>
-				</File>
-				<File Id="534503124" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Dialogue_Start_02.wav</ShortName>
-					<CachePath>SFX/UI_Dialogue_Start_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="536482775" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Menu_Cancel.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Cancel_10C4C929.wem</CachePath>
-				</File>
-				<File Id="609601031" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Game_Pause.wav</ShortName>
-					<CachePath>SFX/UI_Game_Pause_10C4C929.wem</CachePath>
-				</File>
-				<File Id="713060305" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_HP_Loss_01.wav</ShortName>
-					<CachePath>SFX/UI_HP_Loss_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="728260902" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Dialogue_Start_01.wav</ShortName>
-					<CachePath>SFX/UI_Dialogue_Start_01_10C4C929.wem</CachePath>
-				</File>
-				<File Id="976061305" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Menu_Navigation.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Navigation_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1001349253" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_HP_Loss_02.wav</ShortName>
-					<CachePath>SFX/UI_HP_Loss_02_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1005657862" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Game_Start.wav</ShortName>
-					<CachePath>SFX/UI_Game_Start_10C4C929.wem</CachePath>
-				</File>
-				<File Id="1022264341" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>UI_Menu_Mouse_Over.wav</ShortName>
-					<CachePath>SFX/UI_Menu_Mouse_Over_10C4C929.wem</CachePath>
-				</File>
-			</Media>
-			<Events>
-				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="0.877516" DurationMax="1.0231478">
-					<MediaRefs>
-						<MediaRef Id="534503124"/>
-						<MediaRef Id="728260902"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="0.38069883" DurationMax="0.40333638">
-					<MediaRefs>
-						<MediaRef Id="609601031"/>
-					</MediaRefs>
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="3092587493" Id="3537680115" Name="Pause_ON"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.29251206" DurationMax="0.30990574">
-					<MediaRefs>
-						<MediaRef Id="375457453"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1899199409" Name="Play_UI_Game_Resume" DurationType="OneShot" DurationMin="0.5571129" DurationMax="0.59024054">
-					<MediaRefs>
-						<MediaRef Id="216524460"/>
-					</MediaRefs>
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="3092587493" Id="3967028551" Name="Pause_OFF"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="1.2861261" DurationMax="1.3626032">
-					<MediaRefs>
-						<MediaRef Id="1005657862"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2414798867" Name="Play_UI_HP_Loss" DurationType="OneShot" DurationMin="0.35234225" DurationMax="0.43528762">
-					<MediaRefs>
-						<MediaRef Id="713060305"/>
-						<MediaRef Id="1001349253"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1739779019" Name="Play_UI_Menu_Cancel" DurationType="OneShot" DurationMin="0.26460075" DurationMax="0.28033474">
-					<MediaRefs>
-						<MediaRef Id="536482775"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1926492655" Name="Play_UI_Menu_Mouse_Over" DurationType="OneShot" DurationMin="0.03013773" DurationMax="0.031929813">
-					<MediaRefs>
-						<MediaRef Id="1022264341"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="1771101267" Name="Play_UI_Menu_Navigation" DurationType="OneShot" DurationMin="0.044305902" DurationMax="0.04694047">
-					<MediaRefs>
-						<MediaRef Id="976061305"/>
-					</MediaRefs>
-				</Event>
-				<Event Id="2157261217" Name="Play_UI_Menu_Selection" DurationType="OneShot" DurationMin="0.35234225" DurationMax="0.3732936">
-					<MediaRefs>
-						<MediaRef Id="60129979"/>
-					</MediaRefs>
-				</Event>
-			</Events>
-			<StateGroups>
-				<StateGroup Id="3092587493" Name="Pause">
-					<States>
-						<State Id="748895195" Name="None"/>
-						<State Id="3537680115" Name="Pause_ON"/>
-						<State Id="3967028551" Name="Pause_OFF"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
-		</SoundBank>
-		<SoundBank Id="833899935" Type="User" Language="SFX" Hash="{075BC605-B2A3-438D-6DFE-1302AB673636}">
-			<ShortName>SFX_SNBK</ShortName>
-			<Path>SFX_SNBK.bnk</Path>
+		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{5A068DDF-1DCA-8369-1366-4B16E9AAA806}">
+			<ShortName>SFX_LEVEL_02_SNBK</ShortName>
+			<Path>SFX_LEVEL_02_SNBK.bnk</Path>
 			<Media>
 				<File Id="836629" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ellen_SFX_Staff_Hit_Metal_02.wav</ShortName>
@@ -172,6 +49,14 @@
 				<File Id="176822686" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_A_05.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_A_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="186637930" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Pressure_Pad_Activated.wav</ShortName>
+					<CachePath>SFX/SFX_Pressure_Pad_Activated_BE169731.wem</CachePath>
+				</File>
+				<File Id="194563344" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Door_Open_01.wav</ShortName>
+					<CachePath>SFX/SFX_Door_Open_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="198616805" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_03.wav</ShortName>
@@ -260,6 +145,10 @@
 					<ShortName>SFX_Boxes_Break_Layer_C_04.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_C_04_10C4C929.wem</CachePath>
 				</File>
+				<File Id="500809533" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Door_Open_03.wav</ShortName>
+					<CachePath>SFX/SFX_Door_Open_03_10C4C929.wem</CachePath>
+				</File>
 				<File Id="503915526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_B_04.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_04_10C4C929.wem</CachePath>
@@ -281,6 +170,10 @@
 					<ShortName>SFX_Boxes_Break_Layer_B_05.wav</ShortName>
 					<CachePath>SFX/SFX_Boxes_Break_Layer_B_05_10C4C929.wem</CachePath>
 				</File>
+				<File Id="749954390" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Door_Open_04.wav</ShortName>
+					<CachePath>SFX/SFX_Door_Open_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="772602464" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Huge_Door_Open_02.wav</ShortName>
 					<CachePath>SFX/SFX_Huge_Door_Open_02_404A503F.wem</CachePath>
@@ -288,6 +181,10 @@
 				<File Id="792181325" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Alien_Staff_Pickup_01.wav</ShortName>
 					<CachePath>SFX/SFX_Alien_Staff_Pickup_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="837825139" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Door_Open_02.wav</ShortName>
+					<CachePath>SFX/SFX_Door_Open_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="839604223" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Boxes_Break_Layer_C_01.wav</ShortName>
@@ -440,6 +337,29 @@
 						<ActionSetStateEntry GroupId="3677180323" Id="2044049779" Name="Dead"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="2765469073" Name="Play_SFX_Door_Open_01" DurationType="OneShot" DurationMin="5.9984975" DurationMax="6.733087">
+					<MediaRefs>
+						<MediaRef Id="194563344"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2765469074" Name="Play_SFX_Door_Open_02" MaxAttenuation="15" DurationType="OneShot" DurationMin="4.4299164" DurationMax="4.9724135">
+					<MediaRefs>
+						<MediaRef Id="837825139"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2765469075" Name="Play_SFX_Door_Open_03" DurationType="OneShot" DurationMin="5.338651" DurationMax="5.992434">
+					<MediaRefs>
+						<MediaRef Id="500809533"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2765469076" Name="Play_SFX_Door_Open_04" DurationType="OneShot" DurationMin="6.939619" DurationMax="7.7894597">
+					<MediaRefs>
+						<MediaRef Id="749954390"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="2999213434" Id="529726532" Name="End"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="4102656700" Name="Play_SFX_Enemy_Vanish" MaxAttenuation="20" DurationType="OneShot" DurationMin="7.710093" DurationMax="7.710093">
 					<MediaRefs>
 						<MediaRef Id="134084940"/>
@@ -480,7 +400,12 @@
 						<MediaRef Id="874212920"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1061469642" Name="Play_SFX_Pressure_Pad_Activated_02" DurationType="OneShot" DurationMin="1.2441505" DurationMax="1.4374328">
+					<MediaRefs>
+						<MediaRef Id="186637930"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2961794190" Name="Play_SFX_Pressure_Pad_Idle" MaxAttenuation="20" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="327699342"/>
@@ -505,11 +430,141 @@
 				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
 			</GameParameters>
 			<StateGroups>
+				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
+					<States>
+						<State Id="529726532" Name="End"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1783027799" Name="Fight_Grenadier"/>
+					</States>
+				</StateGroup>
 				<StateGroup Id="3677180323" Name="Health">
 					<States>
 						<State Id="655265632" Name="Alive"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{6C00960B-7DEF-13DB-B47E-36938C074D56}">
+			<ShortName>UI_SNBK</ShortName>
+			<Path>UI_SNBK.bnk</Path>
+			<Media>
+				<File Id="60129979" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Selection.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Selection_10C4C929.wem</CachePath>
+				</File>
+				<File Id="216524460" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Game_Resume.wav</ShortName>
+					<CachePath>SFX/UI_Game_Resume_10C4C929.wem</CachePath>
+				</File>
+				<File Id="375457453" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Game_Quit.wav</ShortName>
+					<CachePath>SFX/UI_Game_Quit_10C4C929.wem</CachePath>
+				</File>
+				<File Id="534503124" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Dialogue_Start_02.wav</ShortName>
+					<CachePath>SFX/UI_Dialogue_Start_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="536482775" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Cancel.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Cancel_10C4C929.wem</CachePath>
+				</File>
+				<File Id="609601031" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Game_Pause.wav</ShortName>
+					<CachePath>SFX/UI_Game_Pause_10C4C929.wem</CachePath>
+				</File>
+				<File Id="713060305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_HP_Loss_01.wav</ShortName>
+					<CachePath>SFX/UI_HP_Loss_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="728260902" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Dialogue_Start_01.wav</ShortName>
+					<CachePath>SFX/UI_Dialogue_Start_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="976061305" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Navigation.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Navigation_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1001349253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_HP_Loss_02.wav</ShortName>
+					<CachePath>SFX/UI_HP_Loss_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1005657862" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Game_Start.wav</ShortName>
+					<CachePath>SFX/UI_Game_Start_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1022264341" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>UI_Menu_Mouse_Over.wav</ShortName>
+					<CachePath>SFX/UI_Menu_Mouse_Over_10C4C929.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="2863055552" Name="Play_UI_Dialogue_Start" DurationType="OneShot" DurationMin="0.877516" DurationMax="1.0231478">
+					<MediaRefs>
+						<MediaRef Id="534503124"/>
+						<MediaRef Id="728260902"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4059508246" Name="Play_UI_Game_Pause" DurationType="OneShot" DurationMin="0.38069883" DurationMax="0.40333638">
+					<MediaRefs>
+						<MediaRef Id="609601031"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3092587493" Id="3537680115" Name="Pause_ON"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3336058037" Name="Play_UI_Game_Quit" DurationType="OneShot" DurationMin="0.29251206" DurationMax="0.30990574">
+					<MediaRefs>
+						<MediaRef Id="375457453"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1899199409" Name="Play_UI_Game_Resume" DurationType="OneShot" DurationMin="0.5571129" DurationMax="0.59024054">
+					<MediaRefs>
+						<MediaRef Id="216524460"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3092587493" Id="3967028551" Name="Pause_OFF"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1580643620" Name="Play_UI_Game_Start" DurationType="OneShot" DurationMin="1.2861261" DurationMax="1.3626032">
+					<MediaRefs>
+						<MediaRef Id="1005657862"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2414798867" Name="Play_UI_HP_Loss" DurationType="OneShot" DurationMin="0.35234225" DurationMax="0.43528762">
+					<MediaRefs>
+						<MediaRef Id="713060305"/>
+						<MediaRef Id="1001349253"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1739779019" Name="Play_UI_Menu_Cancel" DurationType="OneShot" DurationMin="0.26460075" DurationMax="0.28033474">
+					<MediaRefs>
+						<MediaRef Id="536482775"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1926492655" Name="Play_UI_Menu_Mouse_Over" DurationType="OneShot" DurationMin="0.03013773" DurationMax="0.031929813">
+					<MediaRefs>
+						<MediaRef Id="1022264341"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1771101267" Name="Play_UI_Menu_Navigation" DurationType="OneShot" DurationMin="0.044305902" DurationMax="0.04694047">
+					<MediaRefs>
+						<MediaRef Id="976061305"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2157261217" Name="Play_UI_Menu_Selection" DurationType="OneShot" DurationMin="0.35234225" DurationMax="0.3732936">
+					<MediaRefs>
+						<MediaRef Id="60129979"/>
+					</MediaRefs>
+				</Event>
+			</Events>
+			<StateGroups>
+				<StateGroup Id="3092587493" Name="Pause">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="3537680115" Name="Pause_ON"/>
+						<State Id="3967028551" Name="Pause_OFF"/>
 					</States>
 				</StateGroup>
 			</StateGroups>
@@ -1027,7 +1082,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{3F6099B7-0FF3-083B-8059-085E1B46B043}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{7A0A48F3-583F-7678-F88B-C3D854C431AE}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1202,9 +1257,6 @@
 					<MediaRefs>
 						<MediaRef Id="69857268"/>
 					</MediaRefs>
-					<ActionSetState>
-						<ActionSetStateEntry GroupId="2999213434" Id="529726532" Name="End"/>
-					</ActionSetState>
 				</Event>
 				<Event Id="2094447813" Name="Play_Grenadier_Footsteps" MaxAttenuation="30" DurationType="OneShot" DurationMin="0.42428622" DurationMax="0.91858816">
 					<MediaRefs>
@@ -1246,15 +1298,6 @@
 					</ActionPostEvent>
 				</Event>
 			</Events>
-			<StateGroups>
-				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
-					<States>
-						<State Id="529726532" Name="End"/>
-						<State Id="748895195" Name="None"/>
-						<State Id="1783027799" Name="Fight_Grenadier"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="1876570981" Type="User" Language="SFX" Hash="{D218E9F8-4BED-EDC2-73DB-F43E56785C15}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
@@ -1822,7 +1865,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{5A1E26CD-E9E5-4C6D-5BCC-137CD6FC6358}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{A4E2AEB6-D1CE-F69F-9BBC-3C97004F37C5}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -2203,6 +2246,397 @@
 			<Triggers>
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
+		</SoundBank>
+		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{C5D3787A-4BAE-9045-16E2-4E5D83755D34}">
+			<ShortName>SFX_LEVEL_01_SNBK</ShortName>
+			<Path>SFX_LEVEL_01_SNBK.bnk</Path>
+			<Media>
+				<File Id="836629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="25822972" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_B_02.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_B_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="39798111" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="67787120" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="106893478" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="134084940" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Enemy_Vanish_01.wav</ShortName>
+					<CachePath>SFX/SFX_Enemy_Vanish_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="145840147" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Enemy_Vanish_02.wav</ShortName>
+					<CachePath>SFX/SFX_Enemy_Vanish_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="165830993" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>SFX_Alien_Staff_Idle.wav</ShortName>
+					<Path>Media/165830993.wem</Path>
+					<CachePath>SFX/SFX_Alien_Staff_Idle_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="176822686" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_A_05.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_A_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="186637930" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Pressure_Pad_Activated.wav</ShortName>
+					<CachePath>SFX/SFX_Pressure_Pad_Activated_BE169731.wem</CachePath>
+				</File>
+				<File Id="198616805" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_C_03.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_C_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="209161940" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="216927490" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_A_02.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_A_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="222860603" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Teleporter_Walkthrough.wav</ShortName>
+					<CachePath>SFX/SFX_Teleporter_Walkthrough_69AE1BD3.wem</CachePath>
+				</File>
+				<File Id="224626741" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_C_05.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_C_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="232782513" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_06.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_06_10C4C929.wem</CachePath>
+				</File>
+				<File Id="241239500" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Enemy_Vanish_03.wav</ShortName>
+					<CachePath>SFX/SFX_Enemy_Vanish_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="252594530" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>SFX_Teleporter_Rift_Loop.wav</ShortName>
+					<Path>Media/252594530.wem</Path>
+					<CachePath>SFX/SFX_Teleporter_Rift_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="269257400" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="278865724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="310575942" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_A_01.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_A_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="314897719" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_08.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_08_10C4C929.wem</CachePath>
+				</File>
+				<File Id="320843627" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Crystal_Switch_Activated_02.wav</ShortName>
+					<CachePath>SFX/SFX_Crystal_Switch_Activated_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="327699342" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>SFX_Pressure_Pad_Idle_Loop.wav</ShortName>
+					<Path>Media/327699342.wem</Path>
+					<CachePath>SFX/SFX_Pressure_Pad_Idle_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="334446297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_B_01.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_B_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="350364250" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Rock_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Rock_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="351963291" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_07.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_07_10C4C929.wem</CachePath>
+				</File>
+				<File Id="352335037" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Alien_Staff_Pickup_02.wav</ShortName>
+					<CachePath>SFX/SFX_Alien_Staff_Pickup_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="394890035" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="449291716" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>SFX_Crsytal_Switches_Before_Activation.wav</ShortName>
+					<Path>Media/449291716.wem</Path>
+					<CachePath>SFX/SFX_Crsytal_Switches_Before_Activation_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="472927923" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_C_04.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_C_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="503915526" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_B_04.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_B_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="520324830" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Death_Stinger.wav</ShortName>
+					<CachePath>SFX/SFX_Death_Stinger_10C4C929.wem</CachePath>
+				</File>
+				<File Id="535200743" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>SFX_HealthBox_Loop.wav</ShortName>
+					<Path>Media/535200743.wem</Path>
+					<CachePath>SFX/SFX_HealthBox_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="566688590" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Crystal_Switch_Activated_03.wav</ShortName>
+					<CachePath>SFX/SFX_Crystal_Switch_Activated_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="628134337" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_B_05.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_B_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="772602464" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Huge_Door_Open_02.wav</ShortName>
+					<CachePath>SFX/SFX_Huge_Door_Open_02_404A503F.wem</CachePath>
+				</File>
+				<File Id="792181325" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Alien_Staff_Pickup_01.wav</ShortName>
+					<CachePath>SFX/SFX_Alien_Staff_Pickup_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="839604223" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_C_01.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_C_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="874212920" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Huge_Door_Open_03.wav</ShortName>
+					<CachePath>SFX/SFX_Huge_Door_Open_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="883864014" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Vegetation_05.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Vegetation_05_10C4C929.wem</CachePath>
+				</File>
+				<File Id="939367748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="968325701" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_C_02.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_C_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="972870010" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Crystal_Switch_Activated_01.wav</ShortName>
+					<CachePath>SFX/SFX_Crystal_Switch_Activated_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982612248" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="987143570" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_A_04.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_A_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="995374565" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>SFX_Crystal_Switches_Afert_Activation_Loop.wav</ShortName>
+					<Path>Media/995374565.wem</Path>
+					<CachePath>SFX/SFX_Crystal_Switches_Afert_Activation_Loop_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="1031520808" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_A_03.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_A_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1038708921" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Boxes_Break_Layer_B_03.wav</ShortName>
+					<CachePath>SFX/SFX_Boxes_Break_Layer_B_03_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1049985844" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_HealthBox_Open.wav</ShortName>
+					<CachePath>SFX/SFX_HealthBox_Open_B204456F.wem</CachePath>
+				</File>
+				<File Id="1063829308" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_Huge_Door_Open_01.wav</ShortName>
+					<CachePath>SFX/SFX_Huge_Door_Open_01_30BCAA7E.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<Custom>
+					<Plugin Id="422406877" Name="Cut_3dB_100Hz (Custom)" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="2180422931" Name="One_Tap_Quarter_Second" LibName="Wwise Delay" LibId="6946819"/>
+					<Plugin Id="3604890626" Name="High_Pass_60Hz" LibName="Wwise Parametric EQ" LibId="6881283"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="530524938" Name="Play_Alien_Staff_Hit_Metal" DurationType="OneShot" DurationMin="0.48326364" DurationMax="0.68551683">
+					<MediaRefs>
+						<MediaRef Id="836629"/>
+						<MediaRef Id="278865724"/>
+						<MediaRef Id="939367748"/>
+						<MediaRef Id="982612248"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2050638422" Name="Play_Alien_Staff_Hit_Rock" DurationType="OneShot" DurationMin="0.34941044" DurationMax="0.5420037">
+					<MediaRefs>
+						<MediaRef Id="39798111"/>
+						<MediaRef Id="106893478"/>
+						<MediaRef Id="269257400"/>
+						<MediaRef Id="350364250"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="708322193" Name="Play_Alien_Staff_Hit_Vegetation" DurationType="OneShot" DurationMin="0.24066827" DurationMax="0.6708388">
+					<MediaRefs>
+						<MediaRef Id="67787120"/>
+						<MediaRef Id="209161940"/>
+						<MediaRef Id="232782513"/>
+						<MediaRef Id="314897719"/>
+						<MediaRef Id="351963291"/>
+						<MediaRef Id="394890035"/>
+						<MediaRef Id="883864014"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1880847345" Name="Play_Boxes_Break" DurationType="OneShot" DurationMin="2.0877485" DurationMax="2.7947798">
+					<MediaRefs>
+						<MediaRef Id="25822972"/>
+						<MediaRef Id="176822686"/>
+						<MediaRef Id="198616805"/>
+						<MediaRef Id="216927490"/>
+						<MediaRef Id="224626741"/>
+						<MediaRef Id="310575942"/>
+						<MediaRef Id="334446297"/>
+						<MediaRef Id="472927923"/>
+						<MediaRef Id="503915526"/>
+						<MediaRef Id="628134337"/>
+						<MediaRef Id="839604223"/>
+						<MediaRef Id="968325701"/>
+						<MediaRef Id="987143570"/>
+						<MediaRef Id="1031520808"/>
+						<MediaRef Id="1038708921"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1380322271" Name="Play_SFX_After_Activation" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="995374565"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2116431113" Name="Play_SFX_Alien_Staff_Idle" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="165830993"/>
+					</MediaRefs>
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3604890626"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1472032783" Name="Play_SFX_Alien_Staff_Pickup" DurationType="OneShot" DurationMin="0.80192024" DurationMax="1.0125543">
+					<MediaRefs>
+						<MediaRef Id="352335037"/>
+						<MediaRef Id="792181325"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3532940987" Name="Play_SFX_Crystal_Switch_Activated" MaxAttenuation="10" DurationType="OneShot" DurationMin="2.25" DurationMax="2.25">
+					<MediaRefs>
+						<MediaRef Id="320843627"/>
+						<MediaRef Id="566688590"/>
+						<MediaRef Id="972870010"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3731817354" Name="Play_SFX_Crystal_Switches_Before_Activation" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="449291716"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="367538363" Name="Play_SFX_Death_Stinger" DurationType="OneShot" DurationMin="3.579348" DurationMax="4.017683">
+					<MediaRefs>
+						<MediaRef Id="520324830"/>
+					</MediaRefs>
+					<ActionSetState>
+						<ActionSetStateEntry GroupId="3677180323" Id="2044049779" Name="Dead"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="4102656700" Name="Play_SFX_Enemy_Vanish" MaxAttenuation="20" DurationType="OneShot" DurationMin="7.710093" DurationMax="7.710093">
+					<MediaRefs>
+						<MediaRef Id="134084940"/>
+						<MediaRef Id="145840147"/>
+						<MediaRef Id="241239500"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1068397626" Name="Play_SFX_HealthBox_Idle_01" MaxAttenuation="10" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="535200743"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4120424468" Name="Play_SFX_HealthBox_Open_01" DurationType="OneShot" DurationMin="2.5359468" DurationMax="2.66593">
+					<MediaRefs>
+						<MediaRef Id="1049985844"/>
+					</MediaRefs>
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="422406877"/>
+						</Custom>
+						<ShareSets>
+							<PluginRef Id="2180422931"/>
+						</ShareSets>
+					</PluginRefs>
+				</Event>
+				<Event Id="1148651653" Name="Play_SFX_Huge_Door_Open_01" DurationType="OneShot" DurationMin="7.672854" DurationMax="7.672854">
+					<MediaRefs>
+						<MediaRef Id="1063829308"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1148651654" Name="Play_SFX_Huge_Door_Open_02" DurationType="OneShot" DurationMin="4.3042846" DurationMax="4.3042846">
+					<MediaRefs>
+						<MediaRef Id="772602464"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1148651655" Name="Play_SFX_Huge_Door_Open_03" DurationType="OneShot" DurationMin="6.1871457" DurationMax="6.1871457">
+					<MediaRefs>
+						<MediaRef Id="874212920"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3673773357" Name="Play_SFX_Pressure_Pad_Activated" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1061469642" Name="Play_SFX_Pressure_Pad_Activated_02" DurationType="OneShot" DurationMin="1.2441505" DurationMax="1.4374328">
+					<MediaRefs>
+						<MediaRef Id="186637930"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2961794190" Name="Play_SFX_Pressure_Pad_Idle" MaxAttenuation="20" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="327699342"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2644163508" Name="Play_SFX_Teleporter_Rift" MaxAttenuation="50" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="252594530"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2370542445" Name="Play_SFX_Teleporter_Walkthrough" DurationType="OneShot" DurationMin="10.454229" DurationMax="10.454229">
+					<MediaRefs>
+						<MediaRef Id="222860603"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="171421511" Name="Stop_All_Events" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="1465417131" Name="Stop_SFX_Alien_Staff_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="971296124" Name="Ellen_Health"/>
+				<GameParameter Id="1334832914" Name="Staff_Idle_SFX"/>
+				<GameParameter Id="2740591189" Name="Teleporter_SFX"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3677180323" Name="Health">
+					<States>
+						<State Id="655265632" Name="Alive"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2044049779" Name="Dead"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{4243AFA5-5F05-0B42-741D-CEA83D4009E3}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
@@ -2680,5 +3114,5 @@
 			<Path>Spitter_SNBK.bnk</Path>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{2AA3B06A-0EC8-F502-A19C-E9D4373D7A2E}</FileHash>
+	<FileHash>{EE2EE4D2-BCE7-C9D7-C307-6A83FED7A575}</FileHash>
 </SoundBanksInfo>

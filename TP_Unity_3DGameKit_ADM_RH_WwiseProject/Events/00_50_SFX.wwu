@@ -7,88 +7,394 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Folder Name="Alien_Staff" ID="{134C18E4-7B99-4AC7-9474-229D76E33FCA}" ShortID="149292614">
+				<Folder Name="LEVEL_01" ID="{90721E39-C7CA-45A3-836B-AB5039AABA89}" ShortID="122425909">
 					<ChildrenList>
-						<Event Name="Play_SFX_Alien_Staff_Idle" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}">
+						<Folder Name="Alien_Staff" ID="{134C18E4-7B99-4AC7-9474-229D76E33FCA}" ShortID="149292614">
 							<ChildrenList>
-								<Action Name="" ID="{934EB09F-6269-46B2-BD50-CE4BD2B9583D}" ShortID="73057527">
+								<Event Name="Play_SFX_Alien_Staff_Idle" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}">
+									<ChildrenList>
+										<Action Name="" ID="{934EB09F-6269-46B2-BD50-CE4BD2B9583D}" ShortID="73057527">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Alien_Staff_Pickup" ID="{21D8E7BB-714A-4BF3-AF4E-B6977C263BD9}">
+									<ChildrenList>
+										<Action Name="" ID="{CBCA6E08-CAB5-4A07-A3A4-4387F036844B}" ShortID="806310915">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{738AB17A-497A-4D90-BC10-836E6ABA31E2}" ShortID="198790255">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Alien_Staff_Pickup_RC" ID="{B995357D-E86C-4E5F-B4C6-4F18DDBF6836}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Stop_SFX_Alien_Staff_Idle" ID="{4E2F9B7F-E1C4-4713-A0E2-7F29FA859118}">
+									<ChildrenList>
+										<Action Name="" ID="{597CBBC8-CEEE-4E2E-942E-A1BE0E8A92B1}" ShortID="142852575">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Alien_Staff_Hit_Metal" ID="{28E322B4-20A0-421B-9709-66DBEE03729F}">
+									<ChildrenList>
+										<Action Name="" ID="{AE26D198-D18D-4638-81AA-96E27579C7D0}" ShortID="752679932">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Alien_Staff_Hit_Metal_RC" ID="{51F9EBF7-42E2-4C72-B3DE-F096A5D05C7F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Alien_Staff_Hit_Rock" ID="{B129B75D-7A59-4624-ABD4-46ACB708AF28}">
+									<ChildrenList>
+										<Action Name="" ID="{48E87F67-31C4-40C0-A198-187226C57B7D}" ShortID="21191536">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Alien_Staff_Hit_Rock_RC" ID="{2C0BAF5D-B8BD-4297-8BE4-9A9ED2D951F5}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Alien_Staff_Hit_Vegetation" ID="{B9D5FB48-2F9F-4392-84E5-EDB08CEC758A}">
+									<ChildrenList>
+										<Action Name="" ID="{89B9D774-E8B0-4FB1-ABCD-5484D736F1C7}" ShortID="732666789">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Alien_Staff_Hit_Vegetation_RC" ID="{868287AA-B20B-452A-B816-CFC95FDA7D8C}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Huge_Door_Open" ID="{504CBC9E-F029-4C03-86F7-04C4DCEDEA3C}" ShortID="453216009">
+							<ChildrenList>
+								<Event Name="Play_SFX_Huge_Door_Open_01" ID="{680E847F-B185-4733-AE5D-8F6D40FD6EB5}">
+									<ChildrenList>
+										<Action Name="" ID="{06B90B4B-FD2C-445B-96F3-3E5864020CC4}" ShortID="250884658">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Huge_Door_Open_01" ID="{C8C93509-23A6-4C6E-8464-0CBE07124FEC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Huge_Door_Open_02" ID="{857F97C4-4BE6-44E1-88AF-5A4CA2B6E744}">
+									<ChildrenList>
+										<Action Name="" ID="{590C5234-35EB-4D59-83F4-E5B2BFBEAA55}" ShortID="119341893">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Huge_Door_Open_02" ID="{7054FAD9-DBCD-4310-9D6C-D0D1916E17CF}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Huge_Door_Open_03" ID="{84FEB3E2-B075-46AD-81EB-DCC4BB0A25BC}">
+									<ChildrenList>
+										<Action Name="" ID="{6BC2CD81-3AEE-4EAC-870A-DFAD63643AB5}" ShortID="115219838">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Huge_Door_Open_03" ID="{1F2FB711-8150-4A4A-9D29-0716CC534657}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Crystal" ID="{7AAAA07A-0CD4-4CD7-A0B9-1062CC916FE4}" ShortID="25343052">
+							<ChildrenList>
+								<Event Name="Play_SFX_Crystal_Switches_Before_Activation" ID="{5D4648CA-F3F9-48B8-814D-87A49F5C8C4D}">
+									<ChildrenList>
+										<Action Name="" ID="{AFBD26A9-8F3C-4CEB-B4E2-07C1BD1F846B}" ShortID="16689098">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Crystal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Crystal_Switch_Activated" ID="{F0A8E816-B378-44B9-AD69-E302DB6E3B0F}">
+									<ChildrenList>
+										<Action Name="" ID="{DE94B316-9FB7-4E91-8EFA-F4042C928379}" ShortID="25049149">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Crystal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1F99B8C9-C30A-4855-B9C9-EC05613E4039}" ShortID="123766213">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Crystal_Switch_Activated_RC" ID="{A28E7E96-C0EA-4BB8-B608-4B88268CF68F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="HealthBox" ID="{2E93954D-821C-4B40-AAE6-B6818DCF3514}" ShortID="413446055">
+							<ChildrenList>
+								<Event Name="Play_SFX_HealthBox_Idle_01" ID="{77EA1CC5-FEB9-4423-8088-C838DF2238F3}">
+									<ChildrenList>
+										<Action Name="" ID="{D835377F-502A-45E9-AD35-36514E31A70A}" ShortID="330545234">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HealthBox_Idle_Loop" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_HealthBox_Open_01" ID="{9589B207-7C7D-4551-8950-CE2B1159808A}">
+									<ChildrenList>
+										<Action Name="" ID="{F23270E6-239C-4ACA-977E-D857FDCD4D49}" ShortID="394258510">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HealthBox_Idle_Loop" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2EB8DCCB-1A97-41C1-88E0-FC05EDF609EA}" ShortID="803555199">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_HealthBox_Open" ID="{F18A71F5-D55E-47EE-BCD4-F6AF61797E07}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Boxes" ID="{7153EAB6-9F4E-4817-A658-C6CAF3BEEAA0}" ShortID="994528299">
+							<ChildrenList>
+								<Event Name="Play_Boxes_Break" ID="{783C41A1-D3A1-4555-8FBE-BCC4EB2F85E1}">
+									<ChildrenList>
+										<Action Name="" ID="{102CE391-51BD-444C-AA42-7FF4573A7B92}" ShortID="319514939">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Boxes_Break_BLD" ID="{A59953A5-7438-4097-A8CB-006937692EFD}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Teleporter" ID="{D9B792B2-D9FD-46A6-8B7F-D412D40AC486}" ShortID="276532008">
+							<ChildrenList>
+								<Event Name="Play_SFX_Teleporter_Rift" ID="{6B6101B0-E07B-401E-AC62-5812C4F67800}">
+									<ChildrenList>
+										<Action Name="" ID="{68DDEDA0-3F4A-42E6-93C7-0194C4719E07}" ShortID="755438589">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Teleporter_Rift_Loop" ID="{AFA980EB-A678-4ACD-ADF1-CDF7822CBFAC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Teleporter_Walkthrough" ID="{5D07DE97-7A67-4DF6-82D3-7D2DCF7E51C9}">
+									<ChildrenList>
+										<Action Name="" ID="{DD967D29-CEBD-43FF-A115-3403E1604047}" ShortID="216237073">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Teleporter_Rift_Loop" ID="{AFA980EB-A678-4ACD-ADF1-CDF7822CBFAC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9C2442C8-5362-4FA5-A2F3-ECABA9913E24}" ShortID="137747326">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Teleporter_Walkthrough" ID="{94412C13-C537-4702-A7F3-EBFAC9A23045}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Pressure_Pad" ID="{70C3EE4E-9122-4405-A04C-E61EA46BC2BC}" ShortID="89520162">
+							<ChildrenList>
+								<Event Name="Play_SFX_Pressure_Pad_Activated" ID="{AD581B95-E5FE-44FC-83D4-73EE46467B50}">
+									<ChildrenList>
+										<Action Name="" ID="{66ED2ED8-A1F3-4F66-B752-95FE498A095D}" ShortID="267675777">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Pressure_Pad_Idle" ID="{D7DF3E4B-8B33-47A3-86E7-246526FF1681}">
+									<ChildrenList>
+										<Action Name="" ID="{947BC279-A266-414E-BCF0-E036CAA4817A}" ShortID="39122003">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Pressure_Pad_Activated_02" ID="{96C5A9E2-AF5B-4464-B889-50C6F31B577C}">
+									<ChildrenList>
+										<Action Name="" ID="{E20CBAC1-6D0F-4617-8712-5755BE12979B}" ShortID="18790119">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{52D62B44-93A4-4C40-BDDB-CCF59A905494}" ShortID="22119164">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pressure_Pad_Activated" ID="{DC902F22-A0E6-41CB-9B40-4F8179F7B1C8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+						<Event Name="Play_SFX_Death_Stinger" ID="{1F3C7B79-DAAA-4697-9A23-B241E499AB19}">
+							<ChildrenList>
+								<Action Name="" ID="{9BF76DC0-1B45-4DBA-9C68-388FA65C6EC7}" ShortID="828357700">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Death_Stinger" ID="{7D4938C5-0719-4976-9439-EDEDDD051327}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F7DB837A-BA6B-4D35-B7DE-DB3F8627153D}" ShortID="963530645">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_Enemy_Vanish" ID="{7B4FDCAB-C009-4983-B9EF-58F4BD2DAA4D}">
+							<ChildrenList>
+								<Action Name="" ID="{CA9714E6-B1E7-4FE7-8756-7FBA6D862F0D}" ShortID="682759056">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.001"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Enemy_Vanish_RC" ID="{C03C53C4-E7DC-4C40-94BA-5CB8CF799DD9}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_All_Events" ID="{AC867609-07FD-4D8B-8FE8-7542BF54FA2B}">
+							<ChildrenList>
+								<Action Name="" ID="{AF7E0692-AD39-432F-B417-0060860D5D2B}" ShortID="399184258">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{426F7A0D-164A-48FF-A0D8-96A1108F57FB}" ShortID="31604337">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_SFX_After_Activation" ID="{AF37FCEB-AF87-4F15-A651-2817DFF73138}">
+							<ChildrenList>
+								<Action Name="" ID="{B96A3CDD-ABF4-42E5-AB72-0DEDEB58FE08}" ShortID="264022342">
 									<PropertyList>
 										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Alien_Staff_Pickup" ID="{21D8E7BB-714A-4BF3-AF4E-B6977C263BD9}">
-							<ChildrenList>
-								<Action Name="" ID="{CBCA6E08-CAB5-4A07-A3A4-4387F036844B}" ShortID="806310915">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{738AB17A-497A-4D90-BC10-836E6ABA31E2}" ShortID="198790255">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Alien_Staff_Pickup_RC" ID="{B995357D-E86C-4E5F-B4C6-4F18DDBF6836}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Stop_SFX_Alien_Staff_Idle" ID="{4E2F9B7F-E1C4-4713-A0E2-7F29FA859118}">
-							<ChildrenList>
-								<Action Name="" ID="{597CBBC8-CEEE-4E2E-942E-A1BE0E8A92B1}" ShortID="142852575">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Alien_Staff_Idle_Loop" ID="{2959A9B9-F883-43AD-9549-4C953AA446C3}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Alien_Staff_Hit_Metal" ID="{28E322B4-20A0-421B-9709-66DBEE03729F}">
-							<ChildrenList>
-								<Action Name="" ID="{AE26D198-D18D-4638-81AA-96E27579C7D0}" ShortID="752679932">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Alien_Staff_Hit_Metal_RC" ID="{51F9EBF7-42E2-4C72-B3DE-F096A5D05C7F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Alien_Staff_Hit_Rock" ID="{B129B75D-7A59-4624-ABD4-46ACB708AF28}">
-							<ChildrenList>
-								<Action Name="" ID="{48E87F67-31C4-40C0-A198-187226C57B7D}" ShortID="21191536">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Alien_Staff_Hit_Rock_RC" ID="{2C0BAF5D-B8BD-4297-8BE4-9A9ED2D951F5}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Alien_Staff_Hit_Vegetation" ID="{B9D5FB48-2F9F-4392-84E5-EDB08CEC758A}">
-							<ChildrenList>
-								<Action Name="" ID="{89B9D774-E8B0-4FB1-ABCD-5484D736F1C7}" ShortID="732666789">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Alien_Staff_Hit_Vegetation_RC" ID="{868287AA-B20B-452A-B816-CFC95FDA7D8C}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+											<ObjectRef Name="SFX_After_Activation_Loop" ID="{C05CEAF1-5426-4234-A64A-41EA23E13F70}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -96,306 +402,66 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Crystal" ID="{7AAAA07A-0CD4-4CD7-A0B9-1062CC916FE4}" ShortID="25343052">
+				<Folder Name="LEVEL_02" ID="{8DB77945-202A-42EA-AB5D-7DE7516746D6}" ShortID="414274611">
 					<ChildrenList>
-						<Event Name="Play_SFX_Crystal_Switches_Before_Activation" ID="{5D4648CA-F3F9-48B8-814D-87A49F5C8C4D}">
+						<Folder Name="Door_Open" ID="{485DED03-75C5-4100-B924-96022853DA5F}" ShortID="208772865">
 							<ChildrenList>
-								<Action Name="" ID="{AFBD26A9-8F3C-4CEB-B4E2-07C1BD1F846B}" ShortID="16689098">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Crystal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Play_SFX_Door_Open_01" ID="{9191797C-4EF1-4CCA-859E-C431D4157967}">
+									<ChildrenList>
+										<Action Name="" ID="{35709D6F-01B5-40ED-A409-64FF4144F736}" ShortID="589746389">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Door_Open_01" ID="{96659F87-B39D-4447-A3AF-46F7C5C598D4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Door_Open_02" ID="{81E98DA4-DB66-46C9-9C78-66735FFE6F2A}">
+									<ChildrenList>
+										<Action Name="" ID="{586B1B4E-C3BE-4681-B7D5-60BA14A85B31}" ShortID="597325704">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Door_Open_02" ID="{D7F58C69-D0B0-45E5-AAED-A61EDDEFC7B8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Door_Open_03" ID="{9BAFC523-651D-427E-A544-3B95FAECDEEC}">
+									<ChildrenList>
+										<Action Name="" ID="{CB3C2348-7D43-443B-BDD9-7ADAB19E5DF7}" ShortID="246437496">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Door_Open_03" ID="{7D404110-7847-4888-A316-04ED119A8A71}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Door_Open_04" ID="{D84AC677-0D69-4707-8258-C3FAF3E21658}">
+									<ChildrenList>
+										<Action Name="" ID="{9535638B-60F5-4176-8C7C-42A6E7F9F6A4}" ShortID="624301319">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Door_Open_04" ID="{ADD49669-C39D-4051-9790-17B066373341}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{C0885767-E506-4B23-BF9D-ADFE09277398}" ShortID="945835671">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Crystal_Switch_Activated" ID="{F0A8E816-B378-44B9-AD69-E302DB6E3B0F}">
-							<ChildrenList>
-								<Action Name="" ID="{DE94B316-9FB7-4E91-8EFA-F4042C928379}" ShortID="25049149">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Crystal_Switches_Before_Activation_Loop" ID="{471B01A1-51FF-42B4-A672-54324F4FE6B4}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{1F99B8C9-C30A-4855-B9C9-EC05613E4039}" ShortID="123766213">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Crystal_Switch_Activated_RC" ID="{A28E7E96-C0EA-4BB8-B608-4B88268CF68F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="HealthBox" ID="{2E93954D-821C-4B40-AAE6-B6818DCF3514}" ShortID="413446055">
-					<ChildrenList>
-						<Event Name="Play_SFX_HealthBox_Idle_01" ID="{77EA1CC5-FEB9-4423-8088-C838DF2238F3}">
-							<ChildrenList>
-								<Action Name="" ID="{D835377F-502A-45E9-AD35-36514E31A70A}" ShortID="330545234">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_HealthBox_Idle_Loop" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_HealthBox_Open_01" ID="{9589B207-7C7D-4551-8950-CE2B1159808A}">
-							<ChildrenList>
-								<Action Name="" ID="{F23270E6-239C-4ACA-977E-D857FDCD4D49}" ShortID="394258510">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_HealthBox_Idle_Loop" ID="{C3FE49BC-183E-4F06-B724-2C763F92BDC2}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{2EB8DCCB-1A97-41C1-88E0-FC05EDF609EA}" ShortID="803555199">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_HealthBox_Open" ID="{F18A71F5-D55E-47EE-BCD4-F6AF61797E07}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Pressure_Pad" ID="{70C3EE4E-9122-4405-A04C-E61EA46BC2BC}" ShortID="89520162">
-					<ChildrenList>
-						<Event Name="Play_SFX_Pressure_Pad_Activated" ID="{AD581B95-E5FE-44FC-83D4-73EE46467B50}">
-							<ChildrenList>
-								<Action Name="" ID="{66ED2ED8-A1F3-4F66-B752-95FE498A095D}" ShortID="267675777">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Pressure_Pad_Idle" ID="{D7DF3E4B-8B33-47A3-86E7-246526FF1681}">
-							<ChildrenList>
-								<Action Name="" ID="{947BC279-A266-414E-BCF0-E036CAA4817A}" ShortID="39122003">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Pressure_Pad_Activated_02" ID="{96C5A9E2-AF5B-4464-B889-50C6F31B577C}">
-							<ChildrenList>
-								<Action Name="" ID="{E20CBAC1-6D0F-4617-8712-5755BE12979B}" ShortID="18790119">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{52D62B44-93A4-4C40-BDDB-CCF59A905494}" ShortID="22119164">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Pressure_Pad_Activated" ID="{DC902F22-A0E6-41CB-9B40-4F8179F7B1C8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Teleporter" ID="{D9B792B2-D9FD-46A6-8B7F-D412D40AC486}" ShortID="276532008">
-					<ChildrenList>
-						<Event Name="Play_SFX_Teleporter_Rift" ID="{6B6101B0-E07B-401E-AC62-5812C4F67800}">
-							<ChildrenList>
-								<Action Name="" ID="{68DDEDA0-3F4A-42E6-93C7-0194C4719E07}" ShortID="755438589">
-									<PropertyList>
-										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Teleporter_Rift_Loop" ID="{AFA980EB-A678-4ACD-ADF1-CDF7822CBFAC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Teleporter_Walkthrough" ID="{5D07DE97-7A67-4DF6-82D3-7D2DCF7E51C9}">
-							<ChildrenList>
-								<Action Name="" ID="{DD967D29-CEBD-43FF-A115-3403E1604047}" ShortID="216237073">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Teleporter_Rift_Loop" ID="{AFA980EB-A678-4ACD-ADF1-CDF7822CBFAC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{9C2442C8-5362-4FA5-A2F3-ECABA9913E24}" ShortID="137747326">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Teleporter_Walkthrough" ID="{94412C13-C537-4702-A7F3-EBFAC9A23045}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Event Name="Play_SFX_After_Activation" ID="{AF37FCEB-AF87-4F15-A651-2817DFF73138}">
-					<ChildrenList>
-						<Action Name="" ID="{B96A3CDD-ABF4-42E5-AB72-0DEDEB58FE08}" ShortID="264022342">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_After_Activation_Loop" ID="{C05CEAF1-5426-4234-A64A-41EA23E13F70}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_All_Events" ID="{AC867609-07FD-4D8B-8FE8-7542BF54FA2B}">
-					<ChildrenList>
-						<Action Name="" ID="{AF7E0692-AD39-432F-B417-0060860D5D2B}" ShortID="399184258">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList/>
-						</Action>
-						<Action Name="" ID="{426F7A0D-164A-48FF-A0D8-96A1108F57FB}" ShortID="31604337">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_Enemy_Vanish" ID="{7B4FDCAB-C009-4983-B9EF-58F4BD2DAA4D}">
-					<ChildrenList>
-						<Action Name="" ID="{CA9714E6-B1E7-4FE7-8756-7FBA6D862F0D}" ShortID="682759056">
-							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.001"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_Enemy_Vanish_RC" ID="{C03C53C4-E7DC-4C40-94BA-5CB8CF799DD9}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_Death_Stinger" ID="{1F3C7B79-DAAA-4697-9A23-B241E499AB19}">
-					<ChildrenList>
-						<Action Name="" ID="{9BF76DC0-1B45-4DBA-9C68-388FA65C6EC7}" ShortID="828357700">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_Death_Stinger" ID="{7D4938C5-0719-4976-9439-EDEDDD051327}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{F7DB837A-BA6B-4D35-B7DE-DB3F8627153D}" ShortID="963530645">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Folder Name="Boxes" ID="{7153EAB6-9F4E-4817-A658-C6CAF3BEEAA0}" ShortID="994528299">
-					<ChildrenList>
-						<Event Name="Play_Boxes_Break" ID="{783C41A1-D3A1-4555-8FBE-BCC4EB2F85E1}">
-							<ChildrenList>
-								<Action Name="" ID="{102CE391-51BD-444C-AA42-7FF4573A7B92}" ShortID="319514939">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Boxes_Break_BLD" ID="{A59953A5-7438-4097-A8CB-006937692EFD}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Huge_Door_Open" ID="{504CBC9E-F029-4C03-86F7-04C4DCEDEA3C}" ShortID="453216009">
-					<ChildrenList>
-						<Event Name="Play_SFX_Huge_Door_Open_01" ID="{680E847F-B185-4733-AE5D-8F6D40FD6EB5}">
-							<ChildrenList>
-								<Action Name="" ID="{06B90B4B-FD2C-445B-96F3-3E5864020CC4}" ShortID="250884658">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Huge_Door_Open_01" ID="{C8C93509-23A6-4C6E-8464-0CBE07124FEC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Huge_Door_Open_02" ID="{857F97C4-4BE6-44E1-88AF-5A4CA2B6E744}">
-							<ChildrenList>
-								<Action Name="" ID="{590C5234-35EB-4D59-83F4-E5B2BFBEAA55}" ShortID="119341893">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Huge_Door_Open_02" ID="{7054FAD9-DBCD-4310-9D6C-D0D1916E17CF}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_SFX_Huge_Door_Open_03" ID="{84FEB3E2-B075-46AD-81EB-DCC4BB0A25BC}">
-							<ChildrenList>
-								<Action Name="" ID="{6BC2CD81-3AEE-4EAC-870A-DFAD63643AB5}" ShortID="115219838">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="0.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="SFX_Huge_Door_Open_03" ID="{1F2FB711-8150-4A4A-9D29-0716CC534657}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

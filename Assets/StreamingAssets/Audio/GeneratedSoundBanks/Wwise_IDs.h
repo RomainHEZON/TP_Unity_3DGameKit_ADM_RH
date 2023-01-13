@@ -64,6 +64,10 @@ namespace AK
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCH_ACTIVATED = 3532940987U;
         static const AkUniqueID PLAY_SFX_CRYSTAL_SWITCHES_BEFORE_ACTIVATION = 3731817354U;
         static const AkUniqueID PLAY_SFX_DEATH_STINGER = 367538363U;
+        static const AkUniqueID PLAY_SFX_DOOR_OPEN_01 = 2765469073U;
+        static const AkUniqueID PLAY_SFX_DOOR_OPEN_02 = 2765469074U;
+        static const AkUniqueID PLAY_SFX_DOOR_OPEN_03 = 2765469075U;
+        static const AkUniqueID PLAY_SFX_DOOR_OPEN_04 = 2765469076U;
         static const AkUniqueID PLAY_SFX_ENEMY_VANISH = 4102656700U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_01 = 4120424468U;
@@ -71,6 +75,7 @@ namespace AK
         static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_02 = 1148651654U;
         static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_03 = 1148651655U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
+        static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED_02 = 1061469642U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
@@ -259,7 +264,8 @@ namespace AK
         static const AkUniqueID ELLEN_SFX_SNBK = 2516908676U;
         static const AkUniqueID GRENADIER_SNBK = 1568914985U;
         static const AkUniqueID MUSIC_SNBK = 3144867095U;
-        static const AkUniqueID SFX_SNBK = 833899935U;
+        static const AkUniqueID SFX_LEVEL_01_SNBK = 3216885010U;
+        static const AkUniqueID SFX_LEVEL_02_SNBK = 694864107U;
         static const AkUniqueID SPITTER_SNBK = 4080968021U;
         static const AkUniqueID STATES = 1208172739U;
         static const AkUniqueID UI_SNBK = 776533456U;
