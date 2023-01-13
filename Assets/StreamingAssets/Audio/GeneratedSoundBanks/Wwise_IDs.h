@@ -17,12 +17,14 @@ namespace AK
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_METAL = 530524938U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_ROCK = 2050638422U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_VEGETATION = 708322193U;
+        static const AkUniqueID PLAY_AMB_PAD_ACID_LAKE = 2167481078U;
         static const AkUniqueID PLAY_AMB_PAD_CAVE = 2915382764U;
+        static const AkUniqueID PLAY_AMB_PAD_CAVERN = 661539116U;
+        static const AkUniqueID PLAY_AMB_PAD_EXTERIOR_CAVERN = 2661178611U;
         static const AkUniqueID PLAY_AMB_PAD_HUGE_DOOR_CRYSTAL = 26858146U;
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
         static const AkUniqueID PLAY_AMB_PAD_WIND = 1205748041U;
-        static const AkUniqueID PLAY_AMB_PAD_WIND_ELEVATION = 2205333009U;
         static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE = 2070617240U;
         static const AkUniqueID PLAY_ATTACK_CLOSE = 79389039U;
         static const AkUniqueID PLAY_ATTACK_RANGE_BOUNCE = 2579342955U;
@@ -39,6 +41,7 @@ namespace AK
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
         static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
+        static const AkUniqueID PLAY_FIREFLIES = 4161070465U;
         static const AkUniqueID PLAY_FOL_IDLE = 1819119386U;
         static const AkUniqueID PLAY_FOL_JUMP = 3623063248U;
         static const AkUniqueID PLAY_FOL_ROLL = 1668355981U;
@@ -50,9 +53,12 @@ namespace AK
         static const AkUniqueID PLAY_GRENADIER_SHIELD = 198525027U;
         static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
         static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
+        static const AkUniqueID PLAY_INSECT_WINGS_RC = 2302152007U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
+        static const AkUniqueID PLAY_MOUSE_RC = 489161007U;
         static const AkUniqueID PLAY_MUSIC_THEME_EXPLO_CHOMP = 3783934524U;
         static const AkUniqueID PLAY_MUSIC_THEME_GRENADIER_END = 2441234825U;
+        static const AkUniqueID PLAY_PAD_WIND_CAVERN = 1518027650U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
@@ -69,17 +75,22 @@ namespace AK
         static const AkUniqueID PLAY_SFX_DOOR_OPEN_03 = 2765469075U;
         static const AkUniqueID PLAY_SFX_DOOR_OPEN_04 = 2765469076U;
         static const AkUniqueID PLAY_SFX_ENEMY_VANISH = 4102656700U;
+        static const AkUniqueID PLAY_SFX_FIRST_MOVING_PLATFORM = 3130844081U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_IDLE_01 = 1068397626U;
         static const AkUniqueID PLAY_SFX_HEALTHBOX_OPEN_01 = 4120424468U;
         static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_01 = 1148651653U;
         static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_02 = 1148651654U;
         static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_03 = 1148651655U;
+        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_01 = 2643126548U;
+        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_02 = 2643126551U;
+        static const AkUniqueID PLAY_SFX_PLATFORM_MOVING_03 = 3749421580U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED_02 = 1061469642U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
         static const AkUniqueID PLAY_SHIELD_ACTIVATE = 2396795519U;
+        static const AkUniqueID PLAY_SMALL_CAVERN_ANIMAL = 1856533232U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
         static const AkUniqueID PLAY_THEME_END = 2987996311U;
         static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
@@ -232,6 +243,7 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID ACIDLAKE_AMB = 2982758354U;
         static const AkUniqueID CHOMPER_ATTACK_PLAYING = 1875403703U;
         static const AkUniqueID DISTO_DELAY_STAFF_RTPC = 3778983191U;
         static const AkUniqueID ELLEN_HEALTH = 971296124U;

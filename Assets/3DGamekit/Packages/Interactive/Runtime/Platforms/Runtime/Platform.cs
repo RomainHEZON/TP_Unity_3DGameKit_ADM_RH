@@ -20,6 +20,7 @@ namespace Gamekit3D.GameCommands
             if (0 != (layers.value & 1 << other.gameObject.layer))
             {
                 CharacterController character = other.GetComponent<CharacterController>();
+                
 
                 if (character != null)
                     m_CharacterController = character;
@@ -39,7 +40,7 @@ namespace Gamekit3D.GameCommands
         {
             if (m_CharacterController != null && deltaPosition.sqrMagnitude < k_SqrMaxCharacterMovement)
             {
-                m_CharacterController.Move(deltaPosition);
+                m_CharacterController.Move(deltaPosition); 
             }
         }
     }

@@ -81,26 +81,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_AMB_PAD_Wind_Elevation" ID="{F8B4ACDE-4072-43F5-AD55-16002326D5D5}">
-					<ChildrenList>
-						<Action Name="" ID="{C2988538-7B4B-4B80-99C9-F51F225F2588}" ShortID="1004175706">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Wind_Elevation_BC" ID="{3B2B47DE-F1B7-4188-88FA-B33F60958A53}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_AMB_PAD_Huge_Door_Crystal" ID="{333620B1-0A92-4863-9F90-6C0D88CD19D3}">
 					<ChildrenList>
 						<Action Name="" ID="{11A37DC0-EADA-4C74-9CD2-7877A2D87589}" ShortID="467913299">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="AMB_PAD_Huge_Door_Crystal_Loop" ID="{A50DE105-DE48-45C9-9262-EC3FCE689E22}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Cavern" ID="{872D10CD-808A-4D0C-85B2-5A67A7015C85}">
+					<ChildrenList>
+						<Action Name="" ID="{6E282523-E684-4343-9C2E-B3006920D7EF}" ShortID="785948872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Cavern_Loop" ID="{99300F38-93EA-4BFC-B241-1E1BBA125991}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Acid_Lake" ID="{7E481841-D48B-49FA-BA38-C57375EC3957}">
+					<ChildrenList>
+						<Action Name="" ID="{A771C05B-1D2B-4ABB-A471-D82242BC9E26}" ShortID="861065415">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Acid_Lake_BC" ID="{9FCFE6E1-3CA7-4F3A-98B8-3332130CE68A}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Exterior_Cavern" ID="{A1E29441-EAD0-4D71-B56A-12DD6CBD3E2C}">
+					<ChildrenList>
+						<Action Name="" ID="{8A8794A7-115E-48D6-B19E-5EA04D5FA16D}" ShortID="193617540">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Wetland_Loop" ID="{66FE5D63-C673-40D4-8F52-58590E2B0BAB}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PAD_Wind_Cavern" ID="{10F639F3-F128-43B3-9AAD-9DED4214A5D6}">
+					<ChildrenList>
+						<Action Name="" ID="{9D116328-E6A3-43A4-AAF1-6D8CE3DFE8B0}" ShortID="653372676">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{4282FDDB-A314-4BBE-BB19-4E06B28B4343}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

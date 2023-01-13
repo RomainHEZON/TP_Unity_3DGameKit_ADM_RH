@@ -94,11 +94,15 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Fireflies_AMB" ID="{7AF14CED-5890-41FA-A359-B2B882249A75}"/>
-							<Value>0</Value>
+							<Value>2.28471001757469</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Switch_Collect_Progression" ID="{8C1E4F54-AC45-43D7-8D67-248D14D2F763}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AcidLake_AMB" ID="{8BEB0116-9750-44FB-BF16-E65FEBD8EA08}"/>
+							<Value>3.86643233743409</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}"/>
@@ -146,8 +150,8 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Fight_Grenadier" ID="{FBB8E1F4-315F-410C-9CDA-B1A762D3186E}"/>
-						<CurrentStateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
+						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
 						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
@@ -155,8 +159,8 @@
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Stone" ID="{80678943-4F3B-489D-B9D7-AD48D3F35346}"/>
-						<CurrentSwitchRef Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}"/>
+						<CurrentSwitchRef Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
+						<CurrentSwitchRef Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

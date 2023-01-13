@@ -103,6 +103,72 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{EFC07E48-5274-4D06-B50D-50A81A832B45}" ShortID="849206291">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ellen_Loco_Mixer" ID="{2E06DF50-9113-4B52-9F00-C5BEADA80BC8}" WorkUnitID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{41E8117B-3401-4025-A4DC-812376D4D1E2}" ShortID="58250037">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ellen_SFX_Mixer" ID="{9F33E9EB-D0AA-4ABF-B4D8-9EC805B89DF1}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{127C7F41-C60E-47EA-989F-DB5DB9CAC1A3}" ShortID="321462761">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Mixer" ID="{7C269E76-21DA-4D16-B665-2B62ED909893}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2328618A-F133-419D-B082-9894DC53F164}" ShortID="45672076">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chomper_Mixer" ID="{C49DD3CE-30FB-489F-8DDC-D75E6BD5F644}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CF11606C-26A3-4DD6-92CA-0341CD906D83}" ShortID="445929763">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenadier_Mixer" ID="{D8F9EFBF-5813-4D38-A82A-5C2038A6A532}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1FA7064B-5E2A-4405-A323-E4A5A5A8640D}" ShortID="1052338063">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spitter_Mixer" ID="{CC0BE27E-F917-4901-B693-04C05873BD99}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_UI_Game_Resume" ID="{A8C542D3-3B65-4203-9903-6553A2E4326C}">
@@ -121,6 +187,72 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{396EEB47-A109-44BC-9CA9-8E68B96817BC}" ShortID="644522997">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Mixer" ID="{7C269E76-21DA-4D16-B665-2B62ED909893}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{AE296AF2-F3C7-4934-A0ED-2038191A4F75}" ShortID="449366955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ellen_Loco_Mixer" ID="{2E06DF50-9113-4B52-9F00-C5BEADA80BC8}" WorkUnitID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{92028F6B-07EF-44F7-A868-783E81D2E11C}" ShortID="693308168">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ellen_SFX_Mixer" ID="{9F33E9EB-D0AA-4ABF-B4D8-9EC805B89DF1}" WorkUnitID="{0718BB27-281F-432D-8939-DC3E36BB2F26}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A3E894FA-4DAF-409F-8ED7-D416841A68C2}" ShortID="884443752">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chomper_Mixer" ID="{C49DD3CE-30FB-489F-8DDC-D75E6BD5F644}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4B78810D-09A7-4704-8AEB-C1CB26259A4B}" ShortID="267380408">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Spitter_Mixer" ID="{CC0BE27E-F917-4901-B693-04C05873BD99}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0AA24F24-88F7-4541-A9E9-15DF9B0CFFF4}" ShortID="98757527">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grenadier_Mixer" ID="{D8F9EFBF-5813-4D38-A82A-5C2038A6A532}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

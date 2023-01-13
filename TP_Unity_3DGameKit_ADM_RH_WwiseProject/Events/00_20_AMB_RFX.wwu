@@ -129,6 +129,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Insect_Wings_RC" ID="{DE4FFCC9-0DE2-431A-9EA2-FEB07394DA0E}">
+					<ChildrenList>
+						<Action Name="" ID="{A75CA494-8BA4-4E0E-B2C1-1E9CB9277274}" ShortID="601461217">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Insect_Wings_RC" ID="{B3F137BD-A701-458C-8E8E-DCEAB41EED83}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Mouse_RC" ID="{4C1C7E4F-C9A1-4C55-9169-ADD124671910}">
+					<ChildrenList>
+						<Action Name="" ID="{1372D703-9E14-43EF-95FE-FB8CAF9050F9}" ShortID="554414793">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mouse_RC" ID="{A7BCA470-5303-4008-9FD3-65D456D78D26}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Fireflies" ID="{215B68A3-F27D-4391-9358-53754317B111}">
+					<ChildrenList>
+						<Action Name="" ID="{9DE9A713-4DE0-419E-AF38-FD2E3C83B500}" ShortID="787398214">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fireflies_BC" ID="{8A29EC95-E887-4706-B772-46FFC28FE8CF}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Small_Cavern_Animal" ID="{7009C1A9-1C40-4DA5-9F42-D441D7890255}">
+					<ChildrenList>
+						<Action Name="" ID="{0D20A112-87B2-45E6-A79A-19365BD39DA9}" ShortID="1064730680">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Small_Cavern_Animal" ID="{05E70A05-1738-442F-AFC4-523952BB4F0C}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

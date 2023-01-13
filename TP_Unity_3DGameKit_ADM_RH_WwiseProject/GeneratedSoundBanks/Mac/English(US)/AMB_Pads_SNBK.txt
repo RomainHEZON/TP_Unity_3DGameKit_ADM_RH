@@ -1,0 +1,87 @@
+Event	ID	Name			Wwise Object Path	Notes
+	26858146	Play_AMB_PAD_Huge_Door_Crystal			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Huge_Door_Crystal	
+	661539116	Play_AMB_PAD_Cavern			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Cavern	
+	1205748041	Play_AMB_PAD_Wind			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Wind	
+	1340469326	Play_AMB_PAD_Lake			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Lake	
+	1518027650	Play_PAD_Wind_Cavern			\Default Work Unit\00_10_AMB_Pads\Play_PAD_Wind_Cavern	
+	2167481078	Play_AMB_PAD_Acid_Lake			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Acid_Lake	
+	2661178611	Play_AMB_PAD_Exterior_Cavern			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Exterior_Cavern	
+	2915382764	Play_AMB_PAD_Cave			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Cave	
+	3800059594	Play_AMB_PAD_Wetland			\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Wetland	
+	3873597236	Play_Spaceship_BC			\Default Work Unit\00_10_AMB_Pads\Spaceship\Play_Spaceship_BC	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
+	2605611591	Room_In_Out			\Default Work Unit\Room_Interior\Room_In_Out	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Wind_State			
+	930712164	OFF	Wind_State			
+	2849147824	Medium	Wind_State			
+	3522403288	Strong	Wind_State			
+	645492555	Out	Room_In_Out			
+	748895195	None	Room_In_Out			
+	1752637612	In	Room_In_Out			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	97283777	In	Room_In_Out	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Wind_State		
+	301065322	In	Room_In_Out	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\AMB_PAD_Wetland_Loop		
+	776516645	In	Room_In_Out	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\AMB_PAD_Wetland_Loop		
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2006680970	Switch_Collect_Progression			\Default Work Unit\Progression\Switch_Collect_Progression	
+	2982758354	AcidLake_AMB			\Default Work Unit\Distance\AcidLake_AMB	
+	3174026549	Lake_AMB			\Default Work Unit\Distance\Lake_AMB	
+	3545834150	Spaceship_AMB			\Default Work Unit\Distance\Spaceship_AMB	
+
+Modulator LFO	ID	Name			Wwise Object Path	Notes
+	1012886889	Wind_LFO (Custom)				
+
+Effect plug-ins	ID	Name	Type				Notes
+	3013737263	Bass_Remover_1	Wwise Parametric EQ			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	353369291	Soundseed Air Wind	SoundSeed Air Wind		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Wind\Soundseed Air Wind	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	921443	AMB_RFX_Frog_B_06	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_06		240096
+	50525925	AMB_RFX_AcidBurn_Short_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_Short_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_Short_RC\AMB_RFX_AcidBurn_Short_04		153798
+	57871559	AMB_RFX_Frog_A_07	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_07		124346
+	61146096	AMB_RFX_AcidBurn_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_RC\AMB_RFX_AcidBurn_04		254854
+	77744621	AMB_Spaceship_Out_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_Spaceship_Out_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Spaceship_BC\AMB_Spaceship_Out_Loop		792952
+	79626071	AMB_RFX_Frog_B_07	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_07		144096
+	103837872	AMB_RFX_AcidBurn_Short_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_Short_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_Short_RC\AMB_RFX_AcidBurn_Short_03		150310
+	115107718	AMB_RFX_AcidBubble_05	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBubble_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Bubble_RC\AMB_RFX_AcidBubble_05		168544
+	138781816	AMB_RFX_Frog_A_06	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_06		132846
+	160506112	AMB_RFX_AcidBubble_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBubble_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Bubble_RC\AMB_RFX_AcidBubble_04		256096
+	272441149	AMB_RFX_AcidBurn_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_RC\AMB_RFX_AcidBurn_02		288096
+	342142041	AMB_RFX_Frog_A_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_03		192096
+	406262078	AMB_RFX_AcidBurn_Short_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_Short_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_Short_RC\AMB_RFX_AcidBurn_Short_01		109914
+	465306571	AMB_Spaceship_In_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_Spaceship_In_Loop_C5579977.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Spaceship_BC\AMB_Spaceship_In_Loop		2864096
+	506385936	AMB_RFX_AcidBubble_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBubble_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Bubble_RC\AMB_RFX_AcidBubble_03		169824
+	557508285	AMB_RFX_AcidBubble_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBubble_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Bubble_RC\AMB_RFX_AcidBubble_01		191328
+	645216713	AMB_RFX_Frog_A_05	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_05		168096
+	653502592	AMB_RFX_Frog_B_05	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_05		192096
+	744965425	AMB_RFX_Frog_B_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_03		288096
+	745236099	AMB_RFX_Frog_A_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_04		216096
+	784653374	AMB_RFX_AcidBurn_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_RC\AMB_RFX_AcidBurn_01		302810
+	788284226	AMB_RFX_AcidBurn_Short_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_Short_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_Short_RC\AMB_RFX_AcidBurn_Short_02		144096
+	864697297	AMB_RFX_Frog_A_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_01		144096
+	871828377	AMB_RFX_Frog_B_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_01		240096
+	905057815	AMB_RFX_Frog_B_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_02		336096
+	950958287	AMB_RFX_Frog_B_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_B_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_B_RC\AMB_RFX_Frog_B_04		192096
+	980818136	AMB_RFX_AcidBubble_06	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBubble_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Bubble_RC\AMB_RFX_AcidBubble_06		210016
+	981383364	AMB_RFX_Frog_A_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Frogs\AMB_RFX_Frog_A_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\Frogs_SC\Frog_A_RC\AMB_RFX_Frog_A_02		132096
+	1049830467	AMB_RFX_AcidBurn_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBurn_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Burn_RC\AMB_RFX_AcidBurn_03		287606
+	1056417612	AMB_RFX_AcidBubble_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_RFX_AcidBubble_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\Acid\Acid_Bubble_RC\AMB_RFX_AcidBubble_02		175968
+
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	109505191	AMB_PAD_Cave_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_Cave_Loop_D79FB2B7.wem	109505191.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\AMB_PAD_Cave_Loop	
+	116825441	AMB_PAD_Huge_Door_Crystal_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_Huge_Door_Crystal_Loop_D79FB2B7.wem	116825441.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\AMB_PAD_Huge_Door_Crystal_Loop	
+	169208860	AMB_PAD_Wind_Medium_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_Wind_Medium_Loop_D79FB2B7.wem	169208860.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Wind_State\AMB_PAD_Wind_Medium_Loop	
+	246316129	AMB_PAD_AcidLake_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_AcidLake_Loop_D79FB2B7.wem	246316129.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\Acid_Lake_BC\AMB_PAD_AcidLake_Loop	
+	744883682	AMB_PAD_Wind_Strong_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_Wind_Strong_Loop_D79FB2B7.wem	744883682.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Wind_State\AMB_PAD_Wind_Strong_Loop	
+	998749633	AMB_PAD_Cavern_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_Cavern_Loop_D79FB2B7.wem	998749633.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_2_Mixer\AMB_PAD_Cavern_Loop	
+	1048301795	AMB_PAD_Wetland_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_Wetland_Loop_D79FB2B7.wem	1048301795.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\AMB_PAD_Wetland_Loop	
+	1069776302	AMB_PAD_Lake	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\AMB_PAD_Lake_D79FB2B7.wem	1069776302.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_10_AMB_Pads\Pads_Mixer\Level_1_Mixer\Lake_SC\AMB_PAD_Lake	
+

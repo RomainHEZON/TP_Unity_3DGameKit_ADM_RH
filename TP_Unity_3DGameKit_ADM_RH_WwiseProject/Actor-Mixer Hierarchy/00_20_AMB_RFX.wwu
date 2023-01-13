@@ -673,6 +673,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Big_Creature_B_RC" ID="{948F3D1C-5BFF-45B1-AFC5-417B002DF4C6}" ShortID="609834726">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
@@ -704,6 +705,7 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -798,6 +800,10 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{0F036F05-F1AC-4933-B303-E1F37ABD1640}"/>
+										<Position Name="" ID="{C8CD80EA-3017-4B4B-8F74-8665B1391303}"/>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Blackbird_RC" ID="{E830DF89-05D3-48ED-82EE-D87D0890F213}" ShortID="536951213">
 									<PropertyList>
@@ -1301,6 +1307,13 @@
 															<Property Name="Min" Type="Real64" Value="-200"/>
 														</PropertyList>
 													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9DB9CCA9-CD24-4757-9051-DDFF08B0FEC8}"/>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
@@ -2307,9 +2320,11 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Fireflies_PassBy_RC" ID="{D810FB57-D6D3-405B-833B-8F4E8DD183D9}" ShortID="380552655">
 											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="1"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -2336,8 +2351,12 @@
 												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-25</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
@@ -2351,21 +2370,20 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_01" ID="{20470672-7900-485B-94A8-D4B6B0A0CCBA}" ShortID="679375295">
+												<Sound Name="AMB_RFX_Fireflies_PassBy_01" ID="{62EE5541-1198-407C-A8DF-BE9843868D5C}" ShortID="603576166">
 													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="3DPosition" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_01" ID="{098F6C19-613C-4E4D-B727-31053D8B0552}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_01" ID="{B41899C8-F72C-498B-AB48-DF18110F304A}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_01.wav</AudioFile>
 															<MediaIDList>
@@ -2373,25 +2391,46 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{BEC3B976-039F-49EB-B9DC-E2C50CA2E413}">
+															<ChildrenList>
+																<Path2D Name="AMB_RFX_Fireflies_PassBy_01_Path" ID="{A5DA1222-3433-45E8-9D77-00A6D1AA7451}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="Uint32" Value="1000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>79.15743</XPos>
+																			<YPos>72.72727</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>73.83592</XPos>
+																			<YPos>21.21212</YPos>
+																			<Flags>0</Flags>
+																			<Time>1000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_01" ID="{098F6C19-613C-4E4D-B727-31053D8B0552}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_01" ID="{B41899C8-F72C-498B-AB48-DF18110F304A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_02" ID="{41BD902E-987A-497E-851C-C4508FA25A65}" ShortID="593397181">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_02" ID="{94A9EA4A-38F6-4374-93C1-14EA35526CC1}" ShortID="630782527">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_02" ID="{A703B739-2B24-415B-92D3-0E15C4FA216A}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_02" ID="{73B5B0B9-1612-42C3-983E-F62DB9B3063F}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_02.wav</AudioFile>
 															<MediaIDList>
@@ -2400,24 +2439,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_02" ID="{A703B739-2B24-415B-92D3-0E15C4FA216A}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_02" ID="{73B5B0B9-1612-42C3-983E-F62DB9B3063F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_03" ID="{1EC9DCB7-337F-4AE1-9E46-819B8A8F42B9}" ShortID="416412503">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_03" ID="{4ACE83BF-DF06-4A85-A391-FC51C18137AA}" ShortID="834928605">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_03" ID="{EE20CEC8-A30C-41C3-B74C-6BE0B01F1131}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_03" ID="{148DC3E0-5CD1-4C44-8A1F-90C3D4FBDF05}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_03.wav</AudioFile>
 															<MediaIDList>
@@ -2426,24 +2461,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_03" ID="{EE20CEC8-A30C-41C3-B74C-6BE0B01F1131}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_03" ID="{148DC3E0-5CD1-4C44-8A1F-90C3D4FBDF05}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_04" ID="{26653057-CEE5-44B0-917C-687770969BB8}" ShortID="484430929">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_04" ID="{E26AEF33-1F4B-4E95-A0FE-172CAE01CEFF}" ShortID="531629508">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_04" ID="{83B7D880-F298-4DD2-B0BF-5020F89955A1}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_04" ID="{7FCE3DCF-0E6B-4AFD-B148-8B2D1F0E4A2F}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_04.wav</AudioFile>
 															<MediaIDList>
@@ -2452,24 +2483,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_04" ID="{83B7D880-F298-4DD2-B0BF-5020F89955A1}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_04" ID="{7FCE3DCF-0E6B-4AFD-B148-8B2D1F0E4A2F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_05" ID="{D4987AC1-BEAE-43D3-AF7E-05FA98EDE16E}" ShortID="246738275">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_05" ID="{47AF1D87-E1F9-4578-94EE-F7C4D092685E}" ShortID="800591202">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_05" ID="{A8553A21-0EEB-45A8-8EFF-84C07EC9987B}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_05" ID="{9D8AC8C9-F7FB-4818-8407-BAF25B2360A8}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_05.wav</AudioFile>
 															<MediaIDList>
@@ -2478,24 +2505,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_05" ID="{A8553A21-0EEB-45A8-8EFF-84C07EC9987B}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_05" ID="{9D8AC8C9-F7FB-4818-8407-BAF25B2360A8}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_06" ID="{3CDA89E4-344E-406F-802A-48A02F850E1E}" ShortID="780857829">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_06" ID="{58ED7C90-D8D4-4CB6-8BB8-83C47EFDEDE7}" ShortID="956719331">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_06" ID="{8F473E7D-D957-4257-90B2-B762A820F7AC}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_06" ID="{2C4E34B7-B156-437F-BFA2-C8C788D79E1C}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_06.wav</AudioFile>
 															<MediaIDList>
@@ -2504,24 +2527,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_06" ID="{8F473E7D-D957-4257-90B2-B762A820F7AC}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_06" ID="{2C4E34B7-B156-437F-BFA2-C8C788D79E1C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_07" ID="{1B0C459E-B8A1-4610-8075-0DCB3BC90A91}" ShortID="689367900">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_07" ID="{B88FB4A6-1E95-4E62-8F5B-DECB8475C4D2}" ShortID="491443052">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_07" ID="{D84C76B6-10D9-44D3-985E-C54AEC7FECA3}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_07" ID="{A9B3B4F7-53AD-40D8-9F14-E9A997E81A8F}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_07.wav</AudioFile>
 															<MediaIDList>
@@ -2530,24 +2549,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_07" ID="{D84C76B6-10D9-44D3-985E-C54AEC7FECA3}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_07" ID="{A9B3B4F7-53AD-40D8-9F14-E9A997E81A8F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_08" ID="{B86482D2-AD9D-4B01-ADB6-785463E0DB95}" ShortID="490340254">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_08" ID="{757DAAA1-F7AF-465C-8537-09DB97FE65BC}" ShortID="997969110">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_08" ID="{35E68975-FC82-47C9-818B-E84E0AC1D3A0}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_08" ID="{A0C99E95-7863-445B-A39E-CB7D0C19C55F}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_08.wav</AudioFile>
 															<MediaIDList>
@@ -2556,24 +2571,20 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_08" ID="{35E68975-FC82-47C9-818B-E84E0AC1D3A0}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_08" ID="{A0C99E95-7863-445B-A39E-CB7D0C19C55F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_PassBy_09" ID="{36594B53-4DB5-41B5-8931-EDA286BF6656}" ShortID="279421420">
-													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-													</PropertyList>
+												<Sound Name="AMB_RFX_Fireflies_PassBy_09" ID="{A3F26F3A-D5E3-431F-A131-65C4FE10C36D}" ShortID="750211356">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_09" ID="{8ACEC132-50DC-4547-AC6B-238BCECA302F}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_PassBy_09" ID="{EF700CCC-7C5F-4988-8DF7-F88A91371B6D}">
 															<Language>SFX</Language>
 															<AudioFile>AMB_RFX_Fireflies_PassBy_09.wav</AudioFile>
 															<MediaIDList>
@@ -2582,7 +2593,7 @@
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_09" ID="{8ACEC132-50DC-4547-AC6B-238BCECA302F}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_PassBy_09" ID="{EF700CCC-7C5F-4988-8DF7-F88A91371B6D}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2596,6 +2607,21 @@
 													<PropertyList>
 														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="Fireflies_PassBy_RC_Path" ID="{C3A90574-5491-4D46-9B09-0CAFBFB747EE}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>96.00887</XPos>
+																	<YPos>59.52382</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
 												</Position>
 											</PositioningInfo>
 										</RandomSequenceContainer>
@@ -2626,65 +2652,54 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="AMB_RFX_Fireflies_Idle_Loop_01" ID="{D06967CC-47AF-4E0C-8452-DD34796ED837}" ShortID="476982839">
+												<Sound Name="AMB_RFX_Fireflies_Idle_Loop_03" ID="{1C8E37F3-1BAA-4260-9D74-13CC53EF1644}" ShortID="155264729">
 													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="Pitch" Type="int32">
-															<ModifierList>
-																<ModifierInfo>
-																	<Modifier Name="" ID="{CD102049-0A73-4C7A-AE23-0A976D97BC33}"/>
-																</ModifierInfo>
-															</ModifierList>
-														</Property>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_Idle_Loop_01" ID="{A488A498-BA4D-4434-B297-34435D3003F3}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_Idle_Loop_03" ID="{09201905-7089-48EC-83FF-DC15D97E0FE4}">
 															<Language>SFX</Language>
-															<AudioFile>AMB_RFX_Fireflies_Idle_Loop_01.wav</AudioFile>
+															<AudioFile>AMB_RFX_Fireflies_Idle_Loop_03.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="321173832"/>
+																<MediaID ID="742925285"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_Idle_Loop_01" ID="{A488A498-BA4D-4434-B297-34435D3003F3}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_Idle_Loop_03" ID="{09201905-7089-48EC-83FF-DC15D97E0FE4}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="AMB_RFX_Fireflies_Idle_Loop_02" ID="{DD579DFE-D698-4DF3-83D0-5F16536AF233}" ShortID="785806351">
+												<Sound Name="AMB_RFX_Fireflies_Idle_Loop_04" ID="{D5120920-2FA1-4DB2-BB5F-3F46B93CA937}" ShortID="477949886">
 													<PropertyList>
-														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 														<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
-															<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="AMB_RFX_Fireflies_Idle_Loop_02" ID="{1DCAAC96-BB4D-47EB-A12A-6E2AC387F648}">
+														<AudioFileSource Name="AMB_RFX_Fireflies_Idle_Loop_04" ID="{3E0C7DD2-A7A7-4800-9512-8E40D3EF0344}">
 															<Language>SFX</Language>
-															<AudioFile>AMB_RFX_Fireflies_Idle_Loop_02.wav</AudioFile>
+															<AudioFile>AMB_RFX_Fireflies_Idle_Loop_04.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="432434212"/>
+																<MediaID ID="490678185"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="AMB_RFX_Fireflies_Idle_Loop_02" ID="{1DCAAC96-BB4D-47EB-A12A-6E2AC387F648}" Platform="Linked"/>
+														<ActiveSource Name="AMB_RFX_Fireflies_Idle_Loop_04" ID="{3E0C7DD2-A7A7-4800-9512-8E40D3EF0344}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -2736,6 +2751,837 @@
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
+								<RandomSequenceContainer Name="Insect_Wings_RC" ID="{B3F137BD-A701-458C-8E8E-DCEAB41EED83}" ShortID="574253691">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{E1E5D818-0027-4A12-B5D6-0AFEE7346F0B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="ATN_10m" ID="{0B27E7AE-D886-47C9-A7D0-22F4FE5905C8}" WorkUnitID="{460CB990-94F0-4D03-9E31-ED83591B2D9B}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_RFX_Insect_Wings_01" ID="{FFA83FDB-760C-4220-8EC1-A223D0374C70}" ShortID="895930276">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_01" ID="{496CDAAF-CB4E-4899-8F16-3FA2A937ABCE}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="964872353"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_01" ID="{496CDAAF-CB4E-4899-8F16-3FA2A937ABCE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Insect_Wings_02" ID="{13CD7E83-6A2C-4DBA-B825-6BB308FFC0B0}" ShortID="42944648">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_02" ID="{29C361B3-22C7-4970-9B07-0ED815D525BF}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="288428864"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_02" ID="{29C361B3-22C7-4970-9B07-0ED815D525BF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Insect_Wings_03" ID="{094BC4F0-321B-4A90-973B-7C2F36FB5413}" ShortID="511823629">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_03" ID="{94C3E1BB-6C5A-4F33-8E62-A8135906480A}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="63359375"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_03" ID="{94C3E1BB-6C5A-4F33-8E62-A8135906480A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Insect_Wings_04" ID="{35B3E2E0-A949-48ED-874C-554D172B1640}" ShortID="269305099">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_04" ID="{13F31F18-F18E-4CF4-8250-E0C197098A5F}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="196197131"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_04" ID="{13F31F18-F18E-4CF4-8250-E0C197098A5F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Insect_Wings_05" ID="{19FF74EB-52EB-4F6B-998F-23837175CD84}" ShortID="872943508">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_05" ID="{19876054-EDA1-441D-9881-91C499DBD5D8}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="443039091"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_05" ID="{19876054-EDA1-441D-9881-91C499DBD5D8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Insect_Wings_06" ID="{6F943FD6-B80E-4E6B-982A-04C1FBEE7B9A}" ShortID="623410369">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_06" ID="{37640ED7-C67F-4990-A7C0-5B9A7081A682}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1069828771"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_06" ID="{37640ED7-C67F-4990-A7C0-5B9A7081A682}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Insect_Wings_07" ID="{F330D865-F238-4615-9F6A-D6BA80AA9A36}" ShortID="263965797">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Insect_Wings_07" ID="{CCFAB5BA-9AB5-4E04-8D5D-C87F288B894C}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Insect_Wings_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="885711875"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Insect_Wings_07" ID="{CCFAB5BA-9AB5-4E04-8D5D-C87F288B894C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Mouse_RC" ID="{A7BCA470-5303-4008-9FD3-65D456D78D26}" ShortID="635971870">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6E991BF2-685C-4D7C-90DA-8F0536CF638B}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{0B27E7AE-D886-47C9-A7D0-22F4FE5905C8}">
+												<Attenuation Name="ATN_10m (Custom)" ID="{671DEAC9-0CF2-4DEF-92EC-154437D8E928}" ShortID="258607731">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="15"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{2DBA1246-40F5-4F21-954B-455A9A91C992}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>3.75</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>15</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{1205D8D1-CEB9-4EC5-A111-1B43EE3D0863}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>9.75</XPos>
+																			<YPos>20</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>15</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{65A0F893-2BD0-46EC-80F2-4065BB6A852E}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log2</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>9.75</XPos>
+																			<YPos>20</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>15</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{3A99213D-E257-4EDA-AF78-CC6A6C3E6979}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>40</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>6</XPos>
+																			<YPos>30</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>15</XPos>
+																			<YPos>10</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_RFX_Mouse_Squeaking_01" ID="{3F74922B-529D-4796-B428-755409ECC6B8}" ShortID="58831980">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Mouse_Squeaking_01" ID="{14BB264F-5F17-405E-BC54-49E78C2CBEB5}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Mouse_Squeaking_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="104342344"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Mouse_Squeaking_01" ID="{14BB264F-5F17-405E-BC54-49E78C2CBEB5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Mouse_Squeaking_02" ID="{F6CFE5C6-3773-4E7A-9A2C-8DE89B1178D2}" ShortID="506013634">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Mouse_Squeaking_02" ID="{07259A6A-ECEF-472D-85FB-BF3167674645}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Mouse_Squeaking_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="923951519"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Mouse_Squeaking_02" ID="{07259A6A-ECEF-472D-85FB-BF3167674645}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Mouse_Squeaking_03" ID="{EE51928F-29EB-48D3-9EEB-ACDE3314E517}" ShortID="958144950">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Mouse_Squeaking_03" ID="{0361C5C7-B63E-4DAC-9E54-1D18451AD123}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Mouse_Squeaking_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="69476239"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Mouse_Squeaking_03" ID="{0361C5C7-B63E-4DAC-9E54-1D18451AD123}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Mouse_Squeaking_04" ID="{D7065659-7277-4017-BAD8-4433D6CD458D}" ShortID="742308064">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Mouse_Squeaking_04" ID="{5477B45F-BFA4-4A4B-8D55-CB83C33785C0}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Mouse_Squeaking_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="524031497"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Mouse_Squeaking_04" ID="{5477B45F-BFA4-4A4B-8D55-CB83C33785C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Small_Cavern_Animal" ID="{05E70A05-1738-442F-AFC4-523952BB4F0C}" ShortID="895364887">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="CenterPercentage" Type="int32">
+											<ValueList>
+												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1EE4075B-3E71-4452-96FE-317A902FD1D1}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<Custom CreatedFrom="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}">
+												<Attenuation Name="ATN_20m (Custom)" ID="{4C8AD815-15F6-4981-A45D-B715733266E9}" ShortID="795677999">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{06F692B4-977D-4659-AF41-13120800026C}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>4</XPos>
+																			<YPos>0</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{207BBB27-958E-40A9-B347-558BAFE7D3D5}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12</XPos>
+																			<YPos>25</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>60</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{132D70EC-234F-4701-B4F5-79430A504048}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>12</XPos>
+																			<YPos>20</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>50</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{C540CD2D-AA41-41EE-B836-CF33EBC802B6}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>45</YPos>
+																			<Flags>5</Flags>
+																			<SegmentShape>Exp1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>7.5</XPos>
+																			<YPos>30</YPos>
+																			<Flags>0</Flags>
+																			<SegmentShape>Log1</SegmentShape>
+																		</Point>
+																		<Point>
+																			<XPos>20</XPos>
+																			<YPos>10</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+														<ObstructionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionVolumeUsage>
+														<ObstructionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionLPFUsage>
+														<ObstructionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</ObstructionHPFUsage>
+														<OcclusionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionVolumeUsage>
+														<OcclusionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionLPFUsage>
+														<OcclusionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</OcclusionHPFUsage>
+														<DiffractionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionVolumeUsage>
+														<DiffractionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionLPFUsage>
+														<DiffractionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</DiffractionHPFUsage>
+														<TransmissionVolumeUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionVolumeUsage>
+														<TransmissionLPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionLPFUsage>
+														<TransmissionHPFUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseProject"/>
+														</TransmissionHPFUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_RFX_Small_Animal_Tunnel_01" ID="{7D5F5C38-F644-4569-B463-EE888BD34130}" ShortID="338761814">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Small_Animal_Tunnel_01" ID="{ADDABAC3-3A7A-48AC-A7E6-BAA47FB8E7FC}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Small_Animal_Tunnel_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="518094919"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Small_Animal_Tunnel_01" ID="{ADDABAC3-3A7A-48AC-A7E6-BAA47FB8E7FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Small_Animal_Tunnel_02" ID="{2FB219B1-8338-4582-A5F5-282541646366}" ShortID="263115675">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Small_Animal_Tunnel_02" ID="{E787D79C-FBCC-4CA0-AD5F-FA3AC6549891}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Small_Animal_Tunnel_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="176869474"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Small_Animal_Tunnel_02" ID="{E787D79C-FBCC-4CA0-AD5F-FA3AC6549891}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_RFX_Small_Animal_Tunnel_03" ID="{D947E5F1-9608-42E7-8F3C-13D38D8D70BB}" ShortID="270162483">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_RFX_Small_Animal_Tunnel_03" ID="{5FD8DC28-E55B-46EF-9E92-2BAE5519C89B}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_RFX_Small_Animal_Tunnel_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="810163818"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_RFX_Small_Animal_Tunnel_03" ID="{5FD8DC28-E55B-46EF-9E92-2BAE5519C89B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Spaceship_Mixer" ID="{7FA47412-4BD4-4D2A-9EED-3AC51BD638EF}" ShortID="905068331">

@@ -10,10 +10,9 @@
 				<ActorMixer Name="Grenadier_Mixer" ID="{D8F9EFBF-5813-4D38-A82A-5C2038A6A532}" ShortID="718523253">
 					<PropertyList>
 						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>2</Value>
+								<Value>10</Value>
 							</ValueList>
 						</Property>
 						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
@@ -31,11 +30,6 @@
 							</ModifierList>
 						</Property>
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-6</Value>

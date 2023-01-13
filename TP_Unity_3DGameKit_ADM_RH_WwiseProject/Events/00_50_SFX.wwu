@@ -462,6 +462,54 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Moving_Platform" ID="{693CF57F-D472-45A0-93CA-F292C57068BA}" ShortID="967348521">
+							<ChildrenList>
+								<Event Name="Play_SFX_First_Moving_Platform" ID="{33E0AF23-0728-4B60-A327-3F81596355C0}">
+									<ChildrenList>
+										<Action Name="" ID="{E5D07030-5F1F-452F-8754-3B10C5350883}" ShortID="629849626">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="First_Moving_Platform" ID="{4E680457-98D1-4E06-A180-FE49E9CA050F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Moving_Platform_01" ID="{6F16FB73-4AFA-43FB-8482-2AF79C7F4B84}">
+									<ChildrenList>
+										<Action Name="" ID="{F37F458B-C6C9-410D-B29B-3A1BFD7F7A71}" ShortID="263573850">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Moving_Platform_01" ID="{DF9A70E7-24A0-4704-8E0E-8518EF3C30BE}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Moving_Platform_02" ID="{770F3F92-C4D6-4DC6-AE29-49E5DB4C2E44}">
+									<ChildrenList>
+										<Action Name="" ID="{B74C4043-FE2D-4D3F-B7FF-BF8F736F658F}" ShortID="248015534">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Moving_Platform_02" ID="{C93B0666-C472-4B63-95B1-2E535347FF81}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_SFX_Platform_Moving_03" ID="{C7C0ED37-3286-43E4-9E7D-9436944D792D}">
+									<ChildrenList>
+										<Action Name="" ID="{F1BB4EFD-E0F2-46FA-80CF-0375B35BDC8B}" ShortID="827738609">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Platform_Moving_Loop_03" ID="{399379F1-E079-4B79-A45D-5ED28EAB9976}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -3582,7 +3582,7 @@ MonoBehaviour:
   playerScanner:
     heightOffset: 1
     detectionRadius: 15
-    detectionAngle: 270
+    detectionAngle: 360
     maxHeightDifference: 1
     viewBlockerLayerMask:
       serializedVersion: 2
