@@ -131,6 +131,7 @@ namespace AK
         static const AkUniqueID STOP_ALL_EVENTS = 171421511U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
         static const AkUniqueID STOP_SFX_SPITTER_SPIT = 2488434516U;
+        static const AkUniqueID STOP_THEME_END = 3799695633U;
     } // namespace EVENTS
 
     namespace STATES

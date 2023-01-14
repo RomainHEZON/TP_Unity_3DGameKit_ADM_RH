@@ -52,6 +52,9 @@ namespace Gamekit3D
             {
                 m_TransitioningGameObjectPresent = true;
                 AkSoundEngine.PostEvent("Play_SFX_Teleporter_Walkthrough", this.gameObject);
+                AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
+                AkSoundEngine.PostEvent("Play_Theme_End", this.gameObject);
+
 
                 if (ScreenFader.IsFading || SceneController.Transitioning)
                     return;
@@ -66,7 +69,9 @@ namespace Gamekit3D
             if (other.gameObject == transitioningGameObject)
             {
                 m_TransitioningGameObjectPresent = false;
-                // AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
+                AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
+                AkSoundEngine.PostEvent("Play_Theme_End", this.gameObject);
+
             }
         }
 
@@ -85,6 +90,9 @@ namespace Gamekit3D
             else
             {
                 SceneController.TransitionToScene(this);
+                AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
+                AkSoundEngine.PostEvent("Play_Theme_End", this.gameObject);
+
             }
         }
 

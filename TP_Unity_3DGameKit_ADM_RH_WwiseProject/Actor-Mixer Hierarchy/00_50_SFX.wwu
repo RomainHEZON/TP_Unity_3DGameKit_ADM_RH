@@ -4201,11 +4201,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>18</Value>
-											</ValueList>
-										</Property>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
@@ -4254,11 +4249,6 @@
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
-											</ValueList>
-										</Property>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>18</Value>
 											</ValueList>
 										</Property>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -4314,11 +4304,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4344,11 +4329,6 @@
 								<RandomSequenceContainer Name="First_Moving_Platform" ID="{4E680457-98D1-4E06-A180-FE49E9CA050F}" ShortID="738348527">
 									<PropertyList>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MakeUpGain" Type="Real64">
-											<ValueList>
-												<Value>18</Value>
-											</ValueList>
-										</Property>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>

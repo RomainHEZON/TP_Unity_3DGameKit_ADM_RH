@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{BC35691B-6988-5094-31BF-EB715EA1B27B}">
+		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{AB757BAB-9481-F900-BAFF-1876D22FDAFE}">
 			<ShortName>SFX_LEVEL_02_SNBK</ShortName>
 			<Path>SFX_LEVEL_02_SNBK.bnk</Path>
 			<Media>
@@ -289,7 +289,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{2EBB1F01-27BF-E650-3AD0-F181EE86F828}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{49E2FD99-DBE4-C89C-B146-99AB7DC3CDB9}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -1487,7 +1487,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{50B90E16-D4AD-CAD0-9562-5085C2DE8618}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{C8BC5351-E864-ECDF-FC43-AC417E1229F1}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -2042,7 +2042,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{095DC9F2-6230-7B52-14DC-BD47A90F82C7}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{76C83592-3E12-7AED-6551-B73013CA42CB}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2245,6 +2245,7 @@
 						<MediaRef Id="117296435"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3799695633" Name="Stop_Theme_End" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
@@ -2266,7 +2267,7 @@
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{DBEB6379-B3FA-F2CF-A3B7-C0C9565D1285}">
+		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{45F1C716-B285-75E5-111C-56BC3B416329}">
 			<ShortName>SFX_LEVEL_01_SNBK</ShortName>
 			<Path>SFX_LEVEL_01_SNBK.bnk</Path>
 			<Media>
@@ -3249,5 +3250,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{A1C16BAE-F554-8131-B36A-A8B7A6768823}</FileHash>
+	<FileHash>{FD92C9C8-3EA8-F1BD-D27D-E434C7CF2FCF}</FileHash>
 </SoundBanksInfo>

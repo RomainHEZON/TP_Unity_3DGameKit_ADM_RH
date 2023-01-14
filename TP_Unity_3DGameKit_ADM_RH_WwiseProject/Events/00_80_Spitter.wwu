@@ -62,6 +62,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{094D7119-9B91-4A61-A934-6EB1F257C243}" ShortID="825628478">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_SFX_Spitter_Spotted" ID="{1077CE9E-0F73-4981-A77C-0FA84B72FA8E}">

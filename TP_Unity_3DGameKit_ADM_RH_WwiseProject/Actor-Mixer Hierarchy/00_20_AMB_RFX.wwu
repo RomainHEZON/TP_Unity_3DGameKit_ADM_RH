@@ -364,7 +364,6 @@
 						</RandomSequenceContainer>
 						<ActorMixer Name="Animals_Mixer" ID="{05076193-5092-4EF7-8030-684D1572701E}" ShortID="891957138">
 							<PropertyList>
-								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
 										<Value>6</Value>
@@ -699,7 +698,6 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Big_Creature_B_RC" ID="{948F3D1C-5BFF-45B1-AFC5-417B002DF4C6}" ShortID="609834726">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
@@ -732,7 +730,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -3844,7 +3841,6 @@
 											</ValueList>
 										</Property>
 										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
-										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -4148,14 +4144,14 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>-88.83249</XPos>
-															<YPos>65.25424</YPos>
+															<XPos>-93.79157</XPos>
+															<YPos>46.20662</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>100</XPos>
-															<YPos>61.58192</YPos>
+															<XPos>99.11309</XPos>
+															<YPos>46.86331</YPos>
 															<Flags>0</Flags>
 															<Time>2000</Time>
 														</Point>

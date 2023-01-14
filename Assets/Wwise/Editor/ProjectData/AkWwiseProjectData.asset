@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585278893905707195
+    m_lastTime: -8585278824576810785
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -363,7 +363,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\00_20_AMB_RFX
     guid: 341698971ceb9b40863e917fa1b06c1c
     GuidInternal: 
-    m_lastTime: -8585285274506890804
+    m_lastTime: -8585278819376438044
     List:
     - name: AMB_RFX_SNBK
       guid: a0004eadb7fe2848b75bc9a47bf963c9
@@ -1003,7 +1003,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585278941838697269
+    m_lastTime: -8585278759989268907
     List:
     - name: Animals
       guid: 3ccb33146a699143915bbb72e632ac68
@@ -1898,7 +1898,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585279874542387050
+    m_lastTime: -8585278726650473312
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -3287,7 +3287,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_80_Spitter
     guid: 7000ddcfcb4e0442bdc8256a0975e9dc
     GuidInternal: 
-    m_lastTime: -8585278946770321364
+    m_lastTime: -8585278724239500463
     List:
     - name: Play_SFX_Spitter_Attack
       guid: e1e79fec4797074ebf154d4fd9ff2f53
@@ -4033,7 +4033,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\02_00_Music
     guid: 75e10a1d7dab424abc25cd85b9f1e2a9
     GuidInternal: 
-    m_lastTime: -8585280528545063762
+    m_lastTime: -8585278733329176652
     List:
     - name: Play_Music_Theme_Explo_Chomp
       guid: 49ad58abf5c1b7428c83bfb98b87d392
@@ -4092,6 +4092,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 15a2388c4f45de4fb4ecf79a1125b728
       Path: Events\Default Work Unit\02_00_Music\Play_Theme_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_Theme_End
+      guid: 815648b9db816b48982e9d0631f05c33
+      id: 3799695633
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 02_00_Music
+        ObjectType: 12
+        guid: 75e10a1d7dab424abc25cd85b9f1e2a9
+      - ElementName: Stop_Theme_End
+        ObjectType: 3
+        guid: 815648b9db816b48982e9d0631f05c33
+      Path: Events\Default Work Unit\02_00_Music\Stop_Theme_End
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -5425,7 +5445,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 050000000600000007000000080000000b0000000d000000870000008a0000008d0000009000000095000000
+  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000b0000000c0000000d0000001a0000001b0000001c0000001d0000001e0000001f00000020000000210000002200000023000000240000002500000026000000420000004b000000870000008a0000008d0000009000000095000000f20000000f020000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
