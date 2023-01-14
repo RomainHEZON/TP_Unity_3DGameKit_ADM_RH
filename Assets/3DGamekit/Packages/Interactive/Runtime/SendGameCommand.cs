@@ -43,6 +43,8 @@ namespace Gamekit3D.GameCommands
             lastSendTime = Time.time;
             interactiveObject.Receive(interactionType);
             if (onSendAudio) onSendAudio.PlayDelayed(audioDelay);
+            
+                
         }
 
         protected virtual void Reset()

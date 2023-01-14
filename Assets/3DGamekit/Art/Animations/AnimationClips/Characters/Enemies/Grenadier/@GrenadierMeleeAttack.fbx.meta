@@ -574,7 +574,7 @@ ModelImporter:
         messageOptions: 0
       - time: 0.15019156
         functionName: GrenadierCloseRangeAttack
-        data: Play_Attack_Close
+        data: Play_Grenadier_Attack_Close
         objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
           type: 3}
         floatParameter: 0

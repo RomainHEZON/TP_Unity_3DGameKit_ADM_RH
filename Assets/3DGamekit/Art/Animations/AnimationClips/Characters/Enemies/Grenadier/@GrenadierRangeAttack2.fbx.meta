@@ -320,7 +320,7 @@ ModelImporter:
       events:
       - time: 0.0073046703
         functionName: GrenadierRangeAttack
-        data: Play_Attack_Range_Fire
+        data: Play_Grenadier_Attack_Range_Fire
         objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
           type: 3}
         floatParameter: 0

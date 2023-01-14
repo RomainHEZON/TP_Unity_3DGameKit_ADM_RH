@@ -40,29 +40,28 @@ public class Enemies_Wwise_Trigger_Manager : MonoBehaviour
 
     public void GrenadierRangeAttack()
     {
-        AkSoundEngine.PostEvent("Play_Attack_Range_Fire", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Grenadier_Attack_Range_Fire", this.gameObject);
     }
 
     public void GrenadierShield()
     {
-        AkSoundEngine.PostEvent("Play_Shield", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Grenadier_Shield", this.gameObject);
     }
 
     public void GrenadierCloseRangeAttack()
     {
-        AkSoundEngine.PostEvent("Play_Attack_Close", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Grenadier_Attack_Close", this.gameObject);
     }
 
     public void GrenadierGetHit()
     {
-        AkSoundEngine.PostEvent("Play_Get_Hit_Behind", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Grenadier_Get_Hit_Behind", this.gameObject);
     }
 
     public void GrenadierDeath()
     {
         AkSoundEngine.PostEvent("Play_Grenadier_Death", this.gameObject);
     }
-
 
     public void GrenadierVOAttack()
     {

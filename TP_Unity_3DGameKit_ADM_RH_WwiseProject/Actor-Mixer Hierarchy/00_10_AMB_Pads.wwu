@@ -70,6 +70,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -658,6 +659,7 @@
 										<Sound Name="AMB_PAD_Lake" ID="{2C4DF746-DDAF-4B34-BC59-7B099F4504DE}" ShortID="537366584">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
@@ -667,6 +669,11 @@
 												<Property Name="IsStreamingEnabled" Type="bool">
 													<ValueList>
 														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
 													</ValueList>
 												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -807,6 +814,11 @@
 								<BlendContainer Name="Spaceship_BC" ID="{0EA56E67-DBFA-4C2B-9882-5361EC4B8EB5}" ShortID="465670112">
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
@@ -994,6 +1006,7 @@
 									<ChildrenList>
 										<Sound Name="AMB_Spaceship_In_Loop" ID="{5A6C9188-8F8D-4820-9F80-80E97036CD7F}" ShortID="279458531">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1001,6 +1014,7 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -1033,6 +1047,7 @@
 										</Sound>
 										<Sound Name="AMB_Spaceship_Out_Loop" ID="{7CBFA213-3953-4AEB-A602-C3E6234DBBA1}" ShortID="737035490">
 											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
@@ -1040,6 +1055,7 @@
 														<Value>1</Value>
 													</ValueList>
 												</Property>
+												<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 												<Property Name="UseMaxSoundPerInstance" Type="bool">
 													<ValueList>
 														<Value>True</Value>
@@ -1119,6 +1135,7 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1644,6 +1661,7 @@
 										</Property>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
@@ -2790,7 +2808,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>30</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>37</Flags>
 																		</Point>
 																	</PointList>

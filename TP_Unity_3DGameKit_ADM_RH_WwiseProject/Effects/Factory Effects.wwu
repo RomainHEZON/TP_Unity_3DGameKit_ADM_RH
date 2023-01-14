@@ -1721,6 +1721,19 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
+						<Effect Name="Big_Creature_B_Rvb" ID="{F45EE2A7-8B4F-449F-A17E-D786BA356B3F}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+							<PropertyList>
+								<Property Name="DecayTime" Type="Real32" Value="3"/>
+								<Property Name="Density" Type="Real32" Value="25"/>
+								<Property Name="DryLevel" Type="Real32" Value="-13.3"/>
+								<Property Name="ERPattern" Type="int32" Value="15"/>
+								<Property Name="EnableToneControls" Type="bool" Value="True"/>
+								<Property Name="Filter3Freq" Type="Real32" Value="5500"/>
+								<Property Name="Filter3Gain" Type="Real32" Value="-9.5"/>
+								<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+								<Property Name="RoomShape" Type="Real32" Value="92"/>
+							</PropertyList>
+						</Effect>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Flanger" ID="{7DAC593F-E45C-42D6-9C69-23A9DEC47B9D}" ShortID="177523455">

@@ -87,7 +87,7 @@ namespace Gamekit3D
         public void Explosion()
         {
 
-            AkSoundEngine.PostEvent("Play_Attack_Range_Explosion", this.gameObject);
+            AkSoundEngine.PostEvent("Play_Grenadier_Attack_Range_Bounce", this.gameObject);
 
             if (explosionPlayer)
             {
@@ -141,7 +141,7 @@ namespace Gamekit3D
         {
             if (bouncePlayer != null)
                 // bouncePlayer.PlayRandomClip();
-                AkSoundEngine.PostEvent("Play_Attack_Range_Explosion", this.gameObject);
+                AkSoundEngine.PostEvent("Play_Grenadier_Attack_Range_Explosion", this.gameObject);
         }
 
         private Vector3 GetVelocity(Vector3 target)

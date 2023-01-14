@@ -212,6 +212,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_Big_Creature_B" ID="{D2AF0C01-D6E7-41B9-8F8C-AE99D4230E6E}">
+							<ChildrenList>
+								<Action Name="" ID="{7A5BE940-6607-4F06-A693-DD5449B6A1B3}" ShortID="917840673">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Big_Creature_B_RC" ID="{948F3D1C-5BFF-45B1-AFC5-417B002DF4C6}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Environment" ID="{5FD113A7-4DE3-4FBA-AD8C-2309D18190E8}" ShortID="299913417">

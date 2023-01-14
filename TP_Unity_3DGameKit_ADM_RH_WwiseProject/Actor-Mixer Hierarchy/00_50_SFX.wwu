@@ -243,6 +243,12 @@
 								</Sound>
 								<RandomSequenceContainer Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" ShortID="1036061245">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -257,6 +263,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-13</Value>
@@ -386,6 +397,12 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Alien_Staff_Hit_Metal_RC" ID="{51F9EBF7-42E2-4C72-B3DE-F096A5D05C7F}" ShortID="171311625">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -400,6 +417,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-6</Value>
@@ -507,6 +529,12 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Alien_Staff_Hit_Rock_RC" ID="{2C0BAF5D-B8BD-4297-8BE4-9A9ED2D951F5}" ShortID="215202112">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -521,6 +549,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -628,6 +661,12 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Alien_Staff_Hit_Vegetation_RC" ID="{868287AA-B20B-452A-B816-CFC95FDA7D8C}" ShortID="240569917">
 									<PropertyList>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -642,6 +681,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-8</Value>
@@ -1733,7 +1777,6 @@
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>
@@ -1787,9 +1830,16 @@
 												<MediaID ID="186637930"/>
 											</MediaIDList>
 										</AudioFileSource>
+										<AudioFileSource Name="SFX_Pressure_Pad_Activated_01" ID="{6CBFA179-442F-4B29-A8EA-3DE8482F4A23}">
+											<Language>SFX</Language>
+											<AudioFile>SFX_Pressure_Pad_Activated.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="820364213"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="SFX_Pressure_Pad_Activated" ID="{8272FAF0-9312-4338-ABD4-60FEC5F14FAB}" Platform="Linked"/>
+										<ActiveSource Name="SFX_Pressure_Pad_Activated_01" ID="{6CBFA179-442F-4B29-A8EA-3DE8482F4A23}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="SFX_Pressure_Pad_Idle_Loop" ID="{2003DC78-90ED-47FA-A907-369EAD39E424}" ShortID="71486606">
@@ -2370,6 +2420,12 @@
 												<Value>5</Value>
 											</ValueList>
 										</Property>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
@@ -2380,6 +2436,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2641,6 +2702,11 @@
 						</ActorMixer>
 						<Sound Name="SFX_Death_Stinger" ID="{7D4938C5-0719-4976-9439-EDEDDD051327}" ShortID="354015593">
 							<PropertyList>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -2653,6 +2719,11 @@
 											</Modifier>
 										</ModifierInfo>
 									</ModifierList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -4110,7 +4181,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_10m" ID="{0B27E7AE-D886-47C9-A7D0-22F4FE5905C8}" WorkUnitID="{460CB990-94F0-4D03-9E31-ED83591B2D9B}"/>
+									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -4130,6 +4201,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>18</Value>
+											</ValueList>
+										</Property>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
@@ -4178,6 +4254,11 @@
 										<Property Name="CenterPercentage" Type="int32">
 											<ValueList>
 												<Value>100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>18</Value>
 											</ValueList>
 										</Property>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -4235,7 +4316,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4262,15 +4343,10 @@
 								</Sound>
 								<RandomSequenceContainer Name="First_Moving_Platform" ID="{4E680457-98D1-4E06-A180-FE49E9CA050F}" ShortID="738348527">
 									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>1.5</Value>
-											</ValueList>
-										</Property>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<ValueList>
-												<Value>10</Value>
+												<Value>18</Value>
 											</ValueList>
 										</Property>
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -4298,11 +4374,6 @@
 												<Value>True</Value>
 											</ValueList>
 										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-6</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -4320,6 +4391,11 @@
 												<Property Name="CenterPercentage" Type="int32">
 													<ValueList>
 														<Value>100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
 													</ValueList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -4362,6 +4438,11 @@
 														<Value>100</Value>
 													</ValueList>
 												</Property>
+												<Property Name="Inclusion" Type="bool">
+													<ValueList>
+														<Value>False</Value>
+													</ValueList>
+												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
@@ -4384,6 +4465,36 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="SFX_Moving_Platform_Loop_02" ID="{4BF89739-A0A2-4ADF-98A6-03B7EF9BBE2F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="SFX_Moving_Platform_Loop_04" ID="{1BA757E0-5FB9-4DAE-B278-40E7B39573FA}" ShortID="992226483">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="SFX_Moving_Platform_Loop_04" ID="{238EE2F6-DA15-4E23-A23C-A1D1D3D270EB}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.251677616155158"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.25168"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>SFX_Moving_Platform_Loop_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="393822008"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="SFX_Moving_Platform_Loop_04" ID="{238EE2F6-DA15-4E23-A23C-A1D1D3D270EB}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
