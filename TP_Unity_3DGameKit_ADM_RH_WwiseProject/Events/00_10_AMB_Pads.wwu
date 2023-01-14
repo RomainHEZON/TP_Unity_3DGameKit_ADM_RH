@@ -158,17 +158,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Rain" ID="{4CBE46DE-3059-48BD-9F3E-1C09896CB0F9}">
-					<ChildrenList>
-						<Action Name="" ID="{5FC10F1A-1BEC-4837-8003-0C6C5B296004}" ShortID="169466335">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Rain_BC" ID="{50D7EEB7-F9A4-47AC-AAC8-6B9ABCA0BC6C}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
