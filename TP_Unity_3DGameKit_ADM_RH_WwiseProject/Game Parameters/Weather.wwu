@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BA241BE9-2316-4368-A98D-D6E05B3BFB64}" SchemaVersion="110" RootDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" ParentDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}">
+	<GameParameters>
+		<WorkUnit Name="Weather" ID="{BA241BE9-2316-4368-A98D-D6E05B3BFB64}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Rain_Intensity" ID="{23C4EE28-5D9E-4124-9A75-5C738CF9079D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

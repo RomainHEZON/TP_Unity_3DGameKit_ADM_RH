@@ -64,6 +64,7 @@ namespace AK
         static const AkUniqueID PLAY_MUSIC_THEME_GRENADIER_END = 2441234825U;
         static const AkUniqueID PLAY_PAD_WIND_CAVERN = 1518027650U;
         static const AkUniqueID PLAY_RADIO_RFX = 2368356374U;
+        static const AkUniqueID PLAY_RAIN = 2838936948U;
         static const AkUniqueID PLAY_SFX_AFTER_ACTIVATION = 1380322271U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_IDLE = 2116431113U;
         static const AkUniqueID PLAY_SFX_ALIEN_STAFF_PICKUP = 1472032783U;
@@ -266,6 +267,7 @@ namespace AK
         static const AkUniqueID LAYER_STAFF_RTPC = 2885604103U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
+        static const AkUniqueID RAIN_INTENSITY = 2520241501U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;
         static const AkUniqueID SPACESHIP_AMB = 3545834150U;
         static const AkUniqueID STAFF_IDLE_SFX = 1334832914U;
