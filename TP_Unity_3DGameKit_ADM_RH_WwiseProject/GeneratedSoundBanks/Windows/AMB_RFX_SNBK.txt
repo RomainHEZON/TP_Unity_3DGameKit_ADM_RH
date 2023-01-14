@@ -1,19 +1,22 @@
 Event	ID	Name			Wwise Object Path	Notes
-	267936516	Play_Big_Creature_A			\Default Work Unit\00_20_AMB_RFX\Play_Big_Creature_A	
-	489161007	Play_Mouse_RC			\Default Work Unit\00_20_AMB_RFX\Play_Mouse_RC	
-	576298738	Play_Blackbird			\Default Work Unit\00_20_AMB_RFX\Play_Blackbird	
-	608979577	Play_Magic_Cave			\Default Work Unit\00_20_AMB_RFX\Play_Magic_Cave	
-	1108366744	Play_ExoticAnimal			\Default Work Unit\00_20_AMB_RFX\Play_ExoticAnimal	
-	1667970722	Play_Eeldog_Emerge			\Default Work Unit\00_20_AMB_RFX\Play_Eeldog_Emerge	
-	1856533232	Play_Small_Cavern_Animal			\Default Work Unit\00_20_AMB_RFX\Play_Small_Cavern_Animal	
-	1914994186	Play_Spaceship_Landing			\Default Work Unit\00_20_AMB_RFX\Play_Spaceship_Landing	
-	1977240871	Play_Eeldog_Dive			\Default Work Unit\00_20_AMB_RFX\Play_Eeldog_Dive	
-	2070617240	Play_AMB_RFX_Morse_Code			\Default Work Unit\00_20_AMB_RFX\Play_AMB_RFX_Morse_Code	
-	2302152007	Play_Insect_Wings_RC			\Default Work Unit\00_20_AMB_RFX\Play_Insect_Wings_RC	
-	2368356374	Play_Radio_RFX			\Default Work Unit\00_20_AMB_RFX\Play_Radio_RFX	
-	3025897706	Play_Birds			\Default Work Unit\00_20_AMB_RFX\Play_Birds	
-	3521962842	Play_Vine			\Default Work Unit\00_20_AMB_RFX\Play_Vine	
-	4161070465	Play_Fireflies			\Default Work Unit\00_20_AMB_RFX\Play_Fireflies	
+	267936516	Play_Big_Creature_A			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Big_Creature_A	
+	489161007	Play_Mouse_RC			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Mouse_RC	
+	576298738	Play_Blackbird			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Blackbird	
+	608979577	Play_Magic_Cave			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Magic_Cave	
+	1108366744	Play_ExoticAnimal			\Default Work Unit\00_20_AMB_RFX\Animals\Play_ExoticAnimal	
+	1667970722	Play_Eeldog_Emerge			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Eeldog_Emerge	
+	1810252861	Play_Spaceship_Landing_Smoke_Ring			\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Spaceship_Landing_Smoke_Ring	
+	1856533232	Play_Small_Cavern_Animal			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Small_Cavern_Animal	
+	1914994186	Play_Spaceship_Landing			\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Spaceship_Landing	
+	1977240871	Play_Eeldog_Dive			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Eeldog_Dive	
+	2070617240	Play_AMB_RFX_Morse_Code			\Default Work Unit\00_20_AMB_RFX\Animals\Play_AMB_RFX_Morse_Code	
+	2368356374	Play_Radio_RFX			\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Radio_RFX	
+	3025897706	Play_Birds			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Birds	
+	3160320211	Play_Bat			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Bat	
+	3319002231	Play_Insect_Wings			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Insect_Wings	
+	3347638874	Play_Engine_BC			\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Engine_BC	
+	3521962842	Play_Vine			\Default Work Unit\00_20_AMB_RFX\Environment\Play_Vine	
+	4161070465	Play_Fireflies			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Fireflies	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2504666941	Fireflies_AMB			\Default Work Unit\Distance\Fireflies_AMB	
@@ -23,6 +26,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	1024065430	Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_B_RC\Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	16935096	AMB_RFX_Spaceship_Engine_Ignite_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Engine_Ignite_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship_Mixer\Engine_BC\AMB_RFX_Spaceship_Engine_Ignite_RC\AMB_RFX_Spaceship_Engine_Ignite_02		525872
 	45181008	AMB_RFX_Bird_B_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Birds\AMB_RFX_Bird_B_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_B_RC\AMB_RFX_Bird_B_01		96096
 	58659275	AMB_RFX_Exotic_Animal_06	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Exotic Animal\AMB_RFX_Exotic_Animal_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\ExoticAnimal_RC\AMB_RFX_Exotic_Animal_06		266014
 	58892106	AMB_RFX_Bird_A_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Birds\AMB_RFX_Bird_A_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_A_RC\AMB_RFX_Bird_A_03		272346
@@ -59,6 +63,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	405218810	SFX_Spaceship_Landing	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Spaceship_Landing_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship_Mixer\SFX_Spaceship_Landing		1260908
 	419452041	SFX_Eeldog_Dive_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Eeldog_Dive_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Eeldog_Dive_RC\SFX_Eeldog_Dive_02		139096
 	443039091	AMB_RFX_Insect_Wings_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Insect_Wings_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Insect_Wings_RC\AMB_RFX_Insect_Wings_05		201924
+	443159604	AMB_RFX_Bat_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Bat_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Bat_RC\AMB_RFX_Bat_03		228320
+	476675435	AMB_RFX_Spaceship_Engine_Loop_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Engine_Loop_01_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship_Mixer\Engine_BC\AMB_RFX_Spaceship_Engine_Loop_01		432096
 	490678185	AMB_RFX_Fireflies_Idle_Loop_04	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Fireflies_Idle_Loop_04_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Fireflies_BC\Fireflies_Idle_RC\AMB_RFX_Fireflies_Idle_Loop_04		485428
 	491137694	AMB_RFX_Bird_A_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Birds\AMB_RFX_Bird_A_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_A_RC\AMB_RFX_Bird_A_01		287696
 	508323334	AMB_RFX_Fireflies_PassBy_04	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Fireflies_PassBy_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Fireflies_BC\Fireflies_PassBy_RC\AMB_RFX_Fireflies_PassBy_04		80486
@@ -67,7 +73,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	518094919	AMB_RFX_Small_Animal_Tunnel_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Small_Animal_Tunnel_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Small_Cavern_Animal\AMB_RFX_Small_Animal_Tunnel_01		93070
 	520937577	AMB_RFX_Big_Creature_A_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Big Creature\AMB_RFX_Big_Creature_A_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Big_Creature_A_RC\AMB_RFX_Big_Creature_A_01		322772
 	524031497	AMB_RFX_Mouse_Squeaking_04	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Mouse_Squeaking_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Mouse_RC\AMB_RFX_Mouse_Squeaking_04		211296
+	551008318	AMB_RFX_Bat_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Bat_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Bat_RC\AMB_RFX_Bat_01		496048
+	571206198	AMB_RFX_Bat_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Bat_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Bat_RC\AMB_RFX_Bat_02		240648
+	575103119	AMB_RFX_Spaceship_Engine_Loop_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Engine_Loop_02_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship_Mixer\Engine_BC\AMB_RFX_Spaceship_Engine_Loop_02		928096
 	603274176	AMB_RFX_Bird_A_08	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Birds\AMB_RFX_Bird_A_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_A_RC\AMB_RFX_Bird_A_08		269986
+	671760884	AMB_RFX_Spaceship_Landing_Smoke_Ring	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Landing_Smoke_Ring_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship_Mixer\AMB_RFX_Spaceship_Landing_Smoke_Ring		866756
 	675356668	AMB_RFX_Bird_A_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Birds\AMB_RFX_Bird_A_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_A_RC\AMB_RFX_Bird_A_05		274346
 	713597815	AMB_RFX_Bird_B_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Birds\AMB_RFX_Bird_B_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Birds_SC\Bird_B_RC\AMB_RFX_Bird_B_05		103196
 	734682423	AMB_RFX_Fireflies_PassBy_08	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Fireflies_PassBy_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Fireflies_BC\Fireflies_PassBy_RC\AMB_RFX_Fireflies_PassBy_08		60476
@@ -80,6 +90,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	810163818	AMB_RFX_Small_Animal_Tunnel_03	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Small_Animal_Tunnel_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Small_Cavern_Animal\AMB_RFX_Small_Animal_Tunnel_03		124034
 	825515633	AMB_RFX_Big_Creature_A_02	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Big Creature\AMB_RFX_Big_Creature_A_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Big_Creature_A_RC\AMB_RFX_Big_Creature_A_02		322772
 	854435344	AMB_RFX_Blackbird_05	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\Blackbird\AMB_RFX_Blackbird_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Blackbird_RC\AMB_RFX_Blackbird_05		146944
+	882196998	AMB_RFX_Spaceship_Engine_Ignite_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Spaceship_Engine_Ignite_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Spaceship_Mixer\Engine_BC\AMB_RFX_Spaceship_Engine_Ignite_RC\AMB_RFX_Spaceship_Engine_Ignite_01		548960
 	885711875	AMB_RFX_Insect_Wings_07	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Insect_Wings_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Insect_Wings_RC\AMB_RFX_Insect_Wings_07		261594
 	895597812	AMB_RFX_Fireflies_PassBy_07	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Fireflies_PassBy_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Animals_Mixer\Fireflies_BC\Fireflies_PassBy_RC\AMB_RFX_Fireflies_PassBy_07		76706
 	903885790	AMB_RFX_Vine_01	D:\1- AUDIO WORKSHOP\UNITY\TP\TP FINAL\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\AMB_RFX_Vine_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_20_AMB_RFX\RFX_Mixer\Vine_RC\AMB_RFX_Vine_01		148812

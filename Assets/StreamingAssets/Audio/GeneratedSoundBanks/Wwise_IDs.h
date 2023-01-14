@@ -23,6 +23,8 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_EXTERIOR_CAVERN = 2661178611U;
         static const AkUniqueID PLAY_AMB_PAD_HUGE_DOOR_CRYSTAL = 26858146U;
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
+        static const AkUniqueID PLAY_AMB_PAD_LAVA = 1525023005U;
+        static const AkUniqueID PLAY_AMB_PAD_TUNNEL_01 = 3971361117U;
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
         static const AkUniqueID PLAY_AMB_PAD_WIND = 1205748041U;
         static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE = 2070617240U;
@@ -30,6 +32,7 @@ namespace AK
         static const AkUniqueID PLAY_ATTACK_RANGE_BOUNCE = 2579342955U;
         static const AkUniqueID PLAY_ATTACK_RANGE_EXPLOSION = 3013215836U;
         static const AkUniqueID PLAY_ATTACK_RANGE_FIRE = 3818987871U;
+        static const AkUniqueID PLAY_BAT = 3160320211U;
         static const AkUniqueID PLAY_BIG_CREATURE_A = 267936516U;
         static const AkUniqueID PLAY_BIRDS = 3025897706U;
         static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
@@ -40,6 +43,7 @@ namespace AK
         static const AkUniqueID PLAY_EELDOG_EMERGE = 1667970722U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
+        static const AkUniqueID PLAY_ENGINE_BC = 3347638874U;
         static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
         static const AkUniqueID PLAY_FIREFLIES = 4161070465U;
         static const AkUniqueID PLAY_FOL_IDLE = 1819119386U;
@@ -53,7 +57,7 @@ namespace AK
         static const AkUniqueID PLAY_GRENADIER_SHIELD = 198525027U;
         static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
         static const AkUniqueID PLAY_GRENADIER_VOX_GETHIT = 2993140481U;
-        static const AkUniqueID PLAY_INSECT_WINGS_RC = 2302152007U;
+        static const AkUniqueID PLAY_INSECT_WINGS = 3319002231U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
         static const AkUniqueID PLAY_MOUSE_RC = 489161007U;
         static const AkUniqueID PLAY_MUSIC_THEME_EXPLO_CHOMP = 3783934524U;
@@ -90,7 +94,6 @@ namespace AK
         static const AkUniqueID PLAY_SFX_SPITTER_ATTACK = 2947962612U;
         static const AkUniqueID PLAY_SFX_SPITTER_DEATH = 491520918U;
         static const AkUniqueID PLAY_SFX_SPITTER_HIT = 2456017719U;
-        static const AkUniqueID PLAY_SFX_SPITTER_HIT_GROUND = 2055328011U;
         static const AkUniqueID PLAY_SFX_SPITTER_SPIT_LOOP = 1346613187U;
         static const AkUniqueID PLAY_SFX_SPITTER_SPOTTED = 3780863511U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
@@ -99,6 +102,7 @@ namespace AK
         static const AkUniqueID PLAY_SMALL_CAVERN_ANIMAL = 1856533232U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
         static const AkUniqueID PLAY_SPACESHIP_LANDING = 1914994186U;
+        static const AkUniqueID PLAY_SPACESHIP_LANDING_SMOKE_RING = 1810252861U;
         static const AkUniqueID PLAY_THEME_END = 2987996311U;
         static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
@@ -126,6 +130,7 @@ namespace AK
         static const AkUniqueID SET_STATE_FIGHT_GRENADIER = 407065776U;
         static const AkUniqueID STOP_ALL_EVENTS = 171421511U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
+        static const AkUniqueID STOP_SFX_SPITTER_SPIT = 2488434516U;
     } // namespace EVENTS
 
     namespace STATES
@@ -293,12 +298,8 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID BUS_AMB = 17439960U;
-        static const AkUniqueID BUS_CHOMPER_ATTACK = 4109016909U;
-        static const AkUniqueID BUS_CHOMPER_FT = 3378702191U;
         static const AkUniqueID BUS_ELLEN = 2766202208U;
         static const AkUniqueID BUS_ENNEMIES = 1592365332U;
-        static const AkUniqueID BUS_GRENADIER_ATTACK = 1763209118U;
-        static const AkUniqueID BUS_GRENADIER_FT = 112561660U;
         static const AkUniqueID BUS_MUSIC = 1162281553U;
         static const AkUniqueID BUS_PADS = 3056742518U;
         static const AkUniqueID BUS_PREMASTER_01 = 2367965617U;

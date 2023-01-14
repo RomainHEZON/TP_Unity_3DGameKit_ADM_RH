@@ -708,9 +708,9 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0
-        functionName: NewEvent
-        data: Play_Chomper_FT_Walk
+      - time: 0.040498443
+        functionName: ChomperSpotted
+        data: Play_SFX_Chomper_Spotted
         objectReferenceParameter: {fileID: 1722084123150156, guid: e9569c7e13e51264082910415a120d38,
           type: 3}
         floatParameter: 0

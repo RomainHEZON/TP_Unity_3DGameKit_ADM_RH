@@ -94,4 +94,12 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
     }
 
 
+    public void SpaceshipSmokeRing()
+    {
+        AkSoundEngine.PostEvent("Play_Spaceship_Landing_Smoke_Ring", this.gameObject);
+
+    }
+
+
+
 }

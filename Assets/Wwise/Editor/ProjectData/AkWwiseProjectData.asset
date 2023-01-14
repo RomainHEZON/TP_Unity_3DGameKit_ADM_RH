@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585279652851726117
+    m_lastTime: -8585278994145250086
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -63,58 +63,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: caa637f79f16d64cb2816990970126ea
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB
-    - name: Bus_Chomper_Attack
-      guid: b7a171b6eb2b4644b53c3c6690aed61d
-      id: 4109016909
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8af059c48109b9438ca4de2f6b4c5b14
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster_02
-        ObjectType: 2
-        guid: 52c9cfee0206f7419e402578baab1e4a
-      - ElementName: Bus_PreMaster_01
-        ObjectType: 2
-        guid: de2e00a3e4b69740b700acb5e6c5d521
-      - ElementName: Bus_Ennemies
-        ObjectType: 2
-        guid: 68e45d0af7aef447b330a86fb4686ab6
-      - ElementName: Bus_Chomper_Attack
-        ObjectType: 2
-        guid: b7a171b6eb2b4644b53c3c6690aed61d
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Chomper_Attack
-    - name: Bus_Chomper_FT
-      guid: 7076adc6b4c7ac4595ac831fb98c1396
-      id: 3378702191
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8af059c48109b9438ca4de2f6b4c5b14
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster_02
-        ObjectType: 2
-        guid: 52c9cfee0206f7419e402578baab1e4a
-      - ElementName: Bus_PreMaster_01
-        ObjectType: 2
-        guid: de2e00a3e4b69740b700acb5e6c5d521
-      - ElementName: Bus_Ennemies
-        ObjectType: 2
-        guid: 68e45d0af7aef447b330a86fb4686ab6
-      - ElementName: Bus_Chomper_FT
-        ObjectType: 2
-        guid: 7076adc6b4c7ac4595ac831fb98c1396
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Chomper_FT
     - name: Bus_Ellen
       guid: c5346648256a214bbc89527ee24d29ab
       id: 2766202208
@@ -161,58 +109,6 @@ MonoBehaviour:
         ObjectType: 2
         guid: 68e45d0af7aef447b330a86fb4686ab6
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies
-    - name: Bus_Grenadier_Attack
-      guid: 5307cd8b25fce642a65320d7ff6f9b1d
-      id: 1763209118
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8af059c48109b9438ca4de2f6b4c5b14
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster_02
-        ObjectType: 2
-        guid: 52c9cfee0206f7419e402578baab1e4a
-      - ElementName: Bus_PreMaster_01
-        ObjectType: 2
-        guid: de2e00a3e4b69740b700acb5e6c5d521
-      - ElementName: Bus_Ennemies
-        ObjectType: 2
-        guid: 68e45d0af7aef447b330a86fb4686ab6
-      - ElementName: Bus_Grenadier_Attack
-        ObjectType: 2
-        guid: 5307cd8b25fce642a65320d7ff6f9b1d
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Grenadier_Attack
-    - name: Bus_Grenadier_FT
-      guid: fa069f90447c6846aa255457cccb6d97
-      id: 112561660
-      PathAndIcons:
-      - ElementName: Master-Mixer Hierarchy
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 8af059c48109b9438ca4de2f6b4c5b14
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-        guid: d8a41415a61d2a41a17e75ca0c2149f3
-      - ElementName: Bus_PreMaster_02
-        ObjectType: 2
-        guid: 52c9cfee0206f7419e402578baab1e4a
-      - ElementName: Bus_PreMaster_01
-        ObjectType: 2
-        guid: de2e00a3e4b69740b700acb5e6c5d521
-      - ElementName: Bus_Ennemies
-        ObjectType: 2
-        guid: 68e45d0af7aef447b330a86fb4686ab6
-      - ElementName: Bus_Grenadier_FT
-        ObjectType: 2
-        guid: fa069f90447c6846aa255457cccb6d97
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Grenadier_FT
     - name: Bus_Music
       guid: 2b21c4bae6665c4e908a3c6643b122bc
       id: 1162281553
@@ -828,7 +724,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585279780896131114
+    m_lastTime: -8585279065418663789
     List:
     - name: Play_AMB_PAD_Acid_Lake
       guid: 4118487e8bd4fa49ba38c57375ec3957
@@ -950,6 +846,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Play_AMB_PAD_Lava
+      guid: 75e3bca377d4f74186c610bb21c38830
+      id: 1525023005
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_10_AMB_Pads
+        ObjectType: 12
+        guid: 17f071bb4f794046a0ac6cb855b1de9d
+      - ElementName: Play_AMB_PAD_Lava
+        ObjectType: 3
+        guid: 75e3bca377d4f74186c610bb21c38830
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Lava
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_AMB_PAD_Tunnel_01
+      guid: 1e98df7bdbf76d488285cc0559c47c0d
+      id: 3971361117
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_10_AMB_Pads
+        ObjectType: 12
+        guid: 17f071bb4f794046a0ac6cb855b1de9d
+      - ElementName: Play_AMB_PAD_Tunnel_01
+        ObjectType: 3
+        guid: 1e98df7bdbf76d488285cc0559c47c0d
+      Path: Events\Default Work Unit\00_10_AMB_Pads\Play_AMB_PAD_Tunnel_01
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_AMB_PAD_Wetland
       guid: 96eba34426e1ea42b86a8ec8e7918906
       id: 3800059594
@@ -1067,8 +1003,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585279652850563731
+    m_lastTime: -8585279123322232472
     List:
+    - name: Animals
+      guid: 3ccb33146a699143915bbb72e632ac68
+      id: 949388280
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Environment
+      guid: a713d15fe34dba4fad8c2309d18190e8
+      id: 1229948536
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Environment
+        ObjectType: 4
+        guid: a713d15fe34dba4fad8c2309d18190e8
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Environment
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_AMB_RFX_Morse_Code
       guid: c5757ecf13cc124dba1598e650d5779e
       id: 2070617240
@@ -1082,10 +1058,36 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_AMB_RFX_Morse_Code
         ObjectType: 3
         guid: c5757ecf13cc124dba1598e650d5779e
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_AMB_RFX_Morse_Code
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_AMB_RFX_Morse_Code
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Bat
+      guid: dc26b1a49160ff4f899e790ba64aaa67
+      id: 3160320211
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
+      - ElementName: Play_Bat
+        ObjectType: 3
+        guid: dc26b1a49160ff4f899e790ba64aaa67
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Bat
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1102,10 +1104,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Big_Creature_A
         ObjectType: 3
         guid: f875d2877f8530438ced50ed0e7f28e3
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Big_Creature_A
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Big_Creature_A
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1122,10 +1127,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Birds
         ObjectType: 3
         guid: 1b4b67347aa4554a8143762295e5658a
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Birds
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Birds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1142,10 +1150,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Blackbird
         ObjectType: 3
         guid: 98f74b340e92d3429562cc5ecb8b37ca
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Blackbird
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Blackbird
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1162,10 +1173,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Eeldog_Dive
         ObjectType: 3
         guid: d39faaff94be2b41a7d3660301927423
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Eeldog_Dive
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Eeldog_Dive
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1182,10 +1196,36 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Eeldog_Emerge
         ObjectType: 3
         guid: 8d0a068804cffc41a0fd9016ea710662
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Eeldog_Emerge
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Eeldog_Emerge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Engine_BC
+      guid: b445a4e1cffc9e4e818f0e308039b9e5
+      id: 3347638874
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Spaceship
+        ObjectType: 4
+        guid: dfedb7384f513e4e957f9ba71202f2a5
+      - ElementName: Play_Engine_BC
+        ObjectType: 3
+        guid: b445a4e1cffc9e4e818f0e308039b9e5
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Engine_BC
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1202,10 +1242,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_ExoticAnimal
         ObjectType: 3
         guid: 9f4ef8fa036aa74185470510eb3fc28a
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_ExoticAnimal
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_ExoticAnimal
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1222,16 +1265,19 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Fireflies
         ObjectType: 3
         guid: a3685b217df29143935853754317b111
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Fireflies
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Fireflies
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_Insect_Wings_RC
+    - name: Play_Insect_Wings
       guid: c9fc4fdee20d1a439ea2feb07394da0e
-      id: 2302152007
+      id: 3319002231
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -1242,10 +1288,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
-      - ElementName: Play_Insect_Wings_RC
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
+      - ElementName: Play_Insect_Wings
         ObjectType: 3
         guid: c9fc4fdee20d1a439ea2feb07394da0e
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Insect_Wings_RC
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Insect_Wings
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1262,10 +1311,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Magic_Cave
         ObjectType: 3
         guid: 66603a815d65d04d8b1fb4c94a05dfcb
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Magic_Cave
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Magic_Cave
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1282,10 +1334,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Mouse_RC
         ObjectType: 3
         guid: 4f7e1c4ca1c9554c9169add124671910
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Mouse_RC
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Mouse_RC
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1302,10 +1357,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Spaceship
+        ObjectType: 4
+        guid: dfedb7384f513e4e957f9ba71202f2a5
       - ElementName: Play_Radio_RFX
         ObjectType: 3
         guid: 6200b1168d87e3479e54ca4a9020cf93
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Radio_RFX
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Radio_RFX
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1322,10 +1380,13 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
       - ElementName: Play_Small_Cavern_Animal
         ObjectType: 3
         guid: a9c10970401ca54d9f42d441d7890255
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Small_Cavern_Animal
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Small_Cavern_Animal
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1342,10 +1403,36 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Spaceship
+        ObjectType: 4
+        guid: dfedb7384f513e4e957f9ba71202f2a5
       - ElementName: Play_Spaceship_Landing
         ObjectType: 3
         guid: 351088bb6602cb489e7c41eaae251191
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Spaceship_Landing
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Spaceship_Landing
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Spaceship_Landing_Smoke_Ring
+      guid: d62ee7f05a5bb64cb1b1c3b163d8dbf3
+      id: 1810252861
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Spaceship
+        ObjectType: 4
+        guid: dfedb7384f513e4e957f9ba71202f2a5
+      - ElementName: Play_Spaceship_Landing_Smoke_Ring
+        ObjectType: 3
+        guid: d62ee7f05a5bb64cb1b1c3b163d8dbf3
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Spaceship_Landing_Smoke_Ring
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1362,10 +1449,33 @@ MonoBehaviour:
       - ElementName: 00_20_AMB_RFX
         ObjectType: 12
         guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Environment
+        ObjectType: 4
+        guid: a713d15fe34dba4fad8c2309d18190e8
       - ElementName: Play_Vine
         ObjectType: 3
         guid: ce2a4f829758d546afdde98cb66f726d
-      Path: Events\Default Work Unit\00_20_AMB_RFX\Play_Vine
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Environment\Play_Vine
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Spaceship
+      guid: dfedb7384f513e4e957f9ba71202f2a5
+      id: 554650843
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Spaceship
+        ObjectType: 4
+        guid: dfedb7384f513e4e957f9ba71202f2a5
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Spaceship
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2822,7 +2932,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_60_Chomper
     guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
     GuidInternal: 
-    m_lastTime: -8585282575374092809
+    m_lastTime: -8585279037343226648
     List:
     - name: Play_Chomper_FT_Walk
       guid: 11f5b711056a584ba5c69a8b2ee9fcd6
@@ -2905,7 +3015,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Play_SFX_Chomper_Spotted
-      guid: 0324a4cb67103448abdb114d822cc061
+      guid: b625202c29e38c46a070e2eedf782898
       id: 578550610
       PathAndIcons:
       - ElementName: Events
@@ -2919,7 +3029,7 @@ MonoBehaviour:
         guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
       - ElementName: Play_SFX_Chomper_Spotted
         ObjectType: 3
-        guid: 0324a4cb67103448abdb114d822cc061
+        guid: b625202c29e38c46a070e2eedf782898
       Path: Events\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Spotted
       maxAttenuation: 0
       maxDuration: -1
@@ -3174,7 +3284,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_80_Spitter
     guid: 7000ddcfcb4e0442bdc8256a0975e9dc
     GuidInternal: 
-    m_lastTime: -8585279652850729195
+    m_lastTime: -8585279037343205178
     List:
     - name: Play_SFX_Spitter_Attack
       guid: e1e79fec4797074ebf154d4fd9ff2f53
@@ -3236,26 +3346,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Play_SFX_Spitter_Hit_Ground
-      guid: e11c5efe5253344696748af457d54286
-      id: 2055328011
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: f0818cccf808e44d8244c79550da8cee
-      - ElementName: 00_80_Spitter
-        ObjectType: 12
-        guid: 7000ddcfcb4e0442bdc8256a0975e9dc
-      - ElementName: Play_SFX_Spitter_Hit_Ground
-        ObjectType: 3
-        guid: e11c5efe5253344696748af457d54286
-      Path: Events\Default Work Unit\00_80_Spitter\Play_SFX_Spitter_Hit_Ground
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Play_SFX_Spitter_Spit_Loop
       guid: 6205da32e7faee4a928ab26fab3f9c09
       id: 1346613187
@@ -3296,6 +3386,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_SFX_Spitter_Spit
+      guid: c0ec9c0fbb76634792d4146e77d152e3
+      id: 2488434516
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_80_Spitter
+        ObjectType: 12
+        guid: 7000ddcfcb4e0442bdc8256a0975e9dc
+      - ElementName: Stop_SFX_Spitter_Spit
+        ObjectType: 3
+        guid: c0ec9c0fbb76634792d4146e77d152e3
+      Path: Events\Default Work Unit\00_80_Spitter\Stop_SFX_Spitter_Spit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\00_90_UI.wwu
     PathAndIcons:
     - ElementName: Events
@@ -3310,8 +3420,48 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585279780896109393
+    m_lastTime: -8585279129936044432
     List:
+    - name: Feedbacks
+      guid: ff4d9c53c43cc44687715d7d9ff3e863
+      id: 2803092983
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_90_UI
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Feedbacks
+        ObjectType: 4
+        guid: ff4d9c53c43cc44687715d7d9ff3e863
+      Path: Events\Default Work Unit\00_90_UI\Feedbacks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Menu
+      guid: d4b351d54cff1a44b6e30cd806d2e69f
+      id: 2607556080
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_90_UI
+        ObjectType: 12
+        guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
+      Path: Events\Default Work Unit\00_90_UI\Menu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_UI_Dialogue_Start
       guid: 99df3951143d9844923c5e836fa6a387
       id: 2863055552
@@ -3325,10 +3475,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Feedbacks
+        ObjectType: 4
+        guid: ff4d9c53c43cc44687715d7d9ff3e863
       - ElementName: Play_UI_Dialogue_Start
         ObjectType: 3
         guid: 99df3951143d9844923c5e836fa6a387
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Dialogue_Start
+      Path: Events\Default Work Unit\00_90_UI\Feedbacks\Play_UI_Dialogue_Start
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3345,10 +3498,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Game_Pause
         ObjectType: 3
         guid: 3857795c68a8fc45a1c9e91588cac3bd
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Game_Pause
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Pause
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3365,10 +3521,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Game_Quit
         ObjectType: 3
         guid: b33fc803dfa86a4998bcf8fc393e037b
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Game_Quit
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Quit
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3385,10 +3544,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Game_Resume
         ObjectType: 3
         guid: d342c5a8653b034299036553a2e4326c
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Game_Resume
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Resume
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3405,10 +3567,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Game_Start
         ObjectType: 3
         guid: 9ce22bcdc60cf34395ef65ac8b3da865
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Game_Start
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Start
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3425,10 +3590,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Feedbacks
+        ObjectType: 4
+        guid: ff4d9c53c43cc44687715d7d9ff3e863
       - ElementName: Play_UI_HP_Loss
         ObjectType: 3
         guid: 00ebfb649899e34b8a8e62282d7b02cd
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_HP_Loss
+      Path: Events\Default Work Unit\00_90_UI\Feedbacks\Play_UI_HP_Loss
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3445,10 +3613,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Menu_Cancel
         ObjectType: 3
         guid: ad099cf950256546bbd043d8c34cf9fc
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Menu_Cancel
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Cancel
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3465,10 +3636,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Menu_Mouse_Over
         ObjectType: 3
         guid: 19d9cb64b3a3e9469102f8080c74a6b6
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Menu_Mouse_Over
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Mouse_Over
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3485,10 +3659,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Menu_Navigation
         ObjectType: 3
         guid: f3465d0c449dd445adcb34de4dd43b47
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Menu_Navigation
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Navigation
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3505,10 +3682,13 @@ MonoBehaviour:
       - ElementName: 00_90_UI
         ObjectType: 12
         guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
+      - ElementName: Menu
+        ObjectType: 4
+        guid: d4b351d54cff1a44b6e30cd806d2e69f
       - ElementName: Play_UI_Menu_Selection
         ObjectType: 3
         guid: 63e9c445d986cc4d92ba935b8d9089e4
-      Path: Events\Default Work Unit\00_90_UI\Play_UI_Menu_Selection
+      Path: Events\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Selection
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3526,8 +3706,54 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\01_00_State
     guid: d836ddceef571a4ca898f4eef1cf4790
     GuidInternal: 
-    m_lastTime: -8585280700617657566
+    m_lastTime: -8585278980716307881
     List:
+    - name: Health
+      guid: e3bf93c38c54af4a86f9f844091b39ee
+      id: 3677180323
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 01_00_State
+        ObjectType: 12
+        guid: d836ddceef571a4ca898f4eef1cf4790
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Health
+        ObjectType: 4
+        guid: e3bf93c38c54af4a86f9f844091b39ee
+      Path: Events\Default Work Unit\01_00_State\Set_State\Health
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_States
+      guid: 877dbdd46884db49bf09be453de86c95
+      id: 1690668539
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 01_00_State
+        ObjectType: 12
+        guid: d836ddceef571a4ca898f4eef1cf4790
+      - ElementName: Set_State
+        ObjectType: 4
+        guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Music_States
+        ObjectType: 4
+        guid: 877dbdd46884db49bf09be453de86c95
+      Path: Events\Default Work Unit\01_00_State\Set_State\Music_States
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Set_Game_Parameter_Staff_RTPC_01
       guid: a3a8619ee10adb4684536c3853243e86
       id: 2738096543
@@ -3676,10 +3902,13 @@ MonoBehaviour:
       - ElementName: Set_State
         ObjectType: 4
         guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Health
+        ObjectType: 4
+        guid: e3bf93c38c54af4a86f9f844091b39ee
       - ElementName: Set_State_Dead
         ObjectType: 3
         guid: d9f4e63271cd284f87cc36ad3567bd6b
-      Path: Events\Default Work Unit\01_00_State\Set_State\Set_State_Dead
+      Path: Events\Default Work Unit\01_00_State\Set_State\Health\Set_State_Dead
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3699,10 +3928,13 @@ MonoBehaviour:
       - ElementName: Set_State
         ObjectType: 4
         guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Health
+        ObjectType: 4
+        guid: e3bf93c38c54af4a86f9f844091b39ee
       - ElementName: Set_State_End
         ObjectType: 3
         guid: 3e2558574699d5459090e769f5cb587a
-      Path: Events\Default Work Unit\01_00_State\Set_State\Set_State_End
+      Path: Events\Default Work Unit\01_00_State\Set_State\Health\Set_State_End
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3722,10 +3954,13 @@ MonoBehaviour:
       - ElementName: Set_State
         ObjectType: 4
         guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Music_States
+        ObjectType: 4
+        guid: 877dbdd46884db49bf09be453de86c95
       - ElementName: Set_State_Explo
         ObjectType: 3
         guid: 55c0c1ad9ad607499ae68fdbddf3ef6a
-      Path: Events\Default Work Unit\01_00_State\Set_State\Set_State_Explo
+      Path: Events\Default Work Unit\01_00_State\Set_State\Music_States\Set_State_Explo
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3745,10 +3980,13 @@ MonoBehaviour:
       - ElementName: Set_State
         ObjectType: 4
         guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Music_States
+        ObjectType: 4
+        guid: 877dbdd46884db49bf09be453de86c95
       - ElementName: Set_State_Fight_Chomper
         ObjectType: 3
         guid: d35db5b6e8ed4940b28d3c02ccd690a1
-      Path: Events\Default Work Unit\01_00_State\Set_State\Set_State_Fight_Chomper
+      Path: Events\Default Work Unit\01_00_State\Set_State\Music_States\Set_State_Fight_Chomper
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3768,10 +4006,13 @@ MonoBehaviour:
       - ElementName: Set_State
         ObjectType: 4
         guid: 728aca41d1b5e14099037b39ffdb07c0
+      - ElementName: Music_States
+        ObjectType: 4
+        guid: 877dbdd46884db49bf09be453de86c95
       - ElementName: Set_State_Fight_Grenadier
         ObjectType: 3
         guid: 69ab385cc29c7e4094b382c7f450066a
-      Path: Events\Default Work Unit\01_00_State\Set_State\Set_State_Fight_Grenadier
+      Path: Events\Default Work Unit\01_00_State\Set_State\Music_States\Set_State_Fight_Grenadier
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3862,7 +4103,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585279652850553733
+    m_lastTime: -8585279037343185174
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -5181,7 +5422,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000005000000060000000700000008000000090000000c0000000d00000011000000120000003e0000003f0000005400000077000000c8000000c9000000d3000000f98e0300
+  ExpandedWaapiItemIds: 01000000030000000400000005000000060000000700000008000000090000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001f000000370000003e0000003f000000420000004300000044000000460000004b0000004d00000054000000650000006e000000770000008500000086000000870000008c0000008d00000090000000990000009a0000009e0000009f000000a1000000aa000000ab000000b0000000c8000000c9000000d3000000db000000dc000000e8000000f000000048020000a4020000ab020000ad020000b0020000b3020000ba020000bf020000c2020000c702000090040000ee2e0000f98e0300
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

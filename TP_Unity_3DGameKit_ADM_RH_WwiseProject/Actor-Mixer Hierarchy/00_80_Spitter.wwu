@@ -195,28 +195,6 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="SFX_Spitter_Spotted" ID="{35496C92-EFAB-4ED3-99FD-EA4DE78B1463}" ShortID="960000318">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="SFX_Spitter_Spotted" ID="{E204EB14-5F56-4069-9469-E0E7D11A61B8}">
-									<Language>SFX</Language>
-									<AudioFile>SFX_Spitter_Spotted.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="867565960"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="SFX_Spitter_Spotted" ID="{E204EB14-5F56-4069-9469-E0E7D11A61B8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 						<RandomSequenceContainer Name="SFX_Spitter_Attack_RC" ID="{20F6C2BD-17D4-489D-928A-E0BBC33B8593}" ShortID="40834525">
 							<PropertyList>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
@@ -401,6 +379,7 @@
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="SFX_Spitter_Hit_RC" ID="{AACF90B4-96AE-4D04-B2D0-1D614CC07948}" ShortID="787734687">
 							<PropertyList>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 							</PropertyList>
@@ -427,6 +406,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Spitter_Spit_Hit_01" ID="{7BF8FE50-B6DD-4C75-89F9-2B2C5DC01C1F}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0889298696844992"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Spitter_Spit_Hit_01.wav</AudioFile>
 											<MediaIDList>
@@ -452,6 +436,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Spitter_Spit_Hit_02" ID="{D8040250-A665-4E60-9171-47EC2EBA2616}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.129352537722908"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0107793781435757"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Spitter_Spit_Hit_02.wav</AudioFile>
 											<MediaIDList>
@@ -477,6 +466,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Spitter_Spit_Hit_03" ID="{E9F1B354-EF86-46A1-AECD-76CE1CEC0C8D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0924671353452218"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Spitter_Spit_Hit_03.wav</AudioFile>
 											<MediaIDList>
@@ -490,76 +484,35 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="SFX_Spitter_Hit_Ground_RC" ID="{F8D1F944-1AD2-4031-AC69-329B1DD45301}" ShortID="568436915">
-							<PropertyList>
-								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<Sound Name="SFX_Spitter_Spit_Hit_Ground_01" ID="{6CADB9E2-9C3F-4278-A149-93BEEB6948DC}" ShortID="688993954">
-									<PropertyList>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SFX_Spitter_Spit_Hit_Ground_01" ID="{2392BF26-FE3F-4B2B-B8F5-F21B548B0DFF}">
-											<Language>SFX</Language>
-											<AudioFile>SFX_Spitter_Spit_Hit_Ground_01.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="94198124"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SFX_Spitter_Spit_Hit_Ground_01" ID="{2392BF26-FE3F-4B2B-B8F5-F21B548B0DFF}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="SFX_Spitter_Spit_Hit_Ground_02" ID="{F242F285-EC8A-458B-94DA-1B16BE96E33B}" ShortID="45902318">
-									<PropertyList>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="SFX_Spitter_Spit_Hit_Ground_02" ID="{589B4E4B-0C54-4D21-AF80-B2076D9ACA06}">
-											<Language>SFX</Language>
-											<AudioFile>SFX_Spitter_Spit_Hit_Ground_02.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="182503495"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="SFX_Spitter_Spit_Hit_Ground_02" ID="{589B4E4B-0C54-4D21-AF80-B2076D9ACA06}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-							</ChildrenList>
-						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" ShortID="991442841">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
 								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="ATN_20m" ID="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}" WorkUnitID="{1A29F17A-745D-4FA9-B623-C71B42323CA2}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 								</Reference>
@@ -570,7 +523,6 @@
 							<ChildrenList>
 								<Sound Name="SFX_Spitter_Spit_Loop_01" ID="{1739C9F7-3246-462D-9E0A-B5EC1AA70BCB}" ShortID="583074138">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -583,6 +535,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Spitter_Spit_Loop_01" ID="{86D425D9-156D-4C6D-B5C5-80FB84198034}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.227830932784636"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.07972050754459"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.67406207133059"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Spitter_Spit_Loop_01.wav</AudioFile>
 											<MediaIDList>
@@ -596,7 +554,6 @@
 								</Sound>
 								<Sound Name="SFX_Spitter_Spit_Loop_02" ID="{4E6FB933-6CBA-4CB5-840A-C8CE3E7DFF32}" ShortID="47727315">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -609,6 +566,12 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="SFX_Spitter_Spit_Loop_02" ID="{388B23E9-ADDB-45A0-9297-32CC795523A9}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.407803898033836"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.965851337448555"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.50243541380887"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>SFX_Spitter_Spit_Loop_02.wav</AudioFile>
 											<MediaIDList>

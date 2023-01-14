@@ -19,6 +19,8 @@ namespace Gamekit3D
         public static readonly int hashHit = Animator.StringToHash("Hit");
         public static readonly int hashAttack = Animator.StringToHash("Attack");
         public static readonly int hashHaveEnemy = Animator.StringToHash("HaveTarget");
+        public static readonly int hashSpotted = Animator.StringToHash("Spotted");
+
         public static readonly int hashFleeing = Animator.StringToHash("Fleeing");
 
         public static readonly int hashIdleState = Animator.StringToHash("Idle");
@@ -148,7 +150,7 @@ namespace Gamekit3D
         {
             if (spottedAudio != null)
 
-            AkSoundEngine.PostEvent("Play_SFX_Spitter_Spotted", this.gameObject);
+            AkSoundEngine.PostEvent("Play_SFX_Chomper_Spotted", this.gameObject);
 
             AkSoundEngine.PostEvent("Set_State_Fight_Chomper", this.gameObject);
 

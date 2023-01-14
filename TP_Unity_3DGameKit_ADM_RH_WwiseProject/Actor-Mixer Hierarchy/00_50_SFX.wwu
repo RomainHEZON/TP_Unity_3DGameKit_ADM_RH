@@ -3609,7 +3609,6 @@
 										</Property>
 										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>
@@ -3629,7 +3628,7 @@
 											<Custom CreatedFrom="{333BEF1D-E91D-4BAE-BFB6-85244B23B0F3}">
 												<Attenuation Name="ATN_20m (Custom)" ID="{E19B5BD5-0D9B-460A-BA26-81EA5018DE9E}" ShortID="62143584">
 													<PropertyList>
-														<Property Name="RadiusMax" Type="Real64" Value="15"/>
+														<Property Name="RadiusMax" Type="Real64" Value="20"/>
 													</PropertyList>
 													<CurveUsageInfoList>
 														<VolumeDryUsage>
@@ -3645,13 +3644,13 @@
 																			<Flags>5</Flags>
 																		</Point>
 																		<Point>
-																			<XPos>0.001</XPos>
+																			<XPos>0.00133333333333333</XPos>
 																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>15</XPos>
+																			<XPos>20</XPos>
 																			<YPos>-200</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3679,13 +3678,13 @@
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>9</XPos>
+																			<XPos>12</XPos>
 																			<YPos>25</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>15</XPos>
+																			<XPos>20</XPos>
 																			<YPos>60</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3707,13 +3706,13 @@
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>9</XPos>
+																			<XPos>12</XPos>
 																			<YPos>20</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>15</XPos>
+																			<XPos>20</XPos>
 																			<YPos>50</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3735,13 +3734,13 @@
 																			<SegmentShape>Exp1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>3.71757</XPos>
+																			<XPos>4.95676</XPos>
 																			<YPos>12.28571</YPos>
 																			<Flags>0</Flags>
 																			<SegmentShape>Log1</SegmentShape>
 																		</Point>
 																		<Point>
-																			<XPos>15</XPos>
+																			<XPos>20</XPos>
 																			<YPos>10</YPos>
 																			<Flags>37</Flags>
 																		</Point>
@@ -3816,6 +3815,11 @@
 									<PropertyList>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3873,7 +3877,11 @@
 											</ValueList>
 										</Property>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
 												<Value>1</Value>

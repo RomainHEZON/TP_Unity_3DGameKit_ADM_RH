@@ -10,6 +10,9 @@
 				<Event Name="Play_SFX_Spitter_Spit_Loop" ID="{32DA0562-FAE7-4AEE-928A-B26FAB3F9C09}">
 					<ChildrenList>
 						<Action Name="" ID="{96C2A201-13A5-42B5-A8D4-8D983B7756F3}" ShortID="239240452">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
@@ -27,14 +30,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Play_SFX_Spitter_Hit_Ground" ID="{FE5E1CE1-5352-4634-9674-8AF457D54286}">
-					<ChildrenList>
-						<Action Name="" ID="{16F96401-13AE-48E2-96CE-4E8D66F266A7}" ShortID="393747688">
+						<Action Name="" ID="{E5F96DCD-B5BC-4D50-81B2-5EC0C2EBDB6E}" ShortID="644791305">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_Spitter_Hit_Ground_RC" ID="{F8D1F944-1AD2-4031-AC69-329B1DD45301}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -42,6 +44,17 @@
 				</Event>
 				<Event Name="Play_SFX_Spitter_Hit" ID="{27646AC0-048C-4F0C-AE19-A43E69E9E37A}">
 					<ChildrenList>
+						<Action Name="" ID="{F88014AC-2010-42F3-81F3-24FBC97F757C}" ShortID="834816184">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{70EB2958-770B-45A2-8361-B38A6A4D5EBC}" ShortID="930053919">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -69,7 +82,27 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_Spitter_Spotted" ID="{35496C92-EFAB-4ED3-99FD-EA4DE78B1463}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+									<ObjectRef Name="SFX_Chomper_Spotted_02" ID="{35496C92-EFAB-4ED3-99FD-EA4DE78B1463}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{858CFB3F-61FF-4F7B-92D8-17503AE9F259}" ShortID="661437762">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_SFX_Spitter_Spit_Loop" ID="{32DA0562-FAE7-4AEE-928A-B26FAB3F9C09}" WorkUnitID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A7F82EAF-1913-495E-AFCF-CF6782E86DAC}" ShortID="120195967">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stop_SFX_Spitter_Spit" ID="{0F9CECC0-76BB-4763-92D4-146E77D152E3}" WorkUnitID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -112,6 +145,20 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="SFX_Spitter_Death_RC" ID="{13A87736-8323-4DE5-8134-3F1893FE3057}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_SFX_Spitter_Spit" ID="{0F9CECC0-76BB-4763-92D4-146E77D152E3}">
+					<ChildrenList>
+						<Action Name="" ID="{6CAFAEDA-3D09-44A4-B66A-755FAFCD8E50}" ShortID="754464020">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

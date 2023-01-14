@@ -39,26 +39,20 @@ Custom State	ID	Name	State Group	Owner		Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	
 	1564184899	SFX_Volume			\Default Work Unit\Bus_Volume\SFX_Volume	
-	1875403703	Chomper_Attack_Playing			\Default Work Unit\Ducking\Chomper_Attack_Playing	
-	2630360352	Grenadier_Attack_Playing			\Default Work Unit\Ducking\Grenadier_Attack_Playing	
 	4179668880	Master_Volume			\Default Work Unit\Bus_Volume\Master_Volume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	17439960	Bus_AMB			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB	
-	112561660	Bus_Grenadier_FT			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Grenadier_FT	
 	1162281553	Bus_Music			\Default Work Unit\Master Audio Bus\Bus_Music	
 	1592365332	Bus_Ennemies			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies	
 	1746463750	Bus_UI			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_UI	
-	1763209118	Bus_Grenadier_Attack			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Grenadier_Attack	
 	2038678300	Bus_Reverb			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb	
 	2367965617	Bus_PreMaster_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01	
 	2367965618	Bus_PreMaster_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02	
 	2766202208	Bus_Ellen			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ellen	
 	3056742518	Bus_Pads			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_Pads	
-	3378702191	Bus_Chomper_FT			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Chomper_FT	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3895923845	Bus_SFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_SFX	
-	4109016909	Bus_Chomper_Attack			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies\Bus_Chomper_Attack	
 	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
@@ -66,8 +60,6 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	484890516	Church_Small_Wood	Wwise RoomVerb			
-	1618968822	Ducking_Meter_Grenadier	Wwise Meter			
-	2340012131	Ducking_Meter_Chomper	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -9,80 +9,88 @@
 			<ChildrenList>
 				<Folder Name="Set_State" ID="{41CA8A72-B5D1-40E1-9903-7B39FFDB07C0}" ShortID="287387148">
 					<ChildrenList>
-						<Event Name="Set_State_Dead" ID="{32E6F4D9-CD71-4F28-87CC-36AD3567BD6B}">
-							<PropertyList>
-								<Property Name="Color" Type="int16" Value="24"/>
-								<Property Name="OverrideColor" Type="bool" Value="True"/>
-							</PropertyList>
+						<Folder Name="Health" ID="{C393BFE3-548C-4AAF-86F9-F844091B39EE}" ShortID="165492179">
 							<ChildrenList>
-								<Action Name="" ID="{B9D165DC-2F26-4AE2-B7D9-0D00F51EC065}" ShortID="428091208">
+								<Event Name="Set_State_Dead" ID="{32E6F4D9-CD71-4F28-87CC-36AD3567BD6B}">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Color" Type="int16" Value="24"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+									<ChildrenList>
+										<Action Name="" ID="{B9D165DC-2F26-4AE2-B7D9-0D00F51EC065}" ShortID="428091208">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Dead" ID="{9C1FE368-2285-4F05-8D78-CF8181A1D06F}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Set_State_End" ID="{5758253E-9946-45D5-9090-E769F5CB587A}">
+									<ChildrenList>
+										<Action Name="" ID="{0DD91CB8-1A5B-4AE7-922D-98331B656083}" ShortID="933296463">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Set_State_End" ID="{5758253E-9946-45D5-9090-E769F5CB587A}">
+						</Folder>
+						<Folder Name="Music_States" ID="{D4BD7D87-8468-49DB-BF09-BE453DE86C95}" ShortID="772473047">
 							<ChildrenList>
-								<Action Name="" ID="{0DD91CB8-1A5B-4AE7-922D-98331B656083}" ShortID="933296463">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Set_State_Explo" ID="{ADC1C055-D69A-4907-9AE6-8FDBDDF3EF6A}">
+									<ChildrenList>
+										<Action Name="" ID="{83946017-F1DE-46EA-B42D-EBDA68E6E111}" ShortID="238180007">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Set_State_Fight_Chomper" ID="{B6B55DD3-EDE8-4049-B28D-3C02CCD690A1}">
+									<ChildrenList>
+										<Action Name="" ID="{26380FB3-1C44-4D4F-9A87-78CFAED87284}" ShortID="135644524">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Set_State_Fight_Grenadier" ID="{5C38AB69-9CC2-407E-94B3-82C7F450066A}">
+									<ChildrenList>
+										<Action Name="" ID="{F4B111CA-EEDF-48DB-A254-9DF081484D42}" ShortID="623143827">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="On" ID="{DDC90306-926B-4003-9D03-91D2AE72AD41}" WorkUnitID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Set_State_Explo" ID="{ADC1C055-D69A-4907-9AE6-8FDBDDF3EF6A}">
-							<ChildrenList>
-								<Action Name="" ID="{83946017-F1DE-46EA-B42D-EBDA68E6E111}" ShortID="238180007">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Set_State_Fight_Chomper" ID="{B6B55DD3-EDE8-4049-B28D-3C02CCD690A1}">
-							<ChildrenList>
-								<Action Name="" ID="{26380FB3-1C44-4D4F-9A87-78CFAED87284}" ShortID="135644524">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Set_State_Fight_Grenadier" ID="{5C38AB69-9CC2-407E-94B3-82C7F450066A}">
-							<ChildrenList>
-								<Action Name="" ID="{F4B111CA-EEDF-48DB-A254-9DF081484D42}" ShortID="623143827">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="22"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="On" ID="{DDC90306-926B-4003-9D03-91D2AE72AD41}" WorkUnitID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Set_RTPC_Value" ID="{EDE9CC4A-5A77-477E-AD79-9E28C6C1CFF8}" ShortID="436114741">

@@ -136,6 +136,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AMB_PAD_Tunnel_01" ID="{7BDF981E-F7DB-486D-8285-CC0559C47C0D}">
+					<ChildrenList>
+						<Action Name="" ID="{F916AB9C-A872-4894-8D16-8EB58D471AC4}" ShortID="646427059">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Tunnel_01" ID="{674B3180-5986-4031-A8FF-8AECD903A3CF}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Lava" ID="{A3BCE375-D477-41F7-86C6-10BB21C38830}">
+					<ChildrenList>
+						<Action Name="" ID="{05447ED3-3C50-45C1-A6F7-C7C0E61F496E}" ShortID="23619897">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Lava_BC" ID="{BB8420CB-A241-42DA-A429-6430D1D16E28}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
