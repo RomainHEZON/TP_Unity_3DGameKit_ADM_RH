@@ -82,7 +82,6 @@
 						</Bus>
 						<Bus Name="Bus_PreMaster_02" ID="{EECFC952-0602-41F7-9E40-2578BAAB1E4A}">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
@@ -91,7 +90,6 @@
 							<ChildrenList>
 								<Bus Name="Bus_PreMaster_01" ID="{A3002EDE-B6E4-4097-B700-ACB5E6C5D521}">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="Color" Type="int16" Value="16"/>
 										<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
@@ -100,7 +98,6 @@
 									<ChildrenList>
 										<Bus Name="Bus_AMB" ID="{F737A6CA-169F-4CD6-B281-6990970126EA}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 											</PropertyList>
@@ -114,7 +111,6 @@
 												</Bus>
 												<Bus Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}">
 													<PropertyList>
-														<Property Name="3DSpatialization" Type="int16" Value="1"/>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 													</PropertyList>
@@ -123,14 +119,12 @@
 										</Bus>
 										<Bus Name="Bus_SFX" ID="{08339A48-83FA-4E00-92D4-BB72BBBA5561}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 											</PropertyList>
 										</Bus>
 										<Bus Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}">
 											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 											</PropertyList>
@@ -138,7 +132,6 @@
 										<Bus Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="1"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 											</PropertyList>
 											<PositioningInfo>

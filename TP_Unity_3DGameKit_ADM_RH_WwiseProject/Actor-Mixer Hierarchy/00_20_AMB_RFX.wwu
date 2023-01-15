@@ -2008,6 +2008,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Birds_SC" ID="{E8324EED-A580-42AD-86A8-CA545CD4B27E}" ShortID="807346142">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 										<Property Name="CenterPercentage" Type="int32">
@@ -2015,6 +2016,7 @@
 												<Value>100</Value>
 											</ValueList>
 										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
