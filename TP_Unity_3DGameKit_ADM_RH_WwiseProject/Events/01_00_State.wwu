@@ -95,110 +95,114 @@
 				</Folder>
 				<Folder Name="Set_RTPC_Value" ID="{EDE9CC4A-5A77-477E-AD79-9E28C6C1CFF8}" ShortID="436114741">
 					<ChildrenList>
-						<Event Name="Set_Game_Parameter_Staff_RTPC_01" ID="{9E61A8A3-0AE1-46DB-8453-6C3853243E86}">
+						<Folder Name="Staff" ID="{10C628A5-EF66-4C12-A057-7ACA366354C2}" ShortID="310454993">
 							<ChildrenList>
-								<Action Name="" ID="{FFF06ACB-CCEC-430D-A49F-8A464A2FB426}" ShortID="877435266">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{DA76CEBB-7CFF-4E0B-8FE6-8177F08EA594}" ShortID="985847986">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="1"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="Set_Game_Parameter_Staff_RTPC_01" ID="{9E61A8A3-0AE1-46DB-8453-6C3853243E86}">
+									<ChildrenList>
+										<Action Name="" ID="{FFF06ACB-CCEC-430D-A49F-8A464A2FB426}" ShortID="877435266">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DA76CEBB-7CFF-4E0B-8FE6-8177F08EA594}" ShortID="985847986">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Set_Game_Parameter_Staff_RTPC_02" ID="{A1CE2760-B827-4D44-A539-C6D3E9534C99}">
+									<ChildrenList>
+										<Action Name="" ID="{F262693A-58C6-4531-9E02-CC54920516E1}" ShortID="724064730">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{2031AED0-DA37-4EC4-A3F7-72658D4977A9}" ShortID="245005515">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Set_Game_Parameter_Staff_RTPC_03" ID="{14ECC06C-E5F4-4193-A4BF-3C4092A87F4F}">
+									<ChildrenList>
+										<Action Name="" ID="{69D069F9-4FF2-4459-888C-28F281EBAC7D}" ShortID="318038142">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F5D78A2B-2E50-4C24-AC92-DB37F37CCD5C}" ShortID="84221017">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Set_Game_Parameter_Staff_RTPC_04" ID="{4DCC9918-3866-4EBC-9109-0D6273A8F171}">
+									<ChildrenList>
+										<Action Name="" ID="{66AAD7A1-383A-4044-8297-0F538C9CA2AE}" ShortID="1027201560">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{38AF738D-2A18-47C2-AE78-0274EEC36457}" ShortID="354276157">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+												<Property Name="GameParameterValue" Type="Real64" Value="4"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="Set_Game_Parameter_Staff_RTPC_02" ID="{A1CE2760-B827-4D44-A539-C6D3E9534C99}">
-							<ChildrenList>
-								<Action Name="" ID="{F262693A-58C6-4531-9E02-CC54920516E1}" ShortID="724064730">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{2031AED0-DA37-4EC4-A3F7-72658D4977A9}" ShortID="245005515">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Set_Game_Parameter_Staff_RTPC_03" ID="{14ECC06C-E5F4-4193-A4BF-3C4092A87F4F}">
-							<ChildrenList>
-								<Action Name="" ID="{69D069F9-4FF2-4459-888C-28F281EBAC7D}" ShortID="318038142">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="3"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{F5D78A2B-2E50-4C24-AC92-DB37F37CCD5C}" ShortID="84221017">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="3"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Set_Game_Parameter_Staff_RTPC_04" ID="{4DCC9918-3866-4EBC-9109-0D6273A8F171}">
-							<ChildrenList>
-								<Action Name="" ID="{66AAD7A1-383A-4044-8297-0F538C9CA2AE}" ShortID="1027201560">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="4"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{38AF738D-2A18-47C2-AE78-0274EEC36457}" ShortID="354276157">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="38"/>
-										<Property Name="GameParameterValue" Type="Real64" Value="4"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -224,7 +224,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{E661A388-4F2C-986D-F33D-4BA514AC8532}">
+		<SoundBank Id="1208172739" Type="User" Language="SFX" Hash="{FA9E85A1-6AE9-2A91-B982-9D3BC74C91D7}">
 			<ShortName>States</ShortName>
 			<Path>States.bnk</Path>
 			<Events>
@@ -257,6 +257,7 @@
 						<ActionSetStateEntry GroupId="2899509660" Id="1651971902" Name="On"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="338740791" Name="SetRTPC100" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 			<StateGroups>
 				<StateGroup Id="2899509660" Name="Music_OFF">
@@ -289,7 +290,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{49E2FD99-DBE4-C89C-B146-99AB7DC3CDB9}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{5674BFAA-BE72-BB28-29DF-F3467005BFC9}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -674,7 +675,7 @@
 						</ShareSets>
 					</PluginRefs>
 				</Event>
-				<Event Id="3025897706" Name="Play_Birds" MaxAttenuation="20" DurationType="Infinite">
+				<Event Id="3025897706" Name="Play_Birds" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="45181008"/>
 						<MediaRef Id="58892106"/>
@@ -822,7 +823,7 @@
 				<GameParameter Id="2504666941" Name="Fireflies_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{1FCE0905-1479-7F30-B915-E8637BEE5D7D}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{83F635BA-6CA4-62A1-1FE8-C040BFBB3A5A}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -871,6 +872,7 @@
 				<GameParameter Id="2885604103" Name="Layer_Staff_RTPC"/>
 				<GameParameter Id="2982758354" Name="AcidLake_AMB"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
+				<GameParameter Id="3485210265" Name="Rain_Intensity_RTPC"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
@@ -1147,7 +1149,7 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{C884DE80-72A5-6262-DC11-B950BCD543DF}">
+		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{06FF7D0B-3BC8-71A0-C8F2-411BDFD3832C}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>English(US)/AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1201,6 +1203,11 @@
 					<ShortName>Frogs\AMB_RFX_Frog_A_06.wav</ShortName>
 					<CachePath>SFX/Frogs/AMB_RFX_Frog_A_06_10C4C929.wem</CachePath>
 				</File>
+				<File Id="150393613" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_Exterior_Wind.wav</ShortName>
+					<Path>Media/150393613.wem</Path>
+					<CachePath>SFX/AMB_Exterior_Wind_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="160506112" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_AcidBubble_04.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBubble_04_10C4C929.wem</CachePath>
@@ -1219,6 +1226,11 @@
 					<ShortName>AMB_RFX_AcidBurn_02.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBurn_02_10C4C929.wem</CachePath>
 				</File>
+				<File Id="335483286" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_Rain_Heavy_Loop.wav</ShortName>
+					<Path>Media/335483286.wem</Path>
+					<CachePath>SFX/AMB_Rain_Heavy_Loop_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="336727186" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Lava_01.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Lava_01_10C4C929.wem</CachePath>
@@ -1231,6 +1243,11 @@
 					<ShortName>AMB_RFX_AcidBurn_Short_01.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBurn_Short_01_10C4C929.wem</CachePath>
 				</File>
+				<File Id="426051923" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_Rain_Medium_Loop.wav</ShortName>
+					<Path>Media/426051923.wem</Path>
+					<CachePath>SFX/AMB_Rain_Medium_Loop_D79FB2B7.wem</CachePath>
+				</File>
 				<File Id="465306571" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_Spaceship_In_Loop.wav</ShortName>
 					<CachePath>SFX/AMB_Spaceship_In_Loop_C5579977.wem</CachePath>
@@ -1239,6 +1256,10 @@
 					<ShortName>AMB_RFX_AcidBubble_03.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBubble_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="547956414" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Thunder_01.wav</ShortName>
+					<CachePath>SFX/AMB_Thunder_01_10C4C929.wem</CachePath>
+				</File>
 				<File Id="557508285" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_AcidBubble_01.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBubble_01_10C4C929.wem</CachePath>
@@ -1246,6 +1267,10 @@
 				<File Id="567426238" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_Lava_02.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_Lava_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="627851543" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Thunder_03.wav</ShortName>
+					<CachePath>SFX/AMB_Thunder_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="645216713" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_05.wav</ShortName>
@@ -1284,6 +1309,10 @@
 				<File Id="788284226" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_AcidBurn_Short_02.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBurn_Short_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="798782601" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>AMB_Thunder_02.wav</ShortName>
+					<CachePath>SFX/AMB_Thunder_02_10C4C929.wem</CachePath>
 				</File>
 				<File Id="864697297" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Frogs\AMB_RFX_Frog_A_01.wav</ShortName>
@@ -1335,6 +1364,11 @@
 				<File Id="1056417612" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>AMB_RFX_AcidBubble_02.wav</ShortName>
 					<CachePath>SFX/AMB_RFX_AcidBubble_02_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1065268229" Language="SFX" Streaming="true" Location="Loose">
+					<ShortName>AMB_Rain_Light_Loop.wav</ShortName>
+					<Path>Media/1065268229.wem</Path>
+					<CachePath>SFX/AMB_Rain_Light_Loop_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="1069776302" Language="SFX" Streaming="true" Location="Loose">
 					<ShortName>AMB_PAD_Lake.wav</ShortName>
@@ -1430,6 +1464,17 @@
 						<MediaRef Id="1035148082"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="4216222413" Name="Play_AMB_PAD_Rain" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="150393613"/>
+						<MediaRef Id="335483286"/>
+						<MediaRef Id="426051923"/>
+						<MediaRef Id="547956414"/>
+						<MediaRef Id="627851543"/>
+						<MediaRef Id="798782601"/>
+						<MediaRef Id="1065268229"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3971361117" Name="Play_AMB_PAD_Tunnel_01" MaxAttenuation="30" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="658351983"/>
@@ -1474,6 +1519,7 @@
 				<GameParameter Id="2006680970" Name="Switch_Collect_Progression"/>
 				<GameParameter Id="2982758354" Name="AcidLake_AMB"/>
 				<GameParameter Id="3174026549" Name="Lake_AMB"/>
+				<GameParameter Id="3485210265" Name="Rain_Intensity_RTPC"/>
 				<GameParameter Id="3545834150" Name="Spaceship_AMB"/>
 			</GameParameters>
 			<StateGroups>
@@ -3129,7 +3175,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{74BF4EAA-2299-669E-F57D-CD91A9336001}">
+		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{4BD46374-2B5A-A8AA-FE76-D7FEBDFC00E3}">
 			<ShortName>Spitter_SNBK</ShortName>
 			<Path>Spitter_SNBK.bnk</Path>
 			<Media>
@@ -3224,11 +3270,16 @@
 						<MediaRef Id="791122087"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2456017719" Name="Play_SFX_Spitter_Hit" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.96297914" DurationMax="0.98227084">
+				<Event Id="2456017719" Name="Play_SFX_Spitter_Hit" DurationType="OneShot" DurationMin="0.96297914" DurationMax="0.98227084">
 					<MediaRefs>
 						<MediaRef Id="202497422"/>
+						<MediaRef Id="212153440"/>
 						<MediaRef Id="414749175"/>
+						<MediaRef Id="557649918"/>
+						<MediaRef Id="574972127"/>
 						<MediaRef Id="681680367"/>
+						<MediaRef Id="694788226"/>
+						<MediaRef Id="791122087"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1346613187" Name="Play_SFX_Spitter_Spit_Loop" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.5024354" DurationMax="1.674062">
@@ -3250,5 +3301,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{FD92C9C8-3EA8-F1BD-D27D-E434C7CF2FCF}</FileHash>
+	<FileHash>{0B597B2E-6C7D-837C-FC96-E0895290BD89}</FileHash>
 </SoundBanksInfo>

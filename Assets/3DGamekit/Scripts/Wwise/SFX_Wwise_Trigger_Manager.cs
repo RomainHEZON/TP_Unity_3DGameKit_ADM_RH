@@ -1,3 +1,4 @@
+using AK.Wwise;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -62,9 +63,9 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
     }
     public void HugeDoorOpen03()
     {
+        
         AkSoundEngine.PostEvent("Play_SFX_Huge_Door_Open_03", this.gameObject);
         AkSoundEngine.PostEvent("Play_Music_Theme_Grenadier_End", this.gameObject);
-
 
     }
 
@@ -110,6 +111,21 @@ public class SFX_Wwise_Trigger_Manager : MonoBehaviour
 
     }
 
+    /*
+    public void SetRTPCRain100()
+    {
+        var rainclass = GameObject.Find("Rain_Manager").GetComponent<Rain_Manager>();
+        rainclass._RainIntensity = 99;
 
+        AkSoundEngine.PostEvent("SetRTPC100", this.gameObject);
+
+    }
+
+    private void SetRTPCRain0()
+    {
+        AkSoundEngine.PostEvent("Set_Game_Parameter_Rain_RTPC_0", this.gameObject);
+
+    }
+*/
 
 }

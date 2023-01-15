@@ -28,6 +28,10 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}"/>
 							<Value>0.66</Value>
 						</RTPCValue>

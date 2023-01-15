@@ -1694,6 +1694,433 @@
 										<ActiveSource Name="AMB_PAD_Cave_Loop" ID="{3094D7D1-982F-46F7-87D1-CF3D479B0FE1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<BlendContainer Name="Rain_BC" ID="{A9E4F5DB-0099-4EB2-AF67-EA40DB511117}" ShortID="88235964">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-8</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_Rain_Heavy_Loop" ID="{B3967CEC-BA9F-460C-BCF2-B327187CF228}" ShortID="517517636">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Rain_Heavy_Loop" ID="{4ABD37DB-D960-43E3-9360-4A9462E32394}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Rain_Heavy_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="335483286"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Rain_Heavy_Loop" ID="{4ABD37DB-D960-43E3-9360-4A9462E32394}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Rain_Light_Loop" ID="{E9C7B093-B161-4DDE-92BA-8F39F5FFC0F5}" ShortID="366555994">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Rain_Light_Loop" ID="{7E482B73-5D60-432E-BFCE-CDB01CB3D2F3}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Rain_Light_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1065268229"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Rain_Light_Loop" ID="{7E482B73-5D60-432E-BFCE-CDB01CB3D2F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Rain_Medium_Loop" ID="{0CD9C7C2-B41F-4E87-AF54-28BF4D8C749F}" ShortID="77207123">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Rain_Medium_Loop" ID="{855B58D5-6DAA-48AF-AE45-A374A8ABA6D2}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Rain_Medium_Loop.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="426051923"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Rain_Medium_Loop" ID="{855B58D5-6DAA-48AF-AE45-A374A8ABA6D2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="Thunder_RC" ID="{0B5A612E-C9A1-4315-A530-39EB1C7C6FAD}" ShortID="648513028">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5BA72201-417E-4D5D-BEA0-C20809440853}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="1"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_Thunder_01" ID="{245F5D32-6624-4DB7-99DB-5B390A48FE3C}" ShortID="7365763">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_Thunder_01" ID="{92CA4AE1-F7A4-4C08-A1DD-BA407B91B986}">
+															<Language>SFX</Language>
+															<AudioFile>AMB_Thunder_01.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="547956414"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_Thunder_01" ID="{92CA4AE1-F7A4-4C08-A1DD-BA407B91B986}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_Thunder_02" ID="{42008694-A06B-48CD-ACEB-C42B4862BDDD}" ShortID="431217517">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_Thunder_02" ID="{23D5438B-D2B5-464F-81BC-03507BE25AF6}">
+															<Language>SFX</Language>
+															<AudioFile>AMB_Thunder_02.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="798782601"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_Thunder_02" ID="{23D5438B-D2B5-464F-81BC-03507BE25AF6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_Thunder_03" ID="{5CC07F08-CE8A-4251-9867-19C3DE77C6DB}" ShortID="145705797">
+													<PropertyList>
+														<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_Thunder_03" ID="{3EFD6283-3E31-4A94-B394-4C2A01D493F0}">
+															<Language>SFX</Language>
+															<AudioFile>AMB_Thunder_03.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="627851543"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_Thunder_03" ID="{3EFD6283-3E31-4A94-B394-4C2A01D493F0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<Sound Name="AMB_Exterior_Wind" ID="{3FA65475-C727-4187-80C6-2A30DDE4BC09}" ShortID="779054787">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsStreamingEnabled" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Exterior_Wind" ID="{8C57AB7A-5B8D-4AA2-99B1-9CD7333C8BB0}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Exterior_Wind.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="150393613"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Exterior_Wind" ID="{8C57AB7A-5B8D-4AA2-99B1-9CD7333C8BB0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Rain_Intensity" ID="{EAC20BB1-10BD-4065-9E87-09022179DF68}" ShortID="300733518">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}" WorkUnitID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{06B70B4A-523E-4DD3-BB58-3AF99A9AF902}" ShortID="146827092">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}" WorkUnitID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{DFE188BE-4601-405F-B7D1-DFAD36D2122E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>10</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Log1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Rain_Light_Loop" ID="{E9C7B093-B161-4DDE-92BA-8F39F5FFC0F5}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>10</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>35</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Rain_Medium_Loop" ID="{0CD9C7C2-B41F-4E87-AF54-28BF4D8C749F}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>30</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>70</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Rain_Heavy_Loop" ID="{B3967CEC-BA9F-460C-BCF2-B327187CF228}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>65</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Wind" ID="{87ACB50B-EBE0-4402-B59F-94DA06B658EE}" ShortID="185465052">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}" WorkUnitID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<Reference>
+														<Local>
+															<RTPC Name="" ID="{359DC1AC-29F3-4B0F-900C-C79C46739B0E}" ShortID="974126960">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="Volume"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<ObjectRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}" WorkUnitID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}"/>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{1C5C1A96-FC78-4356-AC4B-A0000FD247E5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>15</XPos>
+																						<YPos>-200</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
+																						<XPos>100</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="AMB_Exterior_Wind" ID="{3FA65475-C727-4187-80C6-2A30DDE4BC09}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>15</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+										<BlendTrack Name="Thunder" ID="{A354780D-02A9-4D32-9DE8-D9AF17731A2A}" ShortID="719838492">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}" WorkUnitID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Thunder_RC" ID="{0B5A612E-C9A1-4315-A530-39EB1C7C6FAD}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>70</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Level_2_Mixer" ID="{39147E77-091D-4045-854C-C085962AED36}" ShortID="509970676">
