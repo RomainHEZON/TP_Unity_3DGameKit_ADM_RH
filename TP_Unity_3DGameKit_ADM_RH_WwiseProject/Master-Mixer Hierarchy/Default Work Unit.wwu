@@ -19,6 +19,11 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="Ducking_meter_Music_Grenadier" ID="{64965AB7-35F5-48EE-8AAF-EF9B7536EF81}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+								</Reference>
+							</ReferenceList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -114,6 +119,51 @@
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 													</PropertyList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{04D20590-5B26-4165-8765-6602CED60624}" ShortID="665440056">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="Volume"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Grenadier_Theme_Playing" ID="{CC495ECC-069C-403F-ADF2-BA5805EB9664}" WorkUnitID="{9F1F3F42-E7A1-4BA4-9FA4-4F97D4E675CC}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{06B6FB2C-BE08-4C51-8647-550A38352E15}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="3"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>-48</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>-25</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																								<SegmentShape>Log1</SegmentShape>
+																							</Point>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>-12</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
 												</Bus>
 											</ChildrenList>
 										</Bus>

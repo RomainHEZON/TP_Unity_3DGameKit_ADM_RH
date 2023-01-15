@@ -99,6 +99,10 @@ namespace Gamekit3D
                 {
                     AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Metal", this.gameObject);
                 }
+                else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Enemy")) // Chomper
+                {
+                    AkSoundEngine.PostEvent("Play_Alien_Staff_Hit_Chomper", this.gameObject);
+                }
             }
 
                 if (attackAudio != null)

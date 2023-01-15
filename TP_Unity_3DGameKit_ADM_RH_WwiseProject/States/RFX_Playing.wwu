@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C77B931B-4DF9-4CE0-B9F6-4E0341067068}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
+	<States>
+		<WorkUnit Name="RFX_Playing" ID="{C77B931B-4DF9-4CE0-B9F6-4E0341067068}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="16"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Birds_Playing" ID="{5413C54B-3512-40A5-A5FC-5D116A56FC6A}">
+					<ChildrenList>
+						<State Name="None" ID="{89BBF9A5-4BFF-444F-BE42-9C705B85FC3D}"/>
+						<State Name="On" ID="{9F5E572C-D14F-426C-A48D-3C116FA7B946}"/>
+						<State Name="Off" ID="{9023E12F-432D-4BB2-90CE-2B4239181CB7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Cavern_Animal_Playing" ID="{78A02494-886A-4D35-8D1A-99EA311FC8D4}">
+					<ChildrenList>
+						<State Name="None" ID="{26997C62-0C31-40F4-8EB7-77B92D4CE81C}"/>
+						<State Name="On" ID="{1993DD17-EC99-4142-9706-20DA1DF210AE}"/>
+						<State Name="Off" ID="{16628F24-1503-43C6-90C5-F8D244C41DD1}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -96,6 +96,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Alien_Staff_Hit_Chomper" ID="{DFE5B2FA-313B-4471-9A58-5E6E1A30E9A7}">
+									<ChildrenList>
+										<Action Name="" ID="{B96C8B8F-A942-49FC-9D72-72B4D9441535}" ShortID="138874715">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Huge_Door_Open" ID="{504CBC9E-F029-4C03-86F7-04C4DCEDEA3C}" ShortID="453216009">

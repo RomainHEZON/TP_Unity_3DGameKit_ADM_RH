@@ -43,3 +43,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1058987220	Grenadier_Shield_Activated_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Grenadier_Shield_Activated_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_70_Grenadier\Grenadier_Mixer\Shield_RC\Grenadier_Shield_Activated_01		493546
 	1072987620	Grenadier_FT_Walk_07	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\Grenadier_FT_Walk_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_70_Grenadier\Grenadier_Mixer\Grenadier_Footsteps\Grenadier_FT_Walk_07		68202
 
+Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	197042933	SFX_Grenadier_Idle_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\SFX_Grenadier_Idle_Loop_D79FB2B7.wem	197042933.wem	\Actor-Mixer Hierarchy\Default Work Unit\00_70_Grenadier\Grenadier_Mixer\SFX_Grenadier_Idle_Loop	
+

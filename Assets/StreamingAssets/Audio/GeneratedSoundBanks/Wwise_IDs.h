@@ -14,9 +14,11 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID PLAY_ALIEN_STAFF_ATTACK = 2329713267U;
+        static const AkUniqueID PLAY_ALIEN_STAFF_HIT_CHOMPER = 922264621U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_METAL = 530524938U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_ROCK = 2050638422U;
         static const AkUniqueID PLAY_ALIEN_STAFF_HIT_VEGETATION = 708322193U;
+        static const AkUniqueID PLAY_ALL_BIRDS = 4219077218U;
         static const AkUniqueID PLAY_AMB_PAD_ACID_LAKE = 2167481078U;
         static const AkUniqueID PLAY_AMB_PAD_CAVE = 2915382764U;
         static const AkUniqueID PLAY_AMB_PAD_CAVERN = 661539116U;
@@ -29,20 +31,17 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
         static const AkUniqueID PLAY_AMB_PAD_WIND = 1205748041U;
         static const AkUniqueID PLAY_AMB_RFX_MORSE_CODE = 2070617240U;
-        static const AkUniqueID PLAY_BAT = 3160320211U;
         static const AkUniqueID PLAY_BIG_CREATURE_A = 267936516U;
         static const AkUniqueID PLAY_BIG_CREATURE_B = 267936519U;
-        static const AkUniqueID PLAY_BIRDS = 3025897706U;
-        static const AkUniqueID PLAY_BLACKBIRD = 576298738U;
         static const AkUniqueID PLAY_BODYFALL_WATER = 3379918037U;
         static const AkUniqueID PLAY_BOXES_BREAK = 1880847345U;
+        static const AkUniqueID PLAY_CAVERN_ANIMAL = 3216834504U;
         static const AkUniqueID PLAY_CHOMPER_FT_WALK = 3482670435U;
         static const AkUniqueID PLAY_EELDOG_DIVE = 1977240871U;
         static const AkUniqueID PLAY_EELDOG_EMERGE = 1667970722U;
         static const AkUniqueID PLAY_ELLEN_FOOTSTEP = 2458421299U;
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
         static const AkUniqueID PLAY_ENGINE_BC = 3347638874U;
-        static const AkUniqueID PLAY_EXOTICANIMAL = 1108366744U;
         static const AkUniqueID PLAY_FIREFLIES = 4161070465U;
         static const AkUniqueID PLAY_FOL_IDLE = 1819119386U;
         static const AkUniqueID PLAY_FOL_JUMP = 3623063248U;
@@ -58,9 +57,7 @@ namespace AK
         static const AkUniqueID PLAY_GRENADIER_IDLE = 1285304806U;
         static const AkUniqueID PLAY_GRENADIER_SHIELD = 198525027U;
         static const AkUniqueID PLAY_GRENADIER_VOX_ATTACK = 3891969030U;
-        static const AkUniqueID PLAY_INSECT_WINGS = 3319002231U;
         static const AkUniqueID PLAY_MAGIC_CAVE = 608979577U;
-        static const AkUniqueID PLAY_MOUSE_RC = 489161007U;
         static const AkUniqueID PLAY_MUSIC_THEME_EXPLO_CHOMP = 3783934524U;
         static const AkUniqueID PLAY_MUSIC_THEME_GRENADIER_END = 2441234825U;
         static const AkUniqueID PLAY_PAD_WIND_CAVERN = 1518027650U;
@@ -100,7 +97,6 @@ namespace AK
         static const AkUniqueID PLAY_SFX_TELEPORTER_RIFT = 2644163508U;
         static const AkUniqueID PLAY_SFX_TELEPORTER_WALKTHROUGH = 2370542445U;
         static const AkUniqueID PLAY_SHIELD_ACTIVATE = 2396795519U;
-        static const AkUniqueID PLAY_SMALL_CAVERN_ANIMAL = 1856533232U;
         static const AkUniqueID PLAY_SPACESHIP_BC = 3873597236U;
         static const AkUniqueID PLAY_SPACESHIP_LANDING = 1914994186U;
         static const AkUniqueID PLAY_SPACESHIP_LANDING_SMOKE_RING = 1810252861U;
@@ -129,7 +125,6 @@ namespace AK
         static const AkUniqueID SET_STATE_EXPLO = 3742218146U;
         static const AkUniqueID SET_STATE_FIGHT_CHOMPER = 846679953U;
         static const AkUniqueID SET_STATE_FIGHT_GRENADIER = 407065776U;
-        static const AkUniqueID SETRTPC100 = 338740791U;
         static const AkUniqueID STOP_ALL_EVENTS = 171421511U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
         static const AkUniqueID STOP_SFX_SPITTER_SPIT = 2488434516U;
@@ -138,6 +133,30 @@ namespace AK
 
     namespace STATES
     {
+        namespace BIRDS_PLAYING
+        {
+            static const AkUniqueID GROUP = 1988215592U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace BIRDS_PLAYING
+
+        namespace CAVERN_ANIMAL_PLAYING
+        {
+            static const AkUniqueID GROUP = 740118134U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace CAVERN_ANIMAL_PLAYING
+
         namespace HEALTH
         {
             static const AkUniqueID GROUP = 3677180323U;
@@ -264,6 +283,7 @@ namespace AK
         static const AkUniqueID ELLEN_HEALTH = 971296124U;
         static const AkUniqueID FIREFLIES_AMB = 2504666941U;
         static const AkUniqueID GRENADIER_ATTACK_PLAYING = 2630360352U;
+        static const AkUniqueID GRENADIER_THEME_PLAYING = 3345027817U;
         static const AkUniqueID LAKE_AMB = 3174026549U;
         static const AkUniqueID LAYER_STAFF_RTPC = 2885604103U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;

@@ -11,6 +11,7 @@
 				<WorkUnit Name="Music_States" ID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}" PersistMode="Reference"/>
 				<WorkUnit Name="Music_On_OFF" ID="{557A4B40-2B7D-4C56-BCE2-64EAA2C4EE3C}" PersistMode="Reference"/>
 				<WorkUnit Name="Room_Interior" ID="{7584F6AD-8BDA-49EF-BF5A-4A6956FFEB18}" PersistMode="Reference"/>
+				<WorkUnit Name="RFX_Playing" ID="{C77B931B-4DF9-4CE0-B9F6-4E0341067068}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

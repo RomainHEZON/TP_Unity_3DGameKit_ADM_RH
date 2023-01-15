@@ -53,10 +53,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-					</ChildrenList>
-				</Folder>
-				<Folder Name="Animals" ID="{1433CB3C-696A-4391-915B-BB72E632AC68}" ShortID="871783545">
-					<ChildrenList>
 						<Event Name="Play_AMB_RFX_Morse_Code" ID="{CF7E75C5-CC13-4D12-BA15-98E650D5779E}">
 							<ChildrenList>
 								<Action Name="" ID="{CCDFB07B-0508-4589-B449-220A9CD4A532}" ShortID="250536718">
@@ -68,31 +64,10 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Bat" ID="{A4B126DC-6091-4FFF-899E-790BA64AAA67}">
-							<ChildrenList>
-								<Action Name="" ID="{00D17B31-E7CE-4462-863D-D8DD717F484C}" ShortID="600206361">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="2">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{0BFFF6A1-8348-4C48-8103-A89D51869ED7}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Bat_RC" ID="{75F772A1-B9BF-4F78-AFEA-43864982DB61}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Animals" ID="{1433CB3C-696A-4391-915B-BB72E632AC68}" ShortID="871783545">
+					<ChildrenList>
 						<Event Name="Play_Big_Creature_A" ID="{87D275F8-857F-4330-8CED-50ED0E7F28E3}">
 							<ChildrenList>
 								<Action Name="" ID="{6E027A92-A59D-449F-9E37-403C00FC8BE8}" ShortID="466090232">
@@ -119,58 +94,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Birds" ID="{34674B1B-A47A-4A55-8143-762295E5658A}">
-							<ChildrenList>
-								<Action Name="" ID="{AB92CED4-7E1B-42A1-B6C1-E307CC6C4FB2}" ShortID="805792212">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="3">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{3BF80F1E-16AB-4836-B011-D65899090384}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Birds_SC" ID="{E8324EED-A580-42AD-86A8-CA545CD4B27E}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Blackbird" ID="{344BF798-920E-42D3-9562-CC5ECB8B37CA}">
-							<ChildrenList>
-								<Action Name="" ID="{94ED44A4-577E-4975-99E6-4761779CCE3F}" ShortID="938248957">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="2.5">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{41FDD7E7-49CB-4721-B064-184B2FA7D135}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-1.5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Blackbird_RC" ID="{E830DF89-05D3-48ED-82EE-D87D0890F213}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Eeldog_Dive" ID="{FFAA9FD3-BE94-412B-A7D3-660301927423}">
 							<ChildrenList>
 								<Action Name="" ID="{F03A9B29-FA58-46AF-8046-F2AAC8202150}" ShortID="289324256">
@@ -188,32 +111,6 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Eeldog_Emerge_RC" ID="{B97CA097-187A-4A79-88FC-FC1BEF22F9A4}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_ExoticAnimal" ID="{FAF84E9F-6A03-41A7-8547-0510EB3FC28A}">
-							<ChildrenList>
-								<Action Name="" ID="{5BD04955-2E3A-4FE8-9BFE-2CDC49845941}" ShortID="171516742">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="3">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{6649E5A2-50C2-47AC-862E-858A7A12BD87}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="ExoticAnimal_RC" ID="{6A88DE9A-2A89-4242-9B57-AB55DE948BD2}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -244,31 +141,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Insect_Wings" ID="{DE4FFCC9-0DE2-431A-9EA2-FEB07394DA0E}">
-							<ChildrenList>
-								<Action Name="" ID="{A75CA494-8BA4-4E0E-B2C1-1E9CB9277274}" ShortID="601461217">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="3.5">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{5F219756-4CE4-462D-8965-809F1FDC55A6}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2.5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Insect_Wings_RC" ID="{B3F137BD-A701-458C-8E8E-DCEAB41EED83}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Magic_Cave" ID="{813A6066-655D-4DD0-8B1F-B4C94A05DFCB}">
 							<ChildrenList>
 								<Action Name="" ID="{6F30DC88-02D7-4CC6-9409-A56686393F4B}" ShortID="225791189">
@@ -294,56 +166,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Play_Mouse_RC" ID="{4C1C7E4F-C9A1-4C55-9169-ADD124671910}">
-							<ChildrenList>
-								<Action Name="" ID="{1372D703-9E14-43EF-95FE-FB8CAF9050F9}" ShortID="554414793">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="2">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{DD2D6D26-C3A0-435A-9E9D-9F6EFF3A6230}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-1"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Mouse_RC" ID="{A7BCA470-5303-4008-9FD3-65D456D78D26}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="Play_Small_Cavern_Animal" ID="{7009C1A9-1C40-4DA5-9F42-D441D7890255}">
-							<ChildrenList>
-								<Action Name="" ID="{0D20A112-87B2-45E6-A79A-19365BD39DA9}" ShortID="1064730680">
-									<PropertyList>
-										<Property Name="Delay" Type="Real64" Value="3">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{170AE9C8-8E22-49EA-B236-B84FD9049592}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Small_Cavern_Animal" ID="{05E70A05-1738-442F-AFC4-523952BB4F0C}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="Play_Big_Creature_B" ID="{D2AF0C01-D6E7-41B9-8F8C-AE99D4230E6E}">
 							<ChildrenList>
 								<Action Name="" ID="{595D35CA-10D7-4C4A-BFF4-C1984645BC63}" ShortID="242545093">
@@ -364,6 +186,34 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Big_Creature_B_RC" ID="{948F3D1C-5BFF-45B1-AFC5-417B002DF4C6}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Cavern_Animal" ID="{0E2D7273-79A1-4B8B-A111-DBC8CD91D8A5}">
+							<ChildrenList>
+								<Action Name="" ID="{30AD1CEA-D9A5-4D7C-8046-EC0C6E264646}" ShortID="794203469">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cavern_Animal_RC" ID="{FDB92917-22E4-49B0-9CF5-B37DA41ADF6E}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_All_Birds" ID="{501016CE-76F1-48ED-9013-1E31C26DA64C}">
+							<ChildrenList>
+								<Action Name="" ID="{1ED1A4D5-44A8-4401-B471-7E1EAB9EEE2D}" ShortID="832397726">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="All_Birds_RC" ID="{16A387A6-1ADA-4D02-81B0-A73176FA1EF6}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -10,12 +10,20 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_All_Birds" ID="{501016CE-76F1-48ED-9013-1E31C26DA64C}" WorkUnitID="{D268E68B-D0CB-4EC8-96B3-975CC823F1B6}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SFX_Spitter_Attack" ID="{EC9FE7E1-9747-4E07-BF15-4D4FD9FF2F53}" WorkUnitID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}"/>
 							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Play_Music_Theme_Grenadier_End" ID="{4B422814-865E-42DF-84BF-8F993487C36C}" WorkUnitID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}"/>
+							<Position X="1" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_SFX_Spitter_Hit" ID="{27646AC0-048C-4F0C-AE19-A43E69E9E37A}" WorkUnitID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}"/>
-							<Position X="2" Y="3"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_SFX_Alien_Staff_Idle" ID="{85A8922C-FF1C-4005-BFFD-8FEB74594499}" WorkUnitID="{5678B13C-638A-4AAB-B002-22CAC1A60494}"/>
@@ -61,12 +69,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Off" ID="{9023E12F-432D-4BB2-90CE-2B4239181CB7}"/>
 						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
 						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
-						<CurrentStateRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}"/>
-						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
+						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
+						<CurrentStateRef Name="On" ID="{1993DD17-EC99-4142-9706-20DA1DF210AE}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
@@ -110,6 +120,10 @@
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Grenadier_Theme_Playing" ID="{CC495ECC-069C-403F-ADF2-BA5805EB9664}"/>
+							<Value>-39.1550561797753</Value>
+						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Staff_Idle_SFX" ID="{A8C25192-7909-4199-A320-021CAA0C5D1B}"/>
 							<Value>20</Value>
@@ -172,12 +186,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}"/>
-						<CurrentStateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+						<CurrentStateRef Name="Off" ID="{9023E12F-432D-4BB2-90CE-2B4239181CB7}"/>
+						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
+						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
-						<CurrentStateRef Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}"/>
-						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
+						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
+						<CurrentStateRef Name="On" ID="{1993DD17-EC99-4142-9706-20DA1DF210AE}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

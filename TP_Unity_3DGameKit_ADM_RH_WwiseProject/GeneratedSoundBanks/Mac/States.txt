@@ -1,5 +1,4 @@
 Event	ID	Name			Wwise Object Path	Notes
-	338740791	SetRTPC100			\Default Work Unit\01_00_State\Set_RTPC_Value\Weather\SetRTPC100	
 	407065776	Set_State_Fight_Grenadier			\Default Work Unit\01_00_State\Set_State\Music_States\Set_State_Fight_Grenadier	
 	846679953	Set_State_Fight_Chomper			\Default Work Unit\01_00_State\Set_State\Music_States\Set_State_Fight_Chomper	
 	2300403011	Set_State_End			\Default Work Unit\01_00_State\Set_State\Health\Set_State_End	

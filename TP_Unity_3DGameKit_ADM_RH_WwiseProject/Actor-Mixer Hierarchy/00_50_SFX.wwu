@@ -2351,12 +2351,25 @@
 								</Sound>
 								<Sound Name="SFX_Teleporter_Walkthrough" ID="{94412C13-C537-4702-A7F3-EBFAC9A23045}" ShortID="3952985">
 									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{7D66333F-C426-4DC8-B8FC-FB80970E10F0}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -4163,6 +4176,7 @@
 										<Value>100</Value>
 									</ValueList>
 								</Property>
+								<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
@@ -4288,6 +4302,7 @@
 								</Sound>
 								<Sound Name="SFX_Platform_Moving_Loop_03" ID="{399379F1-E079-4B79-A45D-5ED28EAB9976}" ShortID="430669777">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 										<Property Name="CenterPercentage" Type="int32">
@@ -4295,7 +4310,9 @@
 												<Value>100</Value>
 											</ValueList>
 										</Property>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -4303,6 +4320,7 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -4322,6 +4340,36 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{880A3769-B31E-4E36-A4C8-B88D80F2D1FB}">
+											<PropertyList>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="PlayMechanismTransitionTime" Type="Real64" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="SFX_Platform_Moving_Loop_03_Path" ID="{D3F70F23-9E60-44EA-A6AF-4091E9214EFE}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="12000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>100</XPos>
+															<YPos>12.55411</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>-100</XPos>
+															<YPos>6.49351</YPos>
+															<Flags>0</Flags>
+															<Time>12000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="SFX_Platform_Moving_Loop_03" ID="{B832DD23-6C52-4759-B5D0-73D5321A35D1}" Platform="Linked"/>
 									</ActiveSourceList>

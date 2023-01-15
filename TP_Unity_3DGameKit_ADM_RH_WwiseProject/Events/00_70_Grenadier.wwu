@@ -101,7 +101,7 @@
 						<Action Name="" ID="{81336200-5574-4B57-8D6B-977494C691E7}" ShortID="358166354">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="SFX_Grenadier_Idle_Loop" ID="{036DDF7B-8D26-4DE4-BF07-6C52B0EA253C}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+									<ObjectRef Name="SFX_Grenadier_Idle_Loop" ID="{994F037A-D0D4-4912-9628-2515D90243C6}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

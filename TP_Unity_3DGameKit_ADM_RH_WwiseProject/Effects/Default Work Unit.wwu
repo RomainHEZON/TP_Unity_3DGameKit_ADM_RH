@@ -11,6 +11,10 @@
 	<GameParameter Name="Grenadier_Attack_Playing" ID="{19F4E710-BA4E-4E2A-9023-96F06A78AE03}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="Ducking_meter_Music_Grenadier" ID="{64965AB7-35F5-48EE-8AAF-EF9B7536EF81}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="Grenadier_Theme_Playing" ID="{CC495ECC-069C-403F-ADF2-BA5805EB9664}"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
