@@ -1396,11 +1396,10 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Fireflies_PassBy_RC" ID="{D810FB57-D6D3-405B-833B-8F4E8DD183D9}" ShortID="380552655">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="1"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 												<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
@@ -1426,7 +1425,7 @@
 													</ModifierList>
 												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -3105,6 +3104,7 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="Cavern_Animal_RC" ID="{FDB92917-22E4-49B0-9CF5-B37DA41ADF6E}" ShortID="229996432">
 									<PropertyList>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -3129,7 +3129,10 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+											<ObjectRef Name="Bus_Pads" ID="{EB6CEF12-4FE4-48AF-AB4D-BB4312D6F217}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Rvb_LVL2_Tunnel_01" ID="{03513039-C341-4C4A-AA62-2275A36DBF97}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -3144,7 +3147,9 @@
 													</ValueList>
 												</Property>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
@@ -3504,6 +3509,8 @@
 													</ValueList>
 												</Property>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -3784,6 +3791,8 @@
 													</ValueList>
 												</Property>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -4092,6 +4101,9 @@
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{0DD53DBE-2142-48DA-A633-EE2EAF9E1114}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
 													<ChildrenList>
 														<Path2D Name="Mouse_RC_Path" ID="{207EBD0E-3CF5-404A-8D29-C575698CF9AB}">
 															<PointList>
@@ -4148,6 +4160,8 @@
 													</ValueList>
 												</Property>
 												<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="HoldListenerOrientation" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
@@ -4425,6 +4439,9 @@
 											</ChildrenList>
 											<PositioningInfo>
 												<Position Name="" ID="{0C4D1163-2E4A-419F-9576-7255DE83169A}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+													</PropertyList>
 													<ChildrenList>
 														<Path2D Name="Small_Cavern_Animal_Path" ID="{43CD0C60-DA79-4D3A-9504-D0051E7CE189}">
 															<PointList>

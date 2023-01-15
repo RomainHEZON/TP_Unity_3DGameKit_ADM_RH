@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{A648A87C-E40B-D0F0-1C06-0746B4C4C63C}">
+		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{A021A731-D3A8-58FB-3B7D-0BFD3C1A03C5}">
 			<ShortName>SFX_LEVEL_02_SNBK</ShortName>
 			<Path>SFX_LEVEL_02_SNBK.bnk</Path>
 			<Media>
@@ -32,7 +32,7 @@
 				</File>
 				<File Id="500809533" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Door_Open_03.wav</ShortName>
-					<CachePath>SFX/SFX_Door_Open_03_10C4C929.wem</CachePath>
+					<CachePath>SFX/SFX_Door_Open_03_8F3084AB.wem</CachePath>
 				</File>
 				<File Id="749954390" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Door_Open_04.wav</ShortName>
@@ -71,7 +71,7 @@
 						<MediaRef Id="837825139"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2765469075" Name="Play_SFX_Door_Open_03" DurationType="OneShot" DurationMin="5.338651" DurationMax="5.992434">
+				<Event Id="2765469075" Name="Play_SFX_Door_Open_03" DurationType="OneShot" DurationMin="5.3886514" DurationMax="6.042434">
 					<MediaRefs>
 						<MediaRef Id="500809533"/>
 					</MediaRefs>
@@ -314,7 +314,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{EE0E686A-B7B0-A9DD-AEC6-87FF95ACACB4}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{E4343AD0-8A82-ACE8-E610-212E8032CF4E}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -749,6 +749,9 @@
 						<MediaRef Id="964872353"/>
 						<MediaRef Id="1069828771"/>
 					</MediaRefs>
+					<AuxBusRefs>
+						<AuxBusRef Id="3741155393" Name="Rvb_LVL2_Tunnel_01"/>
+					</AuxBusRefs>
 				</Event>
 				<Event Id="1977240871" Name="Play_Eeldog_Dive" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.6449735" DurationMax="0.8126157">
 					<MediaRefs>
@@ -770,7 +773,7 @@
 						<MediaRef Id="882196998"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="4161070465" Name="Play_Fireflies" DurationType="Infinite">
+				<Event Id="4161070465" Name="Play_Fireflies" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="84849623"/>
 						<MediaRef Id="211716926"/>
@@ -827,34 +830,23 @@
 				<GameParameter Id="2504666941" Name="Fireflies_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{BA2D7673-B81A-BBCC-A380-D6E6FF0B8D9A}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4D9CB399-0017-E6F8-6197-9EE747D90C81}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-			<Media>
-				<File Id="308821930" Language="SFX" Streaming="false" Location="OtherBank">
-					<ShortName>Valley, Canyon 02.wav</ShortName>
-					<CachePath>Plugins/Wwise Convolution Reverb/Valley, Canyon 02_D5AD835C.wem</CachePath>
-				</File>
-				<File Id="316131494" Language="SFX" Streaming="false" Location="OtherBank">
-					<ShortName>Forest, Crater, Inside 10m.wav</ShortName>
-					<CachePath>Plugins/Wwise Convolution Reverb/Forest, Crater, Inside 10m_BA47F520.wem</CachePath>
-				</File>
-			</Media>
 			<Plugins>
+				<Custom>
+					<Plugin Id="356314068" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="467932060" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="551089329" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="661318568" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="790840993" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="903653303" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1018127844" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1039992461" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1067654060" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</Custom>
 				<ShareSets>
-					<Plugin Id="484890516" Name="Church_Small_Wood" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="698118842" Name="Ducking_meter_Music_Grenadier" LibName="Wwise Meter" LibId="8454147"/>
-					<Plugin Id="1550303698" Name="AK_Convolution_Reverb_Tunnel" LibName="Wwise Convolution Reverb" LibId="8323075">
-						<MediaRefs>
-							<MediaRef Id="308821930"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="3317570593" Name="AK_Convolution_Reverb_Spawn" LibName="Wwise Convolution Reverb" LibId="8323075">
-						<MediaRefs>
-							<MediaRef Id="316131494"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="3657550167" Name="New_Parametric_EQ" LibName="Wwise Parametric EQ" LibId="6881283"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -882,26 +874,67 @@
 				<Bus Id="4130663432" Name="Bus_RFX"/>
 			</Busses>
 			<AuxBusses>
-				<AuxBus Id="459140117" Name="Rvb_Spawn_Level_2">
+				<AuxBus Id="334604368" Name="Rvb_LVL2_Acid_Lake_01">
 					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="3317570593"/>
-							<PluginRef Id="3657550167"/>
-						</ShareSets>
+						<Custom>
+							<PluginRef Id="1039992461"/>
+						</Custom>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="2294598260" Name="Rvb_Cave_Level_1">
+				<AuxBus Id="334604370" Name="Rvb_LVL2_Acid_Lake_03">
 					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="484890516"/>
-						</ShareSets>
+						<Custom>
+							<PluginRef Id="467932060"/>
+						</Custom>
 					</PluginRefs>
 				</AuxBus>
-				<AuxBus Id="2316588040" Name="Rvb_Cavern_Tunnel">
+				<AuxBus Id="334604371" Name="Rvb_LVL2_Acid_Lake_02">
 					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="1550303698"/>
-						</ShareSets>
+						<Custom>
+							<PluginRef Id="903653303"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="1363491141" Name="Rvb_LVL1_Cave">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="356314068"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="2652810239" Name="Rvb_LVL2_Tree">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="551089329"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3254336680" Name="Rvb_LVL2_Bridge">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1067654060"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3717202204" Name="Rvb_LVL2_Boss">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="661318568"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3741155393" Name="Rvb_LVL2_Tunnel_01">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="790840993"/>
+						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="3741155394" Name="Rvb_LVL2_Tunnel_02">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="1018127844"/>
+						</Custom>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
@@ -1221,33 +1254,9 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1743635156" Type="User" Language="SFX" Hash="{D390665E-F0A9-8FBB-85A7-CBCB7C017447}">
+		<SoundBank Id="1743635156" Type="User" Language="SFX" Hash="{065AD0A2-451C-E872-33B7-5905084B9B0D}">
 			<ShortName>IRs_SNBK</ShortName>
 			<Path>IRs_SNBK.bnk</Path>
-			<Media>
-				<File Id="308821930" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Valley, Canyon 02.wav</ShortName>
-					<CachePath>Plugins/Wwise Convolution Reverb/Valley, Canyon 02_D5AD835C.wem</CachePath>
-				</File>
-				<File Id="316131494" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>Forest, Crater, Inside 10m.wav</ShortName>
-					<CachePath>Plugins/Wwise Convolution Reverb/Forest, Crater, Inside 10m_BA47F520.wem</CachePath>
-				</File>
-			</Media>
-			<Plugins>
-				<ShareSets>
-					<Plugin Id="1550303698" Name="AK_Convolution_Reverb_Tunnel" LibName="Wwise Convolution Reverb" LibId="8323075">
-						<MediaRefs>
-							<MediaRef Id="308821930"/>
-						</MediaRefs>
-					</Plugin>
-					<Plugin Id="3317570593" Name="AK_Convolution_Reverb_Spawn" LibName="Wwise Convolution Reverb" LibId="8323075">
-						<MediaRefs>
-							<MediaRef Id="316131494"/>
-						</MediaRefs>
-					</Plugin>
-				</ShareSets>
-			</Plugins>
 		</SoundBank>
 		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{C561E8A7-E341-5BC6-4AD4-5B3C7A9D1DFC}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
@@ -3457,5 +3466,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{9D5F25CC-CCB9-5FD1-B3B8-3DD888B46F63}</FileHash>
+	<FileHash>{D5E0F40E-99B4-07C0-B4EA-F34FD17F39A6}</FileHash>
 </SoundBanksInfo>

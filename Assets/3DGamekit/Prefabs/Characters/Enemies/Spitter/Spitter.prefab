@@ -2546,6 +2546,7 @@ GameObject:
   - component: {fileID: 3118389214262476638}
   - component: {fileID: 8939237770590159864}
   - component: {fileID: 4528840631559344334}
+  - component: {fileID: 6840422151376858197}
   m_Layer: 23
   m_Name: Spitter
   m_TagString: Untagged
@@ -2819,6 +2820,19 @@ MonoBehaviour:
   attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
   LargeModePositions: []
   multiPositionArray: []
+--- !u!114 &6840422151376858197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500461124768838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90c7523800ce254d8db263918c75267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}
 --- !u!1 &1528829956455804
 GameObject:
   m_ObjectHideFlags: 0

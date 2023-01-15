@@ -118,6 +118,7 @@
 													<PropertyList>
 														<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
 													<ObjectLists>
 														<ObjectList Name="RTPC">
@@ -171,18 +172,21 @@
 											<PropertyList>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
 										</Bus>
 										<Bus Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}">
 											<PropertyList>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
 										</Bus>
 										<Bus Name="Bus_Ennemies" ID="{0A5DE468-AEF7-47F4-B330-A86FB4686AB6}">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="1"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
 											<PositioningInfo>
 												<Position Name="" ID="{1F0EE9FC-3710-4E71-9CF9-13439D433AA9}"/>
@@ -229,35 +233,311 @@
 										<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 									</PropertyList>
 									<ChildrenList>
-										<AuxBus Name="Rvb_Cave_Level_1" ID="{965A7491-F14B-499A-9F65-3382E280DC9B}">
+										<AuxBus Name="Rvb_LVL1_Cave" ID="{965A7491-F14B-499A-9F65-3382E280DC9B}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
 											<ReferenceList>
-												<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
-													<ObjectRef Name="Church_Small_Wood" ID="{940CCB47-F031-4C6A-B0E6-726CAC418C02}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{830F16A6-C2E1-448D-8EE7-EF04580D5ABB}" ShortID="356314068" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-5"/>
+																<Property Name="RoomSize" Type="Real32" Value="20"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 											</ReferenceList>
 										</AuxBus>
-										<AuxBus Name="Rvb_Cavern_Tunnel" ID="{D76F9130-FBD0-4C31-BE33-132A827FDF85}">
+										<AuxBus Name="Rvb_LVL2_Tunnel_01" ID="{03513039-C341-4C4A-AA62-2275A36DBF97}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{2350B2D3-BE6A-45B5-9D2A-31C90E4C827F}" ShortID="790840993" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="2.5"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-3.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-6"/>
+																<Property Name="RoomSize" Type="Real32" Value="25"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
 										</AuxBus>
-										<AuxBus Name="Rvb_Spawn_Level_2" ID="{61083615-511E-46DA-B523-55402BAA8158}">
+										<AuxBus Name="Rvb_LVL2_Tunnel_02" ID="{B104AF35-CC1B-429C-BB89-EE5308ECB559}">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 											</PropertyList>
-											<ReferenceList/>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{72E92EE5-DE0C-4001-810A-00BC1ABC020C}" ShortID="1018127844" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="3"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-6.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-3"/>
+																<Property Name="RoomSize" Type="Real32" Value="35"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_LVL2_Acid_Lake_01" ID="{DC350E8B-891A-4267-8ED2-0E9D5333229E}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{B0A0EB47-E541-405E-A9AA-29E99462C5A7}" ShortID="1039992461" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="3"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-8"/>
+																<Property Name="RoomSize" Type="Real32" Value="20"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_LVL2_Acid_Lake_02" ID="{C484D750-1F7F-45E1-B757-A7280D4AD679}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{7ADAD532-D2DE-465C-A207-C943CDE1FAEE}" ShortID="903653303" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="4"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-3"/>
+																<Property Name="RoomSize" Type="Real32" Value="30"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_LVL2_Acid_Lake_03" ID="{A723464A-D6A1-48AF-ABB3-3111B0EB6F55}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{2D6CEFAF-5B25-4024-8C13-BA7F9481FD89}" ShortID="467932060" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="3.5"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-4.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-6"/>
+																<Property Name="RoomSize" Type="Real32" Value="30"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_LVL2_Tree" ID="{C97D380C-B5D6-4208-A8D2-4CDFD31CDEE8}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{9ABC84EB-9477-4101-B899-AB2ABE2B2CF2}" ShortID="551089329" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="4"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-6"/>
+																<Property Name="RoomSize" Type="Real32" Value="40"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_LVL2_Boss" ID="{0B74E28E-EC2D-4944-857C-09647066691D}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{2A3FFACA-705A-4D54-BD38-A689749A00E9}" ShortID="661318568" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="3.5"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-1.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-3"/>
+																<Property Name="RoomSize" Type="Real32" Value="60"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_LVL2_Bridge" ID="{94F3A7F1-939D-4218-882D-6F845A948E58}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0">
+													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
+														<Effect Name="Church_Small_Wood (Custom)" ID="{B4CF0014-FEAF-4035-8709-92A463BDD430}" ShortID="1067654060" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="2"/>
+																<Property Name="Density" Type="Real32" Value="27"/>
+																<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="ERPattern" Type="int32" Value="6"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="490"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-5.5"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="Filter2InsertPos" Type="int32" Value="0"/>
+																<Property Name="Filter3Freq" Type="Real32" Value="11000"/>
+																<Property Name="Filter3Gain" Type="Real32" Value="-7"/>
+																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
+																<Property Name="PreDelay" Type="Real32" Value="18"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-6"/>
+																<Property Name="RoomSize" Type="Real32" Value="50"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
+												</Reference>
+											</ReferenceList>
 										</AuxBus>
 									</ChildrenList>
 								</Bus>

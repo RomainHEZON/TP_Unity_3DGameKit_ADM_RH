@@ -343,9 +343,15 @@ namespace AK
 
     namespace AUX_BUSSES
     {
-        static const AkUniqueID RVB_CAVE_LEVEL_1 = 2294598260U;
-        static const AkUniqueID RVB_CAVERN_TUNNEL = 2316588040U;
-        static const AkUniqueID RVB_SPAWN_LEVEL_2 = 459140117U;
+        static const AkUniqueID RVB_LVL1_CAVE = 1363491141U;
+        static const AkUniqueID RVB_LVL2_ACID_LAKE_01 = 334604368U;
+        static const AkUniqueID RVB_LVL2_ACID_LAKE_02 = 334604371U;
+        static const AkUniqueID RVB_LVL2_ACID_LAKE_03 = 334604370U;
+        static const AkUniqueID RVB_LVL2_BOSS = 3717202204U;
+        static const AkUniqueID RVB_LVL2_BRIDGE = 3254336680U;
+        static const AkUniqueID RVB_LVL2_TREE = 2652810239U;
+        static const AkUniqueID RVB_LVL2_TUNNEL_01 = 3741155393U;
+        static const AkUniqueID RVB_LVL2_TUNNEL_02 = 3741155394U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

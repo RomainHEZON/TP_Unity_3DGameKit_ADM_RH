@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585278023202685998
+    m_lastTime: -8585277866312884841
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -292,9 +292,9 @@ MonoBehaviour:
         ObjectType: 2
         guid: d8a41415a61d2a41a17e75ca0c2149f3
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
-    - name: Rvb_Cave_Level_1
+    - name: Rvb_LVL1_Cave
       guid: 91745a964bf19a499f653382e280dc9b
-      id: 2294598260
+      id: 1363491141
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -311,13 +311,13 @@ MonoBehaviour:
       - ElementName: Bus_Reverb
         ObjectType: 2
         guid: 1afc436729f8b84fa4d00c87da94dea3
-      - ElementName: Rvb_Cave_Level_1
+      - ElementName: Rvb_LVL1_Cave
         ObjectType: 1
         guid: 91745a964bf19a499f653382e280dc9b
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cave_Level_1
-    - name: Rvb_Cavern_Tunnel
-      guid: 30916fd7d0fb314cbe33132a827fdf85
-      id: 2316588040
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL1_Cave
+    - name: Rvb_LVL2_Acid_Lake_01
+      guid: 8b0e35dc1a8967428ed20e9d5333229e
+      id: 334604368
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -334,13 +334,13 @@ MonoBehaviour:
       - ElementName: Bus_Reverb
         ObjectType: 2
         guid: 1afc436729f8b84fa4d00c87da94dea3
-      - ElementName: Rvb_Cavern_Tunnel
+      - ElementName: Rvb_LVL2_Acid_Lake_01
         ObjectType: 1
-        guid: 30916fd7d0fb314cbe33132a827fdf85
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cavern_Tunnel
-    - name: Rvb_Spawn_Level_2
-      guid: 153608611e51da46b52355402baa8158
-      id: 459140117
+        guid: 8b0e35dc1a8967428ed20e9d5333229e
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Acid_Lake_01
+    - name: Rvb_LVL2_Acid_Lake_02
+      guid: 50d784c47f1fe145b757a7280d4ad679
+      id: 334604371
       PathAndIcons:
       - ElementName: Master-Mixer Hierarchy
         ObjectType: 5
@@ -357,10 +357,148 @@ MonoBehaviour:
       - ElementName: Bus_Reverb
         ObjectType: 2
         guid: 1afc436729f8b84fa4d00c87da94dea3
-      - ElementName: Rvb_Spawn_Level_2
+      - ElementName: Rvb_LVL2_Acid_Lake_02
         ObjectType: 1
-        guid: 153608611e51da46b52355402baa8158
-      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Spawn_Level_2
+        guid: 50d784c47f1fe145b757a7280d4ad679
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Acid_Lake_02
+    - name: Rvb_LVL2_Acid_Lake_03
+      guid: 4a4623a7a1d6af48abb33111b0eb6f55
+      id: 334604370
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL2_Acid_Lake_03
+        ObjectType: 1
+        guid: 4a4623a7a1d6af48abb33111b0eb6f55
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Acid_Lake_03
+    - name: Rvb_LVL2_Boss
+      guid: 8ee2740b2dec4449857c09647066691d
+      id: 3717202204
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL2_Boss
+        ObjectType: 1
+        guid: 8ee2740b2dec4449857c09647066691d
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Boss
+    - name: Rvb_LVL2_Bridge
+      guid: f1a7f3949d931842882d6f845a948e58
+      id: 3254336680
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL2_Bridge
+        ObjectType: 1
+        guid: f1a7f3949d931842882d6f845a948e58
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Bridge
+    - name: Rvb_LVL2_Tree
+      guid: 0c387dc9d6b50842a8d24cdfd31cdee8
+      id: 2652810239
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL2_Tree
+        ObjectType: 1
+        guid: 0c387dc9d6b50842a8d24cdfd31cdee8
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tree
+    - name: Rvb_LVL2_Tunnel_01
+      guid: 3930510341c34a4caa622275a36dbf97
+      id: 3741155393
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL2_Tunnel_01
+        ObjectType: 1
+        guid: 3930510341c34a4caa622275a36dbf97
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_01
+    - name: Rvb_LVL2_Tunnel_02
+      guid: 35af04b11bcc9c42bb89ee5308ecb559
+      id: 3741155394
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL2_Tunnel_02
+        ObjectType: 1
+        guid: 35af04b11bcc9c42bb89ee5308ecb559
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_02
   BankWwu:
   - PhysicalPath: SoundBanks\00_10_AMB_Pads.wwu
     PathAndIcons:
@@ -756,7 +894,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\03_00_IRs
     guid: 2098a13bf14bb040b86819d990a26891
     GuidInternal: 
-    m_lastTime: -8585278028874638050
+    m_lastTime: -8585277890641178438
     List:
     - name: IRs_SNBK
       guid: 3266672b77373346b299acc5b1c638ca
@@ -1122,7 +1260,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585278144427721368
+    m_lastTime: -8585277850770526636
     List:
     - name: Animals
       guid: 3ccb33146a699143915bbb72e632ac68
@@ -5833,7 +5971,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000030000000400000005000000060000001b0000001c000000280000003a0000007f00000080000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf0000003a8d00003c8d0000458d0000478d00004e8d0000518d0000588d00005d8d00005e8d0000668d0000688d00006b8d00006e8d0000758d00007a8d00007d8d00007e8d0000838d00009e8d0000a18d0000aa8d0000ab8d0000b08d0000b18d0000b48d00004593050046930500479305004d930500
+  ExpandedWaapiItemIds: 0100000003000000040000000500000006000000070000001b0000001c000000280000003a0000007f0000008000000081000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf0000003a8d00003c8d0000458d0000478d00004e8d0000518d0000588d00005d8d00005e8d0000668d0000688d00006b8d00006e8d0000758d00007a8d00007d8d00007e8d0000838d00009e8d0000a18d0000aa8d0000ab8d0000b08d0000b18d0000b48d00004593050046930500479305004d930500
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

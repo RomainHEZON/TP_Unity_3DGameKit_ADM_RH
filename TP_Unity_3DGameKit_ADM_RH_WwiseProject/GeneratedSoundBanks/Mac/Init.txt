@@ -65,16 +65,27 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
-	459140117	Rvb_Spawn_Level_2			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Spawn_Level_2	
-	2294598260	Rvb_Cave_Level_1			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cave_Level_1	
-	2316588040	Rvb_Cavern_Tunnel			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cavern_Tunnel	
+	334604368	Rvb_LVL2_Acid_Lake_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Acid_Lake_01	
+	334604370	Rvb_LVL2_Acid_Lake_03			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Acid_Lake_03	
+	334604371	Rvb_LVL2_Acid_Lake_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Acid_Lake_02	
+	1363491141	Rvb_LVL1_Cave			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL1_Cave	
+	2652810239	Rvb_LVL2_Tree			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tree	
+	3254336680	Rvb_LVL2_Bridge			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Bridge	
+	3717202204	Rvb_LVL2_Boss			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Boss	
+	3741155393	Rvb_LVL2_Tunnel_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_01	
+	3741155394	Rvb_LVL2_Tunnel_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_02	
 
 Effect plug-ins	ID	Name	Type				Notes
-	484890516	Church_Small_Wood	Wwise RoomVerb			
+	356314068	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	467932060	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	551089329	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	661318568	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	698118842	Ducking_meter_Music_Grenadier	Wwise Meter			
-	1550303698	AK_Convolution_Reverb_Tunnel	Wwise Convolution Reverb			
-	3317570593	AK_Convolution_Reverb_Spawn	Wwise Convolution Reverb			
-	3657550167	New_Parametric_EQ	Wwise Parametric EQ			
+	790840993	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	903653303	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	1018127844	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	1039992461	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	1067654060	Church_Small_Wood (Custom)	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
