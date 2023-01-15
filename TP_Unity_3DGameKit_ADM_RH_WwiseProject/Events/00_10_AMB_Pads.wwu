@@ -169,6 +169,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_AMB_Pad_Tree" ID="{A12388C4-C044-4A4B-91B2-457B1243AA6E}">
+					<ChildrenList>
+						<Action Name="" ID="{A1E20E89-830C-4497-B381-BF5E1987741D}" ShortID="431932495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Pad_Tree_Loop" ID="{292DC283-06EA-4E12-975F-76C599A22618}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

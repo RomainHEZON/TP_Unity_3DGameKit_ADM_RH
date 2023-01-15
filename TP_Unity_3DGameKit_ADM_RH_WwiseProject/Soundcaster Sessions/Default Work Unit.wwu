@@ -36,8 +36,16 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
+							<GameParameterRef Name="Fireflies_AMB" ID="{7AF14CED-5890-41FA-A359-B2B882249A75}"/>
+							<Value>6.45707376058041</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="AcidLake_AMB" ID="{8BEB0116-9750-44FB-BF16-E65FEBD8EA08}"/>
+							<Value>20</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}"/>
@@ -48,8 +56,12 @@
 							<Value>17.738</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}"/>
+							<Value>4.064</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
-							<Value>0.556227327690447</Value>
+							<Value>1.51832258064516</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}"/>
@@ -60,23 +72,27 @@
 							<Value>2.04018547140649</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Teleporter_SFX" ID="{9713901D-AAF8-4A33-A13F-5C2F05F09DDF}"/>
+							<Value>35.0665054413543</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}"/>
 							<Value>19.3481481481481</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}"/>
-							<Value>2.20302375809935</Value>
+							<Value>4.214</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Off" ID="{9023E12F-432D-4BB2-90CE-2B4239181CB7}"/>
+						<CurrentStateRef Name="On" ID="{9F5E572C-D14F-426C-A48D-3C116FA7B946}"/>
 						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
 						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
-						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
+						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
-						<CurrentStateRef Name="On" ID="{1993DD17-EC99-4142-9706-20DA1DF210AE}"/>
+						<CurrentStateRef Name="Off" ID="{16628F24-1503-43C6-90C5-F8D244C41DD1}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

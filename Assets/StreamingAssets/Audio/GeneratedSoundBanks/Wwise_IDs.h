@@ -27,6 +27,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB_PAD_LAKE = 1340469326U;
         static const AkUniqueID PLAY_AMB_PAD_LAVA = 1525023005U;
         static const AkUniqueID PLAY_AMB_PAD_RAIN = 4216222413U;
+        static const AkUniqueID PLAY_AMB_PAD_TREE = 3030595491U;
         static const AkUniqueID PLAY_AMB_PAD_TUNNEL_01 = 3971361117U;
         static const AkUniqueID PLAY_AMB_PAD_WETLAND = 3800059594U;
         static const AkUniqueID PLAY_AMB_PAD_WIND = 1205748041U;

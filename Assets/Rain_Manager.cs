@@ -44,11 +44,12 @@ public class Rain_Manager : MonoBehaviour
     {
         AkSoundEngine.SetRTPCValue(_RainIntensityRTPC.Name, _RainIntensity); // Set Rain RTPC value en fonction du Slider
 
-        if (_RainIntensity >= 10)
+        if (_RainIntensity >= 10f)   // Si la valeur du slider >= 10 = Play l'anim de pluie
         {
             RainFall.Play();
         }
-        else RainFall.Stop();
+        else RainFall.Stop(); // Sinon stop l'anim
+
 
         if (LightingPreset && SkyboxLightingPreset == null)
             return;

@@ -146,7 +146,7 @@
 												</PropertyList>
 												<ReferenceList>
 													<Reference Name="ControlInput">
-														<ObjectRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}" WorkUnitID="{78A052F1-9A00-4EA0-85F9-CC8399387A1F}"/>
+														<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
 													</Reference>
 													<Reference Name="Curve">
 														<Custom>
@@ -157,52 +157,52 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>65</YPos>
+																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>0.99</XPos>
-																		<YPos>65</YPos>
+																		<YPos>0</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
-																		<XPos>1.00047</XPos>
-																		<YPos>65</YPos>
+																		<XPos>1</XPos>
+																		<YPos>15</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>1.99</XPos>
-																		<YPos>65</YPos>
+																		<YPos>15</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>2</XPos>
-																		<YPos>50</YPos>
+																		<YPos>30</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>2.99</XPos>
-																		<YPos>50</YPos>
+																		<YPos>30</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>3</XPos>
-																		<YPos>30</YPos>
+																		<YPos>50</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>3.99</XPos>
-																		<YPos>30</YPos>
+																		<YPos>50</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>4</XPos>
-																		<YPos>15</YPos>
+																		<YPos>60</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
 																		<XPos>5</XPos>
-																		<YPos>15</YPos>
+																		<YPos>70</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>
@@ -560,7 +560,7 @@
 										<Effect Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 											<PropertyList>
 												<Property Name="FrequencyBand1" Type="Real32" Value="400"/>
-												<Property Name="GainBand1" Type="Real32" Value="20"/>
+												<Property Name="GainBand1" Type="Real32" Value="15"/>
 												<Property Name="OnOffBand2" Type="bool" Value="False"/>
 												<Property Name="OnOffBand3" Type="bool" Value="False"/>
 											</PropertyList>
