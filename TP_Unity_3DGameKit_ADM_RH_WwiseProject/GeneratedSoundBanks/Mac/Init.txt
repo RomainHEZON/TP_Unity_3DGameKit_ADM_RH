@@ -65,11 +65,16 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4130663432	Bus_RFX			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB\Bus_RFX	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	459140117	Rvb_Spawn_Level_2			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Spawn_Level_2	
 	2294598260	Rvb_Cave_Level_1			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cave_Level_1	
+	2316588040	Rvb_Cavern_Tunnel			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_Cavern_Tunnel	
 
 Effect plug-ins	ID	Name	Type				Notes
 	484890516	Church_Small_Wood	Wwise RoomVerb			
 	698118842	Ducking_meter_Music_Grenadier	Wwise Meter			
+	1550303698	AK_Convolution_Reverb_Tunnel	Wwise Convolution Reverb			
+	3317570593	AK_Convolution_Reverb_Spawn	Wwise Convolution Reverb			
+	3657550167	New_Parametric_EQ	Wwise Parametric EQ			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -68,6 +68,10 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="Moving_Platform_SFX" ID="{C3AD8F8A-C9FF-47A0-A9C2-0B47028BC419}"/>
+							<Value>14.1545893719807</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}"/>
 							<Value>2.04018547140649</Value>
 						</RTPCValue>
@@ -85,14 +89,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="On" ID="{9F5E572C-D14F-426C-A48D-3C116FA7B946}"/>
+						<CurrentStateRef Name="Off" ID="{9023E12F-432D-4BB2-90CE-2B4239181CB7}"/>
 						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
 						<CurrentStateRef Name="None" ID="{88F702AD-1CB5-42E8-9F2C-98CCD4386866}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
 						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
-						<CurrentStateRef Name="Off" ID="{16628F24-1503-43C6-90C5-F8D244C41DD1}"/>
+						<CurrentStateRef Name="On" ID="{1993DD17-EC99-4142-9706-20DA1DF210AE}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

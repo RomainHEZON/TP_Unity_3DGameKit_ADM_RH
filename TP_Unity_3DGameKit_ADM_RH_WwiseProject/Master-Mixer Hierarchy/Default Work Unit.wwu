@@ -241,6 +241,35 @@
 												</Reference>
 											</ReferenceList>
 										</AuxBus>
+										<AuxBus Name="Rvb_Cavern_Tunnel" ID="{D76F9130-FBD0-4C31-BE33-132A827FDF85}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="AK_Convolution_Reverb_Tunnel" ID="{79074038-E31A-48D4-9FE7-15ED0C19F521}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
+										<AuxBus Name="Rvb_Spawn_Level_2" ID="{61083615-511E-46DA-B523-55402BAA8158}">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+												<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Effect0" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+													<ObjectRef Name="AK_Convolution_Reverb_Spawn" ID="{C1343AA8-D553-4C45-81FB-DFA87A87236F}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+												</Reference>
+												<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="New_Parametric_EQ" ID="{BB97018E-3C1D-46F3-B555-FCC0E73F2587}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+												</Reference>
+											</ReferenceList>
+										</AuxBus>
 									</ChildrenList>
 								</Bus>
 							</ChildrenList>

@@ -1,0 +1,8 @@
+Effect plug-ins	ID	Name	Type				Notes
+	1550303698	AK_Convolution_Reverb_Tunnel	Wwise Convolution Reverb			
+	3317570593	AK_Convolution_Reverb_Spawn	Wwise Convolution Reverb			
+
+Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
+	308821930	AK_Convolution_Reverb_Tunnel	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\Valley, Canyon 02_D5AD835C.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\AK_Convolution_Reverb_Tunnel		482032
+	316131494	AK_Convolution_Reverb_Spawn	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\Forest, Crater, Inside 10m_BA47F520.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\AK_Convolution_Reverb_Spawn		267424
+

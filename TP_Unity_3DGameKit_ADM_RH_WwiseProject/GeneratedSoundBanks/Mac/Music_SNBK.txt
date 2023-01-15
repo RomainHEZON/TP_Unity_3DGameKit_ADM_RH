@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
+	2415656117	Stop_Theme_Grenadier			\Default Work Unit\02_00_Music\Stop_Theme_Grenadier	
 	2441234825	Play_Music_Theme_Grenadier_End			\Default Work Unit\02_00_Music\Play_Music_Theme_Grenadier_End	
 	2987996311	Play_Theme_End			\Default Work Unit\02_00_Music\Play_Theme_End	
+	3742218146	Set_State_Explo			\Default Work Unit\01_00_State\Set_State\Music_States\Set_State_Explo	
 	3783934524	Play_Music_Theme_Explo_Chomp			\Default Work Unit\02_00_Music\Play_Music_Theme_Explo_Chomp	
 	3799695633	Stop_Theme_End			\Default Work Unit\02_00_Music\Stop_Theme_End	
 

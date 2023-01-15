@@ -15,6 +15,205 @@
 	<GameParameter Name="Grenadier_Theme_Playing" ID="{CC495ECC-069C-403F-ADF2-BA5805EB9664}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="AK_Convolution_Reverb_Tunnel" ID="{79074038-E31A-48D4-9FE7-15ED0C19F521}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="0"/>
+						<Property Name="IRConvolutionStop" Type="Real64" Value="5.99279166666667"/>
+						<Property Name="IRStretch" Type="Real32" Value="50"/>
+						<Property Name="WetLevel" Type="Real32" Value="-10"/>
+					</PropertyList>
+					<ChildrenList>
+						<PluginMediaSource Name="Valley, Canyon 02" ID="{984EB6B7-1EB4-4E71-BCCD-5B65B2C8A74F}">
+							<ParentPluginID>8323075</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="Valley, Canyon 02.wav"/>
+							</PropertyList>
+							<MediaIDList>
+								<MediaID ID="308821930"/>
+							</MediaIDList>
+						</PluginMediaSource>
+					</ChildrenList>
+					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>5.99279166666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+							<SegmentShape>Log2</SegmentShape>
+						</Point>
+						<Point>
+							<XPos>5.99279166666667</XPos>
+							<YPos>-0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
+				<Effect Name="Test" ID="{D92CC438-FB20-457B-8833-8F0FE520D584}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
+				<Effect Name="AK_Convolution_Reverb_Spawn" ID="{C1343AA8-D553-4C45-81FB-DFA87A87236F}" PluginName="Wwise Convolution Reverb" CompanyID="0" PluginID="127" PluginType="3">
+					<PropertyList>
+						<Property Name="DryLevel" Type="Real32" Value="0"/>
+						<Property Name="IRConvolutionStop" Type="Real64" Value="4.31191666666667"/>
+						<Property Name="WetLevel" Type="Real32" Value="-8"/>
+					</PropertyList>
+					<ChildrenList>
+						<PluginMediaSource Name="Forest, Crater, Inside 10m" ID="{ADC294DD-4242-452C-8EEA-C2BBCB1C7751}">
+							<ParentPluginID>8323075</ParentPluginID>
+							<PropertyList>
+								<Property Name="DataFileName" Type="string" Value="Forest, Crater, Inside 10m.wav"/>
+							</PropertyList>
+							<MediaIDList>
+								<MediaID ID="316131494"/>
+							</MediaIDList>
+						</PluginMediaSource>
+					</ChildrenList>
+					<PluginData>
+	<ConvolutionData>
+		<CurveList Version="1">
+			<CurveInfo Name="IRGraphicEQ">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="19"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>20</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>20000</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLPF">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="5"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>20000</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.31191666666667</XPos>
+							<YPos>20000</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+			<CurveInfo Name="IRLevel">
+				<Curve Name="">
+					<PropertyList>
+						<Property Name="Flags" Type="int32" Value="1"/>
+					</PropertyList>
+					<PointList>
+						<Point>
+							<XPos>0</XPos>
+							<YPos>0</YPos>
+							<Flags>5</Flags>
+						</Point>
+						<Point>
+							<XPos>4.31191666666667</XPos>
+							<YPos>0</YPos>
+							<Flags>37</Flags>
+						</Point>
+					</PointList>
+				</Curve>
+			</CurveInfo>
+		</CurveList>
+	</ConvolutionData>
+</PluginData>
+				</Effect>
+				<Effect Name="New_Parametric_EQ" ID="{BB97018E-3C1D-46F3-B555-FCC0E73F2587}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="516"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="612"/>
+						<Property Name="GainBand1" Type="Real32" Value="-5.5"/>
+						<Property Name="GainBand2" Type="Real32" Value="-2.5"/>
+						<Property Name="QFactorBand2" Type="Real32" Value="3.6"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

@@ -86,7 +86,9 @@ namespace AK
         static const AkUniqueID PLAY_SFX_HUGE_DOOR_OPEN_03 = 1148651655U;
         static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_01 = 2643126548U;
         static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_02 = 2643126551U;
-        static const AkUniqueID PLAY_SFX_PLATFORM_MOVING_03 = 3749421580U;
+        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_03 = 2643126550U;
+        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_LEFT_TO_RIGHT = 2166784493U;
+        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_RIGHT_TO_LEFT = 3000621281U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED_02 = 1061469642U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
@@ -130,6 +132,7 @@ namespace AK
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
         static const AkUniqueID STOP_SFX_SPITTER_SPIT = 2488434516U;
         static const AkUniqueID STOP_THEME_END = 3799695633U;
+        static const AkUniqueID STOP_THEME_GRENADIER = 2415656117U;
     } // namespace EVENTS
 
     namespace STATES
@@ -288,6 +291,7 @@ namespace AK
         static const AkUniqueID LAKE_AMB = 3174026549U;
         static const AkUniqueID LAYER_STAFF_RTPC = 2885604103U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
+        static const AkUniqueID MOVING_PLATFORM_SFX = 4056325711U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID RAIN_INTENSITY_RTPC = 3485210265U;
         static const AkUniqueID SFX_VOLUME = 1564184899U;
@@ -312,6 +316,7 @@ namespace AK
         static const AkUniqueID ELLEN_LOCO_SNBK = 3228081768U;
         static const AkUniqueID ELLEN_SFX_SNBK = 2516908676U;
         static const AkUniqueID GRENADIER_SNBK = 1568914985U;
+        static const AkUniqueID IRS_SNBK = 1743635156U;
         static const AkUniqueID MUSIC_SNBK = 3144867095U;
         static const AkUniqueID SFX_LEVEL_01_SNBK = 3216885010U;
         static const AkUniqueID SFX_LEVEL_02_SNBK = 694864107U;
@@ -339,6 +344,8 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID RVB_CAVE_LEVEL_1 = 2294598260U;
+        static const AkUniqueID RVB_CAVERN_TUNNEL = 2316588040U;
+        static const AkUniqueID RVB_SPAWN_LEVEL_2 = 459140117U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

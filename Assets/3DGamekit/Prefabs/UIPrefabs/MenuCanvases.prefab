@@ -909,7 +909,7 @@ RectTransform:
   - {fileID: 224657094159511944}
   - {fileID: 4283348643690968}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7603,6 +7603,7 @@ GameObject:
   - component: {fileID: 95741739689086050}
   - component: {fileID: 114958662218469004}
   - component: {fileID: 8073193280265050667}
+  - component: {fileID: 231885115060220548}
   m_Layer: 5
   m_Name: UIButton
   m_TagString: Untagged
@@ -7737,6 +7738,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 231885115060220548}
+        m_TargetAssemblyTypeName: SFX_Wwise_Trigger_Manager, Assembly-CSharp
+        m_MethodName: StopEndMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 231885115060220548}
+        m_TargetAssemblyTypeName: SFX_Wwise_Trigger_Manager, Assembly-CSharp
+        m_MethodName: StopGrenadierMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!95 &95741739689086050
 Animator:
   serializedVersion: 4
@@ -7796,6 +7821,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f88d0e01174424b459572c185e4e845e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &231885115060220548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911244031750048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5e13bd579318f049a9d8a3dc808e6f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1924183042991058

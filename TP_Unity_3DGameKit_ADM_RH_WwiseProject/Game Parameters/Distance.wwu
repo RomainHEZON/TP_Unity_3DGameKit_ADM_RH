@@ -56,6 +56,12 @@
 						<Property Name="Max" Type="Real64" Value="20"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Moving_Platform_SFX" ID="{C3AD8F8A-C9FF-47A0-A9C2-0B47028BC419}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

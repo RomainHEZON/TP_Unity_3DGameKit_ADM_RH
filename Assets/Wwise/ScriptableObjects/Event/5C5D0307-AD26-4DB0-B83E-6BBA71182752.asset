@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1805a2320fb9e044a3672338af02901, type: 3}
+  m_Name: 5C5D0307-AD26-4DB0-B83E-6BBA71182752
+  m_EditorClassIdentifier: 
+  objectName: Play_SFX_Moving_Platform_Right_To_Left
+  id: 3000621281
+  guid: 5C5D0307-AD26-4DB0-B83E-6BBA71182752
