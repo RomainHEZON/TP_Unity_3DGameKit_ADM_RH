@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" SchemaVersion="110">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="00_90_UI" ID="{A35E4704-4B34-4BEC-A0FB-B3AE3F0BDF48}" PersistMode="Reference"/>
+				<WorkUnit Name="00_10_AMB_Pads" ID="{BB71F017-794F-4640-A0AC-6CB855B1DE9D}" PersistMode="Reference"/>
+				<WorkUnit Name="00_20_AMB_RFX" ID="{D268E68B-D0CB-4EC8-96B3-975CC823F1B6}" PersistMode="Reference"/>
+				<WorkUnit Name="00_30_Ellen_Loco" ID="{B61919A5-8D56-4C07-8E3B-C50AABF2C270}" PersistMode="Reference"/>
+				<WorkUnit Name="00_40_Ellen_SFX" ID="{178FDB7A-2129-48F0-B75A-7073488C6255}" PersistMode="Reference"/>
+				<WorkUnit Name="00_50_SFX" ID="{5678B13C-638A-4AAB-B002-22CAC1A60494}" PersistMode="Reference"/>
+				<WorkUnit Name="00_60_Chomper" ID="{26DC4F63-5FD6-406C-80EC-1DADFC7ED8EB}" PersistMode="Reference"/>
+				<WorkUnit Name="00_70_Grenadier" ID="{EA2F5871-F3E7-4E4C-9135-72AF42280BDA}" PersistMode="Reference"/>
+				<WorkUnit Name="00_80_Spitter" ID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}" PersistMode="Reference"/>
+				<WorkUnit Name="01_00_State" ID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}" PersistMode="Reference"/>
+				<WorkUnit Name="02_00_Music" ID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

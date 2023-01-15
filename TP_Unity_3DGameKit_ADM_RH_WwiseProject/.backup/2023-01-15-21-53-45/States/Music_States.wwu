@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
+	<States>
+		<WorkUnit Name="Music_States" ID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="26"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Music_State" ID="{5AB112DC-DAA2-47F9-9C8A-3BFDF9704B56}">
+					<ChildrenList>
+						<State Name="None" ID="{18A9D443-CF38-4919-9778-63E7B86B26E5}"/>
+						<State Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
+						<State Name="Fight_Chomper" ID="{2D2708AF-7769-454B-855C-9029FC14D8AA}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music_Grenadier_State" ID="{27D445E1-1A10-43AE-971E-6858CB42DB19}">
+					<ChildrenList>
+						<State Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
+						<State Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}"/>
+						<State Name="Fight_Grenadier" ID="{FBB8E1F4-315F-410C-9CDA-B1A762D3186E}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}" SchemaVersion="110">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="Material" ID="{4A5293FB-AA86-4587-B651-0D3927F99997}" PersistMode="Reference"/>
+				<WorkUnit Name="Loco_Switch" ID="{1DD2FABF-79BB-42E8-8EF2-6A6C2268A2B7}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}" SchemaVersion="110" RootDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" ParentDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}">
+	<GameParameters>
+		<WorkUnit Name="Bus_Volume" ID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Master_Volume" ID="{F92A026D-DC33-4537-864E-6A11F434789E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Music_Volume" ID="{068C4936-1B06-4A9D-B46F-18D090D4CA5E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

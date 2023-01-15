@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1DD2FABF-79BB-42E8-8EF2-6A6C2268A2B7}" SchemaVersion="110" RootDocumentID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}" ParentDocumentID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}">
+	<Switches>
+		<WorkUnit Name="Loco_Switch" ID="{1DD2FABF-79BB-42E8-8EF2-6A6C2268A2B7}" OwnerID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Loco_Switch" ID="{FAFCEA6E-DBDF-4FFC-BF3D-503EC327D366}">
+					<ChildrenList>
+						<Switch Name="Run" ID="{DDBF2574-6598-4733-A7B2-5D69E42ACD4B}"/>
+						<Switch Name="Forward" ID="{F9A0B6D7-5CF5-4702-A6B1-C320BAED1DAA}"/>
+						<Switch Name="Roll" ID="{3B56A7A7-0587-4337-9D3F-A875BB2B82D6}"/>
+						<Switch Name="Idle" ID="{69211430-0E80-4CE7-B14E-3DC99BFD569B}"/>
+						<Switch Name="Jump" ID="{04B4D77C-10D7-4AD3-8209-EFE2D1039F03}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

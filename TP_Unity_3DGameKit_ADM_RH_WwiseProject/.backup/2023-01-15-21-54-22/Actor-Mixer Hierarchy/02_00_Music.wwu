@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F432772B-B79A-4560-844B-D6BCB1006023}" SchemaVersion="110" RootDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}" ParentDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}">
+	<AudioObjects>
+		<WorkUnit Name="02_00_Music" ID="{F432772B-B79A-4560-844B-D6BCB1006023}" OwnerID="{9EF015E5-6663-4DBB-B164-080BE078F480}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="16"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Music_Mixer" ID="{1D80F909-881A-4AFE-B318-0116D057542E}" ShortID="126424965">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" ShortID="691719971">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Bus_Music" ID="{BAC4212B-66E6-4E5C-908A-3C6643B122BC}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{5039A8F4-BB85-4E18-A856-9BAF7C658088}">
+									<Language>SFX</Language>
+									<AudioFile>Theme_3D_GAME_KIT_Transition_Brass_Staccato.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="280400961"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{5039A8F4-BB85-4E18-A856-9BAF7C658088}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

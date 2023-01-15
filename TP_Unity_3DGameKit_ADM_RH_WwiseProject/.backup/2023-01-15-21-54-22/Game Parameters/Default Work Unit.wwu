@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" SchemaVersion="110">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<WorkUnit Name="Bus_Volume" ID="{B7CCC7E7-0971-4115-9E46-4565C21837C0}" PersistMode="Reference"/>
+				<WorkUnit Name="Distance" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" PersistMode="Reference"/>
+				<WorkUnit Name="Health" ID="{78A052F1-9A00-4EA0-85F9-CC8399387A1F}" PersistMode="Reference"/>
+				<WorkUnit Name="Progression" ID="{F735EE6F-8838-44A7-B276-6BC9BB2729BD}" PersistMode="Reference"/>
+				<WorkUnit Name="Staff" ID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}" PersistMode="Reference"/>
+				<WorkUnit Name="Ducking" ID="{9F1F3F42-E7A1-4BA4-9FA4-4F97D4E675CC}" PersistMode="Reference"/>
+				<WorkUnit Name="Weather" ID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

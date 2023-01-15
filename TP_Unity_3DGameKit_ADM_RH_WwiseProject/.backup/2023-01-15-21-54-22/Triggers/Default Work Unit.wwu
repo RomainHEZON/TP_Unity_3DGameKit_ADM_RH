@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{94109DBC-5679-4532-9AC1-BA5E99B9201B}" SchemaVersion="110">
+	<Triggers>
+		<WorkUnit Name="Default Work Unit" ID="{94109DBC-5679-4532-9AC1-BA5E99B9201B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Trigger Name="Transition" ID="{EDB9977D-625E-4E29-BF07-1D20F94859E0}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Triggers>
+</WwiseDocument>

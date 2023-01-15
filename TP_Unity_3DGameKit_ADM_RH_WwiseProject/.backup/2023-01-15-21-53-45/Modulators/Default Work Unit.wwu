@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B123B80A-B6F6-49C2-9B1C-7CD5C55864B5}" SchemaVersion="110">
+	<Modulators>
+		<WorkUnit Name="Default Work Unit" ID="{B123B80A-B6F6-49C2-9B1C-7CD5C55864B5}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="Wind_LFO" ID="{5E52D7E9-6732-4DE7-90FB-E690086017AD}" ShortID="305101537"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Modulators>
+</WwiseDocument>

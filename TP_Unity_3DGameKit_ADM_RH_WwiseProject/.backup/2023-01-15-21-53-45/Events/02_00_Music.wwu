@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="02_00_Music" ID="{1D0AE175-AB7D-4A42-BC25-CD85B9F1E2A9}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="16"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Music_Theme_Explo_Chomp" ID="{AB58AD49-C1F5-42B7-8C83-BFB98B87D392}">
+					<ChildrenList>
+						<Action Name="" ID="{C0594AD1-0926-4C2F-B6E5-A80437D395C5}" ShortID="989208352">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0DE24511-AEA4-4138-B559-586076112A05}" ShortID="386519979">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{558313B4-560E-4C55-BE97-670154FD2F2A}" ShortID="282531217">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Explo_Chomp" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C74FF84B-CC34-4D06-9502-815067E2CCF3}" ShortID="970769981">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}" WorkUnitID="{D48DCDBF-FB8E-4A11-90E1-D0A9D095CA32}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Music_Theme_Grenadier_End" ID="{4B422814-865E-42DF-84BF-8F993487C36C}">
+					<ChildrenList>
+						<Action Name="" ID="{F79AE604-FA88-48B4-A868-FD9E979FD411}" ShortID="794574450">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Explo_Chomp" ID="{E88F484D-7600-4715-9DEF-F8771658BB87}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D4D6B60D-0467-4167-9E49-485102F62438}" ShortID="988686684">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Fight_Grenadier" ID="{FBB8E1F4-315F-410C-9CDA-B1A762D3186E}" WorkUnitID="{6084F432-2FDE-4B71-9834-EC30E3B6EFB1}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EC751999-923C-4C7A-94A2-89D0C4EF1AC5}" ShortID="649944996">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_3D_GAME_KIT_Transition_Brass_Staccato" ID="{3EE36509-17A7-4813-B9D9-3AAEFC601203}" WorkUnitID="{F432772B-B79A-4560-844B-D6BCB1006023}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E85DB5FF-E0D6-468A-B21A-CF90229D9FBB}" ShortID="638182785">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2.85"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.01"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Grenadier_End" ID="{3E19E3D0-ECB0-47AD-B44A-AF7F51385E63}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Theme_End" ID="{8C38A215-454F-4FDE-B4EC-F79A1125B728}">
+					<ChildrenList>
+						<Action Name="" ID="{A16A1BE8-5E3C-40FC-9758-78713D7EA239}" ShortID="112419810">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Theme_End" ID="{B9485681-81DB-486B-982E-9D0631F05C33}">
+					<ChildrenList>
+						<Action Name="" ID="{41A21D2D-B78F-4524-A4D6-7BB9F7515978}" ShortID="457172721">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{78EF6947-3F32-46EE-AE29-995DA8F258C1}" ShortID="717724208">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Set_State_Explo" ID="{ADC1C055-D69A-4907-9AE6-8FDBDDF3EF6A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Theme_Grenadier" ID="{49DC8AF4-76B3-440A-BA6D-A4056CC62F85}">
+					<ChildrenList>
+						<Action Name="" ID="{E32A24CB-1C22-46D7-ACE1-84BC936FD5D2}" ShortID="431510242">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Switch_Grenadier_End" ID="{3E19E3D0-ECB0-47AD-B44A-AF7F51385E63}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{F2B17261-B277-4210-BBCE-8CC1CFD7FC8E}" ShortID="740076168">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Set_State_Explo" ID="{ADC1C055-D69A-4907-9AE6-8FDBDDF3EF6A}" WorkUnitID="{CEDD36D8-57EF-4C1A-A898-F4EEF1CF4790}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

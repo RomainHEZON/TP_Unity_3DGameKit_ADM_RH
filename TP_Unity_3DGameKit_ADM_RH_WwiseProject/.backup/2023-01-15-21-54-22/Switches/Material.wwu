@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4A5293FB-AA86-4587-B651-0D3927F99997}" SchemaVersion="110" RootDocumentID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}" ParentDocumentID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}">
+	<Switches>
+		<WorkUnit Name="Material" ID="{4A5293FB-AA86-4587-B651-0D3927F99997}" OwnerID="{A0E44E3D-B425-446A-9E0E-218AA2E1C150}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="20"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SwitchGroup Name="Material_Switch" ID="{6840FDAE-2861-43A6-8F12-A6D4DF85884E}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{640B38C4-3A9C-47F0-9B5D-BFEAC556C8D2}"/>
+						<Switch Name="Puddle" ID="{1F448F52-0795-48F2-91FA-252382C68E31}"/>
+						<Switch Name="Stone" ID="{80678943-4F3B-489D-B9D7-AD48D3F35346}"/>
+						<Switch Name="Metal" ID="{88AD2688-5420-466D-9821-5B8CA0A3B066}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

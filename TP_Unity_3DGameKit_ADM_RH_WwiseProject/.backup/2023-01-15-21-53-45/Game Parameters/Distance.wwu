@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" SchemaVersion="110" RootDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" ParentDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}">
+	<GameParameters>
+		<WorkUnit Name="Distance" ID="{FF1E3BE5-D1A1-4101-9E07-A517144C19CF}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Spaceship_AMB" ID="{D68315EB-B9A2-4809-84E1-2678F21D63BB}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Lake_AMB" ID="{1A1E01A3-C2AF-4B0D-BD17-D65938EE4E06}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Wind_AMB" ID="{FBE501F8-00F6-4579-A88D-485666B7321A}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="3"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="90"/>
+						<Property Name="Min" Type="Real64" Value="-90"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Staff_Idle_SFX" ID="{A8C25192-7909-4199-A320-021CAA0C5D1B}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Teleporter_SFX" ID="{9713901D-AAF8-4A33-A13F-5C2F05F09DDF}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="50"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Fireflies_AMB" ID="{7AF14CED-5890-41FA-A359-B2B882249A75}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="Max" Type="Real64" Value="10"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="AcidLake_AMB" ID="{8BEB0116-9750-44FB-BF16-E65FEBD8EA08}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Moving_Platform_SFX" ID="{C3AD8F8A-C9FF-47A0-A9C2-0B47028BC419}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="15"/>
+						<Property Name="Max" Type="Real64" Value="15"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

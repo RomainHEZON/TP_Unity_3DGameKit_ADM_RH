@@ -1,0 +1,2426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0718BB27-281F-432D-8939-DC3E36BB2F26}" SchemaVersion="110" RootDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}" ParentDocumentID="{9EF015E5-6663-4DBB-B164-080BE078F480}">
+	<AudioObjects>
+		<WorkUnit Name="00_40_Ellen_SFX" ID="{0718BB27-281F-432D-8939-DC3E36BB2F26}" OwnerID="{9EF015E5-6663-4DBB-B164-080BE078F480}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="Ellen_SFX_Mixer" ID="{9F33E9EB-D0AA-4ABF-B4D8-9EC805B89DF1}" ShortID="1038565128">
+					<PropertyList>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="VO_Mixer" ID="{BA7ED6C7-A3ED-4F69-B897-B15D909E4ADD}" ShortID="345107600">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{5B90AF99-0E33-405F-AB25-349D1B3D8B93}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="50"/>
+													<Property Name="Min" Type="Real64" Value="-50"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="VO_Attack_RC" ID="{F406D29A-75DD-40DF-BF85-71B8474BAB48}" ShortID="151750568">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0E0F272A-23D8-40BA-B4E9-8ACE9EFD507E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_VO_Attack_01" ID="{6F43EAAA-6E44-4A13-B60A-E1ECE09E5BDD}" ShortID="726546414">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Attack_01" ID="{BB2DDACB-C2CE-46EE-895B-4056A1A61D3E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Attack_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="52748730"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Attack_01" ID="{BB2DDACB-C2CE-46EE-895B-4056A1A61D3E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Attack_02" ID="{44A55B80-3950-4A59-A8F1-5781F6F20A8C}" ShortID="854722183">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Attack_02" ID="{ACCB5B3F-AFC6-40A5-8B25-F0F4846B45BD}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Attack_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="788579125"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Attack_02" ID="{ACCB5B3F-AFC6-40A5-8B25-F0F4846B45BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Attack_03" ID="{89524D3C-5403-4B80-BD66-53A2DD5AC43B}" ShortID="174718844">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Attack_03" ID="{608DF6B8-F1BB-45E6-959B-5AECE2FD8788}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Attack_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="384555383"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Attack_03" ID="{608DF6B8-F1BB-45E6-959B-5AECE2FD8788}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Attack_04" ID="{C5D87D14-0D0B-4D31-B6B1-F881B6E580C9}" ShortID="360443265">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Attack_04" ID="{967BA3F5-5CFC-4F99-BD59-E6BB41370DFC}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Attack_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="753481255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Attack_04" ID="{967BA3F5-5CFC-4F99-BD59-E6BB41370DFC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Attack_05" ID="{5B59CD86-7119-4E21-B2F4-70B7048882E9}" ShortID="393368755">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Attack_05" ID="{AD98CCCD-2DEC-49AB-A989-B3033E245360}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Attack_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="314158649"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Attack_05" ID="{AD98CCCD-2DEC-49AB-A989-B3033E245360}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Attack_06" ID="{1156DAE4-C785-4397-96A2-D6F1064E3A2F}" ShortID="494972846">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>40</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Attack_06" ID="{4391E92E-2715-4FBB-979A-1A944DA23A11}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Attack_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="810965302"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Attack_06" ID="{4391E92E-2715-4FBB-979A-1A944DA23A11}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence" ID="{1D7BC6E7-D829-4FB5-9A1D-9E85232C7FD4}" ShortID="318759619">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{29B57FBB-ADA1-429C-873A-2CE66C0C522C}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>80</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{E05F1C6B-A7A8-476E-ABA8-0D5FB8C658FC}" ShortID="857060532" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{E05F1C6B-A7A8-476E-ABA8-0D5FB8C658FC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VO_Death_RC" ID="{2EF2C734-2896-41A5-A3BA-2CBDA24FAD9E}" ShortID="650520553">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4711BAA3-18A4-47BF-818E-3A1BDEEB5030}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_VO_Death_01" ID="{4CBFA7B1-941F-4624-B9BD-C9F3998A6F03}" ShortID="466765119">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Death_01" ID="{279A7E61-CF8B-4C48-92F8-6D6E0B52898C}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Death_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="657548567"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Death_01" ID="{279A7E61-CF8B-4C48-92F8-6D6E0B52898C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Death_02" ID="{0E74B0FB-B58C-480C-8EFE-CE37FAD480FC}" ShortID="885966676">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Death_02" ID="{F185B255-31A9-4AA2-A16D-B5F1A7D6157D}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Death_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="233825437"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Death_02" ID="{F185B255-31A9-4AA2-A16D-B5F1A7D6157D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VO_Effort_RC" ID="{0841187F-8B28-433F-B09A-E7267C6E0E7A}" ShortID="445875409">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{AA70688D-36B8-46EF-858F-56C427E8CBA4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_VO_Effort_01" ID="{D7B99293-1C96-4213-9D3A-DA5D00EEE7F2}" ShortID="815229136">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Effort_01" ID="{66652807-0E37-415F-9083-86AFCB3C2ED0}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Effort_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="364027642"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Effort_01" ID="{66652807-0E37-415F-9083-86AFCB3C2ED0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Effort_02" ID="{281A0C5E-D835-4AC8-B347-EF007A13DB07}" ShortID="580185073">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Effort_02" ID="{83E16FF3-1888-4925-BE88-026DFCEC7979}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Effort_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="425814252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Effort_02" ID="{83E16FF3-1888-4925-BE88-026DFCEC7979}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Effort_03" ID="{46DF22BC-1A78-475B-891C-DBC44FD0E8FD}" ShortID="206372711">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Effort_03" ID="{EFD20FDA-B0F7-4252-B59E-F4A7CA48D99E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Effort_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="551170320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Effort_03" ID="{EFD20FDA-B0F7-4252-B59E-F4A7CA48D99E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Effort_04" ID="{10F486D4-3E20-4C1D-9AD5-4CF3E3AA066D}" ShortID="84975673">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Effort_04" ID="{666B2377-4F4F-4982-AC58-D4F29E6E620F}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Effort_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="231503081"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Effort_04" ID="{666B2377-4F4F-4982-AC58-D4F29E6E620F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Effort_05" ID="{1916E3A2-6DA2-4324-AD9D-39B305D7DED2}" ShortID="665087665">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Effort_05" ID="{94689A70-AA3D-4574-8A99-5532E05D8329}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Effort_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="904159772"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Effort_05" ID="{94689A70-AA3D-4574-8A99-5532E05D8329}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Effort_06" ID="{088EC8D3-EAD5-493C-B795-3A1A4A976675}" ShortID="879064307">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Effort_06" ID="{812D7FAD-2307-4E65-A82C-4FBDE09893E2}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Effort_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1048076034"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Effort_06" ID="{812D7FAD-2307-4E65-A82C-4FBDE09893E2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Silence" ID="{581DD2DB-51FC-46AC-9A89-BD19D1B1F244}" ShortID="122608824">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{94A2A70F-4B11-4F2B-A7D8-E6C246538394}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>85</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{A50EEDD4-6F79-4D83-9E19-7FBBC0AAB0F3}" ShortID="150768685" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{A50EEDD4-6F79-4D83-9E19-7FBBC0AAB0F3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VO_Inhale_RC" ID="{E900D877-69B4-46EF-A355-5B63CF834762}" ShortID="423818967">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{868A4359-3393-4B99-896A-1BC1F1DEF5FA}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_VO_Inhale_01" ID="{C4DA8557-63D4-4F22-98A7-C2264B397793}" ShortID="236166796">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Inhale_01" ID="{872CEA94-C638-457B-95F7-BB0657E32A06}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Inhale_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1009972051"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Inhale_01" ID="{872CEA94-C638-457B-95F7-BB0657E32A06}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Inhale_02" ID="{690DB3BA-BFC1-47CA-B67A-9E705F0210B6}" ShortID="361446746">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Inhale_02" ID="{842D76C3-33E0-4D00-A873-B18B85F7A1E1}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Inhale_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="706531040"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Inhale_02" ID="{842D76C3-33E0-4D00-A873-B18B85F7A1E1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Inhale_03" ID="{9111655C-E5E1-4BE0-A8F4-A114C8756E88}" ShortID="592510598">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Inhale_03" ID="{3CF62B0B-085B-4E20-8512-0AC3DD7297C8}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Inhale_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="469374635"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Inhale_03" ID="{3CF62B0B-085B-4E20-8512-0AC3DD7297C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="VO_Pain_RC" ID="{FCB948B1-CDF8-4283-AA46-3B0628358A93}" ShortID="290211548">
+									<PropertyList>
+										<Property Name="GlobalOrPerObject" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2C568235-BCDB-4AF6-B875-5FD40B971BF4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_VO_Pain_01" ID="{84844174-0443-45FB-A528-FF248D89A32A}" ShortID="754534659">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Pain_01" ID="{993F0BC1-4212-48E1-8224-6AF7894112E7}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Pain_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="18505171"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Pain_01" ID="{993F0BC1-4212-48E1-8224-6AF7894112E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Pain_02" ID="{EB53DAC9-A874-4A6C-8BF8-85AE18240244}" ShortID="361172121">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Pain_02" ID="{E616C5A0-D445-4C79-BAB3-1336886501E3}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Pain_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="49990726"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Pain_02" ID="{E616C5A0-D445-4C79-BAB3-1336886501E3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Pain_03" ID="{58A4F71E-647E-4E97-A276-FC283BBA1FCD}" ShortID="815637036">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Pain_03" ID="{AE0B2D71-78EA-48DE-AA4A-F7F85E619849}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Pain_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="324914276"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Pain_03" ID="{AE0B2D71-78EA-48DE-AA4A-F7F85E619849}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Pain_04" ID="{F24F33A6-5F8A-4726-BFA4-D0430D5D27A7}" ShortID="674364458">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Pain_04" ID="{EC70DC16-7717-4108-9AC0-790D69D88FEA}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Pain_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="17155344"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Pain_04" ID="{EC70DC16-7717-4108-9AC0-790D69D88FEA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Pain_05" ID="{206CAC7F-0214-41A5-9FC5-D9BFD35DC552}" ShortID="852763890">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Pain_05" ID="{9AFAFC35-4C1A-41B6-9A35-79CDC5F6E95F}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Pain_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="836954198"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Pain_05" ID="{9AFAFC35-4C1A-41B6-9A35-79CDC5F6E95F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_VO_Pain_06" ID="{035D3912-10F7-430F-870C-9CB5A4101A2F}" ShortID="812074261">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_VO_Pain_06" ID="{1CB2E08D-96A4-4740-8A6D-DA6BF2D28AF6}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_VO_Pain_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="114506270"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_VO_Pain_06" ID="{1CB2E08D-96A4-4740-8A6D-DA6BF2D28AF6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Foley_Mixer" ID="{943C05D4-71A5-446B-9671-0F65189EF5C5}" ShortID="10002325">
+							<PropertyList>
+								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="FOL_Jump_RC" ID="{22E37FF9-6403-40D8-9357-793620AF8112}" ShortID="53062586">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{7A2075DE-A0E0-45D9-98C7-E48352B0C0D5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_FOL_Jump_01" ID="{E56EAAAA-FE9D-4FAE-9978-B6808280B8DE}" ShortID="166317532">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Jump_01" ID="{1D08815B-AA4A-40B6-B9FE-EF3144F7EE8F}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Jump_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="535331808"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Jump_01" ID="{1D08815B-AA4A-40B6-B9FE-EF3144F7EE8F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Jump_02" ID="{4BAEF5C4-0D32-496A-9074-AD374EA7A4A4}" ShortID="324561540">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Jump_02" ID="{17A8C63D-EE19-42D2-AD75-E7047423D47F}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Jump_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="116163342"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Jump_02" ID="{17A8C63D-EE19-42D2-AD75-E7047423D47F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Jump_03" ID="{5009A371-9C46-4709-9189-EA4FD65AC637}" ShortID="772693403">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Jump_03" ID="{DABAB639-71A3-4367-BB96-9AB5633C3A0E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Jump_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="418328423"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Jump_03" ID="{DABAB639-71A3-4367-BB96-9AB5633C3A0E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Jump_04" ID="{B206268C-FEB4-43DC-9E7F-7934ECE9FEF9}" ShortID="1062367086">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Jump_04" ID="{A1A47963-6ABD-4E1A-915C-6D0F3BDEF5E4}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Jump_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182342010"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Jump_04" ID="{A1A47963-6ABD-4E1A-915C-6D0F3BDEF5E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Jump_05" ID="{581005CE-A1BB-43E8-8C1D-A55CE7820C05}" ShortID="993305776">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Jump_05" ID="{0407C39D-F8A5-4A75-997E-70885EB4A97F}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Jump_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="413783638"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Jump_05" ID="{0407C39D-F8A5-4A75-997E-70885EB4A97F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Jump_06" ID="{EE8CB2AC-8ABB-4950-B883-E15D6011CFC8}" ShortID="106406893">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Jump_06" ID="{0DC23A34-CF12-4FD5-9A11-1E72A77A30F8}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Jump_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="100880891"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Jump_06" ID="{0DC23A34-CF12-4FD5-9A11-1E72A77A30F8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FOL_Roll_RC" ID="{03FCB243-8309-419A-A592-A7CDB2989208}" ShortID="641293696">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FD6D1A9C-C7F8-4E08-816B-6C4DD1C7A1CC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-7</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_FOL_Roll_01" ID="{19A955B8-0A94-4A5D-BAA9-917EAB55C535}" ShortID="456282">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Roll_01" ID="{E6A35CCF-1681-4002-B70D-783EFB8BA2C8}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Roll_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="564213551"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Roll_01" ID="{E6A35CCF-1681-4002-B70D-783EFB8BA2C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Roll_02" ID="{83E056B2-3865-40D0-8E81-39EFC3C4C730}" ShortID="730376479">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Roll_02" ID="{0D2A8A1C-736C-446B-8333-14A60BF2A133}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Roll_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="583262733"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Roll_02" ID="{0D2A8A1C-736C-446B-8333-14A60BF2A133}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FOL_Run_RC" ID="{57B00619-E84B-4E8E-AF2D-3C18EBDCB12E}" ShortID="1060657951">
+									<PropertyList>
+										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{1A61F6CF-BCE8-468F-BE5E-A3CE888FFECD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-50"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_FOL_Run_01" ID="{4481C196-4A5C-4AC8-AF82-06CF9F970130}" ShortID="363758070">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Run_01" ID="{1B53D11C-8E3E-42C3-9523-805AA9D46410}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Run_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776873682"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Run_01" ID="{1B53D11C-8E3E-42C3-9523-805AA9D46410}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Run_02" ID="{2D992A6D-39DF-4906-A537-B9189E290380}" ShortID="580612155">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Run_02" ID="{2CF20BA4-E799-4746-BD4A-0234FF84674B}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Run_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="398982317"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Run_02" ID="{2CF20BA4-E799-4746-BD4A-0234FF84674B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Run_03" ID="{8D1E9E0B-AF80-4FE0-807B-92568263079E}" ShortID="1056903278">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Run_03" ID="{A8EB045B-B4CB-437F-9E4B-567DC302B244}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Run_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="872668287"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Run_03" ID="{A8EB045B-B4CB-437F-9E4B-567DC302B244}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Run_04" ID="{BAAE9D31-3C4B-4D20-955F-109882C029DC}" ShortID="883088543">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Run_04" ID="{64438283-83B6-4E7F-864F-90B545DF2D75}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Run_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="150224307"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Run_04" ID="{64438283-83B6-4E7F-864F-90B545DF2D75}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Run_05" ID="{1924D414-0C5D-4AC2-9357-43B77F7D020F}" ShortID="1026481133">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Run_05" ID="{B603C587-BB56-4194-A82D-891C0BA9DEDA}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Run_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="461758700"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Run_05" ID="{B603C587-BB56-4194-A82D-891C0BA9DEDA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Run_06" ID="{5FC93FAC-578F-438A-81E4-9AA7865E3AD6}" ShortID="626716457">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Run_06" ID="{E3616FBC-478A-447C-B6DF-6C15C057B76E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Run_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1068441037"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Run_06" ID="{E3616FBC-478A-447C-B6DF-6C15C057B76E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="FOL_Idle_RC" ID="{6E02A498-DA26-43F5-A2E2-44A83A5433E3}" ShortID="102870548">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{74769D5B-6805-4DA0-8433-9D1242839289}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_FOL_Idle_01" ID="{077519D5-755B-4BB7-BEC2-CFD1C1F3C3EE}" ShortID="775113383">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Idle_01" ID="{13A575B3-F633-45D2-8B63-CE50CEFC9B9E}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Idle_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="248218025"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Idle_01" ID="{13A575B3-F633-45D2-8B63-CE50CEFC9B9E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Idle_02" ID="{AFA365D9-5E8B-4BEB-A59D-91742AF3BB9B}" ShortID="1043761166">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Idle_02" ID="{4C821856-E462-4A56-A599-D731A40DC8FE}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Idle_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="738678400"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Idle_02" ID="{4C821856-E462-4A56-A599-D731A40DC8FE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_FOL_Idle_03" ID="{7217F644-3733-423D-8DD6-46C84439664A}" ShortID="158096794">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_FOL_Idle_03" ID="{66FBE225-85AC-44B2-90D7-E8F74A4F555A}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_FOL_Idle_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="680625840"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_FOL_Idle_03" ID="{66FBE225-85AC-44B2-90D7-E8F74A4F555A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Bodyfall_Mixer" ID="{F5D71CC5-221E-4ABD-9ED7-09BF11C784F8}" ShortID="869007304">
+							<PropertyList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F041858F-34F8-4962-8930-2DAB74FB0B4E}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Bodyfall_Water_RC" ID="{3FF7332E-3A93-49D8-A7D5-1E79F4FE7C04}" ShortID="202456076">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B3318044-C64F-4B0F-89E7-15A630EF2FCC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_Bodyfall_Water_01" ID="{AFDCF79A-FAAD-4EFF-9320-4DAB0FAFF631}" ShortID="977387263">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Bodyfall_Water_01" ID="{D643526B-83C5-4CF0-923C-919F17D5B17A}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Bodyfall_Water_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="555327716"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Bodyfall_Water_01" ID="{D643526B-83C5-4CF0-923C-919F17D5B17A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Bodyfall_Water_02" ID="{DFEAC661-93C6-4B84-9EEE-D701F6852D7B}" ShortID="706322272">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Bodyfall_Water_02" ID="{89A6B5A2-D0BC-4BE8-990D-923AAAF3224F}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Bodyfall_Water_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="643456098"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Bodyfall_Water_02" ID="{89A6B5A2-D0BC-4BE8-990D-923AAAF3224F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Ellen_SFX_Bodyfall" ID="{1F9B59F5-5521-46C2-A3D5-0313E09DF3C9}" ShortID="185303337">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{64783441-559B-400C-97AF-55E7C8CB3FED}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="50"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ellen_SFX_Bodyfall" ID="{CE29B59C-9DD7-4062-BE45-D1210E67A6BF}">
+											<Language>SFX</Language>
+											<AudioFile>Ellen_SFX_Bodyfall.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="983004342"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ellen_SFX_Bodyfall" ID="{CE29B59C-9DD7-4062-BE45-D1210E67A6BF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Alien_Staff_Attack_Mixer" ID="{20D82C27-2359-4214-A8AE-5988A70B99DC}" ShortID="383894015">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A65FC70D-D2CC-4412-9B42-39EFC9B13418}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Alien_Staff_Attack_RC" ID="{8EA6D9DA-7BB1-464C-9582-A170C60F7CCF}" ShortID="42440427">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{19F394A5-1376-4CE6-B4EC-A7F9B550015F}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{705B1996-7838-4F86-BC37-95932583AAB2}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Guitar Distortion (Custom)" ID="{21DED98F-75DF-4EA4-8194-8B73F1D082E8}" ShortID="941828739" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="0"/>
+														<Property Name="DistortionTone" Type="Real32" Value="25"/>
+														<Property Name="DistortionType" Type="int32" Value="1"/>
+														<Property Name="PostEQBand1Enable" Type="bool" Value="True"/>
+														<Property Name="PostEQBand1Frequency" Type="Real32" Value="700"/>
+														<Property Name="PostEQBand1Gain" Type="Real32" Value="2.5"/>
+														<Property Name="WetDryMix" Type="Real32" Value="20"/>
+													</PropertyList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<Reference>
+																<Local>
+																	<RTPC Name="" ID="{69DA3EED-EED4-4B95-8A2A-7AEDA3CBDC64}" ShortID="1051103558">
+																		<PropertyList>
+																			<Property Name="PropertyName" Type="string" Value="DistortionDrive"/>
+																		</PropertyList>
+																		<ReferenceList>
+																			<Reference Name="ControlInput">
+																				<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+																			</Reference>
+																			<Reference Name="Curve">
+																				<Custom>
+																					<Curve Name="" ID="{994C2EFE-49AC-4E63-8780-31D44DF62825}">
+																						<PropertyList>
+																							<Property Name="Flags" Type="int32" Value="1"/>
+																						</PropertyList>
+																						<PointList>
+																							<Point>
+																								<XPos>0</XPos>
+																								<YPos>0</YPos>
+																								<Flags>5</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.998920086393089</XPos>
+																								<YPos>0</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>0.99992</XPos>
+																								<YPos>25</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2</XPos>
+																								<YPos>25</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>2.001</XPos>
+																								<YPos>50</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3</XPos>
+																								<YPos>50</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.001</XPos>
+																								<YPos>75</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>4.00108</XPos>
+																								<YPos>75</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>4.00208</XPos>
+																								<YPos>100</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>5</XPos>
+																								<YPos>100</YPos>
+																								<Flags>37</Flags>
+																							</Point>
+																						</PointList>
+																					</Curve>
+																				</Custom>
+																			</Reference>
+																		</ReferenceList>
+																	</RTPC>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
+											<ObjectRef Name="One_Tap_Quarter_Second" ID="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_Alien_Staff_Attack_01" ID="{9EAE51F3-13F1-4273-B7D4-2983E4D0026C}" ShortID="159735676">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8718863B-F7C8-4400-BD02-F64630FBB890}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_01" ID="{703060AE-5B4E-41F4-967D-5CF18295EC8B}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="412738326"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_01" ID="{703060AE-5B4E-41F4-967D-5CF18295EC8B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_02" ID="{D9BBFCE6-5C2E-4FC5-AAB4-F2A05C606E86}" ShortID="299801013">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_02" ID="{56A9635C-B5CD-4C5A-AECD-0A71CD3F7AFE}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="167487927"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_02" ID="{56A9635C-B5CD-4C5A-AECD-0A71CD3F7AFE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_03" ID="{C99DEB4A-E810-48CD-BAC0-77C6D33C2673}" ShortID="1027008469">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_03" ID="{D4AA4770-F26A-4EFC-9013-26041FD2E24D}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="402004189"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_03" ID="{D4AA4770-F26A-4EFC-9013-26041FD2E24D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_04" ID="{97061EC6-EC91-48AA-BA23-4C1EF4CE9A9F}" ShortID="18696106">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_04" ID="{EF4E9E54-5CC3-4CF2-B4CB-71771D45C3E6}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="788523815"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_04" ID="{EF4E9E54-5CC3-4CF2-B4CB-71771D45C3E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_05" ID="{2D5E6222-368D-4E3B-A4BD-0DC0E92FAA0C}" ShortID="620556331">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_05" ID="{BB2D40DB-212C-45B9-96C4-D4749B08BE3A}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="223353399"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_05" ID="{BB2D40DB-212C-45B9-96C4-D4749B08BE3A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_06" ID="{A17A0F41-88EC-4E71-AE2A-BA61411688C4}" ShortID="402513364">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_06" ID="{F85EEA8D-F4A6-49BD-B977-BE7F52A6EC97}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="174597733"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_06" ID="{F85EEA8D-F4A6-49BD-B977-BE7F52A6EC97}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_07" ID="{C92E0F3E-8B7B-4330-BA9E-DD61947C732C}" ShortID="806984470">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_07" ID="{89F46F65-8866-41F6-A406-52CDEC135894}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="241975051"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_07" ID="{89F46F65-8866-41F6-A406-52CDEC135894}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_08" ID="{899FFAEA-796D-4E6D-AD9E-D402E5140595}" ShortID="592813570">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_08" ID="{EDA01FCA-91D9-43BE-B390-5B8EFDA3E7D7}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="590952037"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_08" ID="{EDA01FCA-91D9-43BE-B390-5B8EFDA3E7D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{0228725D-5668-4A1F-8170-560B4FAF506F}" ShortID="289366274">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Disto_Delay_Staff_RTPC" ID="{5F1EB9A7-62FC-4E80-95DA-AB369D9CA120}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{8F640E9C-FB3E-4780-BCC1-491AF9D05355}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1.999</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.999</XPos>
+																				<YPos>150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>300</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3.999</XPos>
+																				<YPos>300</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>4</XPos>
+																				<YPos>450</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>5</XPos>
+																				<YPos>450</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Ellen_Alien_Staff_Attack_Layer_RC" ID="{B9557DBA-9075-4E9A-A36D-23407640CCE8}" ShortID="348555890">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0676C349-858E-45DC-8C02-D704F47D3082}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_Alien_Staff_Attack_Layer_01" ID="{29495EBF-F7CD-4FD6-9A77-1A5E69D1E9E6}" ShortID="119100851">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_Layer_01" ID="{9E59B57E-4F0F-4630-B46D-104254D28B55}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_Layer_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="399032531"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_Layer_01" ID="{9E59B57E-4F0F-4630-B46D-104254D28B55}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_Layer_02" ID="{362DA791-9D89-4BAD-8439-3CA31F7C5842}" ShortID="898111405">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_Layer_02" ID="{DB73E416-F3A7-45A9-857F-8F38C25CBB2A}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_Layer_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="529948301"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_Layer_02" ID="{DB73E416-F3A7-45A9-857F-8F38C25CBB2A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_Layer_03" ID="{3A26F2D3-56B1-42C5-8974-80007A11BD0A}" ShortID="710598667">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_Layer_03" ID="{18CE1C1D-E8AB-489C-9B62-96E715CF494D}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_Layer_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1056748119"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_Layer_03" ID="{18CE1C1D-E8AB-489C-9B62-96E715CF494D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_Layer_04" ID="{13BA323C-2D7F-43B4-8841-D34455D196A7}" ShortID="64833629">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_Layer_04" ID="{5DD39458-BFB8-49FB-A237-65AAAE883EC5}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_Layer_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="219796718"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_Layer_04" ID="{5DD39458-BFB8-49FB-A237-65AAAE883EC5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_Layer_05" ID="{2D35FF51-69C4-4109-BF85-D9D582CF1BCA}" ShortID="221340817">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+													<ObjectRef Name="Boost_3dB_100Hz" ID="{3EA7C9BD-6F9A-4000-A227-F86B5B4328EE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_Layer_05" ID="{B977B096-A3AA-41B2-AF05-19B4B4314E0C}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_Layer_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="22262707"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_Layer_05" ID="{B977B096-A3AA-41B2-AF05-19B4B4314E0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_Alien_Staff_Attack_Layer_06" ID="{820DABBD-BD16-410D-A1C4-0F3FA613717A}" ShortID="956696476">
+											<PropertyList>
+												<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>20</Value>
+													</ValueList>
+												</Property>
+												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_Alien_Staff_Attack_Layer_06" ID="{69EE366A-505F-4E82-96D7-FBC0664B8E85}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_Alien_Staff_Attack_Layer_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="979015196"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_Alien_Staff_Attack_Layer_06" ID="{69EE366A-505F-4E82-96D7-FBC0664B8E85}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{2DB87A11-9E02-42C3-93A2-E8C01D5F5230}" ShortID="64618280">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{5DD692E1-AF22-47A8-BF43-F341457999DA}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.999</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>-8</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1.999</XPos>
+																				<YPos>-8</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.00605</XPos>
+																				<YPos>-6</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.99274</XPos>
+																				<YPos>-6</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>-4</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3.999</XPos>
+																				<YPos>-4</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>4</XPos>
+																				<YPos>-2</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>5</XPos>
+																				<YPos>-2</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{56BE23D4-6F6B-407D-8ACF-DF49D413E90C}" ShortID="168757954">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Layer_Staff_RTPC" ID="{53B31E76-0F3F-4593-9BD4-B885BB922A33}" WorkUnitID="{E128E290-4D31-4964-B39D-B7CD4CE05DD0}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{1D95A7A0-AEAA-414C-8E03-CB303A11C18C}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-4800</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>0.999</XPos>
+																				<YPos>-4800</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1</XPos>
+																				<YPos>-150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>1.999</XPos>
+																				<YPos>-150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>2.999</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3</XPos>
+																				<YPos>150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>3.999</XPos>
+																				<YPos>150</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>4</XPos>
+																				<YPos>300</YPos>
+																				<Flags>0</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>5</XPos>
+																				<YPos>300</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+						<ActorMixer Name="Shield_Activate_Mixer" ID="{C52E94FD-8068-49E3-98C0-F582A9930C0B}" ShortID="686545033">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{1B24B08C-43A6-472C-AD87-7787716B481B}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Boost_3dB_10KHz" ID="{59632554-9396-4E15-889E-7A2F5458DEC3}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Shield_Activate_RC" ID="{74994595-5DED-41D5-BE21-43CC65795886}" ShortID="630161018">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8E9B18F3-9001-46D3-A07E-22844B0A2A50}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="100"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ellen_SFX_Shield_Activate_01" ID="{53B332D6-68EB-466E-8E92-D45B0DA52482}" ShortID="252902310">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Shield_Activate_01" ID="{D87AE6DC-5F85-417F-BF20-BB6F46E71904}">
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Shield_Activate_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="551714460"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="Ellen_SFX_Shield_Activate_02" ID="{00D0C52B-E67E-47A6-895C-EBACB3D49DC5}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.258831561499771"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Shield_Activate_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="109017655"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Shield_Activate_02" ID="{00D0C52B-E67E-47A6-895C-EBACB3D49DC5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ellen_SFX_Shield_Activate_02" ID="{C460F00C-795A-4E24-91F3-8736EDD09212}" ShortID="909645844">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Bus_Ellen" ID="{486634C5-6A25-4B21-BC89-527EE24D29AB}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ellen_SFX_Shield_Activate_02" ID="{1C6EAF1F-333D-4F7C-9DD3-B1DCA4EC21DB}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.27926563214449"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ellen_SFX_Shield_Activate_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="974062211"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ellen_SFX_Shield_Activate_02" ID="{1C6EAF1F-333D-4F7C-9DD3-B1DCA4EC21DB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D268E68B-D0CB-4EC8-96B3-975CC823F1B6}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="00_20_AMB_RFX" ID="{D268E68B-D0CB-4EC8-96B3-975CC823F1B6}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="23"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Spaceship" ID="{38B7EDDF-514F-4E3E-957F-9BA71202F2A5}" ShortID="883885811">
+					<ChildrenList>
+						<Event Name="Play_Engine_BC" ID="{E1A445B4-FCCF-4E9E-818F-0E308039B9E5}">
+							<ChildrenList>
+								<Action Name="" ID="{3CD9C41A-8401-4EDC-9561-43F7B63CAB32}" ShortID="860716348">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Engine_BC" ID="{EFBF54F5-3D2E-4D01-9E7C-37CDAD9A2680}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Radio_RFX" ID="{16B10062-878D-47E3-9E54-CA4A9020CF93}">
+							<ChildrenList>
+								<Action Name="" ID="{4B787D9E-8494-465E-BAE4-CE3544443D27}" ShortID="932243978">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Radio_RFX_Looper" ID="{40875FA2-C345-48B2-97D0-ACCE16A92C91}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Spaceship_Landing" ID="{BB881035-0266-48CB-9E7C-41EAAE251191}">
+							<ChildrenList>
+								<Action Name="" ID="{C57FD0BF-6595-46B4-A414-1EF33037DB4E}" ShortID="908092142">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Spaceship_Landing" ID="{BC99C9DB-619E-496A-8A1F-A684D04D3F3F}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Spaceship_Landing_Smoke_Ring" ID="{F0E72ED6-5B5A-4CB6-B1B1-C3B163D8DBF3}">
+							<ChildrenList>
+								<Action Name="" ID="{47EDAF5E-6E64-4CCF-8C9C-96FBB6268762}" ShortID="500458379">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_RFX_Spaceship_Landing_Smoke_Ring" ID="{679FF806-548A-4DB6-BEF1-EA45DF5D2C8B}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_AMB_RFX_Morse_Code" ID="{CF7E75C5-CC13-4D12-BA15-98E650D5779E}">
+							<ChildrenList>
+								<Action Name="" ID="{CCDFB07B-0508-4589-B449-220A9CD4A532}" ShortID="250536718">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_RFX_Morse_Code_Loop" ID="{08B31DE9-91FB-42FC-B72A-B4D746211A01}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Animals" ID="{1433CB3C-696A-4391-915B-BB72E632AC68}" ShortID="871783545">
+					<ChildrenList>
+						<Event Name="Play_Big_Creature_A" ID="{87D275F8-857F-4330-8CED-50ED0E7F28E3}">
+							<ChildrenList>
+								<Action Name="" ID="{6E027A92-A59D-449F-9E37-403C00FC8BE8}" ShortID="466090232">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8EC21DA1-AF44-44A6-95E0-00A41CCAFA56}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="FadeTime" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Big_Creature_A_RC" ID="{4D83EE54-4C19-4A3F-A124-F8A50107185C}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Eeldog_Dive" ID="{FFAA9FD3-BE94-412B-A7D3-660301927423}">
+							<ChildrenList>
+								<Action Name="" ID="{F03A9B29-FA58-46AF-8046-F2AAC8202150}" ShortID="289324256">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Eeldog_Dive_RC" ID="{CBD40832-5494-4451-B63C-9E6F895E3CC0}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Eeldog_Emerge" ID="{88060A8D-CF04-41FC-A0FD-9016EA710662}">
+							<ChildrenList>
+								<Action Name="" ID="{BCED9FE7-9A8B-43E4-9137-42389E48098B}" ShortID="472480523">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Eeldog_Emerge_RC" ID="{B97CA097-187A-4A79-88FC-FC1BEF22F9A4}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Fireflies" ID="{215B68A3-F27D-4391-9358-53754317B111}">
+							<ChildrenList>
+								<Action Name="" ID="{9DE9A713-4DE0-419E-AF38-FD2E3C83B500}" ShortID="787398214">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D3091C54-99D2-44C4-91D8-F10F2CC33350}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Fireflies_BC" ID="{8A29EC95-E887-4706-B772-46FFC28FE8CF}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Magic_Cave" ID="{813A6066-655D-4DD0-8B1F-B4C94A05DFCB}">
+							<ChildrenList>
+								<Action Name="" ID="{6F30DC88-02D7-4CC6-9409-A56686393F4B}" ShortID="225791189">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="3">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{444D38E2-F1B9-424A-8F52-1BE7A7AD3E4D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Magic_Cave_RC" ID="{C2DEC894-E833-4584-B841-668F8857B075}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Big_Creature_B" ID="{D2AF0C01-D6E7-41B9-8F8C-AE99D4230E6E}">
+							<ChildrenList>
+								<Action Name="" ID="{595D35CA-10D7-4C4A-BFF4-C1984645BC63}" ShortID="242545093">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F8E91CE1-E717-42ED-9F7F-0175DBD697AD}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-1.5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Big_Creature_B_RC" ID="{948F3D1C-5BFF-45B1-AFC5-417B002DF4C6}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Cavern_Animal" ID="{0E2D7273-79A1-4B8B-A111-DBC8CD91D8A5}">
+							<ChildrenList>
+								<Action Name="" ID="{30AD1CEA-D9A5-4D7C-8046-EC0C6E264646}" ShortID="794203469">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Cavern_Animal_RC" ID="{FDB92917-22E4-49B0-9CF5-B37DA41ADF6E}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_All_Birds" ID="{501016CE-76F1-48ED-9013-1E31C26DA64C}">
+							<ChildrenList>
+								<Action Name="" ID="{1ED1A4D5-44A8-4401-B471-7E1EAB9EEE2D}" ShortID="832397726">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="2.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="All_Birds_RC" ID="{16A387A6-1ADA-4D02-81B0-A73176FA1EF6}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Environment" ID="{5FD113A7-4DE3-4FBA-AD8C-2309D18190E8}" ShortID="299913417">
+					<ChildrenList>
+						<Event Name="Play_Vine" ID="{824F2ACE-5897-46D5-AFDD-E98CB66F726D}">
+							<ChildrenList>
+								<Action Name="" ID="{C22F62CF-3939-4124-B0FF-9FB1B9475B76}" ShortID="744224086">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Vine_RC" ID="{ACBA5D82-4998-41F6-B4CA-69EC805B9FB9}" WorkUnitID="{15DF94A0-E1A9-40A9-A7E5-6DB7AED51FCF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

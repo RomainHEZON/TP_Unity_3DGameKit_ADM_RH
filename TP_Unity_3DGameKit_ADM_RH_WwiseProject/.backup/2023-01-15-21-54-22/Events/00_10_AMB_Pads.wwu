@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BB71F017-794F-4640-A0AC-6CB855B1DE9D}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="00_10_AMB_Pads" ID="{BB71F017-794F-4640-A0AC-6CB855B1DE9D}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Folder Name="Spaceship" ID="{08D49A24-67C6-4CFF-B715-521F97EADE5C}" ShortID="582876016">
+					<ChildrenList>
+						<Event Name="Play_Spaceship_BC" ID="{1AA53E2C-7479-41FA-8B07-5676672444D9}">
+							<ChildrenList>
+								<Action Name="" ID="{30B713C1-677C-41F6-9C34-B6399C95D5DE}" ShortID="773127774">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spaceship_BC" ID="{0EA56E67-DBFA-4C2B-9882-5361EC4B8EB5}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Play_AMB_PAD_Lake" ID="{F40E01DA-5D02-4CD2-AB57-213E6C5A964D}">
+					<ChildrenList>
+						<Action Name="" ID="{E64B0241-C75E-4D25-907B-8C2288A98122}" ShortID="581133983">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Lake_SC" ID="{18AB161E-53BB-40FD-ABEB-8DFC781F7088}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Wetland" ID="{44A3EB96-E126-42EA-B86A-8EC8E7918906}">
+					<ChildrenList>
+						<Action Name="" ID="{5B1EDA00-3406-4D29-8462-AC56BD6F8884}" ShortID="978933492">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Wetland_Loop" ID="{FBF224B4-E0E3-4F2B-8CDE-7187F16AE478}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Cave" ID="{870AE3B9-3027-48D5-BF91-B3F5D103F900}">
+					<ChildrenList>
+						<Action Name="" ID="{206F5865-B2D7-4716-B32A-90F89F073699}" ShortID="555856871">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Cave_Loop" ID="{4872A60D-3DE0-4ECB-8136-5AE90110D75E}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Wind" ID="{8A081EA8-53CA-48E0-914D-20A84E8880E3}">
+					<ChildrenList>
+						<Action Name="" ID="{6ECAA0E8-53D4-4A0D-8EFD-EE350B63C16F}" ShortID="959009485">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind_State" ID="{E2D34B61-CEB7-454F-9547-978F706FBD35}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Huge_Door_Crystal" ID="{333620B1-0A92-4863-9F90-6C0D88CD19D3}">
+					<ChildrenList>
+						<Action Name="" ID="{11A37DC0-EADA-4C74-9CD2-7877A2D87589}" ShortID="467913299">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Huge_Door_Crystal_Loop" ID="{A50DE105-DE48-45C9-9262-EC3FCE689E22}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Cavern" ID="{872D10CD-808A-4D0C-85B2-5A67A7015C85}">
+					<ChildrenList>
+						<Action Name="" ID="{6E282523-E684-4343-9C2E-B3006920D7EF}" ShortID="785948872">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Cavern_Loop" ID="{99300F38-93EA-4BFC-B241-1E1BBA125991}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Acid_Lake" ID="{7E481841-D48B-49FA-BA38-C57375EC3957}">
+					<ChildrenList>
+						<Action Name="" ID="{A771C05B-1D2B-4ABB-A471-D82242BC9E26}" ShortID="861065415">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Acid_Lake_BC" ID="{9FCFE6E1-3CA7-4F3A-98B8-3332130CE68A}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Exterior_Cavern" ID="{A1E29441-EAD0-4D71-B56A-12DD6CBD3E2C}">
+					<ChildrenList>
+						<Action Name="" ID="{8A8794A7-115E-48D6-B19E-5EA04D5FA16D}" ShortID="193617540">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Wetland_Loop" ID="{66FE5D63-C673-40D4-8F52-58590E2B0BAB}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_PAD_Wind_Cavern" ID="{10F639F3-F128-43B3-9AAD-9DED4214A5D6}">
+					<ChildrenList>
+						<Action Name="" ID="{9D116328-E6A3-43A4-AAF1-6D8CE3DFE8B0}" ShortID="653372676">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wind" ID="{4282FDDB-A314-4BBE-BB19-4E06B28B4343}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Tunnel_01" ID="{7BDF981E-F7DB-486D-8285-CC0559C47C0D}">
+					<ChildrenList>
+						<Action Name="" ID="{F916AB9C-A872-4894-8D16-8EB58D471AC4}" ShortID="646427059">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Tunnel_01" ID="{674B3180-5986-4031-A8FF-8AECD903A3CF}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Lava" ID="{A3BCE375-D477-41F7-86C6-10BB21C38830}">
+					<ChildrenList>
+						<Action Name="" ID="{05447ED3-3C50-45C1-A6F7-C7C0E61F496E}" ShortID="23619897">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_PAD_Lava_BC" ID="{BB8420CB-A241-42DA-A429-6430D1D16E28}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_PAD_Rain" ID="{6671EE29-F582-49EA-9CC1-F5F6991D6CE2}">
+					<ChildrenList>
+						<Action Name="" ID="{BF56509B-AD90-4BF2-BE25-F63DBE5DE865}" ShortID="861427539">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain_BC" ID="{A9E4F5DB-0099-4EB2-AF67-EA40DB511117}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_AMB_Pad_Tree" ID="{A12388C4-C044-4A4B-91B2-457B1243AA6E}">
+					<ChildrenList>
+						<Action Name="" ID="{A1E20E89-830C-4497-B381-BF5E1987741D}" ShortID="431932495">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="AMB_Pad_Tree_Loop" ID="{292DC283-06EA-4E12-975F-76C599A22618}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

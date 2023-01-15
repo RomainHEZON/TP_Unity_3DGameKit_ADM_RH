@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}" SchemaVersion="110" RootDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" ParentDocumentID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}">
+	<GameParameters>
+		<WorkUnit Name="Weather" ID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="27"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<GameParameter Name="Rain_Intensity_RTPC" ID="{C0319FE6-77AF-44E4-B8EA-21587892135F}">
+					<PropertyList>
+						<Property Name="FilterTimeDown" Type="Real64" Value="2.5"/>
+						<Property Name="FilterTimeUp" Type="Real64" Value="5"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="0"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

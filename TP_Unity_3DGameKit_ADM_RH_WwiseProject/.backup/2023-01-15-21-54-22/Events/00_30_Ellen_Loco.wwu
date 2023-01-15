@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B61919A5-8D56-4C07-8E3B-C50AABF2C270}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="00_30_Ellen_Loco" ID="{B61919A5-8D56-4C07-8E3B-C50AABF2C270}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="11"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Ellen_Footstep" ID="{D149277E-4C36-48AC-8199-CEE9EA1ED1E3}">
+					<ChildrenList>
+						<Action Name="" ID="{DD82CE65-DDCE-4466-A5A9-CDABF8B37C54}" ShortID="95263473">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ellen_Footstep" ID="{37D227C1-B2DC-42F9-ACB5-1E23433E35D7}" WorkUnitID="{6DE8A3F8-CA47-4439-9479-B533A6CB8867}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

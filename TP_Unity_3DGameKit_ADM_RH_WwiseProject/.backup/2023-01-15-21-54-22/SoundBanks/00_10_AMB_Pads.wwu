@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{06357D6A-B5FD-4D4B-B032-684DB8518F3D}" SchemaVersion="110" RootDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" ParentDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}">
+	<SoundBanks>
+		<WorkUnit Name="00_10_AMB_Pads" ID="{06357D6A-B5FD-4D4B-B032-684DB8518F3D}" OwnerID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="10"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="AMB_Pads_SNBK" ID="{B333FD6B-1C95-4E5C-B7C7-7BB9DB6EC85C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="00_10_AMB_Pads" ID="{BB71F017-794F-4640-A0AC-6CB855B1DE9D}" WorkUnitID="{BB71F017-794F-4640-A0AC-6CB855B1DE9D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

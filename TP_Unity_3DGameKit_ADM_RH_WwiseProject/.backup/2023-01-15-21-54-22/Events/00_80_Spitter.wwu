@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}" SchemaVersion="110" RootDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" ParentDocumentID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}">
+	<Events>
+		<WorkUnit Name="00_80_Spitter" ID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}" OwnerID="{CC8C81F0-08F8-4DE4-8244-C79550DA8CEE}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="3"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_SFX_Spitter_Spit_Loop" ID="{32DA0562-FAE7-4AEE-928A-B26FAB3F9C09}">
+					<ChildrenList>
+						<Action Name="" ID="{96C2A201-13A5-42B5-A8D4-8D983B7756F3}" ShortID="239240452">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Spitter_Attack" ID="{EC9FE7E1-9747-4E07-BF15-4D4FD9FF2F53}">
+					<ChildrenList>
+						<Action Name="" ID="{41A2B3B6-91ED-42CB-A779-2AB0889EBF82}" ShortID="856674186">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Attack_RC" ID="{20F6C2BD-17D4-489D-928A-E0BBC33B8593}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E5F96DCD-B5BC-4D50-81B2-5EC0C2EBDB6E}" ShortID="644791305">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Spitter_Hit" ID="{27646AC0-048C-4F0C-AE19-A43E69E9E37A}">
+					<ChildrenList>
+						<Action Name="" ID="{F88014AC-2010-42F3-81F3-24FBC97F757C}" ShortID="834816184">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{70EB2958-770B-45A2-8361-B38A6A4D5EBC}" ShortID="930053919">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Hit_RC" ID="{AACF90B4-96AE-4D04-B2D0-1D614CC07948}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{094D7119-9B91-4A61-A934-6EB1F257C243}" ShortID="825628478">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Spitter_Spotted" ID="{1077CE9E-0F73-4981-A77C-0FA84B72FA8E}">
+					<ChildrenList>
+						<Action Name="" ID="{061B2958-191C-4210-A723-4BA7C82C9929}" ShortID="167646735">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2BD9C4EB-0A06-410F-9E7E-B0B3C15999D3}" ShortID="10086511">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Spotted_02" ID="{35496C92-EFAB-4ED3-99FD-EA4DE78B1463}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{858CFB3F-61FF-4F7B-92D8-17503AE9F259}" ShortID="661437762">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Play_SFX_Spitter_Spit_Loop" ID="{32DA0562-FAE7-4AEE-928A-B26FAB3F9C09}" WorkUnitID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A7F82EAF-1913-495E-AFCF-CF6782E86DAC}" ShortID="120195967">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="41"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stop_SFX_Spitter_Spit" ID="{0F9CECC0-76BB-4763-92D4-146E77D152E3}" WorkUnitID="{CFDD0070-4ECB-4204-BDC8-256A0975E9DC}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SFX_Spitter_Death" ID="{5D0CC6E6-4D84-48E3-B7FD-189DAB034E30}">
+					<ChildrenList>
+						<Action Name="" ID="{6BF0FE7D-25E3-422D-AEE7-88ECAD056050}" ShortID="90011694">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{64EB3DC9-37F8-4F7C-A1FE-F9358BF2A5E6}" ShortID="620111609">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Attack_RC" ID="{20F6C2BD-17D4-489D-928A-E0BBC33B8593}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{ABB64067-7E74-4338-B81A-3FD7C370BFB5}" ShortID="399336078">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alien_Staff_Hit_Chomper_RC" ID="{546FE5AB-ED1C-4179-B0A5-A923508E10DC}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C6B20AAD-2F12-446A-8D63-3B692977940A}" ShortID="73427080">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Death_RC" ID="{13A87736-8323-4DE5-8134-3F1893FE3057}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_SFX_Spitter_Spit" ID="{0F9CECC0-76BB-4763-92D4-146E77D152E3}">
+					<ChildrenList>
+						<Action Name="" ID="{6CAFAEDA-3D09-44A4-B66A-755FAFCD8E50}" ShortID="754464020">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Spitter_Spit_Loop_RC" ID="{2A19DEAE-7D64-4978-BE4F-7F6081BAE19F}" WorkUnitID="{A61D2BDD-C513-413C-BD01-33465AFE868A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

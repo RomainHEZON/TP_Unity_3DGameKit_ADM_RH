@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" SchemaVersion="110">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="00_10_AMB_Pads" ID="{06357D6A-B5FD-4D4B-B032-684DB8518F3D}" PersistMode="Reference"/>
+				<WorkUnit Name="00_20_AMB_RFX" ID="{97981634-EB1C-409B-863E-917FA1B06C1C}" PersistMode="Reference"/>
+				<WorkUnit Name="00_30_Ellen_Loco" ID="{B51A0626-AD05-4CA2-A2E4-4C4BD45413ED}" PersistMode="Reference"/>
+				<WorkUnit Name="00_40_Ellen_SFX" ID="{6FC8250E-D4BE-4A5F-9B27-9D30AC067997}" PersistMode="Reference"/>
+				<WorkUnit Name="00_50_SFX" ID="{C02CD7B3-2FDB-469A-A6BC-99972457D705}" PersistMode="Reference"/>
+				<WorkUnit Name="00_60_Chomper" ID="{9E1CD407-9DF6-407F-A86A-823B73BBA439}" PersistMode="Reference"/>
+				<WorkUnit Name="00_70_Grenadier" ID="{B41FF8BC-07DB-4098-B1D5-11CB95263BE3}" PersistMode="Reference"/>
+				<WorkUnit Name="00_80_Spitter" ID="{A8BA9A93-5E31-4B64-B446-935FBCC0EA91}" PersistMode="Reference"/>
+				<WorkUnit Name="00_90_UI" ID="{DD8D4F24-77D5-4C52-805F-C23BE4469BDE}" PersistMode="Reference"/>
+				<WorkUnit Name="01_00_States" ID="{75883708-8548-488B-B855-556EBEC98432}" PersistMode="Reference"/>
+				<WorkUnit Name="02_00_Music" ID="{49D72A57-8C96-4624-BB05-A0F9D0F33394}" PersistMode="Reference"/>
+				<WorkUnit Name="03_00_IRs" ID="{3BA19820-4BF1-40B0-B868-19D990A26891}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

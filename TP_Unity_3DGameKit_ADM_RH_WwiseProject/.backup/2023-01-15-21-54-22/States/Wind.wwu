@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
+	<States>
+		<WorkUnit Name="Wind" ID="{CE859FBD-9E4A-4255-BB8A-4689753CBC50}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="17"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Wind_State" ID="{2B5B3F57-A200-4711-A678-3D5F36520991}">
+					<ChildrenList>
+						<State Name="None" ID="{9E52E1E4-07A0-4D13-BE40-9184434C5F55}"/>
+						<State Name="Medium" ID="{67AE79B8-1FA3-401C-ADFA-0F3F57422733}"/>
+						<State Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
+						<State Name="Strong" ID="{98CDB3E9-21AA-470F-8176-D4A1259443ED}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

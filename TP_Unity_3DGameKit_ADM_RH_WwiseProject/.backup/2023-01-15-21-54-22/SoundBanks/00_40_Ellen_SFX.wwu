@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6FC8250E-D4BE-4A5F-9B27-9D30AC067997}" SchemaVersion="110" RootDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" ParentDocumentID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}">
+	<SoundBanks>
+		<WorkUnit Name="00_40_Ellen_SFX" ID="{6FC8250E-D4BE-4A5F-9B27-9D30AC067997}" OwnerID="{DE49E525-3D17-4B52-A44C-FDA5D1B5AAAB}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="24"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<SoundBank Name="Ellen_SFX_SNBK" ID="{483084B5-77FE-49CF-BC65-DDB882D8C3E5}">
+					<ObjectInclusionList>
+						<ObjectRef Name="00_40_Ellen_SFX" ID="{178FDB7A-2129-48F0-B75A-7073488C6255}" WorkUnitID="{178FDB7A-2129-48F0-B75A-7073488C6255}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
