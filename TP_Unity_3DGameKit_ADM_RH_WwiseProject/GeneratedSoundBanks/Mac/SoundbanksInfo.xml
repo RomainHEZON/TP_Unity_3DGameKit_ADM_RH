@@ -9,7 +9,7 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{A021A731-D3A8-58FB-3B7D-0BFD3C1A03C5}">
+		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{33AF1BA0-A0EF-7DA4-0E70-1102569CC9FB}">
 			<ShortName>SFX_LEVEL_02_SNBK</ShortName>
 			<Path>SFX_LEVEL_02_SNBK.bnk</Path>
 			<Media>
@@ -66,7 +66,7 @@
 						<MediaRef Id="194563344"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="2765469074" Name="Play_SFX_Door_Open_02" MaxAttenuation="20" DurationType="OneShot" DurationMin="4.4299164" DurationMax="4.9724135">
+				<Event Id="2765469074" Name="Play_SFX_Door_Open_02" DurationType="OneShot" DurationMin="4.4299164" DurationMax="4.9724135">
 					<MediaRefs>
 						<MediaRef Id="837825139"/>
 					</MediaRefs>
@@ -314,7 +314,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{E4343AD0-8A82-ACE8-E610-212E8032CF4E}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{B7572D97-1E15-BBA8-FA0E-68AE8EC79CD0}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -788,6 +788,19 @@
 						<MediaRef Id="1072980516"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3916990356" Name="Play_Fireflies_PassBy" MaxAttenuation="5" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="84849623"/>
+						<MediaRef Id="211716926"/>
+						<MediaRef Id="300369194"/>
+						<MediaRef Id="508323334"/>
+						<MediaRef Id="734682423"/>
+						<MediaRef Id="771108120"/>
+						<MediaRef Id="798717506"/>
+						<MediaRef Id="895597812"/>
+						<MediaRef Id="1072980516"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="608979577" Name="Play_Magic_Cave" MaxAttenuation="10" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="72707725"/>
@@ -830,23 +843,24 @@
 				<GameParameter Id="2504666941" Name="Fireflies_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4D9CB399-0017-E6F8-6197-9EE747D90C81}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D446E7B0-4CD9-ED5A-3FD2-E433B4BB4CFA}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
 				<Custom>
+					<Plugin Id="84913073" Name="Holy (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="356314068" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="467932060" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="551089329" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="389630153" Name="Aluminium_Tank (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="559863730" Name="Space_Dreaming (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="615511074" Name="Room_Medium_Tiled (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="661318568" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="790840993" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="903653303" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 					<Plugin Id="1018127844" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="1039992461" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
-					<Plugin Id="1067654060" Name="Church_Small_Wood (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
+					<Plugin Id="1052519096" Name="Inside_My_Head (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
 					<Plugin Id="698118842" Name="Ducking_meter_Music_Grenadier" LibName="Wwise Meter" LibId="8454147"/>
+					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -877,21 +891,21 @@
 				<AuxBus Id="334604368" Name="Rvb_LVL2_Acid_Lake_01">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="1039992461"/>
+							<PluginRef Id="84913073"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="334604370" Name="Rvb_LVL2_Acid_Lake_03">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="467932060"/>
+							<PluginRef Id="389630153"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="334604371" Name="Rvb_LVL2_Acid_Lake_02">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="903653303"/>
+							<PluginRef Id="1052519096"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -905,14 +919,14 @@
 				<AuxBus Id="2652810239" Name="Rvb_LVL2_Tree">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="551089329"/>
+							<PluginRef Id="559863730"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
 				<AuxBus Id="3254336680" Name="Rvb_LVL2_Bridge">
 					<PluginRefs>
 						<Custom>
-							<PluginRef Id="1067654060"/>
+							<PluginRef Id="615511074"/>
 						</Custom>
 					</PluginRefs>
 				</AuxBus>
@@ -935,6 +949,13 @@
 						<Custom>
 							<PluginRef Id="1018127844"/>
 						</Custom>
+					</PluginRefs>
+				</AuxBus>
+				<AuxBus Id="4273093006" Name="Rvb_LVL1_Outdoor">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="2995775460"/>
+						</ShareSets>
 					</PluginRefs>
 				</AuxBus>
 			</AuxBusses>
@@ -987,6 +1008,13 @@
 						<State Id="645492555" Name="Out"/>
 						<State Id="748895195" Name="None"/>
 						<State Id="1752637612" Name="In"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2675125749" Name="Reverb_On_Off">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="930712164" Name="Off"/>
+						<State Id="1651971902" Name="On"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="2899509660" Name="Music_OFF">
@@ -1045,7 +1073,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{18DBC4C4-F900-ACF9-75EC-CBE3CB696812}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{B482114F-742E-9283-DA1A-F85832A2733D}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -1254,11 +1282,26 @@
 				</Event>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="1743635156" Type="User" Language="SFX" Hash="{065AD0A2-451C-E872-33B7-5905084B9B0D}">
+		<SoundBank Id="1743635156" Type="User" Language="SFX" Hash="{0BA7B723-2835-9A6C-D684-AB4065EE6EFD}">
 			<ShortName>IRs_SNBK</ShortName>
 			<Path>IRs_SNBK.bnk</Path>
+			<Media>
+				<File Id="482376105" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Field, Surround by Trees 10m.wav</ShortName>
+					<CachePath>Plugins/Wwise Convolution Reverb/Field, Surround by Trees 10m_E7FB5E8E.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="520156923" Name="AkCR_Outdoor" LibName="Wwise Convolution Reverb" LibId="8323075">
+						<MediaRefs>
+							<MediaRef Id="482376105"/>
+						</MediaRefs>
+					</Plugin>
+				</ShareSets>
+			</Plugins>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{C561E8A7-E341-5BC6-4AD4-5B3C7A9D1DFC}">
+		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{0E1B2CBA-E23C-5C9B-42E6-5298A2D03A2B}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>English(US)/AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1652,7 +1695,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{ED2E78D3-7964-2976-6981-32DADE245CD9}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{F0538569-DAFB-396B-6C5D-57EC0A7AC90D}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -2041,7 +2084,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{A663A506-1C98-9983-7F60-5390BEB03990}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{1218FF21-05AE-8E11-353F-DC14A58C507B}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -2196,7 +2239,7 @@
 						<MediaRef Id="621567118"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="578550610" Name="Play_SFX_Chomper_Spotted" DurationType="OneShot" DurationMin="0.48220155" DurationMax="0.78946483">
+				<Event Id="578550610" Name="Play_SFX_Chomper_Spotted" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.48220155" DurationMax="0.78946483">
 					<MediaRefs>
 						<MediaRef Id="433018291"/>
 						<MediaRef Id="867565960"/>
@@ -2451,7 +2494,7 @@
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{68C3F304-D13E-C969-954C-61F6CAAB0E2F}">
+		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{8D41E9A1-1EC2-9FFA-947F-EC718BF22488}">
 			<ShortName>SFX_LEVEL_01_SNBK</ShortName>
 			<Path>SFX_LEVEL_01_SNBK.bnk</Path>
 			<Media>
@@ -2679,7 +2722,7 @@
 				</File>
 				<File Id="1049985844" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_HealthBox_Open.wav</ShortName>
-					<CachePath>SFX/SFX_HealthBox_Open_B204456F.wem</CachePath>
+					<CachePath>SFX/SFX_HealthBox_Open_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1063829308" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Huge_Door_Open_01.wav</ShortName>
@@ -2869,7 +2912,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{4243AFA5-5F05-0B42-741D-CEA83D4009E3}">
+		<SoundBank Id="3228081768" Type="User" Language="SFX" Hash="{5B9A4ECB-3617-FA1F-37C6-1038358BC5A7}">
 			<ShortName>Ellen_Loco_SNBK</ShortName>
 			<Path>Ellen_Loco_SNBK.bnk</Path>
 			<Media>
@@ -3340,7 +3383,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{EF5D0136-178D-EEE1-9628-3CB340CA9959}">
+		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{AB8881A2-ECB8-47E2-7130-DF1672467C00}">
 			<ShortName>Spitter_SNBK</ShortName>
 			<Path>Spitter_SNBK.bnk</Path>
 			<Media>
@@ -3414,7 +3457,7 @@
 				</File>
 			</Media>
 			<Events>
-				<Event Id="2947962612" Name="Play_SFX_Spitter_Attack" MaxAttenuation="20" DurationType="OneShot" DurationMin="2.5024354" DurationMax="2.674062">
+				<Event Id="2947962612" Name="Play_SFX_Spitter_Attack" DurationType="OneShot" DurationMin="2.5024354" DurationMax="2.674062">
 					<MediaRefs>
 						<MediaRef Id="403592168"/>
 						<MediaRef Id="492099373"/>
@@ -3453,7 +3496,7 @@
 						<MediaRef Id="1000378136"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="3780863511" Name="Play_SFX_Spitter_Spotted" DurationType="OneShot" DurationMin="0.48220155" DurationMax="0.68193597">
+				<Event Id="3780863511" Name="Play_SFX_Spitter_Spotted" MaxAttenuation="20" DurationType="OneShot" DurationMin="0.48220155" DurationMax="0.68193597">
 					<MediaRefs>
 						<MediaRef Id="867565960"/>
 					</MediaRefs>
@@ -3466,5 +3509,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D5E0F40E-99B4-07C0-B4EA-F34FD17F39A6}</FileHash>
+	<FileHash>{771F842B-8624-3E50-F33F-AD18D306223C}</FileHash>
 </SoundBanksInfo>

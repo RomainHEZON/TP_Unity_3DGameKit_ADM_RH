@@ -3,7 +3,6 @@
 	<GameParameters>
 		<WorkUnit Name="Weather" ID="{7A7F1474-C149-4937-8298-5543ABFCD9C2}" OwnerID="{A8ED4E1F-FE40-40FB-A287-C327CB2B7ACA}" PersistMode="Nested">
 			<PropertyList>
-				<Property Name="Color" Type="int16" Value="27"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>

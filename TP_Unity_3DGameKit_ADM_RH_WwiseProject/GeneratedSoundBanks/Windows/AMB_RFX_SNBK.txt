@@ -11,6 +11,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3216834504	Play_Cavern_Animal			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Cavern_Animal	
 	3347638874	Play_Engine_BC			\Default Work Unit\00_20_AMB_RFX\Spaceship\Play_Engine_BC	
 	3521962842	Play_Vine			\Default Work Unit\00_20_AMB_RFX\Environment\Play_Vine	
+	3916990356	Play_Fireflies_PassBy			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Fireflies_PassBy	
 	4161070465	Play_Fireflies			\Default Work Unit\00_20_AMB_RFX\Animals\Play_Fireflies	
 	4219077218	Play_All_Birds			\Default Work Unit\00_20_AMB_RFX\Animals\Play_All_Birds	
 

@@ -3,6 +3,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1988215592	Birds_Playing			\Default Work Unit\RFX_Playing\Birds_Playing	
 	2369171421	Wind_State			\Default Work Unit\Wind\Wind_State	
 	2605611591	Room_In_Out			\Default Work Unit\Room_Interior\Room_In_Out	
+	2675125749	Reverb_On_Off			\Default Work Unit\Reverb_On_OFF\Reverb_On_Off	
 	2899509660	Music_OFF			\Default Work Unit\Music_On_OFF\Music_OFF	
 	2999213434	Music_Grenadier_State			\Default Work Unit\Music_States\Music_Grenadier_State	
 	3092587493	Pause			\Default Work Unit\Menu_Pause\Pause	
@@ -23,6 +24,9 @@ State	ID	Name	State Group			Notes
 	645492555	Out	Room_In_Out			
 	748895195	None	Room_In_Out			
 	1752637612	In	Room_In_Out			
+	748895195	None	Reverb_On_Off			
+	930712164	Off	Reverb_On_Off			
+	1651971902	On	Reverb_On_Off			
 	748895195	None	Music_OFF			
 	930712164	OFF	Music_OFF			
 	1651971902	On	Music_OFF			
@@ -74,18 +78,20 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3717202204	Rvb_LVL2_Boss			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Boss	
 	3741155393	Rvb_LVL2_Tunnel_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_01	
 	3741155394	Rvb_LVL2_Tunnel_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_02	
+	4273093006	Rvb_LVL1_Outdoor			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL1_Outdoor	
 
 Effect plug-ins	ID	Name	Type				Notes
+	84913073	Holy (Custom)	Wwise RoomVerb			
 	356314068	Church_Small_Wood (Custom)	Wwise RoomVerb			
-	467932060	Church_Small_Wood (Custom)	Wwise RoomVerb			
-	551089329	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	389630153	Aluminium_Tank (Custom)	Wwise RoomVerb			
+	559863730	Space_Dreaming (Custom)	Wwise RoomVerb			
+	615511074	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
 	661318568	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	698118842	Ducking_meter_Music_Grenadier	Wwise Meter			
 	790840993	Church_Small_Wood (Custom)	Wwise RoomVerb			
-	903653303	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	1018127844	Church_Small_Wood (Custom)	Wwise RoomVerb			
-	1039992461	Church_Small_Wood (Custom)	Wwise RoomVerb			
-	1067654060	Church_Small_Wood (Custom)	Wwise RoomVerb			
+	1052519096	Inside_My_Head (Custom)	Wwise RoomVerb			
+	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

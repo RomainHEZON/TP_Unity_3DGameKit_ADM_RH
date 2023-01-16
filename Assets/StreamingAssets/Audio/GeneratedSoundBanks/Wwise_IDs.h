@@ -44,6 +44,7 @@ namespace AK
         static const AkUniqueID PLAY_ELLEN_SFX_BODYFALL = 2382465142U;
         static const AkUniqueID PLAY_ENGINE_BC = 3347638874U;
         static const AkUniqueID PLAY_FIREFLIES = 4161070465U;
+        static const AkUniqueID PLAY_FIREFLIES_PASSBY = 3916990356U;
         static const AkUniqueID PLAY_FOL_IDLE = 1819119386U;
         static const AkUniqueID PLAY_FOL_JUMP = 3623063248U;
         static const AkUniqueID PLAY_FOL_ROLL = 1668355981U;
@@ -221,6 +222,18 @@ namespace AK
             } // namespace STATE
         } // namespace PAUSE
 
+        namespace REVERB_ON_OFF
+        {
+            static const AkUniqueID GROUP = 2675125749U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OFF = 930712164U;
+                static const AkUniqueID ON = 1651971902U;
+            } // namespace STATE
+        } // namespace REVERB_ON_OFF
+
         namespace ROOM_IN_OUT
         {
             static const AkUniqueID GROUP = 2605611591U;
@@ -344,6 +357,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID RVB_LVL1_CAVE = 1363491141U;
+        static const AkUniqueID RVB_LVL1_OUTDOOR = 4273093006U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_01 = 334604368U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_02 = 334604371U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_03 = 334604370U;

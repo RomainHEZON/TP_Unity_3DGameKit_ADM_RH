@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585277866312884841
+    m_lastTime: -8585277031748500540
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -315,6 +315,29 @@ MonoBehaviour:
         ObjectType: 1
         guid: 91745a964bf19a499f653382e280dc9b
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL1_Cave
+    - name: Rvb_LVL1_Outdoor
+      guid: 07cdb50bdef81b4c8db34abff916edac
+      id: 4273093006
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_PreMaster_02
+        ObjectType: 2
+        guid: 52c9cfee0206f7419e402578baab1e4a
+      - ElementName: Bus_Reverb
+        ObjectType: 2
+        guid: 1afc436729f8b84fa4d00c87da94dea3
+      - ElementName: Rvb_LVL1_Outdoor
+        ObjectType: 1
+        guid: 07cdb50bdef81b4c8db34abff916edac
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL1_Outdoor
     - name: Rvb_LVL2_Acid_Lake_01
       guid: 8b0e35dc1a8967428ed20e9d5333229e
       id: 334604368
@@ -894,7 +917,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit\03_00_IRs
     guid: 2098a13bf14bb040b86819d990a26891
     GuidInternal: 
-    m_lastTime: -8585277890641178438
+    m_lastTime: -8585277044771415329
     List:
     - name: IRs_SNBK
       guid: 3266672b77373346b299acc5b1c638ca
@@ -1260,7 +1283,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_20_AMB_RFX
     guid: 8be668d2cbd0c84e96b3975cc823f1b6
     GuidInternal: 
-    m_lastTime: -8585277850770526636
+    m_lastTime: -8585277044996286377
     List:
     - name: Animals
       guid: 3ccb33146a699143915bbb72e632ac68
@@ -1506,6 +1529,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: a3685b217df29143935853754317b111
       Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Fireflies
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Fireflies_PassBy
+      guid: cc88266210c0104caf4427f5655e64cb
+      id: 3916990356
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_20_AMB_RFX
+        ObjectType: 12
+        guid: 8be668d2cbd0c84e96b3975cc823f1b6
+      - ElementName: Animals
+        ObjectType: 4
+        guid: 3ccb33146a699143915bbb72e632ac68
+      - ElementName: Play_Fireflies_PassBy
+        ObjectType: 3
+        guid: cc88266210c0104caf4427f5655e64cb
+      Path: Events\Default Work Unit\00_20_AMB_RFX\Animals\Play_Fireflies_PassBy
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2040,7 +2086,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585278067066078914
+    m_lastTime: -8585277059567133746
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -2989,7 +3035,7 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Play_SFX_Pressure_Pad_Idle
-      guid: 4b3edfd7338ba34786e7246526ff1681
+      guid: 6234e19e428a9c43a59761cbbfdbd9e5
       id: 2961794190
       PathAndIcons:
       - ElementName: Events
@@ -3009,7 +3055,7 @@ MonoBehaviour:
         guid: 4eeec37022910544a04ce61ea46bc2bc
       - ElementName: Play_SFX_Pressure_Pad_Idle
         ObjectType: 3
-        guid: 4b3edfd7338ba34786e7246526ff1681
+        guid: 6234e19e428a9c43a59761cbbfdbd9e5
       Path: Events\Default Work Unit\00_50_SFX\LEVEL_01\Pressure_Pad\Play_SFX_Pressure_Pad_Idle
       maxAttenuation: 0
       maxDuration: -1
@@ -4401,7 +4447,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585278067066109780
+    m_lastTime: -8585277044996206359
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -4833,7 +4879,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Weather
     guid: 74147f7a49c1374982985543abfcd9c2
     GuidInternal: 
-    m_lastTime: -8585278242359154440
+    m_lastTime: -8585277042634893891
     List:
     - name: Rain_Intensity_RTPC
       guid: e69f31c0af77e444b8ea21587892135f
@@ -4864,7 +4910,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: dafb7d237f34794c8b43ba469bf3287e
     GuidInternal: 
-    m_lastTime: -8585278212182860688
+    m_lastTime: -8585277042635093944
     List: []
   - PhysicalPath: States\Menu_Pause.wwu
     PathAndIcons:
@@ -5301,6 +5347,100 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 43d4a91838cf1949977863e7b86b26e5
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  - PhysicalPath: States\Reverb_On_OFF.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: dafb7d237f34794c8b43ba469bf3287e
+    - ElementName: Reverb_On_OFF
+      ObjectType: 12
+      guid: 4f58010da2c2d446928d08520ca486ee
+    ParentPath: States\Default Work Unit\Reverb_On_OFF
+    guid: 4f58010da2c2d446928d08520ca486ee
+    GuidInternal: 
+    m_lastTime: -8585277042634823876
+    List:
+    - name: Reverb_On_Off
+      guid: 9a59062a2be17f4d8fa714862f5857d5
+      id: 2675125749
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: dafb7d237f34794c8b43ba469bf3287e
+      - ElementName: Reverb_On_OFF
+        ObjectType: 12
+        guid: 4f58010da2c2d446928d08520ca486ee
+      - ElementName: Reverb_On_Off
+        ObjectType: 9
+        guid: 9a59062a2be17f4d8fa714862f5857d5
+      Path: States\Default Work Unit\Reverb_On_OFF\Reverb_On_Off
+      values:
+      - name: None
+        guid: 50d08c308c371c428ccaa493d2895105
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Reverb_On_OFF
+          ObjectType: 12
+          guid: 4f58010da2c2d446928d08520ca486ee
+        - ElementName: Reverb_On_Off
+          ObjectType: 9
+          guid: 9a59062a2be17f4d8fa714862f5857d5
+        - ElementName: None
+          ObjectType: 8
+          guid: 50d08c308c371c428ccaa493d2895105
+      - name: Off
+        guid: 19d614e81eeccf4290f009d7b8045ce2
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Reverb_On_OFF
+          ObjectType: 12
+          guid: 4f58010da2c2d446928d08520ca486ee
+        - ElementName: Reverb_On_Off
+          ObjectType: 9
+          guid: 9a59062a2be17f4d8fa714862f5857d5
+        - ElementName: Off
+          ObjectType: 8
+          guid: 19d614e81eeccf4290f009d7b8045ce2
+      - name: On
+        guid: 68cbbf1bd5d5f0468254313172f9447f
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: dafb7d237f34794c8b43ba469bf3287e
+        - ElementName: Reverb_On_OFF
+          ObjectType: 12
+          guid: 4f58010da2c2d446928d08520ca486ee
+        - ElementName: Reverb_On_Off
+          ObjectType: 9
+          guid: 9a59062a2be17f4d8fa714862f5857d5
+        - ElementName: On
+          ObjectType: 8
+          guid: 68cbbf1bd5d5f0468254313172f9447f
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -5971,7 +6111,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0100000003000000040000000500000006000000070000001b0000001c000000280000003a0000007f0000008000000081000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf0000003a8d00003c8d0000458d0000478d00004e8d0000518d0000588d00005d8d00005e8d0000668d0000688d00006b8d00006e8d0000758d00007a8d00007d8d00007e8d0000838d00009e8d0000a18d0000aa8d0000ab8d0000b08d0000b18d0000b48d00004593050046930500479305004d930500
+  ExpandedWaapiItemIds: 010000000300000004000000050000000600000007000000080000000c0000001300000014000000180000001b0000001c0000001d00000028000000290000003a0000003b0000003c00000052000000590000005a0000005b0000007f0000008000000081000000a1000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c000000097010000980100009c0100006c05000074050000870f00003a8d00003c8d0000458d0000478d00004e8d0000518d0000588d00005d8d00005e8d0000668d0000688d00006b8d00006e8d0000758d00007a8d00007d8d00007e8d0000838d00009e8d0000a18d0000aa8d0000ab8d0000b08d0000b18d0000b48d0000251401004593050046930500479305004d930500
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

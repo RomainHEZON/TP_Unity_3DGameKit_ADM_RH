@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1805a2320fb9e044a3672338af02901, type: 3}
-  m_Name: D7DF3E4B-8B33-47A3-86E7-246526FF1681
+  m_Script: {fileID: 11500000, guid: 78e8174eb6b210d479147d5cbb81e142, type: 3}
+  m_Name: 2A06599A-E12B-4D7F-8FA7-14862F5857D5
   m_EditorClassIdentifier: 
-  objectName: Play_SFX_Pressure_Pad_Idle
-  id: 2961794190
-  guid: D7DF3E4B-8B33-47A3-86E7-246526FF1681
+  objectName: Reverb_On_Off
+  id: 2675125749
+  guid: 2A06599A-E12B-4D7F-8FA7-14862F5857D5

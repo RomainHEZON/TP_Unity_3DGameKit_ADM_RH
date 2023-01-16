@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0D01584F-C2A2-46D4-928D-08520CA486EE}" SchemaVersion="110" RootDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" ParentDocumentID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}">
+	<States>
+		<WorkUnit Name="Reverb_On_OFF" ID="{0D01584F-C2A2-46D4-928D-08520CA486EE}" OwnerID="{237DFBDA-347F-4C79-8B43-BA469BF3287E}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="14"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<StateGroup Name="Reverb_On_Off" ID="{2A06599A-E12B-4D7F-8FA7-14862F5857D5}">
+					<ChildrenList>
+						<State Name="None" ID="{308CD050-378C-421C-8CCA-A493D2895105}"/>
+						<State Name="On" ID="{1BBFCB68-D5D5-46F0-8254-313172F9447F}"/>
+						<State Name="Off" ID="{E814D619-EC1E-42CF-90F0-09D7B8045CE2}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
