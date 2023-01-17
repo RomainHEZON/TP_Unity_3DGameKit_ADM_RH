@@ -1,6 +1,0 @@
-Effect plug-ins	ID	Name	Type				Notes
-	520156923	AkCR_Outdoor	Wwise Convolution Reverb			
-
-Plug-in Media	ID	Name	Source file	Type	Wwise Object Path	Notes	Data Size
-	482376105	AkCR_Outdoor	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\Plugins\Wwise Convolution Reverb\Field, Surround by Trees 10m_E7FB5E8E.wem	Wwise Convolution Reverb (Shared)	\Effects\Default Work Unit\AkCR_Outdoor		128992
-

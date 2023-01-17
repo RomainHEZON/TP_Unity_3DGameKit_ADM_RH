@@ -51,9 +51,9 @@ namespace Gamekit3D
             if (other.gameObject == transitioningGameObject)
             {
                 m_TransitioningGameObjectPresent = true;
-                AkSoundEngine.PostEvent("Play_SFX_Teleporter_Walkthrough", this.gameObject);
-                AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
-                AkSoundEngine.PostEvent("Stop_Theme_End", this.gameObject);
+                AkSoundEngine.PostEvent("Play_SFX_Teleporter_Walkthrough", this.gameObject); // Play Teleporter Waltktrough
+                AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject); // Stop all the sounds of the level 1
+                AkSoundEngine.PostEvent("Stop_Theme_End", this.gameObject); // Stop the music theme End
 
 
                 if (ScreenFader.IsFading || SceneController.Transitioning)

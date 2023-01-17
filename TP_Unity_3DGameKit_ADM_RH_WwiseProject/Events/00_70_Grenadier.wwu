@@ -85,6 +85,16 @@
 				</Event>
 				<Event Name="Play_Grenadier_Death" ID="{E3DBEDA1-0A51-42C1-A3C7-AEE6AF549E42}">
 					<ChildrenList>
+						<Action Name="" ID="{C3500C83-5C98-4AC8-8775-6E12092999E0}" ShortID="264127749">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Get_Hit_Behind_RC" ID="{33D8579D-F9EB-466B-993B-85A0F24FF38A}" WorkUnitID="{E696FF01-B227-4BF2-9188-83C3AFC6EF1E}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{D3E825CA-8267-46A4-83CE-874F35F99A29}" ShortID="5175582">
 							<ReferenceList>
 								<Reference Name="Target">

@@ -327,8 +327,8 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 0.76860845
-        functionName: GrenadierTF
-        data: Play_Grenadier_Footsteps
+        functionName: GrenadierFT
+        data: 
         objectReferenceParameter: {fileID: 1878432194002958, guid: 71a1be879433fcb46b1fb72b19e392ef,
           type: 3}
         floatParameter: 0

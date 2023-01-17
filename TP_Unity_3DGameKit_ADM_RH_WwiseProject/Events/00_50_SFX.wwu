@@ -755,6 +755,13 @@
 								</Event>
 								<Event Name="Play_SFX_Moving_Platform_01" ID="{6F16FB73-4AFA-43FB-8482-2AF79C7F4B84}">
 									<ChildrenList>
+										<Action Name="" ID="{AF1034C3-61DE-49D6-B44F-32BF25D44876}" ShortID="490212440">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pressure_Pad_Activated" ID="{DC902F22-A0E6-41CB-9B40-4F8179F7B1C8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{F37F458B-C6C9-410D-B29B-3A1BFD7F7A71}" ShortID="263573850">
 											<ReferenceList>
 												<Reference Name="Target">
@@ -766,32 +773,17 @@
 								</Event>
 								<Event Name="Play_SFX_Moving_Platform_02" ID="{770F3F92-C4D6-4DC6-AE29-49E5DB4C2E44}">
 									<ChildrenList>
+										<Action Name="" ID="{4DEBD3FD-4EE4-475F-9236-558871286F1B}" ShortID="948981315">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_Pressure_Pad_Activated" ID="{DC902F22-A0E6-41CB-9B40-4F8179F7B1C8}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 										<Action Name="" ID="{B74C4043-FE2D-4D3F-B7FF-BF8F736F658F}" ShortID="248015534">
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="SFX_Moving_Platform_02" ID="{C93B0666-C472-4B63-95B1-2E535347FF81}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_SFX_Moving_Platform_Left_To_Right" ID="{8A688F89-975A-4592-9C99-C1996E200A20}">
-									<ChildrenList>
-										<Action Name="" ID="{79A13EB7-F0ED-4FD7-B1C1-B37BD43B43C5}" ShortID="564197516">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_Moving_Platform_Left_To_Right" ID="{A2DEEE9D-39B7-48D3-850D-08D04427C493}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="Play_SFX_Moving_Platform_Right_To_Left" ID="{5C5D0307-AD26-4DB0-B83E-6BBA71182752}">
-									<ChildrenList>
-										<Action Name="" ID="{48A6B915-D35E-4F1F-856A-3A898F6B0508}" ShortID="767569787">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="SFX_Moving_Platform_Right_To_Left" ID="{ED6B5746-4CD4-46EA-B027-5E33DD9D052E}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

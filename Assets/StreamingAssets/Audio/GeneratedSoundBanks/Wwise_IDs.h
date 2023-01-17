@@ -88,8 +88,6 @@ namespace AK
         static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_01 = 2643126548U;
         static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_02 = 2643126551U;
         static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_03 = 2643126550U;
-        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_LEFT_TO_RIGHT = 2166784493U;
-        static const AkUniqueID PLAY_SFX_MOVING_PLATFORM_RIGHT_TO_LEFT = 3000621281U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED = 3673773357U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_ACTIVATED_02 = 1061469642U;
         static const AkUniqueID PLAY_SFX_PRESSURE_PAD_IDLE = 2961794190U;
@@ -359,7 +357,6 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID RVB_LVL1_CAVE = 1363491141U;
-        static const AkUniqueID RVB_LVL1_OUTDOOR = 4273093006U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_01 = 334604368U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_02 = 334604371U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_03 = 334604370U;
