@@ -30,6 +30,8 @@ namespace Gamekit3D
         public SoundBank defaultBank = new SoundBank();
         public MaterialAudioOverride[] overrides;
 
+        // [SerializeField] public AK.Wwise.State State; // Wwise State 
+
         [HideInInspector]
         public bool playing;
         [HideInInspector]

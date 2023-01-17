@@ -77,7 +77,6 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	3717202204	Rvb_LVL2_Boss			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Boss	
 	3741155393	Rvb_LVL2_Tunnel_01			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_01	
 	3741155394	Rvb_LVL2_Tunnel_02			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL2_Tunnel_02	
-	4273093006	Rvb_LVL1_Outdoor			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_Reverb\Rvb_LVL1_Outdoor	
 
 Effect plug-ins	ID	Name	Type				Notes
 	84913073	Holy (Custom)	Wwise RoomVerb			
@@ -89,7 +88,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	790840993	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	1018127844	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	1052519096	Inside_My_Head (Custom)	Wwise RoomVerb			
-	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
