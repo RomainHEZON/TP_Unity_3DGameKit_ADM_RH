@@ -49,7 +49,10 @@ namespace Gamekit3D
 
         public PlayerController target { get { return m_Target; } }
         public Damageable damageable { get { return m_Damageable; } }
-
+        [Space]
+        [Header("Audio")]
+        [SerializeField] public AK.Wwise.State WwiseState;
+        [Space]
         [Header("Audio")]
         public RandomAudioPlayer deathAudioPlayer;
         public RandomAudioPlayer damageAudioPlayer;
@@ -135,6 +138,7 @@ namespace Gamekit3D
 
         public void Die()
         {
+            WwiseState.SetValue();
             deathAudioPlayer.PlayRandomClip();
             m_EnemyController.animator.SetTrigger(hashDeathParam);
         }
