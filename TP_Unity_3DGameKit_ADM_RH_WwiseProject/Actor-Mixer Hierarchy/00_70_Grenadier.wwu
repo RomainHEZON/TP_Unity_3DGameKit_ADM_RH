@@ -661,7 +661,7 @@
 									<Custom CreatedFrom="{C69EAE44-3627-434D-9780-73CF2E5BE125}">
 										<Attenuation Name="ATN_30m (Custom)" ID="{6BC01261-41FA-40C9-8271-42F4A648ADCF}" ShortID="591160048">
 											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="35"/>
+												<Property Name="RadiusMax" Type="Real64" Value="30"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -677,13 +677,13 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>15</XPos>
+																	<XPos>5</XPos>
 																	<YPos>0</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>35</XPos>
+																	<XPos>30</XPos>
 																	<YPos>-200</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -711,13 +711,13 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>23.38511</XPos>
+																	<XPos>20.04438</XPos>
 																	<YPos>17</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Exp1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>35</XPos>
+																	<XPos>30</XPos>
 																	<YPos>32</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -739,13 +739,13 @@
 																	<SegmentShape>Log1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>23.07445</XPos>
+																	<XPos>19.7781</XPos>
 																	<YPos>4</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Exp1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>35</XPos>
+																	<XPos>30</XPos>
 																	<YPos>14</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -767,13 +767,13 @@
 																	<SegmentShape>Exp1</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>11.6666666666667</XPos>
+																	<XPos>10</XPos>
 																	<YPos>30</YPos>
 																	<Flags>0</Flags>
 																	<SegmentShape>Log2</SegmentShape>
 																</Point>
 																<Point>
-																	<XPos>35</XPos>
+																	<XPos>30</XPos>
 																	<YPos>10</YPos>
 																	<Flags>37</Flags>
 																</Point>

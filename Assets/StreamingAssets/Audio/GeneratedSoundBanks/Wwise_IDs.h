@@ -105,7 +105,6 @@ namespace AK
         static const AkUniqueID PLAY_SPACESHIP_LANDING = 1914994186U;
         static const AkUniqueID PLAY_SPACESHIP_LANDING_SMOKE_RING = 1810252861U;
         static const AkUniqueID PLAY_THEME_END = 2987996311U;
-        static const AkUniqueID PLAY_THEME_END_LEVEL_01 = 1169154810U;
         static const AkUniqueID PLAY_UI_DIALOGUE_START = 2863055552U;
         static const AkUniqueID PLAY_UI_GAME_PAUSE = 4059508246U;
         static const AkUniqueID PLAY_UI_GAME_QUIT = 3336058037U;
@@ -359,6 +358,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID RVB_LVL1_CAVE = 1363491141U;
+        static const AkUniqueID RVB_LVL1_OUTDOOR = 4273093006U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_01 = 334604368U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_02 = 334604371U;
         static const AkUniqueID RVB_LVL2_ACID_LAKE_03 = 334604370U;
