@@ -51,7 +51,6 @@ Custom State	ID	Name	State Group	Owner		Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	
 	1564184899	SFX_Volume			\Default Work Unit\Bus_Volume\SFX_Volume	
-	3345027817	Grenadier_Theme_Playing			\Default Work Unit\Ducking\Grenadier_Theme_Playing	
 	4179668880	Master_Volume			\Default Work Unit\Bus_Volume\Master_Volume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
@@ -87,7 +86,6 @@ Effect plug-ins	ID	Name	Type				Notes
 	559863730	Space_Dreaming (Custom)	Wwise RoomVerb			
 	615511074	Room_Medium_Tiled (Custom)	Wwise RoomVerb			
 	661318568	Church_Small_Wood (Custom)	Wwise RoomVerb			
-	698118842	Ducking_meter_Music_Grenadier	Wwise Meter			
 	790840993	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	1018127844	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	1052519096	Inside_My_Head (Custom)	Wwise RoomVerb			

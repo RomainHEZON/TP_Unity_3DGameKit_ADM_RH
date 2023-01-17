@@ -69,9 +69,6 @@ namespace Gamekit3D
             if (other.gameObject == transitioningGameObject)
             {
                 m_TransitioningGameObjectPresent = false;
-                //AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
-                //AkSoundEngine.PostEvent("Stop_Theme_End", this.gameObject);
-
             }
         }
 
@@ -90,9 +87,6 @@ namespace Gamekit3D
             else
             {
                 SceneController.TransitionToScene(this);
-                //AkSoundEngine.PostEvent("Stop_AllSounds", this.gameObject);
-                //AkSoundEngine.PostEvent("Stop_Theme_End", this.gameObject);
-
             }
         }
 

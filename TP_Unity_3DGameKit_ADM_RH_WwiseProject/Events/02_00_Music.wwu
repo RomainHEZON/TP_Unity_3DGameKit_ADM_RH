@@ -159,6 +159,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Theme_End_Level_01" ID="{AE13BC3C-66CB-4D75-98C3-ED7A1F57E63B}">
+					<ChildrenList>
+						<Action Name="" ID="{D29AE7CD-E373-48C2-B359-616C7602EB3E}" ShortID="359468410">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_Fight_Grenadier" ID="{91A91148-A49F-4C16-9357-5AED3F0CD9E8}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{27C16DF3-70F0-4202-A8BD-8F6E8CCB5E51}" ShortID="704656194">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Theme_End_Container" ID="{56DF530A-AD94-4DEA-8E34-3B23912DA04F}" WorkUnitID="{94F3FC88-94AC-46C8-AEDF-361E2733D2FA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

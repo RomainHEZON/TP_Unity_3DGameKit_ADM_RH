@@ -108,7 +108,7 @@
 								<Action Name="" ID="{EFC07E48-5274-4D06-B50D-50A81A832B45}" ShortID="849206291">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -119,7 +119,7 @@
 								<Action Name="" ID="{41E8117B-3401-4025-A4DC-812376D4D1E2}" ShortID="58250037">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -130,7 +130,7 @@
 								<Action Name="" ID="{127C7F41-C60E-47EA-989F-DB5DB9CAC1A3}" ShortID="321462761">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -141,7 +141,7 @@
 								<Action Name="" ID="{2328618A-F133-419D-B082-9894DC53F164}" ShortID="45672076">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -152,7 +152,7 @@
 								<Action Name="" ID="{CF11606C-26A3-4DD6-92CA-0341CD906D83}" ShortID="445929763">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -163,7 +163,7 @@
 								<Action Name="" ID="{1FA7064B-5E2A-4405-A323-E4A5A5A8640D}" ShortID="1052338063">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="7"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -195,7 +195,7 @@
 								<Action Name="" ID="{396EEB47-A109-44BC-9CA9-8E68B96817BC}" ShortID="644522997">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -206,7 +206,7 @@
 								<Action Name="" ID="{AE296AF2-F3C7-4934-A0ED-2038191A4F75}" ShortID="449366955">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -217,7 +217,7 @@
 								<Action Name="" ID="{92028F6B-07EF-44F7-A868-783E81D2E11C}" ShortID="693308168">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -228,7 +228,7 @@
 								<Action Name="" ID="{A3E894FA-4DAF-409F-8ED7-D416841A68C2}" ShortID="884443752">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -239,7 +239,7 @@
 								<Action Name="" ID="{4B78810D-09A7-4704-8AEB-C1CB26259A4B}" ShortID="267380408">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -250,7 +250,7 @@
 								<Action Name="" ID="{0AA24F24-88F7-4541-A9E9-15DF9B0CFFF4}" ShortID="98757527">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="0.05"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">

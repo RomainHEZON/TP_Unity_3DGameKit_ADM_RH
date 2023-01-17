@@ -13,7 +13,7 @@
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>6</Value>
+								<Value>10</Value>
 							</ValueList>
 						</Property>
 						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
@@ -1990,6 +1990,12 @@
 																						<SegmentShape>Log1</SegmentShape>
 																					</Point>
 																					<Point>
+																						<XPos>25</XPos>
+																						<YPos>-6</YPos>
+																						<Flags>0</Flags>
+																						<SegmentShape>Exp1</SegmentShape>
+																					</Point>
+																					<Point>
 																						<XPos>100</XPos>
 																						<YPos>0</YPos>
 																						<Flags>37</Flags>
@@ -2186,6 +2192,28 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
+												<CustomState Name="" ID="{BCB77AAC-1AC1-4DA5-B49E-D9DC42743190}" ShortID="859464585">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="-20"/>
+														<Property Name="Volume" Type="Real64" Value="-12"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+												<CustomState Name="" ID="{0CE1DF8F-4E7D-4D00-ACF8-5ECF12BA288C}" ShortID="331728315"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="AMB_PAD_Cavern_Loop" ID="{7F9F8697-93F3-499C-9700-69DF12364E47}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -2869,7 +2897,7 @@
 										</BlendTrack>
 									</BlendTrackList>
 								</BlendContainer>
-								<Sound Name="AMB_PAD_Wetland_Loop" ID="{66FE5D63-C673-40D4-8F52-58590E2B0BAB}" ShortID="150782281">
+								<Sound Name="AMB_PAD_Exterior_Cavern_Loop" ID="{66FE5D63-C673-40D4-8F52-58590E2B0BAB}" ShortID="150782281">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
@@ -2903,11 +2931,6 @@
 											</ModifierList>
 										</Property>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="50"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -2929,28 +2952,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<StateInfo>
-										<StateGroupList>
-											<StateGroupInfo>
-												<StateGroupRef Name="Room_In_Out" ID="{33878A7F-2E48-447F-AA56-DAA4B5352585}"/>
-											</StateGroupInfo>
-										</StateGroupList>
-										<CustomStateList>
-											<CustomState>
-												<StateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
-												<CustomState Name="" ID="{9D2F38C0-9CD1-4653-A161-E351ADD31101}" ShortID="301065322">
-													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="40"/>
-														<Property Name="Volume" Type="Real64" Value="-12"/>
-													</PropertyList>
-												</CustomState>
-											</CustomState>
-											<CustomState>
-												<StateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
-												<CustomState Name="" ID="{B61CDCE6-13BE-42F7-9ABA-580186862414}" ShortID="166857843"/>
-											</CustomState>
-										</CustomStateList>
-									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="AMB_PAD_Wetland_Loop" ID="{3A3E6351-5EAE-4F92-9C68-A78E5A624244}" Platform="Linked"/>
 									</ActiveSourceList>

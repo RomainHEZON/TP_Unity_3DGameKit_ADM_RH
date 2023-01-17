@@ -33,6 +33,7 @@ public class UI_Wwise_Manager : MonoBehaviour
     public void PointerStartGame()
     {
         AkSoundEngine.PostEvent("Play_UI_Game_Start", this.gameObject);
+        AkSoundEngine.PostEvent("Stop_SFX_Chomper_Idle", this.gameObject);
     }
 
     public void PointerQuitGame()

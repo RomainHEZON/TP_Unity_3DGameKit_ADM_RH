@@ -126,7 +126,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{01829E9F-C9AC-AFA1-7B6E-B7591CC5B5DB}">
+		<SoundBank Id="776533456" Type="User" Language="SFX" Hash="{E7B2B081-3648-D743-0CCA-95294DF5EE69}">
 			<ShortName>UI_SNBK</ShortName>
 			<Path>UI_SNBK.bnk</Path>
 			<Media>
@@ -314,7 +314,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{B7572D97-1E15-BBA8-FA0E-68AE8EC79CD0}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{2530EEC4-4AE9-C8FE-A502-4B9CA46E15BF}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -843,7 +843,7 @@
 				<GameParameter Id="2504666941" Name="Fireflies_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{D446E7B0-4CD9-ED5A-3FD2-E433B4BB4CFA}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{5EFE79F6-141A-3B68-3116-2C81B1B32334}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -859,7 +859,6 @@
 					<Plugin Id="1052519096" Name="Inside_My_Head (Custom)" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</Custom>
 				<ShareSets>
-					<Plugin Id="698118842" Name="Ducking_meter_Music_Grenadier" LibName="Wwise Meter" LibId="8454147"/>
 					<Plugin Id="2995775460" Name="Room_Small" LibName="Wwise RoomVerb" LibId="7733251"/>
 				</ShareSets>
 				<AudioDevices>
@@ -869,13 +868,7 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="17439960" Name="Bus_AMB"/>
-				<Bus Id="1162281553" Name="Bus_Music">
-					<PluginRefs>
-						<ShareSets>
-							<PluginRef Id="698118842"/>
-						</ShareSets>
-					</PluginRefs>
-				</Bus>
+				<Bus Id="1162281553" Name="Bus_Music"/>
 				<Bus Id="1592365332" Name="Bus_Ennemies"/>
 				<Bus Id="1746463750" Name="Bus_UI"/>
 				<Bus Id="2038678300" Name="Bus_Reverb"/>
@@ -1073,10 +1066,14 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{B482114F-742E-9283-DA1A-F85832A2733D}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{EA3826A7-2541-DF50-A389-1B3E062FBD03}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
+				<File Id="836629" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_02.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_02_10C4C929.wem</CachePath>
+				</File>
 				<File Id="69857268" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Death.wav</ShortName>
 					<CachePath>SFX/Grenadier_Death_10C4C929.wem</CachePath>
@@ -1101,6 +1098,10 @@
 				<File Id="272032784" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_FT_Walk_04.wav</ShortName>
 					<CachePath>SFX/Grenadier_FT_Walk_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="278865724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_01.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_01_10C4C929.wem</CachePath>
 				</File>
 				<File Id="305209183" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Shield_Activated_02.wav</ShortName>
@@ -1178,6 +1179,10 @@
 					<ShortName>Grenadier_Attack_Range_Bounce_03.wav</ShortName>
 					<CachePath>SFX/Grenadier_Attack_Range_Bounce_03_10C4C929.wem</CachePath>
 				</File>
+				<File Id="939367748" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_04.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_04_10C4C929.wem</CachePath>
+				</File>
 				<File Id="951400336" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Attack_Range_Explosion_01.wav</ShortName>
 					<CachePath>SFX/Grenadier_Attack_Range_Explosion_01_10C4C929.wem</CachePath>
@@ -1193,6 +1198,10 @@
 				<File Id="982471566" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_Attack_Range_Bounce_04.wav</ShortName>
 					<CachePath>SFX/Grenadier_Attack_Range_Bounce_04_10C4C929.wem</CachePath>
+				</File>
+				<File Id="982612248" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ellen_SFX_Staff_Hit_Metal_03.wav</ShortName>
+					<CachePath>SFX/Ellen_SFX_Staff_Hit_Metal_03_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1013728032" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Grenadier_FT_Walk_03.wav</ShortName>
@@ -1252,14 +1261,18 @@
 						<MediaRef Id="1072987620"/>
 					</MediaRefs>
 				</Event>
-				<Event Id="253695509" Name="Play_Grenadier_Get_Hit_Behind" MaxAttenuation="20" DurationType="OneShot" DurationMin="1.9472489" DurationMax="2.7123485">
+				<Event Id="253695509" Name="Play_Grenadier_Get_Hit_Behind" DurationType="OneShot" DurationMin="1.9472489" DurationMax="2.7123485">
 					<MediaRefs>
+						<MediaRef Id="836629"/>
 						<MediaRef Id="219315323"/>
+						<MediaRef Id="278865724"/>
 						<MediaRef Id="352007991"/>
 						<MediaRef Id="381948013"/>
 						<MediaRef Id="900695930"/>
 						<MediaRef Id="925444655"/>
+						<MediaRef Id="939367748"/>
 						<MediaRef Id="976343665"/>
+						<MediaRef Id="982612248"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="1285304806" Name="Play_Grenadier_Idle" MaxAttenuation="5" DurationType="Infinite">
@@ -1301,7 +1314,7 @@
 				</ShareSets>
 			</Plugins>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{0E1B2CBA-E23C-5C9B-42E6-5298A2D03A2B}">
+		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{72692FE9-B4F1-352C-BB71-A4274A319F1D}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>English(US)/AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1695,7 +1708,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{F0538569-DAFB-396B-6C5D-57EC0A7AC90D}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{B7C3153F-94EF-FBFB-00CD-3F9F1A00125E}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -2084,7 +2097,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{1218FF21-05AE-8E11-353F-DC14A58C507B}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{3F2145F5-4F52-1210-12F2-BEE73E9E9DA5}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -2245,9 +2258,10 @@
 						<MediaRef Id="867565960"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="301903767" Name="Stop_SFX_Chomper_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{B4F4DEAB-5113-E853-1144-250F7FC25A1E}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{0B07BCB9-5E78-CEFB-197F-942C5B411A41}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -2494,7 +2508,7 @@
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{8D41E9A1-1EC2-9FFA-947F-EC718BF22488}">
+		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{DB708D52-4E8D-98EF-5E52-8A53CE2F0BAD}">
 			<ShortName>SFX_LEVEL_01_SNBK</ShortName>
 			<Path>SFX_LEVEL_01_SNBK.bnk</Path>
 			<Media>
@@ -3509,5 +3523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{771F842B-8624-3E50-F33F-AD18D306223C}</FileHash>
+	<FileHash>{168A7AB0-5AB3-A0A3-3EE0-3F6553F43A49}</FileHash>
 </SoundBanksInfo>

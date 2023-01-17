@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	83535699	Play_SFX_Chomper_Death			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Death	
+	301903767	Stop_SFX_Chomper_Idle			\Default Work Unit\00_60_Chomper\Stop_SFX_Chomper_Idle	
 	578550610	Play_SFX_Chomper_Spotted			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Spotted	
 	3417318653	Play_SFX_Chomper_Idle			\Default Work Unit\00_60_Chomper\Play_SFX_Chomper_Idle	
 	3482670435	Play_Chomper_FT_Walk			\Default Work Unit\00_60_Chomper\Play_Chomper_FT_Walk	

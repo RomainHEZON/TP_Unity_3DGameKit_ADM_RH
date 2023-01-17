@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 199329090727805140}
   - component: {fileID: 7855703463745263630}
   - component: {fileID: 7802180164299716544}
-  - component: {fileID: 5481712373118385398}
+  - component: {fileID: 3567263123665797673}
+  - component: {fileID: 3116856113279397295}
+  - component: {fileID: -8670458693136013878}
   m_Layer: 28
   m_Name: AcidSplash
   m_TagString: Untagged
@@ -4926,7 +4928,7 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!114 &5481712373118385398
+--- !u!114 &3567263123665797673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4935,7 +4937,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753891732919528}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d2a0dd2c87cc6842ae0b20b94150d92, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ebf5b90e2f0493438c4cb0f1bcc0340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
@@ -4956,11 +4958,32 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
-  LargeModePositions: []
-  multiPositionArray: []
+--- !u!114 &3116856113279397295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753891732919528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f90c7523800ce254d8db263918c75267, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Collider: {fileID: 0}
+--- !u!65 &-8670458693136013878
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753891732919528}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1855113602318124
 GameObject:
   m_ObjectHideFlags: 0

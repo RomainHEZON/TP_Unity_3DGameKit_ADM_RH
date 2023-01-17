@@ -9,7 +9,7 @@
 			<ChildrenList>
 				<ActorMixer Name="RFX_Mixer" ID="{347D129A-041D-46EA-AEF2-2D1EEBE1EAC5}" ShortID="135550835">
 					<PropertyList>
-						<Property Name="BelowThresholdBehavior" Type="int16" Value="1"/>
+						<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 						<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>

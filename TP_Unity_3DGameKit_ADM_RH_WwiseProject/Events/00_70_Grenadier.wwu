@@ -49,6 +49,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{4874BFB9-C3A0-4A43-9B43-883150ACE909}" ShortID="788162252">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Alien_Staff_Hit_Metal_RC" ID="{51F9EBF7-42E2-4C72-B3DE-F096A5D05C7F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_Grenadier_Shield" ID="{02C59725-1319-40A4-86F1-71519199EE10}">

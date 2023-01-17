@@ -19,11 +19,7 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-									<ObjectRef Name="Ducking_meter_Music_Grenadier" ID="{64965AB7-35F5-48EE-8AAF-EF9B7536EF81}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -120,51 +116,6 @@
 														<Property Name="ListenerRelativeRouting" Type="bool" Value="True"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
-													<ObjectLists>
-														<ObjectList Name="RTPC">
-															<Reference>
-																<Local>
-																	<RTPC Name="" ID="{04D20590-5B26-4165-8765-6602CED60624}" ShortID="665440056">
-																		<PropertyList>
-																			<Property Name="PropertyName" Type="string" Value="Volume"/>
-																		</PropertyList>
-																		<ReferenceList>
-																			<Reference Name="ControlInput">
-																				<ObjectRef Name="Grenadier_Theme_Playing" ID="{CC495ECC-069C-403F-ADF2-BA5805EB9664}" WorkUnitID="{9F1F3F42-E7A1-4BA4-9FA4-4F97D4E675CC}"/>
-																			</Reference>
-																			<Reference Name="Curve">
-																				<Custom>
-																					<Curve Name="" ID="{06B6FB2C-BE08-4C51-8647-550A38352E15}">
-																						<PropertyList>
-																							<Property Name="Flags" Type="int32" Value="3"/>
-																						</PropertyList>
-																						<PointList>
-																							<Point>
-																								<XPos>-48</XPos>
-																								<YPos>0</YPos>
-																								<Flags>5</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>-25</XPos>
-																								<YPos>0</YPos>
-																								<Flags>0</Flags>
-																								<SegmentShape>Log1</SegmentShape>
-																							</Point>
-																							<Point>
-																								<XPos>0</XPos>
-																								<YPos>-12</YPos>
-																								<Flags>37</Flags>
-																							</Point>
-																						</PointList>
-																					</Curve>
-																				</Custom>
-																			</Reference>
-																		</ReferenceList>
-																	</RTPC>
-																</Local>
-															</Reference>
-														</ObjectList>
-													</ObjectLists>
 												</Bus>
 											</ChildrenList>
 										</Bus>
@@ -245,7 +196,7 @@
 													<Custom CreatedFrom="{940CCB47-F031-4C6A-B0E6-726CAC418C02}">
 														<Effect Name="Church_Small_Wood (Custom)" ID="{830F16A6-C2E1-448D-8EE7-EF04580D5ABB}" ShortID="356314068" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 															<PropertyList>
-																<Property Name="DecayTime" Type="Real32" Value="1.3"/>
+																<Property Name="DecayTime" Type="Real32" Value="3"/>
 																<Property Name="Density" Type="Real32" Value="27"/>
 																<Property Name="ERLevel" Type="Real32" Value="-96"/>
 																<Property Name="ERPattern" Type="int32" Value="6"/>
@@ -258,7 +209,7 @@
 																<Property Name="HFDamping" Type="Real32" Value="3.7"/>
 																<Property Name="PreDelay" Type="Real32" Value="18"/>
 																<Property Name="Quality" Type="int32" Value="12"/>
-																<Property Name="ReverbLevel" Type="Real32" Value="-5"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-3"/>
 																<Property Name="RoomSize" Type="Real32" Value="20"/>
 															</PropertyList>
 														</Effect>

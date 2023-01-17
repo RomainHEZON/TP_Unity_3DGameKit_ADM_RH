@@ -119,7 +119,7 @@
 						<Action Name="" ID="{8A8794A7-115E-48D6-B19E-5EA04D5FA16D}" ShortID="193617540">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="AMB_PAD_Wetland_Loop" ID="{66FE5D63-C673-40D4-8F52-58590E2B0BAB}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
+									<ObjectRef Name="AMB_PAD_Exterior_Cavern_Loop" ID="{66FE5D63-C673-40D4-8F52-58590E2B0BAB}" WorkUnitID="{67A2053F-6693-43F6-9F35-02414E4A70AB}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

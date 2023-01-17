@@ -93,6 +93,22 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_SFX_Chomper_Idle" ID="{8FF378E9-C2C1-44E4-B9FC-2F7A4B9A0D48}">
+					<ChildrenList>
+						<Action Name="" ID="{27784E32-17A2-4B7C-B5CE-D2100F15B946}" ShortID="917059450">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Chomper_Idle_RC" ID="{E049CDE4-FC6F-483B-A624-AB3FD146F082}" WorkUnitID="{71D4F51B-DDFA-45D4-90F4-71BD2EBFC4C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

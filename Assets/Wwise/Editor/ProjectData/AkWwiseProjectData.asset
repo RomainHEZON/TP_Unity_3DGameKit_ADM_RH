@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585277031748500540
+    m_lastTime: -8585276590127974820
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -964,7 +964,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_10_AMB_Pads
     guid: 17f071bb4f794046a0ac6cb855b1de9d
     GuidInternal: 
-    m_lastTime: -8585278088833762186
+    m_lastTime: -8585276625915946819
     List:
     - name: Play_AMB_PAD_Acid_Lake
       guid: 4118487e8bd4fa49ba38c57375ec3957
@@ -2086,7 +2086,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585277059567133746
+    m_lastTime: -8585276592362461402
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -3221,7 +3221,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_60_Chomper
     guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
     GuidInternal: 
-    m_lastTime: -8585278088833732181
+    m_lastTime: -8585276613447709429
     List:
     - name: Play_Chomper_FT_Walk
       guid: 11f5b711056a584ba5c69a8b2ee9fcd6
@@ -3323,6 +3323,26 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Stop_SFX_Chomper_Idle
+      guid: e978f38fc1c2e444b9fc2f7a4b9a0d48
+      id: 301903767
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_60_Chomper
+        ObjectType: 12
+        guid: 634fdc26d65f6c4080ec1dadfc7ed8eb
+      - ElementName: Stop_SFX_Chomper_Idle
+        ObjectType: 3
+        guid: e978f38fc1c2e444b9fc2f7a4b9a0d48
+      Path: Events\Default Work Unit\00_60_Chomper\Stop_SFX_Chomper_Idle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\00_70_Grenadier.wwu
     PathAndIcons:
     - ElementName: Events
@@ -3337,7 +3357,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_70_Grenadier
     guid: 71582feae7f34c4e913572af42280bda
     GuidInternal: 
-    m_lastTime: -8585278165945721614
+    m_lastTime: -8585276592362531412
     List:
     - name: Play_Grenadier_Attack_Close
       guid: 44ca3a95974d9b41a4d7989e2861b4e1
@@ -3689,7 +3709,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_90_UI
     guid: 04475ea3344bec4ba0fbb3ae3f0bdf48
     GuidInternal: 
-    m_lastTime: -8585278946770311366
+    m_lastTime: -8585276592362601437
     List:
     - name: Feedbacks
       guid: ff4d9c53c43cc44687715d7d9ff3e863
@@ -4334,7 +4354,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\02_00_Music
     guid: 75e10a1d7dab424abc25cd85b9f1e2a9
     GuidInternal: 
-    m_lastTime: -8585278017712731204
+    m_lastTime: -8585276564627739109
     List:
     - name: Play_Music_Theme_Explo_Chomp
       guid: 49ad58abf5c1b7428c83bfb98b87d392
@@ -4393,6 +4413,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 15a2388c4f45de4fb4ecf79a1125b728
       Path: Events\Default Work Unit\02_00_Music\Play_Theme_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Theme_End_Level_01
+      guid: 3cbc13aecb66754d98c3ed7a1f57e63b
+      id: 1169154810
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 02_00_Music
+        ObjectType: 12
+        guid: 75e10a1d7dab424abc25cd85b9f1e2a9
+      - ElementName: Play_Theme_End_Level_01
+        ObjectType: 3
+        guid: 3cbc13aecb66754d98c3ed7a1f57e63b
+      Path: Events\Default Work Unit\02_00_Music\Play_Theme_End_Level_01
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -6111,7 +6151,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000300000004000000050000000600000007000000080000000c0000001300000014000000180000001b0000001c0000001d00000028000000290000003a0000003b0000003c00000052000000590000005a0000005b0000007f0000008000000081000000a1000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c000000097010000980100009c0100006c05000074050000870f00003a8d00003c8d0000458d0000478d00004e8d0000518d0000588d00005d8d00005e8d0000668d0000688d00006b8d00006e8d0000758d00007a8d00007d8d00007e8d0000838d00009e8d0000a18d0000aa8d0000ab8d0000b08d0000b18d0000b48d0000251401004593050046930500479305004d930500
+  ExpandedWaapiItemIds: 010000000300000004000000050000000600000007000000080000000c0000000f00000012000000130000001400000017000000180000001a0000001b0000001c0000001d00000028000000290000003a0000003b0000003c00000052000000590000005a0000005b000000770000007b0000007f000000800000008100000095000000960000009700000098000000990000009a0000009b0000009c0000009d000000a1000000b3000000b4000000b5000000b6000000b7000000b8000000b9000000ba000000bb000000bc000000bd000000be000000bf000000c000000097010000980100009c0100006c05000074050000870f0000ee260000f2260000f6260000fa260000fe26000002270000062700000a2700000e270000122700003a8d00003c8d0000458d0000478d00004e8d0000518d0000588d00005d8d00005e8d0000668d0000688d00006b8d00006e8d0000758d00007a8d00007d8d00007e8d0000838d00009e8d0000a18d0000aa8d0000ab8d0000b08d0000b18d0000b48d0000251401004593050046930500479305004d930500
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

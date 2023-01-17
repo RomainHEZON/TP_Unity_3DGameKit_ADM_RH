@@ -1,14 +1,14 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1580643620	Play_UI_Game_Start			\Default Work Unit\00_90_UI\Play_UI_Game_Start	
-	1739779019	Play_UI_Menu_Cancel			\Default Work Unit\00_90_UI\Play_UI_Menu_Cancel	
-	1771101267	Play_UI_Menu_Navigation			\Default Work Unit\00_90_UI\Play_UI_Menu_Navigation	
-	1899199409	Play_UI_Game_Resume			\Default Work Unit\00_90_UI\Play_UI_Game_Resume	
-	1926492655	Play_UI_Menu_Mouse_Over			\Default Work Unit\00_90_UI\Play_UI_Menu_Mouse_Over	
-	2157261217	Play_UI_Menu_Selection			\Default Work Unit\00_90_UI\Play_UI_Menu_Selection	
-	2414798867	Play_UI_HP_Loss			\Default Work Unit\00_90_UI\Play_UI_HP_Loss	
-	2863055552	Play_UI_Dialogue_Start			\Default Work Unit\00_90_UI\Play_UI_Dialogue_Start	
-	3336058037	Play_UI_Game_Quit			\Default Work Unit\00_90_UI\Play_UI_Game_Quit	
-	4059508246	Play_UI_Game_Pause			\Default Work Unit\00_90_UI\Play_UI_Game_Pause	
+	1580643620	Play_UI_Game_Start			\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Start	
+	1739779019	Play_UI_Menu_Cancel			\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Cancel	
+	1771101267	Play_UI_Menu_Navigation			\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Navigation	
+	1899199409	Play_UI_Game_Resume			\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Resume	
+	1926492655	Play_UI_Menu_Mouse_Over			\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Mouse_Over	
+	2157261217	Play_UI_Menu_Selection			\Default Work Unit\00_90_UI\Menu\Play_UI_Menu_Selection	
+	2414798867	Play_UI_HP_Loss			\Default Work Unit\00_90_UI\Feedbacks\Play_UI_HP_Loss	
+	2863055552	Play_UI_Dialogue_Start			\Default Work Unit\00_90_UI\Feedbacks\Play_UI_Dialogue_Start	
+	3336058037	Play_UI_Game_Quit			\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Quit	
+	4059508246	Play_UI_Game_Pause			\Default Work Unit\00_90_UI\Menu\Play_UI_Game_Pause	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	60129979	UI_Menu_Selection	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Mac\SFX\UI_Menu_Selection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_90_UI\UI_Mixer\UI_Menu_Selection		69728
