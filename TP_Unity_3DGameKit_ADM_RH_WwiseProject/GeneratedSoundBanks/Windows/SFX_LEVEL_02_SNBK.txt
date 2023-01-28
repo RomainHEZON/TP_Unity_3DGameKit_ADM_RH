@@ -7,10 +7,14 @@ Event	ID	Name			Wwise Object Path	Notes
 	2765469075	Play_SFX_Door_Open_03			\Default Work Unit\00_50_SFX\LEVEL_02\Door_Open\Play_SFX_Door_Open_03	
 	2765469076	Play_SFX_Door_Open_04			\Default Work Unit\00_50_SFX\LEVEL_02\Door_Open\Play_SFX_Door_Open_04	
 	3130844081	Play_SFX_First_Moving_Platform			\Default Work Unit\00_50_SFX\LEVEL_02\Moving_Platform\Play_SFX_First_Moving_Platform	
+	3789958032	SFX_First_Moving_Platform			\Default Work Unit\00_50_SFX\LEVEL_02\Moving_Platform\SFX_First_Moving_Platform	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	114556479	Moving_Platform_Progression			\Default Work Unit\Progression\Moving_Platform_Progression	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	165605957	SFX_Moving_Platform_Loop_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Moving_Platform_Loop_02_30D511E6.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Moving_Platform_Mixer\First_Moving_Platform\SFX_Moving_Platform_Loop_02		433200
 	194563344	SFX_Door_Open_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Door_Open_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Door_Mixer\SFX_Door_Open_01		1220292
+	324439066	SFX_First_Moving_Platform_Loop	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_First_Moving_Platform_Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Moving_Platform_Mixer\SFX_First_Moving_Platform_Loop		319280
 	453232147	SFX_Moving_Platform_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Moving_Platform_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Moving_Platform_Mixer\SFX_Moving_Platform_02		368156
 	500809533	SFX_Door_Open_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Door_Open_03_8F3084AB.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Door_Mixer\SFX_Door_Open_03		1086068
 	749954390	SFX_Door_Open_04	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Door_Open_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Door_Mixer\SFX_Door_Open_04		1411732
@@ -18,5 +22,4 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	820364213	SFX_Pressure_Pad_Activated	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Pressure_Pad_Activated_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Pad_Pressure_Mixer\SFX_Pressure_Pad_Activated		55942
 	837825139	SFX_Door_Open_02	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Door_Open_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Door_Mixer\SFX_Door_Open_02		901216
 	862881284	SFX_Moving_Platform_Loop_03	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Moving_Platform_Loop_03_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Moving_Platform_Mixer\SFX_Moving_Platform_Loop_03		240096
-	1006289370	SFX_Moving_Platform_Loop_01	D:\Documents\GitHub\TP_Unity_3DGameKit_ADM_RH\TP_Unity_3DGameKit_ADM_RH_WwiseProject\.cache\Windows\SFX\SFX_Moving_Platform_Loop_01_AD661560.wem		\Actor-Mixer Hierarchy\Default Work Unit\00_50_SFX\SFX_Mixer\Moving_Platform_Mixer\First_Moving_Platform\SFX_Moving_Platform_Loop_01		434648
 

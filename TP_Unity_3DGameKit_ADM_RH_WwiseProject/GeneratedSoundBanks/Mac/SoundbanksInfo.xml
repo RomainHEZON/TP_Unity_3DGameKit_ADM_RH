@@ -9,17 +9,17 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{CB7462C7-4398-D0B5-AE47-221EDD7AC951}">
+		<SoundBank Id="694864107" Type="User" Language="SFX" Hash="{9744FB18-D49A-1EF1-6F85-131EA818626B}">
 			<ShortName>SFX_LEVEL_02_SNBK</ShortName>
 			<Path>SFX_LEVEL_02_SNBK.bnk</Path>
 			<Media>
-				<File Id="165605957" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Moving_Platform_Loop_02.wav</ShortName>
-					<CachePath>SFX/SFX_Moving_Platform_Loop_02_30D511E6.wem</CachePath>
-				</File>
 				<File Id="194563344" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Door_Open_01.wav</ShortName>
 					<CachePath>SFX/SFX_Door_Open_01_10C4C929.wem</CachePath>
+				</File>
+				<File Id="324439066" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SFX_First_Moving_Platform_Loop.wav</ShortName>
+					<CachePath>SFX/SFX_First_Moving_Platform_Loop_D79FB2B7.wem</CachePath>
 				</File>
 				<File Id="453232147" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>SFX_Moving_Platform_02.wav</ShortName>
@@ -49,10 +49,6 @@
 					<ShortName>SFX_Moving_Platform_Loop_03.wav</ShortName>
 					<CachePath>SFX/SFX_Moving_Platform_Loop_03_D79FB2B7.wem</CachePath>
 				</File>
-				<File Id="1006289370" Language="SFX" Streaming="false" Location="Memory">
-					<ShortName>SFX_Moving_Platform_Loop_01.wav</ShortName>
-					<CachePath>SFX/SFX_Moving_Platform_Loop_01_AD661560.wem</CachePath>
-				</File>
 			</Media>
 			<Events>
 				<Event Id="2765469073" Name="Play_SFX_Door_Open_01" DurationType="OneShot" DurationMin="5.9984975" DurationMax="6.733087">
@@ -78,12 +74,7 @@
 						<ActionSetStateEntry GroupId="2999213434" Id="529726532" Name="End"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="3130844081" Name="Play_SFX_First_Moving_Platform" MaxAttenuation="20" DurationType="Infinite">
-					<MediaRefs>
-						<MediaRef Id="165605957"/>
-						<MediaRef Id="1006289370"/>
-					</MediaRefs>
-				</Event>
+				<Event Id="3130844081" Name="Play_SFX_First_Moving_Platform" MaxAttenuation="20" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="2643126548" Name="Play_SFX_Moving_Platform_01" DurationType="OneShot" DurationMin="3.5439134" DurationMax="3.9779088">
 					<MediaRefs>
 						<MediaRef Id="802300840"/>
@@ -101,7 +92,15 @@
 						<MediaRef Id="862881284"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="3789958032" Name="SFX_First_Moving_Platform" MaxAttenuation="15" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="324439066"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<GameParameters>
+				<GameParameter Id="114556479" Name="Moving_Platform_Progression"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="2999213434" Name="Music_Grenadier_State">
 					<States>
@@ -841,7 +840,7 @@
 				<GameParameter Id="2504666941" Name="Fireflies_AMB"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{CEA65E6D-D240-F26A-F4D2-2C200CE15615}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{0CF4ADB9-BB49-C271-7BA5-683273738EF5}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
@@ -858,6 +857,7 @@
 				</Custom>
 				<ShareSets>
 					<Plugin Id="1675424737" Name="Extreme_Limiting_1" LibName="Wwise Peak Limiter" LibId="7208963"/>
+					<Plugin Id="4228528425" Name="Ducking_Meter_UI" LibName="Wwise Meter" LibId="8454147"/>
 				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
@@ -866,9 +866,16 @@
 			</Plugins>
 			<Busses>
 				<Bus Id="17439960" Name="Bus_AMB"/>
+				<Bus Id="250574877" Name="Bus_Theme_Grenadier"/>
 				<Bus Id="1162281553" Name="Bus_Music"/>
 				<Bus Id="1592365332" Name="Bus_Ennemies"/>
-				<Bus Id="1746463750" Name="Bus_UI"/>
+				<Bus Id="1746463750" Name="Bus_UI">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="4228528425"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="2038678300" Name="Bus_Reverb"/>
 				<Bus Id="2367965617" Name="Bus_PreMaster_01"/>
 				<Bus Id="2367965618" Name="Bus_PreMaster_02"/>
@@ -950,6 +957,7 @@
 				</AuxBus>
 			</AuxBusses>
 			<GameParameters>
+				<GameParameter Id="114556479" Name="Moving_Platform_Progression"/>
 				<GameParameter Id="692140126" Name="Wind_AMB"/>
 				<GameParameter Id="971296124" Name="Ellen_Health"/>
 				<GameParameter Id="1006694123" Name="Music_Volume"/>
@@ -969,6 +977,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 				<GameParameter Id="4056325711" Name="Moving_Platform_SFX"/>
 				<GameParameter Id="4179668880" Name="Master_Volume"/>
+				<GameParameter Id="4199640232" Name="UI_Playing"/>
 			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="740118134" Name="Cavern_Animal_Playing">
@@ -1063,7 +1072,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{3886FEC7-ADCF-2E63-F9E4-CF9CB5E10241}">
+		<SoundBank Id="1568914985" Type="User" Language="SFX" Hash="{D9D183F6-AC2D-A6E9-041D-EF7811A896D6}">
 			<ShortName>Grenadier_SNBK</ShortName>
 			<Path>Grenadier_SNBK.bnk</Path>
 			<Media>
@@ -2083,7 +2092,7 @@
 				<GameParameter Id="3778983191" Name="Disto_Delay_Staff_RTPC"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{F03BA7D8-65A8-14FE-8A40-2DC115EE335C}">
+		<SoundBank Id="3037172698" Type="User" Language="SFX" Hash="{48EE9903-19A8-6C73-17EB-DFE9ADE5BC89}">
 			<ShortName>Chomper_SNBK</ShortName>
 			<Path>Chomper_SNBK.bnk</Path>
 			<Media>
@@ -2247,7 +2256,7 @@
 				<Event Id="301903767" Name="Stop_SFX_Chomper_Idle" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 			</Events>
 		</SoundBank>
-		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{005DDDA5-21D6-8897-AA0C-ABB812E86F2E}">
+		<SoundBank Id="3144867095" Type="User" Language="SFX" Hash="{DC836501-CC6A-0541-1A22-11E81DABB68C}">
 			<ShortName>Music_SNBK</ShortName>
 			<Path>Music_SNBK.bnk</Path>
 			<Media>
@@ -3388,7 +3397,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{7DDDFBB6-1BAA-10B0-0A29-B8FC660B624F}">
+		<SoundBank Id="4080968021" Type="User" Language="SFX" Hash="{2A46DE77-445C-1442-38E4-3838E1D5ABBE}">
 			<ShortName>Spitter_SNBK</ShortName>
 			<Path>Spitter_SNBK.bnk</Path>
 			<Media>
@@ -3514,5 +3523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{5E8FD3AD-4EED-EA4B-E152-23FDA6D00B16}</FileHash>
+	<FileHash>{512091EE-70E1-28E5-C4B4-7C71F2703109}</FileHash>
 </SoundBanksInfo>

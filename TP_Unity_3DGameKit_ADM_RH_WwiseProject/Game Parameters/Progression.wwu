@@ -13,6 +13,15 @@
 						<Property Name="Max" Type="Real64" Value="4"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="Moving_Platform_Progression" ID="{BF82ED90-24C2-4AAD-A67F-AC6EE34FB861}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="2"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="20"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="20"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

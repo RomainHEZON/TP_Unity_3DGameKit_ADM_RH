@@ -52,9 +52,11 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	1006694123	Music_Volume			\Default Work Unit\Bus_Volume\Music_Volume	
 	1564184899	SFX_Volume			\Default Work Unit\Bus_Volume\SFX_Volume	
 	4179668880	Master_Volume			\Default Work Unit\Bus_Volume\Master_Volume	
+	4199640232	UI_Playing			\Default Work Unit\Ducking\UI_Playing	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	17439960	Bus_AMB			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_AMB	
+	250574877	Bus_Theme_Grenadier			\Default Work Unit\Master Audio Bus\Bus_Music\Bus_Theme_Grenadier	
 	1162281553	Bus_Music			\Default Work Unit\Master Audio Bus\Bus_Music	
 	1592365332	Bus_Ennemies			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_Ennemies	
 	1746463750	Bus_UI			\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_UI	
@@ -89,6 +91,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	1018127844	Church_Small_Wood (Custom)	Wwise RoomVerb			
 	1052519096	Inside_My_Head (Custom)	Wwise RoomVerb			
 	1675424737	Extreme_Limiting_1	Wwise Peak Limiter			
+	4228528425	Ducking_Meter_UI	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

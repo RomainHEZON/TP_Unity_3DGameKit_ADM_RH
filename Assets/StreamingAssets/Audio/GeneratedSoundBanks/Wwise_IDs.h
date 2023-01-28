@@ -128,6 +128,7 @@ namespace AK
         static const AkUniqueID SET_STATE_EXPLO = 3742218146U;
         static const AkUniqueID SET_STATE_FIGHT_CHOMPER = 846679953U;
         static const AkUniqueID SET_STATE_FIGHT_GRENADIER = 407065776U;
+        static const AkUniqueID SFX_FIRST_MOVING_PLATFORM = 3789958032U;
         static const AkUniqueID STOP_ALL_EVENTS = 171421511U;
         static const AkUniqueID STOP_SFX_ALIEN_STAFF_IDLE = 1465417131U;
         static const AkUniqueID STOP_SFX_CHOMPER_IDLE = 301903767U;
@@ -304,6 +305,7 @@ namespace AK
         static const AkUniqueID LAKE_AMB = 3174026549U;
         static const AkUniqueID LAYER_STAFF_RTPC = 2885604103U;
         static const AkUniqueID MASTER_VOLUME = 4179668880U;
+        static const AkUniqueID MOVING_PLATFORM_PROGRESSION = 114556479U;
         static const AkUniqueID MOVING_PLATFORM_SFX = 4056325711U;
         static const AkUniqueID MUSIC_VOLUME = 1006694123U;
         static const AkUniqueID RAIN_INTENSITY_RTPC = 3485210265U;
@@ -312,6 +314,7 @@ namespace AK
         static const AkUniqueID STAFF_IDLE_SFX = 1334832914U;
         static const AkUniqueID SWITCH_COLLECT_PROGRESSION = 2006680970U;
         static const AkUniqueID TELEPORTER_SFX = 2740591189U;
+        static const AkUniqueID UI_PLAYING = 4199640232U;
         static const AkUniqueID WIND_AMB = 692140126U;
     } // namespace GAME_PARAMETERS
 
@@ -350,6 +353,7 @@ namespace AK
         static const AkUniqueID BUS_REVERB = 2038678300U;
         static const AkUniqueID BUS_RFX = 4130663432U;
         static const AkUniqueID BUS_SFX = 3895923845U;
+        static const AkUniqueID BUS_THEME_GRENADIER = 250574877U;
         static const AkUniqueID BUS_UI = 1746463750U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES

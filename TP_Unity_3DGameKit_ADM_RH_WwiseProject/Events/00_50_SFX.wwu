@@ -800,6 +800,17 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="SFX_First_Moving_Platform" ID="{50E3563E-2182-4980-BA72-354C6F8D9C2A}">
+									<ChildrenList>
+										<Action Name="" ID="{2DB1581D-2214-40E4-BDFB-01F5C89F2533}" ShortID="456649452">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="SFX_First_Moving_Platform_Loop" ID="{BAC11AEF-8189-4591-B9CD-55B49FBDA45F}" WorkUnitID="{26D4530A-176F-45B4-B26F-79B5D088E60B}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>

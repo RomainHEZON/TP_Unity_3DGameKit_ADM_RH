@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy\Default Work Unit
     guid: 8af059c48109b9438ca4de2f6b4c5b14
     GuidInternal: 
-    m_lastTime: -8585276235872505057
+    m_lastTime: -8585266926535816995
     List:
     - name: Bus_AMB
       guid: caa637f79f16d64cb2816990970126ea
@@ -258,6 +258,26 @@ MonoBehaviour:
         ObjectType: 2
         guid: 489a3308fa83004e92d4bb72bbba5561
       Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_PreMaster_02\Bus_PreMaster_01\Bus_SFX
+    - name: Bus_Theme_Grenadier
+      guid: 1d13f3012372cf47a17de7abfd3cd5e3
+      id: 250574877
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8af059c48109b9438ca4de2f6b4c5b14
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      - ElementName: Bus_Music
+        ObjectType: 2
+        guid: 2b21c4bae6665c4e908a3c6643b122bc
+      - ElementName: Bus_Theme_Grenadier
+        ObjectType: 2
+        guid: 1d13f3012372cf47a17de7abfd3cd5e3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Bus_Music\Bus_Theme_Grenadier
     - name: Bus_UI
       guid: d2f7fbb49351554d94e6acedfbac14c4
       id: 1746463750
@@ -2063,7 +2083,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\00_50_SFX
     guid: 3cb178568a63ab4ab00222cac1a60494
     GuidInternal: 
-    m_lastTime: -8585276238526759953
+    m_lastTime: -8585266892581769757
     List:
     - name: Alien_Staff
       guid: e4184c13997bc74a9474229d76e33fca
@@ -3057,6 +3077,32 @@ MonoBehaviour:
         ObjectType: 4
         guid: 4eeec37022910544a04ce61ea46bc2bc
       Path: Events\Default Work Unit\00_50_SFX\LEVEL_01\Pressure_Pad
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_First_Moving_Platform
+      guid: 3e56e35082218049ba72354c6f8d9c2a
+      id: 3789958032
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: f0818cccf808e44d8244c79550da8cee
+      - ElementName: 00_50_SFX
+        ObjectType: 12
+        guid: 3cb178568a63ab4ab00222cac1a60494
+      - ElementName: LEVEL_02
+        ObjectType: 4
+        guid: 4579b78d2a20ea42ab5d7de7516746d6
+      - ElementName: Moving_Platform
+        ObjectType: 4
+        guid: 7ff53c6972d4a04593caf292c57068ba
+      - ElementName: SFX_First_Moving_Platform
+        ObjectType: 3
+        guid: 3e56e35082218049ba72354c6f8d9c2a
+      Path: Events\Default Work Unit\00_50_SFX\LEVEL_02\Moving_Platform\SFX_First_Moving_Platform
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -4412,7 +4458,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: f0818cccf808e44d8244c79550da8cee
     GuidInternal: 
-    m_lastTime: -8585277044996206359
+    m_lastTime: -8585266917662368292
     List: []
   RtpcWwu:
   - PhysicalPath: Game Parameters\Bus_Volume.wwu
@@ -4493,7 +4539,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 1f4eeda840fefb40a287c327cb2b7aca
     GuidInternal: 
-    m_lastTime: -8585278242359164441
+    m_lastTime: -8585266929805430015
     List: []
   - PhysicalPath: Game Parameters\Distance.wwu
     PathAndIcons:
@@ -4661,7 +4707,7 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Ducking
     guid: 423f1f9fa1e7a44b9fa44f97d4e675cc
     GuidInternal: 
-    m_lastTime: -8585278202406635664
+    m_lastTime: -8585266929805390005
     List:
     - name: Chomper_Attack_Playing
       guid: 30334d5f16650847a01e6168a60f12c2
@@ -4714,6 +4760,23 @@ MonoBehaviour:
         ObjectType: 13
         guid: cc5e49cc9c063f40adf2ba5805eb9664
       Path: Game Parameters\Default Work Unit\Ducking\Grenadier_Theme_Playing
+    - name: UI_Playing
+      guid: 56b78a65a9e37a46bd34e47499c44f69
+      id: 4199640232
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Ducking
+        ObjectType: 12
+        guid: 423f1f9fa1e7a44b9fa44f97d4e675cc
+      - ElementName: UI_Playing
+        ObjectType: 13
+        guid: 56b78a65a9e37a46bd34e47499c44f69
+      Path: Game Parameters\Default Work Unit\Ducking\UI_Playing
   - PhysicalPath: Game Parameters\Health.wwu
     PathAndIcons:
     - ElementName: Game Parameters
@@ -4761,8 +4824,25 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit\Progression
     guid: 6fee35f73888a744b2766bc9bb2729bd
     GuidInternal: 
-    m_lastTime: -8585281441535258028
+    m_lastTime: -8585266892581944258
     List:
+    - name: Moving_Platform_Progression
+      guid: 90ed82bfc224ad4aa67fac6ee34fb861
+      id: 114556479
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1f4eeda840fefb40a287c327cb2b7aca
+      - ElementName: Progression
+        ObjectType: 12
+        guid: 6fee35f73888a744b2766bc9bb2729bd
+      - ElementName: Moving_Platform_Progression
+        ObjectType: 13
+        guid: 90ed82bfc224ad4aa67fac6ee34fb861
+      Path: Game Parameters\Default Work Unit\Progression\Moving_Platform_Progression
     - name: Switch_Collect_Progression
       guid: 544f1e8c45acd7438d67248d14d2f763
       id: 2006680970
@@ -6076,7 +6156,7 @@ MonoBehaviour:
         guid: 7d97b9ed5e62294ebf071d20f94859e0
       Path: Triggers\Default Work Unit\Transition
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 05000000060000000b0000002f0000003000000035000000a0000000a6000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

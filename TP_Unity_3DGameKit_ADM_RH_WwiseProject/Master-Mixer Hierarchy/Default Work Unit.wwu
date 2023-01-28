@@ -22,6 +22,22 @@
 								<Property Name="Color" Type="int16" Value="15"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
+							<ChildrenList>
+								<Bus Name="Bus_Theme_Grenadier" ID="{01F3131D-7223-47CF-A17D-E7ABFD3CD5E3}">
+									<ReferenceList/>
+									<DuckingList>
+										<DuckItem>
+											<BusRef Name="Bus_AMB" ID="{F737A6CA-169F-4CD6-B281-6990970126EA}"/>
+											<DuckingParam>
+												<Volume>-24</Volume>
+												<FadeInTime>2.5</FadeInTime>
+												<FadeOutTime>2.5</FadeOutTime>
+												<FadeCurve>FadeLog1</FadeCurve>
+											</DuckingParam>
+										</DuckItem>
+									</DuckingList>
+								</Bus>
+							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -167,6 +183,51 @@
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<Reference>
+												<Local>
+													<RTPC Name="" ID="{4AF5E693-8B94-44C8-AB5A-E830CE4B2899}" ShortID="1008759717">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Volume"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="UI_Playing" ID="{658AB756-E3A9-467A-BD34-E47499C44F69}" WorkUnitID="{9F1F3F42-E7A1-4BA4-9FA4-4F97D4E675CC}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{151A314D-30C1-481E-B653-45CF6C782F6B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>-48</XPos>
+																				<YPos>0</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>-30</XPos>
+																				<YPos>0</YPos>
+																				<Flags>0</Flags>
+																				<SegmentShape>Log1</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-24</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
 								</Bus>
 								<Bus Name="Bus_UI" ID="{B4FBF7D2-5193-4D55-94E6-ACEDFBAC14C4}">
 									<PropertyList>
@@ -178,6 +239,11 @@
 										<Property Name="Color" Type="int16" Value="13"/>
 										<Property Name="OverrideColor" Type="bool" Value="True"/>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="Ducking_Meter_UI" ID="{945840E2-721F-425E-967F-5DFA745ED95B}" WorkUnitID="{4C8A2261-A58B-4A1A-94C7-69F7245E87D9}"/>
+										</Reference>
+									</ReferenceList>
 								</Bus>
 								<Bus Name="Bus_Reverb" ID="{6743FC1A-F829-4FB8-A4D0-0C87DA94DEA3}">
 									<PropertyList>
