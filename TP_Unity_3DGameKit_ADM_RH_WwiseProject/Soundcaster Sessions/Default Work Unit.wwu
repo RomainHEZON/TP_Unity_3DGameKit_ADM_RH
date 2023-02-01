@@ -337,14 +337,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{89BBF9A5-4BFF-444F-BE42-9C705B85FC3D}"/>
-						<CurrentStateRef Name="None" ID="{FA4F4BAD-A161-434D-A909-1983A6BB5109}"/>
-						<CurrentStateRef Name="Out" ID="{71909B06-4F61-49D0-8EC4-782DBC352FA7}"/>
+						<CurrentStateRef Name="Off" ID="{9023E12F-432D-4BB2-90CE-2B4239181CB7}"/>
+						<CurrentStateRef Name="End" ID="{1AC70111-9ED3-4108-9345-961DC2D38D97}"/>
+						<CurrentStateRef Name="In" ID="{C087ECB0-064C-48A9-8936-0B0083D20A3D}"/>
 						<CurrentStateRef Name="OFF" ID="{CBFBE45E-1DAF-4148-A106-23BC8E007E41}"/>
 						<CurrentStateRef Name="Explo" ID="{A4DDF918-E93B-4E6D-969D-ADE36A68E6CD}"/>
-						<CurrentStateRef Name="Pause_ON" ID="{0F365C0A-9E96-4123-94D1-4A24EAD874EF}"/>
+						<CurrentStateRef Name="Pause_OFF" ID="{E9DEAE15-C31E-46B7-A0DC-498C282048E3}"/>
 						<CurrentStateRef Name="None" ID="{15D67C6A-BC95-412F-814F-CFD9D24FFE1B}"/>
-						<CurrentStateRef Name="None" ID="{26997C62-0C31-40F4-8EB7-77B92D4CE81C}"/>
+						<CurrentStateRef Name="Off" ID="{16628F24-1503-43C6-90C5-F8D244C41DD1}"/>
 						<CurrentStateRef Name="None" ID="{308CD050-378C-421C-8CCA-A493D2895105}"/>
 						<CurrentStateRef Name="None" ID="{3EAEE0D9-E609-4D17-8753-67D8BB2DEA30}"/>
 					</CurrentStateList>
