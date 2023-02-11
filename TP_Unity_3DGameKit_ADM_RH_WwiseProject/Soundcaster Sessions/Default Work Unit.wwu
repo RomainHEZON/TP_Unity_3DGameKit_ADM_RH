@@ -297,7 +297,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="Ellen_Health" ID="{BB865AE7-2C9F-475A-81EB-B9F103E12328}"/>
-							<Value>5</Value>
+							<Value>0.439759036144579</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Volume" ID="{0F67A3AF-2C5D-475C-BE8C-2DB36778C70B}"/>

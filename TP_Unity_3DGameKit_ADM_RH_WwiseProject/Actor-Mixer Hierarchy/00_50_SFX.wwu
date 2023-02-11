@@ -1657,9 +1657,9 @@
 											<Custom CreatedFrom="{6BD2D67D-601A-45A6-AD4C-2C089078EBED}">
 												<Effect Name="One_Tap_Quarter_Second (Custom)" ID="{39981D98-F8A9-4E7B-BFDD-48AE72C6428A}" ShortID="729866743" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 													<PropertyList>
-														<Property Name="DelayTime" Type="Real32" Value="0.1"/>
+														<Property Name="DelayTime" Type="Real32" Value="0.3"/>
 														<Property Name="Feedback" Type="Real32" Value="0"/>
-														<Property Name="WetDryMix" Type="Real32" Value="20"/>
+														<Property Name="WetDryMix" Type="Real32" Value="30"/>
 													</PropertyList>
 													<ObjectLists>
 														<ObjectList Name="RTPC">
@@ -1682,47 +1682,42 @@
 																						<PointList>
 																							<Point>
 																								<XPos>0</XPos>
-																								<YPos>80</YPos>
+																								<YPos>50</YPos>
 																								<Flags>5</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>1.00047</XPos>
-																								<YPos>80</YPos>
+																								<XPos>1</XPos>
+																								<YPos>50</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>1.99</XPos>
-																								<YPos>80</YPos>
+																								<XPos>1.01</XPos>
+																								<YPos>30</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>2</XPos>
-																								<YPos>50</YPos>
+																								<YPos>30</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
-																								<XPos>2.99</XPos>
-																								<YPos>50</YPos>
+																								<XPos>2.01</XPos>
+																								<YPos>15</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>3</XPos>
-																								<YPos>30</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>3.99</XPos>
-																								<YPos>30</YPos>
-																								<Flags>0</Flags>
-																							</Point>
-																							<Point>
-																								<XPos>4</XPos>
 																								<YPos>15</YPos>
+																								<Flags>0</Flags>
+																							</Point>
+																							<Point>
+																								<XPos>3.01</XPos>
+																								<YPos>-100</YPos>
 																								<Flags>0</Flags>
 																							</Point>
 																							<Point>
 																								<XPos>5</XPos>
-																								<YPos>15</YPos>
+																								<YPos>-100</YPos>
 																								<Flags>37</Flags>
 																							</Point>
 																						</PointList>

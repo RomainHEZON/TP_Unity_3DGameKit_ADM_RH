@@ -299,7 +299,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{683E8249-CBAB-5AFE-B2FE-A2B1C4458021}">
+		<SoundBank Id="1279863871" Type="User" Language="SFX" Hash="{2D2F2D30-73B6-2E4D-6B6A-6864EC27CF25}">
 			<ShortName>AMB_RFX_SNBK</ShortName>
 			<Path>AMB_RFX_SNBK.bnk</Path>
 			<Media>
@@ -1309,7 +1309,7 @@
 			<ShortName>IRs_SNBK</ShortName>
 			<Path>IRs_SNBK.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{2A4F7E6D-5915-1A9A-E6DF-D124F7715B79}">
+		<SoundBank Id="1876570981" Type="User" Language="English(US)" Hash="{23341512-61C7-89C6-9FB4-71622914A079}">
 			<ShortName>AMB_Pads_SNBK</ShortName>
 			<Path>English(US)/AMB_Pads_SNBK.bnk</Path>
 			<Media>
@@ -1703,7 +1703,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{6B32290D-72C8-16EC-E738-D0A42DC5A7A7}">
+		<SoundBank Id="2516908676" Type="User" Language="SFX" Hash="{19BD9E71-E597-83B6-9349-5B62DDA94350}">
 			<ShortName>Ellen_SFX_SNBK</ShortName>
 			<Path>Ellen_SFX_SNBK.bnk</Path>
 			<Media>
@@ -2508,7 +2508,7 @@
 				<Trigger Id="1865857008" Name="Transition"/>
 			</Triggers>
 		</SoundBank>
-		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{30FC8D8A-1595-05C2-E366-8F5DCD0056F7}">
+		<SoundBank Id="3216885010" Type="User" Language="SFX" Hash="{0F7D5356-DC69-8100-B56A-F7E08850B4B3}">
 			<ShortName>SFX_LEVEL_01_SNBK</ShortName>
 			<Path>SFX_LEVEL_01_SNBK.bnk</Path>
 			<Media>
@@ -3523,5 +3523,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{512091EE-70E1-28E5-C4B4-7C71F2703109}</FileHash>
+	<FileHash>{2BC7F50D-F0DF-D23A-AA22-57CF3A5F8E3D}</FileHash>
 </SoundBanksInfo>
