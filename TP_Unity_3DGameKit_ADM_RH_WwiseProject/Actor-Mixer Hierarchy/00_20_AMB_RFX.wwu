@@ -6213,7 +6213,7 @@
 								</Sound>
 							</ChildrenList>
 						</ActorMixer>
-						<Sound Name="AMB_POS_Carillon_01" ID="{C9F520B5-278C-4720-92E2-762A84111CAF}" ShortID="1017868448">
+						<RandomSequenceContainer Name="Carillon_RC" ID="{8645E503-0701-4F69-82D6-3AAFE80C8166}" ShortID="676051723">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
@@ -6223,128 +6223,176 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="AMB_POS_Carillon_01" ID="{A77FA924-37D9-40A2-A86A-DA63DA3A8D6E}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_POS_Carillon_01.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="616544840"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="AMB_POS_Carillon_01" ID="{C9F520B5-278C-4720-92E2-762A84111CAF}" ShortID="1017868448">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_POS_Carillon_01" ID="{A77FA924-37D9-40A2-A86A-DA63DA3A8D6E}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_POS_Carillon_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="616544840"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_POS_Carillon_01" ID="{A77FA924-37D9-40A2-A86A-DA63DA3A8D6E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_POS_Carillon_02" ID="{7E3CAA91-9517-4B58-B017-1BC6D558838B}" ShortID="513371006">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_POS_Carillon_02" ID="{9B3367C5-1734-4B87-9B16-DC903A62B0B8}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_POS_Carillon_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="481605858"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_POS_Carillon_02" ID="{9B3367C5-1734-4B87-9B16-DC903A62B0B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_POS_Carillon_03" ID="{2D712A99-C20C-4D89-B8DA-5CBCB2E1C9EE}" ShortID="531696391">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_POS_Carillon_03" ID="{FB8955AD-B6A3-4253-A98B-E50D9D62C56E}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_POS_Carillon_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="532309251"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_POS_Carillon_03" ID="{FB8955AD-B6A3-4253-A98B-E50D9D62C56E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_POS_Carillon_04" ID="{E14E894E-1A57-4E82-B5CD-C9AEF7F1B0E4}" ShortID="884366614">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_POS_Carillon_04" ID="{BDC6DEB6-BED6-4D9E-9242-E52DC651F555}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_POS_Carillon_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="102395829"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_POS_Carillon_04" ID="{BDC6DEB6-BED6-4D9E-9242-E52DC651F555}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_POS_Carillon_05" ID="{E40D6714-07EF-4517-8B00-EC7E772246B0}" ShortID="303529155">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_POS_Carillon_05" ID="{727C0AB6-D013-4C5C-9225-A6E494BD68AB}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_POS_Carillon_05.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="656682675"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_POS_Carillon_05" ID="{727C0AB6-D013-4C5C-9225-A6E494BD68AB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_POS_Carillon_06" ID="{788D854F-F2DE-498E-B20D-03F6614D67C5}" ShortID="738489733">
+									<PropertyList>
+										<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Bus_RFX" ID="{8E1C04C8-D744-4B42-B6F5-B7C867ECE0B6}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_POS_Carillon_06" ID="{D395C334-C531-45EB-9B9F-372AD9FF0A15}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_POS_Carillon_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="365474181"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_POS_Carillon_06" ID="{D395C334-C531-45EB-9B9F-372AD9FF0A15}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_POS_Carillon_01" ID="{A77FA924-37D9-40A2-A86A-DA63DA3A8D6E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_POS_Carillon_02" ID="{7E3CAA91-9517-4B58-B017-1BC6D558838B}" ShortID="513371006">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_POS_Carillon_02" ID="{9B3367C5-1734-4B87-9B16-DC903A62B0B8}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_POS_Carillon_02.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="481605858"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_POS_Carillon_02" ID="{9B3367C5-1734-4B87-9B16-DC903A62B0B8}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_POS_Carillon_03" ID="{2D712A99-C20C-4D89-B8DA-5CBCB2E1C9EE}" ShortID="531696391">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_POS_Carillon_03" ID="{FB8955AD-B6A3-4253-A98B-E50D9D62C56E}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_POS_Carillon_03.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="532309251"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_POS_Carillon_03" ID="{FB8955AD-B6A3-4253-A98B-E50D9D62C56E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_POS_Carillon_04" ID="{E14E894E-1A57-4E82-B5CD-C9AEF7F1B0E4}" ShortID="884366614">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_POS_Carillon_04" ID="{BDC6DEB6-BED6-4D9E-9242-E52DC651F555}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_POS_Carillon_04.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="102395829"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_POS_Carillon_04" ID="{BDC6DEB6-BED6-4D9E-9242-E52DC651F555}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_POS_Carillon_05" ID="{E40D6714-07EF-4517-8B00-EC7E772246B0}" ShortID="303529155">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_POS_Carillon_05" ID="{727C0AB6-D013-4C5C-9225-A6E494BD68AB}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_POS_Carillon_05.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="656682675"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_POS_Carillon_05" ID="{727C0AB6-D013-4C5C-9225-A6E494BD68AB}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="AMB_POS_Carillon_06" ID="{788D854F-F2DE-498E-B20D-03F6614D67C5}" ShortID="738489733">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C459F08A-0981-43B9-8CA4-DE2F6B4C5B14}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="AMB_POS_Carillon_06" ID="{D395C334-C531-45EB-9B9F-372AD9FF0A15}">
-									<Language>SFX</Language>
-									<AudioFile>AMB_POS_Carillon_06.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="365474181"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_POS_Carillon_06" ID="{D395C334-C531-45EB-9B9F-372AD9FF0A15}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
