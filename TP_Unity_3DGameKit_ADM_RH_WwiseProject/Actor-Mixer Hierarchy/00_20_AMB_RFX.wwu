@@ -4844,10 +4844,6 @@
 						</ActorMixer>
 						<ActorMixer Name="Spaceship_Mixer" ID="{7FA47412-4BD4-4D2A-9EED-3AC51BD638EF}" ShortID="905068331">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -4855,16 +4851,8 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="ATN_10m" ID="{0B27E7AE-D886-47C9-A7D0-22F4FE5905C8}" WorkUnitID="{460CB990-94F0-4D03-9E31-ED83591B2D9B}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{B55E1D43-7040-44A7-B6AC-53B8788703AD}"/>
 								</Reference>
